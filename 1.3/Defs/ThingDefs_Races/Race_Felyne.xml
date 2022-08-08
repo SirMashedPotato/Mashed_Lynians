@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike">
+		<defName>Mashed_Lynian_FelyneRace</defName>
+		<label>felyne</label>
+		<description>TODO.</description>
+		<modExtensions>
+		</modExtensions>
+		<statBases>
+		</statBases>
+		<comps>
+		</comps>
+		<race>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<!-- =====[Main fur colour]===== -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Standard felyne colour -->
+									<li>
+										<weight>5</weight>
+										<only>(246,223,179,255)</only>
+									</li>
+								</options>
+							</first>
+							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Standard felyne colour -->
+									<li>
+										<weight>5</weight>
+										<only>(118,92,66,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>
