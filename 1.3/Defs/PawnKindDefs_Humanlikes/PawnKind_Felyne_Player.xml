@@ -7,7 +7,7 @@
 	<PawnKindDef ParentName="Mashed_Lynian_FelynePlayerPawnKind_Base">
 		<defName>Mashed_Lynian_FelyneColonist</defName>
 		<label>colonist</label>
-		<defaultFactionType>PlayerColony</defaultFactionType>
+		<defaultFactionType>Mashed_Lynian_FelynePlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
 			<li>IndustrialBasic</li>
@@ -27,7 +27,7 @@
 	<PawnKindDef ParentName="Mashed_Lynian_FelynePlayerPawnKind_Base">
 		<defName>Mashed_Lynian_FelyneTribesperson</defName>
 		<label>member</label>
-		<defaultFactionType>PlayerTribe</defaultFactionType>
+		<defaultFactionType>Mashed_Lynian_FelynePlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>
 			<li>Neolithic</li>

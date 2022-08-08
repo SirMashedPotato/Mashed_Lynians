@@ -26,7 +26,30 @@
 										<weight>5</weight>
 										<only>(246,223,179,255)</only>
 									</li>
+									<!-- Freedom Unite icon -->
+									<li>
+										<weight>1</weight>
+										<only>(210,185,132,255)</only>
+									</li>
+									<!-- Tri icon -->
+									<!--
+									<li>
+										<weight>1</weight>
+										<only>(183,167,150,255)</only>
+									</li>
+									-->
+									<!-- Rise icon, lighter -->
+									<li>
+										<weight>1</weight>
+										<only>(230,222,188,255)</only>
+									</li>
+									<!-- Rise icon, darker -->
+									<li>
+										<weight>1</weight>
+										<only>(223,211,170,255)</only>
+									</li>
 								</options>
+								
 							</first>
 							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
 							<second Class="ColorGenerator_Options">
@@ -35,6 +58,31 @@
 									<li>
 										<weight>5</weight>
 										<only>(118,92,66,255)</only>
+									</li>
+									<!-- Lighter brown -->
+									<li>
+										<weight>2</weight>
+										<only>(150,106,48,255)</only>
+									</li>
+									<!-- Freedom Unite icon, darker brown -->
+									<li>
+										<weight>1</weight>
+										<only>(91,55,40,255)</only>
+									</li>
+									<!-- Freedom Unite icon, lighter brown-->
+									<li>
+										<weight>1</weight>
+										<only>(143,106,75,255)</only>
+									</li>
+									<!-- Tri icon -->
+									<li>
+										<weight>1</weight>
+										<only>(65,54,50,255)</only>
+									</li>
+									<!-- Rise icon -->
+									<li>
+										<weight>1</weight>
+										<only>(161,143,91,255)</only>
 									</li>
 								</options>
 							</second>
