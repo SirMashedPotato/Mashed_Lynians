@@ -234,10 +234,12 @@
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Thin</li>
+						<!--
 						<li>Male</li>
 						<li>Female</li>
 						<li>Hulk</li>
 						<li>Fat</li>
+						-->
 					</alienbodytypes>
 					<bodyAddons>
 						<!-- https://github.com/erdelf/AlienRaces/wiki/Body-Addons -->
