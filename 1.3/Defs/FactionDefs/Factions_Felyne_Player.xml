@@ -1,91 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Probably a good idea to set up some base defs -->
 	<!-- ==========[Arrivals]========== -->
-	<FactionDef ParentName="PlayerFactionBase">
+	<FactionDef ParentName="Mashed_Lynian_OutlanderFactionBase">
 		<defName>Mashed_Lynian_FelynePlayerColony</defName>
 		<label>New Felyne Arrivals</label>
-		<description>A colony of recently-arrived off-worlders.</description>
-		<isPlayer>true</isPlayer>
 		<basicMemberKind>Mashed_Lynian_FelyneColonist</basicMemberKind>
-		<pawnSingular>colonist</pawnSingular>
-		<pawnsPlural>colonists</pawnsPlural>
-		<techLevel>Industrial</techLevel>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<allowedCultures>
-			<li>Astropolitan</li>
-		</allowedCultures>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>Offworld</li>
-				</categories>
-			</li>
-		</backstoryFilters>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
-		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
-			<li>ClassicStart</li>
 			<li>Mashed_Lynian_FelyneStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
-			<li>ClassicStart</li>
-			<li>ClassicStartTechprints</li>
 			<li>Mashed_Lynian_FelyneStart</li>
 		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-			<thingDefs>
-				<li>Synthread</li>
-			</thingDefs>
-		</apparelStuffFilter>
 	</FactionDef>
 	<!-- ==========[Tribal]========== -->
-	<FactionDef ParentName="PlayerFactionBase">
+	<FactionDef ParentName="Mashed_Lynian_TribalFactionBase">
 		<defName>Mashed_Lynian_FelynePlayerTribe</defName>
 		<label>New Felyne Tribe</label>
 		<description>A small Felyne tribe.</description>
-		<isPlayer>true</isPlayer>
-		<categoryTag>Tribal</categoryTag>
-		<pawnSingular>tribesman</pawnSingular>
-		<pawnsPlural>tribespeople</pawnsPlural>
 		<basicMemberKind>Mashed_Lynian_FelyneTribesperson</basicMemberKind>
-		<techLevel>Neolithic</techLevel>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
-		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-		<allowedCultures>
-			<li>Corunan</li>
-		</allowedCultures>
-		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-		</disallowedMemes>
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>Tribal</li>
-				</categories>
-			</li>
-		</backstoryFilters>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		<geneticVariance>1</geneticVariance>
-		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>
-			<li>TribalStart</li>
 			<li>Mashed_Lynian_FelyneStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
-			<li>TribalStart</li>
-			<li>TribalStartTechprints</li>
 			<li>Mashed_Lynian_FelyneStart</li>
 		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-			<thingDefs>
-				<li>Cloth</li>
-			</thingDefs>
-		</apparelStuffFilter>
-		<recipePrerequisiteTags>
-			<li>Tribal</li>
-		</recipePrerequisiteTags>
 	</FactionDef>
 </Defs>
