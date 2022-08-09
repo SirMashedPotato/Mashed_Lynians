@@ -1,0 +1,4 @@
+J:\Modding\Github\Mashed_Lynians\1.3\Assemblies\Mashed_Lynians.dll
+J:\Modding\Github\Mashed_Lynians\1.3\Source\Mashed_Lynians\Mashed_Lynians\obj\Debug\Mashed_Lynians.csproj.AssemblyReference.cache
+J:\Modding\Github\Mashed_Lynians\1.3\Source\Mashed_Lynians\Mashed_Lynians\obj\Debug\Mashed_Lynians.csproj.CoreCompileInputs.cache
+J:\Modding\Github\Mashed_Lynians\1.3\Source\Mashed_Lynians\Mashed_Lynians\obj\Debug\Mashed_Lynians.dll
