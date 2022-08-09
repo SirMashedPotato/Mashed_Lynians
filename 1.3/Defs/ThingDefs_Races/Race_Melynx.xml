@@ -83,6 +83,14 @@
 			</generalSettings>
 			<graphicPaths>
 			</graphicPaths>
+			<raceRestriction>
+				<traitList>
+					<li>Mashed_Lynian_MelynxSneakyPaws</li>
+				</traitList>
+				<conceptList>
+					<!--<li>ESCP_SloadThoughts</li>-->
+				</conceptList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
