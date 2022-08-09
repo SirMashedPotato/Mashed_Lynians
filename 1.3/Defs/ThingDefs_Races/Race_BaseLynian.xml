@@ -298,6 +298,7 @@
 							</hiddenUnderApparelTag>
 							<hediffGraphics>
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
 							</hediffGraphics>
 						</li>
 						<!-- =====[Eye left]===== -->
@@ -315,6 +316,7 @@
 							</hiddenUnderApparelTag>
 							<hediffGraphics>
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
 							</hediffGraphics>
 						</li>
 						<!-- =====[Tail]===== -->
