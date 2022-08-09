@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>Mashed_Lynian_RaceSettings</defName>
+		<pawnKindSettings>
+			<!-- ==========[Slaves]==========-->
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Mashed_Lynian_FelyneTribesperson</li>
+						<li>Mashed_Lynian_MelynxTribesperson</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+			</alienslavekinds>
+			<!-- ==========[Refugees]==========-->
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>Mashed_Lynian_FelyneTribesperson</li>
+						<li>Mashed_Lynian_MelynxTribesperson</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienrefugeekinds>
+			<!-- ==========[Starting colonists]==========-->
+			<startingColonists>
+				<!-- ==========[Outlander]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneColonist</li>
+								<li>Mashed_Lynian_MelynxColonist</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Tribal]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneTribesperson</li>
+								<li>Mashed_Lynian_MelynxTribesperson</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerTribe</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Medieval Overhaul]==========-->
+				<li MayRequire="DankPyon.Medieval.Overhaul">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneTribesperson</li>
+								<li>Mashed_Lynian_MelynxTribesperson</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>DankPyon_PlayerKingdom</li>
+						<li>DankPyon_LoneWolf</li>
+						<li>DankPyon_MercenaryCompany</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<!-- ==========[Wanderer joins]==========-->
+			<alienwandererkinds>
+				<!-- ==========[Vanilla player colony]==========-->
+				<!-- ==========[Vanilla player tribe]==========-->
+				<!-- ==========[Medieval Overhaul ___]==========-->
+				<!-- ==========[Lynians Felyne tribe]==========-->
+				<!-- ==========[Lynians Felyne colony]==========-->
+				<!-- ==========[Lynians Melynx tribe]==========-->
+				<!-- ==========[Lynians Melynx colony]==========-->
+				<!-- ==========[Lynians Grimalkyne tribe]==========-->
+				<!-- ==========[Lynians Grimalkyne colony]==========-->
+				<!-- ==========[Lynians Shakalaka tribe]==========-->
+				<!-- ==========[Lynians Shakalaka colony]==========-->
+				<!-- ==========[Lynians Gajalaka tribe]==========-->
+				<!-- ==========[Lynians Gajalaka colony]==========-->
+				<!-- ==========[Lynians Boaboa tribe]==========-->
+				<!-- ==========[Lynians Boaboa colony]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_DunmerKind</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_DunmerPlayerColony</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>
