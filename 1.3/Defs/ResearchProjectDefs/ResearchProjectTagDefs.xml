@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Felyne]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_FelyneStart</defName>
+	</ResearchProjectTagDef>
+	<!-- ==========[Melynx]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_MelynxStart</defName>
+	</ResearchProjectTagDef>
+	<!-- ==========[Grimalkyne]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_GrimalkyneStart</defName>
+	</ResearchProjectTagDef>
+	<!-- ==========[Shakalaka]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_ShakalakaStart</defName>
+	</ResearchProjectTagDef>
+	<!-- ==========[Gajalaka]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_GajalakaStart</defName>
+	</ResearchProjectTagDef>
+	<!-- ==========[Boaboa]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_BoaboaStart</defName>
+	</ResearchProjectTagDef>
+</Defs>

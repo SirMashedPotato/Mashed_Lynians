@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Fur]========== -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>Mashed_Lynian_LynianFur</defName>
+		<label>lynian fur</label>
+		<description>Lynian fur, harvested from a cat-like lynian. Most people find this material horrifying. Some find it fascinating. Provides decent insulation, but not much in the way of protection.</description>
+		<graphicData>
+			<color>(246,223,179)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.44</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(246,223,179)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Thick Fur]========== -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>Mashed_Lynian_LynianThickFur</defName>
+		<label>lynian thickfur</label>
+		<description>Thick Lynian fur, harvested from a boaboa. Most people find this material horrifying. Some find it fascinating. Provides good resistance against the cold.</description>
+		<graphicData>
+			<color>(221,213,202)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.44</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(221,213,202)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Leather]========== -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>Mashed_Lynian_LynianLeather</defName>
+		<label>lynian leather</label>
+		<description>Lynian leather, harvested from a goblin-like lynian. Most people find this material horrifying. Provides decent protection, but not much in the way of insulation.</description>
+		<graphicData>
+			<color>(204,180,143)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.84</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(204,180,143)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+</Defs>

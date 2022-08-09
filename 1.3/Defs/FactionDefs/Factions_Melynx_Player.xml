@@ -3,11 +3,11 @@
 	<!-- Probably a good idea to set up some base defs -->
 	<!-- ==========[Arrivals]========== -->
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>Mashed_Lynian_FelynePlayerColony</defName>
-		<label>New Felyne Arrivals</label>
+		<defName>Mashed_Lynian_MelynxPlayerColony</defName>
+		<label>New Melynx Arrivals</label>
 		<description>A colony of recently-arrived off-worlders.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Mashed_Lynian_FelyneColonist</basicMemberKind>
+		<basicMemberKind>Mashed_Lynian_MelynxColonist</basicMemberKind>
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
@@ -23,16 +23,16 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_Player</factionIconPath>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 			<li>ClassicStart</li>
-			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 			<li>ClassicStart</li>
 			<li>ClassicStartTechprints</li>
-			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
 		</startingTechprintsResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
@@ -42,14 +42,14 @@
 	</FactionDef>
 	<!-- ==========[Tribal]========== -->
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>Mashed_Lynian_FelynePlayerTribe</defName>
-		<label>New Felyne Tribe</label>
-		<description>A small Felyne tribe.</description>
+		<defName>Mashed_Lynian_MelynxPlayerTribe</defName>
+		<label>New Melynx Tribe</label>
+		<description>A small Melynx tribe.</description>
 		<isPlayer>true</isPlayer>
 		<categoryTag>Tribal</categoryTag>
 		<pawnSingular>tribesman</pawnSingular>
 		<pawnsPlural>tribespeople</pawnsPlural>
-		<basicMemberKind>Mashed_Lynian_FelyneTribesperson</basicMemberKind>
+		<basicMemberKind>Mashed_Lynian_MelynxTribesperson</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<factionNameMaker>NamerFactionTribal</factionNameMaker>
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
@@ -66,18 +66,18 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_Player</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<geneticVariance>1</geneticVariance>
 		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>
 			<li>TribalStart</li>
-			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 			<li>TribalStart</li>
 			<li>TribalStartTechprints</li>
-			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
 		</startingTechprintsResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="BasePlayerPawnKind" Name="Mashed_Lynian_MelynxPlayerPawnKind_Base" Abstract="True">
+		<race>Mashed_Lynian_MelynxRace</race>
+		<combatPower>20</combatPower>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_MelynxPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_MelynxColonist</defName>
+		<label>colonist</label>
+		<defaultFactionType>Mashed_Lynian_MelynxPlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_MelynxPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_MelynxTribesperson</defName>
+		<label>member</label>
+		<defaultFactionType>Mashed_Lynian_MelynxPlayerTribe</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

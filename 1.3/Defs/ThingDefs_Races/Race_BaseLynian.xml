@@ -26,8 +26,8 @@
 			</li>
 		</tools>
 		<statBases>
-			<LeatherAmount>35</LeatherAmount>
 			<!-- TODO -->
+			<LeatherAmount>35</LeatherAmount>
 			<MarketValue>1700</MarketValue>
 			<MoveSpeed>4.8</MoveSpeed>
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
@@ -224,6 +224,7 @@
 		</statBases>
 		<race>
 			<body>Mashed_Lynian_CatLikeBody</body>
+			<leatherDef>Mashed_Lynian_LynianFur</leatherDef>
 		</race>
 		<alienRace>
 			<generalSettings>
@@ -231,6 +232,7 @@
 					<aliencrowntypes>
 						<li>Mashed_FelyneHead_Slim</li>
 						<li>Mashed_FelyneHead_Wide</li>
+						<li>Mashed_FelyneHead_Fluffy</li>
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Thin</li>
@@ -294,6 +296,9 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideEyes</li>
 							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</MissingBodyPart>
+							</hediffGraphics>
 						</li>
 						<!-- =====[Eye left]===== -->
 						<li>
@@ -308,8 +313,25 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideEyes</li>
 							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</MissingBodyPart>
+							</hediffGraphics>
 						</li>
 						<!-- =====[Tail]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Tail/Mashed_FelyneTail</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Tail</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>false</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideTail</li>
+							</hiddenUnderApparelTag>
+						</li>
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
@@ -317,6 +339,7 @@
 				<!-- https://github.com/erdelf/AlienRaces/wiki/Graphic-Paths -->
 				<li>
 					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
 				</li>
 			</graphicPaths>
 		</alienRace>
@@ -363,6 +386,7 @@
 		</statBases>
 		<race>
 			<body>Human</body>
+			<leatherDef>Mashed_Lynian_LynianLeather</leatherDef>
 		</race>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
