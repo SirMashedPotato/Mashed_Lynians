@@ -91,6 +91,10 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
+				<li>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
+				</li>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

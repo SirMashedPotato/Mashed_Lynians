@@ -339,10 +339,6 @@
 			</generalSettings>
 			<graphicPaths>
 				<!-- https://github.com/erdelf/AlienRaces/wiki/Graphic-Paths -->
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
-				</li>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

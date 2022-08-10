@@ -82,6 +82,10 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
+				<li>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Melynx/</body>
+				</li>
 			</graphicPaths>
 			<raceRestriction>
 				<traitList>
