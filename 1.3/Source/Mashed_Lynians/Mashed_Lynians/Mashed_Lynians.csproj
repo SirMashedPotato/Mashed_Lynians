@@ -56,6 +56,8 @@
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
+    <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />
+    <Compile Include="JoyGiver\JoyGiver_SmellFelvine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
     <Compile Include="Utility.cs" />
