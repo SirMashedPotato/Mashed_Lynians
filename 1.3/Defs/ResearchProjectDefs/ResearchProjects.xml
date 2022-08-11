@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Row 3]========== -->
+	<!-- ==========[Felvine sowing]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_FelvineSowing</defName>
+		<label>felvine sowing</label>
+		<description>Learn how to sow felvine plants, and process it into a consumable drug. Ingesting felvine has absolutely no effect for most races, however cat-like Lynians recieve quite an empowering high from it.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
+			<li>Mashed_Lynian_GrimalkyneStart</li>
+		</tags>
+	</ResearchProjectDef>
+</Defs>

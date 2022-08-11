@@ -53,8 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
+    <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DefOf\" />
