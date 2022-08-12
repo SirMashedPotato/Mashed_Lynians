@@ -12,7 +12,5 @@ namespace Mashed_Lynians
         }
 
         public List<ThingDef> guaranteedPilfers;
-        public HediffDef guaranteedPilferHediff;
-        public StatDef stat;
     }
 }

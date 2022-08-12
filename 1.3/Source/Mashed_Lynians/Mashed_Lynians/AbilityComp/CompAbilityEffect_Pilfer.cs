@@ -2,7 +2,6 @@
 using RimWorld;
 using System.Linq;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Mashed_Lynians
 {
@@ -20,37 +19,62 @@ namespace Mashed_Lynians
         {
             if (target.Thing != null && target.Thing is Pawn)
             {
-                Pawn p = target.Thing as Pawn;
-                if (!p.inventory.innerContainer.NullOrEmpty())
+                Pawn targetPawn = target.Thing as Pawn;
+                Pawn user = parent.pawn;
+                if (!targetPawn.inventory.innerContainer.NullOrEmpty())
                 {
-                    float chance = parent.pawn.GetStatValue(Props.stat);
+                    float chance = user.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance);
                     if (Rand.Chance(chance))
                     {
                         Thing pilferedItem;
                         if (!Props.guaranteedPilfers.NullOrEmpty())
                         {
-                            List<Thing> list = p.inventory.innerContainer.Where(x => Props.guaranteedPilfers.Contains(x.def)).ToList();
+                            List<Thing> list = targetPawn.inventory.innerContainer.Where(x => Props.guaranteedPilfers.Contains(x.def)).ToList();
                             if (list.Any())
                             {
                                 pilferedItem = list.RandomElement();
-                                FinalisePilfering(pilferedItem, p, parent.pawn);
-                                parent.pawn.health.AddHediff(Props.guaranteedPilferHediff);
+                                FinalisePilfering(pilferedItem, targetPawn, user);
+                                user.health.AddHediff(HediffDefOf.Mashed_Lynian_PilferedFelvine);
                                 return;
                             }
                           
                         }
-                        pilferedItem = p.inventory.innerContainer.RandomElement();
+                        pilferedItem = targetPawn.inventory.innerContainer.RandomElement();
                         if (pilferedItem != null)
                         {
-                            FinalisePilfering(pilferedItem, p, parent.pawn);
+                            FinalisePilfering(pilferedItem, targetPawn, user);
                             return;
                         }
                     }
                     else
                     {
-                        //TODO chance goes unnoticed
-                        //TODO damage relations
-                        Messages.Message("Mashed_Lynian_PilferFail".Translate(parent.pawn.Name), parent.pawn, MessageTypeDefOf.NegativeEvent);
+                        if (Rand.Chance(AvoidFailChance(user)))
+                        {
+                            Messages.Message("Mashed_Lynian_PilferFail".Translate(user.Name), parent.pawn, MessageTypeDefOf.NeutralEvent);
+                        } 
+                        else
+                        {
+                            Messages.Message("Mashed_Lynian_PilferCaught".Translate(user.Name), parent.pawn, MessageTypeDefOf.NegativeEvent);
+                            if (targetPawn.RaceProps.Humanlike && targetPawn.needs.mood != null)
+                            {
+                                targetPawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.Mashed_Lynian_AttemptedPilfer, user);
+                            }
+                            if (targetPawn.Faction != null && targetPawn.Faction != Faction.OfPlayer)
+                            {
+                                Faction.OfPlayer.TryAffectGoodwillWith(targetPawn.Faction, -15, true, true, HistoryEventDefOf.Mashed_Lynian_AttemptedPilfer);
+                            }
+                            else
+                            {
+                                if (targetPawn.RaceProps.Humanlike && Rand.Chance(0.5f))
+                                {
+                                    targetPawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
+                                }
+                                else
+                                {
+                                    targetPawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.PanicFlee);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -70,12 +94,17 @@ namespace Mashed_Lynians
 
         public override string ExtraTooltipPart()
         {
-            return "Mashed_Lynian_PilferDetails".Translate(parent.pawn.GetStatValue(Props.stat).ToStringPercent());
+            return "Mashed_Lynian_PilferDetails".Translate(parent.pawn.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance).ToStringPercent(), (1f - AvoidFailChance(parent.pawn)).ToStringPercent());
         }
 
         public override string ExtraLabelMouseAttachment(LocalTargetInfo target)
         {
-            return "Mashed_Lynian_PilferDetails".Translate(parent.pawn.GetStatValue(Props.stat).ToStringPercent());
+            return ExtraTooltipPart();
+        }
+
+        public float AvoidFailChance(Pawn pawn)
+        {
+            return pawn.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance) / 3;
         }
     }
 }

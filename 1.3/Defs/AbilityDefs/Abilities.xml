@@ -17,7 +17,6 @@
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<!--<warmupSound>AnimalCalm_Resolve</warmupSound>-->
-		<!-- TODO -->
 		<uiOrder>1</uiOrder>
 		<statBases>
 		</statBases>
@@ -27,8 +26,6 @@
 					<li>Mashed_Lynian_FelvinePowder</li>
 					<li>Mashed_Lynian_FelvineFlowers</li>
 				</guaranteedPilfers>
-				<guaranteedPilferHediff>Mashed_Lynian_PilferedFelvine</guaranteedPilferHediff>
-				<stat>Mashed_Lynian_PilferChance</stat>
 			</li>
 		</comps>
 		<verbProperties>
