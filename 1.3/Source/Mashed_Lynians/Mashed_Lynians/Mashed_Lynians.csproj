@@ -53,7 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\RecordDefOf.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
     <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />
@@ -61,9 +65,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DefOf\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Pilfering]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_PilferedNumber</defName>
+		<label>succesful pilfers</label>
+		<description>The number of a I have succesfully pilfered an item.</description>
+		<type>Int</type>
+	</RecordDef>
+	<RecordDef>
+		<defName>Mashed_Lynian_PilferedValue</defName>
+		<label>pilfer value</label>
+		<description>The total value of items I have pilfered.</description>
+		<type>Float</type>
+	</RecordDef>
+</Defs>

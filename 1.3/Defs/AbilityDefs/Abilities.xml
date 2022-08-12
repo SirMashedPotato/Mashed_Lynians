@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_Ability</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[Pilfer]==========-->
+	<AbilityDef>
+		<defName>Mashed_Lynian_PilferAbility</defName>
+		<label>pilfer</label>
+		<description>Attempt to steal something from the targets inventory. The stolen item is selected randomly, and items in a stack will have 10% of the stack size stolen.\n\nOf course if the target happens to have some felvine in their pockets...</description>
+		<iconPath>UI/Abilities/Mashed_Melynx_PilferAbility</iconPath>
+		<groupDef>Mashed_Lynian_Ability</groupDef>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<!--<warmupSound>AnimalCalm_Resolve</warmupSound>-->
+		<!-- TODO -->
+		<uiOrder>1</uiOrder>
+		<statBases>
+		</statBases>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_Pilfer">
+				<guaranteedPilfers>
+					<li>Mashed_Lynian_FelvinePowder</li>
+					<li>Mashed_Lynian_FelvineFlowers</li>
+				</guaranteedPilfers>
+				<guaranteedPilferHediff>Mashed_Lynian_PilferedFelvine</guaranteedPilferHediff>
+				<stat>Mashed_Lynian_PilferChance</stat>
+			</li>
+		</comps>
+		<verbProperties>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>0.5</warmupTime>
+			<verbClass>Mashed_Lynians.Verb_CastAbilityTouch_Pilfer</verbClass>
+			<targetParams>
+				<canTargetItems>false</canTargetItems>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>true</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+</Defs>

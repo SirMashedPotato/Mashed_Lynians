@@ -182,11 +182,6 @@
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ==========[Mashed_Lynian_BasePawn_CatLike]========== -->
 	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_Alien" Name="Mashed_Lynian_BasePawn_CatLike" Abstract="True">
-		<modExtensions>
-			<li Class="Mashed_Lynians.RaceProperties">
-				<canUseFelvine>True</canUseFelvine>
-			</li>
-		</modExtensions>
 		<tools>
 			<li>
 				<label>left paw</label>

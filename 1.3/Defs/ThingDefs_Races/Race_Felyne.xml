@@ -5,6 +5,9 @@
 		<label>felyne</label>
 		<description>TODO.</description>
 		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<canUseFelvine>True</canUseFelvine>
+			</li>
 		</modExtensions>
 		<statBases>
 		</statBases>

@@ -5,9 +5,14 @@
 		<label>melynx</label>
 		<description>TODO.</description>
 		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<canUseFelvine>True</canUseFelvine>
+				<hediffsToAdd>
+					<li>Mashed_Lynian_MelynxHediff</li>
+				</hediffsToAdd>
+			</li>
 		</modExtensions>
 		<statBases>
-			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
 		</statBases>
 		<comps>
 		</comps>
@@ -58,7 +63,7 @@
 									<!-- Standard melynx colour -->
 									<li>
 										<weight>5</weight>
-										<only>(257,244,238,255)</only>
+										<only>(255,244,238,255)</only>
 									</li>
 									<!-- Freedom Unite icon -->
 									<li>
