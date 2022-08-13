@@ -82,11 +82,12 @@ namespace Mashed_Lynians
 
         public static void FinalisePilfering(Thing pilferedItem, Pawn target, Pawn pilferer)
         {
+            int count = 1;
             if (pilferedItem.stackCount > 1)
             {
-                pilferedItem.SplitOff((int)(pilferedItem.stackCount * 0.9f));
+                count = (int)(pilferedItem.stackCount * 0.25f);
             }
-            target.inventory.innerContainer.TryDrop(pilferedItem, ThingPlaceMode.Near, out Thing newThing);
+            target.inventory.innerContainer.TryDrop(pilferedItem, ThingPlaceMode.Near, count, out Thing newThing);
             pilferer.records.Increment(RecordDefOf.Mashed_Lynian_PilferedNumber);
             pilferer.records.AddTo(RecordDefOf.Mashed_Lynian_PilferedValue, newThing.MarketValue * newThing.stackCount);
             Messages.Message("Mashed_Lynian_PilferSuccess".Translate(pilferer.Name, newThing.Label), newThing, MessageTypeDefOf.PositiveEvent);

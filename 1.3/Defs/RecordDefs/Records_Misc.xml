@@ -4,7 +4,7 @@
 	<RecordDef>
 		<defName>Mashed_Lynian_PilferedNumber</defName>
 		<label>succesful pilfers</label>
-		<description>The number of a I have succesfully pilfered an item.</description>
+		<description>The number of times I have succesfully pilfered an item.</description>
 		<type>Int</type>
 	</RecordDef>
 	<RecordDef>

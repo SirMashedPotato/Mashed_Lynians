@@ -127,6 +127,7 @@
 					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
 					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
 					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
+					<bodyMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneBodyMask</bodyMasks>
 				</li>
 			</graphicPaths>
 		</alienRace>

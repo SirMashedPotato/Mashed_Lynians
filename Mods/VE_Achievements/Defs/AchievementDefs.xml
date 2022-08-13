@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<AchievementsExpanded.AchievementDef Name="Mashed_AchievementLynians_Base" Abstract="True">
+		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
+		<tab>SMP_AchievementsTab</tab>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Colonists]========== -->
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_CatLikeColonists</defName>
+		<label>Lynian Fur-iends</label>
+		<description>Have one of each kind of like Lynian in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<requireAll>true</requireAll>
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_FelyneRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_MelynxRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_GrimalkyneRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_ShakalakaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_GajalakaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_BoaboaRace</key>
+					<value>1</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_CatLikeColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	-->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_FelyneColonists</defName>
+		<label>Peaceful Until Provoked</label>
+		<description>Have 12 Felynes in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_FelyneRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_FelyneColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_MelynxColonists</defName>
+		<label>Kleptomaniac Convention</label>
+		<description>Have 12 Melynx in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_MelynxRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_MelynxColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_GrimalkyneColonists</defName>
+		<label>Meowsters of the New World</label>
+		<description>Have 12 Grimalkyne in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_GrimalkyneRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_BoaboaeColonists</defName>
+		<label>Meownster Hunters</label>
+		<description>Have 12 Boaboa in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_BoaboaRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
+		<points>15</pointsMashed_AchievementLynians_BoaboaeColonists
+	</AchievementsExpanded.AchievementDef>-->
+	<!-- ==========[Crafting]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_CraftFelvine</defName>
+		<label>Felvine Fanatic</label>
+		<description>Craft felvine powder 100 times</description>
+		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
+		<tab>SMP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>Mashed_Lynian_FelvinePowder</def>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_CraftFelvine</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Pilfering]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PilferItems</defName>
+		<label>Meowster Pilferer</label>
+		<description>Have a single pawn succesfully pilfer items 50 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_PilferedNumber</def>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PilferItems</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PilferValue</defName>
+		<label>Greedy Paws</label>
+		<description>Have a single pawn succesfully pilfer $10,000 worth of items</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_PilferedValue</def>
+			<count>10000</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PilferValue</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PilferFelvine</defName>
+		<label>The Sweet Scent of Felvine</label>
+		<description>You probably should've seen that coming</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<def>Mashed_Lynian_PilferedFelvine</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PilferFelvine</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Trading]========== -->
+</Defs>
