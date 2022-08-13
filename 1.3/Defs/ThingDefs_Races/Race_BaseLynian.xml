@@ -245,45 +245,6 @@
 					</alienbodytypes>
 					<bodyAddons>
 						<!-- https://github.com/erdelf/AlienRaces/wiki/Body-Addons -->
-						<!-- =====[Ear right]===== -->
-						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Right</path>
-							<colorChannel>skin</colorChannel>
-							<bodyPart>right ear</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerInvert>false</layerInvert>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideCatEars</li>
-							</hiddenUnderApparelTag>
-						</li>
-						<!-- =====[Ear left]===== -->
-						<li>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Left</path>
-							<colorChannel>skin</colorChannel>
-							<bodyPart>left ear</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerInvert>false</layerInvert>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideCatEars</li>
-							</hiddenUnderApparelTag>
-						</li>
 						<!-- =====[Eye right]===== -->
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Mashed_FelyneEye_Right</path>
@@ -340,6 +301,56 @@
 			<graphicPaths>
 				<!-- https://github.com/erdelf/AlienRaces/wiki/Graphic-Paths -->
 			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ==========[Mashed_Lynian_BasePawn_CatLike_OldWorld]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike" Name="Mashed_Lynian_BasePawn_CatLike_OldWorld" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<bodyAddons>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>right ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>left ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ==========[Mashed_Lynian_BasePawn_GoblinLike]========== -->

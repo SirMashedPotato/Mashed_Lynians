@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike">
+		<defName>Mashed_Lynian_GrimalkyneRace</defName>
+		<label>grimalkyne</label>
+		<description>TODO.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<canUseFelvine>True</canUseFelvine>
+			</li>
+		</modExtensions>
+		<statBases>
+		</statBases>
+		<comps>
+		</comps>
+		<race>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<aliencrowntypes Inherit="False">
+						<li>Mashed_FelyneHead_Fluffy</li>
+					</aliencrowntypes>
+					<alienbodytypes Inherit="False">
+						<li>Thin</li>
+					</alienbodytypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<!-- =====[Main fur colour]===== -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Bugtrapper -->
+									<li>
+										<weight>1</weight>
+										<only>(168,157,134,255)</only>
+									</li>
+									<!-- Protector -->
+									<li>
+										<weight>1</weight>
+										<only>(71,71,71,255)</only>
+									</li>
+									<!-- Trouper -->
+									<li>
+										<weight>1</weight>
+										<only>(32,76,76,255)</only>
+									</li>
+									<!-- Plunderer -->
+									<li>
+										<weight>1</weight>
+										<only>(137,143,145,255)</only>
+									</li>
+								</options>
+							</first>
+							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Bugtrapper -->
+									<li>
+										<weight>1</weight>
+										<only>(115,100,86,255)</only>
+									</li>
+									<!-- Protector -->
+									<li>
+										<weight>1</weight>
+										<only>(147,147,147,255)</only>
+									</li>
+									<!-- Trouper -->
+									<li>
+										<weight>1</weight>
+										<only>(111,30,30,255)</only>
+									</li>
+									<!-- Plunderer -->
+									<li>
+										<weight>1</weight>
+										<only>(148,120,37,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>right ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>left ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
+					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

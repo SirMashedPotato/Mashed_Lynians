@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike">
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike_OldWorld">
 		<defName>Mashed_Lynian_MelynxRace</defName>
 		<label>melynx</label>
 		<description>TODO.</description>
@@ -20,6 +20,9 @@
 		</race>
 		<alienRace>
 			<generalSettings>
+				<notXenophobistTowards>
+				  <li>Mashed_Lynian_FelyneRace</li>
+			   </notXenophobistTowards>
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
