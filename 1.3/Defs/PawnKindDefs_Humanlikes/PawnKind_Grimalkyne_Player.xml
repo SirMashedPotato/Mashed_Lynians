@@ -10,6 +10,6 @@
 	<PawnKindDef ParentName="Mashed_Lynian_TribalPlayerPawnKind_Base">
 		<defName>Mashed_Lynian_GrimalkyneTribesperson</defName>
 		<race>Mashed_Lynian_GrimalkyneRace</race>
-		<defaultFactionType>Mashed_Lynian_GrimalkynePlayerColony</defaultFactionType>
+		<defaultFactionType>Mashed_Lynian_GrimalkynePlayerTribe</defaultFactionType>
 	</PawnKindDef>
 </Defs>
