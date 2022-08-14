@@ -119,6 +119,51 @@
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
 						</li>
+						<!-- =====[Mane]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Mane_Grimalkyne/Mashed_GrimalkyneMane</path>
+							<colorChannel>base</colorChannel>
+							<bodyPart>Neck</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>false</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>Neck</li>
+								<li>Shoulders</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideMane</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.28</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.28</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Tail]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Tail/Mashed_FelyneTail</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Tail</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>false</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideTail</li>
+							</hiddenUnderApparelTag>
+						</li>
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>

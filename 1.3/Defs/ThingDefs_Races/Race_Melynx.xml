@@ -93,6 +93,7 @@
 				<li>
 					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
 					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Melynx/</body>
+					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
 				</li>
 			</graphicPaths>
 			<raceRestriction>
