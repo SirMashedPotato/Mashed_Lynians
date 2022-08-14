@@ -38,7 +38,8 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<race>
-			<nameGenerator>NamerPersonCorunan</nameGenerator>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
 			<!-- probably overwritten in other defs -->
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
