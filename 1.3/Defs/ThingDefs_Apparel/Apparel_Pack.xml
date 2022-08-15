@@ -1,11 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+		<!-- ==========[Mashed_Lynian_Apparel_PackBase]========== -->
+
+	<ThingDef ParentName="ApparelBase" Name = "Mashed_Lynian_Apparel_PackBase" Abstract = "True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfDamaged>false</careIfDamaged>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<male> <scale>(1.25,1.25)</scale></male>
+				<east>
+					<male>
+						<offset>(-0.015,0)</offset>
+					</male>
+				</east>
+				<west>
+					<male>
+						<offset>(0.015,0)</offset>
+					</male>
+				</west>
+			</wornGraphicData>
+		</apparel>
+	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_AcornBackpack]========== -->
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
 		<defName>Mashed_Lynian_Apparel_AcornBackpack</defName>
 		<label>acorn backpack</label>
-		<description>A wooden backpack, made to resemble an acorn. Specially designed for Lynians.</description>
-		<techLevel>Neolithic</techLevel>
+		<description>A wooden backpack, made to resemble an acorn. Specially designed for Lynians, and is highly useful when travelling great distances.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<carryWeightIncrease>25</carryWeightIncrease>
@@ -14,13 +67,6 @@
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
 			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
-			</recipeUsers>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
 			<skillRequirements>
@@ -37,47 +83,52 @@
 		<costStuffCount>25</costStuffCount>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornBackpack/Mashed_AcornBackpack_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<statBases>
-			<WorkToMake>1200</WorkToMake>
-			<Mass>1</Mass>
-			<Flammability>1</Flammability>
-			<EquipDelay>1</EquipDelay>
-		</statBases>
-		<thingCategories>
-			<li>ApparelUtility</li>
-		</thingCategories>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornBackpack/Mashed_AcornBackpack</wornGraphicPath>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<careIfDamaged>false</careIfDamaged>
-			<bodyPartGroups>
-				<li>Torso</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Belt</li>
-			</layers>
 			<tags>
 				<li>Mashed_Lynian_FelyneTribal</li>
 			</tags>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<wornGraphicData>
-				<renderUtilityAsPack>true</renderUtilityAsPack>
-				<male> <scale>(1.25,1.25)</scale></male>
-				<east>
-					<male>
-						<offset>(-0.015,0)</offset>
-					</male>
-				</east>
-				<west>
-					<male>
-						<offset>(0.015,0)</offset>
-					</male>
-				</west>
-			</wornGraphicData>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_MelynxSatchel]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_MelynxSatchel</defName>
+		<label>Melynx satchel</label>
+		<description>A woven satchel, typically worn by Melynx. Specially designed for Lynians, and makes it easy to quickly hide pilfered goods.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxSatchel/Mashed_MelynxSatchel_Item</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxSatchel/Mashed_MelynxSatchel</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_MelynxTribal</li>
+			</tags>
 		</apparel>
 	</ThingDef>
 </Defs>
