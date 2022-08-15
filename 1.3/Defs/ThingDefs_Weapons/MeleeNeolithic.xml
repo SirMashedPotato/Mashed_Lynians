@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Weapon_TribalMeleeBase]========== -->
+	<ThingDef Name="Mashed_Lynian_Weapon_TribalMeleeBase" ParentName="BaseMeleeWeapon" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Mashed_Lynian_Tribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_PawClub]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_PawClub</defName>
+		<label>paw club</label>
+		<description>A paw shaped club, typically used by Melynx. Specially designed for Lynians, useful for reaching items others don't want reached.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Melynx_PawClub</texPath>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<equippedStatOffsets>
+			<!--<MiningSpeed>0.33</MiningSpeed>-->
+			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<Cloth>20</Cloth>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>paw</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_BasicPick]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_BasicPick</defName>
+		<label>rural pick</label>
+		<description>A small piece of bone fashioned into a pick, and attached to a stick, typically used by Felyne. Specially designed for Lynians, can prove somewhat useful when digging into rock.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Felyne_Pick</texPath>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<equippedStatOffsets>
+			<MiningSpeed>0.1</MiningSpeed>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_BoneSaw]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_BoneSaw</defName>
+		<label>bone saw</label>
+		<description>A piece of jawbone fashioned into a saw, and attached to a stick, typically used by Grimalkyne. Specially designed for Lynians, quite a formidable weapon in the right paws, and rather useful for traversing the wilderness.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Grimalkyne_Saw</texPath>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<equippedStatOffsets>
+			<ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_GrimalkyneEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

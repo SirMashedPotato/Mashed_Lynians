@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-		<!-- ==========[Mashed_Lynian_Apparel_PackBase]========== -->
-
-	<ThingDef ParentName="ApparelNoQualityBase" Name = "Mashed_Lynian_Apparel_PackBase" Abstract = "True">
+	<!-- ==========[Mashed_Lynian_Apparel_PackBase]========== -->
+	<ThingDef ParentName="ApparelNoQualityBase" Name="Mashed_Lynian_Apparel_PackBase" Abstract="True">
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
 			<recipeUsers>
@@ -43,7 +42,9 @@
 			</defaultOutfitTags>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
-				<male> <scale>(1.25,1.25)</scale></male>
+				<male>
+					<scale>(1.25,1.25)</scale>
+				</male>
 				<east>
 					<male>
 						<offset>(-0.015,0)</offset>
@@ -91,6 +92,7 @@
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornBackpack/Mashed_AcornBackpack</wornGraphicPath>
 			<tags>
+				<li>Mashed_Lynian_Tribal</li>
 				<li>Mashed_Lynian_FelyneTribal</li>
 			</tags>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -130,6 +132,7 @@
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxSatchel/Mashed_MelynxSatchel</wornGraphicPath>
 			<tags>
+				<li>Mashed_Lynian_Tribal</li>
 				<li>Mashed_Lynian_MelynxTribal</li>
 			</tags>
 		</apparel>

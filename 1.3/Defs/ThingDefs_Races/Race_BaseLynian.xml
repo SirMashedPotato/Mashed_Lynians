@@ -149,6 +149,11 @@
 					<li>Mashed_Lynian_Apparel_MelynxSatchel</li>
 					<li>Mashed_Lynian_Apparel_MelynxBandana</li>
 				</apparelList>
+				<weaponList>
+					<li>Mashed_Lynian_MeleeWeapon_PawClub</li>
+					<li>Mashed_Lynian_MeleeWeapon_BasicPick</li>
+					<li>Mashed_Lynian_MeleeWeapon_BoneSaw</li>
+				</weaponList>
 				<blackTraitList>
 				</blackTraitList>
 				<conceptList>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Lynian_Apparel_MelynxBandana]========== -->
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Mashed_Lynian_Apparel_MelynxBandana</defName>
 		<label>Melynx bandana</label>
@@ -53,6 +54,10 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_Tribal</li>
+				<li>Mashed_Lynian_MelynxTribal</li>
+			</tags>
 		</apparel>
 	</ThingDef>
 </Defs>
