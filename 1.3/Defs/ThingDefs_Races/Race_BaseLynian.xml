@@ -143,9 +143,9 @@
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
-				<!-- Apparel -->
 				<apparelList>
-					<!--<li>ESCP_Apparel_SloadHood</li>-->
+					<!--<li>Mashed_Lynian_Apparel_BasicApron</li>-->
+					<li>Mashed_Lynian_Apparel_AcornBackpack</li>
 				</apparelList>
 				<blackTraitList>
 				</blackTraitList>
@@ -233,7 +233,7 @@
 					<aliencrowntypes>
 						<li>Mashed_FelyneHead_Slim</li>
 						<li>Mashed_FelyneHead_Wide</li>
-						<li>Mashed_FelyneHead_Fluffy</li>
+						<!--<li>Mashed_FelyneHead_Fluffy</li>-->
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Thin</li>
@@ -262,6 +262,17 @@
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
 							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<!-- =====[Eye left]===== -->
 						<li>
@@ -280,6 +291,17 @@
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
 							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<!-- =====[Tail]===== -->
 						<li>
@@ -295,6 +317,17 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideTail</li>
 							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.28</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.28</layerOffset>
+								</east>
+							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -325,6 +358,17 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
@@ -345,6 +389,17 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>

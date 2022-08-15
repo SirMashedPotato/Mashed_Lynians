@@ -2,6 +2,7 @@
 using RimWorld;
 using System.Linq;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Mashed_Lynians
 {
@@ -59,7 +60,7 @@ namespace Mashed_Lynians
                             {
                                 targetPawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.Mashed_Lynian_AttemptedPilfer, user);
                             }
-                            if (targetPawn.Faction != null && targetPawn.Faction != Faction.OfPlayer)
+                            if (targetPawn.Faction != null)
                             {
                                 Faction.OfPlayer.TryAffectGoodwillWith(targetPawn.Faction, -15, true, true, HistoryEventDefOf.Mashed_Lynian_AttemptedPilfer);
                             }
@@ -85,7 +86,7 @@ namespace Mashed_Lynians
             int count = 1;
             if (pilferedItem.stackCount > 1)
             {
-                count = (int)(pilferedItem.stackCount * 0.25f);
+                count = Mathf.Clamp( (int)(pilferedItem.stackCount * 0.25f), 1, pilferedItem.stackCount);
             }
             target.inventory.innerContainer.TryDrop(pilferedItem, ThingPlaceMode.Near, count, out Thing newThing);
             pilferer.records.Increment(RecordDefOf.Mashed_Lynian_PilferedNumber);

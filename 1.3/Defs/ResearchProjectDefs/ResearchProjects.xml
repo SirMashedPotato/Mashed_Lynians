@@ -17,4 +17,47 @@
 			<li>Mashed_Lynian_GrimalkyneStart</li>
 		</tags>
 	</ResearchProjectDef>
+	<!-- ==========[Row 4]========== -->
+	<!-- ==========[Felyne equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_FelyneEquipment</defName>
+		<label>felyne equipment</label>
+		<description>Learn how to craft basic Felyne equipment at the Lynian crafting spot.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_FelyneStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Melynx equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_MelynxEquipment</defName>
+		<label>melynx equipment</label>
+		<description>Learn how to craft basic Melynx equipment at the Lynian crafting spot.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Grimalkyne equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_GrimalkyneEquipment</defName>
+		<label>grimalkyne equipment</label>
+		<description>Learn how to craft basic Grimalkyne equipment at the Lynian crafting spot.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_GrimalkyneStart</li>
+		</tags>
+	</ResearchProjectDef>
 </Defs>

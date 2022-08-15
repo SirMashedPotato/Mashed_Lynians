@@ -10,7 +10,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>Mashed_Lynian_FelvinePowder</defName>
 		<label>felvine powder</label>
-		<description>Felvine flowers crushed into a fine powder. Doesn't really do anything for most races, cat-like Lynians on the other hand are whipped into a short-lived frenzy. Excessive use can result in addiction.\n\nPowder can be produced at a crafting spot without equipment.</description>
+		<description>Felvine flowers crushed into a fine powder. Doesn't really do anything for most races, cat-like Lynians on the other hand are whipped into a short-lived frenzy. Excessive use can result in addiction.\n\nPowder can be produced at a Lynian crafting spot without equipment.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_Lynian_FelvineHighFrenzy</HediffDef>
 			<HediffDef>Mashed_Lynian_FelvineTolerance</HediffDef>
@@ -79,7 +79,7 @@
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_FelvineSowing</researchPrerequisite>
 			<recipeUsers>
-				<li>CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingSpot</li>
 				<li>DrugLab</li>
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>

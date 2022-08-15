@@ -98,6 +98,17 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
@@ -118,6 +129,17 @@
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<!-- =====[Mane]===== -->
 						<li>
@@ -148,21 +170,6 @@
 									<layerOffset>-0.28</layerOffset>
 								</east>
 							</offsets>
-						</li>
-						<!-- =====[Tail]===== -->
-						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Tail/Mashed_FelyneTail</path>
-							<colorChannel>skin</colorChannel>
-							<bodyPart>Tail</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerInvert>false</layerInvert>
-							<alignWithHead>false</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideTail</li>
-							</hiddenUnderApparelTag>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
