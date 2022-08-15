@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Mashed_Lynian_Apparel_MelynxBandana</defName>
+		<label>Melynx bandana</label>
+		<description>A woven bandana, typically worn by Melynx. Specially designed for Lynians, useful for hiding the telltale smirk of a successful pilfer.</description>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxBandana/Mashed_MelynxBandana_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.04</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Teeth</li>
+				<li>Mouth</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxBandana/Mashed_MelynxBandana</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+</Defs>

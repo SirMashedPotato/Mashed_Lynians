@@ -2,7 +2,7 @@
 <Defs>
 		<!-- ==========[Mashed_Lynian_Apparel_PackBase]========== -->
 
-	<ThingDef ParentName="ApparelBase" Name = "Mashed_Lynian_Apparel_PackBase" Abstract = "True">
+	<ThingDef ParentName="ApparelNoQualityBase" Name = "Mashed_Lynian_Apparel_PackBase" Abstract = "True">
 		<techLevel>Neolithic</techLevel>
 		<recipeMaker>
 			<recipeUsers>
@@ -38,6 +38,9 @@
 			<layers>
 				<li>Belt</li>
 			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<male> <scale>(1.25,1.25)</scale></male>
@@ -58,7 +61,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
 		<defName>Mashed_Lynian_Apparel_AcornBackpack</defName>
 		<label>acorn backpack</label>
-		<description>A wooden backpack, made to resemble an acorn. Specially designed for Lynians, and is highly useful when travelling great distances.</description>
+		<description>A wooden backpack, made to resemble an acorn. Specially designed for Lynians, it is highly useful when travelling great distances.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<carryWeightIncrease>25</carryWeightIncrease>
@@ -97,7 +100,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
 		<defName>Mashed_Lynian_Apparel_MelynxSatchel</defName>
 		<label>Melynx satchel</label>
-		<description>A woven satchel, typically worn by Melynx. Specially designed for Lynians, and makes it easy to quickly hide pilfered goods.</description>
+		<description>A woven satchel, typically worn by Melynx. Specially designed for Lynians, makes it easy to quickly hide pilfered goods.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<carryWeightIncrease>10</carryWeightIncrease>
