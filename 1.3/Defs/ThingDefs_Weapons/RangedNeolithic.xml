@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_Boomerang</defName>
+		<label>boomerang</label>
+		<description>Wood sculpted into a curved shape, creating a highly aerodynamic throwing weapon. A staple of Lynian tribes.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_Boomerang</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<relicChance>0</relicChance>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.32</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalRanged</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_Boomerang_Thrown</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>14.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_Boomerang_Thrown</defName>
+		<label>boomerang</label>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Lynian_Boomerang_Thrown</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
+</Defs>
