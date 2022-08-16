@@ -17,6 +17,17 @@
 			<li>Mashed_Lynian_GrimalkyneStart</li>
 		</tags>
 	</ResearchProjectDef>
+	<!-- ==========[Lynian Explosives]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_LynianExplosives</defName>
+		<label>Lynian explosives</label>
+		<description>Learn how to craft simple explosives at the Lynian crafting spot.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+	</ResearchProjectDef>
 	<!-- ==========[Row 4]========== -->
 	<!-- ==========[Felyne equipment]========== -->
 	<ResearchProjectDef>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="Mashed_Lynian_RangedWeapon_ExplosiveBase" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</defName>
+		<label>throwing barrel bomb</label>
+		<description>A small wooden barrel, filled with explosive materials. An uncommon weapon among most Lynian tribes, but quite devastating when utilised properly.</description>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_LynianExplosives</researchPrerequisite>
+		</recipeMaker>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_ThrowingBarrelBomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+			<WoodLog>30</WoodLog>
+			<Chemfuel>50</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<label>throw barrel bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>6.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>6</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Reloadable">
+				<maxCharges>3</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>barrels</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseFragGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defName>
+		<label>throwing barrel bomb</label>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Lynian_ThrowingBarrelBomb_Thrown</texPath>
+		</graphicData>
+		<projectile>
+			<explosionDelay>15</explosionDelay>
+		</projectile>
+	</ThingDef>
+</Defs>
