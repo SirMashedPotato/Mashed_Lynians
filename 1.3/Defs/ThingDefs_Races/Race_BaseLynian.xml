@@ -152,6 +152,7 @@
 					<li>Mashed_Lynian_MeleeWeapon_BoneSaw</li>
 					<li>Mashed_Lynian_RangedWeapon_Boomerang</li>
 					<li>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</li>
+					<li>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb</li>
 				</weaponList>
 				<blackTraitList>
 				</blackTraitList>
@@ -314,7 +315,7 @@
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Tail/Mashed_FelyneTail</path>
 							<colorChannel>skin</colorChannel>
 							<bodyPart>Tail</bodyPart>
-							<drawnInBed>true</drawnInBed>
+							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>false</alignWithHead>

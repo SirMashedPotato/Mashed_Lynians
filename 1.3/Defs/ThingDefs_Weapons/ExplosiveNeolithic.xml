@@ -14,9 +14,10 @@
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
 		</recipeMaker>
 	</ThingDef>
+	<!-- TODO base barrel bomb -->
 	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb]========== -->
 	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</defName>
@@ -33,14 +34,14 @@
 		<uiIconScale>1.5</uiIconScale>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<statBases>
-			<Mass>1</Mass>
-			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
 			<WorkToMake>12000</WorkToMake>
 		</statBases>
 		<costList>
-			<Steel>15</Steel>
-			<WoodLog>30</WoodLog>
-			<Chemfuel>50</Chemfuel>
+			<Steel>30</Steel>
+			<WoodLog>60</WoodLog>
+			<Chemfuel>80</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_TribalDestructive</li>
@@ -49,7 +50,7 @@
 			<li>Grenades</li>
 		</thingCategories>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
+			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
 		<verbs>
 			<li>
@@ -58,7 +59,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>6.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
-				<warmupTime>2.5</warmupTime>
+				<warmupTime>3.5</warmupTime>
 				<noiseRadius>6</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<soundCast>ThrowGrenade</soundCast>
@@ -74,22 +75,101 @@
 				<explosiveRadius>2.66</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
-			<li Class="CompProperties_Reloadable">
-				<maxCharges>3</maxCharges>
-				<destroyOnEmpty>true</destroyOnEmpty>
-				<chargeNoun>barrels</chargeNoun>
-				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defName>
+		<label>throwing barrel bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Lynian_ThrowingBarrelBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius >
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb</defName>
+		<label>throwing felvine bomb</label>
+		<description>A small wooden barrel, filled with felvine. An incredibly peculiar choice of weapon, as the clouds of felvine dust left behind are likely to whip Lynians caught within into a frenzy.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_FelvineSowing</li>
+				<li>Mashed_Lynian_LynianExplosives</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_ThrowingFelvineBomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<WoodLog>60</WoodLog>
+			<Mashed_Lynian_FelvinePowder>20</Mashed_Lynian_FelvinePowder>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<label>throw barrel bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>6.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>3.5</warmupTime>
+				<noiseRadius>6</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="BaseFragGrenadeProjectile">
-		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defName>
-		<label>throwing barrel bomb</label>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb_Thrown</defName>
+		<label>throwing felvine bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Mashed_Lynian_ThrowingBarrelBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<explosionDelay>15</explosionDelay>
+			<explosionRadius>1.9</explosionRadius >
+			<damageDef>Stun</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
+			<explosionDelay>0</explosionDelay>
 		</projectile>
 	</ThingDef>
 </Defs>

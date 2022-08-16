@@ -73,6 +73,7 @@
     <Compile Include="JoyGiver\JoyGiver_SmellFelvine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
+    <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
   </ItemGroup>
