@@ -144,6 +144,7 @@
 					<li>Mashed_Lynian_Apparel_AcornBackpack</li>
 					<li>Mashed_Lynian_Apparel_MelynxSatchel</li>
 					<li>Mashed_Lynian_Apparel_MelynxBandana</li>
+					<li>Mashed_Lynian_Apparel_PurrserkerHelmet</li>
 				</apparelList>
 				<weaponList>
 					<!-- TODO Possibly remove -->
@@ -153,6 +154,7 @@
 					<li>Mashed_Lynian_RangedWeapon_Boomerang</li>
 					<li>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</li>
 					<li>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb</li>
+					<li>Mashed_Lynian_MeleeWeapon_PurrserkerClub</li>
 				</weaponList>
 				<blackTraitList>
 				</blackTraitList>

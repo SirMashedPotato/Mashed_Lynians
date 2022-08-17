@@ -55,8 +55,72 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<tags>
-				<li>Mashed_Lynian_Tribal</li>
 				<li>Mashed_Lynian_MelynxTribal</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerHelmet]========== -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Mashed_Lynian_Apparel_PurrserkerHelmet</defName>
+		<label>purrserker helmet</label>
+		<description>A sturdy helmet, sculpted into the rough shape of a rodent skull. Specially designed for Lynians, fills the wearer with an unbridled fury, and is somewhat protective as well.</description>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerHelmet_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_LynianArmourTribal</li>
 			</tags>
 		</apparel>
 	</ThingDef>

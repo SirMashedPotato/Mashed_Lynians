@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Basic, Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GathererBase">
+		<defName>Mashed_Lynian_MelynxGatherer</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Hunter]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_HunterBase">
+		<defName>Mashed_Lynian_MelynxHunter</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TraderBase">
+		<defName>Mashed_Lynian_MelynxTrader</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_MelynxSatchel</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Warrior]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_WarriorBase">
+		<defName>Mashed_Lynian_MelynxWarrior</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BombadierBase">
+		<defName>Mashed_Lynian_MelynxBombadier</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Felvidier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_FelvidierBase">
+		<defName>Mashed_Lynian_MelynxFelvidier</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief melee]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ChiefMeleeBase">
+		<defName>Mashed_Lynian_MelynxChiefMelee</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief ranged]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ChiefRangedBase">
+		<defName>Mashed_Lynian_MelynxChiefRanged</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

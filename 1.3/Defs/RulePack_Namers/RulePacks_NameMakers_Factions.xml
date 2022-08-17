@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Cat-like faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionCatLike</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Paw Tribe</li>
+				<li>r_name->The [TerrainFeature] Tribe</li>
+			</rulesStrings>
+			<rulesFiles>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Cat-like settlement namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerSettlementCatLike</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [TerrainFeature]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

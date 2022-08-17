@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>Mashed_Lynian_FelynePlayerColony</li>
+				<li>Mashed_Lynian_FelynePlayerTribe</li>
+				<li>Mashed_Lynian_GrimalkynePlayerColony</li>
+				<li>Mashed_Lynian_GrimalkynePlayerTribe</li>
+				<li>Mashed_Lynian_MelynxPlayerColony</li>
+				<li>Mashed_Lynian_MelynxPlayerTribe</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+
