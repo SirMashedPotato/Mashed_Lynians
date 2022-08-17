@@ -71,4 +71,15 @@
 			<li>Mashed_Lynian_GrimalkyneStart</li>
 		</tags>
 	</ResearchProjectDef>
+	<!-- ==========[Row 5]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_PurrserkerEquipment</defName>
+		<label>purrserker equipment</label>
+		<description>Learn how to craft special Purrserker equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+	</ResearchProjectDef>
 </Defs>

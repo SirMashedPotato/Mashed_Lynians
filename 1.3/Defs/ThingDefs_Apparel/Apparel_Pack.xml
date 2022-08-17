@@ -135,4 +135,44 @@
 			</tags>
 		</apparel>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerBackPack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_PurrserkerBackPack</defName>
+		<label>purrserker backbone</label>
+		<description>A sturdy totem, sculpted into the rough shape of a bone. Specially designed for Lynians, fills the wearer with an unbridled fury, and even has a little satchel attached to it.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerBackPack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerBackPack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribalAdvanced</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
 </Defs>

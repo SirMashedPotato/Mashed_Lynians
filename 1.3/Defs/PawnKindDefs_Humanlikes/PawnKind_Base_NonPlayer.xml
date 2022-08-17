@@ -112,6 +112,7 @@
 		<apparelMoney>450~750</apparelMoney>
 		<apparelRequired>
 			<li>Mashed_Lynian_Apparel_PurrserkerHelmet</li>
+			<li>Mashed_Lynian_Apparel_PurrserkerBackPack</li>
 		</apparelRequired>
 		<weaponMoney>500~1000</weaponMoney>
 		<initialWillRange>3~5</initialWillRange>
@@ -127,7 +128,7 @@
 	<PawnKindDef ParentName="Mashed_Lynian_ChiefBase" Name="Mashed_Lynian_ChiefRangedBase" Abstract="True">
 		<label>thrower chief</label>
 		<weaponTags>
-			<li>Mashed_Lynian_TribalBoomerang</li>
+			<li>Mashed_Lynian_TribalBoomerangAdvanced</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>

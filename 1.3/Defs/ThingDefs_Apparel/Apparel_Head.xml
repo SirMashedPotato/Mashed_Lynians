@@ -62,7 +62,7 @@
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerHelmet]========== -->
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Mashed_Lynian_Apparel_PurrserkerHelmet</defName>
-		<label>purrserker helmet</label>
+		<label>purrserker skull helmet</label>
 		<description>A sturdy helmet, sculpted into the rough shape of a rodent skull. Specially designed for Lynians, fills the wearer with an unbridled fury, and is somewhat protective as well.</description>
 		<techLevel>Neolithic</techLevel>
 		<thingCategories>
@@ -81,9 +81,9 @@
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
-			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
+			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
@@ -120,7 +120,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<tags>
-				<li>Mashed_Lynian_LynianArmourTribal</li>
+				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
 		</apparel>
 	</ThingDef>
