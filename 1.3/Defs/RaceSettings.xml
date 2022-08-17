@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!--
-		Eventually replace/add in more specific pawnKinds
-		Especially for MO
-	-->
 	<AlienRace.RaceSettings>
 		<defName>Mashed_Lynian_RaceSettings</defName>
 		<pawnKindSettings>
@@ -68,9 +64,12 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Mashed_Lynian_FelyneTribesperson</li>
-								<li>Mashed_Lynian_MelynxTribesperson</li>
-								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
+								<li>Mashed_Lynian_FelyneGatherer</li>
+								<li>Mashed_Lynian_FelyneHunter</li>
+								<li>Mashed_Lynian_MelynxGatherer</li>
+								<li>Mashed_Lynian_MelynxHunter</li>
+								<li>Mashed_Lynian_GrimalkyneGatherer</li>
+								<li>Mashed_Lynian_GrimalkyneHunter</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
@@ -153,20 +152,54 @@
 			<!-- ==========[Wanderer joins]==========-->
 			<alienwandererkinds>
 				<!-- ==========[Vanilla player colony]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneColonist</li>
+								<li>Mashed_Lynian_MelynxColonist</li>
+								<li>Mashed_Lynian_GrimalkyneColonist</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
 				<!-- ==========[Vanilla player tribe]==========-->
-				<!-- ==========[Medieval Overhaul ___]==========-->
-				<li MayRequire="DankPyon.Medieval.Overhaul">
+				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
 								<li>Mashed_Lynian_FelyneTribesperson</li>
 								<li>Mashed_Lynian_MelynxTribesperson</li>
+								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerTribe</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Medieval Overhaul]==========-->
+				<li MayRequire="DankPyon.Medieval.Overhaul">
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneGatherer</li>
+								<li>Mashed_Lynian_FelyneHunter</li>
+								<li>Mashed_Lynian_MelynxGatherer</li>
+								<li>Mashed_Lynian_MelynxHunter</li>
+								
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 						<li>
 							<kindDefs>
-								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
+								<li>Mashed_Lynian_GrimalkyneGatherer</li>
+								<li>Mashed_Lynian_GrimalkyneHunter</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
