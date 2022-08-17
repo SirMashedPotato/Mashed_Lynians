@@ -7,7 +7,7 @@
 		</mods> 
 				
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+			<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 			<value>
 				<li>Mashed_Lynian_FelynePlayerColony</li>
 				<li>Mashed_Lynian_FelynePlayerTribe</li>

@@ -59,27 +59,6 @@
 						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
-				<!-- ==========[Medieval Overhaul]==========-->
-				<li MayRequire="DankPyon.Medieval.Overhaul">
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>Mashed_Lynian_FelyneGatherer</li>
-								<li>Mashed_Lynian_FelyneHunter</li>
-								<li>Mashed_Lynian_MelynxGatherer</li>
-								<li>Mashed_Lynian_MelynxHunter</li>
-								<li>Mashed_Lynian_GrimalkyneGatherer</li>
-								<li>Mashed_Lynian_GrimalkyneHunter</li>
-							</kindDefs>
-							<chance>5.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>DankPyon_PlayerKingdom</li>
-						<li>DankPyon_LoneWolf</li>
-						<li>DankPyon_MercenaryCompany</li>
-					</factionDefs>
-				</li>
 				<!-- ==========[Lynians Felyne tribe]==========-->
 				<li>
 					<pawnKindEntries>
@@ -181,33 +160,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PlayerTribe</li>
-					</factionDefs>
-				</li>
-				<!-- ==========[Medieval Overhaul]==========-->
-				<li MayRequire="DankPyon.Medieval.Overhaul">
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>Mashed_Lynian_FelyneGatherer</li>
-								<li>Mashed_Lynian_FelyneHunter</li>
-								<li>Mashed_Lynian_MelynxGatherer</li>
-								<li>Mashed_Lynian_MelynxHunter</li>
-								
-							</kindDefs>
-							<chance>10.0</chance>
-						</li>
-						<li>
-							<kindDefs>
-								<li>Mashed_Lynian_GrimalkyneGatherer</li>
-								<li>Mashed_Lynian_GrimalkyneHunter</li>
-							</kindDefs>
-							<chance>5.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>DankPyon_PlayerKingdom</li>
-						<li>DankPyon_LoneWolf</li>
-						<li>DankPyon_MercenaryCompany</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Felyne tribe]==========-->
