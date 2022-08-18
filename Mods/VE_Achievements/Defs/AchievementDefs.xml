@@ -89,10 +89,9 @@
 		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_BoaboaColonists</defName>
-		<label>Meownster Hunters</label>
+		<label>The Abominable Lynian</label>
 		<description>Have 12 Boaboa in your colony at the same time</description>
 		<tracker Class="AchievementsExpanded.RaceDefTracker">
 			<raceDefs>
@@ -103,8 +102,9 @@
 			</raceDefs>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
-		<points>15</pointsMashed_AchievementLynians_BoaboaColonists
+		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
+	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_ShakalakaColonists</defName>
 		<label>Boom Shaka-laka-laka</label>
