@@ -68,7 +68,7 @@
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase" Name="Mashed_Lynian_NonPlayerCatLikeFactionBase" Abstract="True">
 		<factionNameMaker>Mashed_Lynian_NamerFactionCatLike</factionNameMaker>
 		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
-		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<raidLootMaker>Mashed_Lynian_CatLikeRaidLootMaker</raidLootMaker>
 	</FactionDef>
 	<!-- ==========[Cat-like Loot Maker]==========-->
 	<ThingSetMakerDef>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Boaboa Loot Maker]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Lynian_BoaboaRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Silver</li>
+						<li>Jade</li>
+						<li>MedicineHerbal</li>
+						<li>Pemmican</li>
+						<li>Leather_Wolf</li>
+						<li>Leather_Panthera</li>
+						<li>Leather_Bluefur</li>
+						<li>Leather_Bear</li>
+						<li>Leather_Fox</li>
+						<li>Leather_Heavy</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

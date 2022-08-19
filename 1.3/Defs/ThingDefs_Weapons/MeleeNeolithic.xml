@@ -45,7 +45,6 @@
 			<li>MeleeBlunt</li>
 		</weaponClasses>
 		<equippedStatOffsets>
-			<!--<MiningSpeed>0.33</MiningSpeed>-->
 			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
 		</equippedStatOffsets>
 		<statBases>
@@ -240,6 +239,65 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+<!-- ==========[Mashed_Lynian_MeleeWeapon_PawClub]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_BoaboaClub</defName>
+		<label>Boaboa club</label>
+		<description>A heavy club covered in animal pelt, typically used by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Boaboa_Hammer</texPath>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<equippedStatOffsets>			
+			<HuntingStealth>0.05</HuntingStealth>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<Leather_Heavy>10</Leather_Heavy>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>

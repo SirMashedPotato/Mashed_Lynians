@@ -15,24 +15,28 @@
 				<li>Mashed_Lynian_CraftingSpot</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_LynianExplosives</li>
+			</researchPrerequisites>
 		</recipeMaker>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
 	</ThingDef>
-	<!-- TODO base barrel bomb -->
 	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb]========== -->
 	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</defName>
 		<label>throwing barrel bomb</label>
 		<description>A small wooden barrel, filled with explosive materials. An uncommon weapon among most Lynian tribes, but quite devastating when utilised properly.</description>
-		<recipeMaker>
-			<researchPrerequisite>Mashed_Lynian_LynianExplosives</researchPrerequisite>
-		</recipeMaker>
-		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_ThrowingBarrelBomb</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
-		<soundInteract>Interact_Grenade</soundInteract>
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
@@ -46,9 +50,6 @@
 		<weaponTags>
 			<li>Mashed_Lynian_TribalDestructive</li>
 		</weaponTags>
-		<thingCategories>
-			<li>Grenades</li>
-		</thingCategories>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
@@ -86,7 +87,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<explosionRadius>1.9</explosionRadius >
+			<explosionRadius>1.9</explosionRadius>
 			<damageDef>Bomb</damageDef>
 			<!-- Use default damage from explosion def -->
 			<explosionDelay>0</explosionDelay>
@@ -100,16 +101,12 @@
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Lynian_FelvineSowing</li>
-				<li>Mashed_Lynian_LynianExplosives</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_ThrowingFelvineBomb</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
-		<soundInteract>Interact_Grenade</soundInteract>
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
@@ -123,9 +120,6 @@
 		<weaponTags>
 			<li>Mashed_Lynian_TribalFelvine</li>
 		</weaponTags>
-		<thingCategories>
-			<li>Grenades</li>
-		</thingCategories>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
@@ -165,11 +159,77 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<explosionRadius>1.9</explosionRadius >
+			<explosionRadius>1.9</explosionRadius>
 			<damageDef>Stun</damageDef>
 			<!-- Use default damage from explosion def -->
 			<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
 			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel</defName>
+		<label>Boaboa explosive satchel</label>
+		<description>A pelt satchel, filled with explosive materials. Often used by Boaboa when stealth is no longer an option.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_ThrowingSatchel</texPath>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_BoaboaEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Leather_Heavy>30</Leather_Heavy>
+			<Chemfuel>60</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalDestructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw explosive satchel</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel_Thrown</defName>
+		<label>Boaboa explosive satchel</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Boaboa_ThrowingSatchel_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
 		</projectile>
 	</ThingDef>
 </Defs>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Lynian_RangedWeapon_Boomerang]========== -->
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoomerangBase]========== -->
 	<ThingDef ParentName="BaseWeaponNeolithic" Name="Mashed_Lynian_RangedWeapon_BoomerangBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -16,7 +16,7 @@
 			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>Mashed_Lynian_TribalRanged</li>		
+			<li>Mashed_Lynian_TribalRanged</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>Ranged</li>
@@ -103,8 +103,8 @@
 		</graphicData>
 		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
-		  <li>Woody</li>
-		  <li>Stony</li>
+			<li>Woody</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.05</PainShockThreshold>
@@ -155,6 +155,179 @@
 			<damageAmountBase>14</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaJavelin]========== -->
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaJavelin</defName>
+		<label>Boaboa javelin</label>
+		<description>Sturdy, yet primitive, javelins, typically used by Boaboa. Specially designed for Lynians, oddly quiet when thrown, useful when out on the hunt.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_Javelin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<WoodLog>70</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.32</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalRanged</li>
+			<li>Mashed_Lynian_BoaboaTribalJavelin</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_BoaboaJavelin_Thrown</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>24.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaJavelin_Thrown</defName>
+		<label>Boaboa javelin</label>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Boaboa_Javelin_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.10</armorPenetrationBase>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingShard]========== -->
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard</defName>
+		<label>Boaboa throwing shard</label>
+		<description>Light throwing shards, typically used by Boaboa. Specially designed for Lynians, oddly quiet when thrown, useful when out on the hunt.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_ThrowingShard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalRanged</li>
+			<li>Mashed_Lynian_BoaboaTribalThrowingShard</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard_Thrown</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>10.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard_Thrown</defName>
+		<label>Boaboa throwing shard</label>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Boaboa_ThrowingShard_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
 			<speed>26</speed>
 		</projectile>
 	</ThingDef>
