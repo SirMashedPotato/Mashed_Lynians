@@ -148,7 +148,7 @@
 			<count>100</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_CraftFelvine</texPath>
-		<points>15</points>
+		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- Hediffs -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
@@ -160,7 +160,7 @@
 			<count>25</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_FelvineHighs</texPath>
-		<points>15</points>
+		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Pilfering]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
@@ -172,7 +172,7 @@
 			<count>50</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_PilferItems</texPath>
-		<points>15</points>
+		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PilferValue</defName>

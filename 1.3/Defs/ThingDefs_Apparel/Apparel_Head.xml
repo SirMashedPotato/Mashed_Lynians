@@ -129,6 +129,11 @@
 		<defName>Mashed_Lynian_Apparel_BoaboaMask</defName>
 		<label>Boaboa pelt mask</label>
 		<description>A thick pelt mask, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isBoaboaMask>true</isBoaboaMask>
+			</li>
+		</modExtensions>
 		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>

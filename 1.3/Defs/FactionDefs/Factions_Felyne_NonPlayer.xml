@@ -9,6 +9,9 @@
 			<li>(0.85, 0.75, 0.37)</li>
 			<li>(0.94, 0.61, 0.06)</li>
 		</colorSpectrum>
+		<requiredMemes MayRequire="Ludeon.RimWorld.Ideology">
+			<li>Collectivist</li>
+		</requiredMemes>
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights, ranged with melee mix-ins -->
@@ -112,7 +115,8 @@
 				<kindDef>Miners</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<Mashed_Lynian_FelyneGatherer>1</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_FelyneGatherer>2</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_FelyneBombadier>1</Mashed_Lynian_FelyneBombadier>
 					<Mashed_Lynian_MelynxGatherer>0.1</Mashed_Lynian_MelynxGatherer>
 				</options>
 			</li>

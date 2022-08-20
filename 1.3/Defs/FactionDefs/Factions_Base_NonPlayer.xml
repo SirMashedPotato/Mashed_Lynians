@@ -70,6 +70,15 @@
 		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
 		<raidLootMaker>Mashed_Lynian_CatLikeRaidLootMaker</raidLootMaker>
 	</FactionDef>
+	<!-- ==========[Hostile Base]==========-->
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase" Name="Mashed_Lynian_NonPlayerHostileFactionBase" Abstract="True">
+		<factionNameMaker>Mashed_Lynian_NamerFactionCatLike</factionNameMaker>
+		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
+		<naturalEnemy>true</naturalEnemy>
+		<requiredMemes MayRequire="Ludeon.RimWorld.Ideology">
+			<li>Supremacist</li>
+		</requiredMemes>
+	</FactionDef>
 	<!-- ==========[Cat-like Loot Maker]==========-->
 	<ThingSetMakerDef>
 		<defName>Mashed_Lynian_CatLikeRaidLootMaker</defName>

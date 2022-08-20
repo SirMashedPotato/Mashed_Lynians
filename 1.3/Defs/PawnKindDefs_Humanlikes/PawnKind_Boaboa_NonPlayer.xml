@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<PawnKindDef Name="Mashed_Lynian_BoaboaKindBase" Abstract="True">
+		<maxGenerationAge>60</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<race>Mashed_Lynian_BoaboaRace</race>
+		<defaultFactionType>Mashed_Lynian_BoaboaPlayerColony</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_BoaboaTribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_BoaboaMask</li>
+			<li>Mashed_Lynian_Apparel_BoaboaCoat</li>
+		</apparelRequired>
+		<!--
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>ESCP_DunmerAshlanderBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		-->
+	</PawnKindDef>
+	<!-- ==========[Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaKindBase">
+		<defName>Mashed_Lynian_BoaboaGatherer</defName>
+		<label>gatherer</label>
+		<combatPower>40</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalThrowingShard</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	<!-- ==========[Hunter]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaKindBase">
+		<defName>Mashed_Lynian_BoaboaHunter</defName>
+		<label>hunter</label>
+		<combatPower>45</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>110~130</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalJavelin</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaKindBase">
+		<defName>Mashed_Lynian_BoaboaTrader</defName>
+		<label>trader</label>
+		<trader>true</trader>
+		<combatPower>60</combatPower>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<weaponMoney>100~100</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalThrowingShard</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	<!-- ==========[Warrior]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaKindBase">
+		<defName>Mashed_Lynian_BoaboaWarrior</defName>
+		<label>warrior</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribal</li>
+		</weaponTags>
+		<weaponMoney>300~300</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaKindBase">
+		<defName>Mashed_Lynian_BoaboaBombadier</defName>
+		<label>bombadier</label>
+		<combatPower>75</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponMoney>360~400</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalDestructive</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaKindBase" Name="Mashed_Lynian_BoaboaChiefBase" Abstract="True">
+		<combatPower>85</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>450~750</apparelMoney>
+		<weaponMoney>500~1000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>19~30</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaChiefBase">
+		<defName>Mashed_Lynian_BoaboaChiefMelee</defName>
+		<label>warrior chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribal</li>
+		</weaponTags>
+		<initialResistanceRange>38~58</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_BoaboaChiefBase">
+		<defName>Mashed_Lynian_BoaboaChiefRanged</defName>
+		<label>hunter chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalJavelin</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+</Defs>
