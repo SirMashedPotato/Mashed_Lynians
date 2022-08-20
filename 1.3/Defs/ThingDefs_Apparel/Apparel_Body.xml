@@ -53,4 +53,61 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 	-->
+	<!-- ==========[Mashed_Lynian_Apparel_BoaboaCoat]========== -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Mashed_Lynian_Apparel_BoaboaCoat</defName>
+		<label>Boaboa pelt coat</label>
+		<description>A thick pelt coat, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Leather_Heavy>50</Leather_Heavy>
+		</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>4500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>4.0</Mass>
+			<Flammability>0.8</Flammability>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
+			<Insulation_Heat>-15</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Mashed_Lynian_BoaboaTribal</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 </Defs>
