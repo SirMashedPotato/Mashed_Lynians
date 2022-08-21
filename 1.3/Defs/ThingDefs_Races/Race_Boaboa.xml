@@ -6,11 +6,17 @@
 		<description>TODO.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
-				<canUseFelvine>True</canUseFelvine>
 			</li>
 		</modExtensions>
 		<statBases>
-			<!-- cold temp resistance, butchering, hunting -->
+			<!-- 5 lower than cat-like lynians -->
+			<ComfyTemperatureMax>25</ComfyTemperatureMax>
+			<!-- 10 lower than cat-like lynians -->
+			<ComfyTemperatureMin>2</ComfyTemperatureMin>
+			<!-- 0.1 higher than base -->
+			<AnimalGatherSpeed>1.1</AnimalGatherSpeed>
+			<!-- 0.1 higher than base -->
+			<ButcheryFleshSpeed>1.1</ButcheryFleshSpeed>
 		</statBases>
 		<comps>
 		</comps>

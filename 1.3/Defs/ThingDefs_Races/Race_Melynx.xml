@@ -13,7 +13,12 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<!-- nimbleness and movement -->
+			<!-- 0.2 faster than other lynians -->
+			<MoveSpeed>5.0</MoveSpeed>
+			<!-- 0.1 higher than base -->
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<!-- 0.2 lower than base -->
+			<PawnTrapSpringChance>0.8</PawnTrapSpringChance>
 		</statBases>
 		<comps>
 		</comps>

@@ -10,7 +10,12 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<!-- generic work stats -->
+			<!-- 0.05 lower than base -->
+			<MentalBreakThreshold>0.3</MentalBreakThreshold>
+			<!-- 0.1 higher than base -->
+			<NegotiationAbility>1.1</NegotiationAbility>
+			<!-- 0.1 higher than base -->
+			<GeneralLaborSpeed>1.1</GeneralLaborSpeed>
 		</statBases>
 		<comps>
 		</comps>

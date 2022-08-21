@@ -8,7 +8,7 @@
 	<!-- ==========[Colonists]========== -->
 	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
-		<defName>Mashed_AchievementLynians_CatLikeColonists</defName>
+		<defName>Mashed_AchievementLynians_AllKindsColonists</defName>
 		<label>Lynian Fur-iends</label>
 		<description>Have one of each kind of Lynian in your colony at the same time</description>
 		<tracker Class="AchievementsExpanded.RaceDefTracker">
@@ -40,7 +40,7 @@
 				</li>
 			</raceDefs>
 		</tracker>
-		<texPath>Achievements/Mashed_AchievementLynians_CatLikeColonists</texPath>
+		<texPath>Achievements/Mashed_AchievementLynians_AllKindsColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	-->
@@ -127,7 +127,7 @@
 		<tracker Class="AchievementsExpanded.RaceDefTracker">
 			<raceDefs>
 				<li>
-					<key>Mashed_Lynian_BoaboaRace</key>
+					<key>Mashed_Lynian_GajalakaRace</key>
 					<value>12</value>
 				</li>
 			</raceDefs>

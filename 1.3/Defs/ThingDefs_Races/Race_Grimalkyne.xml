@@ -10,7 +10,12 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<!-- gathering and travel related -->
+			<!-- 0.1 higher than base -->
+			<RestRateMultiplier>1.1</RestRateMultiplier>
+			<!-- 0.1 higher than base -->
+			<PlantWorkSpeed>1.1</PlantWorkSpeed>
+			<!-- 0.2 lower than base -->
+			<ToxicSensitivity>0.8</ToxicSensitivity>
 		</statBases>
 		<comps>
 		</comps>
