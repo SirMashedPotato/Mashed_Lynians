@@ -67,6 +67,10 @@
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_BoaboaThought.cs" />
+    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_GajalakaThought.cs" />
+    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_GenericThought.cs" />
+    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_ShakalakaThought.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
     <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />

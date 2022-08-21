@@ -147,7 +147,6 @@
 					<li>Mashed_Lynian_Apparel_PurrserkerHelmet</li>
 				</apparelList>
 				<weaponList>
-					<!-- TODO Possibly remove -->
 					<li>Mashed_Lynian_MeleeWeapon_PawClub</li>
 					<li>Mashed_Lynian_MeleeWeapon_BasicPick</li>
 					<li>Mashed_Lynian_MeleeWeapon_BoneSaw</li>
@@ -171,7 +170,6 @@
 				<isSentient>true</isSentient>
 				<hasBlood>true</hasBlood>
 			</compatibility>
-			<!-- Possibly overwrite for some -->
 			<styleSettings>
 				<li>
 					<key>HairDef</key>

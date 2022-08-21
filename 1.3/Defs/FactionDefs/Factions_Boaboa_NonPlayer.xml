@@ -11,11 +11,14 @@
 		</colorSpectrum>
 		<caravanTraderKinds Inherit="False"/>
 		<raidLootMaker>Mashed_Lynian_BoaboaRaidLootMaker</raidLootMaker>
-		<!--
-		<disallowedPrecepts MayRequire="Ludeon.RimWorld.Ideology">
-			<li></li>
+		<disallowedMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Shakalaka</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Gajalaka</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Generic</li>
 		</disallowedPrecepts>
-		-->
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights, ranged with melee mix-ins -->

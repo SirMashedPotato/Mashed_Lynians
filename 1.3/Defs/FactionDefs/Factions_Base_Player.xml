@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Base base]========== -->
+	<FactionDef ParentName="PlayerFactionBase" Name="Mashed_Lynian_PlayerFactionBase" Abstract="True">
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+	</FactionDef>
 	<!-- ==========[Outlander base]========== -->
-	<FactionDef ParentName="PlayerFactionBase" Name="Mashed_Lynian_OutlanderFactionBase" Abstract="True">
+	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_OutlanderFactionBase" Abstract="True">
 		<description>A colony of recently-arrived off-worlders.</description>
 		<isPlayer>true</isPlayer>
 		<pawnSingular>colonist</pawnSingular>
@@ -34,7 +41,7 @@
 		</apparelStuffFilter>
 	</FactionDef>
 	<!-- ==========[Tribal base]========== -->
-	<FactionDef ParentName="PlayerFactionBase" Name="Mashed_Lynian_TribalFactionBase" Abstract="True">
+	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_TribalFactionBase" Abstract="True">
 		<isPlayer>true</isPlayer>
 		<categoryTag>Tribal</categoryTag>
 		<pawnSingular>tribesman</pawnSingular>
@@ -75,7 +82,7 @@
 		</recipePrerequisiteTags>
 	</FactionDef>
 	<!-- ==========[Medieval base]========== -->
-	<FactionDef ParentName="PlayerFactionBase" Name="Mashed_Lynian_MedievalFactionBase" Abstract="True">
+	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_MedievalFactionBase" Abstract="True">
 		<isPlayer>true</isPlayer>
 		<categoryTag>Medieval</categoryTag>
 		<pawnSingular>subject</pawnSingular>

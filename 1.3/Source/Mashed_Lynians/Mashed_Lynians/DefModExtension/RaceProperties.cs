@@ -5,6 +5,7 @@ namespace Mashed_Lynians
 {
     public class RaceProperties : DefModExtension
     {
+        public bool isLynian = true;
         public bool canUseFelvine = true;
         public List<HediffDef> hediffsToAdd;
 

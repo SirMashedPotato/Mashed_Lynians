@@ -57,6 +57,7 @@
 			<tags>
 				<li>Mashed_Lynian_MelynxTribal</li>
 			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerHelmet]========== -->
@@ -122,6 +123,7 @@
 			<tags>
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_BoaboaMask]========== -->
@@ -191,6 +193,7 @@
 			<tags>
 				<li>Mashed_Lynian_BoaboaTribal</li>
 			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 </Defs>

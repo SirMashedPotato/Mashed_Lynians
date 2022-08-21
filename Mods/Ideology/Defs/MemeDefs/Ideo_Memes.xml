@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MemeDef>
+		<defName>Mashed_Lynian_MaskWearingMeme</defName>
+		<label>mask wearing</label>
+		<description>Masks are sources of strength, power, and identity. Anyone not wearing a mask is not truly themselves, or is destined to ill luck.\n\n&lt;color=#E5E54C&gt;Gameplay effects:&lt;/color&gt;\n - Lynians gain a sizeable mood debuff for not wearing appropriate headgear after the colony has been around for 15 days.</description>
+		<iconPath>UI/Memes/Mashed_MaskWearingMeme</iconPath>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->honourable</li>
+				<li>memeAdjective->fierce</li>
+				<li>memeAdjective->brave</li>
+				<li>memeLeaderAdjective->honourable</li>
+				<li>memeLeaderAdjective->fearless</li>
+				<li>memeLeaderAdjective->undaunted</li>
+				<li>memeLeaderAdjective->unflinching</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->masked</li>
+				<li>memeConcept->honour</li>
+				<li>memeConcept->courage</li>
+				<li>memeConcept->masks</li>
+				<li>memeConcept->protection</li>
+				<li>memeConcept->crafting</li>
+				<li>memeConcept->hunting</li>
+				<li>memeConcept->adventuring</li>
+				<li>memeLeaderNoun->warrior</li>
+				<li>memeLeaderNoun->hunter</li>
+				<li>memeLeaderNoun->chief</li>
+				<li>memeLeaderNoun->adventurer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_MaskWearingMeme)        ->[deity0_name], our creator, wore an exquisite mask, a mask unlike any other to ever exist.</li>
+					<li>episode(uses=1,tag=meme_MaskWearingMeme)  ->In order to prove our loyalty to [deity0_name], we attempted to create a worthy mask. We spent hours each day, toiling away in the [altarRoomLabel]. It took years, but finally [founderName] prevailed, and created the Ultimate Mask.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_MaskWearingMeme)           ->[deity0_name] created [place_summary] [place_name], and hid within a blessed mask.</li>
+					<li>conflict(tag=meme_MaskWearingMeme)        ->We gained word that the site of this blessed mask had been uncovered by [foeLeader].</li>
+					<li>founderJoin(tag=meme_MaskWearingMeme)     ->So [founderName] took charge, leading us on a great, and dangerous, journey. Our goal, to find the Mask of [deity0_name], before [foeLeader] could.</li>
+					<li>victory(tag=meme_MaskWearingMeme)         ->The [memberNamePlural], lead by [founderName] were succesful. We secured the mask, and as a reward, [deity0_name] bestowed the Ultimate Mask to [founderName], and banished [foeLeader] and their followers.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_MaskWearingMeme)           ->[founderName], but a young child, set out on a great journey. [founder_possessive] goal, to find the Ultimate Mask.</li>
+					<li>story(uses=1,tag=meme_MaskWearingMeme)    ->Eventually [founderName] reached [place_summary] [place_name], with the help of some minions of course, and claimed the Ultimate Mask.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_MaskWearingMeme)    ->The Archotechs created great structures and items, including the most powerful mask to have ever existed.</li>
+					<li>archistFact(tag=meme_MaskWearingMeme)     ->Archotechs created the Ultimate Mask, as a means of communicating with them.</li>
+					<li>archistProphecy(tag=meme_MaskWearingMeme) ->[inTheEnd], the one that wears the Ultimate Mask will ascend to godhood, and bring their people with them.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_MaskWearingMeme)    ->The spirits of nature are tainted by our thoughts.</li>
+					<li>animistFact(tag=meme_MaskWearingMeme)     ->We must wear masks to protect these spirits.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>Mashed_Lynian_MaskWearing_Boaboa</li>
+				<li>Mashed_Lynian_MaskWearing_Shakalaka</li>
+				<li>Mashed_Lynian_MaskWearing_Gajalaka</li>
+				<li>Mashed_Lynian_MaskWearing_Generic</li>
+			</li>
+		</requireOne>
+	</MemeDef>
+</Defs>

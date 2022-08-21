@@ -9,8 +9,8 @@
 			<li>(0.85, 0.75, 0.37)</li>
 			<li>(0.94, 0.61, 0.06)</li>
 		</colorSpectrum>
-		<requiredMemes MayRequire="Ludeon.RimWorld.Ideology">
-			<li>Collectivist</li>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 		</requiredMemes>
 		<pawnGroupMakers>
 			<li>
