@@ -8,7 +8,6 @@ namespace Mashed_Lynians
         public float carryWeightIncrease = 0f;
         public List<float> qualityCarryWeightMults;
 
-        public bool isLynianApparel = true;
         public bool isBoaboaMask = false;
         public bool isShakalakaMask = false;
         public bool isGajalakaMask = false;

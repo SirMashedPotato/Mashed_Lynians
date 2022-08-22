@@ -169,8 +169,8 @@
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>15</Insulation_Cold>
-			<Insulation_Heat>-10</Insulation_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>-5</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

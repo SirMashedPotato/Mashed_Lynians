@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
 using System.Text;
-using UnityEngine;
 using Verse;
 using System.Reflection;
 using RimWorld;
@@ -19,6 +16,9 @@ namespace Mashed_Lynians
         }
     }
 
+    /// <summary>
+    /// Just adds hediffs to pawns when they are generated.
+    /// </summary>
     [HarmonyPatch(typeof(PawnGenerator))]
     [HarmonyPatch("GenerateInitialHediffs")]
     public static class PawnGenerator_GenerateInitialHediffs_Patch
@@ -37,6 +37,27 @@ namespace Mashed_Lynians
         }
     }
 
+    /// <summary>
+    /// Replaces potential Felvine addiction with Alcohol addiction during pawn generation, for non-cat-like lynians.
+    /// </summary>
+    [HarmonyPatch(typeof(PawnAddictionHediffsGenerator))]
+    [HarmonyPatch("ApplyAddiction")]
+    public static class PawnAddictionHediffsGenerator_ApplyAddiction_Patch
+    {
+        [HarmonyPrefix]
+        public static void LyniansPatch(Pawn pawn, ref ChemicalDef chemicalDef)
+        {
+            RaceProperties props = RaceProperties.Get(pawn.def);
+            if (chemicalDef == ChemicalDefOf.Mashed_Lynian_FelvineChemical && (props == null || !props.canUseFelvine))
+            {
+                chemicalDef = RimWorld.ChemicalDefOf.Alcohol;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Allows for backpacks that increase carry weight in caravans.
+    /// </summary>
     [HarmonyPatch(typeof(MassUtility))]
     [HarmonyPatch("Capacity")]
     public static class MassUtility_Capacity_Patch

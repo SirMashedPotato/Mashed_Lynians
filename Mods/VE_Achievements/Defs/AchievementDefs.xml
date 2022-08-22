@@ -136,7 +136,7 @@
 		<points>15</pointsMashed_AchievementLynians_GajalakaColonists
 	</AchievementsExpanded.AchievementDef>
 	-->
-	<!-- ==========[Crafting]========== -->
+	<!-- ==========[Felvine]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_CraftFelvine</defName>
 		<label>Meowlter White</label>
@@ -150,7 +150,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_CraftFelvine</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
-	<!-- Hediffs -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_FelvineHighs</defName>
 		<label>Felvine Fanatics</label>
@@ -197,4 +196,18 @@
 		<points>5</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Trading]========== -->
+	<!-- ==========[Special]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ObtainUltimateMask</defName>
+		<label>The Ultimate Mask</label>
+		<description>Obtain The Ultimate Mask</description>
+		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
+		<tab>SMP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Lynian_Apparel_UltimateMask</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ObtainUltimateMask</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
 </Defs>

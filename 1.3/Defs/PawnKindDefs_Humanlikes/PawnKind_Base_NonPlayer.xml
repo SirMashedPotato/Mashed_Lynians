@@ -97,6 +97,9 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
+		<forcedAddictions>
+			<li>Mashed_Lynian_FelvineChemical</li>
+		</forcedAddictions>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>14~22</initialResistanceRange>
 	</PawnKindDef>

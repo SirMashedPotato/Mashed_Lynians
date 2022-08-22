@@ -55,22 +55,35 @@
       <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefOf\ChemicalDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\HistoryEventDefOf.cs" />
     <Compile Include="DefOf\RecordDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
-    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_BoaboaThought.cs" />
-    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_GajalakaThought.cs" />
-    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_GenericThought.cs" />
-    <Compile Include="Ideo\ThoughtWorker\ThoughtWorker_MissingMask_ShakalakaThought.cs" />
+    <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
+    <Compile Include="ThingClass\UltimateMask.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_BoaboaThought.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_GajalakaThought.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_GenericThought.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_ShakalakaThought.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
     <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />
@@ -78,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
     <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
   </ItemGroup>

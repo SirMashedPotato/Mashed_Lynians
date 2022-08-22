@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Apparel_UltimateMask]========== -->
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>Mashed_Lynian_Apparel_UltimateMask</defName>
+		<label>Ultimate Mask</label>
+		<description>An unusual mask, of unkown origin. Some Lynian cultures believe it was blessed by a god, others created by the Archotechs. All that is certain, is that it truly is the Ultimate Mask.\n\nIt is believed this mask greatly empowers the wearer, though one must be careful of the cost such a power holds.</description>
+		<thingClass>Mashed_Lynians.UltimateMask</thingClass>
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isBoaboaMask>true</isBoaboaMask>
+				<isShakalakaMask>true</isShakalakaMask>
+				<isGajalakaMask>true</isGajalakaMask>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>2000</ticksPerHeal>
+				<!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+			</li>
+		</comps>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>Headgear</li>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UltimateMask/Mashed_UltimateMask_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<costList>
+			<Gold>500</Gold>
+		</costList>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.8</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<MentalBreakThreshold>0.25</MentalBreakThreshold>
+			<PainShockThreshold>0.25</PainShockThreshold>
+			<InjuryHealingFactor>0.50</InjuryHealingFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UltimateMask/Mashed_UltimateMask</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_LynianArmourSpecial</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<relicChance>1</relicChance>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+	</ThingDef>
+</Defs>

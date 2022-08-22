@@ -3,8 +3,8 @@
 	<!-- ==========[Fur]========== -->
 	<ThingDef ParentName="LeatherBase">
 		<defName>Mashed_Lynian_LynianFur</defName>
-		<label>lynian fur</label>
-		<description>Lynian fur, harvested from a cat-like lynian. Most people find this material horrifying. Some find it fascinating. Provides decent insulation, but not much in the way of protection.</description>
+		<label>Lynian fur</label>
+		<description>Lynian fur, harvested from a cat-like Lynian. Most people find this material horrifying. Some find it fascinating. Provides decent insulation, but not much in the way of protection.</description>
 		<graphicData>
 			<color>(246,223,179)</color>
 		</graphicData>
@@ -22,7 +22,7 @@
 	<!-- ==========[Thick Fur]========== -->
 	<ThingDef ParentName="LeatherBase">
 		<defName>Mashed_Lynian_LynianThickFur</defName>
-		<label>lynian thickfur</label>
+		<label>Lynian thickfur</label>
 		<description>Thick Lynian fur, harvested from a boaboa. Most people find this material horrifying. Some find it fascinating. Provides good resistance against the cold.</description>
 		<graphicData>
 			<color>(221,213,202)</color>
@@ -41,8 +41,8 @@
 	<!-- ==========[Leather]========== -->
 	<ThingDef ParentName="LeatherBase">
 		<defName>Mashed_Lynian_LynianLeather</defName>
-		<label>lynian leather</label>
-		<description>Lynian leather, harvested from a goblin-like lynian. Most people find this material horrifying. Provides decent protection, but not much in the way of insulation.</description>
+		<label>Lynian leather</label>
+		<description>Lynian leather, harvested from a goblin-like Lynian. Most people find this material horrifying. Provides decent protection, but not much in the way of insulation.</description>
 		<graphicData>
 			<color>(204,180,143)</color>
 		</graphicData>
