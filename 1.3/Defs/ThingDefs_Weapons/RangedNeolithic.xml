@@ -178,7 +178,7 @@
 			<AccuracyShort>0.71</AccuracyShort>
 			<AccuracyMedium>0.50</AccuracyMedium>
 			<AccuracyLong>0.32</AccuracyLong>
-			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>Mashed_Lynian_BoaboaTribalRanged</li>
@@ -208,7 +208,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Mashed_Lynian_RangedWeapon_BoaboaJavelin_Thrown</defaultProjectile>
-				<warmupTime>4</warmupTime>
+				<warmupTime>2</warmupTime>
 				<range>24.9</range>
 				<soundCast>Interact_BeatFire</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -268,7 +268,7 @@
 			<AccuracyShort>0.81</AccuracyShort>
 			<AccuracyMedium>0.40</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>Mashed_Lynian_BoaboaTribalRanged</li>
@@ -298,7 +298,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard_Thrown</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>1</warmupTime>
 				<range>10.9</range>
 				<soundCast>Interact_BeatFire</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>

@@ -180,7 +180,7 @@ namespace Mashed_Lynians
 		{
 			if (this.ShieldState == ShieldState.Active && this.ShouldDisplay)
 			{
-				float num = Mathf.Lerp(maxSize, minSize, this.energy);
+				float num = Mathf.Lerp(minSize, maxSize, this.energy);
 				Vector3 vector = base.Wearer.Drawer.DrawPos;
 				vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
 				int num2 = Find.TickManager.TicksGame - this.lastAbsorbDamageTick;
@@ -198,8 +198,8 @@ namespace Mashed_Lynians
 			}
 		}
 
-		private float maxSize = 3.5f;	//2.5 is also nice
-		private float minSize = 1.5f;
+		private float maxSize = 1.5f;
+		private float minSize = 0.5f;
 		private float energy;
 		private int ticksToReset = -1;
 		private int lastKeepDisplayTick = -9999;
