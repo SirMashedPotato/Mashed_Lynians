@@ -11,10 +11,12 @@
 			<value>
 				<li>Mashed_Lynian_FelynePlayerColony</li>
 				<li>Mashed_Lynian_FelynePlayerTribe</li>
-				<li>Mashed_Lynian_GrimalkynePlayerColony</li>
-				<li>Mashed_Lynian_GrimalkynePlayerTribe</li>
 				<li>Mashed_Lynian_MelynxPlayerColony</li>
 				<li>Mashed_Lynian_MelynxPlayerTribe</li>
+				<li>Mashed_Lynian_GrimalkynePlayerColony</li>
+				<li>Mashed_Lynian_GrimalkynePlayerTribe</li>
+				<li>Mashed_Lynian_BoaboaPlayerColony</li>
+				<li>Mashed_Lynian_BoaboaPlayerTribe</li>
 			</value>
 		</match>
 	</Operation>
