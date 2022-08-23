@@ -71,14 +71,42 @@
 			<li>Mashed_Lynian_GrimalkyneStart</li>
 		</tags>
 	</ResearchProjectDef>
-	<!-- ==========[Boaboa equipment]========== -->
+	<!-- ==========[Shakalaka equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_ShakalakaEquipment</defName>
+		<label>shakalaka equipment</label>
+		<description>Learn how to craft basic Shakalaka equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Gajalaka equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_GajalakaEquipment</defName>
+		<label>gajalaka equipment</label>
+		<description>Learn how to craft basic Gajalaka equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</tags>
+	</ResearchProjectDef>
+		<!-- ==========[Boaboa equipment]========== -->
 	<ResearchProjectDef>
 		<defName>Mashed_Lynian_BoaboaEquipment</defName>
 		<label>boaboa equipment</label>
 		<description>Learn how to craft basic Boaboa equipment at the Lynian crafting spot.</description>
-		<baseCost>150</baseCost>
+		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
-		<researchViewX>3.00</researchViewX>
+		<researchViewX>5.00</researchViewX>
 		<researchViewY>3.00</researchViewY>
 		<tab>SMP_ResearchTab</tab>
 		<tags>

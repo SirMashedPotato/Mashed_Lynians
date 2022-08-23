@@ -29,9 +29,6 @@
 					<aliencrowntypes>
 						<li>Mashed_BoaboaHead</li>
 					</aliencrowntypes>
-					<alienbodytypes>
-						<li>Male</li>
-					</alienbodytypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -75,29 +72,6 @@
 							</second>
 						</li>
 						<li>
-							<name>eye</name>
-							<first Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>1</weight>
-										<only>(243,224,173,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
-										<only>(220,214,159,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
-										<only>(214,187,113,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
-										<only>(223,223,119,255)</only>
-									</li>
-								</options>
-							</first>
-						</li>
-						<li>
 							<name>teeth</name>
 							<first Class="ColorGenerator_Options">
 								<options>
@@ -118,68 +92,9 @@
 						</li>
 					</colorChannels>
 					<bodyAddons>
-						<!-- =====[Eye right]===== -->
-						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Eye/Mashed_BoaboaEye_Right</path>
-							<colorChannel>eye</colorChannel>
-							<bodyPart>right eye</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideEyes</li>
-							</hiddenUnderApparelTag>
-							<hediffGraphics>
-								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Eye/Missing/Mashed_BoaboaEyeMissing_Right</MissingBodyPart>
-								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
-							</hediffGraphics>
-							<offsets>
-								<south>
-									<layerOffset>-0.273</layerOffset>
-								</south>
-								<north>
-									<layerOffset>-0.273</layerOffset>
-								</north>
-								<east>
-									<layerOffset>-0.273</layerOffset>
-								</east>
-							</offsets>
-						</li>
-						<!-- =====[Eye left]===== -->
-						<li>
-							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Eye/Mashed_BoaboaEye_Left</path>
-							<colorChannel>eye</colorChannel>
-							<bodyPart>left eye</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideEyes</li>
-							</hiddenUnderApparelTag>
-							<hediffGraphics>
-								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
-								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
-							</hediffGraphics>
-							<offsets>
-								<south>
-									<layerOffset>-0.273</layerOffset>
-								</south>
-								<north>
-									<layerOffset>-0.273</layerOffset>
-								</north>
-								<east>
-									<layerOffset>-0.273</layerOffset>
-								</east>
-							</offsets>
-						</li>
 						<!-- =====[Teeth]===== -->
 						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Teeth/Mashed_BoaboaTeeth</path>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Teeth_Boaboa/Mashed_BoaboaTeeth</path>
 							<colorChannel>teeth</colorChannel>
 							<bodyPart>Jaw</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -212,8 +127,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_YetiLike/Body/</body>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Boaboa/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
 				</li>
 			</graphicPaths>
 		</alienRace>

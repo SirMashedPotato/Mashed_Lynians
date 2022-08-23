@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Outlander]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_OutlanderPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_GajalakaColonist</defName>
+		<race>Mashed_Lynian_GajalakaRace</race>
+		<defaultFactionType>Mashed_Lynian_GajalakaPlayerColony</defaultFactionType>
+	</PawnKindDef>
+	<!-- ==========[Tribal]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TribalPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_GajalakaTribesperson</defName>
+		<race>Mashed_Lynian_GajalakaRace</race>
+		<defaultFactionType>Mashed_Lynian_GajalakaPlayerTribe</defaultFactionType>
+		<!--
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_GajalakaMask</li>
+			<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
+		</apparelRequired>
+		-->
+	</PawnKindDef>
+</Defs>

@@ -7,7 +7,7 @@
 		<invNutrition>2</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 		<race>Mashed_Lynian_BoaboaRace</race>
-		<defaultFactionType>Mashed_Lynian_BoaboaPlayerColony</defaultFactionType>
+		<defaultFactionType>Mashed_Lynian_NonPlayerBoaboaTribe</defaultFactionType>
 		<apparelTags>
 			<li>Mashed_Lynian_BoaboaTribal</li>
 		</apparelTags>

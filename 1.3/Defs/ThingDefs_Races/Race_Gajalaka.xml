@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike">
-		<defName>Mashed_Lynian_GrimalkyneRace</defName>
-		<label>grimalkyne</label>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike">
+		<defName>Mashed_Lynian_GajalakaRace</defName>
+		<label>gajalaka</label>
 		<description>TODO.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
-				<canUseFelvine>True</canUseFelvine>
 			</li>
 		</modExtensions>
 		<statBases>
+			<!-- 6 higher than base -->
+			<ComfyTemperatureMax>38</ComfyTemperatureMax>
 			<!-- 0.1 higher than base -->
-			<RestRateMultiplier>1.1</RestRateMultiplier>
-			<!-- 0.2 higher than base -->
-			<ForagedNutritionPerDay>0.2</ForagedNutritionPerDay>
-			<!-- 0.2 lower than base -->
-			<ToxicSensitivity>0.8</ToxicSensitivity>
+			<PainShockThreshold>0.9</PainShockThreshold>
+			<!-- 0.1 higher than base -->
+			<MiningSpeed>1.1</MiningSpeed>
 		</statBases>
 		<comps>
 		</comps>
@@ -24,71 +23,62 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes Inherit="False">
-						<li>Mashed_FelyneHead_Fluffy</li>
+					<aliencrowntypes>
+						<li>Mashed_GoblinHead</li>
 					</aliencrowntypes>
-					<alienbodytypes Inherit="False">
-						<li>Thin</li>
-					</alienbodytypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
-							<!-- =====[Main fur colour]===== -->
 							<first Class="ColorGenerator_Options">
 								<options>
-									<!-- Bugtrapper -->
+									<!-- World icon -->
 									<li>
-										<weight>1</weight>
-										<only>(168,157,134,255)</only>
+										<weight>2</weight>
+										<only>(195,86,62,255)</only>
 									</li>
-									<!-- Protector -->
+									<!-- Concept art -->
 									<li>
 										<weight>1</weight>
-										<only>(71,71,71,255)</only>
+										<only>(185,32,19,255)</only>
 									</li>
-									<!-- Trouper -->
 									<li>
 										<weight>1</weight>
-										<only>(32,76,76,255)</only>
+										<only>(130,25,11,255)</only>
 									</li>
-									<!-- Plunderer -->
 									<li>
 										<weight>1</weight>
-										<only>(137,143,145,255)</only>
+										<only>(106,28,12,255)</only>
 									</li>
 								</options>
 							</first>
-							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
 							<second Class="ColorGenerator_Options">
 								<options>
-									<!-- Bugtrapper -->
+									<!-- Concept art -->
 									<li>
 										<weight>1</weight>
-										<only>(115,100,86,255)</only>
+										<only>(246,220,173,255)</only>
 									</li>
-									<!-- Protector -->
 									<li>
 										<weight>1</weight>
-										<only>(147,147,147,255)</only>
+										<only>(236,190,147,255)</only>
 									</li>
-									<!-- Trouper -->
 									<li>
 										<weight>1</weight>
-										<only>(111,30,30,255)</only>
+										<only>(193,115,76,255)</only>
 									</li>
-									<!-- Plunderer -->
 									<li>
 										<weight>1</weight>
-										<only>(148,120,37,255)</only>
+										<only>(200,193,63,255)</only>
 									</li>
 								</options>
 							</second>
 						</li>
+						
 					</colorChannels>
 					<bodyAddons>
 						<!-- =====[Ear right]===== -->
 						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Right</path>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Right</path>
 							<colorChannel>skin</colorChannel>
 							<bodyPart>right ear</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -102,7 +92,8 @@
 								<li>UpperHead</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideCatEars</li>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideGoblinEars</li>
 							</hiddenUnderApparelTag>
 							<offsets>
 								<south>
@@ -119,7 +110,7 @@
 						<!-- =====[Ear left]===== -->
 						<li>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Left</path>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Left</path>
 							<colorChannel>skin</colorChannel>
 							<bodyPart>left ear</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -133,7 +124,8 @@
 								<li>UpperHead</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideCatEars</li>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideGoblinEars</li>
 							</hiddenUnderApparelTag>
 							<offsets>
 								<south>
@@ -144,36 +136,6 @@
 								</north>
 								<east>
 									<layerOffset>-0.273</layerOffset>
-								</east>
-							</offsets>
-						</li>
-						<!-- =====[Mane]===== -->
-						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Mane_Grimalkyne/Mashed_GrimalkyneMane</path>
-							<colorChannel>base</colorChannel>
-							<bodyPart>Neck</bodyPart>
-							<drawnInBed>true</drawnInBed>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerInvert>false</layerInvert>
-							<alignWithHead>false</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>Neck</li>
-								<li>Shoulders</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideMane</li>
-							</hiddenUnderApparelTag>
-							<offsets>
-								<south>
-									<layerOffset>-0.28</layerOffset>
-								</south>
-								<north>
-									<layerOffset>-0.28</layerOffset>
-								</north>
-								<east>
-									<layerOffset>-0.28</layerOffset>
 								</east>
 							</offsets>
 						</li>
@@ -182,10 +144,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
-					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
-					<bodyMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneBodyMask</bodyMasks>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Gajalaka/</body>
 				</li>
 			</graphicPaths>
 		</alienRace>

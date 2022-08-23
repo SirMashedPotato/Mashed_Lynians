@@ -89,6 +89,53 @@
 		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaColonists</defName>
+		<label>Boom Shaka-laka-laka</label>
+		<description>Have 12 Shakalaka in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_ShakalakaRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_UrukiColonists</defName>
+		<label>Keepers of the Flower Field</label>
+		<description>Have 12 Uruki in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_UrukiRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_UrukiColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	-->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_GajalakaColonists</defName>
+		<label>Savages of the New World</label>
+		<description>Have 12 Gajalaka in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_GajalakaRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_GajalakaColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_BoaboaColonists</defName>
 		<label>The Abominable Lynian</label>
@@ -104,38 +151,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_BoaboaColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	<!--
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
-		<defName>Mashed_AchievementLynians_ShakalakaColonists</defName>
-		<label>Boom Shaka-laka-laka</label>
-		<description>Have 12 Shakalaka in your colony at the same time</description>
-		<tracker Class="AchievementsExpanded.RaceDefTracker">
-			<raceDefs>
-				<li>
-					<key>Mashed_Lynian_ShakalakaRace</key>
-					<value>12</value>
-				</li>
-			</raceDefs>
-		</tracker>
-		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
-		<points>15</pointsMashed_AchievementLynians_ShakalakaColonists
-	</AchievementsExpanded.AchievementDef>
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
-		<defName>Mashed_AchievementLynians_GajalakaColonists</defName>
-		<label>Savages of the New World</label>
-		<description>Have 12 Gajalaka in your colony at the same time</description>
-		<tracker Class="AchievementsExpanded.RaceDefTracker">
-			<raceDefs>
-				<li>
-					<key>Mashed_Lynian_GajalakaRace</key>
-					<value>12</value>
-				</li>
-			</raceDefs>
-		</tracker>
-		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
-		<points>15</pointsMashed_AchievementLynians_GajalakaColonists
-	</AchievementsExpanded.AchievementDef>
-	-->
 	<!-- ==========[Felvine]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_CraftFelvine</defName>

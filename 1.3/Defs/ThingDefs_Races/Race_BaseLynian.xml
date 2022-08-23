@@ -370,6 +370,7 @@
 								<li>UpperHead</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
 							<offsets>
@@ -401,6 +402,7 @@
 								<li>UpperHead</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
 								<li>Mashed_Lynian_HideCatEars</li>
 							</hiddenUnderApparelTag>
 							<offsets>
@@ -467,5 +469,100 @@
 			<body>Human</body>
 			<leatherDef>Mashed_Lynian_LynianLeather</leatherDef>
 		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<alienbodytypes>
+						<li>Male</li>
+					</alienbodytypes>
+					<colorChannels>
+						<li>
+							<name>eye</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(243,224,173,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(220,214,159,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(214,187,113,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(223,223,119,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- =====[Eye right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Mashed_BoaboaEye_Right</path>
+							<colorChannel>eye</colorChannel>
+							<bodyPart>right eye</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEyes</li>
+							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Right</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Eye left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Mashed_BoaboaEye_Left</path>
+							<colorChannel>eye</colorChannel>
+							<bodyPart>left eye</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEyes</li>
+							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

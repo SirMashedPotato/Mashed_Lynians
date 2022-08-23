@@ -52,6 +52,14 @@
 									</kindDefs>
 									<chance>5.0</chance>
 								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_BoaboaGatherer</li>
+										<li>Mashed_Lynian_BoaboaHunter</li>
+										<li>Mashed_Lynian_BoaboaWarrior</li>
+									</kindDefs>
+									<chance>2.0</chance>
+								</li>
 							</pawnKindEntries>
 							<factionDefs>
 								<li>DankPyon_PlayerKingdom</li>

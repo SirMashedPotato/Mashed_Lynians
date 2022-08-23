@@ -287,19 +287,69 @@
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneColonist</li>
 							</kindDefs>
-							<chance>75.0</chance>
+							<chance>100.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_GrimalkynePlayerColony</li>
 					</factionDefs>
 				</li>
-				<!-- ==========[Lynians Shakalaka tribe]==========-->
-				<!-- ==========[Lynians Shakalaka colony]==========-->
-				<!-- ==========[Lynians Gajalaka tribe]==========-->
-				<!-- ==========[Lynians Gajalaka colony]==========-->
 				<!-- ==========[Lynians Boaboa tribe]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_BoaboaTribesperson</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_BoaboaPlayerTribe</li>
+					</factionDefs>
+				</li>
 				<!-- ==========[Lynians Boaboa colony]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_BoaboaColonist</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_BoaboaPlayerColony</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Lynians Gajalaka tribe]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_GajalakaTribesperson</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_GajalakaPlayerTribe</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Lynians Gajalaka colony]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_GajalakaColonist</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_GajalakaPlayerColony</li>
+					</factionDefs>
+				</li>
 			</alienwandererkinds>
 		</pawnKindSettings>
 	</AlienRace.RaceSettings>
