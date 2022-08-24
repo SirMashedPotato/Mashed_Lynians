@@ -232,4 +232,76 @@
 			<explosionDelay>45</explosionDelay>
 		</projectile>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaGrenade]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_GajalakaGrenade</defName>
+		<label>Gajalaka molotov</label>
+		<description>A stone vessel, filled with explosive materials. Often used by Gajalaka, perfect for igniting threats.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Gajalaka_Grenade</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_GajalakaEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<Chemfuel>60</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalDestructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw molotov</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_GajalakaGrenade_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_GajalakaGrenade_Thrown</defName>
+		<label>Gajalaka molotov</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Gajalaka_Grenade_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Flame</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
 </Defs>

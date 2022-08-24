@@ -96,6 +96,7 @@
     <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="Verb\Verb_ShootWithDurability.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
     <Compile Include="Verb\Verb_CastAbility_Dig.cs" />
   </ItemGroup>

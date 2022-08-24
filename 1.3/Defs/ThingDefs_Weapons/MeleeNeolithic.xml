@@ -3,9 +3,6 @@
 	<!-- ==========[Mashed_Lynian_Weapon_TribalMeleeBase]========== -->
 	<ThingDef Name="Mashed_Lynian_Weapon_TribalMeleeBase" ParentName="BaseMeleeWeapon" Abstract="True">
 		<techLevel>Neolithic</techLevel>
-		<weaponTags>
-			<li>Mashed_Lynian_Tribal</li>
-		</weaponTags>
 		<weaponClasses>
 			<li>Neolithic</li>
 		</weaponClasses>
@@ -214,8 +211,8 @@
 		</statBases>
 		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
-		  <li>Woody</li>
-		  <li>Stony</li>
+			<li>Woody</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
@@ -243,7 +240,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-<!-- ==========[Mashed_Lynian_MeleeWeapon_PawClub]========== -->
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_BoaboaClub]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
 		<defName>Mashed_Lynian_MeleeWeapon_BoaboaClub</defName>
 		<label>Boaboa club</label>
@@ -258,7 +255,7 @@
 		<weaponClasses>
 			<li>MeleeBlunt</li>
 		</weaponClasses>
-		<equippedStatOffsets>			
+		<equippedStatOffsets>
 			<HuntingStealth>0.05</HuntingStealth>
 		</equippedStatOffsets>
 		<statBases>
@@ -298,6 +295,56 @@
 					<li>Scratch</li>
 				</capacities>
 				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_GajalakaSword]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_GajalakaSword</defName>
+		<label>Gajalaka sword</label>
+		<description>A primitive sword chiseled from stone, typically used by Gajalaka. Specially designed for Lynians, the edge is surprisingly sharp, and cleaves through armour with relative ease.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Gajalaka_Sword</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<armorPenetration>0.15</armorPenetration>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
