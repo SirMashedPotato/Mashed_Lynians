@@ -7,6 +7,9 @@
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<canUseFelvine>True</canUseFelvine>
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -27,9 +30,6 @@
 					<aliencrowntypes Inherit="False">
 						<li>Mashed_FelyneHead_Fluffy</li>
 					</aliencrowntypes>
-					<alienbodytypes Inherit="False">
-						<li>Thin</li>
-					</alienbodytypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>

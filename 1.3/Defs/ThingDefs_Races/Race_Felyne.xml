@@ -7,6 +7,9 @@
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<canUseFelvine>True</canUseFelvine>
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
 			</li>
 		</modExtensions>
 		<statBases>

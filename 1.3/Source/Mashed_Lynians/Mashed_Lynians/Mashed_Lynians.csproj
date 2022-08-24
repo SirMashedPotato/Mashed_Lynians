@@ -65,7 +65,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
+    <Compile Include="ThingClass\PawnDigger.cs" />
     <Compile Include="ThingClass\UltimateMask.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
     <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_BoaboaThought.cs" />
@@ -94,6 +97,7 @@
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
+    <Compile Include="Verb\Verb_CastAbility_Dig.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

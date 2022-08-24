@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_Ability</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[Dig]==========-->
+	<AbilityDef>
+		<defName>Mashed_Lynian_DigAbility</defName>
+		<label>dig</label>
+		<description>Dig to a nearby tile, does not require line-of-sight, but the tile must be visible. The terrain at both the starting, and ending, position must be diggable.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_DigAbility</iconPath>
+		<groupDef>Mashed_Lynian_Ability</groupDef>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<!--<warmupSound>AnimalCalm_Resolve</warmupSound>-->
+		<uiOrder>1</uiOrder>
+		<statBases>
+		</statBases>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_Dig">
+			</li>
+		</comps>
+		<verbProperties>
+			<range>20</range>
+			<warmupTime>3</warmupTime>
+			<violent>false</violent>
+			<verbClass>Mashed_Lynians.Verb_CastAbility_Dig</verbClass>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+</Defs>

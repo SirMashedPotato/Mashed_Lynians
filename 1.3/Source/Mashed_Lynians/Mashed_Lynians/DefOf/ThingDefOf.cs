@@ -15,5 +15,6 @@ namespace Mashed_Lynians
 		public static ThingDef Mashed_Lynian_LynianFur;
 		public static ThingDef Mashed_Lynian_LynianThickFur;
 		public static ThingDef Mashed_Lynian_LynianLeather;
+		public static ThingDef Mashed_Lynian_PawnDigging;
 	}
 }

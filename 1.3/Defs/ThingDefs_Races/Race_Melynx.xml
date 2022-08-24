@@ -7,9 +7,10 @@
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<canUseFelvine>True</canUseFelvine>
-				<hediffsToAdd>
-					<li>Mashed_Lynian_MelynxHediff</li>
-				</hediffsToAdd>
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+					<li>Mashed_Lynian_PilferAbility</li>
+				</abilitiesToAdd>
 			</li>
 		</modExtensions>
 		<statBases>

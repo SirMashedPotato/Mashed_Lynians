@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AbilityGroupDef>
-		<defName>Mashed_Lynian_Ability</defName>
+		<defName>Mashed_Lynian_MelynxAbility</defName>
 		<cooldownTicks>60000</cooldownTicks>
 	</AbilityGroupDef>
 	<!-- ==========[Pilfer]==========-->
@@ -10,7 +10,7 @@
 		<label>pilfer</label>
 		<description>Attempt to steal something from the targets inventory. The stolen item is selected randomly, and items in a stack will have 10% of the stack size stolen.\n\nOf course if the target happens to have some felvine in their pockets...</description>
 		<iconPath>UI/Abilities/Mashed_Melynx_PilferAbility</iconPath>
-		<groupDef>Mashed_Lynian_Ability</groupDef>
+		<groupDef>Mashed_Lynian_MelynxAbility</groupDef>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
@@ -32,6 +32,7 @@
 			<drawAimPie>False</drawAimPie>
 			<range>-1</range>
 			<warmupTime>0.5</warmupTime>
+			<violent>false</violent>
 			<verbClass>Mashed_Lynians.Verb_CastAbilityTouch_Pilfer</verbClass>
 			<targetParams>
 				<canTargetItems>false</canTargetItems>

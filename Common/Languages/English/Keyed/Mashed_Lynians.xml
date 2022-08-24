@@ -5,4 +5,5 @@
 	<Mashed_Lynian_PilferFail>{0} has failed to pilfer anything, luckily the attempt has gone unnoticed</Mashed_Lynian_PilferFail>
 	<Mashed_Lynian_PilferCaught>{0} has been caught trying to pilfer</Mashed_Lynian_PilferCaught>
 	<Mashed_Lynian_PilferDetails>Successful chance: {0}\nFail caught chance: {1}</Mashed_Lynian_PilferDetails>
+	<Mashed_Lynian_AbilitySkillTooLow>{0} skill must be level {1} or higher</Mashed_Lynian_AbilitySkillTooLow>
 </LanguageData>

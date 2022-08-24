@@ -17,7 +17,7 @@ namespace Mashed_Lynians
     }
 
     /// <summary>
-    /// Just adds hediffs to pawns when they are generated.
+    /// Just adds hediffs and abilities to pawns when they are generated.
     /// </summary>
     [HarmonyPatch(typeof(PawnGenerator))]
     [HarmonyPatch("GenerateInitialHediffs")]
@@ -27,11 +27,21 @@ namespace Mashed_Lynians
         public static void LyniansPatch(Pawn pawn)
         {
             RaceProperties props = RaceProperties.Get(pawn.def);
-            if (props != null && !props.hediffsToAdd.NullOrEmpty())
+            if (props != null)
             {
-                foreach(HediffDef hd in props.hediffsToAdd)
+                if (!props.hediffsToAdd.NullOrEmpty())
                 {
-                    pawn.health.AddHediff(hd);
+                    foreach (HediffDef hd in props.hediffsToAdd)
+                    {
+                        pawn.health.AddHediff(hd);
+                    }
+                }
+                if (!props.abilitiesToAdd.NullOrEmpty())
+                {
+                    foreach (AbilityDef ad in props.abilitiesToAdd)
+                    {
+                        pawn.abilities.GainAbility(ad);
+                    }
                 }
             }
         }

@@ -13,4 +13,11 @@
 		<description>The total value of items I have pilfered.</description>
 		<type>Float</type>
 	</RecordDef>
+	<!-- ==========[Digging]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_DiggingDistance</defName>
+		<label>distance dug</label>
+		<description>The distance I have travelled using the Dig ability.</description>
+		<type>Int</type>
+	</RecordDef>
 </Defs>
