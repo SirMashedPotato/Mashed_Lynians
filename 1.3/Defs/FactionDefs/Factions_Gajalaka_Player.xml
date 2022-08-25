@@ -26,5 +26,16 @@
 		<startingTechprintsResearchTags>
 			<li>Mashed_Lynian_GajalakaStart</li>
 		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksGranite</li>
+				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</apparelStuffFilter>
 	</FactionDef>
 </Defs>

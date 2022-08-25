@@ -26,5 +26,15 @@
 		<startingTechprintsResearchTags>
 			<li>Mashed_Lynian_BoaboaStart</li>
 		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Wolf</li>
+				<li>Leather_Panthera</li>
+				<li>Leather_Bluefur</li>
+				<li>Leather_Bear</li>
+				<li>Leather_Fox</li>
+				<li>Leather_Heavy</li>
+			</thingDefs>
+		</apparelStuffFilter>
 	</FactionDef>
 </Defs>

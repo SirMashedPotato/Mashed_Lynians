@@ -129,7 +129,7 @@
 	<!-- ==========[Mashed_Lynian_Apparel_BoaboaMask]========== -->
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Mashed_Lynian_Apparel_BoaboaMask</defName>
-		<label>Boaboa pelt mask</label>
+		<label>Boaboa mask</label>
 		<description>A thick pelt mask, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
@@ -144,6 +144,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaMask_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
@@ -158,19 +159,20 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Leather_Heavy>35</Leather_Heavy>
 			<WoodLog>15</WoodLog>
 		</costList>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
 		<statBases>
 			<WorkToMake>3500</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>2.0</Mass>
 			<Flammability>0.8</Flammability>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>-5</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -182,6 +184,7 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>EyeCover</li>
 				<li>Overhead</li>
@@ -192,6 +195,78 @@
 			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_BoaboaTribal</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_GajalakaMask]========== -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Mashed_Lynian_Apparel_GajalakaMask</defName>
+		<label>Gajalaka mask</label>
+		<description>A sturdy stone mask, typically worn by Gajalaka. Specially designed for Lynians, the terrifying visage can make unsteady hands falter.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isGajalakaMask>true</isGajalakaMask>
+			</li>
+		</modExtensions>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMask_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>7</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_GajalakaTribal</li>
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>

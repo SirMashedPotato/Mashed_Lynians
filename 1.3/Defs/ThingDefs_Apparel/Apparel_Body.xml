@@ -56,7 +56,7 @@
 	<!-- ==========[Mashed_Lynian_Apparel_BoaboaCoat]========== -->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Mashed_Lynian_Apparel_BoaboaCoat</defName>
-		<label>Boaboa pelt coat</label>
+		<label>Boaboa coat</label>
 		<description>A thick pelt coat, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
 		<recipeMaker>
 			<recipeUsers>
@@ -70,10 +70,12 @@
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<costList>
-			<Leather_Heavy>50</Leather_Heavy>
-		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
@@ -82,13 +84,15 @@
 			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>4.0</Mass>
 			<Flammability>0.8</Flammability>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>20</Insulation_Cold>
-			<Insulation_Heat>-10</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.05</HuntingStealth>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -97,6 +101,7 @@
 				<li>Arms</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -107,6 +112,68 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<tags>
 				<li>Mashed_Lynian_BoaboaTribal</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_GajalakaCoat]========== -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Mashed_Lynian_Apparel_GajalakaCoat</defName>
+		<label>Gajalaka coat</label>
+		<description>A light pelt coat, typically worn by Gajalaka. Specially designed for Lynians, the light design ensures movement is not restricted.</description>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaCoat_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaCoat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Mashed_Lynian_GajalakaTribal</li>
 			</tags>
 		</apparel>
 	</ThingDef>

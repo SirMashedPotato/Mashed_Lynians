@@ -11,11 +11,9 @@
 		<defName>Mashed_Lynian_GajalakaTribesperson</defName>
 		<race>Mashed_Lynian_GajalakaRace</race>
 		<defaultFactionType>Mashed_Lynian_GajalakaPlayerTribe</defaultFactionType>
-		<!--
 		<apparelRequired>
 			<li>Mashed_Lynian_Apparel_GajalakaMask</li>
 			<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
 		</apparelRequired>
-		-->
 	</PawnKindDef>
 </Defs>

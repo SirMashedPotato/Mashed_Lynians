@@ -19,6 +19,16 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Gajalaka</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Generic</li>
 		</disallowedPrecepts>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Wolf</li>
+				<li>Leather_Panthera</li>
+				<li>Leather_Bluefur</li>
+				<li>Leather_Bear</li>
+				<li>Leather_Fox</li>
+				<li>Leather_Heavy</li>
+			</thingDefs>
+		</apparelStuffFilter>
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights, ranged with melee mix-ins -->
