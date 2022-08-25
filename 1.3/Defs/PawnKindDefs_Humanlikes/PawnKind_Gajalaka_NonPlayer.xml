@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<PawnKindDef Name="Mashed_Lynian_GajalakaKindBase" Abstract="True">
+		<maxGenerationAge>60</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<race>Mashed_Lynian_GajalakaRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGajalakaTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GajalakaTribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_GajalakaMask</li>
+			<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
+		</apparelRequired>
+		<!--
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>ESCP_DunmerAshlanderBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		-->
+	</PawnKindDef>
+	<!-- ==========[Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+		<defName>Mashed_Lynian_GajalakaGatherer</defName>
+		<label>gatherer</label>
+		<combatPower>40</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalThrowingKnife</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	<!-- ==========[Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+		<defName>Mashed_Lynian_GajalakaTrader</defName>
+		<label>trader</label>
+		<trader>true</trader>
+		<combatPower>60</combatPower>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<weaponMoney>100~100</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalThrowingShard</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	<!-- ==========[Warrior]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+		<defName>Mashed_Lynian_GajalakaWarrior</defName>
+		<label>warrior</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribal</li>
+		</weaponTags>
+		<weaponMoney>300~300</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+		<defName>Mashed_Lynian_GajalakaBombadier</defName>
+		<label>bombadier</label>
+		<combatPower>75</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponMoney>360~400</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalDestructive</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+		<defName>Mashed_Lynian_GajalakaGunner</defName>
+		<label>gunner</label>
+		<combatPower>85</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponMoney>400~500</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalDestructiveSpecial</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase" Name="Mashed_Lynian_GajalakaChiefBase" Abstract="True">
+		<combatPower>85</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>450~750</apparelMoney>
+		<weaponMoney>500~1000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>19~30</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase">
+		<defName>Mashed_Lynian_GajalakaChiefMelee</defName>
+		<label>warrior chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribal</li>
+		</weaponTags>
+		<initialResistanceRange>38~58</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase">
+		<defName>Mashed_Lynian_GajalakaChiefRanged</defName>
+		<label>gunner chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalDestructiveSpecial</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerHostileFactionBase">
+		<defName>Mashed_Lynian_NonPlayerGajalakaTribe</defName>
+		<label>Gajalaka tribe</label>
+		<description>A small Gajalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Gajalaka are ferocious warriors and subsequently make both viscous foes, and powerful allies.\n\nBeing a Gajalaka tribe, this particular tribe is distrustful of outsiders, and often openly hostile to anyone that encroaches into their territory; it may be difficult to turn them into an ally.</description>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_GajalakaSettlement_NonPlayer</factionIconPath>
+		<colorSpectrum>
+			<li>(0.03, 0.47, 0.16)</li>
+			<li>(0.49, 0.96, 0.51)</li>
+		</colorSpectrum>
+		<caravanTraderKinds Inherit="False"/>
+		<raidLootMaker>Mashed_Lynian_GoblinLikeRaidLootMaker</raidLootMaker>
+		<disallowedMemes>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Shakalaka</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Boaboa</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Generic</li>
+		</disallowedPrecepts>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksGranite</li>
+				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>5</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaWarrior>10</Mashed_Lynian_GajalakaWarrior>
+					<Mashed_Lynian_GajalakaBombadier>7</Mashed_Lynian_GajalakaBombadier>
+					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
+					<Mashed_Lynian_GajalakaChiefRanged>3</Mashed_Lynian_GajalakaChiefRanged>
+					<Mashed_Lynian_GajalakaChiefMelee>1.5</Mashed_Lynian_GajalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>10</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaBombadier>7</Mashed_Lynian_GajalakaBombadier>
+					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
+					<Mashed_Lynian_GajalakaChiefRanged>5</Mashed_Lynian_GajalakaChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>10</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaWarrior>10</Mashed_Lynian_GajalakaWarrior>
+					<Mashed_Lynian_GajalakaChiefMelee>5</Mashed_Lynian_GajalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>5</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaWarrior>5</Mashed_Lynian_GajalakaWarrior>
+					<Mashed_Lynian_GajalakaBombadier>10</Mashed_Lynian_GajalakaBombadier>
+					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
+					<Mashed_Lynian_GajalakaChiefRanged>3</Mashed_Lynian_GajalakaChiefRanged>
+					<Mashed_Lynian_GajalakaChiefMelee>1.5</Mashed_Lynian_GajalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mashed_Lynian_GajalakaWarrior>20</Mashed_Lynian_GajalakaWarrior>
+					<Mashed_Lynian_GajalakaGatherer>10</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaBombadier>10</Mashed_Lynian_GajalakaBombadier>
+					<Mashed_Lynian_GajalakaChiefRanged>3</Mashed_Lynian_GajalakaChiefRanged>
+					<Mashed_Lynian_GajalakaChiefMelee>1.5</Mashed_Lynian_GajalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Mashed_Lynian_GajalakaTrader>1</Mashed_Lynian_GajalakaTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>8</Alpaca>
+				</carriers>
+				<guards>
+					<Mashed_Lynian_GajalakaWarrior>7</Mashed_Lynian_GajalakaWarrior>
+					<Mashed_Lynian_GajalakaGatherer>5</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaBombadier>5</Mashed_Lynian_GajalakaBombadier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mashed_Lynian_GajalakaWarrior>7</Mashed_Lynian_GajalakaWarrior>
+					<Mashed_Lynian_GajalakaGatherer>5</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaBombadier>5</Mashed_Lynian_GajalakaBombadier>
+					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
+					<Mashed_Lynian_GajalakaChiefRanged>10</Mashed_Lynian_GajalakaChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>10</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaBombadier>5</Mashed_Lynian_GajalakaBombadier>
+					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
+					<Mashed_Lynian_GajalakaChiefRanged>10</Mashed_Lynian_GajalakaChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>2</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaBombadier>1</Mashed_Lynian_GajalakaBombadier>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>2</Mashed_Lynian_GajalakaGatherer>
+					<Mashed_Lynian_GajalakaWarrior>1</Mashed_Lynian_GajalakaWarrior>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>1</Mashed_Lynian_GajalakaGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GajalakaGatherer>1</Mashed_Lynian_GajalakaGatherer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+</Defs>
