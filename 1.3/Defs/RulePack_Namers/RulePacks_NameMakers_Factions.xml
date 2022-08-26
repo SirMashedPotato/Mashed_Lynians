@@ -9,10 +9,7 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->The [Color] Paw Tribe</li>
-				<li>r_name->The [TerrainFeature] Tribe</li>
 			</rulesStrings>
-			<rulesFiles>
-			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 	<!-- ==========[Cat-like settlement namer]==========-->
@@ -24,6 +21,30 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[Color] [TerrainFeature]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Gajalaka faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionGajalaka</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Rock Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Boaboa faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionBoaboa</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Spear Tribe</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

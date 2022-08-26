@@ -89,7 +89,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_ShakalakaColonists</defName>
 		<label>Boom Shaka-laka-laka</label>
@@ -105,22 +104,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
-		<defName>Mashed_AchievementLynians_UrukiColonists</defName>
-		<label>Keepers of the Flower Field</label>
-		<description>Have 12 Uruki in your colony at the same time</description>
-		<tracker Class="AchievementsExpanded.RaceDefTracker">
-			<raceDefs>
-				<li>
-					<key>Mashed_Lynian_UrukiRace</key>
-					<value>12</value>
-				</li>
-			</raceDefs>
-		</tracker>
-		<texPath>Achievements/Mashed_AchievementLynians_UrukiColonists</texPath>
-		<points>15</points>
-	</AchievementsExpanded.AchievementDef>
-	-->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_GajalakaColonists</defName>
 		<label>Savages of the New World</label>
@@ -151,6 +134,23 @@
 		<texPath>Achievements/Mashed_AchievementLynians_BoaboaColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_UrukiColonists</defName>
+		<label>Keepers of the Flower Field</label>
+		<description>Have 12 Uruki in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_UrukiRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_UrukiColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	-->
 	<!-- ==========[Felvine]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_CraftFelvine</defName>

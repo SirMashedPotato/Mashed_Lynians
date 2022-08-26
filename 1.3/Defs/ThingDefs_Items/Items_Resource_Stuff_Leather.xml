@@ -49,12 +49,36 @@
 		<statBases>
 			<MarketValue>4.2</MarketValue>
 			<StuffPower_Armor_Sharp>0.84</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.34</StuffPower_Armor_Blunt>
 			<StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
 			<color>(204,180,143)</color>
 			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Fine Fur]========== -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>Mashed_Lynian_LynianFineFur</defName>
+		<label>Lynian finefur</label>
+		<description>Soft Lynian fur, harvested from a uruki. Most people find this material horrifying. Some find it fascinating. While not very protective, it is quite soft.</description>
+		<graphicData>
+			<color>(211,183,81)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<StuffPower_Armor_Sharp>0.24</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(211,183,81)</color>
+			<commonality>0.0025</commonality>
+			<statFactors>
+				<MaxHitPoints>0.6</MaxHitPoints>
+				<Beauty>3.0</Beauty>
+			</statFactors>
 		</stuffProps>
 	</ThingDef>
 </Defs>

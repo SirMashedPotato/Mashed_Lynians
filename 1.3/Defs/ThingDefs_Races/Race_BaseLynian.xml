@@ -136,7 +136,6 @@
 			</thoughtSettings>
 			<raceRestriction>
 				<apparelList>
-					<!--<li>Mashed_Lynian_Apparel_BasicApron</li>-->
 					<li>Mashed_Lynian_Apparel_AcornBackpack</li>
 					<li>Mashed_Lynian_Apparel_MelynxSatchel</li>
 					<li>Mashed_Lynian_Apparel_MelynxBandana</li>
@@ -547,6 +546,80 @@
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
 							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ==========[Mashed_Lynian_BasePawn_GoblinLike]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike" Name="Mashed_Lynian_BasePawn_GoblinLike_True" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<bodyAddons>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>right ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideGoblinEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>left ear</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideGoblinEars</li>
+							</hiddenUnderApparelTag>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>

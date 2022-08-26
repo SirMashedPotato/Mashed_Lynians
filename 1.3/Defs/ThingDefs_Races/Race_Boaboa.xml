@@ -97,7 +97,7 @@
 					<bodyAddons>
 						<!-- =====[Teeth]===== -->
 						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Teeth_Boaboa/Mashed_BoaboaTeeth</path>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Teeth/Boaboa/Mashed_BoaboaTeeth</path>
 							<colorChannel>teeth</colorChannel>
 							<bodyPart>Jaw</bodyPart>
 							<drawnInBed>true</drawnInBed>

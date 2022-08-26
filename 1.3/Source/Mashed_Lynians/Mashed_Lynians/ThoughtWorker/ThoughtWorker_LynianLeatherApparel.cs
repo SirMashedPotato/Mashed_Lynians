@@ -7,11 +7,12 @@ namespace Mashed_Lynians
 	[StaticConstructorOnStartup]
 	public static class LeatherList
 	{
-		public static List<ThingDef> list = new List<ThingDef> 
-		{ 
+		public static List<ThingDef> list = new List<ThingDef>
+		{
 			ThingDefOf.Mashed_Lynian_LynianFur,
 			ThingDefOf.Mashed_Lynian_LynianLeather,
-			ThingDefOf.Mashed_Lynian_LynianThickFur
+			ThingDefOf.Mashed_Lynian_LynianThickFur,
+			ThingDefOf.Mashed_Lynian_LynianFineFur
 		};
 
 		public static bool ContainsLeather(ThingDef def) => list.Contains(def);
