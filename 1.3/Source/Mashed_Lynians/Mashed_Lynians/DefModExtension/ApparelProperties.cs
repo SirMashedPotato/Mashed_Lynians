@@ -12,6 +12,8 @@ namespace Mashed_Lynians
         public bool isShakalakaMask = false;
         public bool isGajalakaMask = false;
 
+        public bool overrideColour = false;
+
         public static ApparelProperties Get(Def def)
         {
             return def.GetModExtension<ApparelProperties>();

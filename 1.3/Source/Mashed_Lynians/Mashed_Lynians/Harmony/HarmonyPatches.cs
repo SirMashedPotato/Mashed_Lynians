@@ -3,6 +3,8 @@ using System.Text;
 using Verse;
 using System.Reflection;
 using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Mashed_Lynians
 {
@@ -75,9 +77,9 @@ namespace Mashed_Lynians
         [HarmonyPostfix]
         public static void LyniansPatch(ref float __result, Pawn p, StringBuilder explanation = null)
         {
-            if(p != null && p.apparel != null && p.apparel.WornApparel != null)
+            if (p != null && p.apparel != null && p.apparel.WornApparel != null)
             {
-                foreach(Apparel ap in p.apparel.WornApparel)
+                foreach (Apparel ap in p.apparel.WornApparel)
                 {
                     ApparelProperties props = ApparelProperties.Get(ap.def);
                     if (props != null && props.carryWeightIncrease != 0)
@@ -93,5 +95,49 @@ namespace Mashed_Lynians
                 }
             }
         }
+
+        /// <summary>
+        /// Recolours specific apparel using colorGenerator when crafted.
+        /// </summary>
+        [HarmonyPatch(typeof(GenRecipe))]
+        [HarmonyPatch("PostProcessProduct")]
+        public static class GenRecipe_PostProcessProduct_Patch
+        {
+            [HarmonyPostfix]
+            public static void LyniansPatch(Thing __result)
+            {
+                ApparelProperties props = ApparelProperties.Get(__result.def);
+                if (props != null && props.overrideColour)
+                {
+                    if (__result.def.colorGenerator != null)
+                    {
+                        CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Recolours specific apparel using colorGenerator.
+        /// Covers most cases, apart from crafting
+        /// </summary>
+        [HarmonyPatch(typeof(ThingMaker))]
+        [HarmonyPatch("MakeThing")]
+        public static class ThingMaker_MakeThing_Patch
+        {
+            [HarmonyPostfix]
+            public static void LyniansPatch(Thing __result)
+            {
+                ApparelProperties props = ApparelProperties.Get(__result.def);
+                if (props != null && props.overrideColour)
+                {
+                    if (__result.def.colorGenerator != null)
+                    {
+                        CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
+                    }
+                }
+            }
+        }
     }
 }
+

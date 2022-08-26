@@ -13,6 +13,11 @@
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 		</requiredMemes>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights, ranged with melee mix-ins -->

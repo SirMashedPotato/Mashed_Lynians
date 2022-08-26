@@ -135,6 +135,40 @@
 				<li>Mashed_Lynian_MelynxTribal</li>
 			</tags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<!-- FU Icon -->
+				<li>
+					<weight>10</weight>
+					<only>(96,120,63,255)</only>
+				</li>
+				<!-- Tri Icon -->
+				<li>
+					<weight>5</weight>
+					<only>(98,116,99,255)</only>
+				</li>
+				<!-- 3U Icon -->
+				<li>
+					<weight>5</weight>
+					<only>(57,98,57,255)</only>
+				</li>
+				<!-- 4U Icon -->
+				<li>
+					<weight>5</weight>
+					<only>(47,110,47,255)</only>
+				</li>
+				<!-- Rise Icon Lighter -->
+				<li>
+					<weight>5</weight>
+					<only>(149,153,90,255)</only>
+				</li>
+				<!-- Rise Icon Darker -->
+				<li>
+					<weight>5</weight>
+					<only>(134,137,76,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerBackPack]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
