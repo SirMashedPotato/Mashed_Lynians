@@ -343,8 +343,109 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>12</power>
-				<armorPenetration>0.15</armorPenetration>
+				<power>15</power>
+				<armorPenetration>0.25</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_ShakalakaSword]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_ShakalakaSword</defName>
+		<label>Shakalaka sword</label>
+		<description>A primitive sword made from pieces of metal scrap, typically used by Shakalaka. Specially designed for Lynians, the edge of the blade is very rough, and causes additional bleed damage to its victims.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Shakalaka_Sword</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Mashed_Lynians_CutBleed</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_ShakalakaSword]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_ShakalakaSwordToxic</defName>
+		<label>Shakalaka toxic sword</label>
+		<description>A primitive sword made from pieces of metal scrap, typically used by Shakalaka. Specially designed for Lynians, the edge of the blade is coated in a toxic mixture, and causes additional toxic damage to its victims.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Shakalaka_SwordToxic</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<RawFungus>10</RawFungus>
+		</costList>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Mashed_Lynians_CutToxic</li>
+				</capacities>
+				<power>9</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>

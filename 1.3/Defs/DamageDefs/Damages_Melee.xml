@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Cut Bleed]========== -->
+	<DamageDef ParentName="CutBase">
+		<defName>Mashed_Lynians_CutBleed</defName>
+		<label>lacerating cut</label>
+		<additionalHediffs>
+			<li>
+				<hediff>BloodLoss</hediff>
+				<severityPerDamageDealt>0.001</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<!-- ==========[Cut Toxic]========== -->
+	<DamageDef ParentName="CutBase">
+		<defName>Mashed_Lynians_CutToxic</defName>
+		<label>toxic cut</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.001</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+</Defs>
