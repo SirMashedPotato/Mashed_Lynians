@@ -164,7 +164,7 @@
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Mashed_Lynian_Apparel_BoaboaMask</defName>
 		<label>Boaboa mask</label>
-		<description>A thick pelt mask, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
+		<description>A thick pelt mask, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.\n\nThe tips of the bone are often painted various colours.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<isBoaboaMask>true</isBoaboaMask>
@@ -238,12 +238,7 @@
 				<!-- White -->
 				<li>
 					<weight>5</weight>
-					<only>(255,255,255,255)</only>
-				</li>
-				<!-- Blue -->
-				<li>
-					<weight>5</weight>
-					<only>(96,164,198,255)</only>
+					<only>(250,250,250,255)</only>
 				</li>
 				<!-- Yellow -->
 				<li>
@@ -265,7 +260,7 @@
 					<weight>5</weight>
 					<only>(76,201,76,255)</only>
 				</li>
-				<!-- Cyan -->
+				<!-- Blue -->
 				<li>
 					<weight>5</weight>
 					<only>(35,171,176,255)</only>
@@ -277,7 +272,7 @@
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Mashed_Lynian_Apparel_GajalakaMask</defName>
 		<label>Gajalaka mask</label>
-		<description>A sturdy stone mask, typically worn by Gajalaka. Specially designed for Lynians, the terrifying visage can make unsteady hands falter.</description>
+		<description>A sturdy stone mask, typically worn by Gajalaka. Specially designed for Lynians, the terrifying visage can make unsteady hands falter.\n\nAccents on the mask are often painted various colours.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<isGajalakaMask>true</isGajalakaMask>
@@ -350,12 +345,7 @@
 				<!-- White -->
 				<li>
 					<weight>5</weight>
-					<only>(255,255,255,255)</only>
-				</li>
-				<!-- Blue -->
-				<li>
-					<weight>5</weight>
-					<only>(96,164,198,255)</only>
+					<only>(250,250,250,255)</only>
 				</li>
 				<!-- Yellow -->
 				<li>
@@ -377,7 +367,7 @@
 					<weight>5</weight>
 					<only>(76,201,76,255)</only>
 				</li>
-				<!-- Cyan -->
+				<!-- Blue -->
 				<li>
 					<weight>5</weight>
 					<only>(35,171,176,255)</only>
