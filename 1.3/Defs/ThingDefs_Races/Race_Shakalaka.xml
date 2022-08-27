@@ -110,19 +110,7 @@
 								<options>
 									<li>
 										<weight>1</weight>
-										<only>(199,211,211,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
-										<only>(212,214,211,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
-										<only>(180,195,188,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
-										<only>(180,195,188,255)</only>
+										<only>(0,0,0,255)</only>
 									</li>
 								</options>
 							</first>
