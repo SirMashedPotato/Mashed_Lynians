@@ -12,10 +12,11 @@
 		<race>Mashed_Lynian_ShakalakaRace</race>
 		<defaultFactionType>Mashed_Lynian_ShakalakaPlayerTribe</defaultFactionType>
 		<apparelRequired>
-			<!--
 			<li>Mashed_Lynian_Apparel_ShakalakaMask</li>
-			<li>Mashed_Lynian_Apparel_ShakalakaCoat</li>
-			-->
+			<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
 		</apparelRequired>
+		<apparelTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</apparelTags>
 	</PawnKindDef>
 </Defs>

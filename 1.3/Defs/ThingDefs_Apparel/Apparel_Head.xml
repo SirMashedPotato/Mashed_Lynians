@@ -375,4 +375,84 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaMask]========== -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaMask</defName>
+		<label>Shakalaka mask</label>
+		<description>A strange wooden mask, typically worn by Shakalaka. Specially designed for Lynians, the design confuses would-be aggressors.\n\nAccents on the mask are often painted various colours.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isShakalakaMask>true</isShakalakaMask>
+				<overrideColour>true</overrideColour>
+			</li>
+		</modExtensions>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaMask_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.8</Flammability>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribal</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<!-- White -->
+				<li>
+					<weight>5</weight>
+					<only>(250,250,250,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 </Defs>

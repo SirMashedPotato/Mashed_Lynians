@@ -15,5 +15,8 @@
 			<li>Mashed_Lynian_Apparel_GajalakaMask</li>
 			<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
 		</apparelRequired>
+		<apparelTags>
+			<li>Mashed_Lynian_GajalakaTribal</li>
+		</apparelTags>
 	</PawnKindDef>
 </Defs>

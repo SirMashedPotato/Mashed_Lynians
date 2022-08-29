@@ -63,7 +63,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
 		<defName>Mashed_Lynian_Apparel_AcornBackpack</defName>
 		<label>acorn backpack</label>
-		<description>A wooden backpack, made to resemble an acorn. Specially designed for Lynians, it is highly useful when travelling great distances.</description>
+		<description>A backpack, made to resemble an acorn. Specially designed for Lynians, it is highly useful when travelling great distances.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<carryWeightIncrease>25</carryWeightIncrease>
@@ -208,6 +208,47 @@
 				<li>Mashed_Lynian_FelyneTribalAdvanced</li>
 			</tags>
 			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaAcornBackpack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</defName>
+		<label>small acorn backpack</label>
+		<description>A small acorn shaped backpack, typically worn by Shakalaka. Specially designed for Lynians, useful for carrying around scavenged items, especially over long distances.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaAcornBackpack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaAcornBackpack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribal</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+			</wornGraphicData>
 		</apparel>
 	</ThingDef>
 </Defs>

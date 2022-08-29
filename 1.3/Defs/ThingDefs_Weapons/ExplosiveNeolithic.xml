@@ -304,4 +304,72 @@
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb</defName>
+		<label>Shakalaka sleep bomb</label>
+		<description>A makeshift throwing bomb, releases a cloud of gas that rapidly fatigues those caught within. Often used by Shakalaka to weaken strong foes.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Shakalaka_SleepBomb</texPath>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_ShakalakaEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<RawFungus>30</RawFungus>
+			<Chemfuel>30</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribalSleep</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw sleep bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<preExplosionSpawnThingDef>Mashed_Lynian_SleepGasCloud</preExplosionSpawnThingDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb_Thrown</defName>
+		<label>Shakalaka sleep bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Shakalaka_SleepBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>Mashed_Lynian_SleepGasCloud</preExplosionSpawnThingDef>
+			<explosionDelay>45</explosionDelay>
+		</projectile>
+	</ThingDef>
 </Defs>

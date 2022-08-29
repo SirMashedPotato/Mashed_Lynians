@@ -79,6 +79,7 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
     <Compile Include="ThingClass\UltimateMask.cs" />

@@ -11,5 +11,8 @@
 		<defName>Mashed_Lynian_MelynxTribesperson</defName>
 		<race>Mashed_Lynian_MelynxRace</race>
 		<defaultFactionType>Mashed_Lynian_MelynxPlayerTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
 	</PawnKindDef>
 </Defs>

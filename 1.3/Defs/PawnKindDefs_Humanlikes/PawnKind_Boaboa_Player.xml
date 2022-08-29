@@ -15,5 +15,8 @@
 			<li>Mashed_Lynian_Apparel_BoaboaMask</li>
 			<li>Mashed_Lynian_Apparel_BoaboaCoat</li>
 		</apparelRequired>
+		<apparelTags>
+			<li>Mashed_Lynian_BoaboaTribal</li>
+		</apparelTags>
 	</PawnKindDef>
 </Defs>

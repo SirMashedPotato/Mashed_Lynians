@@ -11,5 +11,8 @@
 		<defName>Mashed_Lynian_GrimalkyneTribesperson</defName>
 		<race>Mashed_Lynian_GrimalkyneRace</race>
 		<defaultFactionType>Mashed_Lynian_GrimalkynePlayerTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
 	</PawnKindDef>
 </Defs>

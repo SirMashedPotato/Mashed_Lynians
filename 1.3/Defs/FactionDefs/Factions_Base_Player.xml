@@ -75,6 +75,7 @@
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Cloth</li>
+				<li>WoodLog</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<recipePrerequisiteTags>
@@ -119,6 +120,7 @@
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Cloth</li>
+				<li>WoodLog</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<recipePrerequisiteTags>

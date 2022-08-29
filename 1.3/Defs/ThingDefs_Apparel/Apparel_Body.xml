@@ -158,11 +158,124 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
+				<li>Legs</li>
+				<li>Neck</li>
+				<!--
+				<li>Shoulders</li>
+				<li>Arms</li>
+				-->
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaCoat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Mashed_Lynian_GajalakaTribal</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaLoincloth]========== -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaLoincloth</defName>
+		<label>Shakalaka loincloth</label>
+		<description>A leaf turned into a loincloth, typically worn by Shakalaka. Specially designed for Lynians, while it offers little in the way of protection, it does help keep things modest.</description>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaLoincloth_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>250</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaLoincloth</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribal</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCoat]========== -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaCoat</defName>
+		<label>Shakalaka coat</label>
+		<description>A light coat, typically worn by Shakalaka. Specially designed for Lynians, helps keep one cool during the summer.</description>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCoat/Mashed_ShakalakaCoat_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaCoat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCoat/Mashed_ShakalakaCoat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
@@ -173,7 +286,7 @@
 			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 			<tags>
-				<li>Mashed_Lynian_GajalakaTribal</li>
+				<li>Mashed_Lynian_ShakalakaTribalAdvanced</li>
 			</tags>
 		</apparel>
 	</ThingDef>

@@ -28,13 +28,10 @@
 		</startingTechprintsResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
+				<li>WoodLog</li>
 				<li>Leather_Plain</li>
 				<li>Leather_Light</li>
 				<li>Leather_Bird</li>
-				<li>BlocksSandstone</li>
-				<li>BlocksGranite</li>
-				<li>BlocksLimestone</li>
-				<li>BlocksSlate</li>
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>

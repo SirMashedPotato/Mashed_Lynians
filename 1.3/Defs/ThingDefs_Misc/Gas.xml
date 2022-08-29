@@ -1,21 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<ThingDef ParentName="BaseGas">
 		<defName>Mashed_Lynian_FelvineGasCloud</defName>
 		<thingClass>Mashed_Lynians.Gas_FelvineCloud</thingClass>
 		<label>felvine cloud</label>
 		<graphicData>
-		  <texPath>Things/Gas/Puff</texPath>
-		  <drawSize>2.2</drawSize>
-		  <color>(236,142,179,50)</color>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.2</drawSize>
+			<color>(236,142,179,50)</color>
 		</graphicData>
 		<gas>
-		  <expireSeconds>16~32</expireSeconds>
-		  <blockTurretTracking>true</blockTurretTracking>
-		  <accuracyPenalty>0.7</accuracyPenalty>
-		  <rotationSpeed>10</rotationSpeed>
+			<expireSeconds>16~32</expireSeconds>
+			<blockTurretTracking>true</blockTurretTracking>
+			<accuracyPenalty>0.7</accuracyPenalty>
+			<rotationSpeed>10</rotationSpeed>
 		</gas>
 	</ThingDef>
- 
+	<ThingDef ParentName="BaseGas">
+		<defName>Mashed_Lynian_SleepGasCloud</defName>
+		<thingClass>Mashed_Lynians.Gas_SleepBomb</thingClass>
+		<label>sleep gas cloud</label>
+		<graphicData>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.2</drawSize>
+			<color>(179,227,244,50)</color>
+		</graphicData>
+		<gas>
+			<expireSeconds>14~26</expireSeconds>
+			<blockTurretTracking>true</blockTurretTracking>
+			<accuracyPenalty>0.7</accuracyPenalty>
+			<rotationSpeed>10</rotationSpeed>
+		</gas>
+	</ThingDef>
 </Defs>
