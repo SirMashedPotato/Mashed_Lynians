@@ -35,7 +35,7 @@ namespace Mashed_Lynians
                                 {
                                     float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(p.thingIDNumber ^ 74374237));
                                     num *= num2;
-                                    p.needs.rest.CurLevel -= num;
+                                    p.needs.rest.CurLevel -= num * 3;
                                 }
                             }
                         }

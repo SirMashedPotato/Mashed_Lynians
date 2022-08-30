@@ -24,6 +24,14 @@
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
+				<li>
+					<kindDefs>
+						<li>Mashed_Lynian_ShakalakaTribesperson</li>
+						<li>Mashed_Lynian_GajalakaTribesperson</li>
+						<li>Mashed_Lynian_BoaboaTribesperson</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
 			</alienrefugeekinds>
 			<!-- ==========[Starting colonists]==========-->
 			<startingColonists>
@@ -53,6 +61,14 @@
 								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
 							</kindDefs>
 							<chance>5.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_ShakalakaTribesperson</li>
+								<li>Mashed_Lynian_GajalakaTribesperson</li>
+								<li>Mashed_Lynian_BoaboaTribesperson</li>
+							</kindDefs>
+							<chance>2.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -156,6 +172,13 @@
 								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
 							</kindDefs>
 							<chance>5.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_GajalakaTribesperson</li>
+								<li>Mashed_Lynian_BoaboaTribesperson</li>
+							</kindDefs>
+							<chance>2.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -348,6 +371,34 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_GajalakaPlayerColony</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Lynians Shakalaka tribe]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_ShakalakaTribesperson</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_ShakalakaPlayerTribe</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Lynians Shakalaka colony]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_ShakalakaColonist</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_ShakalakaPlayerColony</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Lynian_Apparel_HeadgearBase]========== -->
 	<!-- ==========[Mashed_Lynian_Apparel_MelynxBandana]========== -->
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>Mashed_Lynian_Apparel_MelynxBandana</defName>
@@ -454,5 +455,145 @@
 				</li>
 			</options>
 		</colorGenerator>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaAcornMask]========== -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaAcornMask</defName>
+		<label>Shakalaka acorn mask</label>
+		<description>A wooden mask, made to resemble an acorn, typically worn by young Shakalaka. Specially designed for Lynians, fortifies the mind to be as strong as an acorn.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isShakalakaMask>true</isShakalakaMask>
+			</li>
+		</modExtensions>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaAcornMask/Mashed_ShakalakaAcornMask_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.8</Flammability>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaAcornMask/Mashed_ShakalakaAcornMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCrabMask]========== -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaCrabMask</defName>
+		<label>Shakalaka crab mask</label>
+		<description>A wooden mask, made to resemble a crab, typically worn by young Shakalaka. Specially designed for Lynians, fortifies the mind to be as tough as a crab.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isShakalakaMask>true</isShakalakaMask>
+			</li>
+		</modExtensions>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCrabMask/Mashed_ShakalakaCrabMask_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.8</Flammability>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCrabMask/Mashed_ShakalakaCrabMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
 	</ThingDef>
 </Defs>

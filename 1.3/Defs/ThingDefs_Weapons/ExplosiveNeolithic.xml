@@ -324,8 +324,10 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<RawFungus>30</RawFungus>
-			<Chemfuel>30</Chemfuel>
+			<WoodLog>5</WoodLog>
+			<Steel>5</Steel>
+			<RawFungus>20</RawFungus>
+			<Chemfuel>20</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_ShakalakaTribalSleep</li>

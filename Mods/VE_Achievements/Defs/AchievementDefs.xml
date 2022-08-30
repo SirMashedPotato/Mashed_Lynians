@@ -151,6 +151,21 @@
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	-->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaWanderer</defName>
+		<label>Bow Before Your New Master</label>
+		<description>Have a Shakalaka wanderer join your faction</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Lynian_ShakalakaWanderer</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaWanderer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Felvine]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_CraftFelvine</defName>

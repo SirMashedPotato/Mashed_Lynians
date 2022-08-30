@@ -117,22 +117,4 @@
 			</fixedParams>
 		</root>
 	</ThingSetMakerDef>
-	<!-- ==========[Goblin-like Loot Maker]==========-->
-	<ThingSetMakerDef>
-		<defName>Mashed_Lynian_GoblinLikeRaidLootMaker</defName>
-		<root Class="ThingSetMaker_MarketValue">
-			<fixedParams>
-				<filter>
-					<thingDefs>
-						<li>Silver</li>
-						<li>Jade</li>
-						<li>MedicineHerbal</li>
-						<li>Pemmican</li>
-						<li>Steel</li>
-						<li>Gold</li>
-					</thingDefs>
-				</filter>
-			</fixedParams>
-		</root>
-	</ThingSetMakerDef>
 </Defs>

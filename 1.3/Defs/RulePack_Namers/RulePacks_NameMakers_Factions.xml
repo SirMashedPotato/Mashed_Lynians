@@ -48,4 +48,16 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Shakalaka faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionShakalaka</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Root Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

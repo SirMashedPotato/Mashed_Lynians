@@ -11,7 +11,7 @@
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionGajalaka</factionNameMaker>
 		<caravanTraderKinds Inherit="False"/>
-		<raidLootMaker>Mashed_Lynian_GoblinLikeRaidLootMaker</raidLootMaker>
+		<raidLootMaker>Mashed_Lynian_GajalakaRaidLootMaker</raidLootMaker>
 		<disallowedMemes>
 		</disallowedMemes>
 		<disallowedPrecepts>
@@ -156,4 +156,22 @@
 			</li>
 		</pawnGroupMakers>
 	</FactionDef>
+	<!-- ==========[Gajalaka Loot Maker]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Lynian_GajalakaRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>Jade</li>
+						<li>MedicineHerbal</li>
+						<li>Pemmican</li>
+						<li>Steel</li>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
 </Defs>

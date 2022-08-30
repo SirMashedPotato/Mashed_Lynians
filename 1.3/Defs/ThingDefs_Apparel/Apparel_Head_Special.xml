@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>Mashed_Lynian_Apparel_UltimateMask</defName>
 		<label>Ultimate Mask</label>
-		<description>An unusual mask, of unkown origin. Some Lynian cultures believe it was blessed by a god, others created by the Archotechs. All that is certain, is that it truly is the Ultimate Mask.\n\nIt is believed this mask greatly empowers the wearer, though one must be careful of the cost such a power holds.</description>
+		<description>An unusual mask, of unknown origin. Some Lynian cultures believe it was blessed by a god, others created by the Archotechs. All that is certain, is that it truly is the Ultimate Mask.\n\nIt is believed this mask greatly empowers the wearer, though one must be careful of the cost such a power holds.</description>
 		<thingClass>Mashed_Lynians.UltimateMask</thingClass>
 		<tickerType>Normal</tickerType>
 		<modExtensions>

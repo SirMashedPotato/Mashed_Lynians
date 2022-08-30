@@ -149,6 +149,8 @@
 					<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
 					<li>Mashed_Lynian_Apparel_ShakalakaCoat</li>
 					<li>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaAcornMask</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaCrabMask</li>
 				</apparelList>
 				<weaponList>
 					<li>Mashed_Lynian_MeleeWeapon_PawClub</li>
@@ -168,6 +170,7 @@
 					<li>Mashed_Lynian_RangedWeapon_GajalakaCannon</li>
 					<li>Mashed_Lynian_MeleeWeapon_ShakalakaSword</li>
 					<li>Mashed_Lynian_MeleeWeapon_ShakalakaSwordToxic</li>
+					<li>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb</li>
 				</weaponList>
 				<blackTraitList>
 				</blackTraitList>
