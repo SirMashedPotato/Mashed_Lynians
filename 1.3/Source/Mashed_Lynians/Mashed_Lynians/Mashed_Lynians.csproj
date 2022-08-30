@@ -72,13 +72,17 @@
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
+    <Compile Include="DefOf\FactionDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\HistoryEventDefOf.cs" />
+    <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\RecordDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
+    <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />

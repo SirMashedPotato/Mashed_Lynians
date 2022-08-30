@@ -21,5 +21,6 @@
 		<weaponMoney>300~300</weaponMoney>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>13~20</initialResistanceRange>
+		<maxGenerationAge>25</maxGenerationAge>
 	</PawnKindDef>
 </Defs>
