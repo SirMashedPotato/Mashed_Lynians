@@ -43,6 +43,7 @@
 								<li>Mashed_Lynian_FelyneColonist</li>
 								<li>Mashed_Lynian_MelynxColonist</li>
 								<li>Mashed_Lynian_GrimalkyneColonist</li>
+								<li>Mashed_Lynian_UrukiColonist</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
@@ -67,6 +68,7 @@
 								<li>Mashed_Lynian_ShakalakaTribesperson</li>
 								<li>Mashed_Lynian_GajalakaTribesperson</li>
 								<li>Mashed_Lynian_BoaboaTribesperson</li>
+								<li>Mashed_Lynian_UrukiTribesperson</li>
 							</kindDefs>
 							<chance>2.0</chance>
 						</li>
@@ -154,6 +156,7 @@
 								<li>Mashed_Lynian_FelyneColonist</li>
 								<li>Mashed_Lynian_MelynxColonist</li>
 								<li>Mashed_Lynian_GrimalkyneColonist</li>
+								<li>Mashed_Lynian_UrukiColonist</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
@@ -170,6 +173,7 @@
 								<li>Mashed_Lynian_FelyneTribesperson</li>
 								<li>Mashed_Lynian_MelynxTribesperson</li>
 								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
+								<li>Mashed_Lynian_UrukiTribesperson</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
@@ -399,6 +403,34 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_ShakalakaPlayerColony</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Lynians Uruki tribe]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_UrukiTribesperson</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_UrukiPlayerTribe</li>
+					</factionDefs>
+				</li>
+				<!-- ==========[Lynians Uruki colony]==========-->
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_UrukiColonist</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Mashed_Lynian_UrukiPlayerColony</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>

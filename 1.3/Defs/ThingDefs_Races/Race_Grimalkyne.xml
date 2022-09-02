@@ -17,8 +17,8 @@
 			<RestRateMultiplier>1.1</RestRateMultiplier>
 			<!-- 0.2 higher than base -->
 			<ForagedNutritionPerDay>0.2</ForagedNutritionPerDay>
-			<!-- 0.2 lower than base -->
-			<ToxicSensitivity>0.8</ToxicSensitivity>
+			<!-- 0.2 lower than other lynians -->
+			<ToxicSensitivity>0.3</ToxicSensitivity>
 		</statBases>
 		<comps>
 		</comps>

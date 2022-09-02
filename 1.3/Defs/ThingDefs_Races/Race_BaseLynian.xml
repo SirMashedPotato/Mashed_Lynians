@@ -32,6 +32,7 @@
 			<PsychicSensitivity>0.8</PsychicSensitivity>
 			<WorkSpeedGlobal>0.85</WorkSpeedGlobal>
 			<RoyalFavorValue>2</RoyalFavorValue>
+			<ToxicSensitivity>0.5</ToxicSensitivity>
 		</statBases>
 		<race>
 			<nameGenerator>NamerAnimalGenericMale</nameGenerator>

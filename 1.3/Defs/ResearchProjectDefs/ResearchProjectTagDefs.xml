@@ -24,4 +24,8 @@
 	<ResearchProjectTagDef>
 		<defName>Mashed_Lynian_BoaboaStart</defName>
 	</ResearchProjectTagDef>
+	<!-- ==========[Uruki]========== -->
+	<ResearchProjectTagDef>
+		<defName>Mashed_Lynian_UrukiStart</defName>
+	</ResearchProjectTagDef>
 </Defs>

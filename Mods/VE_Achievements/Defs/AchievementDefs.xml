@@ -134,7 +134,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_BoaboaColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_UrukiColonists</defName>
 		<label>Keepers of the Flower Field</label>
@@ -150,7 +149,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_UrukiColonists</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	-->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_ShakalakaWanderer</defName>
 		<label>Bow Before Your New Master</label>
