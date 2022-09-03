@@ -60,8 +60,25 @@
 								<options>
 									<!-- Frontier Icon -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(245,240,219,255)</only>
+									</li>
+									<!-- Concept art -->
+									<li>
+										<weight>1</weight>
+										<only>(252,246,229,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(246,236,219,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(235,230,224,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(244,223,203,255)</only>
 									</li>
 								</options>
 							</second>
@@ -80,10 +97,6 @@
 									</li>
 									<li>
 										<weight>1</weight>
-										<only>(77,86,81,255)</only>
-									</li>
-									<li>
-										<weight>1</weight>
 										<only>(162,174,169,255)</only>
 									</li>
 									<li>
@@ -93,6 +106,19 @@
 									<li>
 										<weight>1</weight>
 										<only>(133,146,142,255)</only>
+									</li>
+									<!-- Concept art -->
+									<li>
+										<weight>1</weight>
+										<only>(217,141,29,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(199,138,47,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(180,122,22,255)</only>
 									</li>
 								</options>
 							</first>
