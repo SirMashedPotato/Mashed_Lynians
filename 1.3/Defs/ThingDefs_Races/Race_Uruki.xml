@@ -160,7 +160,7 @@
 						</li>
 						<!-- =====[Ear right]===== -->
 						<li>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Uruki/Mashed_UrukiEar_Right</path>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Right</path>
 							<colorChannel>skin</colorChannel>
 							<bodyPart>right ear</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -192,7 +192,7 @@
 						<!-- =====[Ear left]===== -->
 						<li>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Uruki/Mashed_UrukiEar_Left</path>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Left</path>
 							<colorChannel>skin</colorChannel>
 							<bodyPart>left ear</bodyPart>
 							<drawnInBed>true</drawnInBed>
@@ -285,8 +285,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/Uruki/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Body/Uruki/</body>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
 				</li>
 			</graphicPaths>
 		</alienRace>
