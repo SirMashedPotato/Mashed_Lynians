@@ -14,5 +14,6 @@ namespace Mashed_Lynians
 		public static RecordDef Mashed_Lynian_PilferedNumber;
 		public static RecordDef Mashed_Lynian_PilferedValue;
 		public static RecordDef Mashed_Lynian_DiggingDistance;
+		public static RecordDef Mashed_Lynian_GrowthPromoted;
 	}
 }

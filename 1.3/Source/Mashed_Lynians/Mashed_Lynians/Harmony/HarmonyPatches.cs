@@ -3,8 +3,6 @@ using System.Text;
 using Verse;
 using System.Reflection;
 using RimWorld;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Mashed_Lynians
 {

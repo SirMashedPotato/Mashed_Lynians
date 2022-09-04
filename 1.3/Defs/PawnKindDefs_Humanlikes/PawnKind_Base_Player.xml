@@ -5,6 +5,7 @@
 		<label>colonist</label>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
+			<li>IndustrialBasic</li>
 			<li>Mashed_Lynian_Basic</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>

@@ -8,6 +8,7 @@
 			<li Class="Mashed_Lynians.RaceProperties">
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>
+					<li>Mashed_Lynian_PromoteGrowthAbility</li>
 				</abilitiesToAdd>
 			</li>
 		</modExtensions>

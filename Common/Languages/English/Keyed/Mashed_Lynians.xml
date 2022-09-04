@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	<Mashed_Lynian_AbilityDisabled_Skill>{0} is incapable of {1}</Mashed_Lynian_AbilityDisabled_Skill>
+	<Mashed_Lynian_AbilityDisabled_SkillLow>{0}'s {1} skill is too low</Mashed_Lynian_AbilityDisabled_SkillLow>
 	<!-- ==========[Pilfering]==========-->
 	<Mashed_Lynian_PilferSuccess>{0} has pilfered: {1}</Mashed_Lynian_PilferSuccess>
 	<Mashed_Lynian_PilferFail>{0} has failed to pilfer anything, luckily the attempt has gone unnoticed</Mashed_Lynian_PilferFail>
 	<Mashed_Lynian_PilferCaught>{0} has been caught trying to pilfer</Mashed_Lynian_PilferCaught>
 	<Mashed_Lynian_PilferDetails>Successful chance: {0}\nFail caught chance: {1}</Mashed_Lynian_PilferDetails>
 	<Mashed_Lynian_AbilitySkillTooLow>{0} skill must be level {1} or higher</Mashed_Lynian_AbilitySkillTooLow>
+	<!-- Promote growth -->
+	<Mashed_Lynian_PromoteGrowthDetails>Growth boost: {0}</Mashed_Lynian_PromoteGrowthDetails>
 </LanguageData>

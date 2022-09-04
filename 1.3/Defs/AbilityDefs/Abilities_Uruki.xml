@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_UrukiAbility</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[Promote growth]==========-->
+	<AbilityDef>
+		<defName>Mashed_Lynian_PromoteGrowthAbility</defName>
+		<label>promote growth</label>
+		<description>Use the casters knowledge of plant working to increase the growth of the targeted plant. Increases the growth of the plant by 1% for each level in plants, up to a maximum of 20%.</description>
+		<iconPath>UI/Abilities/Mashed_Uruki_PromoteGrowthAbility</iconPath>
+		<groupDef>Mashed_Lynian_UrukiAbility</groupDef>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<warmupSound>Interact_Sow</warmupSound>
+		<uiOrder>1</uiOrder>
+		<statBases>
+		</statBases>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_PromoteGrowth">
+				<growthPerLevel>0.01</growthPerLevel>
+				<growthCap>0.2</growthCap>
+			</li>
+		</comps>
+		<verbProperties>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<violent>false</violent>
+			<verbClass>Mashed_Lynians.Verb_CastAbilityTouch_PromoteGrowth</verbClass>
+			<targetParams>
+				<canTargetPlants>true</canTargetPlants>
+				<canTargetItems>false</canTargetItems>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetMechs>true</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+</Defs>

@@ -60,4 +60,16 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Uruki faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionUruki</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Flower Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

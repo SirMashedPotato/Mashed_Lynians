@@ -16,12 +16,13 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<!--<warmupSound>AnimalCalm_Resolve</warmupSound>-->
+		<warmupSound>Interact_GraveDig</warmupSound>
 		<uiOrder>1</uiOrder>
 		<statBases>
 		</statBases>
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_Dig">
+				<requiredLevel>5</requiredLevel>
 			</li>
 		</comps>
 		<verbProperties>

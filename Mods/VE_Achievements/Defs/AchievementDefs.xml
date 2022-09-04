@@ -189,11 +189,11 @@
 		<texPath>Achievements/Mashed_AchievementLynians_FelvineHighs</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
-	<!-- ==========[Digging]========== -->
+	<!-- ==========[Ability records]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_DigDistance</defName>
 		<label>Meowster Digger</label>
-		<description>Have a single lynian dig a cumulative distance of 500 tiles</description>
+		<description>Have a single Lynian dig a cumulative distance of 500 tiles</description>
 		<tracker Class="AchievementsExpanded.RecordEventTracker">
 			<def>Mashed_Lynian_DiggingDistance</def>
 			<count>500</count>
@@ -201,7 +201,18 @@
 		<texPath>Achievements/Mashed_AchievementLynians_DigDistance</texPath>
 		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
-	<!-- ==========[Pilfering]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PromoteGrowthGrowth</defName>
+		<label>Meowster Gardener</label>
+		<description>Have a single Uruki cumulatively promote plant growth by 200%</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_GrowthPromoted</def>
+			<count>200</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PromoteGrowthGrowth</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Ability records - Pilfering]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PilferItems</defName>
 		<label>Meowster Pilferer</label>

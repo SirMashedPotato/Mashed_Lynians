@@ -67,8 +67,10 @@
   <ItemGroup>
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_PromoteGrowth.cs" />
     <Compile Include="Verb\Verb_ShootWithDurability.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
     <Compile Include="Verb\Verb_CastAbility_Dig.cs" />
