@@ -6,8 +6,8 @@
 		<description>A small Boaboa tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Boaboa are highly skilled hunters, and subsequently make both viscous foes, and powerful allies.\n\nBeing a Boaboa tribe, this particular tribe is distrustful of outsiders, and often openly hostile to anyone that encroaches their hunting grounds; it may be difficult to turn them into an ally.</description>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_BoaboaSettlement_NonPlayer</factionIconPath>
 		<colorSpectrum>
-			<li>(0.03, 0.47, 0.16)</li>
-			<li>(0.49, 0.96, 0.51)</li>
+			<li>(0.6, 0.3, 0.2)</li>
+			<li>(0.5, 0.3, 0.3)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionBoaboa</factionNameMaker>
 		<caravanTraderKinds Inherit="False"/>

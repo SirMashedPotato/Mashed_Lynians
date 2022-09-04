@@ -82,13 +82,11 @@
 	</FactionDef>
 	<!-- ==========[Cat-Like Base]==========-->
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase" Name="Mashed_Lynian_NonPlayerCatLikeFactionBase" Abstract="True">
-		<factionNameMaker>Mashed_Lynian_NamerFactionCatLike</factionNameMaker>
 		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
 		<raidLootMaker>Mashed_Lynian_CatLikeRaidLootMaker</raidLootMaker>
 	</FactionDef>
 	<!-- ==========[Hostile Base]==========-->
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase" Name="Mashed_Lynian_NonPlayerHostileFactionBase" Abstract="True">
-		<factionNameMaker>Mashed_Lynian_NamerFactionCatLike</factionNameMaker>
 		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
 		<naturalEnemy>true</naturalEnemy>
 		<requiredMemes>

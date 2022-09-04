@@ -10,7 +10,7 @@ namespace Mashed_Lynians
             {
                 if (base.EquipmentSource != null)
                 {
-                    base.EquipmentSource.HitPoints -= (int)(base.EquipmentSource.MaxHitPoints * 0.05f);
+                    base.EquipmentSource.HitPoints -= 15;
                     if (base.EquipmentSource.HitPoints <= 0)
                     {
                         this.SelfConsume();

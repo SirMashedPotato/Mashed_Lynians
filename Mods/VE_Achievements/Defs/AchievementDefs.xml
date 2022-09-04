@@ -6,44 +6,6 @@
 		<tab>SMP_AchievementsTab</tab>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Colonists]========== -->
-	<!--
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
-		<defName>Mashed_AchievementLynians_AllKindsColonists</defName>
-		<label>Lynian Fur-iends</label>
-		<description>Have one of each kind of Lynian in your colony at the same time</description>
-		<tracker Class="AchievementsExpanded.RaceDefTracker">
-			<requireAll>true</requireAll>
-			<raceDefs>
-				<li>
-					<key>Mashed_Lynian_FelyneRace</key>
-					<value>1</value>
-				</li>
-				<li>
-					<key>Mashed_Lynian_MelynxRace</key>
-					<value>1</value>
-				</li>
-				<li>
-					<key>Mashed_Lynian_GrimalkyneRace</key>
-					<value>1</value>
-				</li>
-				<li>
-					<key>Mashed_Lynian_ShakalakaRace</key>
-					<value>1</value>
-				</li>
-				<li>
-					<key>Mashed_Lynian_GajalakaRace</key>
-					<value>1</value>
-				</li>
-				<li>
-					<key>Mashed_Lynian_BoaboaRace</key>
-					<value>1</value>
-				</li>
-			</raceDefs>
-		</tracker>
-		<texPath>Achievements/Mashed_AchievementLynians_AllKindsColonists</texPath>
-		<points>15</points>
-	</AchievementsExpanded.AchievementDef>
-	-->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_FelyneColonists</defName>
 		<label>Peaceful until Pawvoked</label>
@@ -148,6 +110,46 @@
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_UrukiColonists</texPath>
 		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_AllKindsColonists</defName>
+		<label>Lynian Fur-iends</label>
+		<description>Have one of each kind of Lynian in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<requireAll>true</requireAll>
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_FelyneRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_MelynxRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_GrimalkyneRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_ShakalakaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_GajalakaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_BoaboaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_UrukiRace</key>
+					<value>1</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_AllKindsColonists</texPath>
+		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_ShakalakaWanderer</defName>

@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Cat-like faction namer]==========-->
-	<RulePackDef>
-		<defName>Mashed_Lynian_NamerFactionCatLike</defName>
-		<include>
-			<li>TribalWordUtility</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>r_name->The [Color] Paw Tribe</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
 	<!-- ==========[Cat-like settlement namer]==========-->
 	<RulePackDef>
 		<defName>Mashed_Lynian_NamerSettlementCatLike</defName>
@@ -21,6 +9,42 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[Color] [TerrainFeature]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Felyne faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionFelyne</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Paw Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Melynx faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionMelynx</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Claw Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Grimalkyne faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionGrimalkyne</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Bone Tribe</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

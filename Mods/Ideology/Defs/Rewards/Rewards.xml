@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- =====[Base]===== -->
+	<AchievementsExpanded.Reward_MapIncident Name="Mashed_AchievementLynians_LynianJoinsReward" Abstract="true">
+		<tab>SMP_AchievementsTab</tab>
+		<cost>150</cost>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Felyne]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_FelyneJoinsReward</defName>
+		<label>Tribal Felyne joins</label>
+		<incident>Mashed_AchievementLynians_FelyneJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Melynx]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_MelynxJoinsReward</defName>
+		<label>Tribal Melynx joins</label>
+		<incident>Mashed_AchievementLynians_MelynxJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Grimalkyne]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_GrimalkyneJoinsReward</defName>
+		<label>Tribal Grimalkyne joins</label>
+		<incident>Mashed_AchievementLynians_GrimalkyneJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Shakalaka]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_ShakalakaJoinsReward</defName>
+		<label>Tribal Shakalaka joins</label>
+		<incident>Mashed_AchievementLynians_ShakalakaJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Gajalaka]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_GajalakaJoinsReward</defName>
+		<label>Tribal Gajalaka joins</label>
+		<incident>Mashed_AchievementLynians_GajalakaJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Boaboa]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_BoaboaJoinsReward</defName>
+		<label>Tribal Boaboa joins</label>
+		<incident>Mashed_AchievementLynians_BoaboaJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Uruki]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_UrukiJoinsReward</defName>
+		<label>Tribal Uruki joins</label>
+		<incident>Mashed_AchievementLynians_UrukiJoinsIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+</Defs>
