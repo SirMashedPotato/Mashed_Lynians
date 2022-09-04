@@ -21,7 +21,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PreceptDef[defName="ApparelDesired_Strong_Subordinate"]/conflictingMemes</xpath>
 		<value>
-			<li>Mashed_Lynian_MaskWearingMeme</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
 		</value>
 	</Operation>
 	<!-- ==========[ApparelDesired_Soft_Subordinate]========== -->
@@ -45,7 +47,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PreceptDef[defName="ApparelDesired_Soft_Subordinate"]/conflictingMemes</xpath>
 		<value>
-			<li>Mashed_Lynian_MaskWearingMeme</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
 		</value>
 	</Operation>
 	<!-- ==========[Nudity_Male_CoveringAnythingButGroinDisapproved]========== -->
@@ -69,7 +73,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PreceptDef[defName="Nudity_Male_CoveringAnythingButGroinDisapproved"]/conflictingMemes</xpath>
 		<value>
-			<li>Mashed_Lynian_MaskWearingMeme</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
 		</value>
 	</Operation>
 	<!-- ==========[Nudity_Female_CoveringAnythingButGroinDisapproved]========== -->
@@ -93,7 +99,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PreceptDef[defName="Nudity_Female_CoveringAnythingButGroinDisapproved"]/conflictingMemes</xpath>
 		<value>
-			<li>Mashed_Lynian_MaskWearingMeme</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
 		</value>
 	</Operation>
 	<!-- ==========[Nudity_Male_Mandatory]========== -->
@@ -117,7 +125,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PreceptDef[defName="Nudity_Male_Mandatory"]/conflictingMemes</xpath>
 		<value>
-			<li>Mashed_Lynian_MaskWearingMeme</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
 		</value>
 	</Operation>
 	<!-- ==========[Nudity_Female_Mandatory]========== -->
@@ -141,7 +151,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/PreceptDef[defName="Nudity_Female_Mandatory"]/conflictingMemes</xpath>
 		<value>
-			<li>Mashed_Lynian_MaskWearingMeme</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li>Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
 		</value>
 	</Operation>
 </Patch>

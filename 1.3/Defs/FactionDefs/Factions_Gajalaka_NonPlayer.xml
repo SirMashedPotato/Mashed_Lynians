@@ -14,11 +14,9 @@
 		<raidLootMaker>Mashed_Lynian_GajalakaRaidLootMaker</raidLootMaker>
 		<disallowedMemes>
 		</disallowedMemes>
-		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Shakalaka</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Boaboa</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Generic</li>
-		</disallowedPrecepts>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+		</requiredMemes>
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Leather_Plain</li>

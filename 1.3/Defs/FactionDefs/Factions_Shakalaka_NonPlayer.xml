@@ -3,8 +3,7 @@
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerHostileFactionBase">
 		<defName>Mashed_Lynian_NonPlayerShakalakaTribe</defName>
 		<label>Shakalaka tribe</label>
-		<description>A small Shakalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically
-			advanced, Shakalaka strike without fear and subsequently make both viscous foes, and powerful allies.\n\nBeing a Shakalaka tribe, this particular tribe is incredibly reclusive, and often openly hostile to anyone that enters their territory; it may be difficult to turn them into an ally.</description>
+		<description>A small Shakalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Shakalaka strike without fear and subsequently make both viscous foes, and powerful allies.\n\nBeing a Shakalaka tribe, this particular tribe is incredibly reclusive, and often openly hostile to anyone that enters their territory; it may be difficult to turn them into an ally.</description>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_NonPlayer</factionIconPath>
 		<colorSpectrum>
 			<li>(0.5, 0.4, 0.3)</li>
@@ -15,11 +14,9 @@
 		<raidLootMaker>Mashed_Lynian_ShakalakaRaidLootMaker</raidLootMaker>
 		<disallowedMemes>
 		</disallowedMemes>
-		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Gajalaka</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Boaboa</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Generic</li>
-		</disallowedPrecepts>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
+		</requiredMemes>
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>WoodLog</li>

@@ -89,11 +89,11 @@
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
     <Compile Include="ThingClass\UltimateMask.cs" />
+    <Compile Include="ThoughtWorker\Ideo\MaskThoughtUtility.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_BoaboaThought.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_GajalakaThought.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_GenericThought.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_MissingMask_ShakalakaThought.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_BoaboaThought.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_GajalakaThought.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_ShakalakaThought.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
     <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />

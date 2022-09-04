@@ -15,11 +15,9 @@
 		<disallowedMemes>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
 		</disallowedMemes>
-		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Shakalaka</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Gajalaka</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearing_Generic</li>
-		</disallowedPrecepts>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+		</requiredMemes>
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Leather_Wolf</li>
