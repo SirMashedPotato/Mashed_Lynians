@@ -53,6 +53,71 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 	-->
+	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerArmour]========== -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Mashed_Lynian_Apparel_PurrserkerArmour</defName>
+		<label>purrserker armour</label>
+		<description>Reasonably protective torso armour. Specially designed for Lynians, fills the wearer with an unbridled fury, and doesn't hinder mobility.</description>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerArmour_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerArmour</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_BoaboaCoat]========== -->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Mashed_Lynian_Apparel_BoaboaCoat</defName>
