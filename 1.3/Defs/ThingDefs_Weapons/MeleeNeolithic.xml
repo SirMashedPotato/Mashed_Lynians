@@ -11,8 +11,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>

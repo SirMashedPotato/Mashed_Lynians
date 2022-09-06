@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Lynian_Apparel_BodyBase]========== -->
 	<!--
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Mashed_Lynian_Apparel_BasicApron</defName>
@@ -59,8 +60,9 @@
 		<label>purrserker armour</label>
 		<description>Reasonably protective torso armour. Specially designed for Lynians, fills the wearer with an unbridled fury, and doesn't hinder mobility.</description>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -124,8 +126,9 @@
 		<label>Boaboa coat</label>
 		<description>A thick pelt coat, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -186,8 +189,9 @@
 		<label>Gajalaka coat</label>
 		<description>A light pelt coat, typically worn by Gajalaka. Specially designed for Lynians, the light design ensures movement is not restricted.</description>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -251,8 +255,9 @@
 		<label>Shakalaka loincloth</label>
 		<description>A leaf turned into a loincloth, typically worn by Shakalaka. Specially designed for Lynians, while it offers little in the way of protection, it does help keep things modest.</description>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 		</recipeMaker>
@@ -303,8 +308,9 @@
 		<label>Shakalaka coat</label>
 		<description>A light coat, typically worn by Shakalaka. Specially designed for Lynians, helps keep one cool during the summer.</description>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>

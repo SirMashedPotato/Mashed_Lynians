@@ -22,8 +22,9 @@
 			<li>Ranged</li>
 		</weaponClasses>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>
@@ -192,8 +193,9 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>
@@ -282,8 +284,9 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>
@@ -367,8 +370,8 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>

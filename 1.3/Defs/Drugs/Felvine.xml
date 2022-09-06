@@ -56,6 +56,7 @@
 			<researchPrerequisite>Mashed_Lynian_FelvineSowing</researchPrerequisite>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 				<li>DrugLab</li>
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>

@@ -13,6 +13,7 @@
 			<soundWorking>Recipe_Smith</soundWorking>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
 			<researchPrerequisites>

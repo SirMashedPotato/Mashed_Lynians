@@ -16,8 +16,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -114,8 +113,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -186,8 +184,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -294,8 +291,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -401,8 +397,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -480,8 +475,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -550,8 +544,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>

@@ -6,8 +6,7 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
+				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
