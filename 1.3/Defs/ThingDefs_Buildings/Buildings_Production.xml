@@ -67,6 +67,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(1.9, 0.3, 0.5)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
