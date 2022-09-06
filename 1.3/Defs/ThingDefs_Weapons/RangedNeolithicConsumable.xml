@@ -21,6 +21,9 @@
 			<researchPrerequisites>
 				<li>Mashed_Lynian_GajalakaEquipment</li>
 			</researchPrerequisites>
+			<skillRequirements Inherit="False">
+				<Crafting>5</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>

@@ -139,7 +139,7 @@
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_BoneSaw]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
 		<defName>Mashed_Lynian_MeleeWeapon_BoneSaw</defName>
-		<label>bone saw</label>
+		<label>Grimalkyne bone saw</label>
 		<description>A piece of jawbone fashioned into a saw, and attached to a stick, typically used by Grimalkyne. Specially designed for Lynians, quite a formidable weapon in the right paws, and rather useful for traversing the wilderness.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Grimalkyne_Saw</texPath>

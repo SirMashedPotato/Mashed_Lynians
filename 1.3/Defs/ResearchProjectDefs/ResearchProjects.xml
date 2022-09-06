@@ -99,7 +99,7 @@
 			<li>Mashed_Lynian_GajalakaStart</li>
 		</tags>
 	</ResearchProjectDef>
-		<!-- ==========[Boaboa equipment]========== -->
+	<!-- ==========[Boaboa equipment]========== -->
 	<ResearchProjectDef>
 		<defName>Mashed_Lynian_BoaboaEquipment</defName>
 		<label>boaboa equipment</label>
@@ -111,6 +111,20 @@
 		<tab>SMP_ResearchTab</tab>
 		<tags>
 			<li>Mashed_Lynian_BoaboaStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Uruki equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_UrukiEquipment</defName>
+		<label>uruki equipment</label>
+		<description>Learn how to craft basic Uruki equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<tags>
+			<li>Mashed_Lynian_UrukiStart</li>
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Row 5, specialty sets]========== -->

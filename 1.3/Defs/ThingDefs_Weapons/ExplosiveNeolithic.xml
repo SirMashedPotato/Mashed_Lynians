@@ -19,6 +19,9 @@
 			<researchPrerequisites>
 				<li>Mashed_Lynian_LynianExplosives</li>
 			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<thingCategories>
@@ -373,6 +376,75 @@
 			<!-- Use default damage from explosion def -->
 			<preExplosionSpawnThingDef>Mashed_Lynian_SleepGasCloud</preExplosionSpawnThingDef>
 			<explosionDelay>45</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaGrenade]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage</defName>
+		<label>Grimalkyne flashfly cage</label>
+		<description>A wooden cage, containing a small group of flashflies. Often used by Grimalkyne, perfect for disorientating foes.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Grimalkyne_FlashflyCage</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>4000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Mashed_Lynian_GrimalkyneEquipment</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Animals>3</Animals>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneStun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw flashfly cage</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage_Thrown</defName>
+		<label>Grimalkyne flashfly cage</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Grimalkyne_FlashflyCage_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Stun</damageDef>
+			<!-- Use default damage from explosion def -->
 		</projectile>
 	</ThingDef>
 </Defs>

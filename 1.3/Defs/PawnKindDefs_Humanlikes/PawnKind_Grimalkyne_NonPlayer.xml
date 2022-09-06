@@ -22,7 +22,6 @@
 		</apparelTags>
 	</PawnKindDef>
 	<!-- ==========[Basic, Trapper]========== -->
-	<!--
 	<PawnKindDef ParentName="Mashed_Lynian_HunterBase">
 		<defName>Mashed_Lynian_GrimalkyneTrapper</defName>
 		<label>trapper</label>
@@ -35,7 +34,6 @@
 			<li>Mashed_Lynian_GrimalkyneStun</li>
 		</weaponTags>
 	</PawnKindDef>
-	-->
 	<!-- ==========[Basic, Trader]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_TraderBase">
 		<defName>Mashed_Lynian_GrimalkyneTrader</defName>
