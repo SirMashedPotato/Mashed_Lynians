@@ -418,4 +418,85 @@
 			<speed>26</speed>
 		</projectile>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_UrukiThrowingShard]========== -->
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_UrukiSlingshot</defName>
+		<label>Uruki slingshot</label>
+		<description>A primitive slignshot, typically used by Uruki. Specially designed for Lynians, fires acorns a reasonable distance.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Uruki_Slingshot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<WoodLog>50</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalRanged</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_UrukiEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_UrukiSlingshot_Projectile</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>15.9</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Mashed_Lynian_RangedWeapon_UrukiSlingshot_Projectile</defName>
+		<label>Uruki slingshot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Uruki_Slingshot_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>26</speed>
+		</projectile>
+	</ThingDef>
 </Defs>

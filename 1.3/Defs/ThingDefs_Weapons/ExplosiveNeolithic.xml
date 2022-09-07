@@ -177,6 +177,7 @@
 		<description>A pelt satchel, filled with explosive materials. Often used by Boaboa when stealth is no longer an option.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_ThrowingSatchel</texPath>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
 		<statBases>
@@ -189,8 +190,11 @@
 				<li>Mashed_Lynian_BoaboaEquipment</li>
 			</researchPrerequisites>
 		</recipeMaker>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
 		<costList>
-			<Leather_Heavy>30</Leather_Heavy>
 			<Chemfuel>60</Chemfuel>
 		</costList>
 		<weaponTags>
@@ -378,7 +382,7 @@
 			<explosionDelay>45</explosionDelay>
 		</projectile>
 	</ThingDef>
-	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaGrenade]========== -->
+	<!-- ==========[Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage]========== -->
 	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage</defName>
 		<label>Grimalkyne flashfly cage</label>
@@ -445,6 +449,76 @@
 			<explosionRadius>1.9</explosionRadius>
 			<damageDef>Stun</damageDef>
 			<!-- Use default damage from explosion def -->
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn]========== -->
+	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn</defName>
+		<label>Uruki explosive acorn</label>
+		<description>An acorn shaped vessel, filled with explosive materials. Often used by Uruki when they have been sufficiently angered.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Uruki_ExplosiveAcorn</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_UrukiEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<Chemfuel>60</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalDestructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw explosive satchel</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn_Thrown</defName>
+		<label>Uruki explosive acorn</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Uruki_ExplosiveAcorn_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
 		</projectile>
 	</ThingDef>
 </Defs>

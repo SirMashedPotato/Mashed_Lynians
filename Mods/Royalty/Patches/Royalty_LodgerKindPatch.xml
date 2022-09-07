@@ -51,16 +51,13 @@
 					<li>Mashed_Lynian_BoaboaHunter</li>
 				</pawnKinds>
 			</li>
-			<!--
-						<li>
-							<factionDef>Mashed_Lynian_NonPlayerUrukiTribe</factionDef>
-							<pawnKinds>
-								<li>Mashed_Lynian_FelyneGatherer</li>
-								<li>Mashed_Lynian_FelyneWarrior</li>
-								<li>Mashed_Lynian_FelyneHunter</li>
-							</pawnKinds>
-						</li>
-						-->
+			<li>
+				<factionDef>Mashed_Lynian_NonPlayerUrukiTribe</factionDef>
+				<pawnKinds>
+					<li>Mashed_Lynian_UrukiGatherer</li>
+					<li>Mashed_Lynian_UrukiBombadier</li>
+				</pawnKinds>
+			</li>
 		</value>
 	</Operation>
 </Patch>
