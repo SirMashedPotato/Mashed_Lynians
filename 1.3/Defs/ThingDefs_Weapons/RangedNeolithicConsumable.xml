@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaCannon]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaCannon</defName>
 		<label>Gajalaka hand cannon</label>
 		<description>A primitive hand cannon, typically used by Gajalaka. The barrel can only fire a limited number of rockets before it is completely unusable.</description>
@@ -13,6 +13,7 @@
 		<statBases>
 			<Mass>4.5</Mass>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<WorkToMake>5000</WorkToMake>
 		</statBases>
 		<weaponClasses Inherit="False">
 			<li>RangedHeavy</li>
@@ -25,13 +26,13 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costList>
 			<Steel>20</Steel>
-			<Chemfuel>100</Chemfuel>
+			<Chemfuel>50</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_GajalakaTribalDestructiveSpecial</li>

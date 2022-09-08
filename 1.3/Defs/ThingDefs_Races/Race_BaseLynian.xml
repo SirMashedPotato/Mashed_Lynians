@@ -30,14 +30,13 @@
 			<MarketValue>1700</MarketValue>
 			<MoveSpeed>4.8</MoveSpeed>
 			<PsychicSensitivity>0.8</PsychicSensitivity>
-			<WorkSpeedGlobal>0.85</WorkSpeedGlobal>
-			<RoyalFavorValue>2</RoyalFavorValue>
+			<WorkSpeedGlobal>0.95</WorkSpeedGlobal>
+			<RoyalFavorValue>3</RoyalFavorValue>
 			<ToxicSensitivity>0.5</ToxicSensitivity>
 		</statBases>
 		<race>
 			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
-			<!-- probably overwritten in other defs -->
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>

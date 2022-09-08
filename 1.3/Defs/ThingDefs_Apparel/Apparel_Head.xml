@@ -1,23 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_Lynian_Apparel_HeadgearBase]========== -->
-	<!-- ==========[Mashed_Lynian_Apparel_MelynxBandana]========== -->
-	<ThingDef ParentName="HatMakeableBase">
-		<defName>Mashed_Lynian_Apparel_MelynxBandana</defName>
-		<label>Melynx bandana</label>
-		<description>A woven bandana, typically worn by Melynx. Specially designed for Lynians, useful for hiding the telltale smirk of a successful pilfer.</description>
+	<ThingDef ParentName="HatMakeableBase" Name="Mashed_Lynian_Apparel_HeadgearBase" Abstract="True">
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxBandana/Mashed_MelynxBandana_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.9</drawSize>
 		</graphicData>
-		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
 				<li>Mashed_Lynian_CraftingBench</li>
 			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Teeth</li>
+				<li>Mouth</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_HeadgearDyeableBase]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase" Name="Mashed_Lynian_Apparel_HeadgearDyeableBase" Abstract="True">
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<!-- White -->
+				<li>
+					<weight>5</weight>
+					<only>(250,250,250,255)</only>
+				</li>
+				<!-- Yellow -->
+				<li>
+					<weight>5</weight>
+					<only>(218,209,79,255)</only>
+				</li>
+				<!-- Purple -->
+				<li>
+					<weight>5</weight>
+					<only>(159,114,183,255)</only>
+				</li>
+				<!-- Orange -->
+				<li>
+					<weight>5</weight>
+					<only>(220,154,65,255)</only>
+				</li>
+				<!-- Green -->
+				<li>
+					<weight>5</weight>
+					<only>(76,201,76,255)</only>
+				</li>
+				<!-- Blue -->
+				<li>
+					<weight>5</weight>
+					<only>(35,171,176,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_MelynxBandana]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
+		<defName>Mashed_Lynian_Apparel_MelynxBandana</defName>
+		<label>Melynx bandana</label>
+		<description>A woven bandana, typically worn by Melynx. Specially designed for Lynians, useful for hiding the telltale smirk of a successful pilfer.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxBandana/Mashed_MelynxBandana_Item</texPath>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
@@ -27,7 +91,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>10</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<statBases>
 			<WorkToMake>800</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -39,7 +103,6 @@
 		</statBases>
 		<equippedStatOffsets>
 			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -51,13 +114,9 @@
 			<layers>
 				<li>EyeCover</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_MelynxTribal</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -98,26 +157,20 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerHelmet]========== -->
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
 		<defName>Mashed_Lynian_Apparel_PurrserkerHelmet</defName>
-		<label>purrserker skull helmet</label>
+		<label>purrserker skull</label>
 		<description>A sturdy helmet, sculpted into the rough shape of a rodent skull. Specially designed for Lynians, fills the wearer with an unbridled fury, and is somewhat protective as well.</description>
-		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerHelmet_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.9</drawSize>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
@@ -129,8 +182,9 @@
 		</recipeMaker>
 		<stuffCategories>
 			<li>Woody</li>
+			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<statBases>
 			<WorkToMake>2000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -153,17 +207,13 @@
 				<li>EyeCover</li>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_BoaboaMask]========== -->
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearDyeableBase">
 		<defName>Mashed_Lynian_Apparel_BoaboaMask</defName>
 		<label>Boaboa mask</label>
 		<description>A thick pelt mask, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.\n\nThe tips of the bone are often painted various colours.</description>
@@ -173,31 +223,21 @@
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
-		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaMask_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costList>
-			<WoodLog>15</WoodLog>
-		</costList>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -220,60 +260,21 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaMask</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>EyeCover</li>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_BoaboaTribal</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<!-- White -->
-				<li>
-					<weight>5</weight>
-					<only>(250,250,250,255)</only>
-				</li>
-				<!-- Yellow -->
-				<li>
-					<weight>5</weight>
-					<only>(218,209,79,255)</only>
-				</li>
-				<!-- Purple -->
-				<li>
-					<weight>5</weight>
-					<only>(159,114,183,255)</only>
-				</li>
-				<!-- Orange -->
-				<li>
-					<weight>5</weight>
-					<only>(220,154,65,255)</only>
-				</li>
-				<!-- Green -->
-				<li>
-					<weight>5</weight>
-					<only>(76,201,76,255)</only>
-				</li>
-				<!-- Blue -->
-				<li>
-					<weight>5</weight>
-					<only>(35,171,176,255)</only>
-				</li>
-			</options>
-		</colorGenerator>
+		
 		<tradeTags>
 			<li>Mashed_Lynian_Boaboa</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_GajalakaMask]========== -->
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearDyeableBase">
 		<defName>Mashed_Lynian_Apparel_GajalakaMask</defName>
 		<label>Gajalaka mask</label>
 		<description>A sturdy stone mask, typically worn by Gajalaka. Specially designed for Lynians, the terrifying visage can make unsteady hands falter.\n\nAccents on the mask are often painted various colours.</description>
@@ -283,28 +284,21 @@
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
-		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMask_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
@@ -329,60 +323,20 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMask</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>EyeCover</li>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_GajalakaTribal</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<!-- White -->
-				<li>
-					<weight>5</weight>
-					<only>(250,250,250,255)</only>
-				</li>
-				<!-- Yellow -->
-				<li>
-					<weight>5</weight>
-					<only>(218,209,79,255)</only>
-				</li>
-				<!-- Purple -->
-				<li>
-					<weight>5</weight>
-					<only>(159,114,183,255)</only>
-				</li>
-				<!-- Orange -->
-				<li>
-					<weight>5</weight>
-					<only>(220,154,65,255)</only>
-				</li>
-				<!-- Green -->
-				<li>
-					<weight>5</weight>
-					<only>(76,201,76,255)</only>
-				</li>
-				<!-- Blue -->
-				<li>
-					<weight>5</weight>
-					<only>(35,171,176,255)</only>
-				</li>
-			</options>
-		</colorGenerator>
 		<tradeTags>
 			<li>Mashed_Lynian_Gajalaka</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaMask]========== -->
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
 		<defName>Mashed_Lynian_Apparel_ShakalakaMask</defName>
 		<label>Shakalaka mask</label>
 		<description>A strange wooden mask, typically worn by Shakalaka. Specially designed for Lynians, the design confuses would-be aggressors.\n\nAccents on the mask are often painted various colours.</description>
@@ -392,28 +346,22 @@
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
-		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaMask_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -441,14 +389,9 @@
 				<li>EyeCover</li>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_ShakalakaTribal</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -464,7 +407,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaAcornMask]========== -->
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
 		<defName>Mashed_Lynian_Apparel_ShakalakaAcornMask</defName>
 		<label>Shakalaka acorn mask</label>
 		<description>A wooden mask, made to resemble an acorn, typically worn by young Shakalaka. Specially designed for Lynians, fortifies the mind to be as strong as an acorn.</description>
@@ -473,28 +416,22 @@
 				<isShakalakaMask>true</isShakalakaMask>
 			</li>
 		</modExtensions>
-		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaAcornMask/Mashed_ShakalakaAcornMask_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -522,21 +459,16 @@
 				<li>EyeCover</li>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_Shakalaka</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCrabMask]========== -->
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
 		<defName>Mashed_Lynian_Apparel_ShakalakaCrabMask</defName>
 		<label>Shakalaka crab mask</label>
 		<description>A wooden mask, made to resemble a crab, typically worn by young Shakalaka. Specially designed for Lynians, fortifies the mind to be as tough as a crab.</description>
@@ -545,28 +477,22 @@
 				<isShakalakaMask>true</isShakalakaMask>
 			</li>
 		</modExtensions>
-		<techLevel>Neolithic</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCrabMask/Mashed_ShakalakaCrabMask_Item</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.9</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<recipeUsers>
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -594,14 +520,9 @@
 				<li>EyeCover</li>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-				<li>Worker</li>
-			</defaultOutfitTags>
 			<tags>
 				<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
 			</tags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_Shakalaka</li>

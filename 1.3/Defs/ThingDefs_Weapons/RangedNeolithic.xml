@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Lynian_RangedWeapon_BoomerangBase]========== -->
-	<ThingDef ParentName="BaseWeaponNeolithic" Name="Mashed_Lynian_RangedWeapon_BoomerangBase" Abstract="True">
+	<!-- ==========[Mashed_Lynian_Weapon_RangedBase]========== -->
+	<ThingDef ParentName="BaseWeaponNeolithic" Name="Mashed_Lynian_Weapon_RangedBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -15,9 +15,6 @@
 			<AccuracyLong>0.32</AccuracyLong>
 			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
 		</statBases>
-		<weaponTags>
-			<li>Mashed_Lynian_TribalRanged</li>
-		</weaponTags>
 		<weaponClasses>
 			<li>Ranged</li>
 		</weaponClasses>
@@ -36,7 +33,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_Boomerang]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_BoomerangBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">
 		<defName>Mashed_Lynian_RangedWeapon_Boomerang</defName>
 		<label>boomerang</label>
 		<description>Wood sculpted into a curved shape, creating a highly aerodynamic throwing weapon. A staple of Lynian tribes.</description>
@@ -47,7 +44,7 @@
 			<WoodLog>15</WoodLog>
 		</costList>
 		<statBases>
-			<WorkToMake>800</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 		</statBases>
 		<weaponTags>
 			<li>Mashed_Lynian_TribalBoomerang</li>
@@ -100,23 +97,24 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_Purrserkerrang]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_BoomerangBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">
 		<defName>Mashed_Lynian_RangedWeapon_Purrserkerrang</defName>
 		<label>purrserkerrang</label>
 		<description>A four-pointed boomerang. Specially designed for Lynians, fills the wielder with an unbridled fury.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_Purrserkerrang</texPath>
 		</graphicData>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1600</WorkToMake>
 		</statBases>
 		<weaponTags>
 			<li>Mashed_Lynian_TribalBoomerangAdvanced</li>
@@ -165,22 +163,21 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaJavelin]========== -->
-	<ThingDef ParentName="BaseWeaponNeolithic">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">
 		<defName>Mashed_Lynian_RangedWeapon_BoaboaJavelin</defName>
 		<label>Boaboa javelin</label>
 		<description>Sturdy, yet primitive, javelins, typically used by Boaboa. Specially designed for Lynians, oddly quiet when thrown, useful when out on the hunt.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_Javelin</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
+			<WorkToMake>1300</WorkToMake>
 			<Mass>2</Mass>
 			<AccuracyTouch>0.50</AccuracyTouch>
 			<AccuracyShort>0.71</AccuracyShort>
@@ -200,18 +197,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 		</recipeMaker>
-		<comps>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtWeaponMelee</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
-		</comps>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -261,22 +247,21 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingShard]========== -->
-	<ThingDef ParentName="BaseWeaponNeolithic">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">
 		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard</defName>
 		<label>Boaboa throwing shard</label>
 		<description>Light throwing shards, typically used by Boaboa. Specially designed for Lynians, oddly quiet when thrown, useful when out on the hunt.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_ThrowingShard</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>1</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.81</AccuracyShort>
@@ -296,18 +281,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 		</recipeMaker>
-		<comps>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtWeaponMelee</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
-		</comps>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -350,22 +324,21 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaThrowingKnife]========== -->
-	<ThingDef ParentName="BaseWeaponNeolithic">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaThrowingKnife</defName>
 		<label>Gajalaka throwing knife</label>
 		<description>A primitive throwing knife chiseled from stone, typically used by Gajalaka. Specially designed for Lynians, the edge is surprisingly sharp, and cleaves through armour with relative ease.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Gajalaka_ThrowingKnife</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>1</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.81</AccuracyShort>
@@ -385,17 +358,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 		</recipeMaker>
-		<comps>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtWeaponMelee</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
-		</comps>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -437,20 +400,19 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_UrukiThrowingShard]========== -->
-	<ThingDef ParentName="BaseWeaponNeolithic">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">
 		<defName>Mashed_Lynian_RangedWeapon_UrukiSlingshot</defName>
 		<label>Uruki slingshot</label>
 		<description>A primitive slignshot, typically used by Uruki. Specially designed for Lynians, fires acorns a reasonable distance.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Uruki_Slingshot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
 		<costList>
-			<WoodLog>50</WoodLog>
+			<WoodLog>30</WoodLog>
 		</costList>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>1200</WorkToMake>
 			<Mass>1</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.81</AccuracyShort>
@@ -469,18 +431,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>Mashed_Lynian_CraftingSpot</li>
-				<li>Mashed_Lynian_CraftingBench</li>
-			</recipeUsers>
 		</recipeMaker>
-		<comps>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtWeaponMelee</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
-		</comps>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

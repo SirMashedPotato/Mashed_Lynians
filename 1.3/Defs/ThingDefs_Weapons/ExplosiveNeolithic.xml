@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef Name="Mashed_Lynian_RangedWeapon_ExplosiveBase" ParentName="BaseWeapon" Abstract="True">
+	<!-- ==========[Mashed_Lynian_Weapon_ExplosiveBase]========== -->
+	<ThingDef Name="Mashed_Lynian_Weapon_ExplosiveBase" ParentName="BaseWeapon" Abstract="True">
 		<techLevel>Neolithic</techLevel>
 		<weaponClasses>
 			<li>Ranged</li>
@@ -33,7 +34,7 @@
 		<tickerType>Normal</tickerType>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</defName>
 		<label>throwing barrel bomb</label>
 		<description>A small wooden barrel, filled with explosive materials. An uncommon weapon among most Lynian tribes, but quite devastating when utilised properly.</description>
@@ -44,12 +45,12 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 		</statBases>
 		<costList>
-			<Steel>30</Steel>
-			<WoodLog>60</WoodLog>
-			<Chemfuel>80</Chemfuel>
+			<Steel>10</Steel>
+			<WoodLog>20</WoodLog>
+			<Chemfuel>40</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_TribalDestructive</li>
@@ -103,7 +104,7 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb</defName>
 		<label>throwing felvine bomb</label>
 		<description>A small wooden barrel, filled with felvine. An incredibly peculiar choice of weapon, as the clouds of felvine dust left behind are likely to whip Lynians caught within into a frenzy.</description>
@@ -119,11 +120,12 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 		</statBases>
 		<costList>
-			<Steel>30</Steel>
-			<WoodLog>60</WoodLog>
+			<Steel>10</Steel>
+			<WoodLog>20</WoodLog>
+			<Chemfuel>30</Chemfuel>
 			<Mashed_Lynian_FelvinePowder>20</Mashed_Lynian_FelvinePowder>
 		</costList>
 		<weaponTags>
@@ -180,7 +182,7 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel</defName>
 		<label>Boaboa explosive satchel</label>
 		<description>A pelt satchel, filled with explosive materials. Often used by Boaboa when stealth is no longer an option.</description>
@@ -192,19 +194,19 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Lynian_BoaboaEquipment</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
 		<costList>
-			<Chemfuel>60</Chemfuel>
+			<Chemfuel>40</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_BoaboaTribalDestructive</li>
@@ -253,7 +255,7 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaGrenade]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaGrenade</defName>
 		<label>Gajalaka molotov</label>
 		<description>A stone vessel, filled with explosive materials. Often used by Gajalaka, perfect for igniting threats.</description>
@@ -265,19 +267,19 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Lynian_GajalakaEquipment</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costList>
-			<Chemfuel>60</Chemfuel>
+			<Chemfuel>40</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_GajalakaTribalDestructive</li>
@@ -328,7 +330,7 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb</defName>
 		<label>Shakalaka sleep bomb</label>
 		<description>A makeshift throwing bomb, releases a cloud of gas that rapidly fatigues those caught within. Often used by Shakalaka to weaken strong foes.</description>
@@ -339,7 +341,7 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -401,7 +403,7 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage</defName>
 		<label>Grimalkyne flashfly cage</label>
 		<description>A wooden cage, containing a small group of flashflies. Often used by Grimalkyne, perfect for disorientating foes.</description>
@@ -413,7 +415,7 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
@@ -423,7 +425,7 @@
 				<Animals>3</Animals>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -473,7 +475,7 @@
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn]========== -->
-	<ThingDef ParentName="Mashed_Lynian_RangedWeapon_ExplosiveBase">
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
 		<defName>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn</defName>
 		<label>Uruki explosive acorn</label>
 		<description>An acorn shaped vessel, filled with explosive materials. Often used by Uruki when they have been sufficiently angered.</description>
@@ -485,19 +487,19 @@
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>2000</WorkToMake>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Lynian_UrukiEquipment</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costList>
-			<Chemfuel>60</Chemfuel>
+			<Chemfuel>40</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>Mashed_Lynian_UrukiTribalDestructive</li>

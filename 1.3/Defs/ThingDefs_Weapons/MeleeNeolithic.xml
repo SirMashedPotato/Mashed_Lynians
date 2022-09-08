@@ -46,11 +46,11 @@
 			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>800</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 		<costList>
-			<Cloth>20</Cloth>
+			<Cloth>10</Cloth>
 			<WoodLog>10</WoodLog>
 		</costList>
 		<recipeMaker>
@@ -108,11 +108,11 @@
 			<MiningSpeed>0.1</MiningSpeed>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>800</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 		<costList>
-			<WoodLog>25</WoodLog>
+			<WoodLog>15</WoodLog>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
@@ -134,7 +134,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>11</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -145,7 +145,7 @@
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_BoneSaw]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
 		<defName>Mashed_Lynian_MeleeWeapon_BoneSaw</defName>
-		<label>Grimalkyne bone saw</label>
+		<label>Grimalkyne saw</label>
 		<description>A piece of jawbone fashioned into a saw, and attached to a stick, typically used by Grimalkyne. Specially designed for Lynians, quite a formidable weapon in the right paws, and rather useful for traversing the wilderness.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Grimalkyne_Saw</texPath>
@@ -161,11 +161,11 @@
 			<ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
+			<WorkToMake>800</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
 		<costList>
-			<WoodLog>40</WoodLog>
+			<WoodLog>20</WoodLog>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_GrimalkyneEquipment</researchPrerequisite>
@@ -200,7 +200,7 @@
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_PurrserkerClub]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
 		<defName>Mashed_Lynian_MeleeWeapon_PurrserkerClub</defName>
-		<label>purrserker bone club</label>
+		<label>purrserker club</label>
 		<description>A large club, at least by Lynian standards. Specially designed for Lynians, fills the wielder with an unbridled fury.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Lynian_PurrserkerClub</texPath>
@@ -216,13 +216,14 @@
 			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1200</WorkToMake>
 			<Mass>3</Mass>
 		</statBases>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
@@ -270,10 +271,10 @@
 			<HuntingStealth>0.05</HuntingStealth>
 		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -330,10 +331,10 @@
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
@@ -357,7 +358,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>15</power>
+				<power>15</power>	<!-- stone does low damage -->
 				<armorPenetration>0.25</armorPenetration>
 				<cooldownTime>2</cooldownTime>
 			</li>
@@ -383,10 +384,10 @@
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -435,13 +436,13 @@
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
 		<costList>
-			<RawFungus>10</RawFungus>
+			<RawFungus>5</RawFungus>
 		</costList>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
