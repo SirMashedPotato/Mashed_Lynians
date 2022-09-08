@@ -70,6 +70,9 @@
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaCannon_Bullet</defName>

@@ -85,6 +85,9 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_BasicPick]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
@@ -135,6 +138,9 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_BoneSaw]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
@@ -187,6 +193,9 @@
 				<armorPenetration>0.25</armorPenetration>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Grimalkyne</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_PurrserkerClub]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
@@ -248,6 +257,7 @@
 		<description>A heavy club covered in animal pelt, typically used by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Boaboa_Hammer</texPath>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<weaponTags>
@@ -263,10 +273,10 @@
 			<WorkToMake>2000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
-		<costList>
-			<Leather_Heavy>10</Leather_Heavy>
-			<WoodLog>25</WoodLog>
-		</costList>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -299,6 +309,9 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_GajalakaSword]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
@@ -349,6 +362,9 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_ShakalakaSword]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
@@ -398,6 +414,9 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_ShakalakaSword]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
@@ -450,5 +469,8 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

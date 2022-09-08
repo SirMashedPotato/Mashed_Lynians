@@ -81,6 +81,11 @@
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_Melynx</li>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defName>
@@ -148,11 +153,15 @@
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.66</explosiveRadius>
-				<explosiveDamageType>Stun</explosiveDamageType>
+				<explosiveDamageType>Smoke</explosiveDamageType>
 				<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
 				<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb_Thrown</defName>
@@ -224,6 +233,9 @@
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel_Thrown</defName>
@@ -294,6 +306,9 @@
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaGrenade_Thrown</defName>
@@ -365,6 +380,9 @@
 				<preExplosionSpawnThingDef>Mashed_Lynian_SleepGasCloud</preExplosionSpawnThingDef>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb_Thrown</defName>
@@ -436,6 +454,9 @@
 				<explosiveDamageType>Stun</explosiveDamageType>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Grimalkyne</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage_Thrown</defName>
@@ -505,6 +526,9 @@
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn_Thrown</defName>

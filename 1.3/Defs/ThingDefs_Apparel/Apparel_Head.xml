@@ -93,6 +93,9 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerHelmet]========== -->
 	<ThingDef ParentName="HatMakeableBase">
@@ -265,6 +268,9 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_GajalakaMask]========== -->
 	<ThingDef ParentName="HatMakeableBase">
@@ -371,6 +377,9 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaMask]========== -->
 	<ThingDef ParentName="HatMakeableBase">
@@ -450,6 +459,9 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaAcornMask]========== -->
 	<ThingDef ParentName="HatMakeableBase">
@@ -519,6 +531,9 @@
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCrabMask]========== -->
 	<ThingDef ParentName="HatMakeableBase">
@@ -588,5 +603,8 @@
 			</tags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

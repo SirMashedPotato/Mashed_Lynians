@@ -78,6 +78,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_Melynx</li>
+			<li>Mashed_Lynian_Grimalkybe</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>Mashed_Lynian_RangedWeapon_Boomerang_Thrown</defName>
@@ -167,11 +172,13 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_Javelin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
-		<costList>
-			<WoodLog>70</WoodLog>
-		</costList>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Mass>2</Mass>
@@ -234,6 +241,9 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>Mashed_Lynian_RangedWeapon_BoaboaJavelin_Thrown</defName>
@@ -258,11 +268,13 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_ThrowingShard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
-		<costList>
-			<WoodLog>25</WoodLog>
-		</costList>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 		<statBases>
 			<WorkToMake>1500</WorkToMake>
 			<Mass>1</Mass>
@@ -318,6 +330,9 @@
 				<cooldownTime>1</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard_Thrown</defName>
@@ -402,6 +417,9 @@
 				<cooldownTime>1</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaThrowingKnife_Thrown</defName>
@@ -484,6 +502,9 @@
 				<cooldownTime>1</cooldownTime>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>Mashed_Lynian_RangedWeapon_UrukiSlingshot_Projectile</defName>

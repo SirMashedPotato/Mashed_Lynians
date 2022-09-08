@@ -10,6 +10,12 @@
 			<li>(0.9, 0.9, 0.8)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionFelyne</factionNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_FelyneTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_FelyneTrader</li>
+		</baseTraderKinds>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 		</requiredMemes>

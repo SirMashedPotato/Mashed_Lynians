@@ -10,7 +10,12 @@
 			<li>(0.8, 0.9, 0.7)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionGrimalkyne</factionNameMaker>
-		<caravanTraderKinds Inherit="False"/>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_GrimalkyneTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_GrimalkyneTrader</li>
+		</baseTraderKinds>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 		</requiredMemes>

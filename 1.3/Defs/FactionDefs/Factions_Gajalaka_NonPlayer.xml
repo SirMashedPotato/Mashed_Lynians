@@ -10,7 +10,12 @@
 			<li>(0.9, 0.4, 0.1)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionGajalaka</factionNameMaker>
-		<caravanTraderKinds Inherit="False"/>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_GajalakaTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_GajalakaTrader</li>
+		</baseTraderKinds>
 		<raidLootMaker>Mashed_Lynian_GajalakaRaidLootMaker</raidLootMaker>
 		<disallowedMemes>
 		</disallowedMemes>

@@ -10,7 +10,12 @@
 			<li>(0.5, 0.3, 0.3)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionBoaboa</factionNameMaker>
-		<caravanTraderKinds Inherit="False"/>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_BoaboaTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_BoaboaTrader</li>
+		</baseTraderKinds>
 		<raidLootMaker>Mashed_Lynian_BoaboaRaidLootMaker</raidLootMaker>
 		<disallowedMemes>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>

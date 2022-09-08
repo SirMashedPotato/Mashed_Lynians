@@ -11,7 +11,12 @@
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionUruki</factionNameMaker>
 		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
-		<caravanTraderKinds Inherit="False"/>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_UrukiTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_UrukiTrader</li>
+		</baseTraderKinds>
 		<raidLootMaker>Mashed_Lynian_UrukiRaidLootMaker</raidLootMaker>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>

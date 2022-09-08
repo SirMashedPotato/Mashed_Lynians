@@ -10,7 +10,12 @@
 			<li>(0.5, 0.5, 0.1)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionShakalaka</factionNameMaker>
-		<caravanTraderKinds Inherit="False"/>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_ShakalakaTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_ShakalakaTrader</li>
+		</baseTraderKinds>
 		<raidLootMaker>Mashed_Lynian_ShakalakaRaidLootMaker</raidLootMaker>
 		<disallowedMemes>
 		</disallowedMemes>

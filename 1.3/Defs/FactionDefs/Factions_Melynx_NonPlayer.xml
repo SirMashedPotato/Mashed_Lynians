@@ -10,6 +10,12 @@
 			<li>(0.4, 0.8, 0.0)</li>
 		</colorSpectrum>
 		<factionNameMaker>Mashed_Lynian_NamerFactionMelynx</factionNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_MelynxTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_MelynxTrader</li>
+		</baseTraderKinds>
 		<naturalEnemy>true</naturalEnemy>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>

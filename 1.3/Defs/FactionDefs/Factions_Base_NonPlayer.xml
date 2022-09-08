@@ -51,16 +51,9 @@
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 		</structureMemeWeights>
 		<leaderTitle>chief</leaderTitle>
-		<caravanTraderKinds>
-			<li>Caravan_Neolithic_BulkGoods</li>
-			<li>Caravan_Neolithic_ShamanMerchant</li>
-		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Neolithic_Standard</li>
 		</visitorTraderKinds>
-		<baseTraderKinds>
-			<li>Base_Neolithic_Standard</li>
-		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<raidCommonalityFromPointsCurve>
 			<points>

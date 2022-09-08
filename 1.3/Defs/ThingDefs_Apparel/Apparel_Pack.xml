@@ -96,6 +96,9 @@
 			</tags>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Lynian</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_MelynxSatchel]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
@@ -168,6 +171,9 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerBackPack]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
@@ -249,5 +255,8 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 			</wornGraphicData>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>
