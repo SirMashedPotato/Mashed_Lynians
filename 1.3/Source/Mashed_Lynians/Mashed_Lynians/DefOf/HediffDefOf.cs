@@ -14,5 +14,6 @@ namespace Mashed_Lynians
 
 		public static HediffDef Mashed_Lynian_PilferedFelvine;
 		public static HediffDef Mashed_Lynian_FelvineHighFrenzy;
+		public static HediffDef Mashed_Lynian_FelvineTolerance;
 	}
 }

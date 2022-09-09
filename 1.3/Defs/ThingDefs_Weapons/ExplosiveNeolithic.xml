@@ -175,7 +175,7 @@
 		</graphicData>
 		<projectile>
 			<explosionRadius>1.9</explosionRadius>
-			<damageDef>Stun</damageDef>
+			<damageDef>Smoke</damageDef>
 			<!-- Use default damage from explosion def -->
 			<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
 			<explosionDelay>0</explosionDelay>

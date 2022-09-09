@@ -29,7 +29,10 @@ namespace Mashed_Lynians
                                 RaceProperties props = RaceProperties.Get(p.def);
                                 if (props != null && props.canUseFelvine)
                                 {
-                                    HealthUtility.AdjustSeverity(p, HediffDefOf.Mashed_Lynian_FelvineHighFrenzy, 0.025f);
+                                    float factor = 0.025f;
+                                    //simulate ingesting felvine
+                                    HealthUtility.AdjustSeverity(p, HediffDefOf.Mashed_Lynian_FelvineTolerance, factor / 3);
+                                    HealthUtility.AdjustSeverity(p, HediffDefOf.Mashed_Lynian_FelvineHighFrenzy, factor);
                                 }
                             }
                         }
