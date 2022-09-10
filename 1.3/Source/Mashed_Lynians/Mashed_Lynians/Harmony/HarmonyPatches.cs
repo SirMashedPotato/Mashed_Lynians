@@ -4,14 +4,6 @@ using Verse;
 using System.Reflection;
 using RimWorld;
 
-using Verse.AI;
-using Verse.AI.Group;
-using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Linq;
-using RimWorld.Planet;
-
 namespace Mashed_Lynians
 {
     [StaticConstructorOnStartup]
