@@ -63,8 +63,8 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Production/Mashed_LynianCraftingBench</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Production/Mashed_LynianCraftingBench/Mashed_LynianCraftingBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
@@ -78,7 +78,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<rotatable>false</rotatable>
 		<costList>
 			<WoodLog>25</WoodLog>
 			<Steel>50</Steel>
