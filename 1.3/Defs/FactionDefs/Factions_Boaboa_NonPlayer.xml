@@ -54,7 +54,6 @@
 					<Mashed_Lynian_BoaboaWarrior>10</Mashed_Lynian_BoaboaWarrior>
 					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
 					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
-					<Wolf_Timber>3</Wolf_Timber>
 					<Mashed_Lynian_BoaboaChiefRanged>3</Mashed_Lynian_BoaboaChiefRanged>
 					<Mashed_Lynian_BoaboaChiefMelee>1.5</Mashed_Lynian_BoaboaChiefMelee>
 				</options>
@@ -77,7 +76,6 @@
 				<options>
 					<Mashed_Lynian_BoaboaGatherer>10</Mashed_Lynian_BoaboaGatherer>
 					<Mashed_Lynian_BoaboaWarrior>10</Mashed_Lynian_BoaboaWarrior>
-					<Wolf_Timber>3</Wolf_Timber>
 					<Mashed_Lynian_BoaboaChiefMelee>5</Mashed_Lynian_BoaboaChiefMelee>
 				</options>
 			</li>
@@ -88,7 +86,6 @@
 				<options>
 					<Mashed_Lynian_BoaboaGatherer>5</Mashed_Lynian_BoaboaGatherer>
 					<Mashed_Lynian_BoaboaWarrior>5</Mashed_Lynian_BoaboaWarrior>
-					<Wolf_Timber>3</Wolf_Timber>
 					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
 					<Mashed_Lynian_BoaboaBombadier>10</Mashed_Lynian_BoaboaBombadier>
 					<Mashed_Lynian_BoaboaChiefRanged>3</Mashed_Lynian_BoaboaChiefRanged>
@@ -128,7 +125,6 @@
 				<kindDef>Settlement</kindDef>
 				<options>
 					<Mashed_Lynian_BoaboaWarrior>7</Mashed_Lynian_BoaboaWarrior>
-					<Wolf_Timber>3</Wolf_Timber>
 					<Mashed_Lynian_BoaboaGatherer>5</Mashed_Lynian_BoaboaGatherer>
 					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
 					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
