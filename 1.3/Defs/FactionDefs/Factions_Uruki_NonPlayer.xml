@@ -4,6 +4,13 @@
 		<defName>Mashed_Lynian_NonPlayerUrukiTribe</defName>
 		<label>Uruki tribe</label>
 		<description>A small Uruki tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, and generally peaceful by nature, Uruki are willing to defend their homes with unrivalled ferocity.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference" MayRequire="SirMashedPotato.ESCP.RaceTools">
+			<likedBiomeList>
+				<li>AB_IdyllicMeadows</li>
+			</likedBiomeList>
+        </li>
+	</modExtensions>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_UrukiSettlement_Player</factionIconPath>
 		<colorSpectrum>
 			<li>(1.0, 0.9, 0.3)</li>
