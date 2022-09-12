@@ -128,6 +128,7 @@
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Row 5, specialty sets]========== -->
+	<!-- ==========[Purrserker]========== -->
 	<ResearchProjectDef>
 		<defName>Mashed_Lynian_PurrserkerEquipment</defName>
 		<label>purrserker equipment</label>
@@ -137,5 +138,19 @@
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>4.00</researchViewY>
 		<tab>SMP_ResearchTab</tab>
+	</ResearchProjectDef>
+	<!-- ==========[Acorn knight]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_AcornEquipment</defName>
+		<label>acorn equipment</label>
+		<description>Learn how to craft strong Acorn Knight equipment at the Lynian crafting bench.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
 	</ResearchProjectDef>
 </Defs>
