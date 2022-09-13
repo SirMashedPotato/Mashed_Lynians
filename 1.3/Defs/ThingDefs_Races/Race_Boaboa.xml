@@ -107,8 +107,6 @@
 							<drawnDesiccated>true</drawnDesiccated>
 							<hiddenUnderApparelFor>
 								<li>FullHead</li>
-								<li>Teeth</li>
-								<li>Mouth</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideTeeth</li>

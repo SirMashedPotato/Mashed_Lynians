@@ -474,4 +474,56 @@
 			<li>Mashed_Lynian_Shakalaka</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_MeleeWeapon_AcornClub]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">
+		<defName>Mashed_Lynian_MeleeWeapon_AcornHammer</defName>
+		<label>acorn hammer</label>
+		<description>A sturdy hammer, modelled after an acorn. While usually used by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wielding such a weapon as well.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Lynian_AcornHammer</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<weaponTags>
+			<li>Mashed_Lynian_LynianTribalAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>3.5</Mass>
+		</statBases>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_AcornEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>

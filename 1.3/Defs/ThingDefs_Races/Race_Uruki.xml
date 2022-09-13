@@ -290,7 +290,6 @@
 							<drawnDesiccated>false</drawnDesiccated>
 							<hiddenUnderApparelFor>
 								<li>FullHead</li>
-								<li>Mouth</li>
 							</hiddenUnderApparelFor>
 							<hiddenUnderApparelTag>
 								<li>Mashed_Lynian_HideBeard</li>

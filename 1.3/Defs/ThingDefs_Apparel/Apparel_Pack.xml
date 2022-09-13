@@ -260,4 +260,49 @@
 			<li>Mashed_Lynian_Shakalaka</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_BarrelBackPack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_BarrelBackPack</defName>
+		<label>barrel backpack</label>
+		<description>A large barrel, repurposed as a backpack. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such a backpack as well.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>40</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_AcornEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<CarryingCapacity>40</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+		  <Steel>20</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_BarrelBackPack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_BarrelBackPack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribalAdvanced</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+			</wornGraphicData>
+		</apparel>
+	</ThingDef>
 </Defs>
