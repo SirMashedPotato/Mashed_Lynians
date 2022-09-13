@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Knight]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TribalPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_FelyneAcornKnight</defName>
+		<label>acorn knight</label>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_FelynePlayerTribe</defaultFactionType>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>300~650</apparelMoney>
+		<weaponTags Inherit="False">
+			<li>Mashed_Lynian_FelyneTribalAcornKnight</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>Mashed_Lynian_FelyneTribalAcornKnight</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Mashed_Lynian_Apparel_AcornHelmet</li>
+			<li>Mashed_Lynian_Apparel_AcornArmour</li>
+			<li>Mashed_Lynian_Apparel_BarrelBackPack</li>
+		</apparelRequired>
+		<weaponMoney>300~300</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+		<maxGenerationAge>35</maxGenerationAge>
+	</PawnKindDef>
+</Defs>

@@ -3,6 +3,7 @@ using System.Text;
 using Verse;
 using System.Reflection;
 using RimWorld;
+using System;
 
 namespace Mashed_Lynians
 {
@@ -137,5 +138,27 @@ namespace Mashed_Lynians
             }
         }
 
+        /// <summary>
+        /// Replaces the man in black pawnkind
+        /// </summary>
+        [HarmonyPatch(typeof(PawnGenerator))]
+        [HarmonyPatch("GeneratePawn")]
+        [HarmonyPatch(new Type[] { typeof(PawnGenerationRequest) })]
+        public static class PawnGenerator_GeneratePawn_Patch
+        {
+            [HarmonyPrefix]
+            public static void Lynians_ManInBlack_Patch(ref PawnGenerationRequest request)
+            {
+                if(request.Faction != null)
+                {
+                    FactionProperties props = FactionProperties.Get(request.Faction.def);
+                    if (props != null && props.manInBlackReplacer != null && request.KindDef == PawnKindDef.Named("StrangerInBlack"))
+                    {
+                        request.KindDef = props.manInBlackReplacer;
+                    }
+                }
+              
+            }
+        }
     }
 }

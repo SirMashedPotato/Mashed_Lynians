@@ -72,6 +72,7 @@
     <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
+    <Compile Include="DefModExtension\FactionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
     <Compile Include="DefOf\FactionDefOf.cs" />

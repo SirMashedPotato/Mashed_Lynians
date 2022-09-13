@@ -21,6 +21,12 @@
 									</kindDefs>
 									<chance>5.0</chance>
 								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_FelyneAcornKnight</li>
+									</kindDefs>
+									<chance>1.0</chance>
+								</li>
 							</pawnKindEntries>
 							<factionDefs>
 								<li>DankPyon_PlayerKingdom</li>
@@ -64,6 +70,12 @@
 										<li>Mashed_Lynian_UrukiBombadier</li>
 									</kindDefs>
 									<chance>2.0</chance>
+								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_FelyneAcornKnight</li>
+									</kindDefs>
+									<chance>1.0</chance>
 								</li>
 							</pawnKindEntries>
 							<factionDefs>

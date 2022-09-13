@@ -81,6 +81,11 @@
 		<recipePrerequisiteTags>
 			<li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="Mashed_Lynians.FactionProperties">
+				<manInBlackReplacer>Mashed_Lynian_FelyneAcornKnight</manInBlackReplacer>
+			</li>
+		</modExtensions>
 	</FactionDef>
 	<!-- ==========[Medieval base]========== -->
 	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_MedievalFactionBase" Abstract="True">
@@ -126,5 +131,10 @@
 		<recipePrerequisiteTags>
 			<li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="Mashed_Lynians.FactionProperties">
+				<manInBlackReplacer>Mashed_Lynian_FelyneAcornKnight</manInBlackReplacer>
+			</li>
+		</modExtensions>
 	</FactionDef>
 </Defs>
