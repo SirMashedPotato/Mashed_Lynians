@@ -51,6 +51,9 @@
 		<weaponMoney>100~100</weaponMoney>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>10~16</initialResistanceRange>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_UrukiBasket</li>
+		</apparelRequired>
 		<weaponTags>
 			<li>Mashed_Lynian_UrukiTribalRanged</li>
 		</weaponTags>

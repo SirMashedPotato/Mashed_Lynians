@@ -127,7 +127,7 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxSatchel/Mashed_MelynxSatchel_Item</texPath>
 		</graphicData>
@@ -304,5 +304,67 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 			</wornGraphicData>
 		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_UrukiBasket]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_UrukiBasket</defName>
+		<label>Uruki basket</label>
+		<description>A woven basket, typically worn by Uruki. Specially designed for Lynians, convenient for carrying gardening tools.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_UrukiEquipment</researchPrerequisite>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+			<PlantWorkSpeed>0.1</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UrukiBasket/Mashed_UrukiBasket_Item</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UrukiBasket/Mashed_UrukiBasket</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_UrukiTribal</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<!-- Green -->
+				<li>
+					<weight>10</weight>
+					<only>(97,118,61,255)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,158,80,255)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(106,122,65,255)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(155,180,94,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>
