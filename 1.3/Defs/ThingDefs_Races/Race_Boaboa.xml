@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike">
 		<defName>Mashed_Lynian_BoaboaRace</defName>
 		<label>boaboa</label>
-		<description>TODO.</description>
+		<description>A strange breed of goblin-like Lynian, well adapted for the frigid north. Like their cousins, Boaboa are rather reclusive, and are very rarely seen without their masks on. They make for excellent hunters, and are very protective of their hunting grounds. Like all Lynians, Boaboa are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, since then most Boaboa have gone their own way, and established primitive hunter-gatherer tribes. These tribes often have an almost ritualistic obsession with hunting, and can often be found worshipping the great beasts of the north.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nReduced comfortable minimum temperature.\nAnimal gather speed is increased by 10%.\nFlesh butcher speed is increased by 10%.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<abilitiesToAdd>
@@ -11,6 +11,9 @@
 				</abilitiesToAdd>
 			</li>
 		</modExtensions>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
 		<statBases>
 			<!-- 5 lower than cat-like lynians -->
 			<ComfyTemperatureMax>25</ComfyTemperatureMax>

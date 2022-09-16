@@ -3,7 +3,7 @@
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerCatLikeFactionBase">
 		<defName>Mashed_Lynian_NonPlayerFelyneTribe</defName>
 		<label>Felyne tribe</label>
-		<description>A small Felyne tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, they are content with their simple lifestyle, and are willing to defend it with blood and fury.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<description>A small Felyne tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home. While most of the tribe members are Felyne, there are also many Melynx in the tribe too.\n\nWhile not very technologically advanced, they are content with their simple lifestyle, and are willing to defend it with blood and fury.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
 		<colorSpectrum>
 			<li>(0.9, 0.8, 0.7)</li>

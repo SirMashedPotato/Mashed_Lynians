@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike_OldWorld">
 		<defName>Mashed_Lynian_FelyneRace</defName>
 		<label>felyne</label>
-		<description>Felyne are the most commonly sighted Lynian species, likely thanks to their relaxed nature, and willingness to help others. They can often be found working in kitchens, serving at shop stalls, and tending farms. Like all Lynians, Felyne are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, Felyne are now a fairly common sight on the more 'civilised' planets, likely due to being painfully adorable. Occasionally the Felyne assisting settlers decide to set off on their own journey, often forming small agrarian tribes in the process.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nMental break threshold is reduced by 5%.\nNegotiation ability is increased by 10%.\nGeneral labour speed is increased by 10%.</description>
+		<description>Felyne are the most commonly sighted Lynian species, likely thanks to their relaxed nature, and willingness to help others. They can often be found working in kitchens, serving at shop stalls, and tending farms. Like all Lynians, Felyne are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, Felyne are now a fairly common sight on the more 'civilised' planets, likely due to being painfully adorable. Occasionally the Felyne assisting settlers decide to set off on their own journey, often forming small agrarian tribes in the process.\n\nBeing a cat-like Lynian, Felyne have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nMental break threshold is reduced by 5%.\nNegotiation ability is increased by 10%.\nGeneral labour speed is increased by 10%.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<canUseFelvine>True</canUseFelvine>
@@ -12,6 +12,11 @@
 				</abilitiesToAdd>
 			</li>
 		</modExtensions>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Lynian_FelvinePlant</ThingDef>
+			<ThingDef>Mashed_Lynian_FelvinePowder</ThingDef>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
 		<statBases>
 			<!-- 0.05 lower than base -->
 			<MentalBreakThreshold>0.3</MentalBreakThreshold>

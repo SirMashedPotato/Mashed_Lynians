@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike_OldWorld">
 		<defName>Mashed_Lynian_MelynxRace</defName>
 		<label>melynx</label>
-		<description>TODO.</description>
+		<description>Melynx are a fairly common subspecies of Felyne. While just as adorable as Felyne, Melynx have an innate curiosity that many of them find difficult to control, sometimes valuable items seem to disappear around Melynx. Because of this many people are somewhat cautious around Melynx, though this doesn't stop Melynx from being employed in farms and kitchens. Like all Lynians, Melynx are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, Melynx are now a somewhat common sight on the more 'civilised' planets. Occasionally the Melynx assisting settlers decide to set off on their own journey, often forming small agrarian tribes, and occasionally bandit groups, in the process.\n\nBeing a cat-like Lynian, Melynx have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nMovement speed increased by 0.2 cells.\nMelee dodge chance increased by 10%.\nTrap spring chance decreased by 20%.\nHas access to the 'Pilfer' ability.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<canUseFelvine>True</canUseFelvine>
@@ -13,6 +13,12 @@
 				</abilitiesToAdd>
 			</li>
 		</modExtensions>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Lynian_FelvinePlant</ThingDef>
+			<ThingDef>Mashed_Lynian_FelvinePowder</ThingDef>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+			<AbilityDef>Mashed_Lynian_PilferAbility</AbilityDef>
+		</descriptionHyperlinks>
 		<statBases>
 			<!-- 0.2 faster than other lynians -->
 			<MoveSpeed>5.0</MoveSpeed>

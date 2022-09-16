@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike_True">
 		<defName>Mashed_Lynian_GajalakaRace</defName>
 		<label>gajalaka</label>
-		<description>TODO.</description>
+		<description>One of the breeds of goblin-like Lynian, Gajalaka are characterised by their red skin, and savage temperament. Like their cousins, Gajalaka are rather reclusive, and are very rarely seen without their masks on. They usually make their home in rocky, and sometimes volcanically active, regions, where they can put their innate mining skills to work. Like all Lynians, Gajalaka are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, since then most Gajalaka have gone their own way, and established savage hunter-gatherer tribes. Very few willingly wander into their territory, as Gajalaka have a tendency towards explosives.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nIncreased comfortable maximum temperature.\nPain shock threshold is increased by 10%.\nMining speed is increased by 10%.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
 				<abilitiesToAdd>
@@ -11,6 +11,9 @@
 				</abilitiesToAdd>
 			</li>
 		</modExtensions>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
 		<statBases>
 			<!-- 6 higher than base -->
 			<ComfyTemperatureMax>38</ComfyTemperatureMax>

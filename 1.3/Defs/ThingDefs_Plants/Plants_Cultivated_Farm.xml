@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>Mashed_Lynian_FelvinePlant</defName>
 		<label>felvine plant</label>
-		<description>A small flowering plant, often found growing in Felyne and Melynx villages. While for most races it's simply a beutiful looking flower, for cat-like Lynians the scent of the flowers is simply divine, and slightly intoxicating.\n\nFelvine flowers can be prepared into powder at the crafting spot. While felvine flowers make a user feel relaxed, felvine powder has the opposite effect, putting one into a battle frenzy, but causing them to become fatigued quickly.</description>
+		<description>A small flowering plant, often found growing in Felyne and Melynx villages. While for most races it's simply a beautiful looking flower, for cat-like Lynians the scent of the flowers is simply divine, and slightly intoxicating.\n\nFelvine flowers can be prepared into powder at the crafting spot. While felvine flowers make a user feel relaxed, felvine powder has the opposite effect, putting one into a battle frenzy, but causing them to become fatigued quickly.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>

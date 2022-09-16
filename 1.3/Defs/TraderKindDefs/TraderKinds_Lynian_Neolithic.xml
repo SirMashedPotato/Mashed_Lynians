@@ -128,6 +128,10 @@
 		<label>Gajalaka trader</label>
 		<stockGenerators>
 			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<countRange>15~75</countRange>
+			</li>
 			<li Class="StockGenerator_MultiDef">
 				<thingDefs>
 					<li>BlocksSandstone</li>
@@ -146,12 +150,9 @@
 				</thingDefs>
 				<countRange>25~50</countRange>
 			</li>
-			<li Class="StockGenerator_SingleDef">
-				<thingDef>Gold</thingDef>
-				<countRange>15~30</countRange>
-			</li>
 			<li Class="StockGenerator_MultiDef">
 				<thingDefs>
+					<li>Gold</li>
 					<li>Jade</li>
 					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Citrine</li>
 					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Onyx</li>
@@ -159,7 +160,7 @@
 					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sapphire</li>
 					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Ruby</li>
 				</thingDefs>
-				<countRange>25~50</countRange>
+				<countRange>15~30</countRange>
 			</li>
 			<!-- Drugs -->
 			<!-- Techprints -->

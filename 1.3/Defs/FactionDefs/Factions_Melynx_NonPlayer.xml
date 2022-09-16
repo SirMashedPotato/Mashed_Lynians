@@ -3,7 +3,7 @@
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerCatLikeFactionBase">
 		<defName>Mashed_Lynian_NonPlayerMelynxTribe</defName>
 		<label>Melynx bandits</label>
-		<description>A small Melynx tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, they are content with their simple lifestyle, and are willing to defend it with blood and fury.\n\nThis particular tribe isn't exactly friendly to outsiders, and most outsiders aren't exactly on the best of terms with them; it may be difficult to turn them into an ally.</description>
+		<description>A small Melynx tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home. While most of the tribe members are Melynx, there are also many Felyne in the tribe too.\n\nWhile not very technologically advanced, they are content with their simple lifestyle, and are willing to defend it with blood and fury.\n\nThis particular tribe isn't exactly friendly to outsiders, and most outsiders aren't exactly on the best of terms with them; it may be difficult to turn them into an ally.</description>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_NonPlayer</factionIconPath>
 		<colorSpectrum>
 			<li>(0.4, 0.6, 0.2)</li>

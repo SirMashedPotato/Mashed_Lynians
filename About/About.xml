@@ -6,7 +6,7 @@
 	<supportedVersions>
     	<li>1.3</li>
 	</supportedVersions>
-	<description>TODO.\n\n-Supports Vanilla Achievements Expanded.\n- Based on the Monster Hunter series by Capcom.\n- Thanks to Ranger Rick for some of the achievement names.
+	<description>Adds in all the Lynian races from the Monster Hunter series, as well as an assortment of equipment for them to use.\n\n-Supports Vanilla Achievements Expanded.\n-Contains a patch for Medieval Overhaul.\n-Contains a patch for Unique and Rare Items.\n-Contains a patch for Seeds Please Lite.\n\n- Based on the Monster Hunter series by Capcom.\n-Seed bag texture by CitizenKanye\n- Thanks to Ranger Rick for some of the achievement names.
 	</description>
 	<modDependencies>
 		<li>
@@ -28,6 +28,7 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>Owlchemist.SeedsPleaseLite</li>
 	</loadAfter>
 	<loadBefore>
 	</loadBefore>
