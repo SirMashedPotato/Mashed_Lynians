@@ -47,6 +47,7 @@
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<baseHealthScale>1.4</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
 			<baseBodySize>0.6</baseBodySize>
 			<fleshType>Mashed_Lynian_LynianFlesh</fleshType>
 			<lifeExpectancy>80</lifeExpectancy>

@@ -45,13 +45,16 @@
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerArmour_Item</texPath>
 		</graphicData>
-		<costStuffCount>45</costStuffCount>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<costStuffCount>65</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>1.0</Mass>
 			<Flammability>0.8</Flammability>
@@ -93,16 +96,16 @@
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat_Item</texPath>
 		</graphicData>
-		<costStuffCount>45</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>4500</WorkToMake>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
-			<Mass>4.0</Mass>
+			<Mass>2.0</Mass>
 			<Flammability>0.8</Flammability>
-			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
@@ -150,9 +153,9 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
-			<Mass>1.0</Mass>
+			<Mass>0.5</Mass>
 			<Flammability>0.8</Flammability>
 			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
@@ -242,12 +245,13 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>1.0</Mass>
 			<Flammability>0.8</Flammability>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<apparel>
@@ -286,17 +290,20 @@
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornArmour_Item</texPath>
 		</graphicData>
-		<costStuffCount>45</costStuffCount>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
-			<MaxHitPoints>80</MaxHitPoints>
-			<Mass>1.0</Mass>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>6.0</Mass>
 			<Flammability>0.8</Flammability>
-			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
@@ -313,7 +320,8 @@
 				<li>Arms</li>
 			</bodyPartGroups>
 			<layers>
-				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
