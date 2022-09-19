@@ -533,6 +533,7 @@
 		<defName>Mashed_Lynian_Apparel_AcornHelmet</defName>
 		<label>acorn helmet</label>
 		<description>A durable helmet, modelled after an acorn. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such armour as well.</description>
+		<techLevel>Medieval</techLevel>
 		<thingCategories>
 			<li>ArmorHeadgear</li>
 		</thingCategories>

@@ -270,6 +270,7 @@
 				<carryWeightIncrease>40</carryWeightIncrease>
 			</li>
 		</modExtensions>
+		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
 			<researchPrerequisite>Mashed_Lynian_AcornEquipment</researchPrerequisite>
