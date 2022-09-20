@@ -144,13 +144,31 @@
 		<defName>Mashed_Lynian_AcornEquipment</defName>
 		<label>acorn equipment</label>
 		<description>Learn how to craft strong Acorn Knight equipment at the Lynian crafting bench.</description>
-		<baseCost>250</baseCost>
+		<baseCost>350</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>4.00</researchViewY>
 		<tab>SMP_ResearchTab</tab>
 		<prerequisites>
 			<li>Smithing</li>
+			<li>Mashed_Lynian_PurrserkerEquipment</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	<!-- ==========[Sameowrai]========== -->
+	<!--
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_SameowraiEquipment</defName>
+		<label>sameowrai equipment</label>
+		<description>Learn how to craft powerful Sameowrai equipment at the Lynian crafting bench.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<prerequisites>
+			<li>Machining</li>
+			<li>Mashed_Lynian_AcornEquipment</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	-->
 </Defs>
