@@ -2,8 +2,8 @@
 <Defs>
 	<!-- ==========[Tribal Base]==========-->
 	<FactionDef ParentName="FactionBase" Name="Mashed_Lynian_NonPlayerTribalFactionBase" Abstract="True">
-		<pawnSingular>tribesman</pawnSingular>
-		<pawnsPlural>tribespeople</pawnsPlural>
+		<pawnSingular>tribepaw</pawnSingular>
+		<pawnsPlural>tribepaws</pawnsPlural>
 		<categoryTag>Tribal</categoryTag>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>0.000001</settlementGenerationWeight>
