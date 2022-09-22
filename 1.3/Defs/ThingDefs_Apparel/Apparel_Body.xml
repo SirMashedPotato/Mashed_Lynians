@@ -287,6 +287,9 @@
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
 			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornArmour_Item</texPath>
@@ -328,5 +331,65 @@
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
 		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_KitchenApron]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_KitchenApron</defName>
+		<label>Lynian apron</label>
+		<description>A simple apron, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, the light build helps speed up cooking.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_KitchenEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenApron_Item</texPath>
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>1.0</CookSpeed>
+			<CleaningSpeed MayRequire="Aelanna.CleaningSpeed">0.10</CleaningSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenApron</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<defaultOutfitTags Inherit="False">
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianKitchen</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianKitchen</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

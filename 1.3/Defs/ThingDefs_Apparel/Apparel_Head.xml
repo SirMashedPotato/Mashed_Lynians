@@ -16,11 +16,6 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Teeth</li>
-				<li>Mouth</li>
-				<li>Eyes</li>
-			</bodyPartGroups>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
@@ -552,6 +547,9 @@
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
 			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Woody</li>
@@ -581,5 +579,62 @@
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
 		</apparel>
+	</ThingDef>
+<!-- ==========[Mashed_Lynian_Apparel_KitchenHeadband]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
+		<defName>Mashed_Lynian_Apparel_KitchenHeadband</defName>
+		<label>Lynian headband</label>
+		<description>A simple headband, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, helps keep sweat out of the eyes during intense cooking sessions.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenHeadband_Item</texPath>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_KitchenEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.04</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.5</CookSpeed>
+			<FoodPoisonChance>-0.1</FoodPoisonChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenHeadband</wornGraphicPath>
+			<defaultOutfitTags Inherit="False">
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianKitchen</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianKitchen</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

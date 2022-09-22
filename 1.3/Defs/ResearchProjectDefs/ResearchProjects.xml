@@ -127,7 +127,7 @@
 			<li>Mashed_Lynian_UrukiStart</li>
 		</tags>
 	</ResearchProjectDef>
-	<!-- ==========[Row 5, speciality sets]========== -->
+	<!-- ==========[Row 5, speciality armour sets]========== -->
 	<!-- ==========[Purrserker]========== -->
 	<ResearchProjectDef>
 		<defName>Mashed_Lynian_PurrserkerEquipment</defName>
@@ -171,4 +171,19 @@
 		</prerequisites>
 	</ResearchProjectDef>
 	-->
+	<!-- ==========[Row 5, speciality clothing sets]========== -->
+	<!-- ==========[Kitchen]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_KitchenEquipment</defName>
+		<label>kitchen clothing</label>
+		<description>Learn how to craft special Felyne kitchen clothes at the Lynian crafting bench.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+		<tab>SMP_ResearchTab</tab>
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+	</ResearchProjectDef>
 </Defs>
