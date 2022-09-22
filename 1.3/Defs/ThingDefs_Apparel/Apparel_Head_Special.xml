@@ -80,6 +80,7 @@
 				<li>Royal</li>
 				<li>RoyalTier7</li>
 			</tags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<relicChance>1</relicChance>

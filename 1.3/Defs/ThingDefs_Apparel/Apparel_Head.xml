@@ -20,6 +20,7 @@
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 	</ThingDef>
@@ -580,10 +581,10 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-<!-- ==========[Mashed_Lynian_Apparel_KitchenHeadband]========== -->
+	<!-- ==========[Mashed_Lynian_Apparel_KitchenHeadband]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
 		<defName>Mashed_Lynian_Apparel_KitchenHeadband</defName>
-		<label>Lynian headband</label>
+		<label>Lynian kitchen headband</label>
 		<description>A simple headband, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, helps keep sweat out of the eyes during intense cooking sessions.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
@@ -627,6 +628,65 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianKitchen</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianKitchen</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_KitchenHat]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
+		<defName>Mashed_Lynian_Apparel_KitchenHat</defName>
+		<label>Lynian kitchen hat</label>
+		<description>A simple hat, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, wearers of such hats are surrounded by an air of authority on all things food.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenHat_Item</texPath>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_KitchenEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.5</CookSpeed>
+			<SocialImpact>0.1</SocialImpact>
+			<FoodPoisonChance>-0.1</FoodPoisonChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			  </bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenHat</wornGraphicPath>
+			<defaultOutfitTags Inherit="False">
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>Overhead</li>
 				<li>EyeCover</li>
 			</layers>
 			<tags>

@@ -335,7 +335,7 @@
 	<!-- ==========[Mashed_Lynian_Apparel_KitchenApron]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
 		<defName>Mashed_Lynian_Apparel_KitchenApron</defName>
-		<label>Lynian apron</label>
+		<label>Lynian kitchen apron</label>
 		<description>A simple apron, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, the light build helps speed up cooking.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
