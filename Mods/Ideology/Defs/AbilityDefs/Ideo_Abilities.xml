@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityDef ParentName="RoleAuraBuffBase">
+		<defName>Mashed_Lynian_LynianCookingFurrenzy</defName>
+		<label>cooking furrenzy</label>
+		<description>Ignite the fire in the hearts of everyone nearby, whipping them up into a cooking furrenzy. The effect remains attached to the caster for 12 hours.</description>
+		<iconPath>UI/Abilities/Mashed_LynianHeadChefAbility</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Mashed_LynianHeadChefAbility</warmupMoteSocialSymbol>
+		<statBases>
+		  <Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_LynianCookingFurrenzy</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

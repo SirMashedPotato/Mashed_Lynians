@@ -8,6 +8,9 @@
 	<Mashed_Lynian_PilferCaught>{0} has been caught trying to pilfer</Mashed_Lynian_PilferCaught>
 	<Mashed_Lynian_PilferDetails>Successful chance: {0}\nFail caught chance: {1}</Mashed_Lynian_PilferDetails>
 	<Mashed_Lynian_AbilitySkillTooLow>{0} skill must be level {1} or higher</Mashed_Lynian_AbilitySkillTooLow>
-	<!-- Promote growth -->
+	<!-- ==========[Promote Growth]==========-->
 	<Mashed_Lynian_PromoteGrowthDetails>Growth boost: {0}</Mashed_Lynian_PromoteGrowthDetails>
+	<!-- ==========[Ideo]==========-->
+	<Mashed_Lynian_IdeoRequirementLynian>Any Lynian race</Mashed_Lynian_IdeoRequirementLynian>
+	<Mashed_Lynian_CookingFurrenzyTooltip>Doubled cooking speed to: {0}</Mashed_Lynian_CookingFurrenzyTooltip>
 </LanguageData>

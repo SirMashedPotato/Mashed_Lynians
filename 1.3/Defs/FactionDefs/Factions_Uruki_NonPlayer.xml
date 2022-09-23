@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase">
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerCatLikeFactionBase">
 		<defName>Mashed_Lynian_NonPlayerUrukiTribe</defName>
 		<label>Uruki tribe</label>
 		<description>A small Uruki tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, and generally peaceful by nature, Uruki are willing to defend their homes with unrivalled ferocity.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>

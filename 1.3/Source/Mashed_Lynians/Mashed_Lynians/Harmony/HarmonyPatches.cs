@@ -160,5 +160,30 @@ namespace Mashed_Lynians
               
             }
         }
+
+        /// <summary>
+        /// Dobules the cooking speed stat for pawns affected by the cooking furrenzy hediff
+        /// Also allows an increase beyond the normal limit of 160%
+        /// </summary>
+        [HarmonyPatch(typeof(StatExtension))]
+        [HarmonyPatch("GetStatValue")]
+        public static class StatExtension_GetStatValue_Patch
+        {
+            [HarmonyPostfix]
+            public static void Lynians_CookingFrurrenzy_Patch(Thing thing, StatDef stat, ref float __result)
+            {
+                if (ModsConfig.IdeologyActive)
+                {
+                    if (stat == StatDefOf.CookSpeed && thing is Pawn p && p.RaceProps.Humanlike)
+                    {
+                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null 
+                            || p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzyBuff) != null)
+                        {
+                            __result *= 2f;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

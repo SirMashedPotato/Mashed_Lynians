@@ -13,5 +13,6 @@ namespace Mashed_Lynians
 		}
 
 		public static StatDef Mashed_Lynian_PilferChance;
+		public static StatDef CookSpeed;
 	}
 }

@@ -84,6 +84,8 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="HediffComp\HediffComp_CookingFurrenzyTooltip.cs" />
+    <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
