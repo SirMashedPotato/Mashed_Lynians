@@ -593,7 +593,10 @@
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<researchPrerequisite>Mashed_Lynian_KitchenEquipment</researchPrerequisite>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
@@ -650,7 +653,10 @@
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
 		<recipeMaker>
-			<researchPrerequisite>Mashed_Lynian_KitchenEquipment</researchPrerequisite>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
@@ -662,14 +668,14 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<statBases>
 			<WorkToMake>1800</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Mass>0.1</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -695,6 +701,66 @@
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_LynianKitchen</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_FarmHat]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
+		<defName>Mashed_Lynian_Apparel_FarmHat</defName>
+		<label>Lynian farmhand hat</label>
+		<description>A simple hat, typically worn by Lynians working in Felyne farms. Specially designed for Lynians, helps keep the heat at bay while working under the midday sun.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneFarmClothes/Mashed_FelyneFarmHat_Item</texPath>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.1</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			  </bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneFarmClothes/Mashed_FelyneFarmHat</wornGraphicPath>
+			<defaultOutfitTags Inherit="False">
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianFarm</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianFarm</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

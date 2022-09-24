@@ -339,7 +339,10 @@
 		<description>A simple apron, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, the light build helps speed up cooking.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>Mashed_Lynian_KitchenEquipment</researchPrerequisite>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
