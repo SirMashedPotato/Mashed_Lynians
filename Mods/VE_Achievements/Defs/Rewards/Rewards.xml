@@ -47,4 +47,10 @@
 		<label>Tribal Uruki joins</label>
 		<incident>Mashed_AchievementLynians_UrukiJoinsIncident</incident>
 	</AchievementsExpanded.Reward_MapIncident>
+	<!-- =====[Random colonist]===== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="Mashed_AchievementLynians_LynianJoinsReward">
+		<defName>Mashed_AchievementLynians_RandomColonistReward</defName>
+		<label>Lynian colonist joins</label>
+		<incident>Mashed_AchievementLynians_RandomColonistIncident</incident>
+	</AchievementsExpanded.Reward_MapIncident>
 </Defs>

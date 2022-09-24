@@ -7,7 +7,7 @@
 	</MemeGroupDef>
 	<!-- ==========[Base]==========-->
 	<MemeDef Name="Mashed_Lynian_MaskWearingMeme_Base" Abstract="True">
-		<description>Masks are sources of strength, power, and identity. Anyone not wearing a mask is not truly themselves, or is destined to ill luck.\n\n&lt;color=#E5E54C&gt;Gameplay effects:&lt;/color&gt;\n - The mood debuffs, or buffs, will only affect Lynians, and will only occur after 15 days.</description>
+		<description>Masks are sources of strength, power, and identity. Anyone not wearing a mask is not truly themselves, or is destined to ill luck.\n\n&lt;color=#E5E54C&gt;Gameplay effects:&lt;/color&gt;\n - The mood debuffs, or buffs, will only affect Lynians, and will only occur at an expectation level of 1 or higher.</description>
 		<groupDef>Mashed_Lynian_MaskWearing</groupDef>
 		<exclusionTags>
 			<li>Mashed_Lynian_MaskWearing</li>

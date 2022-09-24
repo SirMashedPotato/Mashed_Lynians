@@ -7,11 +7,11 @@ namespace Mashed_Lynians
 {
     public static class MaskThoughtUtility
     {
-        public static bool Valid(ThingDef def) => ValidNow() && ValidPawn(def);
+        public static bool Valid(Pawn p) => ValidNow(p) && ValidPawn(p.def);
 
-        public static bool ValidNow()
+        public static bool ValidNow(Pawn p)
         {
-            return GenDate.DaysPassedSinceSettle < 15;
+            return ExpectationsUtility.CurrentExpectationFor(p).order > 0;
         }
 
         public static bool ValidPawn(ThingDef def)
