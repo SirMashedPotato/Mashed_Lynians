@@ -29,6 +29,7 @@
 						<li>Mashed_Lynian_ShakalakaTribesperson</li>
 						<li>Mashed_Lynian_GajalakaTribesperson</li>
 						<li>Mashed_Lynian_BoaboaTribesperson</li>
+						<li>Mashed_Lynian_UrukiTribesperson</li>
 					</kindDefs>
 					<chance>5.0</chance>
 				</li>
@@ -196,7 +197,7 @@
 							<kindDefs>
 								<li>Mashed_Lynian_FelyneTribesperson</li>
 							</kindDefs>
-							<chance>75.0</chance>
+							<chance>85.0</chance>
 						</li>
 						<li>
 							<kindDefs>
@@ -207,6 +208,7 @@
 						<li>
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
+								<li>Mashed_Lynian_UrukiTribesperson</li>
 							</kindDefs>
 							<chance>1.0</chance>
 						</li>
@@ -222,7 +224,7 @@
 							<kindDefs>
 								<li>Mashed_Lynian_FelyneColonist</li>
 							</kindDefs>
-							<chance>75.0</chance>
+							<chance>80.0</chance>
 						</li>
 						<li>
 							<kindDefs>
@@ -233,6 +235,7 @@
 						<li>
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneColonist</li>
+								<li>Mashed_Lynian_UrukiColonist</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
@@ -248,7 +251,7 @@
 							<kindDefs>
 								<li>Mashed_Lynian_MelynxTribesperson</li>
 							</kindDefs>
-							<chance>75.0</chance>
+							<chance>85.0</chance>
 						</li>
 						<li>
 							<kindDefs>
@@ -259,6 +262,7 @@
 						<li>
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
+								<li>Mashed_Lynian_UrukiTribesperson</li>
 							</kindDefs>
 							<chance>1.0</chance>
 						</li>
@@ -274,7 +278,7 @@
 							<kindDefs>
 								<li>Mashed_Lynian_MelynxColonist</li>
 							</kindDefs>
-							<chance>75.0</chance>
+							<chance>80.0</chance>
 						</li>
 						<li>
 							<kindDefs>
@@ -285,6 +289,7 @@
 						<li>
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneColonist</li>
+								<li>Mashed_Lynian_UrukiColonist</li>
 							</kindDefs>
 							<chance>5.0</chance>
 						</li>
@@ -300,7 +305,20 @@
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneTribesperson</li>
 							</kindDefs>
-							<chance>100.0</chance>
+							<chance>90.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneTribesperson</li>
+								<li>Mashed_Lynian_MelynxTribesperson</li>
+							</kindDefs>
+							<chance>10.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_UrukiTribesperson</li>
+							</kindDefs>
+							<chance>1.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -314,7 +332,20 @@
 							<kindDefs>
 								<li>Mashed_Lynian_GrimalkyneColonist</li>
 							</kindDefs>
-							<chance>100.0</chance>
+								<chance>85.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_FelyneColonist</li>
+								<li>Mashed_Lynian_MelynxColonist</li>
+							</kindDefs>
+							<chance>10.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Mashed_Lynian_UrukiColonist</li>
+							</kindDefs>
+							<chance>5.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
