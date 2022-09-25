@@ -11,6 +11,6 @@ namespace Mashed_Lynians
             this.compClass = typeof(CompAbilityEffect_Pilfer);
         }
 
-        public List<ThingDef> guaranteedPilfers;
+        public HashSet<ThingDef> guaranteedPilfers;
     }
 }

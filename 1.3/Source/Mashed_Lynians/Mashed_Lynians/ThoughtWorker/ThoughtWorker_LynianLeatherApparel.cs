@@ -7,7 +7,7 @@ namespace Mashed_Lynians
 	[StaticConstructorOnStartup]
 	public static class LeatherList
 	{
-		public static List<ThingDef> list = new List<ThingDef>
+		public static HashSet<ThingDef> list = new HashSet<ThingDef>
 		{
 			ThingDefOf.Mashed_Lynian_LynianFur,
 			ThingDefOf.Mashed_Lynian_LynianLeather,

@@ -25,6 +25,8 @@
 		<comps>
 		</comps>
 		<race>
+			<nameGenerator>Mashed_Lynian_NamerPerson_UrukiMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_UrukiFemale</nameGeneratorFemale>
 			<leatherDef>Mashed_Lynian_LynianFineFur</leatherDef>
 		</race>
 		<alienRace>

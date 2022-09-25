@@ -267,6 +267,8 @@
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 		</statBases>
 		<race>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
 			<body>Mashed_Lynian_CatLikeBody</body>
 			<leatherDef>Mashed_Lynian_LynianFur</leatherDef>
 		</race>
@@ -372,6 +374,10 @@
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ==========[Mashed_Lynian_BasePawn_CatLike_OldWorld]========== -->
 	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike" Name="Mashed_Lynian_BasePawn_CatLike_OldWorld" Abstract="True">
+		<race>
+			<nameGenerator>Mashed_Lynian_NamerPerson_CatLike_OldWorldMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_CatLike_OldWorldFemale</nameGeneratorFemale>
+		</race>
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>

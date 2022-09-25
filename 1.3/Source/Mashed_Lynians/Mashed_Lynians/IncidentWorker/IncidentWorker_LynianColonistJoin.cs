@@ -85,7 +85,7 @@ namespace Mashed_Lynians
 
 		private const float RelationWithColonistWeight = 20f;
 
-		public static List<PawnKindDef> pawnKindList = new List<PawnKindDef> 
+		public static readonly HashSet<PawnKindDef> pawnKindList = new HashSet<PawnKindDef> 
 		{ 
 			PawnKindDefOf.Mashed_Lynian_BoaboaColonist, PawnKindDefOf.Mashed_Lynian_FelyneColonist, PawnKindDefOf.Mashed_Lynian_GajalakaColonist, 
 			PawnKindDefOf.Mashed_Lynian_GrimalkyneColonist, PawnKindDefOf.Mashed_Lynian_MelynxColonist, PawnKindDefOf.Mashed_Lynian_ShakalakaColonist, 
