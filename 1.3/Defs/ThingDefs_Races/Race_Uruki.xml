@@ -137,7 +137,7 @@
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Right</path>
 							<colorChannel>eye</colorChannel>
 							<bodyPart>right eye</bodyPart>
-							<drawnInBed>true</drawnInBed>
+							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -167,7 +167,7 @@
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Left</path>
 							<colorChannel>eye</colorChannel>
 							<bodyPart>left eye</bodyPart>
-							<drawnInBed>true</drawnInBed>
+							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
