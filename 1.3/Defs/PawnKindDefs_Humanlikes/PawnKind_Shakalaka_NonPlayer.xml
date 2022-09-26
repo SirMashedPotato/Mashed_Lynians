@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Base]========== -->
-	<PawnKindDef Name="Mashed_Lynian_ShakalakaKindBase" Abstract="True">
-		<maxGenerationAge>60</maxGenerationAge>
-		<chemicalAddictionChance>0.05</chemicalAddictionChance>
-		<invNutrition>2</invNutrition>
-		<invFoodDef>Pemmican</invFoodDef>
+	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_ShakalakaKindBase" Abstract="True">
 		<race>Mashed_Lynian_ShakalakaRace</race>
 		<defaultFactionType>Mashed_Lynian_NonPlayerShakalakaTribe</defaultFactionType>
 		<apparelTags>
@@ -16,15 +12,6 @@
 			<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
 			<li>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</li>
 		</apparelRequired>
-		<!--
-		<backstoryFiltersOverride>
-		  <li>
-			<categories>
-			  <li>ESCP_DunmerAshlanderBackstory</li>
-			</categories>
-		  </li>
-		</backstoryFiltersOverride>
-		-->
 	</PawnKindDef>
 	<!-- ==========[Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">

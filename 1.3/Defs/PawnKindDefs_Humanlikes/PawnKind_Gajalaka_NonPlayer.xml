@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Base]========== -->
-	<PawnKindDef Name="Mashed_Lynian_GajalakaKindBase" Abstract="True">
-		<maxGenerationAge>60</maxGenerationAge>
-		<chemicalAddictionChance>0.05</chemicalAddictionChance>
-		<invNutrition>2</invNutrition>
-		<invFoodDef>Pemmican</invFoodDef>
+	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_GajalakaKindBase" Abstract="True">
 		<race>Mashed_Lynian_GajalakaRace</race>
 		<defaultFactionType>Mashed_Lynian_NonPlayerGajalakaTribe</defaultFactionType>
 		<apparelTags>
@@ -15,15 +11,6 @@
 			<li>Mashed_Lynian_Apparel_GajalakaMask</li>
 			<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
 		</apparelRequired>
-		<!--
-		<backstoryFiltersOverride>
-		  <li>
-			<categories>
-			  <li>ESCP_DunmerAshlanderBackstory</li>
-			</categories>
-		  </li>
-		</backstoryFiltersOverride>
-		-->
 	</PawnKindDef>
 	<!-- ==========[Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
