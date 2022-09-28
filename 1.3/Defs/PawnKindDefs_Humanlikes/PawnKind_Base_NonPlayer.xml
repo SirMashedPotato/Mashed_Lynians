@@ -126,14 +126,14 @@
 	<PawnKindDef ParentName="Mashed_Lynian_ChiefBase" Name="Mashed_Lynian_ChiefMeleeBase" Abstract="True">
 		<label>purrserker chief</label>
 		<weaponTags>
-			<li>Mashed_Lynian_LynianTribalAdvanced</li>
+			<li>Mashed_Lynian_LynianPurrserker</li>
 		</weaponTags>
 		<initialResistanceRange>38~58</initialResistanceRange>
 	</PawnKindDef>
 	<PawnKindDef ParentName="Mashed_Lynian_ChiefBase" Name="Mashed_Lynian_ChiefRangedBase" Abstract="True">
 		<label>thrower chief</label>
 		<weaponTags>
-			<li>Mashed_Lynian_TribalBoomerangAdvanced</li>
+			<li>Mashed_Lynian_LynianPurrserkerBoomerang</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>

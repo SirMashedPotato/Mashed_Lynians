@@ -207,7 +207,7 @@
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<weaponTags>
-			<li>Mashed_Lynian_LynianTribalAdvanced</li>
+			<li>Mashed_Lynian_LynianPurrserker</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>MeleeBlunt</li>
@@ -486,7 +486,6 @@
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<weaponTags>
-			<li>Mashed_Lynian_LynianTribalAdvanced</li>
 			<li>Mashed_Lynian_FelyneTribalAcornKnight</li>
 		</weaponTags>
 		<weaponClasses>

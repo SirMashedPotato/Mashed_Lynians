@@ -339,6 +339,9 @@
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UrukiBasket/Mashed_UrukiBasket</wornGraphicPath>
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+			</wornGraphicData>
 			<tags>
 				<li>Mashed_Lynian_UrukiTribal</li>
 			</tags>
