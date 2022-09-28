@@ -15,7 +15,14 @@
 		<parts>
 			<li Class="Mashed_Lynians.StatPart_SkillOffset">
 				<raceThingDef>Mashed_Lynian_MelynxRace</raceThingDef>
-				<factorPerLevel>0.03</factorPerLevel>
+				<factorPerLevel>0.015</factorPerLevel>
+				<factorPerOverlevel>0.001</factorPerOverlevel>
+				<skillDef>Melee</skillDef>
+			</li>
+			<li Class="Mashed_Lynians.StatPart_SkillOffset">
+				<raceThingDef>Mashed_Lynian_MelynxRace</raceThingDef>
+				<factorPerLevel>0.015</factorPerLevel>
+				<factorPerOverlevel>0.001</factorPerOverlevel>
 				<skillDef>Intellectual</skillDef>
 			</li>
 		</parts>

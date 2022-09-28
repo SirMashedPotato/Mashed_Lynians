@@ -20,7 +20,7 @@ namespace Mashed_Lynians
             return races.Contains(p.def);
         }
 
-        public HashSet<ThingDef> races;
+        public List<ThingDef> races;
 
         [NoTranslate]
         private string labelCached;

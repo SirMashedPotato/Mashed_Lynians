@@ -49,7 +49,7 @@ namespace Mashed_Lynians
                     }
                     else
                     {
-                        if (Rand.Chance(AvoidFailChance(user)))
+                        if (Rand.Chance(AvoidFailChance(user, targetPawn)))
                         {
                             Messages.Message("Mashed_Lynian_PilferFail".Translate(user.Name), parent.pawn, MessageTypeDefOf.NeutralEvent);
                         } 
@@ -101,12 +101,27 @@ namespace Mashed_Lynians
 
         public override string ExtraLabelMouseAttachment(LocalTargetInfo target)
         {
+            if (target.Pawn != null)
+            {
+                string str = "Mashed_Lynian_PilferDetails".Translate(parent.pawn.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance).ToStringPercent(), (1f - AvoidFailChance(parent.pawn, target.Pawn)).ToStringPercent());
+                if (!target.Pawn.Awake())
+                {
+                    str += "Mashed_Lynian_PilferDetails_Sleeping".Translate();
+                }
+                return str;
+            }
             return ExtraTooltipPart();
         }
 
         public float AvoidFailChance(Pawn pawn)
         {
-            return pawn.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance) / 3;
+            return pawn.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance) / 2;
+        }
+
+        public float AvoidFailChance(Pawn pawn, Pawn target)
+        {
+            float div = target.Awake() ? 2 : 1.2f;
+            return pawn.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance) / div;
         }
     }
 }
