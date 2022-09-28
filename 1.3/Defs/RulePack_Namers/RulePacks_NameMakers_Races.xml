@@ -4,9 +4,14 @@
 		<defName>Mashed_Lynian_NamerPerson_Utility</defName>
 		<rulePack>
 			<rulesFiles>
+				<!-- From specific games -->
 				<li>MogaFarmName->Mashed_Lynians/Lynians_CatLikeNames_Farm</li>
+				<li>BhernaRanchNames->Mashed_Lynians/Lynians_CatLikeNames_Ranch</li>
+				<li>KamuraPlazaNames->Mashed_Lynians/Lynians_CatLikeNames_Plaza</li>
+				<!-- Generic -->
 				<li>FlowerNames->Mashed_Lynians/Lynians_UrukiNames_Flowers</li>
 				<li>SucculentNames->Mashed_Lynians/Lynians_UrukiNames_Succulents</li>
+				<li>FoodNames->Mashed_Lynians/Lynians_CatLikeNames_Food</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -19,7 +24,10 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>name(p=1)->[MogaFarmName]</li>
+				<li>name(p=0.5)->[MogaFarmName]</li>
+				<li>name(p=0.5)->[BhernaRanchNames]</li>
+				<li>name(p=0.5)->[KamuraPlazaNames]</li>
+				<li>name(p=0.5)->[Lynians_CatLikeNames_Food]</li>
 				<li>name(p=1)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalMale]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
@@ -37,7 +45,10 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>name(p=1)->[MogaFarmName]</li>
+				<li>name(p=0.5)->[MogaFarmName]</li>
+				<li>name(p=0.5)->[BhernaRanchNames]</li>
+				<li>name(p=0.5)->[KamuraPlazaNames]</li>
+				<li>name(p=0.5)->[Lynians_CatLikeNames_Food]</li>
 				<li>name(p=1)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalFemale]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
@@ -55,7 +66,8 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>name(p=5)->[SucculentNames]</li>
+				<li>name(p=5)->[FlowerNames]</li>
+				<li>name(p=2)->[SucculentNames]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
 				<li>name(p=0.15)->[Color]</li>
 				<li>name(p=0.15)->[ColorBadass]</li>
@@ -71,6 +83,7 @@
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=5)->[FlowerNames]</li>
+				<li>name(p=2)->[SucculentNames]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
 				<li>name(p=0.15)->[Color]</li>
 				<li>name(p=0.15)->[ColorBadass]</li>
