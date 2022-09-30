@@ -6,6 +6,9 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Mashed_Lynian_ApparelHeadgear</li>
+		</thingCategories>
 		<recipeMaker>
 			<recipeUsers>
 				<li>Mashed_Lynian_CraftingSpot</li>
@@ -157,9 +160,6 @@
 		<defName>Mashed_Lynian_Apparel_PurrserkerHelmet</defName>
 		<label>purrserker skull</label>
 		<description>A sturdy helmet, sculpted into the rough shape of a rodent skull. Specially designed for Lynians, fills the wearer with an unbridled fury, and is somewhat protective as well.</description>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerHelmet_Item</texPath>
 			<shaderType>CutoutComplex</shaderType>
@@ -219,9 +219,6 @@
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -280,9 +277,6 @@
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -342,9 +336,6 @@
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -412,9 +403,6 @@
 				<isShakalakaMask>true</isShakalakaMask>
 			</li>
 		</modExtensions>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaAcornMask/Mashed_ShakalakaAcornMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -473,9 +461,6 @@
 				<isShakalakaMask>true</isShakalakaMask>
 			</li>
 		</modExtensions>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCrabMask/Mashed_ShakalakaCrabMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -530,9 +515,6 @@
 		<label>acorn helmet</label>
 		<description>A durable helmet, modelled after an acorn. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such armour as well.</description>
 		<techLevel>Medieval</techLevel>
-		<thingCategories>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornHelmet_Item</texPath>
 			<shaderType>CutoutComplex</shaderType>

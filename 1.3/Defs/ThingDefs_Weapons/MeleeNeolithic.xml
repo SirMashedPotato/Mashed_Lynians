@@ -10,6 +10,9 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Mashed_Lynian_WeaponsMelee</li>
+		</thingCategories>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
 				<li>Mashed_Lynian_CraftingSpot</li>

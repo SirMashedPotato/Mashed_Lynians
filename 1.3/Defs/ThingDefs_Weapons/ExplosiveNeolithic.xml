@@ -26,7 +26,7 @@
 		</recipeMaker>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<thingCategories>
-			<li>Grenades</li>
+			<li>Mashed_Lynian_WeaponsExplosive</li>
 		</thingCategories>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>

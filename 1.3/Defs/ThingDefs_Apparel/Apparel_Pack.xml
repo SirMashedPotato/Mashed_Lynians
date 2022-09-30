@@ -24,7 +24,7 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<thingCategories>
-			<li>ApparelUtility</li>
+			<li>Mashed_Lynian_ApparelPacks</li>
 		</thingCategories>
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>

@@ -16,8 +16,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingCategories>
-			<li>Apparel</li>
+		<thingCategories Inherit="False">
+			<li>Mashed_Lynian_Apparel</li>
 		</thingCategories>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>

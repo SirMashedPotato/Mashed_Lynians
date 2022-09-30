@@ -23,8 +23,7 @@
 		</comps>
 		<techLevel>Neolithic</techLevel>
 		<thingCategories>
-			<li>Headgear</li>
-			<li>ArmorHeadgear</li>
+			<li>Mashed_Lynian_ApparelHeadgear</li>
 		</thingCategories>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>

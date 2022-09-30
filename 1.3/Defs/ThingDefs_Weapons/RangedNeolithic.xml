@@ -5,6 +5,9 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Mashed_Lynian_WeaponsRanged</li>
+		</thingCategories>
 		<uiIconScale>1.5</uiIconScale>
 		<soundInteract>Interact_BeatFire</soundInteract>
 		<statBases>
