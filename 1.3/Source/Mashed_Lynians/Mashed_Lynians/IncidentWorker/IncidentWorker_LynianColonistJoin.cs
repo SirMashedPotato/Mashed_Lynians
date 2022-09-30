@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Collections.Generic;
 using Verse;
 using RimWorld;
 
@@ -42,7 +41,7 @@ namespace Mashed_Lynians
 							select i).RandomElementWithFallback(null);
 				}
 			}
-			return PawnGenerator.GeneratePawn(new PawnGenerationRequest(pawnKindList.RandomElement(), Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, this.def.pawnMustBeCapableOfViolence, RelationWithColonistWeight, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, fixedGender, null, null, null, null, ideo, false, false, false));
+			return PawnGenerator.GeneratePawn(new PawnGenerationRequest(Utility.lynianColonistKindList.RandomElement(), Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, this.def.pawnMustBeCapableOfViolence, RelationWithColonistWeight, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, fixedGender, null, null, null, null, ideo, false, false, false));
 		}
 
 		public virtual bool CanSpawnJoiner(Map map)
@@ -84,12 +83,5 @@ namespace Mashed_Lynians
 		}
 
 		private const float RelationWithColonistWeight = 20f;
-
-		public static readonly List<PawnKindDef> pawnKindList = new List<PawnKindDef> 
-		{ 
-			PawnKindDefOf.Mashed_Lynian_BoaboaColonist, PawnKindDefOf.Mashed_Lynian_FelyneColonist, PawnKindDefOf.Mashed_Lynian_GajalakaColonist, 
-			PawnKindDefOf.Mashed_Lynian_GrimalkyneColonist, PawnKindDefOf.Mashed_Lynian_MelynxColonist, PawnKindDefOf.Mashed_Lynian_ShakalakaColonist, 
-			PawnKindDefOf.Mashed_Lynian_UrukiColonist
-		};
 	}
 }

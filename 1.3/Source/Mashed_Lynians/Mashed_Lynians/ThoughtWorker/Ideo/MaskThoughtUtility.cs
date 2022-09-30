@@ -7,17 +7,11 @@ namespace Mashed_Lynians
 {
     public static class MaskThoughtUtility
     {
-        public static bool Valid(Pawn p) => ValidNow(p) && ValidPawn(p.def);
+        public static bool Valid(Pawn p) => ValidNow(p) && Utility.PawnIsLynian(p);
 
         public static bool ValidNow(Pawn p)
         {
             return ExpectationsUtility.CurrentExpectationFor(p).order > 0;
-        }
-
-        public static bool ValidPawn(ThingDef def)
-        {
-            RaceProperties rp = RaceProperties.Get(def);
-            return rp == null || !rp.isLynian;
         }
 
         public static bool WearingValidMask_Boaboa(Pawn p)
