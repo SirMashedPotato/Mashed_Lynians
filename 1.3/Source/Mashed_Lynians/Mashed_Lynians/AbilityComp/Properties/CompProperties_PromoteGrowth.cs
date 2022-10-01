@@ -10,6 +10,7 @@ namespace Mashed_Lynians
         }
 
         public float growthPerLevel = 0.01f;
-        public float growthCap = 0.2f;
+        public float growthPerOverLevel = 0.001f;
+        public SkillDef skillDef;
     }
 }

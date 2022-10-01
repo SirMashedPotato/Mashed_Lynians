@@ -71,6 +71,8 @@
     <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
+    <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\FactionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />

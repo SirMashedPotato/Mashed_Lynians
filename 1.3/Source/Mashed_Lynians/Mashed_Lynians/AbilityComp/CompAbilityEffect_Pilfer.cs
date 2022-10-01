@@ -28,7 +28,7 @@ namespace Mashed_Lynians
                     if (Rand.Chance(chance))
                     {
                         Thing pilferedItem;
-                        if (!Props.guaranteedPilfers.NullOrEmpty())
+                        if (!Props.guaranteedPilfers.NullOrEmpty() && Utility.CanUseFelvine(user))
                         {
                             List<Thing> list = targetPawn.inventory.innerContainer.Where(x => Props.guaranteedPilfers.Contains(x.def)).ToList();
                             if (list.Any())

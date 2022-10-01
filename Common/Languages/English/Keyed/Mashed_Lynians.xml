@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	<!-- ==========[Generic]==========-->
+	<Mashed_Lynian_PawnNotLynian>{0} is not a Lynian</Mashed_Lynian_PawnNotLynian>
 	<Mashed_Lynian_AbilityDisabled_Skill>{0} is incapable of {1}</Mashed_Lynian_AbilityDisabled_Skill>
 	<Mashed_Lynian_AbilityDisabled_SkillLow>{0}'s {1} skill is too low</Mashed_Lynian_AbilityDisabled_SkillLow>
 	<!-- ==========[Pilfering]==========-->
@@ -11,6 +13,10 @@
 	<Mashed_Lynian_AbilitySkillTooLow>{0} skill must be level {1} or higher</Mashed_Lynian_AbilitySkillTooLow>
 	<!-- ==========[Promote Growth]==========-->
 	<Mashed_Lynian_PromoteGrowthDetails>Growth boost: {0}</Mashed_Lynian_PromoteGrowthDetails>
+	<Mashed_Lynian_PromoteGrowthDetails_ExtraLabel>\nCurrent growth: {0}</Mashed_Lynian_PromoteGrowthDetails_ExtraLabel>
+	<!-- ==========[Eurekacorn]==========-->
+	<Mashed_Lynian_EurekacornHasAbility>{0} already has the {1} ability</Mashed_Lynian_EurekacornHasAbility>
+	<Mashed_Lynian_EurekacornGainedAbility>{0} has learnt the {1} ability!</Mashed_Lynian_EurekacornGainedAbility>
 	<!-- ==========[Ideo]==========-->
 	<Mashed_Lynian_IdeoRequirementLynian>Any Lynian race</Mashed_Lynian_IdeoRequirementLynian>
 	<Mashed_Lynian_CookingFurrenzyTooltip>Doubled cooking speed to: {0}</Mashed_Lynian_CookingFurrenzyTooltip>

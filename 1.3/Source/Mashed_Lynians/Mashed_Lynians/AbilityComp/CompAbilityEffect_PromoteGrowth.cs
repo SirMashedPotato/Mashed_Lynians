@@ -30,7 +30,20 @@ namespace Mashed_Lynians
 
         public float BoostAmount()
         {
-            return Mathf.Clamp(Props.growthCap, 0f, parent.pawn.skills.GetSkill(SkillDefOf.Plants).Level * Props.growthPerLevel);
+            Pawn p = parent.pawn;
+            float skillLevel = (float)p.skills.GetSkill(Props.skillDef).Level;
+            float growthBoost;
+            if (skillLevel >= 20f)
+            {
+                growthBoost = Props.growthPerLevel * 20f;
+                skillLevel -= 20f;
+                growthBoost += (Props.growthPerOverLevel * skillLevel);
+            }
+            else
+            {
+                growthBoost = Props.growthPerLevel * skillLevel;
+            }
+            return Mathf.Clamp(growthBoost, 0f, 1f);
         }
 
         public override bool GizmoDisabled(out string reason)
@@ -55,6 +68,10 @@ namespace Mashed_Lynians
 
         public override string ExtraLabelMouseAttachment(LocalTargetInfo target)
         {
+            if (target.Thing is Plant p)
+            {
+                return ExtraTooltipPart() + "Mashed_Lynian_PromoteGrowthDetails_ExtraLabel".Translate(p.Growth.ToStringPercent());
+            }
             return ExtraTooltipPart();
         }
     }

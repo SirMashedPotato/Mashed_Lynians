@@ -22,6 +22,7 @@
 		</statBases>
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_Pilfer">
+				<!-- Should specifically be used for felvine, and felvine derivatives -->
 				<guaranteedPilfers>
 					<li>Mashed_Lynian_FelvinePowder</li>
 					<li>Mashed_Lynian_FelvineFlowers</li>

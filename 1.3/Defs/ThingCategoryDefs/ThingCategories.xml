@@ -37,4 +37,10 @@
 		<label>packs</label>
 		<parent>Mashed_Lynian_Apparel</parent>
 	</ThingCategoryDef>
+	<!-- ==========[Additional]==========-->
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_Eurekacorns</defName>
+		<label>eurekacorns</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
 </Defs>

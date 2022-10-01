@@ -206,7 +206,7 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PromoteGrowthGrowth</defName>
 		<label>Meowster Gardener</label>
-		<description>Have a single Uruki cumulatively promote plant growth by 200%</description>
+		<description>Have a single Lynian cumulatively promote plant growth by 200%</description>
 		<tracker Class="AchievementsExpanded.RecordEventTracker">
 			<def>Mashed_Lynian_GrowthPromoted</def>
 			<count>200</count>
@@ -218,7 +218,7 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PilferItems</defName>
 		<label>Meowster Pilferer</label>
-		<description>Have a single Melynx succesfully pilfer items 50 times</description>
+		<description>Have a single Lynian succesfully pilfer items 50 times</description>
 		<tracker Class="AchievementsExpanded.RecordEventTracker">
 			<def>Mashed_Lynian_PilferedNumber</def>
 			<count>50</count>
@@ -229,7 +229,7 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PilferValue</defName>
 		<label>Greedy Paws</label>
-		<description>Have a single Melynx succesfully pilfer 10,000 silver worth of items</description>
+		<description>Have a single Lynian succesfully pilfer 10,000 silver worth of items</description>
 		<tracker Class="AchievementsExpanded.RecordEventTracker">
 			<def>Mashed_Lynian_PilferedValue</def>
 			<count>10000</count>

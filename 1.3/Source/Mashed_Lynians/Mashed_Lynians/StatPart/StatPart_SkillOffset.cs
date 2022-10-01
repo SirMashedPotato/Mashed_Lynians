@@ -27,7 +27,7 @@ namespace Mashed_Lynians
 
         public float StatFactor(Pawn pawn)
         {
-            if (pawn.def == raceThingDef)
+            if (pawn.abilities.GetAbility(abilityDef) != null)
             {
                 float skillLevel = (float)pawn.skills.GetSkill(skillDef).Level;
                 if (skillLevel >= 20f)
@@ -47,6 +47,6 @@ namespace Mashed_Lynians
         public float factorPerLevel = 0.3f;
         public float factorPerOverlevel = 0.001f;
         public SkillDef skillDef;
-        public ThingDef raceThingDef;
+        public AbilityDef abilityDef;
     }
 }
