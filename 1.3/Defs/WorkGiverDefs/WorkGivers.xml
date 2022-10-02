@@ -22,7 +22,7 @@
 		<defName>Mashed_Lynian_DoBillsUseCraftingBench</defName>
 		<label>make things at Lynian crafting bench</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Smithing</workType>
+		<workType>Crafting</workType>
 		<priorityInType>90</priorityInType>
 		<fixedBillGiverDefs>
 			<li>Mashed_Lynian_CraftingBench</li>
