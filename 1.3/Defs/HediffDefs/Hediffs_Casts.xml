@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_AbilityBuffBase]==========-->
+	<HediffDef Name="Mashed_Lynian_AbilityBuffBase" Abstract="True">
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_LynianCookingFurrenzy]==========-->
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_LynianCookingFurrenzy</defName>
+		<label>cooking furrenzy</label>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about cooking, and putting it all to use at once. This doubles the pawns cooking speed, allowing it to go above the normal limit in the process.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_CookingFurrenzyTooltip</compClass>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li/>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
+	<!--
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_PursserkerRage</defName>
+		<label>purrserker rage</label>
+		<description>The inner beast unleashed, greatly empowering melee capabilities.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeArmorPenetration>0.25</MeleeArmorPenetration>
+					<MeleeHitChance>2.5</MeleeHitChance>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
+					<MoveSpeed>2.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	-->
+</Defs>

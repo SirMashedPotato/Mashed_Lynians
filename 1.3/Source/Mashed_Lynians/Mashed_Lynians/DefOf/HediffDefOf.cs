@@ -16,9 +16,6 @@ namespace Mashed_Lynians
 		public static HediffDef Mashed_Lynian_FelvineHighFrenzy;
 		public static HediffDef Mashed_Lynian_FelvineTolerance;
 
-		[MayRequireIdeology]
 		public static HediffDef Mashed_Lynian_LynianCookingFurrenzy;
-		[MayRequireIdeology]
-		public static HediffDef Mashed_Lynian_LynianCookingFurrenzyBuff;
 	}
 }

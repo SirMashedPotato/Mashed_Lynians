@@ -172,15 +172,11 @@ namespace Mashed_Lynians
             [HarmonyPostfix]
             public static void Lynians_CookingFrurrenzy_Patch(Thing thing, StatDef stat, ref float __result)
             {
-                if (ModsConfig.IdeologyActive)
+                if (stat == StatDefOf.CookSpeed && thing is Pawn p && p.RaceProps.Humanlike)
                 {
-                    if (stat == StatDefOf.CookSpeed && thing is Pawn p && p.RaceProps.Humanlike)
+                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null)
                     {
-                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null 
-                            || p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzyBuff) != null)
-                        {
-                            __result *= 2f;
-                        }
+                        __result *= 2f;
                     }
                 }
             }

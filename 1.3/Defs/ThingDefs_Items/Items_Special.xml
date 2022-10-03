@@ -37,7 +37,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Pilfer]==========-->
+	<!-- ==========[Mashed_Lynian_PilferAbility]==========-->
 	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
 		<defName>Mashed_Lynian_EurekacornPilfer</defName>
 		<label>eurekacorn (Pilfer)</label>
@@ -53,7 +53,7 @@
 			<li>Mashed_Lynian_Melynx</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[Promote growth]==========-->
+	<!-- ==========[Mashed_Lynian_PromoteGrowthAbility]==========-->
 	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
 		<defName>Mashed_Lynian_EurekacornPromoteGrowth</defName>
 		<label>eurekacorn (Promote growth)</label>
@@ -67,6 +67,22 @@
 		</comps>
 		<tradeTags>
 			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_LynianCookingFurrenzyAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornCookingFurrenzy</defName>
+		<label>eurekacorn (Cooking furrenzy)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_LynianCookingFurrenzyAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_LynianCookingFurrenzyAbility</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

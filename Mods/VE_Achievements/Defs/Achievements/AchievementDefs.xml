@@ -204,6 +204,17 @@
 		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_CookingFurrenzyActivations</defName>
+		<label>Meowster Chef</label>
+		<description>Activate the 'Cooking Furrenzy' ability 20 times</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<def>Mashed_Lynian_LynianCookingFurrenzy</def>
+			<count>20</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_CookingFurrenzyActivations</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PromoteGrowthGrowth</defName>
 		<label>Meowster Gardener</label>
 		<description>Have a single Lynian cumulatively promote plant growth by 200%</description>
