@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerCatLikeFactionBase">
+		<defName>Mashed_Lynian_NonPlayerFelyneTribe</defName>
+		<label>Felyne tribe</label>
+		<description>A small Felyne tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home. While most of the tribe members are Felyne, there are also many Melynx in the tribe too.\n\nWhile not very technologically advanced, they are content with their simple lifestyle, and are willing to defend it with blood and fury.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
+		<colorSpectrum>
+			<li>(0.9, 0.8, 0.7)</li>
+			<li>(0.9, 0.9, 0.8)</li>
+		</colorSpectrum>
+		<factionNameMaker>Mashed_Lynian_NamerFactionFelyne</factionNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_FelyneTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_FelyneTrader</li>
+		</baseTraderKinds>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+		</requiredMemes>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mashed_Lynian_FelyneGatherer>5</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_FelyneWarrior>10</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_FelyneBombadier>5</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_FelyneFelvidier>3</Mashed_Lynian_FelyneFelvidier>
+					<Mashed_Lynian_FelyneChiefRanged>3</Mashed_Lynian_FelyneChiefRanged>
+					<Mashed_Lynian_FelyneChiefMelee>1.5</Mashed_Lynian_FelyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_FelyneBombadier>7</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_FelyneChiefRanged>5</Mashed_Lynian_FelyneChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_FelyneGatherer>10</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_FelyneWarrior>10</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelyneFelvidier>3</Mashed_Lynian_FelyneFelvidier>
+					<Mashed_Lynian_FelyneChiefMelee>5</Mashed_Lynian_FelyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Mashed_Lynian_FelyneGatherer>5</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_FelyneWarrior>5</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_FelyneBombadier>10</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_FelyneFelvidier>5</Mashed_Lynian_FelyneFelvidier>
+					<Mashed_Lynian_FelyneChiefRanged>3</Mashed_Lynian_FelyneChiefRanged>
+					<Mashed_Lynian_FelyneChiefMelee>1.5</Mashed_Lynian_FelyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mashed_Lynian_FelyneWarrior>20</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_FelyneBombadier>10</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_FelyneFelvidier>5</Mashed_Lynian_FelyneFelvidier>
+					<Mashed_Lynian_FelyneChiefRanged>3</Mashed_Lynian_FelyneChiefRanged>
+					<Mashed_Lynian_FelyneChiefMelee>1.5</Mashed_Lynian_FelyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Mashed_Lynian_FelyneTrader>1</Mashed_Lynian_FelyneTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>8</Alpaca>
+				</carriers>
+				<guards>
+					<Mashed_Lynian_FelyneWarrior>7</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_FelyneBombadier>5</Mashed_Lynian_FelyneBombadier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mashed_Lynian_FelyneWarrior>7</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_MelynxWarrior>3.5</Mashed_Lynian_MelynxWarrior>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_MelynxHunter>5</Mashed_Lynian_MelynxHunter>
+					<Mashed_Lynian_FelyneBombadier>5</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_FelyneFelvidier>5</Mashed_Lynian_FelyneFelvidier>
+					<Mashed_Lynian_FelyneChiefRanged>10</Mashed_Lynian_FelyneChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_MelynxHunter>5</Mashed_Lynian_MelynxHunter>
+					<Mashed_Lynian_FelyneBombadier>5</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_FelyneChiefRanged>10</Mashed_Lynian_FelyneChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_FelyneGatherer>2</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_FelyneBombadier>1</Mashed_Lynian_FelyneBombadier>
+					<Mashed_Lynian_MelynxGatherer>0.1</Mashed_Lynian_MelynxGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_FelyneHunter>1</Mashed_Lynian_FelyneHunter>
+					<Mashed_Lynian_MelynxHunter>0.1</Mashed_Lynian_MelynxHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_FelyneGatherer>1</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_MelynxGatherer>0.1</Mashed_Lynian_MelynxGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_FelyneGatherer>1</Mashed_Lynian_FelyneGatherer>
+					<Mashed_Lynian_MelynxGatherer>0.1</Mashed_Lynian_MelynxGatherer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+</Defs>

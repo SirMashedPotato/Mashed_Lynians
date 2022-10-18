@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Apparel_PackBase]========== -->
+	<ThingDef ParentName="ApparelNoQualityBase" Name="Mashed_Lynian_Apparel_PackBase" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>Mashed_Lynian_ApparelPacks</li>
+		</thingCategories>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfDamaged>false</careIfDamaged>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<male>
+					<scale>(1.25,1.25)</scale>
+				</male>
+				<east>
+					<male>
+						<offset>(-0.015,0)</offset>
+					</male>
+				</east>
+				<west>
+					<male>
+						<offset>(0.015,0)</offset>
+					</male>
+				</west>
+			</wornGraphicData>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_AcornBackpack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_AcornBackpack</defName>
+		<label>acorn backpack</label>
+		<description>A backpack, made to resemble an acorn. Specially designed for Lynians, it is highly useful when travelling great distances.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>25</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<CarryingCapacity>25</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornBackpack/Mashed_AcornBackpack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornBackpack/Mashed_AcornBackpack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribal</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Lynian</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_MelynxSatchel]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_MelynxSatchel</defName>
+		<label>Melynx satchel</label>
+		<description>A woven satchel, typically worn by Melynx. Specially designed for Lynians, makes it easy to quickly hide pilfered goods.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxSatchel/Mashed_MelynxSatchel_Item</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_MelynxSatchel/Mashed_MelynxSatchel</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_MelynxTribal</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<!-- FU Icon -->
+				<li>
+					<weight>10</weight>
+					<only>(96,120,63,255)</only>
+				</li>
+				<!-- Tri Icon -->
+				<li>
+					<weight>5</weight>
+					<only>(98,116,99,255)</only>
+				</li>
+				<!-- 3U Icon -->
+				<li>
+					<weight>5</weight>
+					<only>(57,98,57,255)</only>
+				</li>
+				<!-- 4U Icon -->
+				<li>
+					<weight>5</weight>
+					<only>(47,110,47,255)</only>
+				</li>
+				<!-- Rise Icon Lighter -->
+				<li>
+					<weight>5</weight>
+					<only>(149,153,90,255)</only>
+				</li>
+				<!-- Rise Icon Darker -->
+				<li>
+					<weight>5</weight>
+					<only>(134,137,76,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerBackPack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_PurrserkerBackPack</defName>
+		<label>purrserker backbone</label>
+		<description>A sturdy totem, sculpted into the rough shape of a bone. Specially designed for Lynians, fills the wearer with an unbridled fury, and even has a little satchel attached to it.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerBackPack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerBackPack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribalAdvanced</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaAcornBackpack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</defName>
+		<label>small acorn backpack</label>
+		<description>A small acorn shaped backpack, typically worn by Shakalaka. Specially designed for Lynians, useful for carrying around scavenged items, especially over long distances.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaAcornBackpack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaAcornBackpack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribal</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+			</wornGraphicData>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_BarrelBackPack]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_BarrelBackPack</defName>
+		<label>barrel backpack</label>
+		<description>A large barrel, repurposed as a backpack. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such a backpack as well.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>40</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_AcornEquipment</researchPrerequisite>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<CarryingCapacity>40</CarryingCapacity>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+		  <Steel>20</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_BarrelBackPack_Item</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_BarrelBackPack</wornGraphicPath>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribalAdvanced</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+			</wornGraphicData>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_UrukiBasket]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
+		<defName>Mashed_Lynian_Apparel_UrukiBasket</defName>
+		<label>Uruki basket</label>
+		<description>A woven basket, typically worn by Uruki. Specially designed for Lynians, convenient for carrying gardening tools.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<carryWeightIncrease>10</carryWeightIncrease>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>Mashed_Lynian_UrukiEquipment</researchPrerequisite>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+			<PlantWorkSpeed>0.1</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UrukiBasket/Mashed_UrukiBasket_Item</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UrukiBasket/Mashed_UrukiBasket</wornGraphicPath>
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+			</wornGraphicData>
+			<tags>
+				<li>Mashed_Lynian_UrukiTribal</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<!-- Green -->
+				<li>
+					<weight>10</weight>
+					<only>(97,118,61,255)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,158,80,255)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(106,122,65,255)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(155,180,94,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike_True">
+		<defName>Mashed_Lynian_GajalakaRace</defName>
+		<label>gajalaka</label>
+		<description>One of the breeds of goblin-like Lynian, Gajalaka are characterised by their red skin, and savage temperament. Like their cousins, Gajalaka are rather reclusive, and are very rarely seen without their masks on. They usually make their home in rocky, and sometimes volcanically active, regions, where they can put their innate mining skills to work. Like all Lynians, Gajalaka are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, since then most Gajalaka have gone their own way, and established savage hunter-gatherer tribes. Very few willingly wander into their territory, as Gajalaka have a tendency towards explosives.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nIncreased comfortable maximum temperature.\nPain shock threshold is increased by 10%.\nMining speed is increased by 10%.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 6 higher than base -->
+			<ComfyTemperatureMax>38</ComfyTemperatureMax>
+			<!-- 0.1 higher than base -->
+			<PainShockThreshold>0.9</PainShockThreshold>
+			<!-- 0.1 higher than base -->
+			<MiningSpeed>1.1</MiningSpeed>
+		</statBases>
+		<comps>
+		</comps>
+		<race>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<aliencrowntypes>
+						<li>Mashed_GoblinHead</li>
+					</aliencrowntypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- World icon -->
+									<li>
+										<weight>2</weight>
+										<only>(195,86,62,255)</only>
+									</li>
+									<!-- Concept art -->
+									<li>
+										<weight>1</weight>
+										<only>(185,32,19,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(130,25,11,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(106,28,12,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Concept art -->
+									<li>
+										<weight>1</weight>
+										<only>(246,220,173,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(236,190,147,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(193,115,76,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
+					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Gajalaka/</body>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

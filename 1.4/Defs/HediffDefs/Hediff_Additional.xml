@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Pilfering]==========-->
+	<HediffDef>
+		<defName>Mashed_Lynian_PilferedFelvine</defName>
+		<label>pilfered felvine</label>
+		<description>Used for Achievements, you should not see this.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 0.4)</defaultLabelColor>
+		<maxSeverity>0.1</maxSeverity>
+		<initialSeverity>0.1</initialSeverity>
+		<comps>
+		  <li Class="HediffCompProperties_Immunizable">
+			<severityPerDayNotImmune>-100</severityPerDayNotImmune>
+		  </li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

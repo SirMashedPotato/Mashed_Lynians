@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Drug]========== -->
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>Mashed_Lynian_FelvinePowder</defName>
+		<label>felvine powder</label>
+		<description>Felvine flowers crushed into a fine powder. Doesn't really do anything for most races, cat-like Lynians on the other hand are whipped into a short-lived frenzy. Excessive use can result in addiction.\n\nPowder can be produced at a Lynian crafting spot without equipment.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_FelvineHighFrenzy</HediffDef>
+			<HediffDef>Mashed_Lynian_FelvineTolerance</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_FelvinePowder</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+			<MarketValue>11</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<baseIngestTicks>150</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Mashed_Lynian_IngestFelvine</ingestEffect>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Inhale {0}</ingestCommandString>
+			<ingestReportString>Inhaling {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="Mashed_Lynians.IngestionOutcomeDoer_GiveHediff_Felvine">
+					<hediffDef>Mashed_Lynian_FelvineHighFrenzy</hediffDef>
+					<altHediffDef>Mashed_Lynian_FelvinePain</altHediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>Mashed_Lynian_FelvineChemical</toleranceChemical>
+				</li>
+				<li Class="Mashed_Lynians.IngestionOutcomeDoer_OffsetNeed_Felvine">
+					<need>Rest</need>
+					<offset>0.05</offset>
+				</li>
+				<li Class="Mashed_Lynians.IngestionOutcomeDoer_GiveHediff_Felvine">
+					<hediffDef>Mashed_Lynian_FelvineTolerance</hediffDef>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_FelvineSowing</researchPrerequisite>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+		</recipeMaker>
+		<costList>
+			<Mashed_Lynian_FelvineFlowers>4</Mashed_Lynian_FelvineFlowers>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Mashed_Lynian_FelvineChemical</chemical>
+				<addictiveness>0.020</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+	<!-- ==========[High - non-cat-like lynian]========== -->
+	<HediffDef>
+		<defName>Mashed_Lynian_FelvinePain</defName>
+		<label>felvine burn</label>
+		<labelNoun>felvine burn</labelNoun>
+		<description>Felvine ingested the wrong way, not very comfortable.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-10.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[High - cat-like lynian]========== -->
+	<HediffDef>
+		<defName>Mashed_Lynian_FelvineHighFrenzy</defName>
+		<label>felvine furrenzy</label>
+		<labelNoun>a felvine high</labelNoun>
+		<description>Felvine's active chemical in the bloodstream. Causes the ingestor to enter a furious frenzy.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>1.2</restFallFactor>
+				<painOffset>-0.2</painOffset>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Thought cat-like lynian]========== -->
+	<ThoughtDef>
+		<defName>Mashed_Lynian_FelvineHighFrenzy</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Mashed_Lynian_FelvineHighFrenzy</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>felvine furrenzy</label>
+				<description>I am the one that knocks!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Chemical]========== -->
+	<ChemicalDef>
+		<defName>Mashed_Lynian_FelvineChemical</defName>
+		<label>felvine</label>
+		<addictionHediff>Mashed_Lynian_FelvineAddiction</addictionHediff>
+		<toleranceHediff>Mashed_Lynian_FelvineTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+	<!-- ==========[Need]========== -->
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Mashed_Lynian_FelvineChemical</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>felvine</label>
+		<description>Because of a felvine dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<listPriority>25</listPriority>
+	</NeedDef>
+	<!-- ==========[Tolerance]========== -->
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>Mashed_Lynian_FelvineTolerance</defName>
+		<label>felvine tolerance</label>
+		<description>A built-up tolerance to felvine. The more severe this tolerance is, the more felvine it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Mashed_Lynian_FelvineChemical</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+	<!-- ==========[Addiction]========== -->
+	<HediffDef ParentName="AddictionBase">
+		<defName>Mashed_Lynian_FelvineAddiction</defName>
+		<label>felvine dependence</label>
+		<description>A chemical addiction to felvine. Long-term use of felvine has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+			\nWithout regular doses of felvine, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>Mashed_Lynian_FelvineChemical</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>30</mtbDays>
+					</li>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Withdrawl]========== -->
+	<ThoughtDef>
+		<defName>Mashed_Lynian_FelvineWithdrawl</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Mashed_Lynian_FelvineAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>felvine withdrawal</label>
+				<description>I feel so weak...</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

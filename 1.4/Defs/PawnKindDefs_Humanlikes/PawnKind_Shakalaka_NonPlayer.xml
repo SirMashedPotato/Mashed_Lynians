@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_ShakalakaKindBase" Abstract="True">
+		<race>Mashed_Lynian_ShakalakaRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerShakalakaTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_ShakalakaMask</li>
+			<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
+			<li>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</li>
+		</apparelRequired>
+	</PawnKindDef>
+	<!-- ==========[Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaGatherer</defName>
+		<label>gatherer</label>
+		<combatPower>40</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Hunter]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaHunter</defName>
+		<label>hunter</label>
+		<combatPower>45</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>110~130</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribalSleep</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaTrader</defName>
+		<label>trader</label>
+		<trader>true</trader>
+		<combatPower>60</combatPower>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<weaponMoney>100~100</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Warrior]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaWarrior</defName>
+		<label>warrior</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribalToxic</li>
+		</weaponTags>
+		<weaponMoney>300~300</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaBombadier</defName>
+		<label>bombadier</label>
+		<combatPower>75</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponMoney>360~400</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalDestructive</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase" Name="Mashed_Lynian_ShakalakaChiefBase" Abstract="True">
+		<combatPower>85</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>450~750</apparelMoney>
+		<weaponMoney>500~1000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>19~30</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaChiefBase">
+		<defName>Mashed_Lynian_ShakalakaChiefMelee</defName>
+		<label>warrior chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribalToxic</li>
+		</weaponTags>
+		<initialResistanceRange>38~58</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaChiefBase">
+		<defName>Mashed_Lynian_ShakalakaChiefRanged</defName>
+		<label>bombadier chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalDestructive</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

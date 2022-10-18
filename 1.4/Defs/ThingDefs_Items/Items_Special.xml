@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]==========-->
+	<ThingDef ParentName="ResourceBase" Name="Mashed_Lynian_EurekacornBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<description>A peculiar acorn, that bestows knowledge of a specific ability to any Lynian that consumes it. While quite a rarity, they can sometimes be purchased from Lynian traders.</description>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_Eurekacorn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>Mashed_Lynian_Eurekacorns</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>Mashed_Lynian_Eurekacorn</li>
+		</tradeTags>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Eat eurekacorn</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_PilferAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornPilfer</defName>
+		<label>eurekacorn (Pilfer)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_PilferAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_PilferAbility</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_PromoteGrowthAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornPromoteGrowth</defName>
+		<label>eurekacorn (Promote growth)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_PromoteGrowthAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_PromoteGrowthAbility</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_LynianCookingFurrenzyAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornCookingFurrenzy</defName>
+		<label>eurekacorn (Cooking furrenzy)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_LynianCookingFurrenzyAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_LynianCookingFurrenzyAbility</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

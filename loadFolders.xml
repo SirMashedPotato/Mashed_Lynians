@@ -8,4 +8,12 @@
 		<li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
 		<li IfModActive="vanillaexpanded.achievements">Mods/VE_Achievements</li>
 	</v1.3>
+	<v1.4>
+		<li>Common</li>
+		<li>1.4</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">Mods/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ideology</li>
+		<li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
+		<li IfModActive="vanillaexpanded.achievements">Mods/VE_Achievements</li>
+	</v1.4>
 </loadFolders>

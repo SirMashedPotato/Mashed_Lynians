@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Pilfering]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_PilferedNumber</defName>
+		<label>successful pilfers</label>
+		<description>The number of times I have successfully pilfered an item.</description>
+		<type>Int</type>
+	</RecordDef>
+	<RecordDef>
+		<defName>Mashed_Lynian_PilferedValue</defName>
+		<label>pilfer value</label>
+		<description>The total value of items I have pilfered.</description>
+		<type>Float</type>
+	</RecordDef>
+	<!-- ==========[Digging]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_DiggingDistance</defName>
+		<label>distance dug</label>
+		<description>The distance I have travelled using the Dig ability.</description>
+		<type>Int</type>
+	</RecordDef>
+	<!-- ==========[Growth Promoting]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_GrowthPromoted</defName>
+		<label>plant growth promoted</label>
+		<description>The amount of plant growth I have boosted using the Promote Growth ability.</description>
+		<type>Int</type>
+	</RecordDef>
+</Defs>

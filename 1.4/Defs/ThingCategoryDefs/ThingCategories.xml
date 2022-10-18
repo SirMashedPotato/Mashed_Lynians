@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Weapons]==========-->
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_Weapons</defName>
+		<label>Lynian weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_WeaponsMelee</defName>
+		<label>melee</label>
+		<parent>Mashed_Lynian_Weapons</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_WeaponsRanged</defName>
+		<label>ranged</label>
+		<parent>Mashed_Lynian_Weapons</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_WeaponsExplosive</defName>
+		<label>explosive</label>
+		<parent>Mashed_Lynian_WeaponsRanged</parent>
+	</ThingCategoryDef>
+	<!-- ==========[Apparel]==========-->
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_Apparel</defName>
+		<label>Lynian apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_ApparelHeadgear</defName>
+		<label>headgear</label>
+		<parent>Mashed_Lynian_Apparel</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_ApparelPacks</defName>
+		<label>packs</label>
+		<parent>Mashed_Lynian_Apparel</parent>
+	</ThingCategoryDef>
+	<!-- ==========[Additional]==========-->
+	<ThingCategoryDef>
+		<defName>Mashed_Lynian_Eurekacorns</defName>
+		<label>eurekacorns</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+</Defs>

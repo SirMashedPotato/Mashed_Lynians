@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Arrivals]========== -->
+	<FactionDef ParentName="Mashed_Lynian_OutlanderFactionBase">
+		<defName>Mashed_Lynian_BoaboaPlayerColony</defName>
+		<label>New Boaboa Arrivals</label>
+		<basicMemberKind>Mashed_Lynian_BoaboaColonist</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_BoaboaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Tribal]========== -->
+	<FactionDef ParentName="Mashed_Lynian_TribalFactionBase">
+		<defName>Mashed_Lynian_BoaboaPlayerTribe</defName>
+		<label>New Boaboa Tribe</label>
+		<description>A small Boaboa tribe.</description>
+		<basicMemberKind>Mashed_Lynian_BoaboaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_BoaboaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Wolf</li>
+				<li>Leather_Panthera</li>
+				<li>Leather_Bluefur</li>
+				<li>Leather_Bear</li>
+				<li>Leather_Fox</li>
+				<li>Leather_Heavy</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

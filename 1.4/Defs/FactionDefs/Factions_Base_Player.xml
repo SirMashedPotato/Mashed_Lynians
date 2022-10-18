@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base base]========== -->
+	<FactionDef ParentName="PlayerFactionBase" Name="Mashed_Lynian_PlayerFactionBase" Abstract="True">
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+	</FactionDef>
+	<!-- ==========[Outlander base]========== -->
+	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_OutlanderFactionBase" Abstract="True">
+		<description>A colony of recently-arrived off-worlders.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	<!-- ==========[Tribal base]========== -->
+	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_TribalFactionBase" Abstract="True">
+		<isPlayer>true</isPlayer>
+		<categoryTag>Tribal</categoryTag>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<techLevel>Neolithic</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<geneticVariance>1</geneticVariance>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>TribalStart</li>
+			<li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="Mashed_Lynians.FactionProperties">
+				<manInBlackReplacer>Mashed_Lynian_FelyneAcornKnight</manInBlackReplacer>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ==========[Medieval base]========== -->
+	<FactionDef ParentName="Mashed_Lynian_PlayerFactionBase" Name="Mashed_Lynian_MedievalFactionBase" Abstract="True">
+		<isPlayer>true</isPlayer>
+		<categoryTag>Medieval</categoryTag>
+		<pawnSingular>subject</pawnSingular>
+		<pawnsPlural>subjects</pawnsPlural>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<geneticVariance>1</geneticVariance>
+		<forageabilityFactor>1.3</forageabilityFactor>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_MedievalStart</li>
+			<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_MedievalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>TribalStart</li>
+			<li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="Mashed_Lynians.FactionProperties">
+				<manInBlackReplacer>Mashed_Lynian_FelyneAcornKnight</manInBlackReplacer>
+			</li>
+		</modExtensions>
+	</FactionDef>
+</Defs>

@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Weapon_ExplosiveBase]========== -->
+	<ThingDef Name="Mashed_Lynian_Weapon_ExplosiveBase" ParentName="BaseWeapon" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_LynianExplosives</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<thingCategories>
+			<li>Mashed_Lynian_WeaponsExplosive</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</defName>
+		<label>throwing barrel bomb</label>
+		<description>A small wooden barrel, filled with explosive materials. An uncommon weapon among most Lynian tribes, but quite devastating when utilised properly.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_ThrowingBarrelBomb</texPath>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<WoodLog>20</WoodLog>
+			<Chemfuel>40</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalDestructive</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<label>throw barrel bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>6.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>3.5</warmupTime>
+				<noiseRadius>6</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_Melynx</li>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb_Thrown</defName>
+		<label>throwing barrel bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Lynian_ThrowingBarrelBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb</defName>
+		<label>throwing felvine bomb</label>
+		<description>A small wooden barrel, filled with felvine. An incredibly peculiar choice of weapon, as the clouds of felvine dust left behind are likely to whip Lynians caught within into a frenzy.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_FelvineSowing</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Lynian_ThrowingFelvineBomb</texPath>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<WoodLog>20</WoodLog>
+			<Chemfuel>30</Chemfuel>
+			<Mashed_Lynian_FelvinePowder>20</Mashed_Lynian_FelvinePowder>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_TribalFelvine</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<label>throw barrel bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>6.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>3.5</warmupTime>
+				<noiseRadius>6</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_Melynx</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb_Thrown</defName>
+		<label>throwing felvine bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Lynian_ThrowingBarrelBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>Mashed_Lynian_FelvineGasCloud</preExplosionSpawnThingDef>
+			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel</defName>
+		<label>Boaboa explosive satchel</label>
+		<description>A pelt satchel, filled with explosive materials. Often used by Boaboa when stealth is no longer an option.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Boaboa_ThrowingSatchel</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_BoaboaEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<Chemfuel>40</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_BoaboaTribalDestructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw explosive satchel</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel_Thrown</defName>
+		<label>Boaboa explosive satchel</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Boaboa_ThrowingSatchel_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_GajalakaGrenade]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_GajalakaGrenade</defName>
+		<label>Gajalaka molotov</label>
+		<description>A stone vessel, filled with explosive materials. Often used by Gajalaka, perfect for igniting threats.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Gajalaka_Grenade</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_GajalakaEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<Chemfuel>40</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalDestructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw molotov</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_GajalakaGrenade_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_GajalakaGrenade_Thrown</defName>
+		<label>Gajalaka molotov</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Gajalaka_Grenade_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Flame</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb</defName>
+		<label>Shakalaka sleep bomb</label>
+		<description>A makeshift throwing bomb, releases a cloud of gas that rapidly fatigues those caught within. Often used by Shakalaka to weaken strong foes.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Shakalaka_SleepBomb</texPath>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_ShakalakaEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<WoodLog>5</WoodLog>
+			<Steel>5</Steel>
+			<RawFungus>20</RawFungus>
+			<Chemfuel>20</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribalSleep</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw sleep bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<preExplosionSpawnThingDef>Mashed_Lynian_SleepGasCloud</preExplosionSpawnThingDef>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb_Thrown</defName>
+		<label>Shakalaka sleep bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Shakalaka_SleepBomb_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>Mashed_Lynian_SleepGasCloud</preExplosionSpawnThingDef>
+			<explosionDelay>45</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage</defName>
+		<label>Grimalkyne flashfly cage</label>
+		<description>A wooden cage, containing a small group of flashflies. Often used by Grimalkyne, perfect for disorientating foes.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Grimalkyne_FlashflyCage</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Mashed_Lynian_GrimalkyneEquipment</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Animals>3</Animals>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneStun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw flashfly cage</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Grimalkyne</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage_Thrown</defName>
+		<label>Grimalkyne flashfly cage</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Grimalkyne_FlashflyCage_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Stun</damageDef>
+			<!-- Use default damage from explosion def -->
+		</projectile>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
+		<defName>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn</defName>
+		<label>Uruki explosive acorn</label>
+		<description>An acorn shaped vessel, filled with explosive materials. Often used by Uruki when they have been sufficiently angered.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Uruki_ExplosiveAcorn</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Mass>3</Mass>
+			<RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Lynian_UrukiEquipment</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<Chemfuel>40</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalDestructive</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw explosive satchel</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.5</warmupTime>
+				<noiseRadius>3</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn_Thrown</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn_Thrown</defName>
+		<label>Uruki explosive acorn</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Uruki_ExplosiveAcorn_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionDelay>45</explosionDelay>
+		</projectile>
+	</ThingDef>
+</Defs>
