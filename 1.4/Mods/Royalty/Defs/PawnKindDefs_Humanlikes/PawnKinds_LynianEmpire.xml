@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_EmpireLodgerBase]========== -->
+	<PawnKindDef ParentName="EmpireCommonerBase" Name="Mashed_Lynian_EmpireLodgerBase" Abstract="True">
+		<defaultFactionType>Empire</defaultFactionType>
+		<minTitleRequired>Freeholder</minTitleRequired>
+		<maxGenerationAge>65</maxGenerationAge>
+		<combatPower>30</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ImperialCommon</li>
+					<li>ImperialFighter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<baseRecruitDifficulty>0.30</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<isFighter>false</isFighter>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelMoney>200~1000</apparelMoney>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>0.08</techHediffsChance>
+		<apparelDisallowTags>
+			<li>Western</li>
+		</apparelDisallowTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Lynian_FelyneEmpireLodger]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_EmpireLodgerBase">
+		<defName>Mashed_Lynian_FelyneEmpireLodger</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<label>Felyne citizen</label>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Lynian_MelynxEmpireLodger]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_EmpireLodgerBase">
+		<defName>Mashed_Lynian_MelynxEmpireLodger</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<label>Melynx citizen</label>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Lynian_ShakalakaEmpireLodger]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_EmpireLodgerBase">
+		<defName>Mashed_Lynian_ShakalakaEmpireLodger</defName>
+		<race>Mashed_Lynian_ShakalakaRace</race>
+		<label>Shakalaka citizen</label>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Lynian_UrukiEmpireLodger]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_EmpireLodgerBase">
+		<defName>Mashed_Lynian_UrukiEmpireLodger</defName>
+		<race>Mashed_Lynian_UrukiRace</race>
+		<label>Uruki citizen</label>
+	</PawnKindDef>
+</Defs>
