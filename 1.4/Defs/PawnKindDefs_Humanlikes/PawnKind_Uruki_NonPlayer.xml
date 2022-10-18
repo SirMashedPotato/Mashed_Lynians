@@ -68,7 +68,6 @@
 	<!-- ==========[Advanced, Chief]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_UrukiKindBase" Name="Mashed_Lynian_UrukiChiefBase" Abstract="True">
 		<combatPower>85</combatPower>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
 		<minGenerationAge>30</minGenerationAge>
 		<maxGenerationAge>999</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>

@@ -10,7 +10,6 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
-		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Neolithic</techLevel>
 		<allowedCultures>
 			<li>Corunan</li>

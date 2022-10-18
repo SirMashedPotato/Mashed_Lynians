@@ -1,35 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseGas">
+	<!-- ==========[Mashed_Lynian_GasBase]========== -->
+	<ThingDef Name="Mashed_Lynian_GasBase" Abstract="True">
+		<category>Gas</category>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Gas</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<gas>
+			<rotationSpeed>10</rotationSpeed>
+		</gas>
+	</ThingDef>
+	<!-- ==========[MorrowRim_GasMorrowRim_Base]========== -->
+	<ThingDef ParentName="Mashed_Lynian_GasBase">
 		<defName>Mashed_Lynian_FelvineGasCloud</defName>
 		<thingClass>Mashed_Lynians.Gas_FelvineCloud</thingClass>
 		<label>felvine cloud</label>
 		<graphicData>
-			<texPath>Things/Gas/Puff</texPath>
-			<drawSize>2.2</drawSize>
 			<color>(236,142,179,50)</color>
 		</graphicData>
 		<gas>
 			<expireSeconds>16~32</expireSeconds>
-			<blockTurretTracking>true</blockTurretTracking>
-			<accuracyPenalty>0.7</accuracyPenalty>
-			<rotationSpeed>10</rotationSpeed>
 		</gas>
 	</ThingDef>
-	<ThingDef ParentName="BaseGas">
+	<!-- ==========[Mashed_Lynian_SleepGasCloud]========== -->
+	<ThingDef ParentName="Mashed_Lynian_GasBase">
 		<defName>Mashed_Lynian_SleepGasCloud</defName>
 		<thingClass>Mashed_Lynians.Gas_SleepBomb</thingClass>
 		<label>sleep gas cloud</label>
 		<graphicData>
-			<texPath>Things/Gas/Puff</texPath>
-			<drawSize>2.2</drawSize>
 			<color>(179,227,244,50)</color>
 		</graphicData>
 		<gas>
 			<expireSeconds>14~26</expireSeconds>
-			<blockTurretTracking>true</blockTurretTracking>
-			<accuracyPenalty>0.7</accuracyPenalty>
-			<rotationSpeed>10</rotationSpeed>
 		</gas>
 	</ThingDef>
 </Defs>

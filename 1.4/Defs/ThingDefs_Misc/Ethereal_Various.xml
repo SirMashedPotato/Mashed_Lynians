@@ -4,13 +4,13 @@
 		<label>digging</label>
 		<altitudeLayer>LowPlant</altitudeLayer>
 	</ThingDef>
+	
 	<ThingDef ParentName="Mashed_Lynian_PawnDigBase">
 		<defName>Mashed_Lynian_PawnDigging</defName>
 		<thingClass>Mashed_Lynians.PawnDigger</thingClass>
 		<pawnFlyer>
 			<flightDurationMin>0.5</flightDurationMin>
 			<flightSpeed>6</flightSpeed>
-			<soundLanding>Roof_Collapse</soundLanding>
 		</pawnFlyer>
 	</ThingDef>
 </Defs>

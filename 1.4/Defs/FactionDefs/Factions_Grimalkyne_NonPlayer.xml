@@ -9,6 +9,7 @@
 			<li>(0.8, 0.7, 0.9)</li>
 			<li>(0.8, 0.9, 0.7)</li>
 		</colorSpectrum>
+		<melaninRange>0~0.3</melaninRange>
 		<factionNameMaker>Mashed_Lynian_NamerFactionGrimalkyne</factionNameMaker>
 		<caravanTraderKinds>
 			<li>Mashed_Lynian_GrimalkyneTrader</li>

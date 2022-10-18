@@ -96,7 +96,6 @@
 	<!-- ==========[Advanced, Chief]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase" Name="Mashed_Lynian_ShakalakaChiefBase" Abstract="True">
 		<combatPower>85</combatPower>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
 		<minGenerationAge>30</minGenerationAge>
 		<maxGenerationAge>999</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>

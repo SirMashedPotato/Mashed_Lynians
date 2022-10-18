@@ -14,7 +14,6 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
-		<baseRecruitDifficulty>0.30</baseRecruitDifficulty>
 		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>false</isFighter>

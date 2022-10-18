@@ -23,7 +23,7 @@
 			<!-- 0.2 higher than base -->
 			<ForagedNutritionPerDay>0.2</ForagedNutritionPerDay>
 			<!-- 0.2 lower than other lynians -->
-			<ToxicSensitivity>0.3</ToxicSensitivity>
+			<ToxicResistance>0.7</ToxicResistance>
 		</statBases>
 		<comps>
 		</comps>
