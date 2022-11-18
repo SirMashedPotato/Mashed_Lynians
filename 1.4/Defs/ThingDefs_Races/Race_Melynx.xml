@@ -34,8 +34,8 @@
 		<alienRace>
 			<generalSettings>
 				<notXenophobistTowards>
-				  <li>Mashed_Lynian_FelyneRace</li>
-			   </notXenophobistTowards>
+					<li>Mashed_Lynian_FelyneRace</li>
+				</notXenophobistTowards>
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
@@ -71,7 +71,6 @@
 										<only>(101,95,90,255)</only>
 									</li>
 								</options>
-								
 							</first>
 							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
 							<second Class="ColorGenerator_Options">
@@ -103,11 +102,9 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Melynx/</body>
-					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
-				</li>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Melynx/</body>
+				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
 			</graphicPaths>
 			<raceRestriction>
 				<traitList>

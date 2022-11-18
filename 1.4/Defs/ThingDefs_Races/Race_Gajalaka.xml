@@ -29,9 +29,9 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Mashed_GoblinHead</li>
-					</aliencrowntypes>
+					</headTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -79,10 +79,8 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Gajalaka/</body>
-				</li>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Gajalaka/</body>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

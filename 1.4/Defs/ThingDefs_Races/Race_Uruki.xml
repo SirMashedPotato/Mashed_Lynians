@@ -32,9 +32,9 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Mashed_UrukiHead</li>
-					</aliencrowntypes>
+					</headTypes>
 					<colorChannels Inherit="False">
 						<li>
 							<name>skin</name>
@@ -136,7 +136,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Right</path>
 							<colorChannel>eye</colorChannel>
-							<bodyPart>right eye</bodyPart>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>right eye</bodyPartLabel>
 							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -166,7 +167,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Left</path>
 							<colorChannel>eye</colorChannel>
-							<bodyPart>left eye</bodyPart>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>left eye</bodyPartLabel>
 							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -195,7 +197,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Right</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>right ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -227,7 +230,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Left</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>left ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -316,10 +320,8 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
-				</li>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

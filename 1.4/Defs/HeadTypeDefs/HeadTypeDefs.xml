@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Cat like]========== -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_FelyneHead_Fluffy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/Mashed_FelyneHead_Fluffy</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_FelyneHead_Slim</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/Mashed_FelyneHead_Slim</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_FelyneHead_Wide</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/Mashed_FelyneHead_Wide</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<!-- ==========[Goblin]========== -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_GoblinHead</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Mashed_GoblinHead</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<!-- ==========[Boaboa]========== -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_BoaboaHead</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Boaboa/Mashed_BoaboaHead</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<!-- ==========[Uruki]========== -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_UrukiHead</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/Mashed_UrukiHead</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+</Defs>

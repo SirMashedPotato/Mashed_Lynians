@@ -32,9 +32,9 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes Inherit="False">
+					<headTypes Inherit="False">
 						<li>Mashed_FelyneHead_Fluffy</li>
-					</aliencrowntypes>
+					</headTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -95,7 +95,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Right</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>right ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -126,7 +127,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Left</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>left ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -186,12 +188,16 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
-					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
-					<bodyMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneBodyMask</bodyMasks>
-				</li>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Grimalkyne/</body>
+				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
+				<bodyMasks>
+					<bodytypeGraphics>
+						<Thin>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneBodyMask</Thin>
+						<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneChildBodyMask</Baby>
+						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneChildBodyMask</Child>
+					</bodytypeGraphics>
+				</bodyMasks>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

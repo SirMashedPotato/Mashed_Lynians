@@ -65,12 +65,12 @@
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>HumanlikeToddler</def>
-					<minAge>1.2</minAge>
-				</li>
-				<li>
 					<def>HumanlikeChild</def>
-					<minAge>4</minAge>
+					<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
 				</li>
 				<li>
 					<def>HumanlikeTeenager</def>
@@ -81,6 +81,29 @@
 					<minAge>18</minAge>
 				</li>
 			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -90,7 +113,18 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
 					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
 					<li>(16,100)</li>
 					<li>(50,100)</li>
 					<li>(60,30)</li>
@@ -123,8 +157,10 @@
 				<allowHumanBios>false</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
-					<useGenderedBodies>false</useGenderedBodies>
+					<bodyTypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
 					<customDrawSize>(0.7, 0.7)</customDrawSize>
 					<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
 					<headOffset>(0.0, -0.1)</headOffset>
@@ -187,11 +223,37 @@
 					<li>Mashed_Lynian_RangedWeapon_UrukiSlingshot</li>
 					<li>Mashed_Lynian_MeleeWeapon_AcornHammer</li>
 				</weaponList>
-				<blackTraitList>
-				</blackTraitList>
-				<conceptList>
-					<!--<li>ESCP_SloadThoughts</li>-->
-				</conceptList>
+				<!-- ==========[Biotech]========== -->
+				<blackGeneList>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+                </blackGeneList>
+				<blackGeneTags>
+                    <li>SkinColor</li>
+                    <li>HairColor</li>
+                    <li>EyeColor</li>
+                    <li>BodyType</li>
+                    <li>Ears</li>
+                    <li>Nose</li>
+                    <li>Jaw</li>
+                    <li>Head</li>
+                    <li>Headbone</li>
+                    <li>HairStyle</li>
+                    <li>BeardStyle</li>
+                    <li>SkinColorOverride</li>
+                    <li>Fur</li>
+                    <li>Tail</li>
+                </blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+				</blackEndoCategories>
 			</raceRestriction>
 			<compatibility>
 				<isFlesh>true</isFlesh>
@@ -275,19 +337,20 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Mashed_FelyneHead_Slim</li>
 						<li>Mashed_FelyneHead_Wide</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					</headTypes>
+					<bodyTypes>
 						<li>Thin</li>
-					</alienbodytypes>
+					</bodyTypes>
 					<bodyAddons>
 						<!-- https://github.com/erdelf/AlienRaces/wiki/Body-Addons -->
 						<!-- =====[Eye right]===== -->
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Mashed_FelyneEye_Right</path>
-							<bodyPart>right eye</bodyPart>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>right eye</bodyPartLabel>
 							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -316,7 +379,8 @@
 						<li>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Mashed_FelyneEye_Left</path>
-							<bodyPart>left eye</bodyPart>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>left eye</bodyPartLabel>
 							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -358,12 +422,24 @@
 							<offsets>
 								<south>
 									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0.07)</Child>
+									</bodyTypes>
 								</north>
 								<east>
 									<layerOffset>-0.293</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0.06)</Child>
+									</bodyTypes>
 								</east>
 							</offsets>
 						</li>
@@ -386,7 +462,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Right</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>right ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -418,7 +495,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Left</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>left ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -500,9 +578,9 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<alienbodytypes>
+					<bodyTypes>
 						<li>Male</li>
-					</alienbodytypes>
+					</bodyTypes>
 					<colorChannels>
 						<li>
 							<name>eye</name>
@@ -533,7 +611,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Mashed_BoaboaEye_Right</path>
 							<colorChannel>eye</colorChannel>
-							<bodyPart>right eye</bodyPart>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>right eye</bodyPartLabel>
 							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -563,7 +642,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Mashed_BoaboaEye_Left</path>
 							<colorChannel>eye</colorChannel>
-							<bodyPart>left eye</bodyPart>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>left eye</bodyPartLabel>
 							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
@@ -603,7 +683,8 @@
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Right</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>right ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
@@ -635,7 +716,8 @@
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Left</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>left ear</bodyPart>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>

@@ -32,9 +32,9 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Mashed_BoaboaHead</li>
-					</aliencrowntypes>
+					</headTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -130,10 +130,8 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Boaboa/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
-				</li>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Boaboa/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

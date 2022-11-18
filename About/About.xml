@@ -5,6 +5,7 @@
 	<author>SirMashedPotato</author>
 	<supportedVersions>
     	<li>1.3</li>
+    	<li>1.4</li>
 	</supportedVersions>
 	<description>Adds in all the Lynian races from the Monster Hunter series, as well as an assortment of equipment for them to use.\n\n-Supports Vanilla Achievements Expanded.\n-Contains a patch for Medieval Overhaul.\n-Contains a patch for Unique and Rare Items.\n-Contains a patch for Seeds Please Lite.\n-Contains a patch for Cleaning Speed by Aelanna.\n\n- Based on the Monster Hunter series by Capcom.\n-Seed bag texture by CitizenKanye\n- Thanks to Ranger Rick for some of the achievement names.
 	</description>
@@ -26,6 +27,7 @@
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Owlchemist.SeedsPleaseLite</li>

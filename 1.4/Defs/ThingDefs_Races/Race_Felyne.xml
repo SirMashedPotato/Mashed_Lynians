@@ -32,8 +32,8 @@
 		<alienRace>
 			<generalSettings>
 				<notXenophobistTowards>
-				  <li>Mashed_Lynian_MelynxRace</li>
-			   </notXenophobistTowards>
+					<li>Mashed_Lynian_MelynxRace</li>
+				</notXenophobistTowards>
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
@@ -110,11 +110,9 @@
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
-					<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
-					<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
-				</li>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
+				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
 			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
