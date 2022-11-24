@@ -19,6 +19,7 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>

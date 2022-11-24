@@ -60,6 +60,7 @@
 			<InjuryHealingFactor>0.50</InjuryHealingFactor>
 		</equippedStatOffsets>
 		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<careIfDamaged>false</careIfDamaged>
 			<wearPerDay>0</wearPerDay>

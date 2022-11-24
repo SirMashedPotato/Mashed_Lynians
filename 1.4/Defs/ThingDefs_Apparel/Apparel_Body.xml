@@ -20,6 +20,7 @@
 			<li>Mashed_Lynian_Apparel</li>
 		</thingCategories>
 		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<defaultOutfitTags>
 				<li>Worker</li>

@@ -280,6 +280,9 @@
 					</value>
 				</li>
 			</styleSettings>
+			<graphicPaths>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 	<!-- ==========[Mashed_Lynian_BasePawn_CatLike]========== -->

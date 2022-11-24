@@ -27,6 +27,7 @@
 			<li>Mashed_Lynian_ApparelPacks</li>
 		</thingCategories>
 		<apparel>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfDamaged>false</careIfDamaged>
