@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>Mashed_Lynian_FelvinePowder</defName>
 		<label>felvine powder</label>
-		<description>Felvine flowers crushed into a fine powder. Doesn't really do anything for most races, cat-like Lynians on the other hand are whipped into a short-lived frenzy. Excessive use can result in addiction.\n\nPowder can be produced at a Lynian crafting spot without equipment.</description>
+		<description>Felvine flowers crushed into a fine powder. Doesn't really do anything for most races, cat-like Lynians on the other hand are whipped into a short-lived frenzy, though gene editing may allow other races to experience felvine in all its glory. Excessive use can result in addiction.\n\nPowder can be produced at a Lynian crafting spot without equipment.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_Lynian_FelvineHighFrenzy</HediffDef>
 			<HediffDef>Mashed_Lynian_FelvineTolerance</HediffDef>
@@ -40,6 +40,7 @@
 					<altHediffDef>Mashed_Lynian_FelvinePain</altHediffDef>
 					<severity>0.5</severity>
 					<toleranceChemical>Mashed_Lynian_FelvineChemical</toleranceChemical>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
 				<li Class="Mashed_Lynians.IngestionOutcomeDoer_OffsetNeed_Felvine">
 					<need>Rest</need>
@@ -49,6 +50,7 @@
 					<hediffDef>Mashed_Lynian_FelvineTolerance</hediffDef>
 					<severity>0.030</severity>
 					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
 			</outcomeDoers>
 		</ingestible>

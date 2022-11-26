@@ -78,6 +78,7 @@
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
     <Compile Include="DefOf\FactionDefOf.cs" />
+    <Compile Include="DefOf\GeneDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\HistoryEventDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />

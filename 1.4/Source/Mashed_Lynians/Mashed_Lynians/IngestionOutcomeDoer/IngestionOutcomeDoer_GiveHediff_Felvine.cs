@@ -34,7 +34,7 @@ namespace Mashed_Lynians
 			{
 				num /= pawn.BodySize;
 			}
-			AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize(pawn, this.toleranceChemical, ref num);
+			AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, this.toleranceChemical, ref num, multiplyByGeneToleranceFactors);
 			hediff.Severity = num;
 			pawn.health.AddHediff(hediff, null, null, null);
 		}
@@ -55,5 +55,6 @@ namespace Mashed_Lynians
 		public float severity = -1f;
 		public ChemicalDef toleranceChemical;
 		private bool divideByBodySize;
+		public bool multiplyByGeneToleranceFactors;
 	}
 }

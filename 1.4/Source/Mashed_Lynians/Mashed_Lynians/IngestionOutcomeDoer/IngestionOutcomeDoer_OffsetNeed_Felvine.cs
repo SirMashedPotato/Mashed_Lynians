@@ -26,7 +26,7 @@ namespace Mashed_Lynians
                 return;
             }
             float num = this.offset;
-            AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize(pawn, this.toleranceChemical, ref num);
+            AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, this.toleranceChemical, ref num, false);
             if (this.perIngested)
             {
                 num *= (float)ingested.stackCount;
