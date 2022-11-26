@@ -68,6 +68,7 @@
 			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
 		<apparel>
+			<developmentalStageFilter Inherit="False">Adult</developmentalStageFilter>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerArmour</wornGraphicPath>
 			<bodyPartGroups>
 				<li>Torso</li>

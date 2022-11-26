@@ -61,6 +61,10 @@
 										<weight>1</weight>
 										<only>(234,183,40,255)</only>
 									</li>
+									<li>
+										<weight>1</weight>
+										<only>(242,201,29,255)</only>
+									</li>
 								</options>
 							</first>
 							<second Class="ColorGenerator_Options">
@@ -147,7 +151,7 @@
 								<li>Mashed_Lynian_HideEyes</li>
 							</hiddenUnderApparelTag>
 							<hediffGraphics>
-								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Right</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
 							</hediffGraphics>
 							<offsets>
@@ -315,6 +319,11 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<bodytypeGraphics>
+								<Male>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiBeard</Male>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiChildBeard</Baby>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiChildBeard</Child>
+							</bodytypeGraphics>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
