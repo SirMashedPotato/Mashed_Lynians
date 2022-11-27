@@ -13,23 +13,6 @@ namespace Mashed_Lynians
             }
         }
 
-        public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
-        {
-            if (target.Cell != null)
-            {
-                Pawn p = this.parent.pawn;
-                Map map = p.Map;
-                IntVec3 oldCell = p.Position;
-                //p.Position = target.Cell;
-                PawnFlyer pawnFlyer = PawnFlyer.MakeFlyer(ThingDefOf.Mashed_Lynian_PawnDigging, p, target.Cell, null, SoundDefOf.Roof_Collapse);
-                if (pawnFlyer != null)
-                {
-                    GenSpawn.Spawn(pawnFlyer, target.Cell, map, WipeMode.Vanish);
-                    p.records.AddTo(RecordDefOf.Mashed_Lynian_DiggingDistance, oldCell.DistanceTo(target.Cell));
-                }
-            }
-        }
-
         public override bool GizmoDisabled(out string reason)
         {
             Pawn p = this.parent.pawn;
@@ -41,5 +24,6 @@ namespace Mashed_Lynians
             }
             return base.GizmoDisabled(out reason);
         }
+
     }
 }

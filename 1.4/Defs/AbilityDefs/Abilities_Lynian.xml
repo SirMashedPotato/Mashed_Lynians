@@ -36,7 +36,6 @@
 		<description>Dig to a nearby tile, does not require line-of-sight, but the tile must be visible. The terrain at both the starting, and ending, position must be diggable.\n\nLearning how to quickly dig to safety is an important skill for Lynians to learn, as when you are as small as Lynians are, even the most mundane of threats can seem colossal.\n\nOf course such a skill may be useful in other ways too...</description>
 		<iconPath>UI/Abilities/Mashed_Lynian_DigAbility</iconPath>
 		<groupDef>Mashed_Lynian_Ability</groupDef>
-		<jobDef>CastAbilityOnThing</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
@@ -56,6 +55,8 @@
 			<violent>false</violent>
 			<verbClass>Mashed_Lynians.Verb_CastAbility_Dig</verbClass>
 			<requireLineOfSight>false</requireLineOfSight>
+			<soundCast>Roof_Collapse</soundCast>
+			<soundLanding>Roof_Collapse</soundLanding>
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 				<canTargetPawns>false</canTargetPawns>
