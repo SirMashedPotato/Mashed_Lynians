@@ -14,7 +14,16 @@ namespace Mashed_Lynians
 			base.Notify_GeneratedByQuestGen(part, slate, outExtraDescriptionRules, outExtraDescriptionConstants);
 			PawnKindDef pawnKind = slate.Get<PawnKindDef>("refugeeKind", PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer, false);
 			float chanceForFaction = slate.Exists("refugeeFactionChance", false) ? 0f : slate.Get<float>("refugeeFactionChance", 0f, false);
-			Pawn pawn = DownedRefugeeQuestUtility.GenerateRefugee(part.site.Tile, pawnKind, chanceForFaction);
+			Pawn pawn;
+
+			if (ModsConfig.BiotechActive)
+            {
+				pawn = SiteUtility.GenerateChildPawn(part.site.Tile, PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer);
+			}
+			else
+            {
+				pawn = DownedRefugeeQuestUtility.GenerateRefugee(part.site.Tile, pawnKind, chanceForFaction);
+			}
 			part.things = new ThingOwner<Pawn>(part, true, LookMode.Deep);
 			part.things.TryAdd(pawn, true);
 			if (pawn.relations != null)

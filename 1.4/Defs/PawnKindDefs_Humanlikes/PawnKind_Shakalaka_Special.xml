@@ -16,7 +16,6 @@
 		<apparelRequired Inherit="False">
 			<li>Mashed_Lynian_Apparel_ShakalakaCoat</li>
 			<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
-			<li>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</li>
 		</apparelRequired>
 		<weaponMoney>300~300</weaponMoney>
 		<initialWillRange>2~4</initialWillRange>

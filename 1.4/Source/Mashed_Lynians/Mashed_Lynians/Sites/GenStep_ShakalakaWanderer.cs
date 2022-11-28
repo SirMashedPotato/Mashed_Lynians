@@ -35,8 +35,14 @@ namespace Mashed_Lynians
 				}
 				else
 				{
-					pawn = DownedRefugeeQuestUtility.GenerateRefugee(map.Tile, PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer, 0f);
-
+                    if (ModsConfig.BiotechActive)
+                    {
+						pawn = SiteUtility.GenerateChildPawn(map.Tile, PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer);
+                    } 
+					else
+                    {
+						pawn = DownedRefugeeQuestUtility.GenerateRefugee(map.Tile, PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer, 0f);
+					}
 				}
 			}
 			HealthUtility.DamageUntilDowned(pawn, false);

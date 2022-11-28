@@ -225,25 +225,25 @@
 				</weaponList>
 				<!-- ==========[Biotech]========== -->
 				<blackGeneList>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
-                </blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
 				<blackGeneTags>
-                    <li>SkinColor</li>
-                    <li>HairColor</li>
-                    <li>EyeColor</li>
-                    <li>BodyType</li>
-                    <li>Ears</li>
-                    <li>Nose</li>
-                    <li>Jaw</li>
-                    <li>Head</li>
-                    <li>Headbone</li>
-                    <li>HairStyle</li>
-                    <li>BeardStyle</li>
-                    <li>SkinColorOverride</li>
-                    <li>Fur</li>
-                    <li>Tail</li>
-                </blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>
 					<li>HairColor</li>
@@ -337,6 +337,9 @@
 			<body>Mashed_Lynian_CatLikeBody</body>
 			<leatherDef>Mashed_Lynian_LynianFur</leatherDef>
 		</race>
+		<recipes>
+			<li>Mashed_Lynian_InstallTailCloth</li>
+		</recipes>
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
