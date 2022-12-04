@@ -162,6 +162,8 @@
 		<addictionHediff>Mashed_Lynian_FelvineAddiction</addictionHediff>
 		<toleranceHediff>Mashed_Lynian_FelvineTolerance</toleranceHediff>
 		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+		<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+		<geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
 	</ChemicalDef>
 	<!-- ==========[Need]========== -->
 	<NeedDef ParentName="DrugAddictionNeedBase">

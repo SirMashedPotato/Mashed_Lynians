@@ -25,7 +25,6 @@
 		</stages>
 	</HediffDef>
 	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
-	<!--
 	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
 		<defName>Mashed_Lynian_PursserkerRage</defName>
 		<label>purrserker rage</label>
@@ -50,5 +49,4 @@
 			</li>
 		</stages>
 	</HediffDef>
-	-->
 </Defs>

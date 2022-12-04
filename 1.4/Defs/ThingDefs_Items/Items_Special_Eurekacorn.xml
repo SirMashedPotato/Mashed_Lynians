@@ -32,9 +32,7 @@
 				<useJob>UseArtifact</useJob>
 				<useLabel>Eat eurekacorn</useLabel>
 			</li>
-			<li Class="CompProperties_UseEffect">
-				<compClass>CompUseEffect_DestroySelf</compClass>
-			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_PilferAbility]==========-->
@@ -83,6 +81,24 @@
 		</comps>
 		<tradeTags>
 			<li>Mashed_Lynian_Felyne</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornPursserkerRage</defName>
+		<label>eurekacorn (Purrserker rage)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_PursserkerRage</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_PursserkerRage</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_Melynx</li>
+			<li>Mashed_Lynian_Grimalkyne</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

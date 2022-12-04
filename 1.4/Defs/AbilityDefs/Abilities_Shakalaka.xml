@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_ShakalakaAbility</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+</Defs>

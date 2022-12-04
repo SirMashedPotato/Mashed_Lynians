@@ -44,6 +44,10 @@ namespace Mashed_Lynians
                         pawn.abilities.GainAbility(ad);
                     }
                 }
+                if (!props.oneOfRandomAbility.NullOrEmpty() && Rand.Chance(props.oneOfRandomChance))
+                {
+                    pawn.abilities.GainAbility(props.oneOfRandomAbility.RandomElement());
+                }
             }
         }
     }
@@ -58,8 +62,7 @@ namespace Mashed_Lynians
         [HarmonyPrefix]
         public static void LyniansPatch(Pawn pawn, ref ChemicalDef chemicalDef)
         {
-            RaceProperties props = RaceProperties.Get(pawn.def);
-            if (chemicalDef == ChemicalDefOf.Mashed_Lynian_FelvineChemical && (props == null || !props.canUseFelvine))
+            if (chemicalDef == ChemicalDefOf.Mashed_Lynian_FelvineChemical && Utility.CanUseFelvine(pawn))
             {
                 chemicalDef = RimWorld.ChemicalDefOf.Alcohol;
             }

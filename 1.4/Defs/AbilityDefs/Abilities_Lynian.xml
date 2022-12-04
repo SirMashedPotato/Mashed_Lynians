@@ -4,38 +4,14 @@
 		<defName>Mashed_Lynian_Ability</defName>
 		<cooldownTicks>180000</cooldownTicks>
 	</AbilityGroupDef>
-	<!-- ==========[Mashed_Lynian_SelfBuffBase]==========-->
-	<AbilityDef Name="Mashed_Lynian_SelfBuffBase" Abstract="True">
-		<jobDef>CastAbilityOnThing</jobDef>
-		<targetRequired>False</targetRequired>
-		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
-		<stunTargetWhileCasting>True</stunTargetWhileCasting>
-		<showPsycastEffects>False</showPsycastEffects>
-		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
-		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>0.5</warmupTime>
-			<range>9.9</range>
-			<drawAimPie>False</drawAimPie>
-			<requireLineOfSight>False</requireLineOfSight>
-			<targetParams>
-				<canTargetSelf>true</canTargetSelf>
-				<canTargetPawns>false</canTargetPawns>
-				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetAnimals>false</canTargetAnimals>
-				<canTargetHumans>false</canTargetHumans>
-				<canTargetMechs>false</canTargetMechs>
-			</targetParams>
-		</verbProperties>
-	</AbilityDef>
 	<!-- ==========[Mashed_Lynian_DigAbility]==========-->
 	<AbilityDef>
 		<defName>Mashed_Lynian_DigAbility</defName>
 		<label>dig</label>
 		<description>Dig to a nearby tile, does not require line-of-sight, but the tile must be visible. The terrain at both the starting, and ending, position must be diggable.\n\nLearning how to quickly dig to safety is an important skill for Lynians to learn, as when you are as small as Lynians are, even the most mundane of threats can seem colossal.\n\nOf course such a skill may be useful in other ways too...</description>
 		<iconPath>UI/Abilities/Mashed_Lynian_DigAbility</iconPath>
-		<groupDef>Mashed_Lynian_Ability</groupDef>
+		<charges>3</charges>
+		<cooldownTicksRange>180000</cooldownTicksRange>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
@@ -64,51 +40,4 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-	<!-- ==========[Mashed_Lynian_LynianCookingFurrenzy]==========-->
-	<AbilityDef ParentName="Mashed_Lynian_SelfBuffBase">
-		<defName>Mashed_Lynian_LynianCookingFurrenzyAbility</defName>
-		<label>cooking furrenzy</label>
-		<description>Reach back through time, recollecting every piece of advice given to this Lynian about cooking, enhancing their cooking speed beyond its normal limit in the process.</description>
-		<iconPath>UI/Abilities/Mashed_Lynian_CookingFurrenzy</iconPath>
-		<groupDef>Mashed_Lynian_Ability</groupDef>
-		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
-		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_CookingFurrenzy</warmupMoteSocialSymbol>
-		<statBases>
-		  <Ability_Duration>250</Ability_Duration>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>Mashed_Lynian_LynianCookingFurrenzy</hediffDef>
-				<onlyBrain>True</onlyBrain>
-				<onlyApplyToSelf>True</onlyApplyToSelf>
-				<replaceExisting>true</replaceExisting>
-			</li>
-		</comps>
-	</AbilityDef>
-	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
-	<!--
-	<AbilityDef ParentName="Mashed_Lynian_SelfBuffBase">
-		<defName>Mashed_Lynian_PursserkerRage</defName>
-		<label>purrserker rage</label>
-		<description>Unleash the inner beast.</description>
-		<iconPath>UI/Abilities/Mashed_Lynian_PurrserkerRage</iconPath>
-		<groupDef>Mashed_Lynian_Ability</groupDef>
-		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
-		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_PurrserkerRage</warmupMoteSocialSymbol>
-		<statBases>
-		  <Ability_Duration>50</Ability_Duration>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>Mashed_Lynian_PursserkerRage</hediffDef>
-				<durationMultiplier>Mashed_Lynian_PursserkerDurationMultiplier</durationMultiplier>
-				<onlyBrain>True</onlyBrain>
-				<onlyApplyToSelf>True</onlyApplyToSelf>
-				<replaceExisting>true</replaceExisting>
-			</li>
-		</comps>
-	</AbilityDef>
-	-->
 </Defs>

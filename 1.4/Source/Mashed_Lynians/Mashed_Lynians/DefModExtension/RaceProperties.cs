@@ -10,6 +10,8 @@ namespace Mashed_Lynians
         public bool canUseFelvine = false;
         public List<HediffDef> hediffsToAdd;
         public List<AbilityDef> abilitiesToAdd;
+        public List<AbilityDef> oneOfRandomAbility;
+        public float oneOfRandomChance = 1f;
 
         public static RaceProperties Get(Def def)
         {
