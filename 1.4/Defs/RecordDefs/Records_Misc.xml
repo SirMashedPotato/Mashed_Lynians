@@ -27,4 +27,11 @@
 		<description>The amount of plant growth I have boosted using the Promote Growth ability.</description>
 		<type>Int</type>
 	</RecordDef>
+	<!-- ==========[Dancing]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_ShakalakaDancesDanced</defName>
+		<label>Shakalaka dances danced</label>
+		<description>The amount of times I have danced a Shakalaka dance.</description>
+		<type>Int</type>
+	</RecordDef>
 </Defs>

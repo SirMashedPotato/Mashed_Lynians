@@ -3,7 +3,7 @@
 	<!-- ==========[Base]==========-->
 	<ThingDef ParentName="ResourceBase" Name="Mashed_Lynian_EurekacornBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
-		<description>A peculiar acorn, that bestows knowledge of a specific ability to any Lynian that consumes it. While quite a rarity, they can sometimes be purchased from Lynian traders.</description>
+		<description>A peculiar acorn, that bestows knowledge of a specific ability to any Lynian that consumes it.\n\nWhile quite a rarity, they can sometimes be purchased from Lynian traders.</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Special/Mashed_Eurekacorn</texPath>

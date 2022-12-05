@@ -298,6 +298,11 @@
 				<countRange>1~1</countRange>
 			</li>
 			<!-- Exotic -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_ShakalakaDanceBook</tradeTag>
+				<thingDefCountRange>-1~2</thingDefCountRange>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Uruki]==========-->
