@@ -225,17 +225,6 @@
 		<texPath>Achievements/Mashed_AchievementLynians_PromoteGrowthGrowth</texPath>
 		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
-		<defName>Mashed_AchievementLynians_ShakalakaDancesDanced</defName>
-		<label>Meowster Dancer</label>
-		<description>Have a single Lynian dance Shakalaka dances 30 times</description>
-		<tracker Class="AchievementsExpanded.RecordEventTracker">
-			<def>Mashed_Lynian_ShakalakaDancesDanced</def>
-			<count>30</count>
-		</tracker>
-		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaDancesDanced</texPath>
-		<points>25</points>
-	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Ability records - Pilfering]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_PilferItems</defName>
@@ -269,6 +258,29 @@
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_PilferFelvine</texPath>
 		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Ability - Dancing]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaDancesDanced</defName>
+		<label>Meowster Groover</label>
+		<description>Have a single Lynian dance Shakalaka dances 30 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_ShakalakaDancesDanced</def>
+			<count>30</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaDancesDanced</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaDanceMaster</defName>
+		<label>Meowster Dancer</label>
+		<description>Have a Lynian master Shakalaka dances</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<def>Mashed_Lynian_ShakalakaDanceMaster</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaDanceMaster</texPath>
+		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Trading]========== -->
 	<!-- ==========[Special]========== -->

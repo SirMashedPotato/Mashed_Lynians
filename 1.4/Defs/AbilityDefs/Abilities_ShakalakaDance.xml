@@ -4,4 +4,119 @@
 		<defName>Mashed_Lynian_ShakalakaDanceAbility</defName>
 		<cooldownTicks>60000</cooldownTicks>
 	</AbilityGroupDef>
+	<!-- ==========[Mashed_Lynian_ShakalakaDanceBase]==========-->
+	<AbilityDef Name="Mashed_Lynian_ShakalakaDanceBase" Abstract="True">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>True</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>Mashed_Lynian_ShakalakaDanceAbility</groupDef>
+		<statBases>
+		  <Ability_EffectRadius>3.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+		<li Class="CompProperties_AbilityRequiresCapacity">
+			<capacity>Moving</capacity>
+		</li>
+    </comps>
+	</AbilityDef>
+	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceCoolingAbility</defName>
+		<label>cooling dance</label>
+		<description>A dance created by a wise Shakalaka of old. The calming movements help to cool the body of anyone that witnesses it.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of cooling energy, reducing the severity of heatstroke by up to 25%.</description>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cooling</iconPath>
+		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cooling</warmupMoteSocialSymbol>
+		<statBases>
+		  <Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceCoolingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>false</replaceExisting>
+			</li>
+			<!-- 
+				Additional effect - reduce hediff severity
+					HediffDef
+					Severity to remove
+			-->
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceCoolingBuff</defName>
+		<label>cooling dance</label>
+		<description>This pawn witnessed the calming movements of a Shakalaka cooling dance, and is now more resilient to the cold for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- ==========[Mashed_Lynian_DanceWarmingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceWarmingAbility</defName>
+		<label>warming dance</label>
+		<description>A dance created by a wise Shakalaka of old. The erratic movements help to heat the body of anyone that witnesses it.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of warming energy, reducing the severity of heatstroke by up to 25%.</description>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Warming</iconPath>
+		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Warming</warmupMoteSocialSymbol>
+		<statBases>
+		  <Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceWarmingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>false</replaceExisting>
+			</li>
+			<!-- 
+				Remove hediff comp
+					HediffDef
+					Severity to remove
+			-->
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceWarmingBuff</defName>
+		<label>warming dance</label>
+		<description>This pawn witnessed the erratic movements of a Shakalaka warming dance, and is now more resilient to the heat for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>15</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

@@ -20,4 +20,21 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<!-- ==========[Mashed_Lynian_ShakalakaDanceMaster]==========-->
+	<HediffDef>
+		<defName>Mashed_Lynian_ShakalakaDanceMaster</defName>
+		<label>Shakalaka dance mastery</label>
+		<description>This pawn has read a master Shakalaka dance book, and now has untold mastery over Shakalaka dances. They are now able to activate the secondary effect of any Shakalaka dances they dance.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MarketValue>+500</MarketValue>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

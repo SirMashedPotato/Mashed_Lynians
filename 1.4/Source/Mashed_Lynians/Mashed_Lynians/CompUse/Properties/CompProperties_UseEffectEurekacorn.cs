@@ -1,8 +1,9 @@
 ﻿using RimWorld;
+using Verse;
 
 namespace Mashed_Lynians
 {
-    public class CompProperties_UseEffectEurekacorn : CompProperties_UseEffectArtifact
+    public class CompProperties_UseEffectEurekacorn : CompProperties_UseEffect
     {
         public CompProperties_UseEffectEurekacorn()
         {
@@ -10,5 +11,6 @@ namespace Mashed_Lynians
         }
 
         public AbilityDef ability;
+        public HediffDef hediff;
     }
 }

@@ -3,8 +3,8 @@ using RimWorld;
 
 namespace Mashed_Lynians
 {
-    public class CompUseEffect_Eurekacorn : CompUseEffect_Artifact
-    {
+    public class CompUseEffect_Eurekacorn : CompUseEffect
+	{
 		new public CompProperties_UseEffectEurekacorn Props
 		{
 			get
@@ -16,8 +16,16 @@ namespace Mashed_Lynians
 		public override void DoEffect(Pawn usedBy)
 		{
 			base.DoEffect(usedBy);
-			usedBy.abilities.GainAbility(Props.ability);
-			Messages.Message("Mashed_Lynian_EurekacornGainedAbility".Translate(usedBy.Name, Props.ability.label),usedBy , MessageTypeDefOf.PositiveEvent);
+            if (Props.ability != null)
+            {
+				usedBy.abilities.GainAbility(Props.ability);
+				Messages.Message("Mashed_Lynian_EurekacornGainedAbility".Translate(usedBy.Name, Props.ability.label), usedBy, MessageTypeDefOf.PositiveEvent);
+			}
+			if (Props.hediff != null)
+            {
+				usedBy.health.AddHediff(Props.hediff);
+				Messages.Message("Mashed_Lynian_EurekacornGainedHediff".Translate(usedBy.Name, Props.hediff.label), usedBy, MessageTypeDefOf.PositiveEvent);
+			}
 		}
 
 		public override bool CanBeUsedBy(Pawn p, out string failReason)
@@ -27,12 +35,22 @@ namespace Mashed_Lynians
 				failReason = "Mashed_Lynian_PawnNotLynian".Translate(p.Name);
 				return false;
 			}
-			if (p.abilities.GetAbility(Props.ability) != null)
+			if (Props.ability != null && p.abilities.GetAbility(Props.ability) != null)
 			{
 				failReason = "Mashed_Lynian_EurekacornHasAbility".Translate(p.Name, Props.ability.label);
 				return false;
 			}
+			if (Props.hediff != null && p.health.hediffSet.GetFirstHediffOfDef(Props.hediff) != null)
+			{
+				failReason = "Mashed_Lynian_EurekacornHasHediff".Translate(p.Name, Props.hediff.label);
+				return false;
+			}
 			return base.CanBeUsedBy(p, out failReason);
 		}
-	}
+
+        public override string TransformLabel(string label)
+        {
+            return base.TransformLabel(label);
+        }
+    }
 }
