@@ -14,5 +14,6 @@ namespace Mashed_Lynians
         public float severityReduction = 1f;
         public float severity = 0.5f;
         public float needIncreaseFactor = 0.15f;
+        public bool onlyHostile = false;
     }
 }

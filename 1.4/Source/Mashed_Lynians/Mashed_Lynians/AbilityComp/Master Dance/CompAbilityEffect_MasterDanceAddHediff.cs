@@ -20,6 +20,10 @@ namespace Mashed_Lynians
             {
                 if (target != null && target.Pawn != null)
                 {
+                    if (Props.onlyHostile && !target.Pawn.HostileTo(parent.pawn))
+                    {
+                        return;
+                    }
                     if (Props.addedHediffDef != null)
                     {
                         AddHediff(target.Pawn);
