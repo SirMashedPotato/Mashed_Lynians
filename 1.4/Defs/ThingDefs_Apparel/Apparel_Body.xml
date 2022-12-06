@@ -397,4 +397,64 @@
 			<li>Mashed_Lynian_LynianKitchen</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_FelyneCoat]========== -->
+	<!--
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_FelyneCoat</defName>
+		<label>Felyne coat</label>
+		<description>A lightweight coat, typically worn by Lynians of a higher social standing. Specially designed for Lynians, the intricate design helps to augment the wearers social skills.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneArmour/Mashed_FelyneCoat_Item</texPath>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<MoveSpeed>-0.02</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneArmour/Mashed_FelyneCoat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribal</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+		</tradeTags>
+	</ThingDef>
+	-->
 </Defs>

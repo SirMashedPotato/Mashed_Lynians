@@ -67,12 +67,14 @@
   <ItemGroup>
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
+    <Compile Include="AbilityComp\CompAbiltyEffect_GiveThought.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceAddHediff.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceModifyHediff.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceRemoveHediff.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceReplenishNeed.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveThought.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_IncrementRecord.cs" />
     <Compile Include="AbilityComp\Master Dance\Properties\CompProperties_MasterDanceBonus.cs" />

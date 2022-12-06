@@ -130,17 +130,15 @@
 		<defName>Mashed_Lynian_DanceBookJoyful</defName>
 		<label>Shakalaka dance book (joyful)</label>
 		<descriptionHyperlinks>
-			<!--<AbilityDef>Mashed_Lynian_DanceJoyfulAbility</AbilityDef>-->
+			<AbilityDef>Mashed_Lynian_DanceJoyfulAbility</AbilityDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<color>(212,92,212)</color>
 		</graphicData>
 		<comps>
-			<!--
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_DanceJoyfulAbility</ability>
 			</li>
-			-->
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_DanceHealingAbility]==========-->
