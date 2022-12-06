@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Mashed_Lynians
 {
-    class CompProperties_Pilfer : CompProperties_AbilityEffect
+    public class CompProperties_Pilfer : CompProperties_AbilityEffect
     {
         public CompProperties_Pilfer()
         {

@@ -62,17 +62,15 @@
 		<defName>Mashed_Lynian_DanceBookCuring</defName>
 		<label>Shakalaka dance book (curing)</label>
 		<descriptionHyperlinks>
-			<!--<AbilityDef>Mashed_Lynian_DanceCuringAbility</AbilityDef>-->
+			<AbilityDef>Mashed_Lynian_DanceCuringAbility</AbilityDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<color>(132,212,92)</color>
 		</graphicData>
 		<comps>
-			<!--
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_DanceCuringAbility</ability>
 			</li>
-			-->
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_DanceElectrifyingAbility]==========-->
@@ -116,17 +114,15 @@
 		<defName>Mashed_Lynian_DanceBookInvigorating</defName>
 		<label>Shakalaka dance book (invigorating)</label>
 		<descriptionHyperlinks>
-			<!--<AbilityDef>Mashed_Lynian_DanceInvigoratingAbility</AbilityDef>-->
+			<AbilityDef>Mashed_Lynian_DanceInvigoratingAbility</AbilityDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<color>(212,212,92)</color>
 		</graphicData>
 		<comps>
-			<!--
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_DanceInvigoratingAbility</ability>
 			</li>
-			-->
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_DanceJoyfulAbility]==========-->
@@ -158,11 +154,9 @@
 			<color>(212,172,92)</color>
 		</graphicData>
 		<comps>
-			<!--
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_DanceProtectiveAbility</ability>
 			</li>
-			-->
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_DanceStunningAbility]==========-->

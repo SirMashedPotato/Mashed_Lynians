@@ -2,7 +2,7 @@
 
 namespace Mashed_Lynians
 {
-    class CompProperties_PromoteGrowth : CompProperties_AbilityEffect
+    public class CompProperties_PromoteGrowth : CompProperties_AbilityEffect
     {
         public CompProperties_PromoteGrowth()
         {

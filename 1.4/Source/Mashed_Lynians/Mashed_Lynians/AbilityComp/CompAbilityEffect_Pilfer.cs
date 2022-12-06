@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Mashed_Lynians
 {
-    class CompAbilityEffect_Pilfer : CompAbilityEffect
+    public class CompAbilityEffect_Pilfer : CompAbilityEffect
     {
         public new CompProperties_Pilfer Props
         {

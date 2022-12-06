@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
 	<!-- ==========[Generic]==========-->
 	<Mashed_Lynian_PawnNotLynian>{0} is not a Lynian</Mashed_Lynian_PawnNotLynian>
 	<Mashed_Lynian_AbilityDisabled_Skill>{0} is incapable of {1}</Mashed_Lynian_AbilityDisabled_Skill>

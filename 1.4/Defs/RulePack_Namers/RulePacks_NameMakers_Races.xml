@@ -12,6 +12,8 @@
 				<li>FlowerNames->Mashed_Lynians/Lynians_UrukiNames_Flowers</li>
 				<li>SucculentNames->Mashed_Lynians/Lynians_UrukiNames_Succulents</li>
 				<li>FoodNames->Mashed_Lynians/Lynians_CatLikeNames_Food</li>
+				<li>DanceNames->Mashed_Lynians/Lynians_ShakalakaNames_Dances</li>
+				<li>InstrumentNames->Mashed_Lynians/Lynians_ShakalakaNames_Instruments</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -78,7 +80,6 @@
 		<defName>Mashed_Lynian_NamerPerson_UrukiFemale</defName>
 		<include>
 			<li>Mashed_Lynian_NamerPerson_Utility</li>
-			<li>NamerAnimalUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -87,6 +88,37 @@
 				<li>name(p=0.25)->[Vegetable]</li>
 				<li>name(p=0.15)->[Color]</li>
 				<li>name(p=0.15)->[ColorBadass]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Shakalaka namers]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerPerson_ShakalakaMale</defName>
+		<include>
+			<li>Mashed_Lynian_NamerPerson_Utility</li>
+			<li>NamerAnimalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=5)->[DanceNames]</li>
+				<li>name(p=2)->[InstrumentNames]</li>
+				<li>name(p=1)->[NameAnimalUnisex]</li>
+				<li>name(p=0.25)->[NameAnimalMale]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerPerson_ShakalakaFemale</defName>
+		<include>
+			<li>Mashed_Lynian_NamerPerson_Utility</li>
+			<li>NamerAnimalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=5)->[DanceNames]</li>
+				<li>name(p=2)->[InstrumentNames]</li>
+				<li>name(p=1)->[NameAnimalUnisex]</li>
+				<li>name(p=0.25)->[NameAnimalFemale]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

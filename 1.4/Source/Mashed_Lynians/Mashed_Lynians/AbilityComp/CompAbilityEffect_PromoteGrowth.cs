@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Mashed_Lynians
 {
-    class CompAbilityEffect_PromoteGrowth : CompAbilityEffect
+    public class CompAbilityEffect_PromoteGrowth : CompAbilityEffect
     {
         public new CompProperties_PromoteGrowth Props
         {
