@@ -27,6 +27,7 @@
 		</comps>
 	</AbilityDef>
 	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
+	<!--
 	<AbilityDef ParentName="Mashed_Lynian_SelfBuffBase">
 		<defName>Mashed_Lynian_PursserkerRage</defName>
 		<label>purrserker rage</label>
@@ -42,11 +43,11 @@
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>Mashed_Lynian_PursserkerRage</hediffDef>
-				<!--<durationMultiplier>Mashed_Lynian_PursserkerDurationMultiplier</durationMultiplier>-->
 				<onlyBrain>True</onlyBrain>
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
 			</li>
 		</comps>
 	</AbilityDef>
+	-->
 </Defs>

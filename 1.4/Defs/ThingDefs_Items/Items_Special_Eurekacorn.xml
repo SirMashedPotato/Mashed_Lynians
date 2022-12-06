@@ -84,6 +84,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
+	<!--
 	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
 		<defName>Mashed_Lynian_EurekacornPursserkerRage</defName>
 		<label>eurekacorn (Purrserker rage)</label>
@@ -101,4 +102,5 @@
 			<li>Mashed_Lynian_Grimalkyne</li>
 		</tradeTags>
 	</ThingDef>
+	-->
 </Defs>
