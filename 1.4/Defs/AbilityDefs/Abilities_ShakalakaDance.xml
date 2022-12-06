@@ -277,16 +277,6 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
-		<defName>Mashed_Lynian_ShakalakaDanceJoyfulBuff</defName>
-		<label>Shakalaka joyful dance</label>
-		<description>This pawn witnessed the energetic movements of a Shakalaka joyful dance, and is now more resistant to fatigue for a period of time.</description>
-		<stages>
-			<li>
-				<restFallFactor>-0.15</restFallFactor>
-			</li>
-		</stages>
-	</HediffDef>
 	<!-- ==========[Mashed_Lynian_DanceProtectiveAbility]==========-->
 	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
 		<defName>Mashed_Lynian_DanceProtectiveAbility</defName>
