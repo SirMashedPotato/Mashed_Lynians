@@ -15,6 +15,7 @@
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<groupDef>Mashed_Lynian_ShakalakaDanceAbility</groupDef>
 		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<warmupEffecter>Mashed_Lynian_ShakalakaDanceWarmup</warmupEffecter>
 		<statBases>
 			<Ability_EffectRadius>3.9</Ability_EffectRadius>
 		</statBases>
@@ -40,6 +41,9 @@
 			<li Class="Mashed_Lynians.CompProperties_IncrementRecord">
 				<recordDef>Mashed_Lynian_ShakalakaDancesDanced</recordDef>
 			</li>
+			<li Class="Mashed_Lynians.CompProperties_AbilityEffecterOnSelf">
+				<effecterDef>Mashed_Lynian_ShakalakaDanceEnd</effecterDef>
+			</li>
 		</comps>
 	</AbilityDef>
 	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
@@ -49,7 +53,6 @@
 		<description>A dance created by a wise Shakalaka of old. The calming movements help to cool the body of anyone that witnesses it, increasing their resistance to the heat.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of cooling energy, reducing the severity of heatstroke by up to 25%.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cooling</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cooling</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>
@@ -89,7 +92,6 @@
 		<description>A dance created by a wise Shakalaka of old. The fluid movements help to fortify the body of anyone that witnesses it, increasing their resistance to toxic effects.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of curing energy, reducing the severity of toxic buildup by up to 25%.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Curing</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Curing</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>
@@ -129,7 +131,6 @@
 		<description>A dance created by a wise Shakalaka of old. The eccentric movements leaves anyone that witnesses it stunned momentarily. This only affects hostile pawns.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of electrifying energy, decreasing their moving capability for a period of time.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Electrifying</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Electrifying</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>150</Ability_Duration>
 		</statBases>
@@ -174,7 +175,6 @@
 		<description>A dance created by a wise Shakalaka of old. The rhythmic movements help to heal the wounds of anyone that witnesses it, increasing their injury healing rate.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of healing energy, reducing the severity of blood loss by up to 25%.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Healing</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Healing</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>
@@ -214,7 +214,6 @@
 		<description>A dance created by a wise Shakalaka of old. The energetic movements help to keep tiredness at bay for anyone that witnesses it, decreasing their rest fall rate.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of invigorating energy, replenishing their sleep need by 25%.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Invigorating</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Invigorating</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>
@@ -252,7 +251,6 @@
 		<description>A dance created by a wise Shakalaka of old. The spirited movements fill those that witnesses it with a profound feeling of joy, giving them a positive mood boost.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will feel more empowered, increasing the strength of the mood bonus.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Joyful</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Joyful</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>
@@ -284,7 +282,6 @@
 		<description>A dance created by a wise Shakalaka of old. The stalwart movements help to fortify the body of anyone that witnesses it, increasing their resistance to physical damage.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will feel more empowered, increasing the strength of the protection bonus.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Protective</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Protective</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>
@@ -332,7 +329,6 @@
 		<description>A dance created by a wise Shakalaka of old. The aggressive movements leaves anyone that witnesses it stunned momentarily. This only affects hostile pawns.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of stunning energy, decreasing their moving capability for a period of time.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Stunning</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Stunning</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>150</Ability_Duration>
 		</statBases>
@@ -372,7 +368,6 @@
 		<description>A dance created by a wise Shakalaka of old. The erratic movements help to heat the body of anyone that witnesses it, increasing their resistance to the cold.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of warming energy, reducing the severity of hypothermia by up to 25%.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Warming</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
-		<warmupMoteSocialSymbol>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Warming</warmupMoteSocialSymbol>
 		<statBases>
 			<Ability_Duration>500</Ability_Duration>
 		</statBases>

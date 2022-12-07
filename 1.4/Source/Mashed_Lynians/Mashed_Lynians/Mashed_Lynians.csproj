@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_DoDamage.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_EffecterOnSelf.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
     <Compile Include="AbilityComp\CompAbiltyEffect_GiveThought.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityDoDamage.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceReplenishNeed.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityEffecterOnSelf.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveThought.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_IncrementRecord.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SiteUtility.cs" />
+    <Compile Include="SubEffecter_ConstantCircleEmote.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
