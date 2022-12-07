@@ -9,6 +9,18 @@
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>
 				</abilitiesToAdd>
+				<oneOfRandomAbility>
+					<li>Mashed_Lynian_DanceCoolingAbility</li>
+					<li>Mashed_Lynian_DanceCuringAbility</li>
+					<li>Mashed_Lynian_DanceElectrifyingAbility</li>
+					<li>Mashed_Lynian_DanceHealingAbility</li>
+					<li>Mashed_Lynian_DanceInvigoratingAbility</li>
+					<li>Mashed_Lynian_DanceJoyfulAbility</li>
+					<li>Mashed_Lynian_DanceProtectiveAbility</li>
+					<li>Mashed_Lynian_DanceStunningAbility</li>
+					<li>Mashed_Lynian_DanceWarmingAbility</li>
+				</oneOfRandomAbility>
+				<oneOfRandomChance>0.25</oneOfRandomChance>
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>

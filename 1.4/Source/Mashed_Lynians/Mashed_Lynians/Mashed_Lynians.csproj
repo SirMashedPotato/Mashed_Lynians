@@ -108,7 +108,7 @@
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SiteUtility.cs" />
-    <Compile Include="SubEffecter_ConstantCircleEmote.cs" />
+    <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />

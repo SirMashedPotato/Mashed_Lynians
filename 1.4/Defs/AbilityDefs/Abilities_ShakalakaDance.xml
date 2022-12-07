@@ -44,6 +44,9 @@
 			<li Class="Mashed_Lynians.CompProperties_AbilityEffecterOnSelf">
 				<effecterDef>Mashed_Lynian_ShakalakaDanceEnd</effecterDef>
 			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Mashed_Lynian_ShakalakaDanceEnd</effecterDef>
+			</li>
 		</comps>
 	</AbilityDef>
 	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->

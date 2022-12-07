@@ -43,9 +43,9 @@
 			<li>
 				<subEffecterClass>SubEffecter_DrifterEmoteTriggered</subEffecterClass>
 				<spawnLocType>OnTarget</spawnLocType>
-				<burstCount>4~7</burstCount>
+				<burstCount>2~4</burstCount>
 				<positionRadius>2</positionRadius>
-				<scale>0.8</scale>
+				<scale>0.5</scale>
 				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
 				<ticksBetweenMotes>40</ticksBetweenMotes>
 				<positionLerpFactor>1</positionLerpFactor>
