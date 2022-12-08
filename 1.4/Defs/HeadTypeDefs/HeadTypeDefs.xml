@@ -7,6 +7,11 @@
 		<gender>None</gender>
 	</HeadTypeDef>
 	<HeadTypeDef ParentName="AverageBase">
+		<defName>Mashed_FelyneHead_Poofy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/Mashed_FelyneHead_Poofy</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
 		<defName>Mashed_FelyneHead_Slim</defName>
 		<graphicPath>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/Mashed_FelyneHead_Slim</graphicPath>
 		<gender>None</gender>

@@ -34,6 +34,7 @@
 				<alienPartGenerator>
 					<headTypes Inherit="False">
 						<li>Mashed_FelyneHead_Fluffy</li>
+						<li>Mashed_FelyneHead_Poofy</li>
 					</headTypes>
 					<colorChannels>
 						<li>
