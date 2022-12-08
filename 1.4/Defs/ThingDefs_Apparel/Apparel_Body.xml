@@ -373,7 +373,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CookSpeed>1.0</CookSpeed>
-			<CleaningSpeed MayRequire="Aelanna.CleaningSpeed">0.10</CleaningSpeed>
+			<CleaningSpeed>0.10</CleaningSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
