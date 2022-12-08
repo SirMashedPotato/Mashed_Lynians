@@ -65,11 +65,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityComp\CompAbilityEffect_AbilityExtinguishFire.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_CleanFilth.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_DoDamage.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_EffecterOnSelf.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
     <Compile Include="AbilityComp\CompAbiltyEffect_GiveThought.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityCleanFilth.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityDoDamage.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceAddHediff.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceModifyHediff.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
     <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceReplenishNeed.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityEffecterOnSelf.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityExtinguishFire.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveThought.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_IncrementRecord.cs" />

@@ -49,6 +49,44 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	<!-- ==========[Mashed_Lynian_DanceCleaningAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceCleaningAbility</defName>
+		<label>cleaning dance</label>
+		<description>A dance created by a wise Shakalaka of old. The deliberate movements stir up a vortex of energy, cleaning any nearby filth.\n\nIf the dancer is highly knowledgeable anyone nearby will be inspired by the performance, receiving a boost to cleaning speed for a period of time.</description>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cleaning</iconPath>
+		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>True</requireLineOfSight>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityCleanFilth"/>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceAddHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<addedHediffDef>Mashed_Lynian_ShakalakaDanceCleaningBuff</addedHediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceCleaningBuff</defName>
+		<label>Shakalaka cleaning dance</label>
+		<description>This pawn witnessed the deliberate movements of a Shakalaka cleaning dance, and now has increased cleaning speed for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<CleaningSpeed>0.25</CleaningSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
 	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
 		<defName>Mashed_Lynian_DanceCoolingAbility</defName>
@@ -92,7 +130,7 @@
 	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
 		<defName>Mashed_Lynian_DanceCuringAbility</defName>
 		<label>curing dance</label>
-		<description>A dance created by a wise Shakalaka of old. The fluid movements help to fortify the body of anyone that witnesses it, increasing their resistance to toxic effects.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of curing energy, reducing the severity of toxic buildup by up to 25%.</description>
+		<description>A dance created by a wise Shakalaka of old. The smooth movements help to fortify the body of anyone that witnesses it, increasing their resistance to toxic effects.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of curing energy, reducing the severity of toxic buildup by up to 25%.</description>
 		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Curing</iconPath>
 		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
 		<statBases>
@@ -118,7 +156,7 @@
 	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
 		<defName>Mashed_Lynian_ShakalakaDanceCuringBuff</defName>
 		<label>Shakalaka curing dance</label>
-		<description>This pawn witnessed the fluid movements of a Shakalaka curing dance, and is now more resistant to toxic effects for a period of time.</description>
+		<description>This pawn witnessed the smooth movements of a Shakalaka curing dance, and is now more resistant to toxic effects for a period of time.</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -168,6 +206,47 @@
 					<offset>-0.15</offset>
 				  </li>
 				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceCleaningAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceExtinguishingAbility</defName>
+		<label>extinguishing dance</label>
+		<description>A dance created by a wise Shakalaka of old. The fluid movements stir up a vortex of energy, scaring any nearby fire into submission.\n\nIf the dancer is highly knowledgeable anyone nearby will be inspired by the performance, receiving a boost to fire resistance speed for a period of time.</description>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Extinguishing</iconPath>
+		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetFires>True</canTargetFires>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityExtinguishFire"/>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceAddHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<addedHediffDef>Mashed_Lynian_ShakalakaDanceExtinguishingBuff</addedHediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceExtinguishingBuff</defName>
+		<label>Shakalaka extinguishing dance</label>
+		<description>This pawn witnessed the fluid movements of a Shakalaka extinguishing dance, and now has increased fire resistance for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<Flammability>-0.25</Flammability>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>

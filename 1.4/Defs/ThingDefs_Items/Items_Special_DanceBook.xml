@@ -31,7 +31,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseArtifact</useJob>
-				<useLabel>Read dance book</useLabel>
+				<useLabel>Read {0}</useLabel>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 		</comps>
@@ -41,7 +41,23 @@
 			<texPath>Things/Item/Special/Mashed_ShakalakaDanceBook_Alt</texPath>
 		</graphicData>
 	</ThingDef>
-		<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
+	<!-- ==========[Mashed_Lynian_DanceCleaningAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
+		<defName>Mashed_Lynian_DanceBookCleaning</defName>
+		<label>Shakalaka dance book (cleaning)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceCleaningAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(192,92,212)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceCleaningAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
 	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
 		<defName>Mashed_Lynian_DanceBookCooling</defName>
 		<label>Shakalaka dance book (cooling)</label>
@@ -78,7 +94,7 @@
 		<defName>Mashed_Lynian_DanceBookElectrifying</defName>
 		<label>Shakalaka dance book (electrifying)</label>
 		<descriptionHyperlinks>
-			<!--<AbilityDef>Mashed_Lynian_DanceElectrifyingAbility</AbilityDef>-->
+			<AbilityDef>Mashed_Lynian_DanceElectrifyingAbility</AbilityDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<color>(92,172,212)</color>
@@ -86,6 +102,22 @@
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_DanceElectrifyingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceExtinguishingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
+		<defName>Mashed_Lynian_DanceBookExtinguishing</defName>
+		<label>Shakalaka dance book (extinguishing)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceExtinguishingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(143,238,211)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceExtinguishingAbility</ability>
 			</li>
 		</comps>
 	</ThingDef>
