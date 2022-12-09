@@ -65,6 +65,7 @@
 		<apparelMoney>200~550</apparelMoney>
 		<apparelRequired>
 			<li>Mashed_Lynian_Apparel_PurrserkerHelmet</li>
+			<li>Mashed_Lynian_Apparel_PurrserkerArmour</li>
 		</apparelRequired>
 		<weaponMoney>300~300</weaponMoney>
 		<initialWillRange>2~4</initialWillRange>

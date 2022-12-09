@@ -92,6 +92,7 @@
     <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\FactionProperties.cs" />
+    <Compile Include="DefModExtension\PawnKindProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
     <Compile Include="DefOf\FactionDefOf.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SiteUtility.cs" />
+    <Compile Include="StockGenerator\StockGenerator_Palicoes.cs" />
     <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />

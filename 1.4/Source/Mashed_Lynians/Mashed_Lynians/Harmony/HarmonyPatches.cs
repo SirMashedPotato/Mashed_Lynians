@@ -4,6 +4,7 @@ using Verse;
 using System.Reflection;
 using RimWorld;
 using System;
+using System.Collections.Generic;
 
 namespace Mashed_Lynians
 {
@@ -165,7 +166,7 @@ namespace Mashed_Lynians
         }
 
         /// <summary>
-        /// Dobules the cooking speed stat for pawns affected by the cooking furrenzy hediff
+        /// Doubles the cooking speed stat for pawns affected by the cooking furrenzy hediff
         /// Also allows an increase beyond the normal limit of 160%
         /// </summary>
         [HarmonyPatch(typeof(StatExtension))]
@@ -181,6 +182,24 @@ namespace Mashed_Lynians
                     {
                         __result *= 2f;
                     }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Makes it so that custom pawnKinds can be sold as 'slaves'
+        /// </summary>
+        [HarmonyPatch(typeof(TraderCaravanUtility))]
+        [HarmonyPatch("GetTraderCaravanRole")]
+        public static class TraderCaravanUtility_GetTraderCaravanRole_Patch
+        {
+            [HarmonyPostfix]
+            public static void Lynians_GetTraderCaravanRole_Patch(Pawn p, ref TraderCaravanRole __result)
+            {
+                PawnKindProperties props = PawnKindProperties.Get(p.kindDef);
+                if (props != null && props.purchasableFromTrader)
+                {
+                    __result = TraderCaravanRole.Chattel;
                 }
             }
         }
