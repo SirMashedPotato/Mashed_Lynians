@@ -22,4 +22,6 @@
 	<!-- ==========[Ideo]==========-->
 	<Mashed_Lynian_IdeoRequirementLynian>Any Lynian race</Mashed_Lynian_IdeoRequirementLynian>
 	<Mashed_Lynian_CookingFurrenzyTooltip>Doubled cooking speed to: {0}</Mashed_Lynian_CookingFurrenzyTooltip>
+	<!-- ==========[Romancing]==========-->
+	<Mashed_Lynian_CantRomanceNonLynian>Romance between Lynians and non-Lynians is outlawed.</Mashed_Lynian_CantRomanceNonLynian>
 </LanguageData>
