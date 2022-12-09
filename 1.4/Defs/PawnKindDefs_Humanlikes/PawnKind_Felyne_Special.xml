@@ -24,10 +24,5 @@
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>13~20</initialResistanceRange>
 		<maxGenerationAge>35</maxGenerationAge>
-		<modExtensions>
-			<li Class="Mashed_Lynians.PawnKindProperties">
-				<purchasableFromTrader>True</purchasableFromTrader>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 </Defs>

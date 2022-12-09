@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Basic, Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_RecruitBase">
+		<defName>Mashed_Lynian_MelynxRecruit</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
 	<!-- ==========[Basic, Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_GathererBase">
 		<defName>Mashed_Lynian_MelynxGatherer</defName>

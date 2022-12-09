@@ -13,6 +13,24 @@
 			<li>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</li>
 		</apparelRequired>
 	</PawnKindDef>
+	<!-- ==========[Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaRecruit</defName>
+		<label>recruit</label>
+		<combatPower>30</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>0</apparelMoney>
+		<weaponMoney>0</weaponMoney>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0</initialResistanceRange>
+		<modExtensions>
+			<li Class="Mashed_Lynians.PawnKindProperties">
+				<purchasableFromTrader>True</purchasableFromTrader>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	<!-- ==========[Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
 		<defName>Mashed_Lynian_ShakalakaGatherer</defName>

@@ -17,6 +17,23 @@
 		</backstoryFiltersOverride>
 		-->
 	</PawnKindDef>
+	<!-- ==========[Basic, Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_RecruitBase" Abstract="True">
+		<label>recruit</label>
+		<combatPower>30</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>0</apparelMoney>
+		<weaponMoney>0</weaponMoney>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0</initialResistanceRange>
+		<modExtensions>
+			<li Class="Mashed_Lynians.PawnKindProperties">
+				<purchasableFromTrader>True</purchasableFromTrader>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	<!-- ==========[Basic, Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_GathererBase" Abstract="True">
 		<label>gatherer</label>

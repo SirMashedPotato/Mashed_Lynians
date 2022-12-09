@@ -12,6 +12,24 @@
 			<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
 		</apparelRequired>
 	</PawnKindDef>
+	<!-- ==========[Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+		<defName>Mashed_Lynian_GajalakaRecruit</defName>
+		<label>recruit</label>
+		<combatPower>30</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>0</apparelMoney>
+		<weaponMoney>0</weaponMoney>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0</initialResistanceRange>
+		<modExtensions>
+			<li Class="Mashed_Lynians.PawnKindProperties">
+				<purchasableFromTrader>True</purchasableFromTrader>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	<!-- ==========[Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
 		<defName>Mashed_Lynian_GajalakaGatherer</defName>
@@ -43,7 +61,7 @@
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>10~16</initialResistanceRange>
 		<weaponTags>
-			<li>Mashed_Lynian_GajalakaTribalThrowingShard</li>
+			<li>Mashed_Lynian_GajalakaTribalThrowingKnife</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>

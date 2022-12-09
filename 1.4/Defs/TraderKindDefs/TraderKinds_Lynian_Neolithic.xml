@@ -79,6 +79,12 @@
 				<kindCountRange>1~2</kindCountRange>
 				<countRange>1~2</countRange>
 			</li>
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_BoaboaRecruit</pawnKindDef>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Felyne]==========-->
@@ -119,6 +125,12 @@
 				<tradeTag>Mashed_Lynian_Felyne</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
 				<countRange>1~2</countRange>
+			</li>
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_FelyneRecruit</pawnKindDef>
+				<countRange>1</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>
@@ -171,6 +183,12 @@
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Exotic -->
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_GajalakaRecruit</pawnKindDef>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Grimalkyne]==========-->
@@ -221,6 +239,12 @@
 				<kindCountRange>2~4</kindCountRange>
 				<countRange>1~3</countRange>
 			</li>
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_GrimalkyneRecruit</pawnKindDef>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Melynx]==========-->
@@ -263,6 +287,12 @@
 				</excludedThingDefs>
 				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
 			</li>
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_MelynxRecruit</pawnKindDef>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Shakalaka]==========-->
@@ -303,6 +333,12 @@
 				<thingDefCountRange>-1~2</thingDefCountRange>
 				<countRange>1</countRange>
 			</li>
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_ShakalakaRecruit</pawnKindDef>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Uruki]==========-->
@@ -334,6 +370,12 @@
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Exotic -->
+			<!-- Recruits -->
+			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
+				<respectPopulationIntent>True</respectPopulationIntent>
+				<pawnKindDef>Mashed_Lynian_UrukiRecruit</pawnKindDef>
+				<countRange>1</countRange>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 </Defs>

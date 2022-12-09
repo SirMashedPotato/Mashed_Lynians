@@ -12,13 +12,15 @@ namespace Mashed_Lynians
 		/// </summary>
 		public override IEnumerable<Thing> GenerateThings(int forTile, Faction faction = null)
 		{
+			///Likely the cause if none are appearing in trade caravans
+			///It's a vanilla mechanic, so keeping as is
+			///Can just disable through xml if they want
 			if (respectPopulationIntent && Rand.Value > StorytellerUtilityPopulation.PopulationIntent)
 			{
 				yield break;
 			}
 			int count = countRange.RandomInRange;
-			int num;
-			for (int i = 0; i < count; i = num + 1)
+			for (int i = 0; i < count; i++)
 			{
                 if (faction == null)
                 {
@@ -34,7 +36,6 @@ namespace Mashed_Lynians
 					forTile, false, false, false, true, false, 1f, !trader.orbital, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, 
 					null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, developmentalStages, null, null, null, false);
 				yield return PawnGenerator.GeneratePawn(request);
-				num = i;
 			}
 			yield break;
 		}
