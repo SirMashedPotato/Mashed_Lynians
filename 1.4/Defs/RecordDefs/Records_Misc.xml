@@ -27,11 +27,18 @@
 		<description>The amount of plant growth I have boosted using the Promote Growth ability.</description>
 		<type>Int</type>
 	</RecordDef>
+	<!-- ==========[Furrenzies]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_TimesFurrenzied</defName>
+		<label>times furrenzied</label>
+		<description>The number of times I have entered a furrenzy.</description>
+		<type>Int</type>
+	</RecordDef>
 	<!-- ==========[Dancing]==========-->
 	<RecordDef>
 		<defName>Mashed_Lynian_ShakalakaDancesDanced</defName>
 		<label>Shakalaka dances danced</label>
-		<description>The amount of times I have danced a Shakalaka dance.</description>
+		<description>The number of times I have danced a Shakalaka dance.</description>
 		<type>Int</type>
 	</RecordDef>
 </Defs>

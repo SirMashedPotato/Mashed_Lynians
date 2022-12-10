@@ -25,4 +25,16 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
+	<!-- ==========[Mashed_Lynian_AbilityBuffBase]==========-->
+	<HediffDef Name="Mashed_Lynian_AbilityBuffBase" Abstract="True">
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
 </Defs>

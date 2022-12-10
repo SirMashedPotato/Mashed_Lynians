@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<AbilityGroupDef>
-		<defName>Mashed_Lynian_Ability</defName>
-		<cooldownTicks>180000</cooldownTicks>
-	</AbilityGroupDef>
 	<!-- ==========[Mashed_Lynian_DigAbility]==========-->
 	<AbilityDef>
 		<defName>Mashed_Lynian_DigAbility</defName>
