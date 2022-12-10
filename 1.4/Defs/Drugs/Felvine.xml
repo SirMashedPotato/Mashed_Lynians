@@ -119,6 +119,10 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Mashed_Lynian_FelvineHigh</stateEffecter>
+				<severityIndices>0~1</severityIndices>
+			</li>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-4.0</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
