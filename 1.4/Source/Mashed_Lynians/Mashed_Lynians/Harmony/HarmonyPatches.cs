@@ -185,6 +185,7 @@ namespace Mashed_Lynians
                         if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null)
                         {
                             __result *= 2f;
+                            return;
                         }
                     }
                     if (stat == RimWorld.StatDefOf.PlantWorkSpeed)
@@ -192,6 +193,7 @@ namespace Mashed_Lynians
                         if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFarmingFurrenzy) != null)
                         {
                             __result *= 2f;
+                            return;
                         }
                     }
                     if (stat == RimWorld.StatDefOf.CleaningSpeed)
@@ -199,6 +201,7 @@ namespace Mashed_Lynians
                         if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCleaningFurrenzy) != null)
                         {
                             __result *= 2f;
+                            return;
                         }
                     }
                 }
