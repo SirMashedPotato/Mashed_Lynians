@@ -105,6 +105,22 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceEvasiveAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookEvasive</defName>
+		<label>Shakalaka dance book (evasive)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceEvasiveAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(92,112,212)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceEvasiveAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Lynian_DanceExtinguishingAbility]==========-->
 	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
 		<defName>Mashed_Lynian_DanceBookExtinguishing</defName>

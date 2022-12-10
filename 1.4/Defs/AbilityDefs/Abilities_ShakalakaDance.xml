@@ -209,7 +209,54 @@
 			</li>
 		</stages>
 	</HediffDef>
-	<!-- ==========[Mashed_Lynian_DanceCleaningAbility]==========-->
+	<!-- ==========[Mashed_Lynian_DanceEvasiveAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceEvasiveAbility</defName>
+		<label>evasive dance</label>
+		<description>A dance created by a wise Shakalaka of old. The rapid movements help to fortify the reflexes of anyone that witnesses it, increasing their evasiveness and movement speed.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will feel more empowered, increasing the strength of the bonus.</description>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Evasive</iconPath>
+		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceEvasiveBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceModifyHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>Mashed_Lynian_ShakalakaDanceEvasiveBuff</affectedHediffDef>
+				<severity>1</severity>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceEvasiveBuff</defName>
+		<label>Shakalaka evasive dance</label>
+		<description>This pawn witnessed the rapid movements of a Shakalaka evasive dance, and is now lighter on their feet for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>1</MeleeDodgeChance>
+					<MoveSpeed>0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MoveSpeed>0.4</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceExtinguishingAbility]==========-->
 	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
 		<defName>Mashed_Lynian_DanceExtinguishingAbility</defName>
 		<label>extinguishing dance</label>
