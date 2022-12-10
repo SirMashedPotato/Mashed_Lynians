@@ -83,17 +83,48 @@
 			<li>Mashed_Lynian_Felyne</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
-	<!--
+	<!-- ==========[Mashed_Lynian_LynianFarmingFurrenzyAbility]==========-->
 	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
-		<defName>Mashed_Lynian_EurekacornPursserkerRage</defName>
-		<label>eurekacorn (Purrserker rage)</label>
+		<defName>Mashed_Lynian_EurekacornFarmingFurrenzy</defName>
+		<label>eurekacorn (Farming furrenzy)</label>
 		<descriptionHyperlinks>
-			<AbilityDef>Mashed_Lynian_PursserkerRage</AbilityDef>
+			<AbilityDef>Mashed_Lynian_LynianFarmingFurrenzyAbility</AbilityDef>
 		</descriptionHyperlinks>
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
-				<ability>Mashed_Lynian_PursserkerRage</ability>
+				<ability>Mashed_Lynian_LynianFarmingFurrenzyAbility</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Uruki</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_LynianCleaningFurrenzyAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornCleaningFurrenzy</defName>
+		<label>eurekacorn (Cleaning furrenzy)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_LynianCleaningFurrenzyAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_LynianCleaningFurrenzyAbility</ability>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_PurrserkerRage]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornPurrserkerRage</defName>
+		<label>eurekacorn (Purrserker rage)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_PurrserkerRage</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_PurrserkerRage</ability>
 			</li>
 		</comps>
 		<tradeTags>
@@ -102,5 +133,4 @@
 			<li>Mashed_Lynian_Grimalkyne</li>
 		</tradeTags>
 	</ThingDef>
-	-->
 </Defs>

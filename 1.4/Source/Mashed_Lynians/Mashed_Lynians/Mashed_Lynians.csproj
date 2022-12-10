@@ -105,9 +105,12 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
-    <Compile Include="HediffComp\HediffComp_CookingFurrenzyTooltip.cs" />
+    <Compile Include="Harmony\Harmony_Romance.cs" />
+    <Compile Include="HediffComp\HediffComp_UnequipWeapons.cs" />
+    <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\HediffComp_DisappearsOnDowned.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_DisappearsOnDowned.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_WorkingFurrenzyTooltip.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_LynianColonistJoin.cs" />
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />

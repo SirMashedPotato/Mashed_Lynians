@@ -18,8 +18,8 @@
 		<label>cooking furrenzy</label>
 		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about cooking, and putting it all to use at once. This doubles the pawns cooking speed, allowing it to go above the normal limit in the process.</description>
 		<comps>
-			<li>
-				<compClass>Mashed_Lynians.HediffComp_CookingFurrenzyTooltip</compClass>
+			<li Class="Mashed_Lynians.HediffCompProperties_WorkingFurrenzyTooltip">
+				<statDef>CookSpeed</statDef>
 			</li>
 		</comps>
 		<stages>
@@ -27,14 +27,46 @@
 			<li/>
 		</stages>
 	</HediffDef>
-	<!-- ==========[Mashed_Lynian_PursserkerRage]==========-->
-	<!--
+	<!-- ==========[Mashed_Lynian_LynianFarmingFurrenzy]==========-->
 	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
-		<defName>Mashed_Lynian_PursserkerRage</defName>
+		<defName>Mashed_Lynian_LynianFarmingFurrenzy</defName>
+		<label>farming furrenzy</label>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about farming, and putting it all to use at once. This doubles the pawns plant work speed, allowing it to go above the normal limit in the process.</description>
+		<comps>
+			<li Class="Mashed_Lynians.HediffCompProperties_WorkingFurrenzyTooltip">
+				<statDef>PlantWorkSpeed</statDef>
+			</li>
+		</comps>
+		<stages>
+			<!-- Need this for tooltip -->
+			<li/>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_LynianCleaningFurrenzy]==========-->
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_LynianCleaningFurrenzy</defName>
+		<label>cleaning furrenzy</label>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about cleaning, and putting it all to use at once. This doubles the pawns plant work speed, allowing it to go above the normal limit in the process.</description>
+		<comps>
+			<li Class="Mashed_Lynians.HediffCompProperties_WorkingFurrenzyTooltip">
+				<statDef>CleaningSpeed</statDef>
+			</li>
+		</comps>
+		<stages>
+			<!-- Need this for tooltip -->
+			<li/>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_PurrserkerRage]==========-->
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_PurrserkerRage</defName>
 		<label>purrserker rage</label>
-		<description>The inner beast unleashed, greatly empowering melee capabilities.</description>
+		<description>The inner beast unleashed, greatly empowering melee capabilities, but preventing the Lynian from holding weapons. The ability will end prematurely if the Lynian is downed.</description>
 		<comps>
 			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_UnequipWeapons</compClass>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -47,5 +79,4 @@
 			</li>
 		</stages>
 	</HediffDef>
-	-->
 </Defs>

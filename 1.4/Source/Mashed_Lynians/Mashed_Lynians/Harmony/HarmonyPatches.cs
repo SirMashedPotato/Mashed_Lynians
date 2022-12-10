@@ -4,7 +4,6 @@ using Verse;
 using System.Reflection;
 using RimWorld;
 using System;
-using System.Collections.Generic;
 
 namespace Mashed_Lynians
 {
@@ -15,6 +14,9 @@ namespace Mashed_Lynians
         {
             var harmony = new Harmony("com.Mashed_Lynians");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+
+            harmony.Patch(AccessTools.Method(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip), new[] { typeof(Thing), typeof(Pawn), typeof(string).MakeByRefType(), typeof(bool) }), 
+                postfix: new HarmonyMethod(typeof(EquipmentUtility_CanEquip_Patch), nameof(EquipmentUtility_CanEquip_Patch.CanEquip_PurrserkerRage_PostFix)));
         }
     }
 
@@ -153,7 +155,7 @@ namespace Mashed_Lynians
             [HarmonyPrefix]
             public static void Lynians_ManInBlack_Patch(ref PawnGenerationRequest request)
             {
-                if(request.Faction != null)
+                if (request.Faction != null)
                 {
                     FactionProperties props = FactionProperties.Get(request.Faction.def);
                     if (props != null && props.manInBlackReplacer != null && request.KindDef == PawnKindDef.Named("StrangerInBlack"))
@@ -161,13 +163,13 @@ namespace Mashed_Lynians
                         request.KindDef = props.manInBlackReplacer;
                     }
                 }
-              
+
             }
         }
 
         /// <summary>
-        /// Doubles the cooking speed stat for pawns affected by the cooking furrenzy hediff
-        /// Also allows an increase beyond the normal limit of 160%
+        /// Doubles the specific stats for pawns affected by specific hediffs
+        /// Also allows an increase beyond the normal limits
         /// </summary>
         [HarmonyPatch(typeof(StatExtension))]
         [HarmonyPatch("GetStatValue")]
@@ -176,11 +178,28 @@ namespace Mashed_Lynians
             [HarmonyPostfix]
             public static void Lynians_CookingFrurrenzy_Patch(Thing thing, StatDef stat, ref float __result)
             {
-                if (stat == StatDefOf.CookSpeed && thing is Pawn p && p.RaceProps.Humanlike)
+                if (thing is Pawn p && p.RaceProps.Humanlike)
                 {
-                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null)
+                    if (stat == StatDefOf.CookSpeed)
                     {
-                        __result *= 2f;
+                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null)
+                        {
+                            __result *= 2f;
+                        }
+                    }
+                    if (stat == RimWorld.StatDefOf.PlantWorkSpeed)
+                    {
+                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFarmingFurrenzy) != null)
+                        {
+                            __result *= 2f;
+                        }
+                    }
+                    if (stat == RimWorld.StatDefOf.CleaningSpeed)
+                    {
+                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCleaningFurrenzy) != null)
+                        {
+                            __result *= 2f;
+                        }
                     }
                 }
             }
@@ -203,105 +222,23 @@ namespace Mashed_Lynians
                 }
             }
         }
+    }
 
-        /// <summary>
-        /// Makes it so Lynians should only ever romance other Lynians
-        /// and can never be romanced by non-Lynians
-        /// First patch is for the player forcing romances
-        /// Second is for pawn controlled romance chance
-        /// Third is just in case the others fail at some point
-        /// </summary>
-        [HarmonyPatch(typeof(RelationsUtility))]
-        [HarmonyPatch("RomanceEligiblePair")]
-        public static class RelationsUtility_RomanceEligiblePair_Patch
+    /// <summary>
+    /// Prevents Lynians in a purrserker rage from equipping weapons
+    /// </summary>
+    public static class EquipmentUtility_CanEquip_Patch
+    {
+        public static void CanEquip_PurrserkerRage_PostFix(Thing thing, Pawn pawn, ref string cantReason, ref bool __result)
         {
-            [HarmonyPostfix]
-            public static void Lynians_RomanceEligiblePair_Patch(Pawn initiator, Pawn target, bool forOpinionExplanation, ref AcceptanceReport __result)
+            if (thing is Apparel)
             {
-                if (__result)
-                {
-                    RaceProperties propsInitiator = RaceProperties.Get(initiator.def);
-                    RaceProperties propsTarget = RaceProperties.Get(target.def);
-                    ///Both are non-Lynians, so just return
-                    if (propsInitiator == null && propsTarget == null)
-                    {
-                        return;
-                    }
-                    ///Both are non-Lynians, so just return
-                    if (propsInitiator != null && !propsInitiator.isLynian && propsTarget != null && !propsTarget.isLynian)
-                    {
-                        return;
-                    }
-                    ///One is not a Lynian
-                    if (propsInitiator == null || !propsInitiator.isLynian || propsTarget == null || !propsTarget.isLynian)
-                    {
-                        if (!forOpinionExplanation)
-                        {
-                            __result = "Mashed_Lynian_CantRomanceNonLynian".Translate();
-                        }
-                        __result = false;
-                    }
-                }
+                return;
             }
-        }
-
-        [HarmonyPatch(typeof(InteractionWorker_RomanceAttempt))]
-        [HarmonyPatch("RandomSelectionWeight")]
-        public static class InteractionWorker_RomanceAttempt_RandomSelectionWeight_Patch
-        {
-            [HarmonyPostfix]
-            public static void Lynians_RomanceRandomSelectionWeight_Patch(Pawn initiator, Pawn recipient, ref float __result)
+            if (__result && pawn.health != null && pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_PurrserkerRage) != null)
             {
-                if (__result > 0f)
-                {
-                    RaceProperties propsInitiator = RaceProperties.Get(initiator.def);
-                    RaceProperties propsRecipient = RaceProperties.Get(recipient.def);
-                    ///Both are non-Lynians, so just return
-                    if (propsInitiator == null && propsRecipient == null)
-                    {
-                        return;
-                    }
-                    ///Both are non-Lynians, so just return
-                    if (propsInitiator != null && !propsInitiator.isLynian && propsRecipient != null && !propsRecipient.isLynian)
-                    {
-                        return;
-                    }
-                    ///One is not a Lynian
-                    if (propsInitiator == null || !propsInitiator.isLynian || propsRecipient == null || !propsRecipient.isLynian)
-                    {
-                        __result = 0f;
-                    }
-                }
-            }
-        }
-
-        [HarmonyPatch(typeof(InteractionWorker_RomanceAttempt))]
-        [HarmonyPatch("SuccessChance")]
-        public static class InteractionWorker_RomanceAttempt_SuccessChance_Patch
-        {
-            [HarmonyPostfix]
-            public static void Lynians_RomanceSuccessChance_Patch(Pawn initiator, Pawn recipient, ref float __result)
-            {
-                if (__result > 0f)
-                {
-                    RaceProperties propsInitiator = RaceProperties.Get(initiator.def);
-                    RaceProperties propsRecipient = RaceProperties.Get(recipient.def);
-                    ///Both are non-Lynians, so just return
-                    if (propsInitiator == null && propsRecipient == null)
-                    {
-                        return;
-                    }
-                    ///Both are non-Lynians, so just return
-                    if (propsInitiator != null && !propsInitiator.isLynian && propsRecipient != null && !propsRecipient.isLynian)
-                    {
-                        return;
-                    }
-                    ///One is not a Lynian
-                    if (propsInitiator == null || !propsInitiator.isLynian || propsRecipient == null || !propsRecipient.isLynian)
-                    {
-                        __result = 0f;
-                    }
-                }
+                __result = false;
+                cantReason = "Mashed_Lynian_PurrserkerRageCantEquip".Translate(pawn.Name);
             }
         }
     }

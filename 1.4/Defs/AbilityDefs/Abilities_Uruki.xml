@@ -44,4 +44,26 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
+	<!-- ==========[Mashed_Lynian_LynianFarmingFurrenzy]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_SelfBuffBase">
+		<defName>Mashed_Lynian_LynianFarmingFurrenzyAbility</defName>
+		<label>farming furrenzy</label>
+		<description>Reach back through time, recollecting every piece of advice given to this Lynian about farming, enhancing their plant work speed beyond its normal limit in the process.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_FarmingFurrenzy</iconPath>
+		<groupDef>Mashed_Lynian_FelyneAbility</groupDef>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_FarmingFurrenzy</warmupMoteSocialSymbol>
+		<statBases>
+		  <Ability_Duration>250</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_LynianFarmingFurrenzy</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>
