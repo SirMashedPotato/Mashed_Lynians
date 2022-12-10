@@ -195,10 +195,10 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_FurrenzyActivations</defName>
 		<label>Furrever Furrenzied</label>
-		<description>Have a single Lynian enter furrenzies using abilities 50 times</description>
+		<description>Have a single Lynian enter furrenzies using abilities 25 times</description>
 		<tracker Class="AchievementsExpanded.RecordEventTracker">
 			<def>Mashed_Lynian_TimesFurrenzied</def>
-			<count>50</count>
+			<count>25</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_FurrenzyActivations</texPath>
 		<points>25</points>
@@ -263,10 +263,10 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_ShakalakaDancesDanced</defName>
 		<label>Meowster Dancer</label>
-		<description>Have a single Lynian dance Shakalaka dances 30 times</description>
+		<description>Have a single Lynian dance Shakalaka dances 50 times</description>
 		<tracker Class="AchievementsExpanded.RecordEventTracker">
 			<def>Mashed_Lynian_ShakalakaDancesDanced</def>
-			<count>30</count>
+			<count>50</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaDancesDanced</texPath>
 		<points>25</points>

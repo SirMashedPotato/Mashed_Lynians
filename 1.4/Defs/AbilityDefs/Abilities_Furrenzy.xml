@@ -7,7 +7,6 @@
 	<!-- ==========[Mashed_Lynian_LynianFurrenzyBase]==========-->
 	<AbilityDef ParentName="Mashed_Lynian_SelfBuffBase" Name="Mashed_Lynian_LynianFurrenzyBase" Abstract="True">
 		<groupDef>Mashed_Lynian_FurrenzyAbility</groupDef>
-		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
 		<statBases>
 			<Ability_Duration>250</Ability_Duration>
 		</statBases>

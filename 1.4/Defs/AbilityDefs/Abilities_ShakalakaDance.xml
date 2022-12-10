@@ -14,14 +14,13 @@
 		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<groupDef>Mashed_Lynian_ShakalakaDanceAbility</groupDef>
-		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
 		<warmupEffecter>Mashed_Lynian_ShakalakaDanceWarmup</warmupEffecter>
 		<statBases>
 			<Ability_EffectRadius>3.9</Ability_EffectRadius>
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>5</warmupTime>
+			<warmupTime>10</warmupTime>
 			<range>3.9</range>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>True</requireLineOfSight>
@@ -384,7 +383,7 @@
 	</AbilityDef>
 	<ThoughtDef>
 		<defName>Mashed_Lynian_ShakalakaDanceJoyfulBuff</defName>
-		<durationDays>1</durationDays>
+		<durationDays>0.5</durationDays>
 		<stackLimit>2</stackLimit>
 		<stackedEffectMultiplier>1</stackedEffectMultiplier>
 		<stages>

@@ -4,6 +4,18 @@
 	<EffecterDef>
 		<defName>Mashed_Lynian_ShakalakaDanceWarmup</defName>
 		<children>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>Drum_Music_1</soundDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>Drum_Music_3</soundDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>Drum_Music_5</soundDef>
+			</li>
 			<li>
 				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
 				<spawnLocType>OnTarget</spawnLocType>
