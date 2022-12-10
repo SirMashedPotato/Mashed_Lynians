@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Lynian_FelvineHigh]========== -->
 	<EffecterDef>
 		<defName>Mashed_Lynian_FelvineHigh</defName>
 		<children>
@@ -28,4 +29,35 @@
 			<attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
 		</mote>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_PurrserkerRage]========== -->
+	<!--
+	<EffecterDef>
+		<defName>Mashed_Lynian_PurrserkerRage</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.3~0.5</scale>
+				<chancePerTick>0.06</chancePerTick>
+				<positionRadius>0.3</positionRadius>
+				<moteDef>Mashed_Lynian_PurrserkerRageMote</moteDef>
+				<speed>0.25~0.25</speed>
+				<angle>10~80</angle>
+			</li>
+		</children>
+	</EffecterDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mashed_Lynian_PurrserkerRageMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/Mashed_Lynian_PurrserkerRageMote</texPath>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>1.5</solidTime>
+			<fadeOutTime>2</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 0.2)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+	-->
 </Defs>
