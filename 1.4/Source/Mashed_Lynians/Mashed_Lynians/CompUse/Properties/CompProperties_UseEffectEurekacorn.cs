@@ -12,5 +12,6 @@ namespace Mashed_Lynians
 
         public AbilityDef ability;
         public HediffDef hediff;
+        public bool fillHunger = false;
     }
 }

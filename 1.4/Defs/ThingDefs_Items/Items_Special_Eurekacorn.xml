@@ -61,6 +61,7 @@
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_PromoteGrowthAbility</ability>
+				<fillHunger>True</fillHunger>
 			</li>
 		</comps>
 		<tradeTags>
@@ -77,6 +78,7 @@
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_LynianCookingFurrenzyAbility</ability>
+				<fillHunger>True</fillHunger>
 			</li>
 		</comps>
 		<tradeTags>
@@ -93,6 +95,7 @@
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_LynianFarmingFurrenzyAbility</ability>
+				<fillHunger>True</fillHunger>
 			</li>
 		</comps>
 		<tradeTags>
@@ -109,6 +112,7 @@
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_LynianCleaningFurrenzyAbility</ability>
+				<fillHunger>True</fillHunger>
 			</li>
 		</comps>
 		<tradeTags>
@@ -126,6 +130,7 @@
 		<comps>
 			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
 				<ability>Mashed_Lynian_PurrserkerRage</ability>
+				<fillHunger>True</fillHunger>
 			</li>
 		</comps>
 		<tradeTags>

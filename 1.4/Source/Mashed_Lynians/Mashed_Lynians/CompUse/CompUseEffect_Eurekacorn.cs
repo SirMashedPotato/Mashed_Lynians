@@ -26,6 +26,14 @@ namespace Mashed_Lynians
 				usedBy.health.AddHediff(Props.hediff);
 				Messages.Message("Mashed_Lynian_EurekacornGainedHediff".Translate(usedBy.Name, Props.hediff.label), usedBy, MessageTypeDefOf.PositiveEvent);
 			}
+            if (Props.fillHunger)
+            {
+				Need hunger = usedBy.needs.TryGetNeed(NeedDefOf.Food);
+                if (hunger != null)
+                {
+					hunger.CurLevel = hunger.MaxLevel;
+                }
+            }
 		}
 
 		public override bool CanBeUsedBy(Pawn p, out string failReason)
