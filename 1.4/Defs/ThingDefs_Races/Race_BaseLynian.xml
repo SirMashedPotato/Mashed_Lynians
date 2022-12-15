@@ -224,7 +224,7 @@
 					<li>Mashed_Lynian_RangedWeapon_UrukiSlingshot</li>
 					<li>Mashed_Lynian_MeleeWeapon_AcornHammer</li>
 				</weaponList>
-				<!-- ==========[Biotech]========== -->
+				<!-- ==========[Biotech - Genes]========== -->
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
@@ -255,6 +255,19 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
 				</blackEndoCategories>
+				<!-- ==========[Biotech - Reproduction]========== -->
+				<canReproduce>True</canReproduce>
+				<canReproduceWithSelf>True</canReproduceWithSelf>
+				<onlyReproduceWithRestrictedRaces>True</onlyReproduceWithRestrictedRaces>
+				<reproductionList>
+					<li>Mashed_Lynian_BoaboaRace</li>
+					<li>Mashed_Lynian_FelyneRace</li>
+					<li>Mashed_Lynian_GajalakaRace</li>
+					<li>Mashed_Lynian_GrimalkyneRace</li>
+					<li>Mashed_Lynian_MelynxRace</li>
+					<li>Mashed_Lynian_ShakalakaRace</li>
+					<li>Mashed_Lynian_UrukiRace</li>
+				</reproductionList>
 			</raceRestriction>
 			<compatibility>
 				<isFlesh>true</isFlesh>
