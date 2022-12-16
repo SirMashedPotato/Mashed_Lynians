@@ -11,6 +11,7 @@
 					<li>Mashed_Lynian_DigAbility</li>
 					<li>Mashed_Lynian_PilferAbility</li>
 				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Melynx</hybridInheritedGene>
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>
@@ -110,6 +111,9 @@
 				<traitList>
 					<li>Mashed_Lynian_MelynxSneakyPaws</li>
 				</traitList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Melynx</li>
+				</blackGeneList>
 			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>

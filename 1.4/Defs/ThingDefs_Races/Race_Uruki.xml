@@ -10,6 +10,7 @@
 					<li>Mashed_Lynian_DigAbility</li>
 					<li>Mashed_Lynian_PromoteGrowthAbility</li>
 				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Uruki</hybridInheritedGene>
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>
@@ -332,6 +333,11 @@
 				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/</head>
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
 			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Uruki</li>
+				</blackGeneList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

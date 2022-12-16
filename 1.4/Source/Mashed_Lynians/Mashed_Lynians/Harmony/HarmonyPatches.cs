@@ -101,129 +101,131 @@ namespace Mashed_Lynians
                 }
             }
         }
+    }
 
-        /// <summary>
-        /// Recolours specific apparel using colorGenerator when crafted.
-        /// </summary>
-        [HarmonyPatch(typeof(GenRecipe))]
-        [HarmonyPatch("PostProcessProduct")]
-        public static class GenRecipe_PostProcessProduct_Patch
+
+    /// <summary>
+    /// Recolours specific apparel using colorGenerator when crafted.
+    /// </summary>
+    [HarmonyPatch(typeof(GenRecipe))]
+    [HarmonyPatch("PostProcessProduct")]
+    public static class GenRecipe_PostProcessProduct_Patch
+    {
+        [HarmonyPostfix]
+        public static void LyniansPatch(Thing __result)
         {
-            [HarmonyPostfix]
-            public static void LyniansPatch(Thing __result)
+            ApparelProperties props = ApparelProperties.Get(__result.def);
+            if (props != null && props.overrideColour)
             {
-                ApparelProperties props = ApparelProperties.Get(__result.def);
-                if (props != null && props.overrideColour)
+                if (__result.def.colorGenerator != null)
                 {
-                    if (__result.def.colorGenerator != null)
+                    CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Recolours specific apparel using colorGenerator.
+    /// Covers most cases, apart from crafting
+    /// </summary>
+    [HarmonyPatch(typeof(ThingMaker))]
+    [HarmonyPatch("MakeThing")]
+    public static class ThingMaker_MakeThing_Patch
+    {
+        [HarmonyPostfix]
+        public static void LyniansPatch(Thing __result)
+        {
+            ApparelProperties props = ApparelProperties.Get(__result.def);
+            if (props != null && props.overrideColour)
+            {
+                if (__result.def.colorGenerator != null)
+                {
+                    CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Replaces the man in black pawnkind
+    /// </summary>
+    [HarmonyPatch(typeof(PawnGenerator))]
+    [HarmonyPatch("GeneratePawn")]
+    [HarmonyPatch(new Type[] { typeof(PawnGenerationRequest) })]
+    public static class PawnGenerator_GeneratePawn_Patch
+    {
+        [HarmonyPrefix]
+        public static void Lynians_ManInBlack_Patch(ref PawnGenerationRequest request)
+        {
+            if (request.Faction != null)
+            {
+                FactionProperties props = FactionProperties.Get(request.Faction.def);
+                if (props != null && props.manInBlackReplacer != null && request.KindDef == PawnKindDef.Named("StrangerInBlack"))
+                {
+                    request.KindDef = props.manInBlackReplacer;
+                }
+            }
+
+        }
+    }
+
+    /// <summary>
+    /// Doubles the specific stats for pawns affected by specific hediffs
+    /// Also allows an increase beyond the normal limits
+    /// Should probably sort out something so it's not hardcoded as fuck
+    /// </summary>
+    [HarmonyPatch(typeof(StatExtension))]
+    [HarmonyPatch("GetStatValue")]
+    public static class StatExtension_GetStatValue_Patch
+    {
+        [HarmonyPostfix]
+        public static void Lynians_CookingFrurrenzy_Patch(Thing thing, StatDef stat, ref float __result)
+        {
+            if (thing is Pawn p && p.RaceProps.Humanlike)
+            {
+                if (stat == StatDefOf.CookSpeed)
+                {
+                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null)
                     {
-                        CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
+                        __result *= 2f;
+                        return;
+                    }
+                }
+                if (stat == RimWorld.StatDefOf.PlantWorkSpeed)
+                {
+                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFarmingFurrenzy) != null)
+                    {
+                        __result *= 2f;
+                        return;
+                    }
+                }
+                if (stat == RimWorld.StatDefOf.CleaningSpeed)
+                {
+                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCleaningFurrenzy) != null)
+                    {
+                        __result *= 2f;
+                        return;
                     }
                 }
             }
         }
+    }
 
-        /// <summary>
-        /// Recolours specific apparel using colorGenerator.
-        /// Covers most cases, apart from crafting
-        /// </summary>
-        [HarmonyPatch(typeof(ThingMaker))]
-        [HarmonyPatch("MakeThing")]
-        public static class ThingMaker_MakeThing_Patch
+    /// <summary>
+    /// Makes it so that custom pawnKinds can be sold as 'slaves'
+    /// </summary>
+    [HarmonyPatch(typeof(TraderCaravanUtility))]
+    [HarmonyPatch("GetTraderCaravanRole")]
+    public static class TraderCaravanUtility_GetTraderCaravanRole_Patch
+    {
+        [HarmonyPostfix]
+        public static void Lynians_GetTraderCaravanRole_Patch(Pawn p, ref TraderCaravanRole __result)
         {
-            [HarmonyPostfix]
-            public static void LyniansPatch(Thing __result)
+            PawnKindProperties props = PawnKindProperties.Get(p.kindDef);
+            if (props != null && props.purchasableFromTrader)
             {
-                ApparelProperties props = ApparelProperties.Get(__result.def);
-                if (props != null && props.overrideColour)
-                {
-                    if (__result.def.colorGenerator != null)
-                    {
-                        CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// Replaces the man in black pawnkind
-        /// </summary>
-        [HarmonyPatch(typeof(PawnGenerator))]
-        [HarmonyPatch("GeneratePawn")]
-        [HarmonyPatch(new Type[] { typeof(PawnGenerationRequest) })]
-        public static class PawnGenerator_GeneratePawn_Patch
-        {
-            [HarmonyPrefix]
-            public static void Lynians_ManInBlack_Patch(ref PawnGenerationRequest request)
-            {
-                if (request.Faction != null)
-                {
-                    FactionProperties props = FactionProperties.Get(request.Faction.def);
-                    if (props != null && props.manInBlackReplacer != null && request.KindDef == PawnKindDef.Named("StrangerInBlack"))
-                    {
-                        request.KindDef = props.manInBlackReplacer;
-                    }
-                }
-
-            }
-        }
-
-        /// <summary>
-        /// Doubles the specific stats for pawns affected by specific hediffs
-        /// Also allows an increase beyond the normal limits
-        /// </summary>
-        [HarmonyPatch(typeof(StatExtension))]
-        [HarmonyPatch("GetStatValue")]
-        public static class StatExtension_GetStatValue_Patch
-        {
-            [HarmonyPostfix]
-            public static void Lynians_CookingFrurrenzy_Patch(Thing thing, StatDef stat, ref float __result)
-            {
-                if (thing is Pawn p && p.RaceProps.Humanlike)
-                {
-                    if (stat == StatDefOf.CookSpeed)
-                    {
-                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCookingFurrenzy) != null)
-                        {
-                            __result *= 2f;
-                            return;
-                        }
-                    }
-                    if (stat == RimWorld.StatDefOf.PlantWorkSpeed)
-                    {
-                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFarmingFurrenzy) != null)
-                        {
-                            __result *= 2f;
-                            return;
-                        }
-                    }
-                    if (stat == RimWorld.StatDefOf.CleaningSpeed)
-                    {
-                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianCleaningFurrenzy) != null)
-                        {
-                            __result *= 2f;
-                            return;
-                        }
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// Makes it so that custom pawnKinds can be sold as 'slaves'
-        /// </summary>
-        [HarmonyPatch(typeof(TraderCaravanUtility))]
-        [HarmonyPatch("GetTraderCaravanRole")]
-        public static class TraderCaravanUtility_GetTraderCaravanRole_Patch
-        {
-            [HarmonyPostfix]
-            public static void Lynians_GetTraderCaravanRole_Patch(Pawn p, ref TraderCaravanRole __result)
-            {
-                PawnKindProperties props = PawnKindProperties.Get(p.kindDef);
-                if (props != null && props.purchasableFromTrader)
-                {
-                    __result = TraderCaravanRole.Chattel;
-                }
+                __result = TraderCaravanRole.Chattel;
             }
         }
     }

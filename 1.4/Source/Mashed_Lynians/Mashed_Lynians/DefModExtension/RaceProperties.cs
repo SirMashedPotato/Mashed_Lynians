@@ -12,6 +12,7 @@ namespace Mashed_Lynians
         public List<AbilityDef> abilitiesToAdd;
         public List<AbilityDef> oneOfRandomAbility;
         public float oneOfRandomChance = 1f;
+        public GeneDef hybridInheritedGene;
 
         public static RaceProperties Get(Def def)
         {

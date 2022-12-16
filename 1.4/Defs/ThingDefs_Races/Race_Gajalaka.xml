@@ -9,6 +9,7 @@
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>
 				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Gajalaka</hybridInheritedGene>
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>
@@ -82,6 +83,11 @@
 				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Gajalaka/</body>
 			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Gajalaka</li>
+				</blackGeneList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

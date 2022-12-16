@@ -10,6 +10,7 @@
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>
 				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Felyne</hybridInheritedGene>
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>
@@ -114,6 +115,11 @@
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
 				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
 			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Felyne</li>
+				</blackGeneList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

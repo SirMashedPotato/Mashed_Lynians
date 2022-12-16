@@ -10,6 +10,7 @@
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>
 				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Grimalkyne</hybridInheritedGene>
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>
@@ -200,6 +201,11 @@
 					</bodytypeGraphics>
 				</bodyMasks>
 			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Grimalkyne</li>
+				</blackGeneList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
