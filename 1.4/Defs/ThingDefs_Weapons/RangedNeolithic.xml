@@ -34,6 +34,7 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
+		<relicChance>0</relicChance>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_Boomerang]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase">

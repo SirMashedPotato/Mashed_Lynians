@@ -29,6 +29,7 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
+		<relicChance>0</relicChance>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_MeleeWeapon_PawClub]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase">

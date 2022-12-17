@@ -32,6 +32,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
+		<relicChance>0</relicChance>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Weapon_ExplosiveBase">
