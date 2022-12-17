@@ -134,7 +134,7 @@
 			<graphicPaths>
 				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Boaboa/</head>
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
-				<!--<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Fur/FurSwaddle_Child</swaddle>-->
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Fur/FurSwaddle_Child</swaddle>
 			</graphicPaths>
 			<raceRestriction>
 				<blackGeneList>

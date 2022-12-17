@@ -82,6 +82,7 @@
 			<graphicPaths>
 				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Gajalaka/</body>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Straw/StrawSwaddle_Child</swaddle>
 			</graphicPaths>
 			<raceRestriction>
 				<blackGeneList>
