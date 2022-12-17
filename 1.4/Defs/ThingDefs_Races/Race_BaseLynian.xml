@@ -365,7 +365,6 @@
 						<li>Thin</li>
 					</bodyTypes>
 					<bodyAddons>
-						<!-- https://github.com/erdelf/AlienRaces/wiki/Body-Addons -->
 						<!-- =====[Eye right]===== -->
 						<li>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Mashed_FelyneEye_Right</path>
@@ -394,6 +393,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Eye left]===== -->
 						<li>
@@ -424,6 +424,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Tail]===== -->
 						<li>
@@ -462,6 +463,7 @@
 									</bodyTypes>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -509,6 +511,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
@@ -542,6 +545,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -656,6 +660,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Eye left]===== -->
 						<li>
@@ -687,6 +692,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -730,6 +736,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
@@ -763,6 +770,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>

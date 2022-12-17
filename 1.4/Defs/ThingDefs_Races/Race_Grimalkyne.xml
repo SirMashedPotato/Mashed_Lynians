@@ -123,6 +123,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
@@ -155,6 +156,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 						<!-- =====[Mane]===== -->
 						<li>
@@ -185,6 +187,7 @@
 									<layerOffset>-0.28</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>

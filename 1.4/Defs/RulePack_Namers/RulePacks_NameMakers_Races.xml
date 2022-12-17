@@ -8,6 +8,7 @@
 				<li>MogaFarmName->Mashed_Lynians/Lynians_CatLikeNames_Farm</li>
 				<li>BhernaRanchNames->Mashed_Lynians/Lynians_CatLikeNames_Ranch</li>
 				<li>KamuraPlazaNames->Mashed_Lynians/Lynians_CatLikeNames_Plaza</li>
+				<li>CatLikeSpecial->Mashed_Lynians/Lynians_CatLikeNames_Special</li>
 				<!-- Generic -->
 				<li>FlowerNames->Mashed_Lynians/Lynians_UrukiNames_Flowers</li>
 				<li>SucculentNames->Mashed_Lynians/Lynians_UrukiNames_Succulents</li>
@@ -26,6 +27,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
+				<li>name(p=0.01)->[CatLikeSpecial]</li>
 				<li>name(p=0.5)->[MogaFarmName]</li>
 				<li>name(p=0.5)->[BhernaRanchNames]</li>
 				<li>name(p=0.5)->[KamuraPlazaNames]</li>
@@ -47,6 +49,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
+				<li>name(p=0.01)->[CatLikeSpecial]</li>
 				<li>name(p=0.5)->[MogaFarmName]</li>
 				<li>name(p=0.5)->[BhernaRanchNames]</li>
 				<li>name(p=0.5)->[KamuraPlazaNames]</li>

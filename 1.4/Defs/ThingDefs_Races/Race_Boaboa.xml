@@ -126,6 +126,7 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
+							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
