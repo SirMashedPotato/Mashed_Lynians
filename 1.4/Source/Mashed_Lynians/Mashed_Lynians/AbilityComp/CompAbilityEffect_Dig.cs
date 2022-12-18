@@ -9,20 +9,27 @@ namespace Mashed_Lynians
         {
             get
             {
-                return (CompProperties_Dig)this.props;
+                return (CompProperties_Dig)props;
             }
         }
 
         public override bool GizmoDisabled(out string reason)
         {
-            Pawn p = this.parent.pawn;
-            SkillRecord skill = p.skills.GetSkill(SkillDefOf.Mining);
-            if (skill.Level < Props.requiredLevel)
+            
+            if (!HighEnoughSkill())
             {
-                reason = "Mashed_Lynian_AbilitySkillTooLow".Translate(skill.def.label, Props.requiredLevel);
+                reason = "Mashed_Lynian_AbilitySkillTooLow".Translate(SkillDefOf.Mining.label, Props.requiredLevel);
                 return true;
             }
             return base.GizmoDisabled(out reason);
+        }
+
+        public override bool CanCast => base.CanCast && HighEnoughSkill();
+
+        private bool HighEnoughSkill()
+        {
+            SkillRecord skill = parent.pawn.skills.GetSkill(SkillDefOf.Mining);
+            return skill.Level < Props.requiredLevel;
         }
 
     }

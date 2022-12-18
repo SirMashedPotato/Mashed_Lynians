@@ -35,5 +35,6 @@
 				<canTargetBuildings>false</canTargetBuildings>
 			</targetParams>
 		</verbProperties>
+		<jobDef>CastJump</jobDef>
 	</AbilityDef>
 </Defs>

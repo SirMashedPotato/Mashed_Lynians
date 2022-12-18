@@ -32,4 +32,46 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
+	<!-- ==========[Mashed_Lynian_LynianAbilities_Escape]==========-->
+	<!-- 
+		Patched into:
+			- ThinkTreeDef Humanlike
+	-->
+	<ThinkTreeDef>
+		<defName>Mashed_Lynian_LynianAbilities_Escape</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalColonist">
+					<invert>true</invert>
+					<subNodes>
+						<!-- Mashed_Lynian_LynianFiringFurrenzyAbility -->
+						<li Class="ThinkNode_ConditionalHasAbility">
+							<ability>Mashed_Lynian_DigAbility</ability>
+							<subNodes>
+								<li Class="ThinkNode_ConditionalTotalDamage">
+									<thresholdPercent>0.25</thresholdPercent>
+									<subNodes>
+										<li Class="ThinkNode_HarmedRecently">
+											<thresholdTicks>120</thresholdTicks>
+											<subNodes>
+												<li Class="ThinkNodeConditional_UnderCombatPressure">
+													<maxThreatDistance>2</maxThreatDistance>
+													<minCloseTargets>2</minCloseTargets>
+													<subNodes>
+														<li Class="JobGiver_AIJumpEscapeEnemies">
+															<ability>Mashed_Lynian_DigAbility</ability>
+														</li>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
 </Defs>
