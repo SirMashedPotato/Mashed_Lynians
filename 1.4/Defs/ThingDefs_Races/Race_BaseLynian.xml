@@ -65,6 +65,10 @@
 					<def>HumanlikeBaby</def>
 					<minAge>0</minAge>
 				</li>
+				<li MayRequire="cyanobot.toddlers">
+					<def>HumanlikeToddler</def>
+					<minAge>1</minAge>
+				</li>
 				<li>
 					<def>HumanlikeChild</def>
 					<minAge>3</minAge>
