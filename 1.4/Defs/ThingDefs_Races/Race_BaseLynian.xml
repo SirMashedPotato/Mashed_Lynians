@@ -450,6 +450,7 @@
 									<bodyTypes>
 										<Thin>(0,0)</Thin>
 										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
 									</bodyTypes>
 								</south>
 								<north>
@@ -457,6 +458,7 @@
 									<bodyTypes>
 										<Thin>(0,0)</Thin>
 										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0.07)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0.07)</Baby>
 									</bodyTypes>
 								</north>
 								<east>
@@ -464,6 +466,7 @@
 									<bodyTypes>
 										<Thin>(0,0)</Thin>
 										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0.06)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0.06)</Baby>
 									</bodyTypes>
 								</east>
 							</offsets>
