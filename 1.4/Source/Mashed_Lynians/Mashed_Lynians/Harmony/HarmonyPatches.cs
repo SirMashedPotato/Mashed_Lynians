@@ -208,6 +208,14 @@ namespace Mashed_Lynians
                         return;
                     }
                 }
+                if (stat == RimWorld.StatDefOf.AimingDelayFactor)
+                {
+                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFiringFurrenzy) != null)
+                    {
+                        __result /= 2f;
+                        return;
+                    }
+                }
             }
         }
     }

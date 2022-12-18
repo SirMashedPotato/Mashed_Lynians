@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_LynianAbilities_Aggressive]==========-->
+	<!-- 
+		Patched into:
+			- DutyDef AssaultColony
+			- DutyDef AssaultThing
+	-->
+	<ThinkTreeDef>
+		<defName>Mashed_Lynian_LynianAbilities_Aggressive</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalColonist">
+					<invert>true</invert>
+					<subNodes>
+						<!-- Mashed_Lynian_LynianFiringFurrenzyAbility -->
+						<li Class="ThinkNode_ConditionalHasAbility">
+							<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>
+							<subNodes>
+								<li Class="ThinkNodeConditional_HashIntervalTick">
+									<interval>65</interval>
+									<subNodes>
+										<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
+											<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

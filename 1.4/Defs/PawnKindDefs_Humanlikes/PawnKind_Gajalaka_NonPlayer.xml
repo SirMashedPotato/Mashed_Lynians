@@ -102,12 +102,15 @@
 	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
 		<defName>Mashed_Lynian_GajalakaGunner</defName>
 		<label>gunner</label>
-		<combatPower>85</combatPower>
+		<combatPower>100</combatPower>
 		<apparelMoney>200~550</apparelMoney>
 		<weaponMoney>400~500</weaponMoney>
 		<weaponTags>
 			<li>Mashed_Lynian_GajalakaTribalDestructiveSpecial</li>
 		</weaponTags>
+		<abilities>
+			<li>Mashed_Lynian_LynianFiringFurrenzyAbility</li>
+		</abilities>
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
@@ -139,9 +142,13 @@
 	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase">
 		<defName>Mashed_Lynian_GajalakaChiefRanged</defName>
 		<label>gunner chief</label>
+		<combatPower>100</combatPower>
 		<weaponTags>
 			<li>Mashed_Lynian_GajalakaTribalDestructiveSpecial</li>
 		</weaponTags>
+		<abilities>
+			<li>Mashed_Lynian_LynianFiringFurrenzyAbility</li>
+		</abilities>
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/DutyDef[defName="AssaultColony"]/thinkNode[@Class="ThinkNode_Priority"]/subNodes/li[@Class="JobGiver_AIFightEnemies"]</xpath>
+		<value>
+			<li Class="ThinkNode_Subtree">
+				<treeDef>Mashed_Lynian_LynianAbilities_Aggressive</treeDef>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/DutyDef[defName="AssaultThing"]/thinkNode[@Class="ThinkNode_Priority"]/subNodes/li[@Class="JobGiver_AIFightEnemies"]</xpath>
+		<value>
+			<li Class="ThinkNode_Subtree">
+				<treeDef>Mashed_Lynian_LynianAbilities_Aggressive</treeDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>
