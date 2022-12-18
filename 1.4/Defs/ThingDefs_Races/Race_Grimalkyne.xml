@@ -196,6 +196,7 @@
 				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Grimalkyne/</body>
 				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Woven/WovenSwaddle_Child</swaddle>
 				<bodyMasks>
 					<bodytypeGraphics>
 						<Thin>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneBodyMask</Thin>

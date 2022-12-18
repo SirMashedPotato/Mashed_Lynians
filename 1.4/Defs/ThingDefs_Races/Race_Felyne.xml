@@ -114,6 +114,7 @@
 				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
 				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
 				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Woven/WovenSwaddle_Child</swaddle>
 			</graphicPaths>
 			<raceRestriction>
 				<blackGeneList>
