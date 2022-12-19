@@ -27,4 +27,18 @@
 			<li>Mashed_Lynian_FelyneStart</li>
 		</startingTechprintsResearchTags>
 	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_FelynePlayerGuild</defName>
+		<label>New Felyne Guild</label>
+		<description>A small Felyne guild.</description>
+		<basicMemberKind>Mashed_Lynian_FelyneTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_FelyneSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_FelyneStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_FelyneStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
 </Defs>

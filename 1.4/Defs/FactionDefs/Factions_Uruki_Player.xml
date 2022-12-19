@@ -27,4 +27,18 @@
 			<li>Mashed_Lynian_UrukiStart</li>
 		</startingTechprintsResearchTags>
 	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_UrukiPlayerGuild</defName>
+		<label>New Uruki Guild</label>
+		<description>A small Uruki guild.</description>
+		<basicMemberKind>Mashed_Lynian_UrukiTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_UrukiSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
 </Defs>

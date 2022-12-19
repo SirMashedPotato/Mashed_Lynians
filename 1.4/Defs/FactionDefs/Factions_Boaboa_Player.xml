@@ -37,4 +37,28 @@
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_BoaboaPlayerGuild</defName>
+		<label>New Boaboa Guild</label>
+		<description>A small Boaboa guild.</description>
+		<basicMemberKind>Mashed_Lynian_BoaboaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_BoaboaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Wolf</li>
+				<li>Leather_Panthera</li>
+				<li>Leather_Bluefur</li>
+				<li>Leather_Bear</li>
+				<li>Leather_Fox</li>
+				<li>Leather_Heavy</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
 </Defs>

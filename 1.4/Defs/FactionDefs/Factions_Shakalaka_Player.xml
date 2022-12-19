@@ -35,4 +35,26 @@
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_ShakalakaPlayerGuild</defName>
+		<label>New Shakalaka Guild</label>
+		<description>A small Shakalaka guild.</description>
+		<basicMemberKind>Mashed_Lynian_ShakalakaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
 </Defs>

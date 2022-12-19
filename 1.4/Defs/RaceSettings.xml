@@ -90,6 +90,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_FelynePlayerTribe</li>
+						<li>Mashed_Lynian_FelynePlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Felyne colony]==========-->
@@ -124,6 +125,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_MelynxPlayerTribe</li>
+						<li>Mashed_Lynian_MelynxPlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Melynx colony]==========-->
@@ -215,6 +217,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_FelynePlayerTribe</li>
+						<li>Mashed_Lynian_FelynePlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Felyne colony]==========-->
@@ -269,6 +272,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_MelynxPlayerTribe</li>
+						<li>Mashed_Lynian_MelynxPlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Melynx colony]==========-->
@@ -323,6 +327,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_GrimalkynePlayerTribe</li>
+						<li>Mashed_Lynian_GrimalkynePlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Grimalkyne colony]==========-->
@@ -364,6 +369,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_BoaboaPlayerTribe</li>
+						<li>Mashed_Lynian_BoaboaPlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Boaboa colony]==========-->
@@ -392,6 +398,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_GajalakaPlayerTribe</li>
+						<li>Mashed_Lynian_GajalakaPlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Gajalaka colony]==========-->
@@ -420,6 +427,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_ShakalakaPlayerTribe</li>
+						<li>Mashed_Lynian_ShakalakaPlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Shakalaka colony]==========-->
@@ -448,6 +456,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>Mashed_Lynian_UrukiPlayerTribe</li>
+						<li>Mashed_Lynian_UrukiPlayerGuild</li>
 					</factionDefs>
 				</li>
 				<!-- ==========[Lynians Uruki colony]==========-->

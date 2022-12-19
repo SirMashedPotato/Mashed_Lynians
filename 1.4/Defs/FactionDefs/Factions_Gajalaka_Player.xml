@@ -38,4 +38,29 @@
 			</thingDefs>
 		</apparelStuffFilter>
 	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_GajalakaPlayerGuild</defName>
+		<label>New Gajalaka Guild</label>
+		<description>A small Gajalaka guild.</description>
+		<basicMemberKind>Mashed_Lynian_GajalakaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_GajalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksGranite</li>
+				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
 </Defs>

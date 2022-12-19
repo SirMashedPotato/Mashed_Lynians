@@ -27,4 +27,18 @@
 			<li>Mashed_Lynian_MelynxStart</li>
 		</startingTechprintsResearchTags>
 	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_MelynxPlayerGuild</defName>
+		<label>New Melynx Guild</label>
+		<description>A small Melynx guild.</description>
+		<basicMemberKind>Mashed_Lynian_MelynxTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
 </Defs>
