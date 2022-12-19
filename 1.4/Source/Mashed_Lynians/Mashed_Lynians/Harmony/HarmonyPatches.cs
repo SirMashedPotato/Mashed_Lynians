@@ -4,6 +4,7 @@ using Verse;
 using System.Reflection;
 using RimWorld;
 using System;
+using UnityEngine;
 
 namespace Mashed_Lynians
 {
@@ -235,6 +236,44 @@ namespace Mashed_Lynians
             {
                 __result = TraderCaravanRole.Chattel;
             }
+        }
+    }
+
+    /// <summary>
+    /// Overrides the gizmo for the ultimate masks shield
+    /// </summary>
+    [HarmonyPatch(typeof(Gizmo_EnergyShieldStatus))]
+    [HarmonyPatch("GizmoOnGUI")]
+    public static class Gizmo_EnergyShieldStatuse_GizmoOnGUI_Patch
+    {
+        public static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.4f, 0.3f, 0f));
+        public static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
+
+        [HarmonyPrefix]
+        public static bool Lynians_UltimateMaskGizmoOnGUI_Patch(Vector2 topLeft, float maxWidth, GizmoRenderParms parms, ref CompShield ___shield, ref Gizmo_EnergyShieldStatus __instance, ref GizmoResult __result)
+        {
+            if (___shield is  Comp_UltimateMaskShield maskComp)
+            {
+                Rect rect = new Rect(topLeft.x, topLeft.y, __instance.GetWidth(maxWidth), 75f);
+                Rect rect2 = rect.ContractedBy(6f);
+                Widgets.DrawWindowBackground(rect);
+                Rect rect3 = rect2;
+                rect3.height = rect.height / 2f;
+                Text.Font = GameFont.Tiny;
+                Widgets.Label(rect3, __instance.shield.IsApparel ? __instance.shield.parent.LabelCap : "ShieldInbuilt".Translate().Resolve());
+                Rect rect4 = rect2;
+                rect4.yMin = rect2.y + rect2.height / 2f;
+                float fillPercent = __instance.shield.Energy / Mathf.Max(1f, __instance.shield.parent.GetStatValue(RimWorld.StatDefOf.EnergyShieldEnergyMax, true, -1));
+                Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, false);
+                Text.Font = GameFont.Small;
+                Text.Anchor = TextAnchor.MiddleCenter;
+                Widgets.Label(rect4, (__instance.shield.Energy * 100f).ToString("F0") + " / " + (__instance.shield.parent.GetStatValue(RimWorld.StatDefOf.EnergyShieldEnergyMax, true, -1) * 100f).ToString("F0"));
+                Text.Anchor = TextAnchor.UpperLeft;
+                TooltipHandler.TipRegion(rect2, maskComp.Props.tooltip);
+                __result = new GizmoResult(GizmoState.Clear);
+                return false;
+            }
+            return true;
         }
     }
 

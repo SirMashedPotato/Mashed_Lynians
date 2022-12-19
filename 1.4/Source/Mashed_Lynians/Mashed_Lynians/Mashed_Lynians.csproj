@@ -122,9 +122,9 @@
     <Compile Include="StockGenerator\StockGenerator_Palicoes.cs" />
     <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
-    <Compile Include="ThingClass\Gizmo_UltimateMaskStatus.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
-    <Compile Include="ThingClass\UltimateMask.cs" />
+    <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
     <Compile Include="ThoughtWorker\Ideo\MaskThoughtUtility.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
     <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_BoaboaThought.cs" />

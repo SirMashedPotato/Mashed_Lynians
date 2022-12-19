@@ -5,7 +5,6 @@
 		<defName>Mashed_Lynian_Apparel_UltimateMask</defName>
 		<label>Ultimate Mask</label>
 		<description>An unusual mask, of unknown origin. Some Lynian cultures believe it was blessed by a god, others created by the Archotechs. All that is certain, is that it truly is the Ultimate Mask.\n\nIt is believed this mask greatly empowers the wearer, though one must be careful of the cost such a power holds.</description>
-		<thingClass>Mashed_Lynians.UltimateMask</thingClass>
 		<tickerType>Normal</tickerType>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
@@ -19,6 +18,13 @@
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>2000</ticksPerHeal>
 				<!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_UltimateMaskShield">
+				<minDrawSize>0.5</minDrawSize>
+				<maxDrawSize>1.5</maxDrawSize>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<texPath>Other/Mashed_UltimateMaskShield</texPath>
+				<tooltip>An impenetrable barrier projected by the Ultimate Mask, protecting it's wearer from almost all damage. Each hit absorbed reduces the strength of the shield, and once shattered, it will need time to recharge.</tooltip>
 			</li>
 		</comps>
 		<techLevel>Neolithic</techLevel>
