@@ -246,8 +246,12 @@ namespace Mashed_Lynians
     [HarmonyPatch("GizmoOnGUI")]
     public static class Gizmo_EnergyShieldStatuse_GizmoOnGUI_Patch
     {
-        public static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.4f, 0.3f, 0f));
-        public static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
+        [StaticConstructorOnStartup]
+        public static class ShieldBars
+        {
+            public static Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.4f, 0.3f, 0f));
+            public static Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
+        }
 
         [HarmonyPrefix]
         public static bool Lynians_UltimateMaskGizmoOnGUI_Patch(Vector2 topLeft, float maxWidth, GizmoRenderParms parms, ref CompShield ___shield, ref Gizmo_EnergyShieldStatus __instance, ref GizmoResult __result)
@@ -264,7 +268,7 @@ namespace Mashed_Lynians
                 Rect rect4 = rect2;
                 rect4.yMin = rect2.y + rect2.height / 2f;
                 float fillPercent = __instance.shield.Energy / Mathf.Max(1f, __instance.shield.parent.GetStatValue(RimWorld.StatDefOf.EnergyShieldEnergyMax, true, -1));
-                Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, false);
+                Widgets.FillableBar(rect4, fillPercent, ShieldBars.FullShieldBarTex, ShieldBars.EmptyShieldBarTex, false);
                 Text.Font = GameFont.Small;
                 Text.Anchor = TextAnchor.MiddleCenter;
                 Widgets.Label(rect4, (__instance.shield.Energy * 100f).ToString("F0") + " / " + (__instance.shield.parent.GetStatValue(RimWorld.StatDefOf.EnergyShieldEnergyMax, true, -1) * 100f).ToString("F0"));
