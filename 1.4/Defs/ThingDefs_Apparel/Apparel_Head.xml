@@ -746,4 +746,65 @@
 			<li>Mashed_Lynian_LynianFarm</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaFluffyMask]========== -->
+	<!--
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaFluffyMask</defName>
+		<label>Shakalaka fluffy mask</label>
+		<description>A very fluffy mask, typically worn by young Shakalaka. Specially designed for Lynians, opens the mind to the unseen, but makes the wearer soft and squishy.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<isShakalakaMask>true</isShakalakaMask>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaFluffyMask/Mashed_ShakalakaFluffyMask_Item</texPath>
+			<drawSize>0.9</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>1.5</PsychicSensitivity>
+			<IncomingDamageFactor>0.25</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaFluffyMask/Mashed_ShakalakaFluffyMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
+	</ThingDef>
+	-->
 </Defs>
