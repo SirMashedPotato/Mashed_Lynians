@@ -136,6 +136,9 @@
 			<li>Mashed_Lynian_Apparel_PurrserkerArmour</li>
 			<li>Mashed_Lynian_Apparel_PurrserkerBackPack</li>
 		</apparelRequired>
+		<abilities>
+			<li>Mashed_Lynian_PurrserkerRageAbility</li>
+		</abilities>
 		<weaponMoney>500~1000</weaponMoney>
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>19~30</initialResistanceRange>

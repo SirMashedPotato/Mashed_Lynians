@@ -15,10 +15,8 @@ namespace Mashed_Lynians
         {
             var harmony = new Harmony("com.Mashed_Lynians");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            /*
             harmony.Patch(AccessTools.Method(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip), new[] { typeof(Thing), typeof(Pawn), typeof(string).MakeByRefType(), typeof(bool) }), 
                 postfix: new HarmonyMethod(typeof(EquipmentUtility_CanEquip_Patch), nameof(EquipmentUtility_CanEquip_Patch.CanEquip_PurrserkerRage_PostFix)));
-            */
         }
     }
 
@@ -284,7 +282,6 @@ namespace Mashed_Lynians
     /// <summary>
     /// Prevents Lynians in a purrserker rage from equipping weapons
     /// </summary>
-    /*
     public static class EquipmentUtility_CanEquip_Patch
     {
         public static void CanEquip_PurrserkerRage_PostFix(Thing thing, Pawn pawn, ref string cantReason, ref bool __result)
@@ -300,5 +297,4 @@ namespace Mashed_Lynians
             }
         }
     }
-    */
 }

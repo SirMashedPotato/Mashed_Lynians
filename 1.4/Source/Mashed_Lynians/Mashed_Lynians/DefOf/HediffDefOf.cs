@@ -20,5 +20,6 @@ namespace Mashed_Lynians
 		public static HediffDef Mashed_Lynian_LynianFarmingFurrenzy;
 		public static HediffDef Mashed_Lynian_LynianCleaningFurrenzy;
 		public static HediffDef Mashed_Lynian_LynianFiringFurrenzy;
+		public static HediffDef Mashed_Lynian_PurrserkerRage;
 	}
 }
