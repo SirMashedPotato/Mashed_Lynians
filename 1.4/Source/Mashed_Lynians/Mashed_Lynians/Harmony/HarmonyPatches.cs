@@ -49,7 +49,7 @@ namespace Mashed_Lynians
                         pawn.abilities.GainAbility(ad);
                     }
                 }
-                if (!props.oneOfRandomAbility.NullOrEmpty() && Rand.Chance(props.oneOfRandomChance))
+                if (!props.oneOfRandomAbility.NullOrEmpty() && (Rand.Chance(props.oneOfRandomChance) || pawn.kindDef == PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer))
                 {
                     pawn.abilities.GainAbility(props.oneOfRandomAbility.RandomElement());
                 }
