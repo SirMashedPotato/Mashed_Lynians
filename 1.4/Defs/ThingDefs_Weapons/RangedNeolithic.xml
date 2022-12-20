@@ -18,8 +18,9 @@
 			<AccuracyLong>0.32</AccuracyLong>
 			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
 		</statBases>
-		<weaponClasses>
+		<weaponClasses Inherit="False">
 			<li>Ranged</li>
+			<li>Mashed_Lynian_WeaponLynian</li>
 		</weaponClasses>
 		<recipeMaker>
 			<recipeUsers Inherit="False">

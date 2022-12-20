@@ -5,7 +5,7 @@
 		<techLevel>Neolithic</techLevel>
 		<weaponClasses>
 			<li>Ranged</li>
-			<li>Neolithic</li>
+			<li>Mashed_Lynian_WeaponLynian</li>
 		</weaponClasses>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>

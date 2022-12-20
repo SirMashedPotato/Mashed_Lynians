@@ -4,7 +4,7 @@
 	<ThingDef Name="Mashed_Lynian_Weapon_TribalMeleeBase" ParentName="BaseMeleeWeapon" Abstract="True">
 		<techLevel>Neolithic</techLevel>
 		<weaponClasses>
-			<li>Neolithic</li>
+			<li>Mashed_Lynian_WeaponLynian</li>
 		</weaponClasses>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<graphicData>
