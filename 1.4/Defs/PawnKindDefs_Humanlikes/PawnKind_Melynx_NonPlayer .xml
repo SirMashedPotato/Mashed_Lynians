@@ -57,6 +57,18 @@
 			<li>Mashed_Lynian_MelynxTribal</li>
 		</weaponTags>
 	</PawnKindDef>
+	<!-- ==========[Advanced, Purrserker]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_PurrserkerBase">
+		<defName>Mashed_Lynian_MelynxPurrserker</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerMelynxTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</weaponTags>
+	</PawnKindDef>
 	<!-- ==========[Advanced, Bombadier]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_BombadierBase">
 		<defName>Mashed_Lynian_MelynxBombadier</defName>

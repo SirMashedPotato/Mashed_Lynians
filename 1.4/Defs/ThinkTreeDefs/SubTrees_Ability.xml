@@ -13,6 +13,26 @@
 				<li Class="ThinkNode_ConditionalColonist">
 					<invert>true</invert>
 					<subNodes>
+						<!-- Mashed_Lynian_PurrserkerRageAbility -->
+						<li Class="ThinkNode_ConditionalHasAbility">
+							<ability>Mashed_Lynian_PurrserkerRageAbility</ability>
+							<subNodes>
+								<li Class="ThinkNodeConditional_HashIntervalTick">
+									<interval>15</interval>
+									<subNodes>
+										<li Class="ThinkNodeConditional_UnderCombatPressure">
+											<maxThreatDistance>2</maxThreatDistance>
+											<minCloseTargets>2</minCloseTargets>
+											<subNodes>
+												<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
+													<ability>Mashed_Lynian_PurrserkerRageAbility</ability>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
 						<!-- Mashed_Lynian_LynianFiringFurrenzyAbility -->
 						<li Class="ThinkNode_ConditionalHasAbility">
 							<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>

@@ -35,15 +35,25 @@
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
-				<scale>0.3~0.5</scale>
-				<chancePerTick>0.06</chancePerTick>
-				<positionRadius>0.3</positionRadius>
+				<scale>0.15~0.3</scale>
+				<chancePerTick>0.12</chancePerTick>
+				<positionRadius>0.1</positionRadius>
 				<moteDef>Mashed_Lynian_PurrserkerRageMote</moteDef>
-				<speed>0.25~0.25</speed>
-				<angle>10~80</angle>
+				<speed>0.45~0.45</speed>
+				<angle>20~40</angle>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.15~0.3</scale>
+				<chancePerTick>0.12</chancePerTick>
+				<positionRadius>0.1</positionRadius>
+				<moteDef>Mashed_Lynian_PurrserkerRageMote</moteDef>
+				<speed>0.45~0.45</speed>
+				<angle>320~340</angle>
 			</li>
 		</children>
 	</EffecterDef>
+	
 	<ThingDef ParentName="MoteBase">
 		<defName>Mashed_Lynian_PurrserkerRageMote</defName>
 		<graphicData>
@@ -52,9 +62,9 @@
 		<thingClass>MoteThrownAttached</thingClass>
 		<altitudeLayer>MetaOverlays</altitudeLayer>
 		<mote>
-			<fadeInTime>0.50</fadeInTime>
-			<solidTime>1.5</solidTime>
-			<fadeOutTime>2</fadeOutTime>
+			<fadeInTime>0.25</fadeInTime>
+			<solidTime>0.5</solidTime>
+			<fadeOutTime>0.25</fadeOutTime>
 			<attachedDrawOffset>(0, 0, 0.2)</attachedDrawOffset>
 		</mote>
 	</ThingDef>

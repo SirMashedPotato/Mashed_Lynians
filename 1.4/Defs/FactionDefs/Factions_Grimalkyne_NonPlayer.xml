@@ -28,6 +28,7 @@
 				<options>
 					<Mashed_Lynian_GrimalkyneGatherer>5</Mashed_Lynian_GrimalkyneGatherer>
 					<Mashed_Lynian_GrimalkyneWarrior>10</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>5</Mashed_Lynian_GrimalkynePurrserker>
 					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
 					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
 					<Mashed_Lynian_GrimalkyneBombadier>5</Mashed_Lynian_GrimalkyneBombadier>
@@ -54,6 +55,7 @@
 				<options>
 					<Mashed_Lynian_GrimalkyneGatherer>10</Mashed_Lynian_GrimalkyneGatherer>
 					<Mashed_Lynian_GrimalkyneWarrior>10</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>5</Mashed_Lynian_GrimalkynePurrserker>
 					<Mashed_Lynian_GrimalkyneFelvidier>3</Mashed_Lynian_GrimalkyneFelvidier>
 					<Mashed_Lynian_GrimalkyneChiefMelee>5</Mashed_Lynian_GrimalkyneChiefMelee>
 				</options>
@@ -65,6 +67,7 @@
 				<options>
 					<Mashed_Lynian_GrimalkyneGatherer>5</Mashed_Lynian_GrimalkyneGatherer>
 					<Mashed_Lynian_GrimalkyneWarrior>5</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>5</Mashed_Lynian_GrimalkynePurrserker>
 					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
 					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
 					<Mashed_Lynian_GrimalkyneBombadier>10</Mashed_Lynian_GrimalkyneBombadier>
@@ -106,6 +109,7 @@
 				<kindDef>Settlement</kindDef>
 				<options>
 					<Mashed_Lynian_GrimalkyneWarrior>7</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>3.5</Mashed_Lynian_GrimalkynePurrserker>
 					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
 					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
 					<Mashed_Lynian_GrimalkyneBombadier>5</Mashed_Lynian_GrimalkyneBombadier>

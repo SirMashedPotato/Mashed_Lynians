@@ -88,6 +88,24 @@
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>13~20</initialResistanceRange>
 	</PawnKindDef>
+	<!-- ==========[Advanced, Purrserker]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_PurrserkerBase" Abstract="True">
+		<label>purrserker</label>
+		<combatPower>75</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>200~550</apparelMoney>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_PurrserkerHelmet</li>
+			<li>Mashed_Lynian_Apparel_PurrserkerArmour</li>
+			<li>Mashed_Lynian_Apparel_PurrserkerBackPack</li>
+		</apparelRequired>
+		<abilities>
+			<li>Mashed_Lynian_PurrserkerRageAbility</li>
+		</abilities>
+		<weaponMoney>300~300</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
 	<!-- ==========[Advanced, Bombadier]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_BombadierBase" Abstract="True">
 		<label>bombadier</label>
@@ -144,7 +162,7 @@
 		<initialResistanceRange>19~30</initialResistanceRange>
 	</PawnKindDef>
 	<PawnKindDef ParentName="Mashed_Lynian_ChiefBase" Name="Mashed_Lynian_ChiefMeleeBase" Abstract="True">
-		<label>purrserker chief</label>
+		<label>warrior chief</label>
 		<weaponTags>
 			<li>Mashed_Lynian_LynianPurrserker</li>
 		</weaponTags>

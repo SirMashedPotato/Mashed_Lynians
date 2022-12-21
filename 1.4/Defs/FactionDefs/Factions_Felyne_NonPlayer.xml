@@ -27,6 +27,7 @@
 				<options>
 					<Mashed_Lynian_FelyneGatherer>5</Mashed_Lynian_FelyneGatherer>
 					<Mashed_Lynian_FelyneWarrior>10</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelynePurrserker>3</Mashed_Lynian_FelynePurrserker>
 					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
 					<Mashed_Lynian_FelyneBombadier>5</Mashed_Lynian_FelyneBombadier>
 					<Mashed_Lynian_FelyneFelvidier>3</Mashed_Lynian_FelyneFelvidier>
@@ -51,6 +52,7 @@
 				<options>
 					<Mashed_Lynian_FelyneGatherer>10</Mashed_Lynian_FelyneGatherer>
 					<Mashed_Lynian_FelyneWarrior>10</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelynePurrserker>5</Mashed_Lynian_FelynePurrserker>
 					<Mashed_Lynian_FelyneFelvidier>3</Mashed_Lynian_FelyneFelvidier>
 					<Mashed_Lynian_FelyneChiefMelee>5</Mashed_Lynian_FelyneChiefMelee>
 				</options>
@@ -62,6 +64,7 @@
 				<options>
 					<Mashed_Lynian_FelyneGatherer>5</Mashed_Lynian_FelyneGatherer>
 					<Mashed_Lynian_FelyneWarrior>5</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelynePurrserker>5</Mashed_Lynian_FelynePurrserker>
 					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
 					<Mashed_Lynian_FelyneBombadier>10</Mashed_Lynian_FelyneBombadier>
 					<Mashed_Lynian_FelyneFelvidier>5</Mashed_Lynian_FelyneFelvidier>
@@ -101,6 +104,7 @@
 				<kindDef>Settlement</kindDef>
 				<options>
 					<Mashed_Lynian_FelyneWarrior>7</Mashed_Lynian_FelyneWarrior>
+					<Mashed_Lynian_FelynePurrserker>3.5</Mashed_Lynian_FelynePurrserker>
 					<Mashed_Lynian_MelynxWarrior>3.5</Mashed_Lynian_MelynxWarrior>
 					<Mashed_Lynian_FelyneHunter>10</Mashed_Lynian_FelyneHunter>
 					<Mashed_Lynian_MelynxHunter>5</Mashed_Lynian_MelynxHunter>

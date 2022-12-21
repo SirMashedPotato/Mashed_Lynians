@@ -11,6 +11,7 @@
 		<description>Call forth the inner beast, transforming the Lynian into a raging ball of claws and fangs. The Lynian will be so focused on their rage that they will drop any equipped weapons, and be unable to pick them back up for the duration of the ability.</description>
 		<iconPath>UI/Abilities/Mashed_Lynian_PurrserkerRage</iconPath>
 		<groupDef>Mashed_Lynian_BeastAbility</groupDef>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
 		<warmupStartSound>Pawn_Cat_Angry</warmupStartSound>
 		<statBases>
 			<Ability_Duration>50</Ability_Duration>
@@ -26,6 +27,9 @@
 			<li Class="Mashed_Lynians.CompProperties_AbilityGiveHediffToParts">
 				<partsToAffect>Hand</partsToAffect>
 				<hediffDef>Mashed_Lynian_PurrserkerClaws</hediffDef>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_IncrementRecord">
+				<recordDef>Mashed_Lynian_TimesPurrserkered</recordDef>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -73,9 +77,6 @@
 				</tools>
 			</li>
 		</comps>
-		<stages>
-			<li/>
-		</stages>
 		<addedPartProps>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>

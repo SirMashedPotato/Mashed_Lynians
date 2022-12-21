@@ -67,6 +67,18 @@
 			<li>Mashed_Lynian_GrimalkyneTribal</li>
 		</weaponTags>
 	</PawnKindDef>
+	<!-- ==========[Advanced, Purrserker]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_PurrserkerBase">
+		<defName>Mashed_Lynian_GrimalkynePurrserker</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
 	<!-- ==========[Advanced, Bombadier]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_BombadierBase">
 		<defName>Mashed_Lynian_GrimalkyneBombadier</defName>

@@ -41,4 +41,11 @@
 		<description>The number of times I have danced a Shakalaka dance.</description>
 		<type>Int</type>
 	</RecordDef>
+	<!-- ==========[Purrserker rage]==========-->
+	<RecordDef>
+		<defName>Mashed_Lynian_TimesPurrserkered</defName>
+		<label>times purrserkered</label>
+		<description>The number of times I have entered a purrserker rage.</description>
+		<type>Int</type>
+	</RecordDef>
 </Defs>

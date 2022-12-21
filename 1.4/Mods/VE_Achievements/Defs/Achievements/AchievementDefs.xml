@@ -204,6 +204,17 @@
 		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PurrserkerActivations</defName>
+		<label>Furrever Furrious</label>
+		<description>Have a single Lynian enter a purrserker rage 20 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_TimesPurrserkered</def>
+			<count>20</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PurrserkerActivations</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
 		<defName>Mashed_AchievementLynians_DigDistance</defName>
 		<label>Meowster Digger</label>
 		<description>Have a single Lynian dig a cumulative distance of 500 tiles</description>
