@@ -99,7 +99,7 @@
 		<initialResistanceRange>14~22</initialResistanceRange>
 	</PawnKindDef>
 	<!-- ==========[Bombadier]========== -->
-	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase" Name="Mashed_Lynian_GajalakaGunnerKind">
 		<defName>Mashed_Lynian_GajalakaGunner</defName>
 		<label>gunner</label>
 		<combatPower>100</combatPower>

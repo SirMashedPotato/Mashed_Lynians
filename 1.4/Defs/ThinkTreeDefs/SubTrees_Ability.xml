@@ -18,7 +18,7 @@
 							<ability>Mashed_Lynian_PurrserkerRageAbility</ability>
 							<subNodes>
 								<li Class="ThinkNodeConditional_HashIntervalTick">
-									<interval>15</interval>
+									<interval>25</interval>
 									<subNodes>
 										<li Class="ThinkNodeConditional_UnderCombatPressure">
 											<maxThreatDistance>2</maxThreatDistance>
@@ -42,6 +42,20 @@
 									<subNodes>
 										<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
 											<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<!-- Mashed_Lynian_LynianFiringFurrenzyAbility -->
+						<li Class="ThinkNode_ConditionalHasAbility" MayRequire="Ludeon.RimWorld.Biotech">
+							<ability>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</ability>
+							<subNodes>
+								<li Class="ThinkNodeConditional_HashIntervalTick">
+									<interval>45</interval>
+									<subNodes>
+										<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
+											<ability>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</ability>
 										</li>
 									</subNodes>
 								</li>

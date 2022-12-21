@@ -21,5 +21,7 @@ namespace Mashed_Lynians
 		public static HediffDef Mashed_Lynian_LynianCleaningFurrenzy;
 		public static HediffDef Mashed_Lynian_LynianFiringFurrenzy;
 		public static HediffDef Mashed_Lynian_PurrserkerRage;
+		[MayRequireBiotech]
+		public static HediffDef Mashed_Lynian_LynianFurriousFiringFurrenzy;
 	}
 }

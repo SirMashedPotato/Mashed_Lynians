@@ -109,11 +109,13 @@
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\Harmony_Biotech.cs" />
     <Compile Include="Harmony\Harmony_Romance.cs" />
+    <Compile Include="HediffComp\HediffComp_FurriousFurrenzyTooltip_Halved.cs" />
     <Compile Include="HediffComp\HediffComp_UnequipWeapons.cs" />
     <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\HediffComp_DisappearsOnDowned.cs" />
     <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip_Halved.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_DisappearsOnDowned.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_FurriousFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_WorkingFurrenzyTooltip.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_LynianColonistJoin.cs" />
@@ -125,6 +127,7 @@
     <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
+    <Compile Include="ThingClass\Projectile_ExplosiveAlt.cs" />
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
     <Compile Include="ThoughtWorker\Ideo\MaskThoughtUtility.cs" />

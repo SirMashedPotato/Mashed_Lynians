@@ -170,7 +170,7 @@ namespace Mashed_Lynians
     }
 
     /// <summary>
-    /// Doubles the specific stats for pawns affected by specific hediffs
+    /// Doubles, or halves, the specific stats for pawns affected by specific hediffs
     /// Also allows an increase beyond the normal limits
     /// Should probably sort out something so it's not hardcoded as fuck
     /// </summary>
@@ -213,6 +213,17 @@ namespace Mashed_Lynians
                     {
                         __result /= 2f;
                         return;
+                    }
+                }
+                if (ModsConfig.IdeologyActive)
+                {
+                    if (stat == RimWorld.StatDefOf.AimingDelayFactor || stat == RimWorld.StatDefOf.RangedCooldownFactor|| stat == RimWorld.StatDefOf.ShootingAccuracyPawn)
+                    {
+                        if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFurriousFiringFurrenzy) != null)
+                        {
+                            __result /= 2f;
+                            return;
+                        }
                     }
                 }
             }

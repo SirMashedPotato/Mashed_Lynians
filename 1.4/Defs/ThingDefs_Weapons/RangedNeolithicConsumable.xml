@@ -12,6 +12,10 @@
 		</graphicData>
 		<statBases>
 			<Mass>4.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 			<WorkToMake>5000</WorkToMake>
 		</statBases>
@@ -42,7 +46,7 @@
 				<verbClass>Mashed_Lynians.Verb_ShootWithDurability</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Mashed_Lynian_RangedWeapon_GajalakaCannon_Bullet</defaultProjectile>
-				<forcedMissRadius>3.9</forcedMissRadius>
+				<!--<forcedMissRadius>3.9</forcedMissRadius>-->
 				<warmupTime>2.5</warmupTime>
 				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<range>35.9</range>
@@ -83,7 +87,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
+		<thingClass>Mashed_Lynians.Projectile_ExplosiveAlt</thingClass>
 		<projectile>
 			<damageDef>Bomb</damageDef>
 			<!-- Use default damage from explosion def -->
