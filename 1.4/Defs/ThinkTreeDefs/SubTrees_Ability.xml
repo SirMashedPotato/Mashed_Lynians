@@ -24,7 +24,7 @@
 											<maxThreatDistance>2</maxThreatDistance>
 											<minCloseTargets>2</minCloseTargets>
 											<subNodes>
-												<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
+												<li Class="JobGiver_AICastAbilityOnSelf">
 													<ability>Mashed_Lynian_PurrserkerRageAbility</ability>
 												</li>
 											</subNodes>
@@ -40,7 +40,7 @@
 								<li Class="ThinkNodeConditional_HashIntervalTick">
 									<interval>65</interval>
 									<subNodes>
-										<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
+										<li Class="JobGiver_AICastAbilityOnSelf">
 											<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>
 										</li>
 									</subNodes>
@@ -54,8 +54,22 @@
 								<li Class="ThinkNodeConditional_HashIntervalTick">
 									<interval>45</interval>
 									<subNodes>
-										<li Class="Mashed_Lynians.JobGiver_AICastFurrenzy">
+										<li Class="JobGiver_AICastAbilityOnSelf">
 											<ability>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</ability>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<!-- Mashed_Lynian_HuntersMarkAbility -->
+						<li Class="ThinkNode_ConditionalHasAbility">
+							<ability>Mashed_Lynian_HuntersMarkAbility</ability>
+							<subNodes>
+								<li Class="ThinkNodeConditional_HashIntervalTick">
+									<interval>65</interval>
+									<subNodes>
+										<li Class="Mashed_Lynians.JobGiver_AICastOnHostiles">
+											<ability>Mashed_Lynian_HuntersMarkAbility</ability>
 										</li>
 									</subNodes>
 								</li>

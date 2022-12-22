@@ -120,7 +120,7 @@
     <Compile Include="HediffComp\Properties\HediffCompProperties_WorkingFurrenzyTooltip.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_LynianColonistJoin.cs" />
-    <Compile Include="JobGiver\JobGiver_AICastFurrenzy.cs" />
+    <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SiteUtility.cs" />
