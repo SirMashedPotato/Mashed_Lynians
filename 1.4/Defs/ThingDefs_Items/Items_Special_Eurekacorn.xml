@@ -164,4 +164,21 @@
 			<li>Mashed_Lynian_Grimalkyne</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_EurekacornHuntersMark]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornHuntersMark</defName>
+		<label>eurekacorn (Hunters mark)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_HuntersMarkAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_HuntersMarkAbility</ability>
+				<fillHunger>True</fillHunger>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
+	</ThingDef>
 </Defs>

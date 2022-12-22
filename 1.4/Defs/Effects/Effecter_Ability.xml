@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_HuntersMark]========== -->
+	<EffecterDef>
+		<defName>Mashed_Lynian_HuntersMark</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>1</scale>
+				<positionRadius>0</positionRadius>
+				<ticksBetweenMotes>180</ticksBetweenMotes>
+				<moteDef>Mashed_Lynian_HuntersMarkMote</moteDef>
+				<speed>0</speed>
+				<angle>0~0</angle>
+			</li>
+		</children>
+	</EffecterDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mashed_Lynian_HuntersMarkMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/Mashed_Lynian_HuntersMarkMote</texPath>
+			<drawSize>(0.6, 0.6)</drawSize>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>1</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 1)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+</Defs>

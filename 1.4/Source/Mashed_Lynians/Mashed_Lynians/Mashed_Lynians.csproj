@@ -110,6 +110,7 @@
     <Compile Include="Harmony\Harmony_Biotech.cs" />
     <Compile Include="Harmony\Harmony_Romance.cs" />
     <Compile Include="HediffComp\HediffComp_FurriousFurrenzyTooltip_Halved.cs" />
+    <Compile Include="HediffComp\HediffComp_HuntersMark.cs" />
     <Compile Include="HediffComp\HediffComp_UnequipWeapons.cs" />
     <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\HediffComp_DisappearsOnDowned.cs" />

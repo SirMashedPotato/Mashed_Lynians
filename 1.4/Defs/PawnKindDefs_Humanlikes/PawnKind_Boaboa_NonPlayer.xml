@@ -61,6 +61,9 @@
 		<weaponTags>
 			<li>Mashed_Lynian_BoaboaTribalJavelin</li>
 		</weaponTags>
+		<abilities>
+			<li>Mashed_Lynian_HuntersMarkAbility</li>
+		</abilities>
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
@@ -143,6 +146,9 @@
 		<weaponTags>
 			<li>Mashed_Lynian_BoaboaTribalJavelin</li>
 		</weaponTags>
+		<abilities>
+			<li>Mashed_Lynian_HuntersMarkAbility</li>
+		</abilities>
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
