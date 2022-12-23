@@ -51,9 +51,18 @@
 				<speed>0.45~0.45</speed>
 				<angle>320~340</angle>
 			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>1</scale>
+				<positionRadius>0</positionRadius>
+				<ticksBetweenMotes>180</ticksBetweenMotes>
+				<moteDef>Mashed_Lynian_PurrserkerRageMoteOverHead</moteDef>
+				<speed>0</speed>
+				<angle>0~0</angle>
+				<rotation>0~0</rotation>
+			</li>
 		</children>
 	</EffecterDef>
-	
 	<ThingDef ParentName="MoteBase">
 		<defName>Mashed_Lynian_PurrserkerRageMote</defName>
 		<graphicData>
@@ -66,6 +75,21 @@
 			<solidTime>0.5</solidTime>
 			<fadeOutTime>0.25</fadeOutTime>
 			<attachedDrawOffset>(0, 0, 0.2)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mashed_Lynian_PurrserkerRageMoteOverHead</defName>
+		<graphicData>
+			<texPath>Things/Mote/Mashed_Lynian_PurrserkerRageMoteOverHead</texPath>
+			<drawSize>(0.6, 0.6)</drawSize>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>1</fadeInTime>
+			<solidTime>1</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+			<attachedDrawOffset>(0, 0, 1)</attachedDrawOffset>
 		</mote>
 	</ThingDef>
 </Defs>

@@ -12,6 +12,7 @@
 				<moteDef>Mashed_Lynian_HuntersMarkMote</moteDef>
 				<speed>0</speed>
 				<angle>0~0</angle>
+				<rotation>0~0</rotation>
 			</li>
 		</children>
 	</EffecterDef>

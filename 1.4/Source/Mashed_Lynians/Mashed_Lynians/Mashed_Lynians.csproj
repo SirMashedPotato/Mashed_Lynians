@@ -70,6 +70,7 @@
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_DoDamage.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_EffecterOnSelf.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_EndPurrserkerRage.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_GiveHediffToParts.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
     <Compile Include="AbilityComp\CompAbiltyEffect_GiveThought.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="AbilityComp\Master Dance\Properties\CompProperties_MasterDanceBonus.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_EndPurrserkerRage.cs" />
     <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />

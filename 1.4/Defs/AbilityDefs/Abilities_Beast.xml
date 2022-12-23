@@ -12,7 +12,7 @@
 		<iconPath>UI/Abilities/Mashed_Lynian_PurrserkerRage</iconPath>
 		<groupDef>Mashed_Lynian_BeastAbility</groupDef>
 		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
-		<warmupStartSound>Pawn_Cat_Angry</warmupStartSound>
+		<warmupStartSound>Mashed_Lynian_PurrserkerAbilityCall</warmupStartSound>
 		<statBases>
 			<Ability_Duration>50</Ability_Duration>
 		</statBases>
@@ -45,6 +45,9 @@
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>Mashed_Lynian_PurrserkerRage</stateEffecter>
 				<severityIndices>0~1</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>Mashed_Lynian_PurrserkerRoarAbility</abilityDef>
 			</li>
 		</comps>
 		<stages>
@@ -81,4 +84,45 @@
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
+	<!-- ==========[Mashed_Lynian_PurrserkerRoarAbility]==========-->
+	<AbilityDef>
+		<defName>Mashed_Lynian_PurrserkerRoarAbility</defName>
+		<label>purrserker roar</label>
+		<description>Unleash all this Lynians pent up fury in a horrifying roar, momentarily stunning any nearby hostiles, and ending their rage in the process.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_PurrserkerRoar</iconPath>
+		<warmupStartSound>Mashed_Lynian_PurrserkerAbilityCall</warmupStartSound>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>True</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_EffectRadius>4.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>4.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_EndPurrserkerRage"/>
+			<li Class="Mashed_Lynians.CompProperties_AbilityDoDamage">
+				<damageDef>Stun</damageDef>
+				<damageAmount>10</damageAmount>
+				<onlyHostile>True</onlyHostile>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>
