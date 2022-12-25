@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>Mashed_Lynian_FelvineFlowers</defName>
+		<label>felvine flower</label>
+		<description>Flowers harvested from a felvine plant, can be used to create felvine powder.\n\nSome explorers and traders will keep a small handful of felvine flowers on them at all times, as Melynx find the smell simply irresistible.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Mashed_FelvineRaw</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+</Defs>

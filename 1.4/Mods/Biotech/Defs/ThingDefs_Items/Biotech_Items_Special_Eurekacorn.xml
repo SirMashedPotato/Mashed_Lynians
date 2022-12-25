@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_EurekacornFurriousFiringFurrenzy]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornFurriousFiringFurrenzy</defName>
+		<label>eurekacorn (Furrious firing furrenzy)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</ability>
+				<fillHunger>True</fillHunger>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

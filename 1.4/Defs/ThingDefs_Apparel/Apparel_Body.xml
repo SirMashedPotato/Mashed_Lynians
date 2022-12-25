@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Apparel_BodyBase]========== -->
+	<ThingDef ParentName="ApparelMakeableBase" Name="Mashed_Lynian_Apparel_BodyBase" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Mashed_Lynian_Apparel</li>
+		</thingCategories>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerArmour]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_PurrserkerArmour</defName>
+		<label>purrserker armour</label>
+		<description>Reasonably protective torso armour. Specially designed for Lynians, fills the wearer with an unbridled fury, and doesn't hinder mobility.</description>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_PurrserkerEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerArmour_Item</texPath>
+		</graphicData>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<costStuffCount>65</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<developmentalStageFilter Inherit="False">Adult</developmentalStageFilter>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_PurrserkerArmour/Mashed_PurrserkerArmour</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_BoaboaCoat]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_BoaboaCoat</defName>
+		<label>Boaboa coat</label>
+		<description>A thick pelt coat, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.</description>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_BoaboaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat_Item</texPath>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<HuntingStealth>0.05</HuntingStealth>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_BoaboaArmour/Mashed_BoaboaCoat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_BoaboaTribal</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Boaboa</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_GajalakaCoat]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_GajalakaCoat</defName>
+		<label>Gajalaka coat</label>
+		<description>A light pelt coat, typically worn by Gajalaka. Specially designed for Lynians, the light design ensures movement is not restricted.</description>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_GajalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaCoat_Item</texPath>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaCoat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_GajalakaTribal</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaLoincloth]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaLoincloth</defName>
+		<label>Shakalaka loincloth</label>
+		<description>A leaf turned into a loincloth, typically worn by Shakalaka. Specially designed for Lynians, while it offers little in the way of protection, it does help keep things modest.</description>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaLoincloth_Item</texPath>
+		</graphicData>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>250</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaArmour/Mashed_ShakalakaLoincloth</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribal</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCoat]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaCoat</defName>
+		<label>Shakalaka coat</label>
+		<description>A light coat, typically worn by Shakalaka. Specially designed for Lynians, helps keep one cool during the summer.</description>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_ShakalakaEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCoat/Mashed_ShakalakaCoat_Item</texPath>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCoat/Mashed_ShakalakaCoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_ShakalakaTribalAdvanced</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Shakalaka</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_AcornArmour]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_AcornArmour</defName>
+		<label>acorn plate</label>
+		<description>Protective armour, modelled after an acorn. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such armour as well.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_AcornEquipment</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornArmour_Item</texPath>
+		</graphicData>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>6.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.6</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornArmour</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_KitchenApron]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_KitchenApron</defName>
+		<label>Lynian kitchen apron</label>
+		<description>A simple apron, typically worn by Lynians working in Felyne kitchens. Specially designed for Lynians, the light build helps speed up cooking.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenApron_Item</texPath>
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>1.0</CookSpeed>
+			<CleaningSpeed>0.10</CleaningSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneKitchenClothes/Mashed_FelyneKitchenApron</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<defaultOutfitTags Inherit="False">
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_LynianKitchen</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianKitchen</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_FelyneCoat]========== -->
+	<!--
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+		<defName>Mashed_Lynian_Apparel_FelyneCoat</defName>
+		<label>Felyne coat</label>
+		<description>A lightweight coat, typically worn by Lynians of a higher social standing. Specially designed for Lynians, the intricate design helps to augment the wearers social skills.</description>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexClothing</li>
+				<li>Mashed_Lynian_FelyneEquipment</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneArmour/Mashed_FelyneCoat_Item</texPath>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>2.0</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<MoveSpeed>-0.02</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_FelyneArmour/Mashed_FelyneCoat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Mashed_Lynian_FelyneTribal</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_Felyne</li>
+		</tradeTags>
+	</ThingDef>
+	-->
+</Defs>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Arrivals]========== -->
+	<FactionDef ParentName="Mashed_Lynian_OutlanderFactionBase">
+		<defName>Mashed_Lynian_MelynxPlayerColony</defName>
+		<label>New Melynx Arrivals</label>
+		<basicMemberKind>Mashed_Lynian_MelynxColonist</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Tribal]========== -->
+	<FactionDef ParentName="Mashed_Lynian_TribalFactionBase">
+		<defName>Mashed_Lynian_MelynxPlayerTribe</defName>
+		<label>New Melynx Tribe</label>
+		<description>A small Melynx tribe.</description>
+		<basicMemberKind>Mashed_Lynian_MelynxTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_MelynxPlayerGuild</defName>
+		<label>New Melynx Guild</label>
+		<description>A small Melynx guild.</description>
+		<basicMemberKind>Mashed_Lynian_MelynxTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_MelynxSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+</Defs>

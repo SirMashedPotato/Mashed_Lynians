@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<AchievementsExpanded.AchievementDef Name="Mashed_AchievementLynians_Base" Abstract="True">
+		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
+		<tab>SMP_AchievementsTab</tab>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Colonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_FelyneColonists</defName>
+		<label>Peaceful until Pawvoked</label>
+		<description>Have 12 Felynes in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_FelyneRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_FelyneColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_MelynxColonists</defName>
+		<label>Kleptomeowniac Convention</label>
+		<description>Have 12 Melynx in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_MelynxRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_MelynxColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_GrimalkyneColonists</defName>
+		<label>Meowsters of the New World</label>
+		<description>Have 12 Grimalkyne in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_GrimalkyneRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_GrimalkyneColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaColonists</defName>
+		<label>Boom Shaka-laka-laka</label>
+		<description>Have 12 Shakalaka in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_ShakalakaRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_GajalakaColonists</defName>
+		<label>Savages of the New World</label>
+		<description>Have 12 Gajalaka in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_GajalakaRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_GajalakaColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_BoaboaColonists</defName>
+		<label>The Abominable Lynian</label>
+		<description>Have 12 Boaboa in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_BoaboaRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_BoaboaColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_UrukiColonists</defName>
+		<label>Keepers of the Flower Field</label>
+		<description>Have 12 Uruki in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_UrukiRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_UrukiColonists</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_AllKindsColonists</defName>
+		<label>Lynian Fur-iends</label>
+		<description>Have one of each kind of Lynian in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<requireAll>true</requireAll>
+			<raceDefs>
+				<li>
+					<key>Mashed_Lynian_FelyneRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_MelynxRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_GrimalkyneRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_ShakalakaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_GajalakaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_BoaboaRace</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Lynian_UrukiRace</key>
+					<value>1</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_AllKindsColonists</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaWanderer</defName>
+		<label>Bow Before Your New Master</label>
+		<description>Have a Shakalaka wanderer join your faction</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Lynian_ShakalakaWanderer</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaWanderer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Felvine]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_CraftFelvine</defName>
+		<label>Meowlter White</label>
+		<description>Craft felvine powder 100 times</description>
+		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
+		<tab>SMP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>Mashed_Lynian_FelvinePowder</def>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_CraftFelvine</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_FelvineHighs</defName>
+		<label>Felvine Fanatics</label>
+		<description>Have cat-like Lynians get high on felvine 25 times</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<def>Mashed_Lynian_FelvineHighFrenzy</def>
+			<count>25</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_FelvineHighs</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Ability records]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_FurrenzyActivations</defName>
+		<label>Furrever Furrenzied</label>
+		<description>Have a single Lynian enter furrenzies using abilities 25 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_TimesFurrenzied</def>
+			<count>25</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_FurrenzyActivations</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PurrserkerActivations</defName>
+		<label>Furrever Furrious</label>
+		<description>Have a single Lynian enter a purrserker rage 20 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_TimesPurrserkered</def>
+			<count>20</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PurrserkerActivations</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_DigDistance</defName>
+		<label>Meowster Digger</label>
+		<description>Have a single Lynian dig a cumulative distance of 500 tiles</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_DiggingDistance</def>
+			<count>500</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_DigDistance</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PromoteGrowthGrowth</defName>
+		<label>Meowster Gardener</label>
+		<description>Have a single Lynian cumulatively promote plant growth by 200%</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_GrowthPromoted</def>
+			<count>200</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PromoteGrowthGrowth</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Ability records - Pilfering]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PilferItems</defName>
+		<label>Meowster Pilferer</label>
+		<description>Have a single Lynian succesfully pilfer items 50 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_PilferedNumber</def>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PilferItems</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PilferValue</defName>
+		<label>Greedy Paws</label>
+		<description>Have a single Lynian succesfully pilfer 10,000 silver worth of items</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_PilferedValue</def>
+			<count>10000</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PilferValue</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_PilferFelvine</defName>
+		<label>The Sweet Scent of Felvine</label>
+		<description>You probably should've seen that coming</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<def>Mashed_Lynian_PilferedFelvine</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_PilferFelvine</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Ability - Dancing]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaDancesDanced</defName>
+		<label>Meowster Dancer</label>
+		<description>Have a single Lynian dance Shakalaka dances 50 times</description>
+		<tracker Class="AchievementsExpanded.RecordEventTracker">
+			<def>Mashed_Lynian_ShakalakaDancesDanced</def>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaDancesDanced</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ShakalakaDanceMaster</defName>
+		<label>Disciple of Cha-Cha</label>
+		<description>Have a Lynian master Shakalaka dances</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<def>Mashed_Lynian_ShakalakaDanceMaster</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ShakalakaDanceMaster</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Trading]========== -->
+	<!-- ==========[Special]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
+		<defName>Mashed_AchievementLynians_ObtainUltimateMask</defName>
+		<label>The Ultimate Mask</label>
+		<description>Obtain The Ultimate Mask</description>
+		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
+		<tab>SMP_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Lynian_Apparel_UltimateMask</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementLynians_ObtainUltimateMask</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

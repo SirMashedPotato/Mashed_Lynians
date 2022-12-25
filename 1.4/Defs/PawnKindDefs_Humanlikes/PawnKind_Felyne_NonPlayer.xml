@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Basic, Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_RecruitBase">
+		<defName>Mashed_Lynian_FelyneRecruit</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GathererBase">
+		<defName>Mashed_Lynian_FelyneGatherer</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Hunter]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_HunterBase">
+		<defName>Mashed_Lynian_FelyneHunter</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TraderBase">
+		<defName>Mashed_Lynian_FelyneTrader</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_AcornBackpack</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Warrior]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_WarriorBase">
+		<defName>Mashed_Lynian_FelyneWarrior</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Purrserker]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_PurrserkerBase">
+		<defName>Mashed_Lynian_FelynePurrserker</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BombadierBase">
+		<defName>Mashed_Lynian_FelyneBombadier</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Felvidier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_FelvidierBase">
+		<defName>Mashed_Lynian_FelyneFelvidier</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief melee]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ChiefMeleeBase">
+		<defName>Mashed_Lynian_FelyneChiefMelee</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief ranged]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ChiefRangedBase">
+		<defName>Mashed_Lynian_FelyneChiefRanged</defName>
+		<race>Mashed_Lynian_FelyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerFelyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_FelyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

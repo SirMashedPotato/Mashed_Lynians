@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<StatDef>
+		<defName>Mashed_Lynian_PilferChance</defName>
+		<label>pilfer chance</label>
+		<description>The chance a pawn successfully pilfers an item when using the Pilfer ability.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<maxValue>1</maxValue>
+		<hideAtValue>0</hideAtValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<displayPriorityInCategory>3500</displayPriorityInCategory>
+		<parts>
+			<li Class="Mashed_Lynians.StatPart_SkillOffset">
+				<abilityDef>Mashed_Lynian_PilferAbility</abilityDef>
+				<factorPerLevel>0.015</factorPerLevel>
+				<factorPerOverlevel>0.001</factorPerOverlevel>
+				<skillDef>Melee</skillDef>
+			</li>
+			<li Class="Mashed_Lynians.StatPart_SkillOffset">
+				<abilityDef>Mashed_Lynian_PilferAbility</abilityDef>
+				<factorPerLevel>0.015</factorPerLevel>
+				<factorPerOverlevel>0.001</factorPerOverlevel>
+				<skillDef>Intellectual</skillDef>
+			</li>
+		</parts>
+	</StatDef>
+</Defs>

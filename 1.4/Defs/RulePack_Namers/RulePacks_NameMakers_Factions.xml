@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Cat-like settlement namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerSettlementCatLike</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [TerrainFeature]</li>
+				<li>r_name->[Color] [NaturalObject]</li>
+				<li>r_name->[Color] [TreeTypes]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Felyne faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionFelyne</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Paw Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Melynx faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionMelynx</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Claw Tribe</li>
+				<li>r_name->The [ColorBadass] Claw Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Grimalkyne faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionGrimalkyne</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Bone Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Gajalaka faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionGajalaka</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Rock Tribe</li>
+				<li>r_name->The [ColorBadass] Rock Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Boaboa faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionBoaboa</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Spear Tribe</li>
+				<li>r_name->The [ColorBadass] Spear Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Shakalaka faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionShakalaka</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Root Tribe</li>
+				<li>r_name->The [ColorBadass] Root Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Uruki faction namer]==========-->
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerFactionUruki</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] Flower Tribe</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

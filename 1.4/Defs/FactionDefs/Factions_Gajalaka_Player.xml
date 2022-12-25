@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Arrivals]========== -->
+	<FactionDef ParentName="Mashed_Lynian_OutlanderFactionBase">
+		<defName>Mashed_Lynian_GajalakaPlayerColony</defName>
+		<label>New Gajalaka Arrivals</label>
+		<basicMemberKind>Mashed_Lynian_GajalakaColonist</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_GajalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Tribal]========== -->
+	<FactionDef ParentName="Mashed_Lynian_TribalFactionBase">
+		<defName>Mashed_Lynian_GajalakaPlayerTribe</defName>
+		<label>New Gajalaka Tribe</label>
+		<description>A small Gajalaka tribe.</description>
+		<basicMemberKind>Mashed_Lynian_GajalakaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_GajalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksGranite</li>
+				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_GajalakaPlayerGuild</defName>
+		<label>New Gajalaka Guild</label>
+		<description>A small Gajalaka guild.</description>
+		<basicMemberKind>Mashed_Lynian_GajalakaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_GajalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksGranite</li>
+				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

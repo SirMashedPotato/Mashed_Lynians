@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Gunner Alt]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaGunnerKind">
+		<defName>Mashed_Lynian_GajalakaGunnerFurrious</defName>
+		<label>furrious gunner</label>
+		<combatPower>115</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponMoney>400~500</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_GajalakaTribalDestructiveSpecial</li>
+		</weaponTags>
+		<abilities Inherit="False">
+			<li>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</li>
+		</abilities>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

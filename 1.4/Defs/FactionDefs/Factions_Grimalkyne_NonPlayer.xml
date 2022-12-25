@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerCatLikeFactionBase">
+		<defName>Mashed_Lynian_NonPlayerGrimalkyneTribe</defName>
+		<label>Grimalkyne tribe</label>
+		<description>A small Grimalkyne tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, they are content with their simple lifestyle, and are willing to defend it with blood and fury.\n\nThis particular tribe pursues a gentle way of life where they can. While they are open to trade and alliances, they are highly cautious, and will rarely venture from their settlements.</description>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_GrimalkyneSettlement_Player</factionIconPath>
+		<colorSpectrum>
+			<li>(0.8, 0.7, 0.9)</li>
+			<li>(0.8, 0.9, 0.7)</li>
+		</colorSpectrum>
+		<melaninRange>0~0.3</melaninRange>
+		<factionNameMaker>Mashed_Lynian_NamerFactionGrimalkyne</factionNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_GrimalkyneTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_GrimalkyneTrader</li>
+		</baseTraderKinds>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+		</requiredMemes>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneGatherer>5</Mashed_Lynian_GrimalkyneGatherer>
+					<Mashed_Lynian_GrimalkyneWarrior>10</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>5</Mashed_Lynian_GrimalkynePurrserker>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
+					<Mashed_Lynian_GrimalkyneBombadier>5</Mashed_Lynian_GrimalkyneBombadier>
+					<Mashed_Lynian_GrimalkyneFelvidier>3</Mashed_Lynian_GrimalkyneFelvidier>
+					<Mashed_Lynian_GrimalkyneChiefRanged>3</Mashed_Lynian_GrimalkyneChiefRanged>
+					<Mashed_Lynian_GrimalkyneChiefMelee>1.5</Mashed_Lynian_GrimalkyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>7</Mashed_Lynian_GrimalkyneTrapper>
+					<Mashed_Lynian_GrimalkyneBombadier>7</Mashed_Lynian_GrimalkyneBombadier>
+					<Mashed_Lynian_GrimalkyneChiefRanged>5</Mashed_Lynian_GrimalkyneChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneGatherer>10</Mashed_Lynian_GrimalkyneGatherer>
+					<Mashed_Lynian_GrimalkyneWarrior>10</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>5</Mashed_Lynian_GrimalkynePurrserker>
+					<Mashed_Lynian_GrimalkyneFelvidier>3</Mashed_Lynian_GrimalkyneFelvidier>
+					<Mashed_Lynian_GrimalkyneChiefMelee>5</Mashed_Lynian_GrimalkyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneGatherer>5</Mashed_Lynian_GrimalkyneGatherer>
+					<Mashed_Lynian_GrimalkyneWarrior>5</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>5</Mashed_Lynian_GrimalkynePurrserker>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
+					<Mashed_Lynian_GrimalkyneBombadier>10</Mashed_Lynian_GrimalkyneBombadier>
+					<Mashed_Lynian_GrimalkyneFelvidier>5</Mashed_Lynian_GrimalkyneFelvidier>
+					<Mashed_Lynian_GrimalkyneChiefRanged>3</Mashed_Lynian_GrimalkyneChiefRanged>
+					<Mashed_Lynian_GrimalkyneChiefMelee>1.5</Mashed_Lynian_GrimalkyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mashed_Lynian_GrimalkyneWarrior>20</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
+					<Mashed_Lynian_GrimalkyneBombadier>10</Mashed_Lynian_GrimalkyneBombadier>
+					<Mashed_Lynian_GrimalkyneFelvidier>5</Mashed_Lynian_GrimalkyneFelvidier>
+					<Mashed_Lynian_GrimalkyneChiefRanged>3</Mashed_Lynian_GrimalkyneChiefRanged>
+					<Mashed_Lynian_GrimalkyneChiefMelee>1.5</Mashed_Lynian_GrimalkyneChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Mashed_Lynian_GrimalkyneTrader>1</Mashed_Lynian_GrimalkyneTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>8</Alpaca>
+				</carriers>
+				<guards>
+					<Mashed_Lynian_GrimalkyneWarrior>7</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneBombadier>5</Mashed_Lynian_GrimalkyneBombadier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mashed_Lynian_GrimalkyneWarrior>7</Mashed_Lynian_GrimalkyneWarrior>
+					<Mashed_Lynian_GrimalkynePurrserker>3.5</Mashed_Lynian_GrimalkynePurrserker>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>5</Mashed_Lynian_GrimalkyneTrapper>
+					<Mashed_Lynian_GrimalkyneBombadier>5</Mashed_Lynian_GrimalkyneBombadier>
+					<Mashed_Lynian_GrimalkyneFelvidier>5</Mashed_Lynian_GrimalkyneFelvidier>
+					<Mashed_Lynian_GrimalkyneChiefRanged>10</Mashed_Lynian_GrimalkyneChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Mashed_Lynian_GrimalkyneHunter>10</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>7</Mashed_Lynian_GrimalkyneTrapper>
+					<Mashed_Lynian_GrimalkyneBombadier>5</Mashed_Lynian_GrimalkyneBombadier>
+					<Mashed_Lynian_GrimalkyneChiefRanged>10</Mashed_Lynian_GrimalkyneChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneGatherer>2</Mashed_Lynian_GrimalkyneGatherer>
+					<Mashed_Lynian_GrimalkyneBombadier>1</Mashed_Lynian_GrimalkyneBombadier>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneHunter>2</Mashed_Lynian_GrimalkyneHunter>
+					<Mashed_Lynian_GrimalkyneTrapper>1</Mashed_Lynian_GrimalkyneTrapper>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneGatherer>1</Mashed_Lynian_GrimalkyneGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_GrimalkyneGatherer>1</Mashed_Lynian_GrimalkyneGatherer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+</Defs>

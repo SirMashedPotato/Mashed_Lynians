@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- ==========[Starting colonists]==========-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Mashed_Lynian_RaceSettings"]/pawnKindSettings/startingColonists</xpath>
+					<value>
+						<li>
+							<pawnKindEntries>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_FelyneGatherer</li>
+										<li>Mashed_Lynian_FelyneHunter</li>
+										<li>Mashed_Lynian_MelynxGatherer</li>
+										<li>Mashed_Lynian_MelynxHunter</li>
+									</kindDefs>
+									<chance>5.0</chance>
+								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_FelyneAcornKnight</li>
+									</kindDefs>
+									<chance>1.0</chance>
+								</li>
+							</pawnKindEntries>
+							<factionDefs>
+								<li>DankPyon_PlayerKingdom</li>
+								<li>DankPyon_LoneWolf</li>
+								<li>DankPyon_MercenaryCompany</li>
+							</factionDefs>
+						</li>
+					</value>
+				</li>
+				<!-- ==========[Wanderer joins]==========-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Mashed_Lynian_RaceSettings"]/pawnKindSettings/startingColonists</xpath>
+					<value>
+						<li>
+							<pawnKindEntries>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_FelyneGatherer</li>
+										<li>Mashed_Lynian_FelyneHunter</li>
+										<li>Mashed_Lynian_MelynxGatherer</li>
+										<li>Mashed_Lynian_MelynxHunter</li>
+									</kindDefs>
+									<chance>10.0</chance>
+								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_GrimalkyneGatherer</li>
+										<li>Mashed_Lynian_GrimalkyneHunter</li>
+									</kindDefs>
+									<chance>5.0</chance>
+								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_BoaboaGatherer</li>
+										<li>Mashed_Lynian_BoaboaHunter</li>
+										<li>Mashed_Lynian_BoaboaWarrior</li>
+										<li>Mashed_Lynian_GajalakaGatherer</li>
+										<li>Mashed_Lynian_GajalakaWarrior</li>
+										<li>Mashed_Lynian_GajalakaBombadier</li>
+										<li>Mashed_Lynian_UrukiGatherer</li>
+										<li>Mashed_Lynian_UrukiBombadier</li>
+									</kindDefs>
+									<chance>2.0</chance>
+								</li>
+								<li>
+									<kindDefs>
+										<li>Mashed_Lynian_FelyneAcornKnight</li>
+									</kindDefs>
+									<chance>1.0</chance>
+								</li>
+							</pawnKindEntries>
+							<factionDefs>
+								<li>DankPyon_PlayerKingdom</li>
+								<li>DankPyon_LoneWolf</li>
+								<li>DankPyon_MercenaryCompany</li>
+							</factionDefs>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

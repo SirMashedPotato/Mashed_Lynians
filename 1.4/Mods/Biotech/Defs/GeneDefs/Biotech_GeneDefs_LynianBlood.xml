@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		Half the bonus of their respective species.
+		Round down where necessary.
+	-->
+	<!-- ==========[Mashed_Lynian_LynianRacialBlood]========== -->
+	<GeneCategoryDef>
+		<defName>Mashed_Lynian_InheritedBonus</defName>
+		<label>Lynian inherited bonus</label>
+		<displayPriorityInXenotype>397</displayPriorityInXenotype>
+	</GeneCategoryDef>
+	<!-- ==========[Mashed_Lynian_BaseGeneRacialBlood]========== -->
+	<GeneDef Name="Mashed_Lynian_BaseGeneInheritedBonus" Abstract="True">
+		<displayCategory>Mashed_Lynian_InheritedBonus</displayCategory>
+		<exclusionTags>
+			<li>Mashed_Lynian_InheritedBonus</li>
+		</exclusionTags>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Boaboa]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Boaboa</defName>
+		<label>Boaboa inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Boaboa Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Boaboa</iconPath>
+		<statOffsets>
+			<ComfyTemperatureMax>-2</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<AnimalGatherSpeed>0.05</AnimalGatherSpeed>
+			<ButcheryFleshSpeed>0.05</ButcheryFleshSpeed>
+		</statOffsets>
+		<displayOrderInCategory>0</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Felyne]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Felyne</defName>
+		<label>Felyne inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Felyne Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Felyne</iconPath>
+		<statOffsets>
+			<MentalBreakThreshold>-0.025</MentalBreakThreshold>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+		</statOffsets>
+		<displayOrderInCategory>1</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Gajalaka]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Gajalaka</defName>
+		<label>Gajalaka inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Gajalaka Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Gajalaka</iconPath>
+		<statOffsets>
+			<ComfyTemperatureMax>3</ComfyTemperatureMax>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<MiningSpeed>0.05</MiningSpeed>
+		</statOffsets>
+		<displayOrderInCategory>2</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Grimalkyne]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Grimalkyne</defName>
+		<label>Grimalkyne inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Grimalkyne Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Grimalkyne</iconPath>
+		<statOffsets>
+			<RestRateMultiplier>0.05</RestRateMultiplier>
+			<ForagedNutritionPerDay>0.1</ForagedNutritionPerDay>
+			<ToxicResistance>0.1</ToxicResistance>
+		</statOffsets>
+		<displayOrderInCategory>3</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Melynx]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Melynx</defName>
+		<label>Melynx inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Melynx Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Melynx</iconPath>
+		<statOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
+		</statOffsets>
+		<displayOrderInCategory>4</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Shakalaka]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Shakalaka</defName>
+		<label>Shakalaka inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Shakalaka Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Shakalaka</iconPath>
+		<statOffsets>
+			<InjuryHealingFactor>0.05</InjuryHealingFactor>
+			<SmeltingSpeed>0.05</SmeltingSpeed>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+		</statOffsets>
+		<displayOrderInCategory>5</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[Mashed_Lynian_GeneInheritedBonus_Uruki]========== -->
+	<GeneDef ParentName="Mashed_Lynian_BaseGeneInheritedBonus">
+		<defName>Mashed_Lynian_GeneInheritedBonus_Uruki</defName>
+		<label>Uruki inherited bonus</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Uruki Lynian race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Uruki</iconPath>
+		<statOffsets>
+			<PlantWorkSpeed>0.1</PlantWorkSpeed>
+			<MedicalTendSpeed>0.1</MedicalTendSpeed>
+		</statOffsets>
+		<displayOrderInCategory>6</displayOrderInCategory>
+	</GeneDef>
+</Defs>

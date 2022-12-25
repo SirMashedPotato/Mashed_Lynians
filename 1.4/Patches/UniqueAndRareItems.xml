@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Unique and Rare Items</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Mashed_Lynian_Apparel_UltimateMask"]/comps</xpath>
+					<value>
+						<li Class="UniqueItems.CompProperties_UniqueItem">
+							<maxCount>1</maxCount>
+							<labelUniquePrefix>The </labelUniquePrefix>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

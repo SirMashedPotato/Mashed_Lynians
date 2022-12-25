@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThinkTreeDef[defName="Humanlike"]/thinkRoot[@Class="ThinkNode_Priority"]/subNodes/li[treeDef="Abilities_Escape"]</xpath>
+		<value>
+			<li Class="ThinkNode_Subtree">
+				<treeDef>Mashed_Lynian_LynianAbilities_Escape</treeDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>

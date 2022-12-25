@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Issue]========== -->
+	<IssueDef>
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka</defName>
+		<label>Gajalaka mask wearing</label>
+		<iconPath>UI/Issues/Mashed_MaskWearingPrecept_Gajalaka</iconPath>
+	</IssueDef>
+	<!-- ==========[Base]========== -->
+	<PreceptDef Name="Mashed_Lynian_MaskWearing_Gajalaka_Base" Abstract="True">
+		<issue>Mashed_Lynian_MaskWearing_Gajalaka</issue>
+		<requiredMemes>
+			<li>Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+		</requiredMemes>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	<!-- ==========[Compulsory]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Gajalaka_Base">
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka_Compulsory</defName>
+		<label>Compulsory</label>
+		<description>Those not wearing stone masks are destined to never be taken seriously.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Gajalaka_Compulsory</thought>
+				<description>Missing a Gajalaka mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Gajalaka_Compulsory</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_GajalakaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask (Gajalaka)</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Necessary]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Gajalaka_Base">
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka_Necessary</defName>
+		<label>Necessary</label>
+		<description>Those not wearing stone masks are usually never taken seriously.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Gajalaka_Necessary</thought>
+				<description>Missing a Gajalaka mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Gajalaka_Necessary</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_GajalakaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask (Gajalaka)</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Preferred]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Gajalaka_Base">
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka_Preferred</defName>
+		<label>Preferred</label>
+		<description>Those not wearing stone masks are sometimes never taken seriously.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Gajalaka_Preferred</thought>
+				<description>Missing a Gajalaka mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Gajalaka_Preferred</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_GajalakaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask (Gajalaka)</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Appreciated]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Gajalaka_Base">
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka_Appreciated</defName>
+		<label>Appreciated</label>
+		<description>Those wearing stone masks sometimes taken seriously.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Gajalaka_Appreciated</thought>
+				<description>Wearing a Gajalaka mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Gajalaka_Appreciated</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_GajalakaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask (Gajalaka)</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Loved]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Gajalaka_Base">
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka_Loved</defName>
+		<label>Loved</label>
+		<description>Those wearing stone masks often taken seriously.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Gajalaka_Loved</thought>
+				<description>Wearing a Gajalaka mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Gajalaka_Loved</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_GajalakaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask (Gajalaka)</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Exalted]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Gajalaka_Base">
+		<defName>Mashed_Lynian_MaskWearing_Gajalaka_Exalted</defName>
+		<label>Exalted</label>
+		<description>Those wearing stone masks always taken seriously.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Gajalaka_Exalted</thought>
+				<description>Wearing a Gajalaka mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Gajalaka_Exalted</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_GajalakaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask (Gajalaka)</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

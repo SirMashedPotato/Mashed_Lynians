@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+		<value>
+			<Mashed_Lynian_FelyneGatherer>3</Mashed_Lynian_FelyneGatherer>
+			<Mashed_Lynian_MelynxGatherer>2</Mashed_Lynian_MelynxGatherer>
+			<Mashed_Lynian_UrukiGatherer>2</Mashed_Lynian_UrukiGatherer>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+		<value>
+			<Mashed_Lynian_FelyneGatherer>3</Mashed_Lynian_FelyneGatherer>
+			<Mashed_Lynian_MelynxGatherer>2</Mashed_Lynian_MelynxGatherer>
+			<Mashed_Lynian_UrukiGatherer>2</Mashed_Lynian_UrukiGatherer>
+		</value>
+	</Operation>
+</Patch>

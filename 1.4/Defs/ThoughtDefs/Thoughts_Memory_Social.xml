@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_AttemptedPilfer</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>15</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>attempted pilfer</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

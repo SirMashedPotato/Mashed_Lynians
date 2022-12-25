@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+<LanguageData>
 	<!-- ==========[Generic]==========-->
 	<Mashed_Lynian_PawnNotLynian>{0} is not a Lynian</Mashed_Lynian_PawnNotLynian>
 	<Mashed_Lynian_AbilityDisabled_Skill>{0} is incapable of {1}</Mashed_Lynian_AbilityDisabled_Skill>
@@ -14,10 +14,19 @@
 	<!-- ==========[Promote Growth]==========-->
 	<Mashed_Lynian_PromoteGrowthDetails>Growth boost: {0}</Mashed_Lynian_PromoteGrowthDetails>
 	<Mashed_Lynian_PromoteGrowthDetails_ExtraLabel>\nCurrent growth: {0}</Mashed_Lynian_PromoteGrowthDetails_ExtraLabel>
+	<!-- ==========[Other abilities]==========-->
+	<!-- Needed for 1.3 compat -->
+	<Mashed_Lynian_CookingFurrenzyTooltip>Doubled cooking speed to: {0}</Mashed_Lynian_CookingFurrenzyTooltip>
+	<Mashed_Lynian_WorkingFurrenzyTooltip>Doubled {0} to: {1}</Mashed_Lynian_WorkingFurrenzyTooltip>
+	<Mashed_Lynian_WorkingFurrenzyTooltip_Halved>Halved {0} to: {1}</Mashed_Lynian_WorkingFurrenzyTooltip_Halved>
+	<Mashed_Lynian_PurrserkerRageCantEquip>{0} is in a purrserker rage</Mashed_Lynian_PurrserkerRageCantEquip>
 	<!-- ==========[Eurekacorn]==========-->
 	<Mashed_Lynian_EurekacornHasAbility>{0} already has the {1} ability</Mashed_Lynian_EurekacornHasAbility>
 	<Mashed_Lynian_EurekacornGainedAbility>{0} has learnt the {1} ability!</Mashed_Lynian_EurekacornGainedAbility>
+	<Mashed_Lynian_EurekacornHasHediff>{0} already has {1}</Mashed_Lynian_EurekacornHasHediff>
+	<Mashed_Lynian_EurekacornGainedHediff>{0} has learnt {1}!</Mashed_Lynian_EurekacornGainedHediff>
 	<!-- ==========[Ideo]==========-->
 	<Mashed_Lynian_IdeoRequirementLynian>Any Lynian race</Mashed_Lynian_IdeoRequirementLynian>
-	<Mashed_Lynian_CookingFurrenzyTooltip>Doubled cooking speed to: {0}</Mashed_Lynian_CookingFurrenzyTooltip>
+	<!-- ==========[Romancing]==========-->
+	<Mashed_Lynian_CantRomanceNonLynian>Romance between Lynians and non-Lynians is outlawed.</Mashed_Lynian_CantRomanceNonLynian>
 </LanguageData>

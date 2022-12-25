@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_BoaboaAbility</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[Mashed_Lynian_HuntersMarkAbility]==========-->
+	<AbilityDef>
+		<defName>Mashed_Lynian_HuntersMarkAbility</defName>
+		<label>hunters mark</label>
+		<description>Use this pawns extensive knowledge to mark a weak point on a target. The next time the marked target takes damage, the amount will be increased by 100%.</description>
+		<iconPath>UI/Abilities/Mashed_Boaboa_HuntersMarkAbility</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Boaboa_HuntersMarkAbility</warmupMoteSocialSymbol>
+		<groupDef>Mashed_Lynian_BoaboaAbility</groupDef>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<uiOrder>1</uiOrder>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_HuntersMarkDebuff</hediffDef>
+				<onlyBrain>false</onlyBrain>
+				<applicableToMechs>true</applicableToMechs>
+			</li>
+		</comps>
+		<verbProperties>
+			<drawAimPie>False</drawAimPie>
+			<range>25.9</range>
+			<warmupTime>0.5</warmupTime>
+			<violent>true</violent>
+			<verbClass>Verb_CastAbility</verbClass>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>true</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<neverTargetHostileFaction>false</neverTargetHostileFaction>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_HuntersMarkDebuff</defName>
+		<label>hunters mark</label>
+		<description>This pawn has been marked by a skilled Lynian hunter. The next time they  take damage, the amount will be increased by 100%.</description>
+		<isBad>true</isBad>
+		<comps>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_HuntersMark</compClass>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Mashed_Lynian_HuntersMark</stateEffecter>
+				<severityIndices>0~1</severityIndices>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>1</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

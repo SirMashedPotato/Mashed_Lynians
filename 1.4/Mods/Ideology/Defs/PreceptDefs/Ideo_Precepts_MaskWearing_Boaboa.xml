@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Issue]========== -->
+	<IssueDef>
+		<defName>Mashed_Lynian_MaskWearing_Boaboa</defName>
+		<label>Boaboa mask wearing</label>
+		<iconPath>UI/Issues/Mashed_MaskWearingPrecept_Boaboa</iconPath>
+	</IssueDef>
+	<!-- ==========[Base]========== -->
+	<PreceptDef Name="Mashed_Lynian_MaskWearing_Boaboa_Base" Abstract="True">
+		<issue>Mashed_Lynian_MaskWearing_Boaboa</issue>
+		<requiredMemes>
+			<li>Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+		</requiredMemes>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	<!-- ==========[Compulsory]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Boaboa_Base">
+		<defName>Mashed_Lynian_MaskWearing_Boaboa_Compulsory</defName>
+		<label>Compulsory</label>
+		<description>Those not wearing pelt masks are destined to fail every hunt.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Boaboa_Compulsory</thought>
+				<description>Missing a Boaboa mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Boaboa_Compulsory</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_BoaboaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask (Boaboa)</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Necessary]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Boaboa_Base">
+		<defName>Mashed_Lynian_MaskWearing_Boaboa_Necessary</defName>
+		<label>Necessary</label>
+		<description>Those not wearing pelt masks are at risk of failing every hunt.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Boaboa_Necessary</thought>
+				<description>Missing a Boaboa mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Boaboa_Necessary</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_BoaboaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask (Boaboa)</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Preferred]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Boaboa_Base">
+		<defName>Mashed_Lynian_MaskWearing_Boaboa_Preferred</defName>
+		<label>Preferred</label>
+		<description>Those not wearing pelt masks might fail a hunt every now and then.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Boaboa_Preferred</thought>
+				<description>Missing a Boaboa mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Boaboa_Preferred</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_BoaboaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask (Boaboa)</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Appreciated]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Boaboa_Base">
+		<defName>Mashed_Lynian_MaskWearing_Boaboa_Appreciated</defName>
+		<label>Appreciated</label>
+		<description>Those wearing pelt masks sometimes have better luck during a hunt.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Boaboa_Appreciated</thought>
+				<description>Wearing a Boaboa mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Boaboa_Appreciated</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_BoaboaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask (Boaboa)</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Loved]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Boaboa_Base">
+		<defName>Mashed_Lynian_MaskWearing_Boaboa_Loved</defName>
+		<label>Loved</label>
+		<description>Those wearing pelt masks often have better luck during a hunt.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Boaboa_Loved</thought>
+				<description>Wearing a Boaboa mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Boaboa_Loved</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_BoaboaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask (Boaboa)</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Exalted]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Boaboa_Base">
+		<defName>Mashed_Lynian_MaskWearing_Boaboa_Exalted</defName>
+		<label>Exalted</label>
+		<description>Those wearing pelt masks always have better luck during a hunt.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Boaboa_Exalted</thought>
+				<description>Wearing a Boaboa mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Boaboa_Exalted</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_BoaboaThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask (Boaboa)</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

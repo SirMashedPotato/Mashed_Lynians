@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Wanderer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ShakalakaKindBase">
+		<defName>Mashed_Lynian_ShakalakaWanderer</defName>
+		<label>wanderer</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>300~650</apparelMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_ShakalakaTribal</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Mashed_Lynian_Apparel_ShakalakaCoat</li>
+			<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
+		</apparelRequired>
+		<weaponMoney>300~300</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~20</initialResistanceRange>
+		<maxGenerationAge>25</maxGenerationAge>
+	</PawnKindDef>
+</Defs>

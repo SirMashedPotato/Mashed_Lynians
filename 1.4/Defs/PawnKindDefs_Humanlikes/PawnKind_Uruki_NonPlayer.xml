@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_UrukiKindBase" Abstract="True">
+		<race>Mashed_Lynian_UrukiRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerUrukiTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_UrukiTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_UrukiKindBase">
+		<defName>Mashed_Lynian_UrukiRecruit</defName>
+		<label>recruit</label>
+		<combatPower>30</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>0</apparelMoney>
+		<weaponMoney>0</weaponMoney>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0</initialResistanceRange>
+		<modExtensions>
+			<li Class="Mashed_Lynians.PawnKindProperties">
+				<purchasableFromTrader>True</purchasableFromTrader>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<!-- ==========[Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_UrukiKindBase">
+		<defName>Mashed_Lynian_UrukiGatherer</defName>
+		<label>gatherer</label>
+		<combatPower>40</combatPower>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
+		<apparelMoney>50~100</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalRanged</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	<!-- ==========[Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_UrukiKindBase">
+		<defName>Mashed_Lynian_UrukiTrader</defName>
+		<label>trader</label>
+		<trader>true</trader>
+		<combatPower>60</combatPower>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>200~300</apparelMoney>
+		<weaponMoney>100~100</weaponMoney>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_UrukiBasket</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalRanged</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	<!-- ==========[Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_UrukiKindBase">
+		<defName>Mashed_Lynian_UrukiBombadier</defName>
+		<label>bombadier</label>
+		<combatPower>75</combatPower>
+		<apparelMoney>200~550</apparelMoney>
+		<weaponMoney>360~400</weaponMoney>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalDestructive</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<canBeSapper>true</canBeSapper>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_UrukiKindBase" Name="Mashed_Lynian_UrukiChiefBase" Abstract="True">
+		<combatPower>85</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>450~750</apparelMoney>
+		<weaponMoney>500~1000</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>19~30</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Mashed_Lynian_UrukiChiefBase">
+		<defName>Mashed_Lynian_UrukiChiefRanged</defName>
+		<label>chief</label>
+		<weaponTags>
+			<li>Mashed_Lynian_UrukiTribalRanged</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike_OldWorld">
+		<defName>Mashed_Lynian_FelyneRace</defName>
+		<label>felyne</label>
+		<description>Felyne are the most commonly sighted Lynian species, likely thanks to their relaxed nature, and willingness to help others. They can often be found working in kitchens, serving at shop stalls, and tending farms. Like all Lynians, Felyne are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, Felyne are now a fairly common sight on the more 'civilised' planets, likely due to being painfully adorable. Occasionally the Felyne assisting settlers decide to set off on their own journey, often forming small agrarian tribes in the process.\n\nBeing a cat-like Lynian, Felyne have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nMental break threshold is reduced by 5%.\nNegotiation ability is increased by 10%.\nGeneral labour speed is increased by 10%.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<canUseFelvine>True</canUseFelvine>
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Felyne</hybridInheritedGene>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Lynian_FelvinePlant</ThingDef>
+			<ThingDef>Mashed_Lynian_FelvinePowder</ThingDef>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 0.05 lower than base -->
+			<MentalBreakThreshold>0.3</MentalBreakThreshold>
+			<!-- 0.1 higher than base -->
+			<NegotiationAbility>1.1</NegotiationAbility>
+			<!-- 0.1 higher than base -->
+			<GeneralLaborSpeed>1.1</GeneralLaborSpeed>
+		</statBases>
+		<comps>
+		</comps>
+		<race>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<notXenophobistTowards>
+					<li>Mashed_Lynian_MelynxRace</li>
+				</notXenophobistTowards>
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<!-- =====[Main fur colour]===== -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Standard felyne colour -->
+									<li>
+										<weight>5</weight>
+										<only>(246,223,179,255)</only>
+									</li>
+									<!-- Freedom Unite icon -->
+									<li>
+										<weight>1</weight>
+										<only>(210,185,132,255)</only>
+									</li>
+									<!-- Tri icon -->
+									<!--
+									<li>
+										<weight>1</weight>
+										<only>(183,167,150,255)</only>
+									</li>
+									-->
+									<!-- Rise icon, lighter -->
+									<li>
+										<weight>1</weight>
+										<only>(230,222,188,255)</only>
+									</li>
+									<!-- Rise icon, darker -->
+									<li>
+										<weight>1</weight>
+										<only>(223,211,170,255)</only>
+									</li>
+								</options>
+							</first>
+							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Standard felyne colour -->
+									<li>
+										<weight>5</weight>
+										<only>(118,92,66,255)</only>
+									</li>
+									<!-- Lighter brown -->
+									<li>
+										<weight>2</weight>
+										<only>(150,106,48,255)</only>
+									</li>
+									<!-- Freedom Unite icon, darker brown -->
+									<li>
+										<weight>1</weight>
+										<only>(91,55,40,255)</only>
+									</li>
+									<!-- Freedom Unite icon, lighter brown-->
+									<li>
+										<weight>1</weight>
+										<only>(143,106,75,255)</only>
+									</li>
+									<!-- Tri icon -->
+									<li>
+										<weight>1</weight>
+										<only>(65,54,50,255)</only>
+									</li>
+									<!-- Rise icon -->
+									<li>
+										<weight>1</weight>
+										<only>(161,143,91,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/</body>
+				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Woven/WovenSwaddle_Child</swaddle>
+			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Felyne</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>
