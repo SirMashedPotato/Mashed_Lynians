@@ -2,13 +2,13 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Medieval Overhaul</li>
+			<li>Lost Technology Core</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 				<!-- ==========[Adding stuff so some lynian kinds don't spawn naked]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/FactionDef[defName="DankPyon_PlayerKingdom" or defName="DankPyon_LoneWolf" or defName="DankPyon_MercenaryCompany" ]/apparelStuffFilter/thingDefs</xpath>
+					<xpath>Defs/FactionDef[defName="PlayerLostTechnology"]/apparelStuffFilter/thingDefs</xpath>
 					<value>
 						<li>WoodLog</li>
 					</value>
@@ -36,9 +36,7 @@
 								</li>
 							</pawnKindEntries>
 							<factionDefs>
-								<li>DankPyon_PlayerKingdom</li>
-								<li>DankPyon_LoneWolf</li>
-								<li>DankPyon_MercenaryCompany</li>
+								<li>PlayerLostTechnology</li>
 							</factionDefs>
 						</li>
 					</value>
@@ -81,9 +79,7 @@
 								</li>
 							</pawnKindEntries>
 							<factionDefs>
-								<li>DankPyon_PlayerKingdom</li>
-								<li>DankPyon_LoneWolf</li>
-								<li>DankPyon_MercenaryCompany</li>
+								<li>PlayerLostTechnology</li>
 							</factionDefs>
 						</li>
 					</value>

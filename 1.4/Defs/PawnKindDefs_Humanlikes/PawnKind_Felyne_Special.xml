@@ -24,5 +24,6 @@
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>13~20</initialResistanceRange>
 		<maxGenerationAge>35</maxGenerationAge>
+		<nameMaker>Mashed_Lynian_NamerPerson_CatLike_SpecialMeme</nameMaker>
 	</PawnKindDef>
 </Defs>
