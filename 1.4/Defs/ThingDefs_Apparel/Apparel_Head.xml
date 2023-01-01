@@ -563,6 +563,9 @@
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianAcornKnight</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_KitchenHeadband]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
@@ -622,6 +625,7 @@
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_LynianKitchen</li>
+			<li>Mashed_Lynian_LynianWorker</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_KitchenHat]========== -->
@@ -684,6 +688,7 @@
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_LynianKitchen</li>
+			<li>Mashed_Lynian_LynianWorker</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_FarmHat]========== -->
@@ -744,6 +749,7 @@
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_LynianFarm</li>
+			<li>Mashed_Lynian_LynianWorker</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaFluffyMask]========== -->

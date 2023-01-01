@@ -333,6 +333,9 @@
 				<li>Mashed_Lynian_LynianArmourTribalAdvanced</li>
 			</tags>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianAcornKnight</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_KitchenApron]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
@@ -395,6 +398,7 @@
 		</apparel>
 		<tradeTags>
 			<li>Mashed_Lynian_LynianKitchen</li>
+			<li>Mashed_Lynian_LynianWorker</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_FelyneCoat]========== -->

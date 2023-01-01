@@ -31,8 +31,18 @@ namespace Mashed_Lynians
 						yield break;
 					}
 				}
+				PawnKindDef kindDef;
+
+				if (!pawnKindDefList.NullOrEmpty())
+                {
+					kindDef = pawnKindDefList.RandomElement();
+                } 
+				else
+                {
+					kindDef = pawnKindDef;
+				}
 				DevelopmentalStage developmentalStages = Find.Storyteller.difficulty.ChildrenAllowed ? (DevelopmentalStage.Child | DevelopmentalStage.Adult) : DevelopmentalStage.Adult;
-				PawnGenerationRequest request = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, 
+				PawnGenerationRequest request = new PawnGenerationRequest(kindDef, faction, PawnGenerationContext.NonPlayer, 
 					forTile, false, false, false, true, false, 1f, !trader.orbital, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, 
 					null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, developmentalStages, null, null, null, false);
 				yield return PawnGenerator.GeneratePawn(request);
@@ -52,5 +62,6 @@ namespace Mashed_Lynians
 
 		private bool respectPopulationIntent;
         public PawnKindDef pawnKindDef;
-    }
+		public List<PawnKindDef> pawnKindDefList;
+	}
 }

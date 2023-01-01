@@ -306,6 +306,9 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 			</wornGraphicData>
 		</apparel>
+		<tradeTags>
+			<li>Mashed_Lynian_LynianAcornKnight</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_UrukiBasket]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_PackBase">
