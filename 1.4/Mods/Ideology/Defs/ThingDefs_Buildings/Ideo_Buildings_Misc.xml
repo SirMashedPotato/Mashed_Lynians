@@ -53,7 +53,6 @@
 			<li>
 				<compClass>CompGatherSpot</compClass>
 			</li>
-			<li Class="CompProperties_Flickable"/>
 			<!-- Harmony patch ensures only pawns affected by felvine ingestion are affected -->
 			<li Class="CompProperties_GiveHediffSeverity">
 				<hediff>Mashed_Lynian_FelvineHighFrenzy</hediff>
