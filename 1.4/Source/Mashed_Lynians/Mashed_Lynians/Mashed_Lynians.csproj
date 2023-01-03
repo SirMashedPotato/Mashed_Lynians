@@ -110,6 +110,7 @@
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\Harmony_Biotech.cs" />
+    <Compile Include="Harmony\Harmony_Ideology.cs" />
     <Compile Include="Harmony\Harmony_Romance.cs" />
     <Compile Include="HediffComp\HediffComp_FurriousFurrenzyTooltip_Halved.cs" />
     <Compile Include="HediffComp\HediffComp_HuntersMark.cs" />

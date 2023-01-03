@@ -17,5 +17,7 @@ namespace Mashed_Lynians
 		public static ThingDef Mashed_Lynian_LynianLeather;
 		public static ThingDef Mashed_Lynian_LynianFineFur;
 		public static ThingDef Mashed_Lynian_PawnDigging;
+		[MayRequireIdeology]
+		public static ThingDef Mashed_Lynian_FelvineStone;
 	}
 }

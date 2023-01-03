@@ -7,7 +7,7 @@ namespace Mashed_Lynians
     {
         public static bool CanUseFelvine(Pawn pawn)
         {
-            if (ModsConfig.BiotechActive)
+            if (ModsConfig.BiotechActive && pawn.genes != null)
             {
                 if (pawn.genes.HasGene(GeneDefOf.AddictionImmune_Mashed_Lynian_FelvineChemical) 
                     || pawn.genes.HasGene(GeneDefOf.AddictionResistant_Mashed_Lynian_FelvineChemical)
