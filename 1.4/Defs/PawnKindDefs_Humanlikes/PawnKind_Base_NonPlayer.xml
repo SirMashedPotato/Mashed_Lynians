@@ -17,6 +17,13 @@
 		  </li>
 		</backstoryFiltersOverride>
 		-->
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<!-- not sure if it's actually necessary, but not taking any chances -->
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	<!-- ==========[Basic, Recruit]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_NonPlayerKindBase" Name="Mashed_Lynian_RecruitBase" Abstract="True">
