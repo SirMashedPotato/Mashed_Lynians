@@ -249,6 +249,9 @@
 					<li>SkinColorOverride</li>
 					<li>Fur</li>
 					<li>Tail</li>
+					<li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
 				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>
@@ -260,6 +263,12 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
 				</blackEndoCategories>
+				<!-- ==========[Biotech - Xenotypes]========== -->
+				<whiteXenotypeList IgnoreIfNoMatchingField="True">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+				</whiteXenotypeList>
+				<onlyUseRaceRestrictedXenotypes IgnoreIfNoMatchingField="True">true</onlyUseRaceRestrictedXenotypes>
 				<!-- ==========[Biotech - Reproduction]========== -->
 				<canReproduce>True</canReproduce>
 				<canReproduceWithSelf>True</canReproduceWithSelf>
