@@ -31,7 +31,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	<!-- ==========[Gatherer]========== -->
-	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase" Name="Mashed_Lynian_GajalakaGathererKind">
 		<defName>Mashed_Lynian_GajalakaGatherer</defName>
 		<label>gatherer</label>
 		<combatPower>40</combatPower>
@@ -68,7 +68,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 	<!-- ==========[Warrior]========== -->
-	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase" Name="Mashed_Lynian_GajalakaWarriorKind">
 		<defName>Mashed_Lynian_GajalakaWarrior</defName>
 		<label>warrior</label>
 		<combatPower>65</combatPower>
@@ -82,7 +82,7 @@
 		<initialResistanceRange>13~20</initialResistanceRange>
 	</PawnKindDef>
 	<!-- ==========[Bombadier]========== -->
-	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase">
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaKindBase" Name="Mashed_Lynian_GajalakaBombadierKind">
 		<defName>Mashed_Lynian_GajalakaBombadier</defName>
 		<label>bombadier</label>
 		<combatPower>75</combatPower>
@@ -131,7 +131,7 @@
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>19~30</initialResistanceRange>
 	</PawnKindDef>
-	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase">
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase" Name="Mashed_Lynian_GajalakaChiefMeleeKind">
 		<defName>Mashed_Lynian_GajalakaChiefMelee</defName>
 		<label>warrior chief</label>
 		<weaponTags>
@@ -139,7 +139,7 @@
 		</weaponTags>
 		<initialResistanceRange>38~58</initialResistanceRange>
 	</PawnKindDef>
-	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase">
+	<PawnKindDef ParentName="Mashed_Lynian_GajalakaChiefBase" Name="Mashed_Lynian_GajalakaChiefRangedKind">
 		<defName>Mashed_Lynian_GajalakaChiefRanged</defName>
 		<label>gunner chief</label>
 		<combatPower>100</combatPower>

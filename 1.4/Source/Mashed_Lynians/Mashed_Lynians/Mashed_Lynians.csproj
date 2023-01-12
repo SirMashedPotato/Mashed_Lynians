@@ -135,6 +135,7 @@
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
     <Compile Include="ThoughtWorker\Ideo\MaskThoughtUtility.cs" />
+    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_GoldenGajalakaThought.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
     <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_BoaboaThought.cs" />
     <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_GajalakaThought.cs" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<FactionDef ParentName="Mashed_Lynian_NonPlayerHostileFactionBase">
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerHostileFactionBase" Name="Mashed_Lynian_NonPlayerGajalakaTribeBase">
 		<defName>Mashed_Lynian_NonPlayerGajalakaTribe</defName>
 		<label>Gajalaka tribe</label>
 		<description>A small Gajalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Gajalaka are ferocious warriors and subsequently make both viscous foes, and powerful allies.\n\nBeing a Gajalaka tribe, this particular tribe is distrustful of outsiders, and often openly hostile to anyone that encroaches into their territory; it may be difficult to turn them into an ally.</description>

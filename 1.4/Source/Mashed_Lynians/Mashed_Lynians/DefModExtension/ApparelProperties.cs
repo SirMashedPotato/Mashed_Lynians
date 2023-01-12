@@ -11,6 +11,7 @@ namespace Mashed_Lynians
         public bool isBoaboaMask = false;
         public bool isShakalakaMask = false;
         public bool isGajalakaMask = false;
+        public bool isGoldenGajalakaMask = false;
 
         public bool overrideColour = false;
 

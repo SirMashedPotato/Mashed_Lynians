@@ -55,5 +55,20 @@ namespace Mashed_Lynians
             }
             return false;
         }
+        public static bool WearingValidMask_GoldenGajalaka(Pawn p)
+        {
+            List<Apparel> wornApparel = p.apparel.WornApparel.Where(x => x.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead)).ToList();
+            foreach (Apparel ap in wornApparel)
+            {
+                ApparelProperties props = ApparelProperties.Get(ap.def);
+                if (props != null && props.isGoldenGajalakaMask)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
+
+   

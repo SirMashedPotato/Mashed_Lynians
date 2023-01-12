@@ -11,6 +11,7 @@
 				<isBoaboaMask>true</isBoaboaMask>
 				<isShakalakaMask>true</isShakalakaMask>
 				<isGajalakaMask>true</isGajalakaMask>
+				<isGoldenGajalakaMask>true</isGoldenGajalakaMask>
 			</li>
 		</modExtensions>
 		<comps>
