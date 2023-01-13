@@ -33,6 +33,7 @@
 		</disallowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Boaboa</li>
+			<li MayRequire="AP.huntingmeme">AP_HuntingMeme</li>
 		</requiredMemes>
 		<apparelStuffFilter>
 			<thingDefs>

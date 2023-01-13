@@ -326,6 +326,18 @@
 			<li>Mashed_Lynian_Gajalaka</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_GajalakaMask]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_GajalakaMaskBase">
+		<defName>Mashed_Lynian_Apparel_GajalakaMaskColoured</defName>
+		<label>Gajalaka mask (colourable)</label>
+		<description>A sturdy stone mask, typically worn by Gajalaka. Specially designed for Lynians, the terrifying visage can make unsteady hands falter.\n\nThe mask is often painted various colours.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMaskUncoloured_Item</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_GajalakaArmour/Mashed_GajalakaMaskUncoloured</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaMask]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
 		<defName>Mashed_Lynian_Apparel_ShakalakaMask</defName>
