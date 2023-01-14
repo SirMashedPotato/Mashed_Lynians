@@ -322,7 +322,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Weapon_TribalMeleeBase" Name="Mashed_Lynian_MeleeWeapon_GajalakaSwordBase">
 		<defName>Mashed_Lynian_MeleeWeapon_GajalakaSword</defName>
 		<label>Gajalaka sword</label>
-		<description>A primitive sword chiseled from stone, typically used by Gajalaka. Specially designed for Lynians, the edge is surprisingly sharp, and cleaves through armour with relative ease.</description>
+		<description>A primitive sword chiselled from stone, typically used by Gajalaka. Specially designed for Lynians, the edge is surprisingly sharp, and cleaves through armour with relative ease.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Gajalaka_Sword</texPath>
 			<shaderType>CutoutComplex</shaderType>

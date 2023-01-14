@@ -332,7 +332,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Weapon_RangedBase" Name="Mashed_Lynian_RangedWeapon_GajalakaThrowingKnifeBase">
 		<defName>Mashed_Lynian_RangedWeapon_GajalakaThrowingKnife</defName>
 		<label>Gajalaka throwing knife</label>
-		<description>A primitive throwing knife chiseled from stone, typically used by Gajalaka. Specially designed for Lynians, the edge is surprisingly sharp, and cleaves through armour with relative ease.</description>
+		<description>A primitive throwing knife chiselled from stone, typically used by Gajalaka. Specially designed for Lynians, the edge is surprisingly sharp, and cleaves through armour with relative ease.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponRanged/Mashed_Gajalaka_ThrowingKnife</texPath>
 			<shaderType>CutoutComplex</shaderType>
