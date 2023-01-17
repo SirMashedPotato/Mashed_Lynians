@@ -33,7 +33,7 @@
 				<li>name(p=0.5)->[MogaFarmName]</li>
 				<li>name(p=0.5)->[BhernaRanchNames]</li>
 				<li>name(p=0.5)->[KamuraPlazaNames]</li>
-				<li>name(p=0.5)->[Lynians_CatLikeNames_Food]</li>
+				<li>name(p=0.5)->[FoodNames]</li>
 				<li>name(p=1)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalMale]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
@@ -55,7 +55,7 @@
 				<li>name(p=0.5)->[MogaFarmName]</li>
 				<li>name(p=0.5)->[BhernaRanchNames]</li>
 				<li>name(p=0.5)->[KamuraPlazaNames]</li>
-				<li>name(p=0.5)->[Lynians_CatLikeNames_Food]</li>
+				<li>name(p=0.5)->[FoodNames]</li>
 				<li>name(p=1)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalFemale]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
