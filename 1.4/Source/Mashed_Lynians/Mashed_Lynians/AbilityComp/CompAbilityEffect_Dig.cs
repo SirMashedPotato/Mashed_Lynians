@@ -15,7 +15,6 @@ namespace Mashed_Lynians
 
         public override bool GizmoDisabled(out string reason)
         {
-            
             if (!HighEnoughSkill())
             {
                 reason = "Mashed_Lynian_AbilitySkillTooLow".Translate(SkillDefOf.Mining.label, Props.requiredLevel);
@@ -24,12 +23,22 @@ namespace Mashed_Lynians
             return base.GizmoDisabled(out reason);
         }
 
-        public override bool CanCast => base.CanCast && HighEnoughSkill();
+        public override bool CanCast 
+        {
+            get
+            {
+                if (parent.pawn.Faction != Faction.OfPlayerSilentFail)
+                {
+                    return base.CanCast && HighEnoughSkill();
+                }
+                return base.CanCast;
+            }
+        }
 
         private bool HighEnoughSkill()
         {
             SkillRecord skill = parent.pawn.skills.GetSkill(SkillDefOf.Mining);
-            return skill.Level < Props.requiredLevel;
+            return skill.Level >= Props.requiredLevel;
         }
 
     }
