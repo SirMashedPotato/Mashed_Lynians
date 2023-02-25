@@ -396,6 +396,7 @@
 							<hediffGraphics>
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Right</ESCP_NecromanticThralls_Enthralled>
 							</hediffGraphics>
 							<geneGraphics>
 								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Right</Hemogenic>
@@ -430,6 +431,7 @@
 							<hediffGraphics>
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Left</ESCP_NecromanticThralls_Enthralled>
 							</hediffGraphics>
 							<geneGraphics>
 								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Left</Hemogenic>
@@ -672,6 +674,7 @@
 							<hediffGraphics>
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Right</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Right</ESCP_NecromanticThralls_Enthralled>
 							</hediffGraphics>
 							<geneGraphics>
 								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Right</Hemogenic>
@@ -707,6 +710,7 @@
 							<hediffGraphics>
 								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
 								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Left</ESCP_NecromanticThralls_Enthralled>
 							</hediffGraphics>
 							<geneGraphics>
 								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Left</Hemogenic>
