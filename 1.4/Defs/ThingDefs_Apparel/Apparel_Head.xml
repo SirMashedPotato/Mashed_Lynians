@@ -523,7 +523,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_AcornHelmet]========== -->
-	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase" Name="Mashed_Lynian_Apparel_AcornHelmetBase">
 		<defName>Mashed_Lynian_Apparel_AcornHelmet</defName>
 		<label>acorn helmet</label>
 		<description>A durable helmet, modelled after an acorn. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such armour as well.</description>
@@ -578,6 +578,32 @@
 		<tradeTags>
 			<li>Mashed_Lynian_LynianAcornKnight</li>
 		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_AcornHelmetColoured]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_AcornHelmetBase">
+		<defName>Mashed_Lynian_Apparel_AcornHelmetColoured</defName>
+		<label>acorn helmet (colourable)</label>
+		<description>A durable helmet, modelled after an acorn. While usually worn by 'domesticated' Felyne and Melynx serving as Palicoes, 'wild' Lynians can occasionally be found wearing such armour as well.\n\nThe helmet is often painted various colours.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.ApparelProperties">
+				<overrideColour>true</overrideColour>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornHelmetUncoloured_Item</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_AcornArmour/Mashed_AcornHelmetUncoloured</wornGraphicPath>
+			<tags Inherit="False"/>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>5</weight>
+					<only>(250,250,250,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_KitchenHeadband]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase">
