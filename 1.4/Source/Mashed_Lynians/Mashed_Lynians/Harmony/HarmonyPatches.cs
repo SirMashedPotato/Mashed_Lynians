@@ -207,6 +207,14 @@ namespace Mashed_Lynians
                         return;
                     }
                 }
+                if (stat == RimWorld.StatDefOf.MiningSpeed)
+                {
+                    if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianMiningFurrenzy) != null)
+                    {
+                        __result *= 2f;
+                        return;
+                    }
+                }
                 if (stat == RimWorld.StatDefOf.AimingDelayFactor)
                 {
                     if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Lynian_LynianFiringFurrenzy) != null)

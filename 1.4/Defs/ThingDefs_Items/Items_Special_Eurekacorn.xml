@@ -181,4 +181,21 @@
 			<li>Mashed_Lynian_Boaboa</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_LynianMiningFurrenzyAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_EurekacornBase">
+		<defName>Mashed_Lynian_EurekacornMiningFurrenzy</defName>
+		<label>eurekacorn (Mining furrenzy)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_LynianMiningFurrenzyAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_LynianMiningFurrenzyAbility</ability>
+				<fillHunger>True</fillHunger>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Mashed_Lynian_Gajalaka</li>
+		</tradeTags>
+	</ThingDef>
 </Defs>

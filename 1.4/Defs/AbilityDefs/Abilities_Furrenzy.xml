@@ -137,4 +137,32 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<!-- ==========[Mashed_Lynian_LynianMiningFurrenzy]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_LynianFurrenzyBase">
+		<defName>Mashed_Lynian_LynianMiningFurrenzyAbility</defName>
+		<label>mining furrenzy</label>
+		<description>Reach back through time, recollecting every piece of advice given to this Lynian about mining, enhancing their mining speed beyond its normal limit in the process.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_MiningFurrenzy</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_MiningFurrenzy</warmupMoteSocialSymbol>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_LynianMiningFurrenzy</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_LynianMiningFurrenzy</defName>
+		<label>mining furrenzy</label>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about mining, and putting it all to use at once. This doubles the pawns plant work speed, allowing it to go above the normal limit in the process.</description>
+		<comps>
+			<li Class="Mashed_Lynians.HediffCompProperties_WorkingFurrenzyTooltip">
+				<compClass>Mashed_Lynians.HediffComp_WorkingFurrenzyTooltip</compClass>
+				<statDef>MiningSpeed</statDef>
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>
