@@ -16,6 +16,9 @@
 			<li>Artifact</li>
 			<li>Mashed_Lynian_Eurekacorn</li>
 		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<MaxHitPoints>80</MaxHitPoints>

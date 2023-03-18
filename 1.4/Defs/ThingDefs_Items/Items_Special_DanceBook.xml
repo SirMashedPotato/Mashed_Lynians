@@ -17,6 +17,9 @@
 			<li>Artifact</li>
 			<li>Mashed_Lynian_ShakalakaDanceBook</li>
 		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<MaxHitPoints>80</MaxHitPoints>
