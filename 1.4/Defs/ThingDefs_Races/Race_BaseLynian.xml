@@ -169,6 +169,7 @@
 					<customDrawSize>(0.7, 0.7)</customDrawSize>
 					<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
 					<headOffset>(0.0, -0.1)</headOffset>
+					<headFemaleOffset IgnoreIfNoMatchingField="True">(0.0, -0.1)</headFemaleOffset>
 				</alienPartGenerator>
 			</generalSettings>
 			<thoughtSettings>
