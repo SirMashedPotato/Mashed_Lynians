@@ -35,6 +35,7 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
+		<tradeTags Inherit="False"/>
 		<relicChance>0</relicChance>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_Boomerang]========== -->

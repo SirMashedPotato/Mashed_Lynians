@@ -28,6 +28,7 @@
 			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
+		<tradeTags Inherit="False"/>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_PurrserkerArmour]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">

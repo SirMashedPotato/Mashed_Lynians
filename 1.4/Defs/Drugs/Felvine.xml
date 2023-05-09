@@ -78,6 +78,7 @@
 			</li>
 		</comps>
 		<allowedArchonexusCount>50</allowedArchonexusCount>
+		<tradeTags Inherit="False"/>
 	</ThingDef>
 	<!-- ==========[High - non-cat-like lynian]========== -->
 	<HediffDef>

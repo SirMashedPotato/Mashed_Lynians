@@ -24,5 +24,6 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
+		<tradeTags Inherit="False"/>
 	</ThingDef>
 </Defs>

@@ -27,6 +27,7 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
+		<tradeTags Inherit="False"/>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_HeadgearDyeableBase]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_HeadgearBase" Name="Mashed_Lynian_Apparel_HeadgearDyeableBase" Abstract="True">

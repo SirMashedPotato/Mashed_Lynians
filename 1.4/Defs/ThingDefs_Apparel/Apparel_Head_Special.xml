@@ -33,12 +33,8 @@
 			<li>Mashed_Lynian_ApparelHeadgear</li>
 		</thingCategories>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-		<tradeTags>
-			<li>Artifact</li>
-		</tradeTags>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_UltimateMask/Mashed_UltimateMask_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
