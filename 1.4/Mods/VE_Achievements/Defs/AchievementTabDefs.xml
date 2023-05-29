@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AchievementsExpanded.AchievementTabDef>
-		<defName>SMP_AchievementsTab</defName>
-		<label>SMP Misc</label>
+		<defName>Mashed_AchievementsTab</defName>
+		<label>Mashed</label>
 	</AchievementsExpanded.AchievementTabDef>
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
 	<!-- =====[Base]===== -->
 	<AchievementsExpanded.Reward_MapIncident Name="Mashed_AchievementLynians_LynianJoinsReward" Abstract="true">
-		<tab>SMP_AchievementsTab</tab>
+		<tab>Mashed_AchievementsTab</tab>
 		<cost>150</cost>
 	</AchievementsExpanded.Reward_MapIncident>
 	<!-- =====[Felyne]===== -->

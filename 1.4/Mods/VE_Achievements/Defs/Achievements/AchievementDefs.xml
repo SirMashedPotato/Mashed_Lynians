@@ -2,8 +2,8 @@
 <Defs>
 	<!-- ==========[Base]========== -->
 	<AchievementsExpanded.AchievementDef Name="Mashed_AchievementLynians_Base" Abstract="True">
-		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
-		<tab>SMP_AchievementsTab</tab>
+		<bgtexPath>Achievements/Mashed_AchievementBackground_Lynians</bgtexPath>
+		<tab>Mashed_AchievementsTab</tab>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Colonists]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementLynians_Base">
@@ -188,8 +188,6 @@
 		<defName>Mashed_AchievementLynians_CraftFelvine</defName>
 		<label>Meowlter White</label>
 		<description>Craft felvine powder 100 times</description>
-		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
-		<tab>SMP_AchievementsTab</tab>
 		<tracker Class="AchievementsExpanded.ItemCraftTracker">
 			<def>Mashed_Lynian_FelvinePowder</def>
 			<count>100</count>
@@ -316,8 +314,6 @@
 		<defName>Mashed_AchievementLynians_ObtainUltimateMask</defName>
 		<label>The Ultimate Mask</label>
 		<description>Obtain The Ultimate Mask</description>
-		<bgtexPath>Achievements/Mashed_AchievementBackground</bgtexPath>
-		<tab>SMP_AchievementsTab</tab>
 		<tracker Class="AchievementsExpanded.ItemTracker">
 			<def>Mashed_Lynian_Apparel_UltimateMask</def>
 			<count>1</count>
