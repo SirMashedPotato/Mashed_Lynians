@@ -104,6 +104,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
+			<Mashed_Ashlands_AshResistance MayRequire="SirMashedPotato.Ashlands">0.25</Mashed_Ashlands_AshResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

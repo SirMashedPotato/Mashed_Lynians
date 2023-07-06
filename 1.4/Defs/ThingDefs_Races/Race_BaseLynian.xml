@@ -33,6 +33,7 @@
 			<WorkSpeedGlobal>0.95</WorkSpeedGlobal>
 			<RoyalFavorValue>3</RoyalFavorValue>
 			<ToxicResistance>0.5</ToxicResistance>
+			<Mashed_Ashlands_AshResistance MayRequire="SirMashedPotato.Ashlands">0.25</Mashed_Ashlands_AshResistance>
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">1</Fertility>
 		</statBases>
 		<race>
