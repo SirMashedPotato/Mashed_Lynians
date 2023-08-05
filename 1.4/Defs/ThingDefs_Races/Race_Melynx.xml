@@ -46,30 +46,45 @@
 								<options>
 									<!-- Standard melynx colour -->
 									<li>
-										<weight>5</weight>
+										<weight>6</weight>
 										<only>(86,85,84,255)</only>
 									</li>
 									<!-- Freedom Unite icon -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(56,50,45,255)</only>
 									</li>
 									<!-- Tri icon -->
-									<!--
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(53,40,40,255)</only>
 									</li>
-									-->
 									<!-- Rise icon, lighter -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(129,126,119,255)</only>
 									</li>
 									<!-- Rise icon, darker -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(101,95,90,255)</only>
+									</li>
+									<!-- Millsy -->
+									<li>
+										<weight>1</weight>
+										<only>(114,104,98,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(84,75,71,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(67,57,51,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(57,51,47,255)</only>
 									</li>
 								</options>
 							</first>
@@ -78,23 +93,40 @@
 								<options>
 									<!-- Standard melynx colour -->
 									<li>
-										<weight>5</weight>
+										<weight>6</weight>
 										<only>(255,244,238,255)</only>
 									</li>
 									<!-- Freedom Unite icon -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(189,168,143,255)</only>
 									</li>
 									<!-- Tri icon -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(179,178,162,255)</only>
 									</li>
 									<!-- Rise icon -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(226,226,220,255)</only>
+									</li>
+									<!-- Millsy -->
+									<li>
+										<weight>1</weight>
+										<only>(219,188,160,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(203,168,140,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(186,150,123,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(164,125,99,255)</only>
 									</li>
 								</options>
 							</second>

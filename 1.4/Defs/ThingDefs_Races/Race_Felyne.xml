@@ -44,30 +44,45 @@
 								<options>
 									<!-- Standard felyne colour -->
 									<li>
-										<weight>5</weight>
+										<weight>6</weight>
 										<only>(246,223,179,255)</only>
 									</li>
 									<!-- Freedom Unite icon -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(210,185,132,255)</only>
 									</li>
 									<!-- Tri icon -->
-									<!--
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(183,167,150,255)</only>
 									</li>
-									-->
 									<!-- Rise icon, lighter -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(230,222,188,255)</only>
 									</li>
 									<!-- Rise icon, darker -->
 									<li>
-										<weight>1</weight>
+										<weight>2</weight>
 										<only>(223,211,170,255)</only>
+									</li>
+									<!-- Catalina -->
+									<li>
+										<weight>1</weight>
+										<only>(242,238,229,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(224,214,195,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(184,173,156,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(160,153,138,255)</only>
 									</li>
 								</options>
 							</first>
@@ -103,6 +118,23 @@
 									<li>
 										<weight>1</weight>
 										<only>(161,143,91,255)</only>
+									</li>
+									<!-- Catalina -->
+									<li>
+										<weight>1</weight>
+										<only>(139,113,99,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(125,104,91,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(108,89,78,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(93,76,64,255)</only>
 									</li>
 								</options>
 							</second>

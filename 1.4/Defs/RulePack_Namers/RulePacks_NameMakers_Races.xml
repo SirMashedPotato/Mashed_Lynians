@@ -30,11 +30,11 @@
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=0.01)->[CatLikeSpecial]</li>
-				<li>name(p=0.5)->[MogaFarmName]</li>
-				<li>name(p=0.5)->[BhernaRanchNames]</li>
-				<li>name(p=0.5)->[KamuraPlazaNames]</li>
+				<li>name(p=1)->[MogaFarmName]</li>
+				<li>name(p=1)->[BhernaRanchNames]</li>
+				<li>name(p=1)->[KamuraPlazaNames]</li>
 				<li>name(p=0.5)->[FoodNames]</li>
-				<li>name(p=1)->[NameAnimalUnisex]</li>
+				<li>name(p=0.25)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalMale]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
 				<li>name(p=0.15)->[Animal]</li>
@@ -52,11 +52,11 @@
 		<rulePack>
 			<rulesStrings>
 				<li>name(p=0.01)->[CatLikeSpecial]</li>
-				<li>name(p=0.5)->[MogaFarmName]</li>
-				<li>name(p=0.5)->[BhernaRanchNames]</li>
-				<li>name(p=0.5)->[KamuraPlazaNames]</li>
+				<li>name(p=1)->[MogaFarmName]</li>
+				<li>name(p=1)->[BhernaRanchNames]</li>
+				<li>name(p=1)->[KamuraPlazaNames]</li>
 				<li>name(p=0.5)->[FoodNames]</li>
-				<li>name(p=1)->[NameAnimalUnisex]</li>
+				<li>name(p=0.25)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalFemale]</li>
 				<li>name(p=0.25)->[Vegetable]</li>
 				<li>name(p=0.15)->[Animal]</li>
@@ -107,7 +107,7 @@
 			<rulesStrings>
 				<li>name(p=5)->[DanceNames]</li>
 				<li>name(p=2)->[InstrumentNames]</li>
-				<li>name(p=1)->[NameAnimalUnisex]</li>
+				<li>name(p=0.25)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalMale]</li>
 			</rulesStrings>
 		</rulePack>
@@ -122,7 +122,7 @@
 			<rulesStrings>
 				<li>name(p=5)->[DanceNames]</li>
 				<li>name(p=2)->[InstrumentNames]</li>
-				<li>name(p=1)->[NameAnimalUnisex]</li>
+				<li>name(p=0.25)->[NameAnimalUnisex]</li>
 				<li>name(p=0.25)->[NameAnimalFemale]</li>
 			</rulesStrings>
 		</rulePack>

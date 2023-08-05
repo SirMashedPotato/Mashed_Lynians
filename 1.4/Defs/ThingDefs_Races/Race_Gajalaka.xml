@@ -26,6 +26,8 @@
 		<comps>
 		</comps>
 		<race>
+			<nameGenerator>Mashed_Lynian_NamerPerson_ShakalakaMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_ShakalakaFemale</nameGeneratorFemale>
 		</race>
 		<alienRace>
 			<generalSettings>
