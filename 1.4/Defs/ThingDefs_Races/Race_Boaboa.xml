@@ -25,11 +25,6 @@
 			<!-- 0.1 higher than base -->
 			<ButcheryFleshSpeed>1.1</ButcheryFleshSpeed>
 		</statBases>
-		<comps>
-		</comps>
-		<race>
-			<leatherDef>Mashed_Lynian_LynianThickFur</leatherDef>
-		</race>
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>

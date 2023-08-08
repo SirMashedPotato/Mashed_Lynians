@@ -5,11 +5,11 @@ namespace Mashed_Lynians
 {
     public class CompUseEffect_Eurekacorn : CompUseEffect
 	{
-		new public CompProperties_UseEffectEurekacorn Props
+		public CompProperties_UseEffectEurekacorn Props
 		{
 			get
 			{
-				return (CompProperties_UseEffectEurekacorn)this.props;
+				return (CompProperties_UseEffectEurekacorn)props;
 			}
 		}
 

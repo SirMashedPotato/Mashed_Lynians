@@ -17,6 +17,20 @@
 			<li>Mashed_Lynian_GrimalkyneStart</li>
 		</tags>
 	</ResearchProjectDef>
+	<!-- ==========[Lynian dye kit]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_DyeKit</defName>
+		<label>Lynian dye kit</label>
+		<description>Learn how to the Lynian dye kit at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<prerequisites>
+			<li>Mashed_Lynian_FelvineSowing</li>
+		</prerequisites>
+	</ResearchProjectDef>
 	<!-- ==========[Lynian Explosives]========== -->
 	<ResearchProjectDef>
 		<defName>Mashed_Lynian_LynianExplosives</defName>
@@ -24,7 +38,7 @@
 		<description>Learn how to craft simple explosives at the Lynian crafting spot.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
-		<researchViewX>1.00</researchViewX>
+		<researchViewX>2.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
 		<tab>Mashed_ResearchTab_MonsterHunter</tab>
 	</ResearchProjectDef>

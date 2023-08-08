@@ -7,7 +7,7 @@ namespace Mashed_Lynians
     {
         public CompProperties_UseEffectEurekacorn()
         {
-            this.compClass = typeof(CompUseEffect_Eurekacorn);
+            compClass = typeof(CompUseEffect_Eurekacorn);
         }
 
         public AbilityDef ability;

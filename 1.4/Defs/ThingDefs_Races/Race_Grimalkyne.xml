@@ -26,10 +26,6 @@
 			<!-- 0.2 lower than other lynians -->
 			<ToxicResistance>0.7</ToxicResistance>
 		</statBases>
-		<comps>
-		</comps>
-		<race>
-		</race>
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>

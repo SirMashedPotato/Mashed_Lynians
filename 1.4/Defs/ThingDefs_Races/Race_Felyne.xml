@@ -26,10 +26,6 @@
 			<!-- 0.1 higher than base -->
 			<GeneralLaborSpeed>1.1</GeneralLaborSpeed>
 		</statBases>
-		<comps>
-		</comps>
-		<race>
-		</race>
 		<alienRace>
 			<generalSettings>
 				<notXenophobistTowards>

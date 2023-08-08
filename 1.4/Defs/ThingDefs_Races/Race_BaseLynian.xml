@@ -632,6 +632,8 @@
 		<race>
 			<body>Human</body>
 			<leatherDef>Mashed_Lynian_LynianLeather</leatherDef>
+			<nameGenerator>Mashed_Lynian_NamerPerson_ShakalakaMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_ShakalakaFemale</nameGeneratorFemale>
 		</race>
 		<alienRace>
 			<generalSettings>

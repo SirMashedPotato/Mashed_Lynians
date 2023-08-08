@@ -23,8 +23,6 @@
 			<!-- 0.2 higher than base -->
 			<MedicalTendSpeed>1.2</MedicalTendSpeed>
 		</statBases>
-		<comps>
-		</comps>
 		<race>
 			<nameGenerator>Mashed_Lynian_NamerPerson_UrukiMale</nameGenerator>
 			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_UrukiFemale</nameGeneratorFemale>

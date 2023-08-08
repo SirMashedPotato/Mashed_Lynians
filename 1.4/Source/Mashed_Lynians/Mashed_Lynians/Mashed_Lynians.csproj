@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mashed_Lynians</RootNamespace>
     <AssemblyName>Mashed_Lynians</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -33,6 +34,10 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>I:\Steam_Library\steamapps\workshop\content\294100\839005762\1.4\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -93,6 +98,7 @@
     <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_EndPurrserkerRage.cs" />
     <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
+    <Compile Include="CompUse\CompUseEffect_LynianDyeKit.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\FactionProperties.cs" />
@@ -108,6 +114,7 @@
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
+    <Compile Include="Dialog\Dialog_DyeColorPicker.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\Harmony_Biotech.cs" />
     <Compile Include="Harmony\Harmony_Ideology.cs" />
@@ -132,6 +139,7 @@
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
     <Compile Include="ThingClass\Projectile_ExplosiveAlt.cs" />
+    <Compile Include="ThingComp\Comp_LynianDyeKit.cs" />
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
     <Compile Include="ThoughtWorker\Ideo\MaskThoughtUtility.cs" />

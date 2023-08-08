@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+
 namespace Mashed_Lynians
 {
     public class CompProperties_UltimateMaskShield : CompProperties_Shield
