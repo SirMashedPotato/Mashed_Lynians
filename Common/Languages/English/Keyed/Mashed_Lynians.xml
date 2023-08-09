@@ -29,4 +29,17 @@
 	<Mashed_Lynian_IdeoRequirementLynian>Any Lynian race</Mashed_Lynian_IdeoRequirementLynian>
 	<!-- ==========[Romancing]==========-->
 	<Mashed_Lynian_CantRomanceNonLynian>Romance between Lynians and non-Lynians is outlawed.</Mashed_Lynian_CantRomanceNonLynian>
+	<!-- ==========[Dye kit]==========-->
+	<Mashed_Lynian_ChangePrimaryColor>Change main color</Mashed_Lynian_ChangePrimaryColor>
+	<Mashed_Lynian_ChangeSecondaryColor>Change accent color</Mashed_Lynian_ChangeSecondaryColor>
+	<Mashed_Lynian_ChangeColorDescription>Change the selected color.</Mashed_Lynian_ChangeColorDescription>
+	<Mashed_Lynian_CopyColorPrimary>Copy main color</Mashed_Lynian_CopyColorPrimary>
+	<Mashed_Lynian_CopyColorPrimaryDescription>Copy the main color from either a Lynian, or another dye kit.</Mashed_Lynian_CopyColorPrimaryDescription>
+	<Mashed_Lynian_CopyColorSecondary>Copy accent color</Mashed_Lynian_CopyColorSecondary>
+	<Mashed_Lynian_CopyColorSecondaryDescription>Copy the accent color from either a Lynian, or another dye kit.</Mashed_Lynian_CopyColorSecondaryDescription>
+	<Mashed_Lynian_SwapColor>Swap colors</Mashed_Lynian_SwapColor>
+	<Mashed_Lynian_SwapColorDescription>Swap the currently set main and accent colors.</Mashed_Lynian_SwapColorDescription>
+	<Mashed_Lynian_ColorRed>Red ({0}%)</Mashed_Lynian_ColorRed>
+	<Mashed_Lynian_ColorGreen>Green ({0}%)</Mashed_Lynian_ColorGreen>
+	<Mashed_Lynian_ColorBlue>Blue ({0}%)</Mashed_Lynian_ColorBlue>
 </LanguageData>

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 using RimWorld;
@@ -11,7 +10,7 @@ namespace Mashed_Lynians
     /// </summary>
     public class Dialog_DyeColorPicker : Window
     {
-        public override Vector2 InitialSize => new Vector2(360f, 400f);
+        public override Vector2 InitialSize => new Vector2(360f, 360f);
 
         public Dialog_DyeColorPicker(Comp_LynianDyeKit dyeComp, Color color, bool primaryColor)
         {
@@ -41,22 +40,15 @@ namespace Mashed_Lynians
                 Listing_Standard listing_Standard = new Listing_Standard();
 
                 listing_Standard.Begin(rect);
-                r = (float)Math.Round(listing_Standard.SliderLabeled("Red (" + r*100 + "%)", r, 0, 1) * 100) / 100;
-                g = (float)Math.Round(listing_Standard.SliderLabeled("Green (" + g*100 + "%)", g, 0, 1) * 100) / 100;
-                b = (float)Math.Round(listing_Standard.SliderLabeled("Blue (" + b*100 + "%)", b, 0, 1) * 100) / 100;
+                r = (float)Math.Round(listing_Standard.SliderLabeled("Mashed_Lynian_ColorRed".Translate(r * 100), r, 0, 1) * 100) / 100;
+                g = (float)Math.Round(listing_Standard.SliderLabeled("Mashed_Lynian_ColorGreen".Translate(g * 100), g, 0, 1) * 100) / 100;
+                b = (float)Math.Round(listing_Standard.SliderLabeled("Mashed_Lynian_ColorBlue".Translate(b * 100), b, 0, 1) * 100) / 100;
                 listing_Standard.End();
                 
                 color = new Color(r, g, b, 1);
                 rect.NewRow(100f, VerticalJustification.Top);
                 ColorReadback(rect, color, oldColor);
             }
-        }
-
-        private static void ColorSlider(ref RectDivider layout, ref float value, string label)
-        {
-            Listing_Standard listing_Standard = new Listing_Standard();
-            listing_Standard.Begin(layout);
-            value = (int)listing_Standard.SliderLabeled(label+"(" + value + ")", value, 0, 255);
         }
 
         private static void HeaderRow(ref RectDivider layout)

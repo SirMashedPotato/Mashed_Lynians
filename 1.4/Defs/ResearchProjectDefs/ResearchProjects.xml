@@ -21,7 +21,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Lynian_DyeKit</defName>
 		<label>Lynian dye kit</label>
-		<description>Learn how to the Lynian dye kit at the Lynian crafting spot.</description>
+		<description>Learn how to craft the Lynian dye kit at the Lynian crafting spot.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
