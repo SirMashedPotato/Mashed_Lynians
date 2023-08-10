@@ -2,6 +2,7 @@
 using UnityEngine;
 using Verse;
 using RimWorld;
+using System.Collections.Generic;
 
 namespace Mashed_Lynians
 {
@@ -10,7 +11,7 @@ namespace Mashed_Lynians
     /// </summary>
     public class Dialog_DyeColorPicker : Window
     {
-        public override Vector2 InitialSize => new Vector2(360f, 360f);
+        public override Vector2 InitialSize => new Vector2(640f, 360f);
 
         public Dialog_DyeColorPicker(Comp_LynianDyeKit dyeComp, Color color, bool primaryColor)
         {
@@ -37,16 +38,20 @@ namespace Mashed_Lynians
                 BottomButtons(ref rect);
                 rect.NewRow(0f, VerticalJustification.Bottom);
 
-                Listing_Standard listing_Standard = new Listing_Standard();
-
+                Listing_Standard listing_Standard = new Listing_Standard
+                {
+                    ColumnWidth = 340f
+                };
                 listing_Standard.Begin(rect);
                 r = (float)Math.Round(listing_Standard.SliderLabeled("Mashed_Lynian_ColorRed".Translate(r * 100), r, 0, 1) * 100) / 100;
                 g = (float)Math.Round(listing_Standard.SliderLabeled("Mashed_Lynian_ColorGreen".Translate(g * 100), g, 0, 1) * 100) / 100;
                 b = (float)Math.Round(listing_Standard.SliderLabeled("Mashed_Lynian_ColorBlue".Translate(b * 100), b, 0, 1) * 100) / 100;
-                listing_Standard.End();
-                
                 color = new Color(r, g, b, 1);
-                rect.NewRow(100f, VerticalJustification.Top);
+                listing_Standard.End();
+
+                ColorPalette(ref rect, ref r, ref g, ref b);
+
+                rect.NewRow(140f, VerticalJustification.Top);
                 ColorReadback(rect, color, oldColor);
             }
         }
@@ -84,6 +89,31 @@ namespace Mashed_Lynians
             }
         }
 
+        private static void ColorPalette(ref RectDivider layout, ref float r, ref float g, ref float b)
+        {
+            if (cachedColorDefList.NullOrEmpty())
+            {
+                foreach(ColorDef def in DefDatabase<ColorDef>.AllDefsListForReading)
+                {
+                    if (def.modContentPack.IsCoreMod)
+                    {
+                        cachedColorDefList.Add(def.color);
+                    }
+                }
+            }
+
+            using (new TextBlock(TextAnchor.MiddleLeft))
+            {
+                Color setColor = new Color(r, g, b, 1);
+                RectDivider rectDivider = layout;
+                RectDivider rect = rectDivider.NewCol(250f, HorizontalJustification.Right);
+                Widgets.ColorSelector(rect, ref setColor, cachedColorDefList, out _, null, 22, 2);
+                r = setColor.r;
+                g = setColor.g;
+                b = setColor.b;
+            }
+        }
+
         private static void ColorReadback(Rect rect, Color color, Color oldColor)
         {
             rect.SplitVertically((rect.width - 26f) / 2f, out Rect parent, out Rect parent2);
@@ -106,6 +136,12 @@ namespace Mashed_Lynians
             rect4.NewCol(26f, HorizontalJustification.Left);
         }
 
+        public override void PreClose()
+        {
+            cachedColorDefList.Clear();
+            base.PreClose();
+        }
+
         private float r;
         private float g;
         private float b;
@@ -117,5 +153,6 @@ namespace Mashed_Lynians
 
         ///UI shite
         protected static readonly Vector2 ButSize = new Vector2(150f, 38f);
+        private static List<Color> cachedColorDefList = new List<Color> { };
     }
 }
