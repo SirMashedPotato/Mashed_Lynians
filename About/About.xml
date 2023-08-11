@@ -33,8 +33,4 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Owlchemist.SeedsPleaseLite</li>
 	</loadAfter>
-	<loadBefore>
-	</loadBefore>
-	<incompatibleWith>
-	</incompatibleWith>
 </ModMetaData>

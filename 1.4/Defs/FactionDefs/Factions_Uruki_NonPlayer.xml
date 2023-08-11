@@ -8,6 +8,7 @@
 			<li Class="ESCP_RaceTools.SettlementPreference" MayRequire="SirMashedPotato.ESCP.RaceTools">
 				<likedBiomeList>
 					<li>AB_IdyllicMeadows</li>
+					<li>Mashed_Ashlands_MeadowAshlands</li>
 				</likedBiomeList>
 			</li>
 		</modExtensions>
