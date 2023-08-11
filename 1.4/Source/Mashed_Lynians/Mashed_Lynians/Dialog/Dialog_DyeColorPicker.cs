@@ -73,6 +73,12 @@ namespace Mashed_Lynians
             {
                 Close(true);
             }
+            if (Widgets.ButtonText(rectDivider.NewCol(ButSize.x, HorizontalJustification.Left), "Mashed_Lynian_Randomise".Translate(), true, true, true, null))
+            {
+                r = (float)Math.Round(Rand.Range(0f, 1f) * 100) / 100;
+                g = (float)Math.Round(Rand.Range(0f, 1f) * 100) / 100;
+                b = (float)Math.Round(Rand.Range(0f, 1f) * 100) / 100;
+            }
             if (Widgets.ButtonText(rectDivider.NewCol(ButSize.x, HorizontalJustification.Right), "Accept".Translate(), true, true, true, null))
             {
                 color.a = 1;
