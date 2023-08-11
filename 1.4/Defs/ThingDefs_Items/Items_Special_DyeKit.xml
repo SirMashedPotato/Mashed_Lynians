@@ -53,7 +53,7 @@
 			<workSkill>Crafting</workSkill>
 		</recipeMaker>
 		<costList>
-			<Mashed_Lynian_FelvinePowder>10</Mashed_Lynian_FelvinePowder>
+			<Mashed_Lynian_FelvinePowder>1</Mashed_Lynian_FelvinePowder>
 			<Dye>3</Dye>
 		</costList>
 	</ThingDef>
