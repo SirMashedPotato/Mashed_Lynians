@@ -31,6 +31,10 @@
 				<thingDefCountRange>2~5</thingDefCountRange>
 				<countRange>10~20</countRange>
 			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Lynian_LynianDyeKit</thingDef>
+				<countRange>3~5</countRange>
+			</li>
 			<!-- Drugs -->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Mashed_Lynian_FelvinePowder</thingDef>
@@ -48,11 +52,11 @@
 			<!-- Special -->
 			<li Class="StockGenerator_MarketValue">
 				<tradeTag>Mashed_Lynian_Eurekacorn</tradeTag>
-				<countRange>-8~3</countRange>
+				<countRange>1~3</countRange>
 			</li>
 			<li Class="StockGenerator_MarketValue">
 				<tradeTag>Mashed_Lynian_ShakalakaDanceBook</tradeTag>
-				<countRange>-9~1</countRange>
+				<countRange>-2~2</countRange>
 			</li>
 			<!-- Genepacks -->
 			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">

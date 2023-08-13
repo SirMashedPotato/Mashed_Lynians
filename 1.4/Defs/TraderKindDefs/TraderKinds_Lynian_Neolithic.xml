@@ -16,6 +16,10 @@
 				<thingDef>MedicineHerbal</thingDef>
 				<countRange>0~20</countRange>
 			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Lynian_LynianDyeKit</thingDef>
+				<countRange>1~3</countRange>
+			</li>
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 			<li Class="StockGenerator_BuyTradeTag">
@@ -60,6 +64,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Boaboa</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Eurekacorns -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornBoaboa</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Exotic -->
@@ -124,6 +133,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Felyne</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Eurekacorns -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornFelyne</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Recruits -->
@@ -180,6 +194,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Gajalaka</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Eurekacorns -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornGajalaka</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Exotic -->
@@ -224,6 +243,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Grimalkyne</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Eurekacorns -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornGrimalkyne</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Animals -->
@@ -276,6 +300,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Melynx</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Eurekacorns -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornMelynx</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Exotic -->
@@ -319,7 +348,7 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Shakalaka</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
-				<countRange>1~2</countRange>
+				<countRange>1~3</countRange>
 			</li>
 			<li Class="StockGenerator_Category">
 				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
@@ -327,10 +356,16 @@
 				<thingDefCountRange>0~4</thingDefCountRange>
 				<countRange>1~1</countRange>
 			</li>
-			<!-- Exotic -->
+			<!-- Eurekacorns -->
+			<!-- Currently there are no eurekacorns for Shakalaka -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornShakalaka</tradeTag>
+				<countRange>1~2</countRange>
+			</li>
+			<!-- Dance books -->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_ShakalakaDanceBook</tradeTag>
-				<thingDefCountRange>-1~2</thingDefCountRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>1</countRange>
 			</li>
 			<!-- Recruits -->
@@ -367,6 +402,11 @@
 			<li Class="StockGenerator_Tag">
 				<tradeTag>Mashed_Lynian_Uruki</tradeTag>
 				<thingDefCountRange>3~9</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- Eurekacorns -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Lynian_EurekacornUruki</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
 			<!-- Exotic -->

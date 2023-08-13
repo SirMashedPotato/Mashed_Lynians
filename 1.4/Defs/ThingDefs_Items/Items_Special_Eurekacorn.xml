@@ -53,7 +53,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Melynx</li>
+			<li>Mashed_Lynian_EurekacornMelynx</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_PromoteGrowthAbility]==========-->
@@ -73,7 +73,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Uruki</li>
+			<li>Mashed_Lynian_EurekacornUruki</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_LynianCookingFurrenzyAbility]==========-->
@@ -90,7 +90,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_EurekacornFelyne</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_LynianFarmingFurrenzyAbility]==========-->
@@ -107,7 +107,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Uruki</li>
+			<li>Mashed_Lynian_EurekacornUruki</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_LynianCleaningFurrenzyAbility]==========-->
@@ -124,7 +124,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Felyne</li>
+			<li>Mashed_Lynian_EurekacornFelyne</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_EurekacornFiringFurrenzy]==========-->
@@ -141,7 +141,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Gajalaka</li>
+			<li>Mashed_Lynian_EurekacornGajalaka</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_PurrserkerRage]==========-->
@@ -161,9 +161,9 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Felyne</li>
-			<li>Mashed_Lynian_Melynx</li>
-			<li>Mashed_Lynian_Grimalkyne</li>
+			<li>Mashed_Lynian_EurekacornFelyne</li>
+			<li>Mashed_Lynian_EurekacornMelynx</li>
+			<li>Mashed_Lynian_EurekacornGrimalkyne</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_EurekacornHuntersMark]==========-->
@@ -180,7 +180,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Boaboa</li>
+			<li>Mashed_Lynian_EurekacornBoaboa</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_LynianMiningFurrenzyAbility]==========-->
@@ -197,7 +197,7 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>Mashed_Lynian_Gajalaka</li>
+			<li>Mashed_Lynian_EurekacornGajalaka</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>
