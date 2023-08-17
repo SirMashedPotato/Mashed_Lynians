@@ -275,7 +275,7 @@
 					<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Strigoi</li>
 					<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Ekkimian</li>
 					<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Bruxa</li>
-					<li MayRequire="sarg.alphagenes">AG_Malachai</li>
+					<li MayRequire="vanillaracesexpanded.sanguophage,sarg.alphagenes">AG_Malachai</li>
 				</whiteXenotypeList>
 				<onlyUseRaceRestrictedXenotypes IgnoreIfNoMatchingField="True">true</onlyUseRaceRestrictedXenotypes>
 				<!-- ==========[Biotech - Reproduction]========== -->
