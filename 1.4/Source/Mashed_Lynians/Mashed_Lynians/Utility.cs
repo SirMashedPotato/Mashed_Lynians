@@ -36,6 +36,16 @@ namespace Mashed_Lynians
             return props != null && props.isLynian;
         }
 
+        public static bool IsRecruitCheck(Pawn pawn)
+        {
+            PawnKindProperties props = PawnKindProperties.Get(pawn.kindDef);
+            if (props != null && props.purchasableFromTrader)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static readonly List<PawnKindDef> lynianColonistKindList = new List<PawnKindDef>
         {
             PawnKindDefOf.Mashed_Lynian_BoaboaColonist, PawnKindDefOf.Mashed_Lynian_FelyneColonist, PawnKindDefOf.Mashed_Lynian_GajalakaColonist,
