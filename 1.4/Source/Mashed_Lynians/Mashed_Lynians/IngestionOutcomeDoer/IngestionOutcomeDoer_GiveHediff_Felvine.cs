@@ -12,7 +12,7 @@ namespace Mashed_Lynians
     {
 		protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
 		{
-			if (!Utility.CanUseFelvine(pawn))
+			if (!Utility.PawnCanUseFelvine(pawn))
 			{
                 if (altHediffDef != null)
                 {

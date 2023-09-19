@@ -16,7 +16,7 @@ namespace Mashed_Lynians
             {
                 return;
             }
-            if (!Utility.CanUseFelvine(pawn))
+            if (!Utility.PawnCanUseFelvine(pawn))
             {
                 return;
             }

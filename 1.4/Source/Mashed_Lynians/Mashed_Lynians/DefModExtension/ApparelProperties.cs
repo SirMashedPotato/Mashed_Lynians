@@ -13,6 +13,8 @@ namespace Mashed_Lynians
         public bool isGajalakaMask = false;
         public bool isGoldenGajalakaMask = false;
 
+        public bool treatAsCatLike = false;
+
         public bool overrideColour = false;
 
         public static ApparelProperties Get(Def def)

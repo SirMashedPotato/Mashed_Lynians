@@ -67,7 +67,7 @@ namespace Mashed_Lynians
         [HarmonyPrefix]
         public static void LyniansPatch(Pawn pawn, ref ChemicalDef chemicalDef)
         {
-            if (chemicalDef == ChemicalDefOf.Mashed_Lynian_FelvineChemical && !Utility.CanUseFelvine(pawn))
+            if (chemicalDef == ChemicalDefOf.Mashed_Lynian_FelvineChemical && !Utility.PawnCanUseFelvine(pawn))
             {
                 chemicalDef = RimWorld.ChemicalDefOf.Alcohol;
             }

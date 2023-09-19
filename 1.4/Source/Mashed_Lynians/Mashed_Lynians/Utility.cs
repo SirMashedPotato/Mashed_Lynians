@@ -1,12 +1,17 @@
 ﻿using System.Collections.Generic;
 using Verse;
+using RimWorld;
 
 namespace Mashed_Lynians
 {
     public static class Utility
     {
-        public static bool CanUseFelvine(Pawn pawn)
+        public static bool PawnCanUseFelvine(Pawn pawn)
         {
+            if (WearingCatLikeMask(pawn))
+            {
+                return true;
+            }
             if (ModsConfig.BiotechActive && pawn.genes != null)
             {
                 if (pawn.genes.HasGene(GeneDefOf.AddictionImmune_Mashed_Lynian_FelvineChemical) 
@@ -16,13 +21,27 @@ namespace Mashed_Lynians
                     return true;
                 }
             }
-            return CanUseFelvine(pawn as Thing);
+
+            RaceProperties props = RaceProperties.Get(pawn.def);
+            return props != null && props.canUseFelvine;
         }
 
-        public static bool CanUseFelvine(Thing thing)
+        public static bool WearingCatLikeMask(Pawn pawn)
         {
-            RaceProperties props = RaceProperties.Get(thing.def);
-            return props != null && props.canUseFelvine;
+            if (pawn.apparel != null)
+            {
+                Thing apparel = pawn.apparel.FirstApparelOnBodyPartGroup(BodyPartGroupDefOf.FullHead);
+                if (apparel != null)
+                {
+                    ApparelProperties props = ApparelProperties.Get(apparel.def);
+                    if (props != null && props.treatAsCatLike)
+                    {
+                        return true;
+                    }
+
+                }
+            }
+            return false;
         }
 
         public static bool PawnIsLynian(Pawn pawn)

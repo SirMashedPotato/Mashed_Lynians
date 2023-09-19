@@ -10,7 +10,7 @@ namespace Mashed_Lynians
     {
         public override float GetChance(Pawn pawn)
         {
-            return Utility.CanUseFelvine(pawn) ? base.GetChance(pawn) : 0f;
+            return Utility.PawnCanUseFelvine(pawn) ? base.GetChance(pawn) : 0f;
         }
 
         public override Job TryGiveJob(Pawn pawn)
@@ -39,7 +39,7 @@ namespace Mashed_Lynians
 				}
 				else
 				{
-					result = JobMaker.MakeJob(this.def.jobDef, candidates.RandomElement());
+					result = JobMaker.MakeJob(def.jobDef, candidates.RandomElement());
 				}
 			}
 			finally

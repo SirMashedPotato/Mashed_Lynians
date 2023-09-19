@@ -20,7 +20,7 @@ namespace Mashed_Lynians
                 {
                     if (__result)
                     {
-                        __result = Utility.CanUseFelvine(pawn);
+                        __result = Utility.PawnCanUseFelvine(pawn);
                     }
                 }
             }
