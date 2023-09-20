@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[Cat like]==========-->
+	<Mashed_Lynians_CatFactionGreetingHostile>{0} hisses and disconnects.</Mashed_Lynians_CatFactionGreetingHostile>
+	<Mashed_Lynians_CatFactionGreetingHostileAppreciative>{0} hisses. Until you make a gesture of goodwill, {0_pronoun} will not do business with you. You can improve relations through a number of activities, like bringing gifts to one of {0_possessive} settlements or releasing {0_possessive} faction's prisoners unharmed.\n\n{0_pronoun} disconnects abruptly.</Mashed_Lynians_CatFactionGreetingHostileAppreciative>
+	<Mashed_Lynians_CatFactionGreetingWary>{0} meows a greeting, and asks what you wish to discuss.</Mashed_Lynians_CatFactionGreetingWary>
+	<Mashed_Lynians_CatFactionGreetingWarm>{0} meows a warm greeting to {NEGOTIATOR_labelShort}, and asks if {0_pronoun} services are in need.</Mashed_Lynians_CatFactionGreetingWarm>
+</LanguageData>

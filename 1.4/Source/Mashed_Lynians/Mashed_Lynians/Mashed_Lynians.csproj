@@ -128,9 +128,12 @@
     <Compile Include="HediffComp\Properties\HediffCompProperties_DisappearsOnDowned.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_FurriousFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_WorkingFurrenzyTooltip.cs" />
+    <Compile Include="HediffGiver\HediffGiver_RandomCatLike.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_LynianColonistJoin.cs" />
     <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
+    <Compile Include="Settings\Mashed_Lynians_Mod.cs" />
+    <Compile Include="Settings\Mashed_Lynians_ModSettings.cs" />
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SiteUtility.cs" />

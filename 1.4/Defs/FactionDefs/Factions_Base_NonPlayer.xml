@@ -76,6 +76,10 @@
 	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase" Name="Mashed_Lynian_NonPlayerCatLikeFactionBase" Abstract="True">
 		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
 		<raidLootMaker>Mashed_Lynian_CatLikeRaidLootMaker</raidLootMaker>
+		<dialogFactionGreetingHostile>Mashed_Lynians_CatFactionGreetingHostile</dialogFactionGreetingHostile>
+		<dialogFactionGreetingHostileAppreciative>Mashed_Lynians_CatFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+		<dialogFactionGreetingWary>Mashed_Lynians_CatFactionGreetingWary</dialogFactionGreetingWary>
+		<dialogFactionGreetingWarm>Mashed_Lynians_CatFactionGreetingWarm</dialogFactionGreetingWarm>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Boaboa</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Gajalaka</li>

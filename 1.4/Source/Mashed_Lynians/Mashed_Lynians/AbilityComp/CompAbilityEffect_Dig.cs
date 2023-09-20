@@ -15,7 +15,7 @@ namespace Mashed_Lynians
 
         public override bool GizmoDisabled(out string reason)
         {
-            if (!HighEnoughSkill())
+            if (Mashed_Lynians_ModSettings.EnableDigSkillRequirement && !HighEnoughSkill())
             {
                 reason = "Mashed_Lynian_AbilitySkillTooLow".Translate(SkillDefOf.Mining.label, Props.requiredLevel);
                 return true;

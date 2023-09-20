@@ -6,6 +6,7 @@
 		<description>The most elusive species of cat-like Lynian, Grimalkyne are often highly cautious of outsiders, preferring to hide in the shadows until they are gone. This innate caution has resulted in them being highly adaptable, as they prefer to live away from 'civilisation'. Like all Lynians, Grimalkyne are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nGrimalkyne are thought to be an offshoot of Felyne and Melynx assistants, that after setting out on their own journey have taken on a comparatively 'wild' appearance and nature. While they prefer their simple tribal lifestyle, they have been known to trade and befriend outsiders.\n\nBeing a cat-like Lynian, Grimalkyne have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nRest rate multiplier increased by 10%.\nForaged nutrition per day increased by 0.2.\nToxic sensitivity decreased by 20%.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
+				<isCatLike>True</isCatLike>
 				<canUseFelvine>True</canUseFelvine>
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>

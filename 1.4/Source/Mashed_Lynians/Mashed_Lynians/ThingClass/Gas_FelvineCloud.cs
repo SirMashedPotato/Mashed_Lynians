@@ -26,8 +26,7 @@ namespace Mashed_Lynians
                             if (thing is Pawn)
                             {
                                 Pawn p = thing as Pawn;
-                                RaceProperties props = RaceProperties.Get(p.def);
-                                if (props != null && props.canUseFelvine)
+                                if (Utility.PawnCanUseFelvine(p))
                                 {
                                     float factor = 0.025f;
                                     //simulate ingesting felvine

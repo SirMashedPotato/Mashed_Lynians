@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[General]==========-->
+	<Mashed_Lynians_ModName>Mashed's Lynians</Mashed_Lynians_ModName>
+	<!-- ==========[General]==========-->
+	<Mashed_Lynians_EnableAcornKnight>Replace Man in Black with Acorn Knight for Lynian factions.</Mashed_Lynians_EnableAcornKnight>
+	<Mashed_Lynians_EnableDigSkillRequirement>Lynians must have at least 5 mining skill to use the dig ability.</Mashed_Lynians_EnableDigSkillRequirement>
+	<Mashed_Lynians_EnableHairballs>Cat-like Lynians can randomly receive the hairball hediff.</Mashed_Lynians_EnableHairballs>
+	<Mashed_Lynians_EnableSmellingFelvine>Cat-like Lynians can smell felvine plants for recreation.</Mashed_Lynians_EnableSmellingFelvine>
+	<Mashed_Lynians_EnableCatLikeMasks>Treat all Lynian races as cat-like if wearing specific masks.</Mashed_Lynians_EnableCatLikeMasks>
+</LanguageData>

@@ -28,7 +28,7 @@ namespace Mashed_Lynians
 
         public static bool WearingCatLikeMask(Pawn pawn)
         {
-            if (pawn.apparel != null)
+            if (Mashed_Lynians_ModSettings.EnableCatLikeMasks && pawn.apparel != null)
             {
                 Thing apparel = pawn.apparel.FirstApparelOnBodyPartGroup(BodyPartGroupDefOf.FullHead);
                 if (apparel != null)
@@ -46,13 +46,24 @@ namespace Mashed_Lynians
 
         public static bool PawnIsLynian(Pawn pawn)
         {
-            return PawnIsLynian(pawn as Thing);
+            return ThingIsLynian(pawn);
         }
 
-        public static bool PawnIsLynian(Thing thing)
+        public static bool ThingIsLynian(Thing thing)
         {
             RaceProperties props = RaceProperties.Get(thing.def);
             return props != null && props.isLynian;
+        }
+
+        public static bool PawnIsCatLike(Pawn pawn)
+        {
+            return ThingIsCatLike(pawn) || WearingCatLikeMask(pawn);
+        }
+
+        public static bool ThingIsCatLike(Thing thing)
+        {
+            RaceProperties props = RaceProperties.Get(thing.def);
+            return props != null && props.isCatLike;
         }
 
         public static bool IsRecruitCheck(Pawn pawn)

@@ -6,6 +6,7 @@
 		<description>Melynx are a fairly common subspecies of Felyne. While just as adorable as Felyne, Melynx have an innate curiosity that many of them find difficult to control, sometimes valuable items seem to disappear around Melynx. Because of this many people are somewhat cautious around Melynx, though this doesn't stop Melynx from being employed in farms and kitchens. Like all Lynians, Melynx are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, Melynx are now a somewhat common sight on the more 'civilised' planets. Occasionally the Melynx assisting settlers decide to set off on their own journey, often forming small agrarian tribes, and occasionally bandit groups, in the process.\n\nBeing a cat-like Lynian, Melynx have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nMovement speed increased by 0.2 cells.\nMelee dodge chance increased by 10%.\nTrap spring chance decreased by 20%.\nHas access to the 'Pilfer' ability.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
+				<isCatLike>True</isCatLike>
 				<canUseFelvine>True</canUseFelvine>
 				<abilitiesToAdd>
 					<li>Mashed_Lynian_DigAbility</li>

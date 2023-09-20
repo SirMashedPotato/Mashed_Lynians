@@ -79,7 +79,7 @@ namespace Mashed_Lynians
                 canTargetSelf = false,
                 validator = delegate (TargetInfo targ)
                 {
-                    return targ.Thing != null && (targ.Thing.def == ThingDefOf.Mashed_Lynian_LynianDyeKit || Utility.PawnIsLynian(targ.Thing));
+                    return targ.Thing != null && (targ.Thing.def == ThingDefOf.Mashed_Lynian_LynianDyeKit || Utility.ThingIsLynian(targ.Thing));
                 }
             };
 
@@ -124,7 +124,7 @@ namespace Mashed_Lynians
 
         private void CopyColor(Thing source, bool primaryColor = true)
         {
-            if (Utility.PawnIsLynian(source))
+            if (Utility.ThingIsLynian(source))
             {
                 AlienComp alienComp = source.TryGetComp<AlienComp>();
                 alienComp.ColorChannels.TryGetValue("skin", out ExposableValueTuple<Color, Color> colors);

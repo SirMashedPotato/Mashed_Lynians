@@ -159,7 +159,7 @@ namespace Mashed_Lynians
         [HarmonyPrefix]
         public static void Lynians_ManInBlack_Patch(ref PawnGenerationRequest request)
         {
-            if (request.Faction != null)
+            if (request.Faction != null && Mashed_Lynians_ModSettings.EnableAcornKnight)
             {
                 FactionProperties props = FactionProperties.Get(request.Faction.def);
                 if (props != null && props.manInBlackReplacer != null && request.KindDef == PawnKindDef.Named("StrangerInBlack"))
