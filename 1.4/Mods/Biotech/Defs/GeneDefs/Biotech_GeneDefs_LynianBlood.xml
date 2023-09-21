@@ -11,7 +11,7 @@
 		<displayPriorityInXenotype>397</displayPriorityInXenotype>
 	</GeneCategoryDef>
 	<!-- ==========[Mashed_Lynian_BaseGeneRacialBlood]========== -->
-	<GeneDef Name="Mashed_Lynian_BaseGeneInheritedBonus" Abstract="True">
+	<GeneDef ParentName="Mashed_Lynians_GeneBase" Name="Mashed_Lynian_BaseGeneInheritedBonus" Abstract="True">
 		<displayCategory>Mashed_Lynian_InheritedBonus</displayCategory>
 		<exclusionTags>
 			<li>Mashed_Lynian_InheritedBonus</li>
