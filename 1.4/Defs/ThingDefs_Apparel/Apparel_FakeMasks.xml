@@ -37,7 +37,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Apparel_FakeMaskBase">
 		<defName>Mashed_Lynian_Apparel_FauxFelyneMask</defName>
 		<label>faux Felyne mask</label>
-		<description>A fabric mask, made to resemble a Felyne. Sometimes worn by young Shakalaka in an attempt to blend in outside of their tribe. Specially designed for Lynians, so convincing it even tricks the wearer into thinking they are a Felyne.</description>
+		<description>A fabric mask, made to resemble a Felyne. Sometimes worn by young Shakalaka in an attempt to blend in outside of their tribe. Specially designed for Lynians, so convincing it even tricks the wearer into thinking they are a Felyne... which may have some undesirable consequences...</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<isShakalakaMask>true</isShakalakaMask>
@@ -54,7 +54,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
 			<NegotiationAbility>0.05</NegotiationAbility>
 			<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
 		</equippedStatOffsets>
@@ -72,7 +72,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Apparel_FakeMaskBase">
 		<defName>Mashed_Lynian_Apparel_GefalschtGrimalkyneMask</defName>
 		<label>gefälscht Grimalkyne mask</label>
-		<description>A fabric mask, made to resemble a Grimalkyne. Sometimes worn by young Gajalaka in an attempt to blend in outside of their tribe. Specially designed for Lynians, so convincing it even tricks the wearer into thinking they are a Grimalkyne.</description>
+		<description>A fabric mask, made to resemble a Grimalkyne. Sometimes worn by young Gajalaka in an attempt to blend in outside of their tribe. Specially designed for Lynians, so convincing it even tricks the wearer into thinking they are a Grimalkyne... which may have some undesirable consequences...</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<isGajalakaMask>true</isGajalakaMask>
@@ -89,7 +89,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
 			<RestRateMultiplier>0.05</RestRateMultiplier>
 			<ForagedNutritionPerDay>0.1</ForagedNutritionPerDay>
 		</equippedStatOffsets>
@@ -104,7 +104,7 @@
 	<ThingDef ParentName="Mashed_Lynian_Apparel_FakeMaskBase">
 		<defName>Mashed_Lynian_Apparel_MockMelynxMask</defName>
 		<label>mock Melynx mask</label>
-		<description>A fabric mask, made to resemble a Melynx. Sometimes worn by young Shakalaka in an attempt to blend in outside of their tribe. Specially designed for Lynians, so convincing it even tricks the wearer into thinking they are a Melynx.</description>
+		<description>A fabric mask, made to resemble a Melynx. Sometimes worn by young Shakalaka in an attempt to blend in outside of their tribe. Specially designed for Lynians, so convincing it even tricks the wearer into thinking they are a Melynx... which may have some undesirable consequences...</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
 				<isShakalakaMask>true</isShakalakaMask>
@@ -121,7 +121,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
 			<MeleeDodgeChance>0.05</MeleeDodgeChance>
 			<Mashed_Lynian_PilferChance>0.05</Mashed_Lynian_PilferChance>
 		</equippedStatOffsets>
