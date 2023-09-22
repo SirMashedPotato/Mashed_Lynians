@@ -18,15 +18,15 @@ namespace Mashed_Lynians
 				return false;
 			}
 			Map map = (Map)parms.target;
-			return this.CanSpawnJoiner(map);
+			return CanSpawnJoiner(map);
 		}
 
 		public virtual Pawn GeneratePawn()
 		{
 			Gender? fixedGender = null;
-			if (this.def.pawnFixedGender != Gender.None)
+			if (def.pawnFixedGender != Gender.None)
 			{
-				fixedGender = new Gender?(this.def.pawnFixedGender);
+				fixedGender = new Gender?(def.pawnFixedGender);
 			}
 			Ideo ideo = null;
 			if (ModsConfig.IdeologyActive)
@@ -41,37 +41,42 @@ namespace Mashed_Lynians
 							select i).RandomElementWithFallback(null);
 				}
 			}
-			return PawnGenerator.GeneratePawn(new PawnGenerationRequest(Utility.lynianColonistKindList.RandomElement(), Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, true, false, false, true, this.def.pawnMustBeCapableOfViolence, 20f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, fixedGender, null, null, null, ideo, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, false));
+			return PawnGenerator.GeneratePawn(new PawnGenerationRequest(
+				kind: Utility.lynianColonistKindList.RandomElement(),
+				faction: Faction.OfPlayer,
+				mustBeCapableOfViolence: def.pawnMustBeCapableOfViolence, 
+				relationWithExtraPawnChanceFactor: RelationWithColonistWeight,
+				fixedGender: fixedGender, 
+				fixedIdeo: ideo, 
+				developmentalStages: DevelopmentalStage.Adult));
 		}
 
 		public virtual bool CanSpawnJoiner(Map map)
 		{
-			IntVec3 intVec;
-			return this.TryFindEntryCell(map, out intVec);
-		}
+            return TryFindEntryCell(map, out _);
+        }
 
 		public virtual void SpawnJoiner(Map map, Pawn pawn)
 		{
-			IntVec3 loc;
-			this.TryFindEntryCell(map, out loc);
-			GenSpawn.Spawn(pawn, loc, map, WipeMode.Vanish);
+            TryFindEntryCell(map, out IntVec3 loc);
+            GenSpawn.Spawn(pawn, loc, map, WipeMode.Vanish);
 		}
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			if (!this.CanSpawnJoiner(map))
+			if (!CanSpawnJoiner(map))
 			{
 				return false;
 			}
-			Pawn pawn = this.GeneratePawn();
-			this.SpawnJoiner(map, pawn);
-			if (this.def.pawnHediff != null)
+			Pawn pawn = GeneratePawn();
+			SpawnJoiner(map, pawn);
+			if (def.pawnHediff != null)
 			{
-				pawn.health.AddHediff(this.def.pawnHediff, null, null, null);
+				pawn.health.AddHediff(def.pawnHediff, null, null, null);
 			}
-			TaggedString baseLetterText = (this.def.pawnHediff != null) ? this.def.letterText.Formatted(pawn.Named("PAWN"), this.def.pawnHediff.Named("HEDIFF")).AdjustedFor(pawn, "PAWN", true) : this.def.letterText.Formatted(pawn.Named("PAWN")).AdjustedFor(pawn, "PAWN", true);
-			TaggedString baseLetterLabel = this.def.letterLabel.Formatted(pawn.Named("PAWN")).AdjustedFor(pawn, "PAWN", true);
+			TaggedString baseLetterText = (def.pawnHediff != null) ? def.letterText.Formatted(pawn.Named("PAWN"), def.pawnHediff.Named("HEDIFF")).AdjustedFor(pawn, "PAWN", true) : def.letterText.Formatted(pawn.Named("PAWN")).AdjustedFor(pawn, "PAWN", true);
+			TaggedString baseLetterLabel = def.letterLabel.Formatted(pawn.Named("PAWN")).AdjustedFor(pawn, "PAWN", true);
 			PawnRelationUtility.TryAppendRelationsWithColonistsInfo(ref baseLetterText, ref baseLetterLabel, pawn);
 			base.SendStandardLetter(baseLetterLabel, baseLetterText, LetterDefOf.PositiveEvent, parms, pawn, Array.Empty<NamedArgument>());
 			return true;
