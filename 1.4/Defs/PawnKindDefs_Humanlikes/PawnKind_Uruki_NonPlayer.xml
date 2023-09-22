@@ -18,6 +18,9 @@
 		<gearHealthRange>0.2~1.1</gearHealthRange>
 		<apparelMoney>0</apparelMoney>
 		<weaponMoney>0</weaponMoney>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_UrukiBasket</li>
+		</apparelRequired>
 		<initialWillRange>0</initialWillRange>
 		<initialResistanceRange>0</initialResistanceRange>
 		<modExtensions>

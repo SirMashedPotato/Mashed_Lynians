@@ -8,6 +8,9 @@
 		<apparelTags>
 			<li>Mashed_Lynian_FelyneTribal</li>
 		</apparelTags>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_AcornBackpack</li>
+		</apparelRequired>
 	</PawnKindDef>
 	<!-- ==========[Basic, Gatherer]========== -->
 	<PawnKindDef ParentName="Mashed_Lynian_GathererBase">
