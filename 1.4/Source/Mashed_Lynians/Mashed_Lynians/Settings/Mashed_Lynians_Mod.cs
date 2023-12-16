@@ -10,6 +10,7 @@ namespace Mashed_Lynians
         public Mashed_Lynians_Mod(ModContentPack contentPack) : base(contentPack)
         {
             settings = GetSettings<Mashed_Lynians_ModSettings>();
+            Log.Message("[Mashed's Lynians] version " + Content.ModMetaData.ModVersion);
         }
 
         public override string SettingsCategory() => "Mashed_Lynians_ModName".Translate();
