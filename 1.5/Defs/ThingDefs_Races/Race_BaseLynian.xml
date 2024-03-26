@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_BasePawn]========== -->
+	<ThingDef ParentName="BasePawn" Name="Mashed_Lynian_BasePawn" Abstract="True">
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<statBases>
+			<LeatherAmount>35</LeatherAmount>
+			<MarketValue>1700</MarketValue>
+			<MoveSpeed>4.8</MoveSpeed>
+			<PsychicSensitivity>0.8</PsychicSensitivity>
+			<WorkSpeedGlobal>0.95</WorkSpeedGlobal>
+			<RoyalFavorValue>3</RoyalFavorValue>
+			<ToxicResistance>0.5</ToxicResistance>
+			<Mashed_Ashlands_AshResistance MayRequire="SirMashedPotato.Ashlands">0.25</Mashed_Ashlands_AshResistance>
+			<Fertility MayRequire="Ludeon.RimWorld.Biotech">1</Fertility>
+		</statBases>
+		<race>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<baseHealthScale>1.4</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseBodySize>0.6</baseBodySize>
+			<fleshType>Mashed_Lynian_LynianFlesh</fleshType>
+			<lifeExpectancy>80</lifeExpectancy>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li MayRequire="cyanobot.toddlers">
+					<def>HumanlikeToddler</def>
+					<minAge>1</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+				<li>Mashed_Lynian_LynianStandard</li>
+			</hediffGiverSets>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_BasePawn_Alien]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn" Name="Mashed_Lynian_BasePawn_Alien" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<!--
+				<validBeds>
+					<li>ESCP_SloadSleepingSpot</li>
+				</validBeds>
+				-->
+				<allowHumanBios>false</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<alienPartGenerator>
+					<bodyTypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<customDrawSize>(0.7, 0.7)</customDrawSize>
+					<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
+					<headOffset>(0.0, -0.1)</headOffset>
+					<headFemaleOffset IgnoreIfNoMatchingField="True">(0.0, -0.1)</headFemaleOffset>
+				</alienPartGenerator>
+			</generalSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<raceRestriction>
+				<apparelList>
+					<li>Mashed_Lynian_Apparel_AcornBackpack</li>
+					<li>Mashed_Lynian_Apparel_MelynxSatchel</li>
+					<li>Mashed_Lynian_Apparel_MelynxBandana</li>
+					<li>Mashed_Lynian_Apparel_PurrserkerHelmet</li>
+					<li>Mashed_Lynian_Apparel_PurrserkerArmour</li>
+					<li>Mashed_Lynian_Apparel_PurrserkerBackPack</li>
+					<li>Mashed_Lynian_Apparel_BoaboaMask</li>
+					<li>Mashed_Lynian_Apparel_BoaboaCoat</li>
+					<li>Mashed_Lynian_Apparel_UltimateMask</li>
+					<li>Mashed_Lynian_Apparel_GajalakaMask</li>
+					<li>Mashed_Lynian_Apparel_GajalakaCoat</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaMask</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaCoat</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaAcornBackpack</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaAcornMask</li>
+					<li>Mashed_Lynian_Apparel_ShakalakaCrabMask</li>
+					<li>Mashed_Lynian_Apparel_AcornHelmet</li>
+					<li>Mashed_Lynian_Apparel_AcornArmour</li>
+					<li>Mashed_Lynian_Apparel_BarrelBackPack</li>
+					<li>Mashed_Lynian_Apparel_UrukiBasket</li>
+					<li>Mashed_Lynian_Apparel_KitchenHeadband</li>
+					<li>Mashed_Lynian_Apparel_KitchenApron</li>
+					<li>Mashed_Lynian_Apparel_KitchenHat</li>
+					<li>Mashed_Lynian_Apparel_FarmHat</li>
+					<li>Mashed_Lynian_Apparel_GajalakaMaskColoured</li>
+					<li>Mashed_Lynian_Apparel_AcornHelmetColoured</li>
+					<li>Mashed_Lynian_Apparel_AcornArmourColoured</li>
+					<li>Mashed_Lynian_Apparel_FauxFelyneMask</li>
+					<li>Mashed_Lynian_Apparel_GefalschtGrimalkyneMask</li>
+					<li>Mashed_Lynian_Apparel_MockMelynxMask</li>
+				</apparelList>
+				<weaponList>
+					<li>Mashed_Lynian_MeleeWeapon_PawClub</li>
+					<li>Mashed_Lynian_MeleeWeapon_BasicPick</li>
+					<li>Mashed_Lynian_MeleeWeapon_BoneSaw</li>
+					<li>Mashed_Lynian_RangedWeapon_Boomerang</li>
+					<li>Mashed_Lynian_RangedWeapon_ThrowingBarrelBomb</li>
+					<li>Mashed_Lynian_RangedWeapon_ThrowingFelvineBomb</li>
+					<li>Mashed_Lynian_MeleeWeapon_PurrserkerClub</li>
+					<li>Mashed_Lynian_RangedWeapon_Purrserkerrang</li>
+					<li>Mashed_Lynian_MeleeWeapon_BoaboaClub</li>
+					<li>Mashed_Lynian_RangedWeapon_BoaboaJavelin</li>
+					<li>Mashed_Lynian_RangedWeapon_BoaboaThrowingShard</li>
+					<li>Mashed_Lynian_RangedWeapon_BoaboaThrowingSatchel</li>
+					<li>Mashed_Lynian_MeleeWeapon_GajalakaSword</li>
+					<li>Mashed_Lynian_RangedWeapon_GajalakaThrowingKnife</li>
+					<li>Mashed_Lynian_RangedWeapon_GajalakaGrenade</li>
+					<li>Mashed_Lynian_RangedWeapon_GajalakaCannon</li>
+					<li>Mashed_Lynian_MeleeWeapon_ShakalakaSword</li>
+					<li>Mashed_Lynian_MeleeWeapon_ShakalakaSwordToxic</li>
+					<li>Mashed_Lynian_RangedWeapon_ShakalakaSleepBomb</li>
+					<li>Mashed_Lynian_RangedWeapon_GrimalkyneFlashflyCage</li>
+					<li>Mashed_Lynian_RangedWeapon_UrukiExplosiveAcorn</li>
+					<li>Mashed_Lynian_RangedWeapon_UrukiSlingshot</li>
+					<li>Mashed_Lynian_MeleeWeapon_AcornHammer</li>
+				</weaponList>
+				<!-- ==========[Biotech - Genes]========== -->
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+					<li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+				</blackEndoCategories>
+				<!-- ==========[Biotech - Xenotypes]========== -->
+				<whiteXenotypeList IgnoreIfNoMatchingField="True">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Strigoi</li>
+					<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Ekkimian</li>
+					<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Bruxa</li>
+					<li MayRequire="vanillaracesexpanded.sanguophage,sarg.alphagenes">AG_Malachai</li>
+				</whiteXenotypeList>
+				<onlyUseRaceRestrictedXenotypes IgnoreIfNoMatchingField="True">true</onlyUseRaceRestrictedXenotypes>
+				<!-- ==========[Biotech - Reproduction]========== -->
+				<canReproduce>True</canReproduce>
+				<canReproduceWithSelf>True</canReproduceWithSelf>
+				<onlyReproduceWithRestrictedRaces>True</onlyReproduceWithRestrictedRaces>
+				<reproductionList>
+					<li>Mashed_Lynian_BoaboaRace</li>
+					<li>Mashed_Lynian_FelyneRace</li>
+					<li>Mashed_Lynian_GajalakaRace</li>
+					<li>Mashed_Lynian_GrimalkyneRace</li>
+					<li>Mashed_Lynian_MelynxRace</li>
+					<li>Mashed_Lynian_ShakalakaRace</li>
+					<li>Mashed_Lynian_UrukiRace</li>
+				</reproductionList>
+			</raceRestriction>
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<graphicPaths>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ==========[Mashed_Lynian_BasePawn_CatLike]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_Alien" Name="Mashed_Lynian_BasePawn_CatLike" Abstract="True">
+		<tools>
+			<li>
+				<label>left paw</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right paw</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<statBases>
+			<!-- 4 lower than humans -->
+			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+			<!-- 4 higher than humans -->
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+			<body>Mashed_Lynian_CatLikeBody</body>
+			<leatherDef>Mashed_Lynian_LynianFur</leatherDef>
+		</race>
+		<recipes>
+			<li>Mashed_Lynian_InstallTailCloth</li>
+		</recipes>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>Mashed_FelyneHead_Slim</li>
+						<li>Mashed_FelyneHead_Wide</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Thin</li>
+					</bodyTypes>
+					<bodyAddons>
+						<!-- =====[Eye right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Mashed_FelyneEye_Right</path>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>right eye</bodyPartLabel>
+							<drawnInBed>false</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEyes</li>
+							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Right</ESCP_NecromanticThralls_Enthralled>
+							</hediffGraphics>
+							<geneGraphics>
+								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Right</Hemogenic>
+							</geneGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Eye left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Mashed_FelyneEye_Left</path>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>left eye</bodyPartLabel>
+							<drawnInBed>false</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEyes</li>
+							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Left</ESCP_NecromanticThralls_Enthralled>
+							</hediffGraphics>
+							<geneGraphics>
+								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Left</Hemogenic>
+							</geneGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Tail]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Tail/Mashed_FelyneTail</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Tail</bodyPart>
+							<drawnInBed>false</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>false</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideTail</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0.07)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0.07)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>-0.293</layerOffset>
+									<bodyTypes>
+										<Thin>(0,0)</Thin>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0.06)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0.06)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ==========[Mashed_Lynian_BasePawn_CatLike_OldWorld]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike" Name="Mashed_Lynian_BasePawn_CatLike_OldWorld" Abstract="True">
+		<race>
+			<nameGenerator>Mashed_Lynian_NamerPerson_CatLike_OldWorldMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_CatLike_OldWorldFemale</nameGeneratorFemale>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<bodyAddons>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Mashed_FelyneEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ==========[Mashed_Lynian_BasePawn_GoblinLike]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_Alien" Name="Mashed_Lynian_BasePawn_GoblinLike" Abstract="True">
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<statBases>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<!-- 6 higher than humans -->
+			<ComfyTemperatureMax>32</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<body>Human</body>
+			<leatherDef>Mashed_Lynian_LynianLeather</leatherDef>
+			<nameGenerator>Mashed_Lynian_NamerPerson_ShakalakaMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_ShakalakaFemale</nameGeneratorFemale>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<bodyTypes>
+						<li>Male</li>
+					</bodyTypes>
+					<colorChannels>
+						<li>
+							<name>eye</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(243,224,173,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(220,214,159,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(214,187,113,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(223,223,119,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- =====[Eye right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Mashed_BoaboaEye_Right</path>
+							<colorChannel>eye</colorChannel>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>right eye</bodyPartLabel>
+							<drawnInBed>false</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEyes</li>
+							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Right</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Right</ESCP_NecromanticThralls_Enthralled>
+							</hediffGraphics>
+							<geneGraphics>
+								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Right</Hemogenic>
+							</geneGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Eye left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Mashed_BoaboaEye_Left</path>
+							<colorChannel>eye</colorChannel>
+							<bodyPart>Eye</bodyPart>
+							<bodyPartLabel>left eye</bodyPartLabel>
+							<drawnInBed>false</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEyes</li>
+							</hiddenUnderApparelTag>
+							<hediffGraphics>
+								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
+								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
+								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Enthralled/Mashed_FelyneEyeEnthralled_Left</ESCP_NecromanticThralls_Enthralled>
+							</hediffGraphics>
+							<geneGraphics>
+								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Sanguophage/Mashed_FelyneEyeSanguo_Left</Hemogenic>
+							</geneGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	<!-- ==========[Mashed_Lynian_BasePawn_GoblinLike]========== -->
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike" Name="Mashed_Lynian_BasePawn_GoblinLike_True" Abstract="True">
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<bodyAddons>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideGoblinEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Ear/Gajalaka/Mashed_GajalakaEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideEars</li>
+								<li>Mashed_Lynian_HideGoblinEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

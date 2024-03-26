@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike_True">
+		<defName>Mashed_Lynian_ShakalakaRace</defName>
+		<label>shakalaka</label>
+		<description>One of the breeds of goblin-like Lynian, while usually quite savage, Shakalaka will occasionally assimilate into society. Like their cousins, Shakalaka are rather reclusive, and are very rarely seen without their masks on. They are most at home in temperate and tropical locations, often scavenging in ruins for broken weapons to melt down. They also show a strange fondness for dancing, and will often perform dances to aid their allies. Like all Lynians, Shakalaka are rather quick on their feet, but also sightly slower at many jobs than Humans. \n\nOriginally created to serve as assistants to settlers and explorers, since then most Shakalaka have gone their own way, and established savage hunter-gatherer tribes. Though young wandering Shakalaka will occasionally befriend travellers, which they often end up 'lovingly' calling their 'minions'.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nInjury healing factor is increased by 10%.\nSmelting speed is increased by 10%.\nImmunity gain speed is increased by 20%.\nHas a chance to start with a random Shakalaka dance ability.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
+				<oneOfRandomAbility>
+					<li>Mashed_Lynian_DanceCleaningAbility</li>
+					<li>Mashed_Lynian_DanceCoolingAbility</li>
+					<li>Mashed_Lynian_DanceCuringAbility</li>
+					<li>Mashed_Lynian_DanceExtinguishingAbility</li>
+					<li>Mashed_Lynian_DanceElectrifyingAbility</li>
+					<li>Mashed_Lynian_DanceEvasiveAbility</li>
+					<li>Mashed_Lynian_DanceHealingAbility</li>
+					<li>Mashed_Lynian_DanceInvigoratingAbility</li>
+					<li>Mashed_Lynian_DanceJoyfulAbility</li>
+					<li>Mashed_Lynian_DanceProtectiveAbility</li>
+					<li>Mashed_Lynian_DanceStunningAbility</li>
+					<li>Mashed_Lynian_DanceWarmingAbility</li>
+				</oneOfRandomAbility>
+				<oneOfRandomChance>0.25</oneOfRandomChance>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Shakalaka</hybridInheritedGene>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 0.1 higher than base -->
+			<InjuryHealingFactor>1.1</InjuryHealingFactor>
+			<!-- 0.1 higher than base -->
+			<SmeltingSpeed>1.1</SmeltingSpeed>
+			<!-- 0.2 higher than base -->
+			<ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+		</statBases>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>Mashed_GoblinHead</li>
+					</headTypes>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Render -->
+									<li>
+										<weight>3</weight>
+										<only>(214,189,142,255)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>(196,168,114,255)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>(170,139,91,255)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>(181,154,108,255)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>(153,119,83,255)</only>
+									</li>
+									<!-- Chacha -->
+									<li>
+										<weight>1</weight>
+										<only>(206,195,96,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(186,175,86,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(162,154,72,255)</only>
+									</li>
+									<!-- Kayamba -->
+									<li>
+										<weight>1</weight>
+										<only>(145,138,63,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(122,112,52,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(111,108,44,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Render -->
+									<li>
+										<weight>1</weight>
+										<only>(204,180,141,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(177,154,119,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(139,121,91,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(137,110,76,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>eye</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(0,0,0,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- =====[Horn]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Horn_Shakalaka/Mashed_ShakalakaHorn</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Head</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideHeadHorn</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Shakalaka/</body>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Straw/StrawSwaddle_Child</swaddle>
+			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Shakalaka</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

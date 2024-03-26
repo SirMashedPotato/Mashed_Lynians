@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerHostileFactionBase">
+		<defName>Mashed_Lynian_NonPlayerShakalakaTribe</defName>
+		<label>Shakalaka tribe</label>
+		<description>A small Shakalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Shakalaka strike without fear and subsequently make both viscous foes, and powerful allies.\n\nBeing a Shakalaka tribe, this particular tribe is incredibly reclusive, and often openly hostile to anyone that enters their territory; it may be difficult to turn them into an ally.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference" MayRequire="SirMashedPotato.ESCP.RaceTools">
+				<biomeKeyWords>
+					<li>temperate</li>
+					<li>Temperate</li>
+					<li>tropical</li>
+					<li>Tropical</li>
+				</biomeKeyWords>
+			</li>
+		</modExtensions>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_NonPlayer</factionIconPath>
+		<colorSpectrum>
+			<li>(0.5, 0.4, 0.3)</li>
+			<li>(0.5, 0.5, 0.1)</li>
+		</colorSpectrum>
+		<factionNameMaker>Mashed_Lynian_NamerFactionShakalaka</factionNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_ShakalakaTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_ShakalakaTrader</li>
+		</baseTraderKinds>
+		<raidLootMaker>Mashed_Lynian_ShakalakaRaidLootMaker</raidLootMaker>
+		<disallowedMemes>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
+		</requiredMemes>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>5</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaWarrior>10</Mashed_Lynian_ShakalakaWarrior>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>5</Mashed_Lynian_ShakalakaBombadier>
+					<Mashed_Lynian_ShakalakaChiefRanged>3</Mashed_Lynian_ShakalakaChiefRanged>
+					<Mashed_Lynian_ShakalakaChiefMelee>1.5</Mashed_Lynian_ShakalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>10</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>7</Mashed_Lynian_ShakalakaBombadier>
+					<Mashed_Lynian_ShakalakaChiefRanged>5</Mashed_Lynian_ShakalakaChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>10</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaWarrior>10</Mashed_Lynian_ShakalakaWarrior>
+					<Mashed_Lynian_ShakalakaChiefMelee>5</Mashed_Lynian_ShakalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>5</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaWarrior>5</Mashed_Lynian_ShakalakaWarrior>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>10</Mashed_Lynian_ShakalakaBombadier>
+					<Mashed_Lynian_ShakalakaChiefRanged>3</Mashed_Lynian_ShakalakaChiefRanged>
+					<Mashed_Lynian_ShakalakaChiefMelee>1.5</Mashed_Lynian_ShakalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mashed_Lynian_ShakalakaWarrior>20</Mashed_Lynian_ShakalakaWarrior>
+					<Mashed_Lynian_ShakalakaGatherer>10</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>10</Mashed_Lynian_ShakalakaBombadier>
+					<Mashed_Lynian_ShakalakaChiefRanged>3</Mashed_Lynian_ShakalakaChiefRanged>
+					<Mashed_Lynian_ShakalakaChiefMelee>1.5</Mashed_Lynian_ShakalakaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Mashed_Lynian_ShakalakaTrader>1</Mashed_Lynian_ShakalakaTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>8</Alpaca>
+				</carriers>
+				<guards>
+					<Mashed_Lynian_ShakalakaWarrior>7</Mashed_Lynian_ShakalakaWarrior>
+					<Mashed_Lynian_ShakalakaGatherer>5</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>5</Mashed_Lynian_ShakalakaBombadier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mashed_Lynian_ShakalakaWarrior>7</Mashed_Lynian_ShakalakaWarrior>
+					<Mashed_Lynian_ShakalakaGatherer>5</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>5</Mashed_Lynian_ShakalakaBombadier>
+					<Mashed_Lynian_ShakalakaChiefRanged>10</Mashed_Lynian_ShakalakaChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>10</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaHunter>5</Mashed_Lynian_ShakalakaHunter>
+					<Mashed_Lynian_ShakalakaBombadier>5</Mashed_Lynian_ShakalakaBombadier>
+					<Mashed_Lynian_ShakalakaChiefRanged>10</Mashed_Lynian_ShakalakaChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>2</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaBombadier>1</Mashed_Lynian_ShakalakaBombadier>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>1</Mashed_Lynian_ShakalakaGatherer>
+					<Mashed_Lynian_ShakalakaHunter>1</Mashed_Lynian_ShakalakaHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>1</Mashed_Lynian_ShakalakaGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_ShakalakaGatherer>1</Mashed_Lynian_ShakalakaGatherer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[Shakalaka Loot Maker]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Lynian_ShakalakaRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>Jade</li>
+						<li>MedicineHerbal</li>
+						<li>Pemmican</li>
+						<li>Steel</li>
+						<li>RawFungus</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

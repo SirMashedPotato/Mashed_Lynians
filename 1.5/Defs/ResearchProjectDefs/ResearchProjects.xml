@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Row 3]========== -->
+	<!-- ==========[Felvine sowing]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_FelvineSowing</defName>
+		<label>felvine sowing</label>
+		<description>Learn how to sow felvine plants, and process it into a consumable drug. Ingesting felvine has absolutely no effect for most races, however cat-like Lynians recieve quite an empowering high from it.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
+			<li>Mashed_Lynian_GrimalkyneStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Lynian dye kit]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_DyeKit</defName>
+		<label>Lynian dye kit</label>
+		<description>Learn how to craft the Lynian dye kit at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<prerequisites>
+			<li>Mashed_Lynian_FelvineSowing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Lynian Explosives]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_LynianExplosives</defName>
+		<label>Lynian explosives</label>
+		<description>Learn how to craft simple explosives at the Lynian crafting spot.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+	</ResearchProjectDef>
+	<!-- ==========[Row 4]========== -->
+	<!-- ==========[Felyne equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_FelyneEquipment</defName>
+		<label>felyne equipment</label>
+		<description>Learn how to craft basic Felyne equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_FelyneStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Melynx equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_MelynxEquipment</defName>
+		<label>melynx equipment</label>
+		<description>Learn how to craft basic Melynx equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Grimalkyne equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_GrimalkyneEquipment</defName>
+		<label>grimalkyne equipment</label>
+		<description>Learn how to craft basic Grimalkyne equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_GrimalkyneStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Shakalaka equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_ShakalakaEquipment</defName>
+		<label>shakalaka equipment</label>
+		<description>Learn how to craft basic Shakalaka equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Gajalaka equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_GajalakaEquipment</defName>
+		<label>gajalaka equipment</label>
+		<description>Learn how to craft basic Gajalaka equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Boaboa equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_BoaboaEquipment</defName>
+		<label>boaboa equipment</label>
+		<description>Learn how to craft basic Boaboa equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Uruki equipment]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_UrukiEquipment</defName>
+		<label>uruki equipment</label>
+		<description>Learn how to craft basic Uruki equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<tags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Row 5, speciality armour sets]========== -->
+	<!-- ==========[Purrserker]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_PurrserkerEquipment</defName>
+		<label>purrserker equipment</label>
+		<description>Learn how to craft special Purrserker equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+	</ResearchProjectDef>
+	<!-- ==========[Acorn knight]========== -->
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_AcornEquipment</defName>
+		<label>acorn equipment</label>
+		<description>Learn how to craft strong Acorn Knight equipment at the Lynian crafting bench.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>Mashed_Lynian_PurrserkerEquipment</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Sameowrai]========== -->
+	<!--
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_SameowraiEquipment</defName>
+		<label>sameowrai equipment</label>
+		<description>Learn how to craft powerful Sameowrai equipment at the Lynian crafting bench.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<prerequisites>
+			<li>Machining</li>
+			<li>Mashed_Lynian_AcornEquipment</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	-->
+</Defs>

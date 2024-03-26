@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WeaponClassPairDef>
+		<defName>Mashed_Lynian_WeaponPairLynianNeolithic</defName>
+		<first>Mashed_Lynian_WeaponLynian</first>
+		<second>Neolithic</second>
+	</WeaponClassPairDef>
+</Defs>

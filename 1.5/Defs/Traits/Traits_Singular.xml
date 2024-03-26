@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraitDef>
+		<defName>Mashed_Lynian_MelynxSneakyPaws</defName>
+		<commonality>0.1</commonality>
+		<degreeDatas>
+			<li>
+				<label>sneaky paws</label>
+				<description>{PAWN_nameDef}'s paws always end up places they shouldn't, yet {PAWN_nameDef} never seems to get caught red-pawed.</description>
+				<statOffsets>
+					<Mashed_Lynian_PilferChance>+0.10</Mashed_Lynian_PilferChance>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+</Defs>

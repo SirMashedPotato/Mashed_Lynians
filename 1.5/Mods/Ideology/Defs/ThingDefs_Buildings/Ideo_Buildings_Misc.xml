@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Mashed_Lynian_FelvineStone</defName>
+		<label>felvine stone</label>
+		<description>A large stone structure, that creates a thick cloud of felvine around itself. Anyone in the cloud will become high on felvine over time, but only if they are affected by felvine ingestion.\n\nHow does it work you ask? Why Lynian ingenuity of course.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Lynian_FelvineStone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.20</fillPercent>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<selectable>true</selectable>
+		<costList>
+			<Mashed_Lynian_FelvinePowder>25</Mashed_Lynian_FelvinePowder>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+			<li>Mashed_Lynian_FelvineSowing</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.66</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Lynian_FelvinePowder</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+			<!-- Harmony patch ensures only pawns affected by felvine ingestion are affected -->
+			<li Class="CompProperties_GiveHediffSeverity">
+				<hediff>Mashed_Lynian_FelvineHighFrenzy</hediff>
+				<range>4.9</range>
+				<severityPerSecond>0.005</severityPerSecond>
+				<drugExposure>true</drugExposure>
+				<chemical>Mashed_Lynian_FelvineChemical</chemical>
+				<allowMechs>false</allowMechs>
+			</li>
+			<li Class="CompProperties_SmokeCloudMaker">
+				<sourceStreamEffect>Mashed_Lynian_FelvineStoneSmoke</sourceStreamEffect>
+				<cloudRadius>4.9</cloudRadius>
+				<fleckScale>4</fleckScale>
+				<cloudFleck>Mashed_Lynian_FelvineStoneSmokeThrown</cloudFleck>
+				<fleckSpawnMTB>25</fleckSpawnMTB>
+			</li>
+		</comps>
+		<designationCategory>Misc</designationCategory>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_SmokeCloudMaker</li>
+		</placeWorkers>
+	</ThingDef>
+</Defs>

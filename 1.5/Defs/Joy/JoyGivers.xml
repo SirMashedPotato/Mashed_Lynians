@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JoyGiverDef>
+		<defName>Mashed_Lynian_SmellFelvine</defName>
+		<giverClass>Mashed_Lynians.JoyGiver_SmellFelvine</giverClass>
+		<baseChance>1</baseChance>
+		<jobDef>Mashed_Lynian_SmellFelvine</jobDef>
+		<joyKind>Meditative</joyKind>
+		<desireSit>false</desireSit>
+		<thingDefs>
+			<li>Mashed_Lynian_FelvinePlant</li>
+		</thingDefs>
+	</JoyGiverDef>
+</Defs>

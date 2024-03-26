@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Pilfering]==========-->
+	<HediffDef>
+		<defName>Mashed_Lynian_PilferedFelvine</defName>
+		<label>pilfered felvine</label>
+		<description>Used for Achievements, you should not see this.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 0.4)</defaultLabelColor>
+		<maxSeverity>0.1</maxSeverity>
+		<initialSeverity>0.1</initialSeverity>
+		<comps>
+		  <li Class="HediffCompProperties_Immunizable">
+			<severityPerDayNotImmune>-100</severityPerDayNotImmune>
+		  </li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_ShakalakaDanceMaster]==========-->
+	<HediffDef>
+		<defName>Mashed_Lynian_ShakalakaDanceMaster</defName>
+		<label>Shakalaka dance mastery</label>
+		<description>This pawn has read a master Shakalaka dance book, and now has untold mastery over Shakalaka dances. They are now able to activate the secondary effect of any Shakalaka dances they dance.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MarketValue>+500</MarketValue>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

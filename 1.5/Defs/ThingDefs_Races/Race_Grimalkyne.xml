@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike">
+		<defName>Mashed_Lynian_GrimalkyneRace</defName>
+		<label>grimalkyne</label>
+		<description>The most elusive species of cat-like Lynian, Grimalkyne are often highly cautious of outsiders, preferring to hide in the shadows until they are gone. This innate caution has resulted in them being highly adaptable, as they prefer to live away from 'civilisation'. Like all Lynians, Grimalkyne are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nGrimalkyne are thought to be an offshoot of Felyne and Melynx assistants, that after setting out on their own journey have taken on a comparatively 'wild' appearance and nature. While they prefer their simple tribal lifestyle, they have been known to trade and befriend outsiders.\n\nBeing a cat-like Lynian, Grimalkyne have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nRest rate multiplier increased by 10%.\nForaged nutrition per day increased by 0.2.\nToxic sensitivity decreased by 20%.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<isCatLike>True</isCatLike>
+				<canUseFelvine>True</canUseFelvine>
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Grimalkyne</hybridInheritedGene>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Lynian_FelvinePlant</ThingDef>
+			<ThingDef>Mashed_Lynian_FelvinePowder</ThingDef>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 0.1 higher than base -->
+			<RestRateMultiplier>1.1</RestRateMultiplier>
+			<!-- 0.2 higher than base -->
+			<ForagedNutritionPerDay>0.2</ForagedNutritionPerDay>
+			<!-- 0.2 lower than other lynians -->
+			<ToxicResistance>0.7</ToxicResistance>
+		</statBases>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes Inherit="False">
+						<li>Mashed_FelyneHead_Fluffy</li>
+						<li>Mashed_FelyneHead_Poofy</li>
+					</headTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<!-- =====[Main fur colour]===== -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Bugtrapper -->
+									<li>
+										<weight>1</weight>
+										<only>(168,157,134,255)</only>
+									</li>
+									<!-- Protector -->
+									<li>
+										<weight>1</weight>
+										<only>(71,71,71,255)</only>
+									</li>
+									<!-- Trouper -->
+									<li>
+										<weight>1</weight>
+										<only>(32,76,76,255)</only>
+									</li>
+									<!-- Plunderer -->
+									<li>
+										<weight>1</weight>
+										<only>(137,143,145,255)</only>
+									</li>
+								</options>
+							</first>
+							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Bugtrapper -->
+									<li>
+										<weight>1</weight>
+										<only>(115,100,86,255)</only>
+									</li>
+									<!-- Protector -->
+									<li>
+										<weight>1</weight>
+										<only>(147,147,147,255)</only>
+									</li>
+									<!-- Trouper -->
+									<li>
+										<weight>1</weight>
+										<only>(111,30,30,255)</only>
+									</li>
+									<!-- Plunderer -->
+									<li>
+										<weight>1</weight>
+										<only>(148,120,37,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideCatEars</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+						<!-- =====[Mane]===== -->
+						<li>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Mane_Grimalkyne/Mashed_GrimalkyneMane</path>
+							<colorChannel>base</colorChannel>
+							<bodyPart>Neck</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>false</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>Neck</li>
+								<li>Shoulders</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>Mashed_Lynian_HideMane</li>
+							</hiddenUnderApparelTag>
+							<offsets>
+								<south>
+									<layerOffset>-0.28</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.28</layerOffset>
+								</east>
+							</offsets>
+							<debug>false</debug>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Grimalkyne/</body>
+				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Grimalkyne/Mashed_GrimalkyneMask</headMasks>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Woven/WovenSwaddle_Child</swaddle>
+				<bodyMasks>
+					<bodytypeGraphics>
+						<Thin>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneBodyMask</Thin>
+						<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneChildBodyMask</Baby>
+						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/BodyMask/Grimalkyne/Mashed_GrimalkyneChildBodyMask</Child>
+					</bodytypeGraphics>
+				</bodyMasks>
+			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Grimalkyne</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>
