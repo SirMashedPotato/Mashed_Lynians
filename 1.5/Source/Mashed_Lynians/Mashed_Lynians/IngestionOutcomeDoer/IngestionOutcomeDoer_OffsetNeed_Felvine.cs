@@ -7,10 +7,12 @@ namespace Mashed_Lynians
     /// <summary>
     /// Basically an exact copy because IngestionOutcomeDoer_OffsetNeed.DoIngestionOutcomeSpecial is protected
     /// I guess I could've done this through Harmony patching, but eh
+    /// TODO see if this can be redone through HAR stuff
+	/// TODO int ingestedCount is new, probably need to update this
     /// </summary>
     public class IngestionOutcomeDoer_OffsetNeed_Felvine : IngestionOutcomeDoer
     {
-        protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
+        protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
         {
             if (pawn.needs == null)
             {

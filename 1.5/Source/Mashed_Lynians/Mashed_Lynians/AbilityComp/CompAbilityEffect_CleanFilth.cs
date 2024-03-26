@@ -11,7 +11,7 @@ namespace Mashed_Lynians
         {
             get
             {
-                return (CompProperties_AbilityCleanFilth)this.props;
+                return (CompProperties_AbilityCleanFilth)props;
             }
         }
 

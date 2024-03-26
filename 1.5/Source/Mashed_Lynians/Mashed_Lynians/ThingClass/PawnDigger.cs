@@ -8,6 +8,9 @@ namespace Mashed_Lynians
 {
     public class PawnDigger : PawnFlyer
     {
+		/// <summary>
+		/// TODO possibly rework this for changes in 1.5
+		/// </summary>
 		public override Vector3 DrawPos
 		{
 			get
@@ -38,6 +41,7 @@ namespace Mashed_Lynians
 			this.groundPos = Vector3.Lerp(this.startVec, base.DestinationPos, num);
 		}
 
+		/* TODO fuck
 		public override void DrawAt(Vector3 drawLoc, bool flip = false)
 		{
 			this.RecomputePosition();
@@ -49,6 +53,7 @@ namespace Mashed_Lynians
 				}
 			}
 		}
+		*/
 
         protected override void RespawnPawn()
 		{

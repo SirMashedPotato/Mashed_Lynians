@@ -37,6 +37,7 @@
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">1</Fertility>
 		</statBases>
 		<race>
+			<renderTree>Humanlike</renderTree>
 			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
 			<thinkTreeMain>Humanlike</thinkTreeMain>

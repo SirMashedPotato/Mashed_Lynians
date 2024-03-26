@@ -36,25 +36,22 @@ namespace Mashed_Lynians
             }
 		}
 
-		public override bool CanBeUsedBy(Pawn p, out string failReason)
+		public override AcceptanceReport CanBeUsedBy(Pawn p)
 		{
 			if (!Utility.PawnIsLynian(p))
 			{
-				failReason = "Mashed_Lynian_PawnNotLynian".Translate(p.Name);
-				return false;
+                return "Mashed_Lynian_PawnNotLynian".Translate(p.Name);
 			}
 			if (Props.ability != null && p.abilities.GetAbility(Props.ability) != null)
 			{
-				failReason = "Mashed_Lynian_EurekacornHasAbility".Translate(p.Name, Props.ability.label);
-				return false;
+                return "Mashed_Lynian_EurekacornHasAbility".Translate(p.Name, Props.ability.label);
 			}
 			if (Props.hediff != null && p.health.hediffSet.GetFirstHediffOfDef(Props.hediff) != null)
 			{
-				failReason = "Mashed_Lynian_EurekacornHasHediff".Translate(p.Name, Props.hediff.label);
-				return false;
+				return "Mashed_Lynian_EurekacornHasHediff".Translate(p.Name, Props.hediff.label);
 			}
-			return base.CanBeUsedBy(p, out failReason);
-		}
+            return true;
+        }
 
         public override string TransformLabel(string label)
         {
