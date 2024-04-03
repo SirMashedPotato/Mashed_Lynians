@@ -51,7 +51,7 @@
 					<Mashed_Lynian_GajalakaWarrior>10</Mashed_Lynian_GajalakaWarrior>
 					<Mashed_Lynian_GajalakaBombadier>7</Mashed_Lynian_GajalakaBombadier>
 					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
-					<Mashed_Lynian_GajalakaGunnerFurrious MayRequire="Ludeon.RimWorld.Biotech">2.5</Mashed_Lynian_GajalakaGunnerFurrious>
+					<Mashed_Lynian_GajalakaGunnerFurrious>2.5</Mashed_Lynian_GajalakaGunnerFurrious>
 					<Mashed_Lynian_GajalakaChiefRanged>3</Mashed_Lynian_GajalakaChiefRanged>
 					<Mashed_Lynian_GajalakaChiefMelee>1.5</Mashed_Lynian_GajalakaChiefMelee>
 				</options>
@@ -64,7 +64,7 @@
 					<Mashed_Lynian_GajalakaGatherer>10</Mashed_Lynian_GajalakaGatherer>
 					<Mashed_Lynian_GajalakaBombadier>7</Mashed_Lynian_GajalakaBombadier>
 					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
-					<Mashed_Lynian_GajalakaGunnerFurrious MayRequire="Ludeon.RimWorld.Biotech">2.5</Mashed_Lynian_GajalakaGunnerFurrious>
+					<Mashed_Lynian_GajalakaGunnerFurrious>2.5</Mashed_Lynian_GajalakaGunnerFurrious>
 					<Mashed_Lynian_GajalakaChiefRanged>5</Mashed_Lynian_GajalakaChiefRanged>
 				</options>
 			</li>
@@ -87,7 +87,7 @@
 					<Mashed_Lynian_GajalakaWarrior>5</Mashed_Lynian_GajalakaWarrior>
 					<Mashed_Lynian_GajalakaBombadier>10</Mashed_Lynian_GajalakaBombadier>
 					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
-					<Mashed_Lynian_GajalakaGunnerFurrious MayRequire="Ludeon.RimWorld.Biotech">2.5</Mashed_Lynian_GajalakaGunnerFurrious>
+					<Mashed_Lynian_GajalakaGunnerFurrious>2.5</Mashed_Lynian_GajalakaGunnerFurrious>
 					<Mashed_Lynian_GajalakaChiefRanged>3</Mashed_Lynian_GajalakaChiefRanged>
 					<Mashed_Lynian_GajalakaChiefMelee>1.5</Mashed_Lynian_GajalakaChiefMelee>
 				</options>
@@ -126,7 +126,7 @@
 					<Mashed_Lynian_GajalakaGatherer>5</Mashed_Lynian_GajalakaGatherer>
 					<Mashed_Lynian_GajalakaBombadier>5</Mashed_Lynian_GajalakaBombadier>
 					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
-					<Mashed_Lynian_GajalakaGunnerFurrious MayRequire="Ludeon.RimWorld.Biotech">2.5</Mashed_Lynian_GajalakaGunnerFurrious>
+					<Mashed_Lynian_GajalakaGunnerFurrious>2.5</Mashed_Lynian_GajalakaGunnerFurrious>
 					<Mashed_Lynian_GajalakaChiefRanged>10</Mashed_Lynian_GajalakaChiefRanged>
 				</options>
 			</li>
@@ -136,7 +136,7 @@
 					<Mashed_Lynian_GajalakaGatherer>10</Mashed_Lynian_GajalakaGatherer>
 					<Mashed_Lynian_GajalakaBombadier>5</Mashed_Lynian_GajalakaBombadier>
 					<Mashed_Lynian_GajalakaGunner>5</Mashed_Lynian_GajalakaGunner>
-					<Mashed_Lynian_GajalakaGunnerFurrious MayRequire="Ludeon.RimWorld.Biotech">2.5</Mashed_Lynian_GajalakaGunnerFurrious>
+					<Mashed_Lynian_GajalakaGunnerFurrious>2.5</Mashed_Lynian_GajalakaGunnerFurrious>
 					<Mashed_Lynian_GajalakaChiefRanged>10</Mashed_Lynian_GajalakaChiefRanged>
 				</options>
 			</li>

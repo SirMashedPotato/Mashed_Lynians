@@ -137,6 +137,38 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<!-- ==========[Mashed_Lynian_LynianFurriousFiringFurrenzyAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_LynianFurrenzyBase">
+		<defName>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</defName>
+		<label>furrious firing furrenzy</label>
+		<description>Reach back through time, recollecting every piece of advice given to this Lynian about firing, enhancing their aiming skills in the process... and maybe getting a little bit too excited at the same time.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_FurriousFiringFurrenzy</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_FurriousFiringFurrenzy</warmupMoteSocialSymbol>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_LynianFurriousFiringFurrenzy</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_LynianFurriousFiringFurrenzy</defName>
+		<label>furrious firing furrenzy</label>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about firing, and putting it all to use at once... while getting rather excited in the process. This halves the pawns required aiming time, aiming cooldown time... and also shooting accuracy.</description>
+		<comps>
+			<li Class="Mashed_Lynians.HediffCompProperties_FurriousFurrenzyTooltip">
+				<compClass>Mashed_Lynians.HediffComp_FurriousFurrenzyTooltip_Halved</compClass>
+				<statDefs>
+					<li>AimingDelayFactor</li>
+					<li>RangedCooldownFactor</li>
+					<li>ShootingAccuracyPawn</li>
+				</statDefs>
+			</li>
+		</comps>
+	</HediffDef>
 	<!-- ==========[Mashed_Lynian_LynianMiningFurrenzy]==========-->
 	<AbilityDef ParentName="Mashed_Lynian_LynianFurrenzyBase">
 		<defName>Mashed_Lynian_LynianMiningFurrenzyAbility</defName>
