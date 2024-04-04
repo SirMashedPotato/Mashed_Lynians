@@ -15,8 +15,8 @@ namespace Mashed_Lynians
 		{
 			get
 			{
-				this.RecomputePosition();
-				return this.groundPos;
+				RecomputePosition();
+				return groundPos;
 			}
 		}
 
@@ -26,62 +26,54 @@ namespace Mashed_Lynians
 			animationCurve.AddKey(0f, 0f);
 			animationCurve.AddKey(0.1f, 0.15f);
 			animationCurve.AddKey(1f, 1f);
-			PawnDigger.FlightSpeed = new Func<float, float>(animationCurve.Evaluate);
+            FlightSpeed = new Func<float, float>(animationCurve.Evaluate);
 		}
 
 		private void RecomputePosition()
 		{
-			if (this.positionLastComputedTick == this.ticksFlying)
+			if (positionLastComputedTick == ticksFlying)
 			{
 				return;
 			}
-			this.positionLastComputedTick = this.ticksFlying;
-			float arg = (float)this.ticksFlying / (float)this.ticksFlightTime;
-			float num = PawnDigger.FlightSpeed(arg);
-			this.groundPos = Vector3.Lerp(this.startVec, base.DestinationPos, num);
+			positionLastComputedTick = ticksFlying;
+			float arg = (float)ticksFlying / ticksFlightTime;
+			float num = FlightSpeed(arg);
+			groundPos = Vector3.Lerp(startVec, DestinationPos, num);
 		}
 
-		/* TODO fuck
-		public override void DrawAt(Vector3 drawLoc, bool flip = false)
+		public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
 		{
-			this.RecomputePosition();
+			RecomputePosition();
             if (!Find.TickManager.Paused)
             {
                 if (Rand.Chance(0.5f))
                 {
-					FleckMaker.ThrowDustPuffThick(this.groundPos, base.Map, 1f, Color.white);
+					FleckMaker.ThrowDustPuffThick(groundPos, Map, 1f, Color.white);
 				}
 			}
 		}
-		*/
 
         protected override void RespawnPawn()
 		{
-			this.LandingEffects();
+			LandingEffects();
 			base.RespawnPawn();
 		}
 		
 		private void LandingEffects()
 		{
-			if (this.soundLanding != null)
-			{
-				this.soundLanding.PlayOneShot(new TargetInfo(base.Position, base.Map, false));
-			}
-			FleckMaker.ThrowDustPuffThick(base.DestinationPos, base.Map, 2f, Color.white);
+            soundLanding?.PlayOneShot(new TargetInfo(Position, Map, false));
+			FleckMaker.ThrowDustPuffThick(DestinationPos, Map, 2f, Color.white);
 		}
 
 		public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
 		{
-			Effecter effecter = this.flightEffecter;
-			if (effecter != null)
-			{
-				effecter.Cleanup();
-			}
+			Effecter effecter = flightEffecter;
+			effecter?.Cleanup();
 			base.Destroy(mode);
 		}
 
 		private static readonly Func<float, float> FlightSpeed;
-		private Effecter flightEffecter;
+		private readonly Effecter flightEffecter;
 		private int positionLastComputedTick = -1;
 		private Vector3 groundPos;
 	}
