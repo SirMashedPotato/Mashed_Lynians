@@ -137,26 +137,31 @@
 					<bodyAddons Inherit="False">
 						<!-- =====[Eye right]===== -->
 						<li>
+							<name>right eye</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Right</path>
 							<colorChannel>eye</colorChannel>
-							<bodyPart>Eye</bodyPart>
-							<bodyPartLabel>right eye</bodyPartLabel>
-							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideEyes</li>
-							</hiddenUnderApparelTag>
-							<hediffGraphics>
-								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Right</MissingBodyPart>
-								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</BionicEye>
-								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Enthralled/Mashed_UrukiEyeEnthralled_Right</ESCP_NecromanticThralls_Enthralled>
-							</hediffGraphics>
-							<geneGraphics>
-								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Right</Hemogenic>
-							</geneGraphics>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right eye</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEyes</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</Hediff>
+								<Hediff For="BionicEye">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</Hediff>
+								<Gene For="Hemogenic">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Right</Gene>
+							</extendedGraphics>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -168,31 +173,35 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Eye left]===== -->
 						<li>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<name>left eye</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Left</path>
 							<colorChannel>eye</colorChannel>
-							<bodyPart>Eye</bodyPart>
-							<bodyPartLabel>left eye</bodyPartLabel>
-							<drawnInBed>false</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideEyes</li>
-							</hiddenUnderApparelTag>
-							<hediffGraphics>
-								<MissingBodyPart>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Eye/Missing/Mashed_BoaboaEyeMissing_Left</MissingBodyPart>
-								<BionicEye>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</BionicEye>
-								<ESCP_NecromanticThralls_Enthralled MayRequire="SirMashedPotato.ESCP.NecromanticThralls">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Enthralled/Mashed_UrukiEyeEnthralled_Left</ESCP_NecromanticThralls_Enthralled>
-							</hediffGraphics>
-							<geneGraphics>
-								<Hemogenic MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Left</Hemogenic>
-							</geneGraphics>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left eye</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEyes</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</Hediff>
+								<Hediff For="BionicEye">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</Hediff>
+								<Gene For="Hemogenic">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Left</Gene>
+							</extendedGraphics>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -204,28 +213,32 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Ear right]===== -->
 						<li>
+							<name>right ear</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Right</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Ear</bodyPart>
-							<bodyPartLabel>right ear</bodyPartLabel>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideEars</li>
-								<li>Mashed_Lynian_HideMonkeyEars</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEars</li>
+										<li>Mashed_Lynian_HideMonkeyEars</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -237,29 +250,33 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<name>left ear</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Left</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Ear</bodyPart>
-							<bodyPartLabel>left ear</bodyPartLabel>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideEars</li>
-								<li>Mashed_Lynian_HideMonkeyEars</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEars</li>
+										<li>Mashed_Lynian_HideMonkeyEars</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -271,26 +288,31 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Horn]===== -->
 						<li>
+							<name>horn</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/HeadHorn/Mashed_UrukiHorn</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Head</bodyPart>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideHeadHorn</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>head</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideHeadHorn</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -302,24 +324,30 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Beard]===== -->
 						<li>
+							<name>beard</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiBeard</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Head</bodyPart>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideBeard</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>head</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideBeard</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -336,7 +364,6 @@
 								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiChildBeard</Baby>
 								<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiChildBeard</Child>
 							</bodytypeGraphics>
-							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>

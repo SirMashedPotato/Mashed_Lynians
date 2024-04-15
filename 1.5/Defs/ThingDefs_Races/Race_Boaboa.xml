@@ -96,20 +96,27 @@
 					<bodyAddons>
 						<!-- =====[Teeth]===== -->
 						<li>
+							<name>fangs</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Teeth/Boaboa/Mashed_BoaboaTeeth</path>
 							<colorChannel>teeth</colorChannel>
-							<bodyPart>Jaw</bodyPart>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>true</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideTeeth</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>jaw</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting,Dessicated</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideTeeth</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -121,7 +128,6 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>

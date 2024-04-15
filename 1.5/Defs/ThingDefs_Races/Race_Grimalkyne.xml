@@ -92,23 +92,29 @@
 					<bodyAddons>
 						<!-- =====[Ear right]===== -->
 						<li>
+							<name>right ear</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Right</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Ear</bodyPart>
-							<bodyPartLabel>right ear</bodyPartLabel>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideCatEars</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEars</li>
+										<li>Mashed_Lynian_HideCatEars</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -120,28 +126,33 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Ear left]===== -->
 						<li>
 							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<name>left ear</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Ear/Grimalkyne/Mashed_GrimalkyneEar_Left</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Ear</bodyPart>
-							<bodyPartLabel>left ear</bodyPartLabel>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideCatEars</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEars</li>
+										<li>Mashed_Lynian_HideCatEars</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -153,26 +164,30 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 						<!-- =====[Mane]===== -->
 						<li>
+							<name>mane</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Mane_Grimalkyne/Mashed_GrimalkyneMane</path>
 							<colorChannel>base</colorChannel>
-							<bodyPart>Neck</bodyPart>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
-							<alignWithHead>false</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>Neck</li>
-								<li>Shoulders</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideMane</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>neck</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>Neck</li>
+										<li>Shoulders</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideMane</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.28</layerOffset>
@@ -184,7 +199,6 @@
 									<layerOffset>-0.28</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>

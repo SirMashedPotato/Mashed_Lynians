@@ -135,22 +135,28 @@
 					<bodyAddons>
 						<!-- =====[Horn]===== -->
 						<li>
+							<name>horn</name>
 							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Horn_Shakalaka/Mashed_ShakalakaHorn</path>
 							<colorChannel>skin</colorChannel>
-							<bodyPart>Head</bodyPart>
-							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>false</layerInvert>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnDesiccated>false</drawnDesiccated>
-							<hiddenUnderApparelFor>
-								<li>FullHead</li>
-								<li>UpperHead</li>
-							</hiddenUnderApparelFor>
-							<hiddenUnderApparelTag>
-								<li>Mashed_Lynian_HideHeadHorn</li>
-							</hiddenUnderApparelTag>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>head</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideHeadHorn</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
 							<offsets>
 								<south>
 									<layerOffset>-0.273</layerOffset>
@@ -162,7 +168,6 @@
 									<layerOffset>-0.273</layerOffset>
 								</east>
 							</offsets>
-							<debug>false</debug>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
