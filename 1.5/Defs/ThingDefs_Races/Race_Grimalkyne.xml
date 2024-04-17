@@ -175,7 +175,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
-									<bodyPartLabel>neck</bodyPartLabel>
+									<bodyPart>Neck</bodyPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
@@ -187,16 +187,21 @@
 										<li>Mashed_Lynian_HideMane</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
 							</conditions>
 							<offsets>
 								<south>
-									<layerOffset>-0.28</layerOffset>
+									<layerOffset>-0.29</layerOffset>
 								</south>
 								<north>
-									<layerOffset>-0.28</layerOffset>
+									<layerOffset>-0.29</layerOffset>
 								</north>
 								<east>
-									<layerOffset>-0.28</layerOffset>
+									<layerOffset>-0.29</layerOffset>
 								</east>
 							</offsets>
 						</li>

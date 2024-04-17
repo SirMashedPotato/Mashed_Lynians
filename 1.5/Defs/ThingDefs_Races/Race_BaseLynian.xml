@@ -298,6 +298,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -337,6 +339,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -376,6 +380,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -445,6 +451,11 @@
 										<li>Mashed_Lynian_HideCatEars</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
 							</conditions>
 							<offsets>
 								<south>
@@ -483,6 +494,11 @@
 										<li>Mashed_Lynian_HideCatEars</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
 							</conditions>
 							<offsets>
 								<south>
@@ -601,6 +617,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -641,6 +659,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>

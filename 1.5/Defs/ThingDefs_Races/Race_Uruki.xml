@@ -142,6 +142,7 @@
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
+							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
@@ -154,6 +155,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -182,6 +185,7 @@
 							<colorChannel>eye</colorChannel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
+							<drawSize>1</drawSize>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
@@ -194,6 +198,8 @@
 									</hiddenUnderApparelTag>
 								</Apparel>
 								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
 									<drawnInBed>false</drawnInBed>
 								</Posture>
 							</conditions>
@@ -300,7 +306,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
-									<bodyPartLabel>head</bodyPartLabel>
+									<bodyPart>Head</bodyPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
@@ -312,6 +318,11 @@
 										<li>Mashed_Lynian_HideHeadHorn</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
 							</conditions>
 							<offsets>
 								<south>
@@ -336,7 +347,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
-									<bodyPartLabel>head</bodyPartLabel>
+									<bodyPart>Head</bodyPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting</RotStage>
 								<Apparel>
@@ -347,6 +358,11 @@
 										<li>Mashed_Lynian_HideBeard</li>
 									</hiddenUnderApparelTag>
 								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
 							</conditions>
 							<offsets>
 								<south>
