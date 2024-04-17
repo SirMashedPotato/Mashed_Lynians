@@ -146,12 +146,8 @@
     <Compile Include="ThingComp\Comp_LynianDyeKit.cs" />
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
-    <Compile Include="ThoughtWorker\Ideo\MaskThoughtUtility.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_GoldenGajalakaThought.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_BoaboaThought.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_GajalakaThought.cs" />
-    <Compile Include="ThoughtWorker\Ideo\ThoughtWorker_Mask_ShakalakaThought.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_MissingMask_Thought.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
     <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />

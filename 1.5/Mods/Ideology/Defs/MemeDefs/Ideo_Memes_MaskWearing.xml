@@ -2,12 +2,11 @@
 <Defs>
 	<MemeGroupDef>
 		<defName>Mashed_Lynian_MaskWearing</defName>
-		<!--<drawOffset>(0.3, 0)</drawOffset>-->
 		<maxRows>1</maxRows>
 	</MemeGroupDef>
 	<!-- ==========[Base]==========-->
 	<MemeDef Name="Mashed_Lynian_MaskWearingMeme_Base" Abstract="True">
-		<description>Masks are sources of strength, power, and identity. Anyone not wearing a mask is not truly themselves, or is destined to ill luck.\n\n&lt;color=#E5E54C&gt;Gameplay effects:&lt;/color&gt;\n - The mood debuffs, or buffs, will only affect Lynians, and will only occur at an expectation level of 1 or higher.</description>
+		<description>Masks are sources of strength, power, and identity. Anyone not wearing a mask is not truly themselves, or is destined to ill luck.\n\n&lt;color=#E5E54C&gt;Gameplay effects:&lt;/color&gt;\n - The mood debuffs, or buffs, will only affect Lynians, and will only occur at an expectation level of 1 or higher. Anything that covers the full head is considered a valid mask.</description>
 		<groupDef>Mashed_Lynian_MaskWearing</groupDef>
 		<exclusionTags>
 			<li>Mashed_Lynian_MaskWearing</li>
@@ -62,54 +61,20 @@
 			</rules>
 		</descriptionMaker>
 	</MemeDef>
-	<!-- ==========[Boaboa]==========-->
+	<!-- ==========[Generic]==========-->
 	<MemeDef ParentName="Mashed_Lynian_MaskWearingMeme_Base">
-		<defName>Mashed_Lynian_MaskWearingMeme_Boaboa</defName>
-		<label>Boaboa mask wearing</label>
-		<iconPath>UI/Memes/Mashed_MaskWearingMeme_Boaboa</iconPath>
-		<impact>2</impact>
+		<defName>Mashed_Lynian_MaskWearingMeme</defName>
+		<label>Lynian mask wearing</label>
+		<iconPath>UI/Memes/Mashed_MaskWearingMeme</iconPath>
+		<impact>1</impact>
 		<requireOne>
 			<li>
-				<li>Mashed_Lynian_MaskWearing_Boaboa_Compulsory</li>
-				<li>Mashed_Lynian_MaskWearing_Boaboa_Necessary</li>
-				<li>Mashed_Lynian_MaskWearing_Boaboa_Preferred</li>
-				<li>Mashed_Lynian_MaskWearing_Boaboa_Appreciated</li>
-				<li>Mashed_Lynian_MaskWearing_Boaboa_Loved</li>
-				<li>Mashed_Lynian_MaskWearing_Boaboa_Exalted</li>
-			</li>
-		</requireOne>
-	</MemeDef>
-	<!-- ==========[Gajalaka]==========-->
-	<MemeDef ParentName="Mashed_Lynian_MaskWearingMeme_Base">
-		<defName>Mashed_Lynian_MaskWearingMeme_Gajalaka</defName>
-		<label>Gajalaka mask wearing</label>
-		<iconPath>UI/Memes/Mashed_MaskWearingMeme_Gajalaka</iconPath>
-		<impact>2</impact>
-		<requireOne>
-			<li>
-				<li>Mashed_Lynian_MaskWearing_Gajalaka_Compulsory</li>
-				<li>Mashed_Lynian_MaskWearing_Gajalaka_Necessary</li>
-				<li>Mashed_Lynian_MaskWearing_Gajalaka_Preferred</li>
-				<li>Mashed_Lynian_MaskWearing_Gajalaka_Appreciated</li>
-				<li>Mashed_Lynian_MaskWearing_Gajalaka_Loved</li>
-				<li>Mashed_Lynian_MaskWearing_Gajalaka_Exalted</li>
-			</li>
-		</requireOne>
-	</MemeDef>
-	<!-- ==========[Shakalaka]==========-->
-	<MemeDef ParentName="Mashed_Lynian_MaskWearingMeme_Base">
-		<defName>Mashed_Lynian_MaskWearingMeme_Shakalaka</defName>
-		<label>Shakalaka mask wearing</label>
-		<iconPath>UI/Memes/Mashed_MaskWearingMeme_Shakalaka</iconPath>
-		<impact>2</impact>
-		<requireOne>
-			<li>
-				<li>Mashed_Lynian_MaskWearing_Shakalaka_Compulsory</li>
-				<li>Mashed_Lynian_MaskWearing_Shakalaka_Necessary</li>
-				<li>Mashed_Lynian_MaskWearing_Shakalaka_Preferred</li>
-				<li>Mashed_Lynian_MaskWearing_Shakalaka_Appreciated</li>
-				<li>Mashed_Lynian_MaskWearing_Shakalaka_Loved</li>
-				<li>Mashed_Lynian_MaskWearing_Shakalaka_Exalted</li>
+				<li>Mashed_Lynian_MaskWearing_Compulsory</li>
+				<li>Mashed_Lynian_MaskWearing_Necessary</li>
+				<li>Mashed_Lynian_MaskWearing_Preferred</li>
+				<li>Mashed_Lynian_MaskWearing_Appreciated</li>
+				<li>Mashed_Lynian_MaskWearing_Loved</li>
+				<li>Mashed_Lynian_MaskWearing_Exalted</li>
 			</li>
 		</requireOne>
 	</MemeDef>

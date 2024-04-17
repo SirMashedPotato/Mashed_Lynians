@@ -27,10 +27,8 @@
 			<li>Mashed_Lynian_ShakalakaTrader</li>
 		</baseTraderKinds>
 		<raidLootMaker>Mashed_Lynian_ShakalakaRaidLootMaker</raidLootMaker>
-		<disallowedMemes>
-		</disallowedMemes>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme</li>
 		</requiredMemes>
 		<apparelStuffFilter>
 			<thingDefs>

@@ -218,7 +218,6 @@
 		<description>A thick pelt mask, typically worn by Boaboa. Specially designed for Lynians, the pelt helps hide ones scent whilst hunting.\n\nThe tips of the bone are often painted various colours.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
-				<isBoaboaMask>true</isBoaboaMask>
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
@@ -276,7 +275,6 @@
 		<description>A sturdy stone mask, typically worn by Gajalaka. Specially designed for Lynians, the terrifying visage can make unsteady hands falter.\n\nAccents on the mask are often painted various colours.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
-				<isGajalakaMask>true</isGajalakaMask>
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
@@ -347,7 +345,6 @@
 		<description>A strange wooden mask, typically worn by Shakalaka. Specially designed for Lynians, the design confuses would-be aggressors.\n\nAccents on the mask are often painted various colours.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.ApparelProperties">
-				<isShakalakaMask>true</isShakalakaMask>
 				<overrideColour>true</overrideColour>
 			</li>
 		</modExtensions>
@@ -413,11 +410,6 @@
 		<defName>Mashed_Lynian_Apparel_ShakalakaAcornMask</defName>
 		<label>Shakalaka acorn mask</label>
 		<description>A wooden mask, made to resemble an acorn, typically worn by young Shakalaka. Specially designed for Lynians, fortifies the mind to be as strong as an acorn.</description>
-		<modExtensions>
-			<li Class="Mashed_Lynians.ApparelProperties">
-				<isShakalakaMask>true</isShakalakaMask>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaAcornMask/Mashed_ShakalakaAcornMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -471,11 +463,6 @@
 		<defName>Mashed_Lynian_Apparel_ShakalakaCrabMask</defName>
 		<label>Shakalaka crab mask</label>
 		<description>A wooden mask, made to resemble a crab, typically worn by young Shakalaka. Specially designed for Lynians, fortifies the mind to be as tough as a crab.</description>
-		<modExtensions>
-			<li Class="Mashed_Lynians.ApparelProperties">
-				<isShakalakaMask>true</isShakalakaMask>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaCrabMask/Mashed_ShakalakaCrabMask_Item</texPath>
 			<drawSize>0.9</drawSize>
@@ -798,11 +785,6 @@
 		<defName>Mashed_Lynian_Apparel_ShakalakaFluffyMask</defName>
 		<label>Shakalaka fluffy mask</label>
 		<description>A very fluffy mask, typically worn by young Shakalaka. Specially designed for Lynians, opens the mind to the unseen, but makes the wearer soft and squishy.</description>
-		<modExtensions>
-			<li Class="Mashed_Lynians.ApparelProperties">
-				<isShakalakaMask>true</isShakalakaMask>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Lynians/Mashed_ShakalakaFluffyMask/Mashed_ShakalakaFluffyMask_Item</texPath>
 			<drawSize>0.9</drawSize>

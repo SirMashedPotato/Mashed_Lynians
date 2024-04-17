@@ -81,9 +81,7 @@
 		<dialogFactionGreetingWary>Mashed_Lynians_CatFactionGreetingWary</dialogFactionGreetingWary>
 		<dialogFactionGreetingWarm>Mashed_Lynians_CatFactionGreetingWarm</dialogFactionGreetingWarm>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Boaboa</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Shakalaka</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme</li>
 		</disallowedMemes>
 	</FactionDef>
 	<!-- ==========[Hostile Base]==========-->

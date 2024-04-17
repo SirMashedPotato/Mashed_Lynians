@@ -25,10 +25,8 @@
 			<li>Mashed_Lynian_GajalakaTrader</li>
 		</baseTraderKinds>
 		<raidLootMaker>Mashed_Lynian_GajalakaRaidLootMaker</raidLootMaker>
-		<disallowedMemes>
-		</disallowedMemes>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme_Gajalaka</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme</li>
 		</requiredMemes>
 		<apparelStuffFilter>
 			<thingDefs>
