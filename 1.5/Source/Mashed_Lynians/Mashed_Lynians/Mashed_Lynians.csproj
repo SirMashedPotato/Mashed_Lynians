@@ -156,7 +156,8 @@
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
     <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
-    <Compile Include="Utility.cs" />
+    <Compile Include="Utility\OnStartupUtility.cs" />
+    <Compile Include="Utility\Utility.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_PromoteGrowth.cs" />
     <Compile Include="Verb\Verb_ShootWithDurability.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />

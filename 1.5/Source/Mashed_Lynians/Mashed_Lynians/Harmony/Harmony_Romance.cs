@@ -4,6 +4,22 @@ using Verse;
 
 namespace Mashed_Lynians
 {
+    public class RomanceCheck
+    {
+        public static bool CanRomance(Pawn initiator, Pawn target, out string opinionExplanation)
+        {
+            opinionExplanation = null;
+            bool initiatorIsLynian = OnStartupUtility.LynianRaces.Contains(initiator.def);
+            bool targetIsLynian = OnStartupUtility.LynianRaces.Contains(target.def);
+            if (initiatorIsLynian != targetIsLynian)
+            {
+                opinionExplanation = "Mashed_Lynian_CantRomanceNonLynian".Translate();
+                return false;
+            }
+            return true;
+        }
+    }
+
     /// <summary>
     /// Makes it so Lynians should only ever romance other Lynians
     /// and can never be romanced by non-Lynians
@@ -20,28 +36,14 @@ namespace Mashed_Lynians
         {
             if (__result)
             {
-                RaceProperties propsInitiator = RaceProperties.Get(initiator.def);
-                RaceProperties propsTarget = RaceProperties.Get(target.def);
-                ///Both are non-Lynians, so just return
-                if (propsInitiator == null && propsTarget == null)
+                bool canRomance = RomanceCheck.CanRomance(initiator, target, out string opinionExplanation);
+                if (!canRomance && forOpinionExplanation)
                 {
+                    ///I'm going to be honest here, this doesn't get used. No idea why
+                    __result = opinionExplanation;
                     return;
                 }
-                ///Both are non-Lynians, so just return
-                if (propsInitiator != null && !propsInitiator.isLynian && propsTarget != null && !propsTarget.isLynian)
-                {
-                    return;
-                }
-                ///One is not a Lynian
-                if (propsInitiator == null || !propsInitiator.isLynian || propsTarget == null || !propsTarget.isLynian)
-                {
-                    if (!forOpinionExplanation)
-                    {
-                        __result = "Mashed_Lynian_CantRomanceNonLynian".Translate();
-                        return;
-                    }
-                    __result = false;
-                }
+                __result = canRomance;
             }
         }
     }
@@ -55,20 +57,8 @@ namespace Mashed_Lynians
         {
             if (__result > 0f)
             {
-                RaceProperties propsInitiator = RaceProperties.Get(initiator.def);
-                RaceProperties propsRecipient = RaceProperties.Get(recipient.def);
-                ///Both are non-Lynians, so just return
-                if (propsInitiator == null && propsRecipient == null)
-                {
-                    return;
-                }
-                ///Both are non-Lynians, so just return
-                if (propsInitiator != null && !propsInitiator.isLynian && propsRecipient != null && !propsRecipient.isLynian)
-                {
-                    return;
-                }
-                ///One is not a Lynian
-                if (propsInitiator == null || !propsInitiator.isLynian || propsRecipient == null || !propsRecipient.isLynian)
+                bool canRomance = RomanceCheck.CanRomance(initiator, recipient, out string _);
+                if (!canRomance)
                 {
                     __result = 0f;
                 }
@@ -85,20 +75,8 @@ namespace Mashed_Lynians
         {
             if (__result > 0f)
             {
-                RaceProperties propsInitiator = RaceProperties.Get(initiator.def);
-                RaceProperties propsRecipient = RaceProperties.Get(recipient.def);
-                ///Both are non-Lynians, so just return
-                if (propsInitiator == null && propsRecipient == null)
-                {
-                    return;
-                }
-                ///Both are non-Lynians, so just return
-                if (propsInitiator != null && !propsInitiator.isLynian && propsRecipient != null && !propsRecipient.isLynian)
-                {
-                    return;
-                }
-                ///One is not a Lynian
-                if (propsInitiator == null || !propsInitiator.isLynian || propsRecipient == null || !propsRecipient.isLynian)
+                bool canRomance = RomanceCheck.CanRomance(initiator, recipient, out string _);
+                if (!canRomance)
                 {
                     __result = 0f;
                 }
