@@ -20,6 +20,10 @@
 				<thingDef>Mashed_Lynian_LynianDyeKit</thingDef>
 				<countRange>1~3</countRange>
 			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Lynian_LynianNotes</thingDef>
+				<countRange>1</countRange>
+			</li>
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 			<li Class="StockGenerator_BuyTradeTag">

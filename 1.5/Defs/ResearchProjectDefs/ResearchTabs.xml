@@ -3,5 +3,7 @@
 	<ResearchTabDef>
 		<defName>Mashed_ResearchTab_MonsterHunter</defName>
 		<label>Mashed (Monster Hunter)</label>
+		<generalTitle>Mashed (Monster Hunter) research projects</generalTitle>
+		<generalDescription>Unlock new technologies by researching at a research bench. You can only have one active project at a time.</generalDescription>
 	</ResearchTabDef>
 </Defs>

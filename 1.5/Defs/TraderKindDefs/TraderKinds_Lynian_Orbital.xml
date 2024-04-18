@@ -58,6 +58,10 @@
 				<tradeTag>Mashed_Lynian_ShakalakaDanceBook</tradeTag>
 				<countRange>-2~2</countRange>
 			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Lynian_LynianNotes</thingDef>
+				<countRange>1</countRange>
+			</li>
 			<!-- Genepacks -->
 			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
 				<thingDef>Genepack</thingDef>

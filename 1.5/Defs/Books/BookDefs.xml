@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_LynianNotes]==========-->
+	<ThingDef ParentName="BookBase">
+		<defName>Mashed_Lynian_LynianNotes</defName>
+		<label>lynian notes</label>
+		<description>A book containing several notes and observations on Lynian races. It's seen better days, but reading it should be able to help unlock new technologies.</description>
+		<graphicData>
+			<texPath>Things/Item/Book/Mashed_Lynian_LynianNotes/Mashed_Lynian_LynianNotes</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/Mashed_Lynian_LynianNotes/Mashed_Lynian_LynianNotes</uiIconPath>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<thingSetMakerTags inherit="False"/>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>Mashed_Ashlands_Namer_LynianNotes</nameMaker>
+				<descriptionMaker>Mashed_Ashlands_Description_LynianNotes</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/Mashed_Lynian_LynianNotes/Mashed_Lynian_LynianNotes_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/Mashed_Lynian_LynianNotes/Mashed_Lynian_LynianNotes_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="BookOutcomeProperties_GainResearch">
+						<tabs>
+							<Mashed_ResearchTab_MonsterHunter/>
+						</tabs>
+						<exclude/>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
