@@ -29,19 +29,11 @@
 				<li>schematic_desc_first->the journal reeks of felvine, and several of the pages are covered in stains</li>
 				<!-- quality-dependent qualifier to the first half -->
 				<li>schematic_desc_second(quality[less_than]2)->, making it valueless for most purposes</li>
-				<li>schematic_desc_second(quality[less_than]2)->. Misleading notes can be worse than having no notes at all</li>
 				<li>schematic_desc_second(quality[less_than]2)->, rendering it of questionable utility</li>
-				<li>schematic_desc_second(quality[less_than]2)->, making one question whether it's worthwhile learning any lessons from a journal you pried from the hands of a skeleton</li>
 				<!-- -->
-				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, but the basics are present</li>
-				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. However, this doesn't detract from its utility to even the most experienced on this subject</li>
-				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, though it still has some value to most</li>
-				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Beginners will still benefit from its teachings</li>
-				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. However, only experts will notice the flaws</li>
+				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, though it offers some valuable insight into the behaviour of Lynians</li>
 				<!-- -->
 				<li>schematic_desc_second(quality[greater_than]4)->. Yet, the knowledge is exceptional given the condition of the journal</li>
-				<li>schematic_desc_second(quality[greater_than]4)->, but it is still full of wisdom for all learners</li>
-				<li>schematic_desc_second(quality[greater_than]4)->. Despite this, every explorer will benefit from reading it, no matter how experienced</li>
 				<li>schematic_desc_second(quality[greater_than]4)->, but the issues are minor compared to the wealth of knowledge it contains</li>
 				<!-- tells verbs -->
 				<li>tells_verb->rambling about</li>
@@ -65,6 +57,7 @@
 				<li>notes_synonym->scribbles</li>
 				<li>notes_synonym->drawings</li>
 				<li>notes_synonym->diagrams</li>
+				<li>notes_synonym->observations</li>
 				<!-- Theory -->
 				<li>theory_synonym_adj->theory</li>
 				<li>theory_synonym_adj->concept</li>
