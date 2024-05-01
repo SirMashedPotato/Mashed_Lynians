@@ -6,9 +6,11 @@
 		<tab>Mashed_ResearchTab_MonsterHunter</tab>
 		<generalRules>
 			<rulesStrings>
-				<li>subject_story->how members of a [race] tribe [observation]</li>
-				<li>subject_story->how a particular [race] [observation]</li>
-				<li>subject_story->how [race] [observation]</li>
+				<li>subject_story->how members of a [race] tribe [observations]</li>
+				<li>subject_story->how some [race] [observations]</li>
+				<li>subject_story->how [race] [observations]</li>
+				<li>observations->[observation]</li>
+				<li>observations->[observation], and [observation]</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -28,12 +30,12 @@
 				<li>race->Melynx</li>
 				<li>race->Grimalkyne</li>
 				<li>subject->the many uses of felvine</li>
-				<li>observation->would get high on felvine before, and sometimes even during, battle</li>
-				<li>observation->could sometimes be seen sniffing felvine flowers, seemingly as a form of recreation</li>
-				<li>observation->would sit around a strange stone structure, that when activated would release dense clouds of felvine powder</li>
-				<li>observation->would throw barrels filled with felvine powder to empower their allies during battle</li>
-				<li>observation->seemed to have a strong obsession with felvine, and would trade almost anything for some</li>
-				<li>observation->cultivated small gardens of felvine plants, and would could often be found asleep amongst the flowers</li>
+				<li>observation(uses=1)->would get high on felvine before, and sometimes even during, battle</li>
+				<li>observation(uses=1)->could sometimes be seen sniffing felvine flowers, seemingly as a form of recreation</li>
+				<li>observation(uses=1)->would sit around a strange stone structure, that when activated would release dense clouds of felvine powder</li>
+				<li>observation(uses=1)->would throw barrels filled with felvine powder to empower their allies during battle</li>
+				<li>observation(uses=1)->seemed to have a strong obsession with felvine, and would trade almost anything for some</li>
+				<li>observation(uses=1)->cultivated small gardens of felvine plants, and would could often be found asleep amongst the flowers</li>
 				<li>subject_gerund->felvine</li>
 			</rulesStrings>
 		</generalRules>
@@ -61,10 +63,10 @@
 				<li>race->Melynx</li>
 				<li>race->Grimalkyne</li>
 				<li>subject->the strange dye kit</li>
-				<li>observation->would colour their fur with specially made dye</li>
-				<li>observation->would mix felvine and tinctoria into a special mixture</li>
-				<li>observation->would sit around their village dying each others fur</li>
-				<li>observation->would dye their fur vibrant colours</li>
+				<li>observation(uses=1)->would colour their fur with specially made dye</li>
+				<li>observation(uses=1)->would mix felvine and tinctoria into a special mixture</li>
+				<li>observation(uses=1)->would sit around their village dying each others fur</li>
+				<li>observation(uses=1)->would dye their fur vibrant colours</li>
 				<li>subject_gerund->dye kit</li>
 			</rulesStrings>
 		</generalRules>
@@ -88,10 +90,10 @@
 				<li>race->Boaboa</li>
 				<li>race->Uruki</li>
 				<li>subject->the use of explosive weaponry by Lynians</li>
-				<li>observation->would use explosives to quickly mine tunnels</li>
-				<li>observation->would use explosives to scare off large predators</li>
-				<li>observation->would throw explosives at outsiders to keep them away</li>
-				<li>observation->would sit in groups crafting explosive weaponry</li>
+				<li>observation(uses=1)->would use explosives to quickly mine tunnels</li>
+				<li>observation(uses=1)->would use explosives to scare off large predators</li>
+				<li>observation(uses=1)->would throw explosives at outsiders to keep them away</li>
+				<li>observation(uses=1)->would sit in groups crafting explosive weaponry</li>
 				<li>subject_gerund->Lynian explosives</li>
 			</rulesStrings>
 		</generalRules>
@@ -113,8 +115,8 @@
 			<rulesStrings>
 				<li>race->Felyne</li>
 				<li>subject->Felyne crafting methods</li>
-				<li>observation->would create primitive picks using sharpened bone</li>
-				<li>observation->would use acorn shaped packs to carry items they gathered</li>
+				<li>observation(uses=1)->would create primitive picks using sharpened bone</li>
+				<li>observation(uses=1)->would use acorn shaped packs to carry items they gathered</li>
 				<li>subject_gerund->Felyne equipment</li>
 			</rulesStrings>
 		</generalRules>
@@ -135,9 +137,9 @@
 			<rulesStrings>
 				<li>race->Melynx</li>
 				<li>subject->Melynx crafting methods</li>
-				<li>observation->would use paw shaped clubs to grab items that were out of their reach</li>
-				<li>observation->would wear cloth satchels, allowing them to quickly stash pilfered items</li>
-				<li>observation->would wear bandanas to conceal their identity when attempting to pilfer items</li>
+				<li>observation(uses=1)->would use paw shaped clubs to grab items that were out of their reach</li>
+				<li>observation(uses=1)->would wear cloth satchels, allowing them to quickly stash pilfered items</li>
+				<li>observation(uses=1)->would wear bandanas to conceal their identity when attempting to pilfer items</li>
 				<li>subject_gerund->Melynx equipment</li>
 			</rulesStrings>
 		</generalRules>
@@ -154,6 +156,15 @@
 		<tags>
 			<li>Mashed_Lynian_GrimalkyneStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Grimalkyne</li>
+				<li>subject->Grimalkyne crafting methods</li>
+				<li>observation(uses=1)->would create primitive saws using sharpened bone</li>
+				<li>observation(uses=1)->would trap flashfly in small wooden cages, and seemingly use them as a primitive stun grenade</li>
+				<li>subject_gerund->Grimalkyne equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Shakalaka equipment]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
@@ -167,6 +178,24 @@
 		<tags>
 			<li>Mashed_Lynian_ShakalakaStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Shakalaka</li>
+				<li>subject->Shakalaka crafting methods</li>
+				<li>subject_story->how young [race] would craft simple masks out of whatever they found lying around</li>
+				<li>observation(uses=1)->could sometimes be seen dancing around their village</li>
+				<li>observation(uses=1)->would wear masks that seemed designed to hide their face</li>
+				<li>observation(uses=1)->would sculpt wood into intricately designed masks</li>
+				<li>observation(uses=1)->would wear masks that seemed to be designed to make them seem larger than they actually are</li>
+				<li>observation(uses=1)->would sit in groups while painting their masks</li>
+				<li>observation(uses=1)->would reshape salvaged scrap metal into primitive swords</li>
+				<li>observation(uses=1)->would reshape salvaged scrap metal into primitive throwing knives</li>
+				<li>observation(uses=1)->would coat their swords with a mixture made from a specific kind of poisnous mushroom</li>
+				<li>observation(uses=1)->would create small handheld explosives using a specific kind of mushroom, that seem to realease a sleep gas when thrown</li>
+				<li>observation(uses=1)->would flail aggressively towards opponents, seemingly an attempt to scare them off</li>
+				<li>subject_gerund->Shakalaka equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Gajalaka equipment]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
@@ -184,16 +213,17 @@
 			<rulesStrings>
 				<li>race->Gajalaka</li>
 				<li>subject->Gajalaka crafting methods</li>
-				<li>observation->could sometimes be seen dancing around fires</li>
-				<li>observation->seemed to have an intense love of explosives</li>
-				<li>observation->would wear masks that seemed designed to hide their face</li>
-				<li>observation->would sculpt clay into intricately designed masks</li>
-				<li>observation->would sit in groups while painting their masks</li>
-				<li>observation->would craft somewhat primitive swords out of stone</li>
-				<li>observation->would craft somewhat primitive throwing knives out of stone</li>
-				<li>observation->would make use of small clay vessels, seemingly filled with an explosive mixture</li>
-				<li>observation->would make primitive, but surprisingly well made, hand cannons out of clay and steel</li>
-				<li>observation->would form well organised firing lines, before chaotically unleashing the firepower of their hand cannons</li>
+				<li>observation(uses=1)->could sometimes be seen dancing around fires</li>
+				<li>observation(uses=1)->seemed to have an intense love of explosives</li>
+				<li>observation(uses=1)->would wear masks that seemed designed to hide their face</li>
+				<li>observation(uses=1)->would sculpt clay into intricately designed masks</li>
+				<li>observation(uses=1)->would wear masks that seemed to be designed to invoke the visage of some deity or undiscovered creature</li>
+				<li>observation(uses=1)->would sit in groups while painting their masks</li>
+				<li>observation(uses=1)->would craft somewhat primitive swords out of stone</li>
+				<li>observation(uses=1)->would craft somewhat primitive throwing knives out of stone</li>
+				<li>observation(uses=1)->would make use of small clay vessels, seemingly filled with an explosive mixture</li>
+				<li>observation(uses=1)->would make primitive, but surprisingly well made, hand cannons out of clay and steel</li>
+				<li>observation(uses=1)->would form well organised firing lines, before chaotically unleashing the firepower of their hand cannons</li>
 				<li>subject_gerund->Gajalaka equipment</li>
 			</rulesStrings>
 		</generalRules>
@@ -210,6 +240,24 @@
 		<tags>
 			<li>Mashed_Lynian_BoaboaStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Boaboa</li>
+				<li>subject->Boaboa crafting methods</li>
+				<li>subject_story->how sometimes lone [race] could be seen relaxing in hot springs without their mask on</li>
+				<li>observation(uses=1)->would wear masks that seemed designed to hide their face</li>
+				<li>observation(uses=1)->would decorate their pelt masks with pieces of bone</li>
+				<li>observation(uses=1)->would wear masks that seemed to be designed to invoke the visage of the local megafaunal wildlife</li>
+				<li>observation(uses=1)->would sit in groups while painting their masks</li>
+				<li>observation(uses=1)->would wear thick pelt coats to stay warm</li>
+				<li>observation(uses=1)->would craft somewhat primitive throwing spears out of bone</li>
+				<li>observation(uses=1)->would craft somewhat primitive throwing shards out of bone</li>
+				<li>observation(uses=1)->would use intricately designed clubs to imitate the footprints of large megafaunal beasts</li>
+				<li>observation(uses=1)->would make use of small pelt satchels, seemingly filled with an explosive mixture</li>
+				<li>observation(uses=1)->would work as a team to hunt their prey, employing advanced hunting tactics in the process</li>
+				<li>subject_gerund->Boaboa equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Uruki equipment]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
@@ -223,6 +271,17 @@
 		<tags>
 			<li>Mashed_Lynian_UrukiStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Uruki</li>
+				<li>subject->Uruki crafting methods</li>
+				<li>observation(uses=1)->could often be seen tending to fields of exotic flowers, many of which seemed to be undiscovered species</li>
+				<li>observation(uses=1)->would wear baskets made of woven plant fibre, which they used to carry items around in</li>
+				<li>observation(uses=1)->would craft somewhat primitive slingshots using wood and plant fibre</li>
+				<li>observation(uses=1)->would make use of acorn shaped vessels, seemingly filled with an explosive mixture</li>
+				<li>subject_gerund->Uruki equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Row 5, speciality armour sets]========== -->
 	<!-- ==========[Purrserker]========== -->
@@ -234,6 +293,19 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>4.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>subject->the use of bone in making advanced armour and weapons</li>
+				<li>observation(uses=1)->could sometimes be seen crafting intricately designed weapons and armour out of bone</li> 
+				<li>observation(uses=1)->could sometimes be seen wearing helmets fashioned from the skull of some kind of large rodent or lagomorph</li> 
+				<li>observation(uses=1)->could sometimes be seen wielding a large bone club, possibly the femur of some larger creature</li>
+				<li>observation(uses=1)->could sometimes be seen wielding a boomerang, seemingly assembled from multiple sturdy bones</li>
+				<li>subject_gerund->purrserker equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Acorn knight]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
@@ -248,6 +320,19 @@
 			<li>Smithing</li>
 			<li>Mashed_Lynian_PurrserkerEquipment</li>
 		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>subject->the advanced smithing methods of certain Lynian tribes</li>
+				<li>subject_story->how a certain [race] village would sometimes be visited to some kind of wandering knight, wearing advanced acorn styled armour</li>
+				<li>observation(uses=1)->seemed to use equipment far beyond their assumed crafting ability</li>
+				<li>observation(uses=1)->seemed to wear armour somewhat reminiscent of knight armour, but made out of wood, and made to resemble an acorn</li>
+				<li>observation(uses=1)->would wield a large wooden hammer, seemingly styled after an acorn</li>
+				<li>observation(uses=1)->would wear a large barrel shaped backpack, to carry around large quantities of goods</li>
+				<li>subject_gerund->acorn equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Sameowrai]========== -->
 	<!--
