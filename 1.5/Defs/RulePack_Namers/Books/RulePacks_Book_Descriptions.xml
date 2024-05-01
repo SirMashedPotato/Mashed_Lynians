@@ -8,24 +8,20 @@
 		<rulePack>
 			<rulesStrings>
 				<li>subject->[subject_primary]</li>
-				<li>desc(p=3)->[maybe_intro][schematic_desc].</li>
-				<li>desc(p=3)->[maybe_intro][schematic_desc].\n\n</li>
-				<!-- maybes -->
-				<li>maybe_intro-></li>
-				<li>maybe_intro(p=3)->[subject_intro]. </li>
+				<li>desc(p=3)->[subject_intro][schematic_desc].</li>
+				<li>desc(p=3)->[subject_intro][schematic_desc].\n\n</li>
 				<!-- subject intro -->
 				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story]</li>
-				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story] and [subject_secondary_story]</li>
+				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\nThe journal also [shows_synonym_verb]s several [notes_synonym] on how [subject_secondary_story]</li>
 				<li>subject_intro->in this journal, the [author] [shows_synonym_verb]s [ANYPAWN_possessive] [theory_synonym_adj] about [subject_primary_story]</li>
-				<li>subject_intro->in this journal, the [author] [shows_synonym_verb]s [ANYPAWN_possessive] [theory_synonym_adj] of how [subject_primary_story] relates to [subject_secondary_story]</li>
 				<!--schematic description-->
 				<!-- negative quality description first half -->
 				<li>schematic_desc->[schematic_desc_first][schematic_desc_second]</li>
 				<!-- description about what the schematic is lacking, singular -->
 				<!-- includes subject gerunds. -->
+				<li>schematic_desc_first->the diagrams are crudely drawn, and the handwriting is barely legible</li>
 				<li>schematic_desc_first->the notes appear to be hastily written, and are barely legible</li>
 				<li>schematic_desc_first->this journal is missing several pages</li>
-				<li>schematic_desc_first->the author appeared to be on the brink of insanity, as the notes quickly devolve into incomprehensible rambling</li>
 				<li>schematic_desc_first->the journal reeks of felvine, and several of the pages are covered in stains</li>
 				<!-- quality-dependent qualifier to the first half -->
 				<li>schematic_desc_second(quality[less_than]2)->, making it valueless for most purposes</li>
