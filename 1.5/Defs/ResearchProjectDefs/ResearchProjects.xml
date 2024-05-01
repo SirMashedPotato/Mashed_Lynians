@@ -6,7 +6,9 @@
 		<tab>Mashed_ResearchTab_MonsterHunter</tab>
 		<generalRules>
 			<rulesStrings>
-				
+				<li>subject_story->how members of a [race] tribe [observation]</li>
+				<li>subject_story->how a particular [race] [observation]</li>
+				<li>subject_story->how [race] [observation]</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -25,17 +27,14 @@
 				<li>race->Felyne</li>
 				<li>race->Melynx</li>
 				<li>race->Grimalkyne</li>
-				<li>subject->felvine</li>
-				<li>subject_story->how members of a [race] tribe [observation]</li>
-				<li>subject_story->how a particular [race] [observation]</li>
-				<li>subject_story->how [race] [observation]</li>
-				<li>observation->would get high on felvine before, and sometimes even during, battle.</li>
-				<li>observation->could sometimes be seen sniffing felvine flowers, seemingly as a form of recreation.</li>
-				<li>observation->would sit around a strange stone structure, that when activated would release dense clouds of felvine powder.</li>
-				<li>observation->would throw barrels filled with felvine powder to empower their allies during battle.</li>
-				<li>observation->seemed to have a strong obsession with felvine, and would trade almost anything for some.</li>
-				<li>observation->cultivated small gardens of felvine plants, and would could often be found asleep amongst the flowers.</li>
-				<li>subject_gerund->the many uses of felvine</li>
+				<li>subject->the many uses of felvine</li>
+				<li>observation->would get high on felvine before, and sometimes even during, battle</li>
+				<li>observation->could sometimes be seen sniffing felvine flowers, seemingly as a form of recreation</li>
+				<li>observation->would sit around a strange stone structure, that when activated would release dense clouds of felvine powder</li>
+				<li>observation->would throw barrels filled with felvine powder to empower their allies during battle</li>
+				<li>observation->seemed to have a strong obsession with felvine, and would trade almost anything for some</li>
+				<li>observation->cultivated small gardens of felvine plants, and would could often be found asleep amongst the flowers</li>
+				<li>subject_gerund->felvine</li>
 			</rulesStrings>
 		</generalRules>
 		<tags>
@@ -61,15 +60,12 @@
 				<li>race->Felyne</li>
 				<li>race->Melynx</li>
 				<li>race->Grimalkyne</li>
-				<li>subject->dye kit</li>
-				<li>subject_story->how members of a [race] tribe [observation]</li>
-				<li>subject_story->how a particular [race] [observation]</li>
-				<li>subject_story->how [race] [observation]</li>
-				<li>observation->would colour their fur with specially made dye.</li>
-				<li>observation->would mix felvine and tinctoria into a special mixture.</li>
-				<li>observation->would sit around their village dying each others fur.</li>
-				<li>observation->would dye their fur vibrant colours.</li>
-				<li>subject_gerund->the strange dye kit</li>
+				<li>subject->the strange dye kit</li>
+				<li>observation->would colour their fur with specially made dye</li>
+				<li>observation->would mix felvine and tinctoria into a special mixture</li>
+				<li>observation->would sit around their village dying each others fur</li>
+				<li>observation->would dye their fur vibrant colours</li>
+				<li>subject_gerund->dye kit</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -82,6 +78,23 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>race->Shakalaka</li>
+				<li>race->Gajalaka</li>
+				<li>race->Boaboa</li>
+				<li>race->Uruki</li>
+				<li>subject->the use of explosive weaponry by Lynians</li>
+				<li>observation->would use explosives to quickly mine tunnels</li>
+				<li>observation->would use explosives to scare off large predators</li>
+				<li>observation->would throw explosives at outsiders to keep them away</li>
+				<li>observation->would sit in groups crafting explosive weaponry</li>
+				<li>subject_gerund->Lynian explosives</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Row 4]========== -->
 	<!-- ==========[Felyne equipment]========== -->
@@ -96,6 +109,15 @@
 		<tags>
 			<li>Mashed_Lynian_FelyneStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>subject->Felyne crafting methods</li>
+				<li>observation->would create primitive picks using sharpened bone</li>
+				<li>observation->would use acorn shaped packs to carry items they gathered</li>
+				<li>subject_gerund->Felyne equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Melynx equipment]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
@@ -109,6 +131,16 @@
 		<tags>
 			<li>Mashed_Lynian_MelynxStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Melynx</li>
+				<li>subject->Melynx crafting methods</li>
+				<li>observation->would use paw shaped clubs to grab items that were out of their reach</li>
+				<li>observation->would wear cloth satchels, allowing them to quickly stash pilfered items</li>
+				<li>observation->would wear bandanas to conceal their identity when attempting to pilfer items</li>
+				<li>subject_gerund->Melynx equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Grimalkyne equipment]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
