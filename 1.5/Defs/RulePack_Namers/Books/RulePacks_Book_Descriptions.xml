@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<RulePackDef>
-		<defName>Mashed_Lynians_Description_LynianJournal</defName>
+		<defName>Mashed_Lynians_Description_LynianNotes</defName>
 		<include>
 			<li>ArtDescriptionUtility_Global</li>
 		</include>
@@ -23,15 +23,10 @@
 				<li>schematic_desc->[schematic_desc_first][schematic_desc_second]</li>
 				<!-- description about what the schematic is lacking, singular -->
 				<!-- includes subject gerunds. -->
-				<li>schematic_desc_first->this journal is filled with more ash than paper</li>
 				<li>schematic_desc_first->the notes appear to be hastily written, and are barely legible</li>
 				<li>schematic_desc_first->this journal is missing several pages</li>
 				<li>schematic_desc_first->the author appeared to be on the brink of insanity, as the notes quickly devolve into incomprehensible rambling</li>
-				<li>schematic_desc_first->half the pages are filled with the author [tells_verb] their love of [LynianAnimal]</li>
-				<li>schematic_desc_first->there's some good information, at least until the author begins [tells_verb] their encounter with a maddened [LynianAnimalBadass]</li>
-				<li>schematic_desc_first->there's several well made notes and observations, but then the author begins [tells_verb] their intense hatred of [LynianAnimal]</li>
-				<li>schematic_desc_first->most of the pages appear to be covered in dried blood</li>
-				<li>schematic_desc_first->the journal reeks of sujamma, and several of the pages are covered in stains</li>
+				<li>schematic_desc_first->the journal reeks of felvine, and several of the pages are covered in stains</li>
 				<!-- quality-dependent qualifier to the first half -->
 				<li>schematic_desc_second(quality[less_than]2)->, making it valueless for most purposes</li>
 				<li>schematic_desc_second(quality[less_than]2)->. Misleading notes can be worse than having no notes at all</li>

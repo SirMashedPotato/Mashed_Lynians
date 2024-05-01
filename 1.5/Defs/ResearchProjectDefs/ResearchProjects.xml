@@ -56,6 +56,22 @@
 		<prerequisites>
 			<li>Mashed_Lynian_FelvineSowing</li>
 		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>subject->dye kit</li>
+				<li>subject_story->how members of a [race] tribe [observation]</li>
+				<li>subject_story->how a particular [race] [observation]</li>
+				<li>subject_story->how [race] [observation]</li>
+				<li>observation->would colour their fur with specially made dye.</li>
+				<li>observation->would mix felvine and tinctoria into a special mixture.</li>
+				<li>observation->would sit around their village dying each others fur.</li>
+				<li>observation->would dye their fur vibrant colours.</li>
+				<li>subject_gerund->the strange dye kit</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Lynian Explosives]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">

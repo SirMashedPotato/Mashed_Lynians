@@ -17,8 +17,8 @@
 		<thingSetMakerTags inherit="False"/>
 		<comps>
 			<li Class="CompProperties_Book">
-				<nameMaker>Mashed_Ashlands_Namer_LynianNotes</nameMaker>
-				<descriptionMaker>Mashed_Ashlands_Description_LynianNotes</descriptionMaker>
+				<nameMaker>Mashed_Lynians_Namer_LynianNotes</nameMaker>
+				<descriptionMaker>Mashed_Lynians_Description_LynianNotes</descriptionMaker>
 				<ageYearsRange>100~200</ageYearsRange>
 				<openGraphic>
 					<texPath>Things/Item/Book/Mashed_Lynian_LynianNotes/Mashed_Lynian_LynianNotes_Open</texPath>
