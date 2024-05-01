@@ -180,6 +180,23 @@
 		<tags>
 			<li>Mashed_Lynian_GajalakaStart</li>
 		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Gajalaka</li>
+				<li>subject->Gajalaka crafting methods</li>
+				<li>observation->could sometimes be seen dancing around fires</li>
+				<li>observation->seemed to have an intense love of explosives</li>
+				<li>observation->would wear masks that seemed designed to hide their face</li>
+				<li>observation->would sculpt clay into intricately designed masks</li>
+				<li>observation->would sit in groups while painting their masks</li>
+				<li>observation->would craft somewhat primitive swords out of stone</li>
+				<li>observation->would craft somewhat primitive throwing knives out of stone</li>
+				<li>observation->would make use of small clay vessels, seemingly filled with an explosive mixture</li>
+				<li>observation->would make primitive, but surprisingly well made, hand cannons out of clay and steel</li>
+				<li>observation->would form well organised firing lines, before chaotically unleashing the firepower of their hand cannons</li>
+				<li>subject_gerund->Gajalaka equipment</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	<!-- ==========[Boaboa equipment]========== -->
 	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
