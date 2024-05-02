@@ -30,6 +30,7 @@
 		<defName>Mashed_Lynian_LynianCleaningFurrenzyAbility</defName>
 		<label>cleaning furrenzy</label>
 		<description>Reach back through time, recollecting every piece of advice given to this Lynian about cleaning, enhancing their cleaning speed beyond its normal limit in the process.</description>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<iconPath>UI/Abilities/Mashed_Lynian_CleaningFurrenzy</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_CleaningFurrenzy</warmupMoteSocialSymbol>
 		<comps>
@@ -58,6 +59,7 @@
 		<defName>Mashed_Lynian_LynianCookingFurrenzyAbility</defName>
 		<label>cooking furrenzy</label>
 		<description>Reach back through time, recollecting every piece of advice given to this Lynian about cooking, enhancing their cooking speed beyond its normal limit in the process.</description>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<iconPath>UI/Abilities/Mashed_Lynian_CookingFurrenzy</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_CookingFurrenzy</warmupMoteSocialSymbol>
 		<comps>
@@ -86,6 +88,7 @@
 		<defName>Mashed_Lynian_LynianFarmingFurrenzyAbility</defName>
 		<label>farming furrenzy</label>
 		<description>Reach back through time, recollecting every piece of advice given to this Lynian about farming, enhancing their plant work speed beyond its normal limit in the process.</description>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<iconPath>UI/Abilities/Mashed_Lynian_FarmingFurrenzy</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_FarmingFurrenzy</warmupMoteSocialSymbol>
 		<comps>
@@ -109,11 +112,11 @@
 			</li>
 		</comps>
 	</HediffDef>
-	<!-- ==========[Mashed_Lynian_LynianShootingFurrenzy]==========-->
+	<!-- ==========[Mashed_Lynian_LynianFiringFurrenzy]==========-->
 	<AbilityDef ParentName="Mashed_Lynian_LynianFurrenzyBase">
 		<defName>Mashed_Lynian_LynianFiringFurrenzyAbility</defName>
 		<label>firing furrenzy</label>
-		<description>Reach back through time, recollecting every piece of advice given to this Lynian about firing, enhancing their aiming skills in the process.</description>
+		<description>Reach back through time, recollecting every piece of advice given to this Lynian about firing a weapon, enhancing their aiming skills in the process.</description>
 		<iconPath>UI/Abilities/Mashed_Lynian_FiringFurrenzy</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_FiringFurrenzy</warmupMoteSocialSymbol>
 		<comps>
@@ -129,7 +132,7 @@
 	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
 		<defName>Mashed_Lynian_LynianFiringFurrenzy</defName>
 		<label>firing furrenzy</label>
-		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about firing, and putting it all to use at once. This halves the pawns required aiming time.</description>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about firing a weapon, and putting it all to use at once. This halves the pawns required aiming time.</description>
 		<comps>
 			<li Class="Mashed_Lynians.HediffCompProperties_WorkingFurrenzyTooltip">
 				<compClass>Mashed_Lynians.HediffComp_WorkingFurrenzyTooltip_Halved</compClass>
@@ -141,7 +144,7 @@
 	<AbilityDef ParentName="Mashed_Lynian_LynianFurrenzyBase">
 		<defName>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</defName>
 		<label>furrious firing furrenzy</label>
-		<description>Reach back through time, recollecting every piece of advice given to this Lynian about firing, enhancing their aiming skills in the process... and maybe getting a little bit too excited at the same time.</description>
+		<description>Reach back through time, recollecting every piece of advice given to this Lynian about firing a weapon, enhancing their aiming skills in the process... and maybe getting a little bit too excited at the same time.</description>
 		<iconPath>UI/Abilities/Mashed_Lynian_FurriousFiringFurrenzy</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_FurriousFiringFurrenzy</warmupMoteSocialSymbol>
 		<comps>
@@ -157,7 +160,7 @@
 	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
 		<defName>Mashed_Lynian_LynianFurriousFiringFurrenzy</defName>
 		<label>furrious firing furrenzy</label>
-		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about firing, and putting it all to use at once... while getting rather excited in the process. This halves the pawns required aiming time, aiming cooldown time... and also shooting accuracy.</description>
+		<description>Reaching into the deepest parts of their memories, this Lynian is recollecting every piece of advice given to them about firing a weapon, and putting it all to use at once... while getting rather excited in the process. This halves the pawns required aiming time, aiming cooldown time... and also shooting accuracy.</description>
 		<comps>
 			<li Class="Mashed_Lynians.HediffCompProperties_FurriousFurrenzyTooltip">
 				<compClass>Mashed_Lynians.HediffComp_FurriousFurrenzyTooltip_Halved</compClass>
@@ -174,6 +177,7 @@
 		<defName>Mashed_Lynian_LynianMiningFurrenzyAbility</defName>
 		<label>mining furrenzy</label>
 		<description>Reach back through time, recollecting every piece of advice given to this Lynian about mining, enhancing their mining speed beyond its normal limit in the process.</description>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<iconPath>UI/Abilities/Mashed_Lynian_MiningFurrenzy</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Mashed_Lynian_MiningFurrenzy</warmupMoteSocialSymbol>
 		<comps>

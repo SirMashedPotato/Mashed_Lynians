@@ -13,6 +13,7 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<groupDef>Mashed_Lynian_ShakalakaDanceAbility</groupDef>
 		<warmupEffecter>Mashed_Lynian_ShakalakaDanceWarmup</warmupEffecter>
 		<statBases>

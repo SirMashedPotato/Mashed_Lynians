@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<RulePackDef>
-		<defName>Mashed_Lynians_Namer_LynianNotes</defName>
+		<defName>Mashed_Lynian_Namer_LynianNotes</defName>
 		<include>
 			<li>ArtNameUtility</li>
 		</include>

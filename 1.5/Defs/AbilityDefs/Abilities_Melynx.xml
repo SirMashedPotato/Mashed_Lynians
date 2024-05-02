@@ -16,6 +16,7 @@
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<!--<warmupSound>AnimalCalm_Resolve</warmupSound>-->
 		<uiOrder>1</uiOrder>
 		<statBases>
