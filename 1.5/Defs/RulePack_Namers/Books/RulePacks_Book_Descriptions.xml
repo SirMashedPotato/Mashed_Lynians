@@ -11,8 +11,8 @@
 				<li>desc(p=3)->[subject_intro][schematic_desc].</li>
 				<li>desc(p=3)->[subject_intro][schematic_desc].\n\n</li>
 				<!-- subject intro -->
-				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story]</li>
-				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\nThe journal also [shows_synonym_verb]s several [notes_synonym] on how [subject_secondary_story]</li>
+				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\n</li>
+				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\nThere are also several [notes_synonym] on how [subject_secondary_story]\n\n</li>
 				<li>subject_intro->in this journal, the [author] [shows_synonym_verb]s [ANYPAWN_possessive] [theory_synonym_adj] about [subject_primary_story]</li>
 				<!--schematic description-->
 				<!-- negative quality description first half -->
