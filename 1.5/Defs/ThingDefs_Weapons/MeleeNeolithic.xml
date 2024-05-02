@@ -39,6 +39,7 @@
 		<description>A paw shaped club, typically used by Melynx. Specially designed for Lynians, useful for reaching items others don't want reached.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Melynx_PawClub</texPath>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<weaponTags>
@@ -54,9 +55,12 @@
 			<WorkToMake>800</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 		<costList>
 			<Cloth>10</Cloth>
-			<WoodLog>10</WoodLog>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_MelynxEquipment</researchPrerequisite>
@@ -101,6 +105,7 @@
 		<description>A small piece of bone fashioned into a pick, and attached to a stick, typically used by Felyne. Specially designed for Lynians, can prove somewhat useful when digging into rock.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Felyne_Pick</texPath>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<weaponTags>
@@ -116,9 +121,10 @@
 			<WorkToMake>800</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
-		<costList>
-			<WoodLog>15</WoodLog>
-		</costList>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_FelyneEquipment</researchPrerequisite>
 			<skillRequirements>
@@ -154,6 +160,7 @@
 		<description>A piece of jawbone fashioned into a saw, and attached to a stick, typically used by Grimalkyne. Specially designed for Lynians, quite a formidable weapon in the right paws, and rather useful for traversing the wilderness.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mashed_Lynians/WeaponMelee/Mashed_Grimalkyne_Saw</texPath>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<weaponTags>
@@ -169,9 +176,10 @@
 			<WorkToMake>800</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
-		<costList>
-			<WoodLog>20</WoodLog>
-		</costList>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Mashed_Lynian_GrimalkyneEquipment</researchPrerequisite>
 			<skillRequirements>

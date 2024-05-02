@@ -14,7 +14,7 @@
 			<li>Mashed_Lynian_ShakalakaTribalWanderer</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
-			<li>Mashed_Lynian_Apparel_ShakalakaCoat</li>
+			<li>Mashed_Lynian_Apparel_ShakalakaCoatStraw</li>
 			<li>Mashed_Lynian_Apparel_ShakalakaLoincloth</li>
 		</apparelRequired>
 		<weaponMoney>300~300</weaponMoney>

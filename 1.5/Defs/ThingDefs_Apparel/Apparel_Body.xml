@@ -137,7 +137,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_GajalakaCoat]========== -->
-	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase" Name="Mashed_Lynian_Apparel_GajalakaCoatBase">
 		<defName>Mashed_Lynian_Apparel_GajalakaCoat</defName>
 		<label>Gajalaka coat</label>
 		<description>A light pelt coat, typically worn by Gajalaka. Specially designed for Lynians, the light design ensures movement is not restricted.</description>
@@ -187,6 +187,23 @@
 			<li>Mashed_Lynian_Gajalaka</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_GajalakaCoatStraw]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_GajalakaCoatBase">
+		<defName>Mashed_Lynian_Apparel_GajalakaCoatStraw</defName>
+		<label>straw Gajalaka coat</label>
+		<description>A light straw coat, typically worn by Gajalaka. Specially designed for Lynians, the light design ensures movement is not restricted.</description>
+		<costStuffCount IsNull="true"/>
+		<stuffCategories IsNull="true"/>
+		<costList>
+			<Hay>25</Hay>
+		</costList>
+		<statBases>
+			<ArmorRating_Sharp>0.036</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.018</ArmorRating_Heat>
+			<Insulation_Cold>2.7</Insulation_Cold>
+			<Insulation_Heat>9.9</Insulation_Heat>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaLoincloth]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
 		<defName>Mashed_Lynian_Apparel_ShakalakaLoincloth</defName>
@@ -229,7 +246,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCoat]========== -->
-	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase">
+	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase" Name="Mashed_Lynian_Apparel_ShakalakaCoatBase">
 		<defName>Mashed_Lynian_Apparel_ShakalakaCoat</defName>
 		<label>Shakalaka coat</label>
 		<description>A light coat, typically worn by Shakalaka. Specially designed for Lynians, helps keep one cool during the summer.</description>
@@ -275,6 +292,23 @@
 		<tradeTags>
 			<li>Mashed_Lynian_Shakalaka</li>
 		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_Apparel_ShakalakaCoatStraw]========== -->
+	<ThingDef ParentName="Mashed_Lynian_Apparel_ShakalakaCoatBase">
+		<defName>Mashed_Lynian_Apparel_ShakalakaCoatStraw</defName>
+		<label>straw Shakalaka coat</label>
+		<description>A light straw coat, typically worn by Shakalaka. Specially designed for Lynians, helps keep one cool during the summer.</description>
+		<costStuffCount IsNull="true"/>
+		<stuffCategories IsNull="true"/>
+		<costList>
+			<Hay>40</Hay>
+		</costList>
+		<statBases>
+			<ArmorRating_Sharp>0.072</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.036</ArmorRating_Heat>
+			<Insulation_Cold>5.4</Insulation_Cold>
+			<Insulation_Heat>18</Insulation_Heat>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_Apparel_AcornArmour]========== -->
 	<ThingDef ParentName="Mashed_Lynian_Apparel_BodyBase" Name="Mashed_Lynian_Apparel_AcornArmourBase">
