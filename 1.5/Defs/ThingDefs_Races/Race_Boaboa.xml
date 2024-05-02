@@ -105,7 +105,7 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<conditions>
 								<BodyPart>
-									<bodyPartLabel>jaw</bodyPartLabel>
+									<bodyPart>Jaw</bodyPart>
 								</BodyPart>
 								<RotStage>Fresh,Rotting,Dessicated</RotStage>
 								<Apparel>
