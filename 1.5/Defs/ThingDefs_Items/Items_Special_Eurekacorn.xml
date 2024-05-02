@@ -31,7 +31,7 @@
 		<tradeability>All</tradeability>
 		<comps>
 			<li Class="CompProperties_Usable">
-				<useJob>UseArtifact</useJob>
+				<useJob>UseItem</useJob>
 				<useLabel>Eat {0}</useLabel>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
