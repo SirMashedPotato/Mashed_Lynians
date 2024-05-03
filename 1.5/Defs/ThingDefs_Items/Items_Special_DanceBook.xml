@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]==========-->
+	<ThingDef ParentName="ResourceBase" Name="Mashed_Lynian_ShakalakaDanceBookBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<description>An old book, written by an even older Shakalaka. Within these worn pages are the secrets to a new dance. Any Lynian can learn this dance, simply by reading the book. However, the book is not in the best condition, and will likely crumble to dust in the process.\n\nWhile quite a rarity, they can sometimes be purchased from Shakalaka traders.</description>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_ShakalakaDanceBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+			<li>Mashed_Lynian_ShakalakaDanceBooks</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Mashed_Lynian_ShakalakaDanceBook</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Read {0}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase" Name="Mashed_Lynian_ShakalakaDanceBookBase_Alt" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_ShakalakaDanceBook_Alt</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceCleaningAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
+		<defName>Mashed_Lynian_DanceBookCleaning</defName>
+		<label>Shakalaka dance book (cleaning)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceCleaningAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(192,92,212)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceCleaningAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookCooling</defName>
+		<label>Shakalaka dance book (cooling)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceCoolingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(126,176,222)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceCoolingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceCuringAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookCuring</defName>
+		<label>Shakalaka dance book (curing)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceCuringAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(132,212,92)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceCuringAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceElectrifyingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
+		<defName>Mashed_Lynian_DanceBookElectrifying</defName>
+		<label>Shakalaka dance book (electrifying)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceElectrifyingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(92,172,212)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceElectrifyingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceEvasiveAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookEvasive</defName>
+		<label>Shakalaka dance book (evasive)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceEvasiveAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(92,112,212)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceEvasiveAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceExtinguishingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
+		<defName>Mashed_Lynian_DanceBookExtinguishing</defName>
+		<label>Shakalaka dance book (extinguishing)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceExtinguishingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(143,238,211)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceExtinguishingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceHealingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookHealing</defName>
+		<label>Shakalaka dance book (healing)</label>
+		<descriptionHyperlinks>
+			<!--<AbilityDef>Mashed_Lynian_DanceHealingAbility</AbilityDef>-->
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(212,92,92)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceHealingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceInvigoratingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookInvigorating</defName>
+		<label>Shakalaka dance book (invigorating)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceInvigoratingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(212,212,92)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceInvigoratingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceJoyfulAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookJoyful</defName>
+		<label>Shakalaka dance book (joyful)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceJoyfulAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(212,92,212)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceJoyfulAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceHealingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookProtective</defName>
+		<label>Shakalaka dance book (protective)</label>
+		<descriptionHyperlinks>
+			<!--<AbilityDef>Mashed_Lynian_DanceProtectiveAbility</AbilityDef>-->
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(212,172,92)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceProtectiveAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceStunningAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase_Alt">
+		<defName>Mashed_Lynian_DanceBookStunning</defName>
+		<label>Shakalaka dance book (stunning)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceStunningAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(212,192,92)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceStunningAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceWarmingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
+		<defName>Mashed_Lynian_DanceBookWarming</defName>
+		<label>Shakalaka dance book (warming)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceWarmingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(212,132,92)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceWarmingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

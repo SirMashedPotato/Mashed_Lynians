@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Lynian_FelvineFlowers</thingDef>
+				<countRange>-10~5</countRange>
+			</li>
+		</value>
+	</Operation>
+</Patch>

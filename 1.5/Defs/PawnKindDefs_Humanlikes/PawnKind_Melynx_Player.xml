@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Outlander]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_OutlanderPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_MelynxColonist</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_MelynxPlayerColony</defaultFactionType>
+	</PawnKindDef>
+	<!-- ==========[Tribal]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TribalPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_MelynxTribesperson</defName>
+		<race>Mashed_Lynian_MelynxRace</race>
+		<defaultFactionType>Mashed_Lynian_MelynxPlayerTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_MelynxTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

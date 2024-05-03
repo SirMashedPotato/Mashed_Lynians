@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B3B88F6-543C-4788-985B-5C2AA07A5160}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mashed_Lynians</RootNamespace>
+    <AssemblyName>Mashed_Lynians</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.3.2\lib\net48\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>I:\SteamLibrary\steamapps\workshop\content\294100\2640710953\1.5\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbilityComp\CompAbilityEffect_AbilityExtinguishFire.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_CleanFilth.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_DoDamage.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_EffecterOnSelf.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_EndPurrserkerRage.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_GiveHediffToParts.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
+    <Compile Include="AbilityComp\CompAbiltyEffect_GiveThought.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityCleanFilth.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityDoDamage.cs" />
+    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceAddHediff.cs" />
+    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceModifyHediff.cs" />
+    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceRemoveHediff.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
+    <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
+    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceReplenishNeed.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityEffecterOnSelf.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityExtinguishFire.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveHediffToParts.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveThought.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_IncrementRecord.cs" />
+    <Compile Include="AbilityComp\Master Dance\Properties\CompProperties_MasterDanceBonus.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_EndPurrserkerRage.cs" />
+    <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
+    <Compile Include="CompUse\CompUseEffect_LynianDyeKit.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
+    <Compile Include="DefModExtension\ApparelProperties.cs" />
+    <Compile Include="DefModExtension\FactionProperties.cs" />
+    <Compile Include="DefModExtension\PawnKindProperties.cs" />
+    <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefOf\ChemicalDefOf.cs" />
+    <Compile Include="DefOf\FactionDefOf.cs" />
+    <Compile Include="DefOf\GeneDefOf.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\HistoryEventDefOf.cs" />
+    <Compile Include="DefOf\PawnKindDefOf.cs" />
+    <Compile Include="DefOf\RecordDefOf.cs" />
+    <Compile Include="DefOf\StatDefOf.cs" />
+    <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="DefOf\ThoughtDefOf.cs" />
+    <Compile Include="Dialog\Dialog_DyeColorPicker.cs" />
+    <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Harmony\Harmony_Biotech.cs" />
+    <Compile Include="Harmony\Harmony_Ideology.cs" />
+    <Compile Include="Harmony\Harmony_Romance.cs" />
+    <Compile Include="HediffComp\HediffComp_FurriousFurrenzyTooltip_Halved.cs" />
+    <Compile Include="HediffComp\HediffComp_HuntersMark.cs" />
+    <Compile Include="HediffComp\HediffComp_UnequipWeapons.cs" />
+    <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip.cs" />
+    <Compile Include="HediffComp\HediffComp_DisappearsOnDowned.cs" />
+    <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip_Halved.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_DisappearsOnDowned.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_FurriousFurrenzyTooltip.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_WorkingFurrenzyTooltip.cs" />
+    <Compile Include="HediffGiver\HediffGiver_RandomCatLike.cs" />
+    <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_LynianColonistJoin.cs" />
+    <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
+    <Compile Include="Settings\Mashed_Lynians_Mod.cs" />
+    <Compile Include="Settings\Mashed_Lynians_ModSettings.cs" />
+    <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
+    <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
+    <Compile Include="Sites\SiteUtility.cs" />
+    <Compile Include="StockGenerator\StockGenerator_Palicoes.cs" />
+    <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
+    <Compile Include="ThingClass\Gas_SleepBomb.cs" />
+    <Compile Include="ThingClass\PawnDigger.cs" />
+    <Compile Include="ThingClass\Projectile_ExplosiveAlt.cs" />
+    <Compile Include="ThingComp\Comp_LynianDyeKit.cs" />
+    <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_MissingMask_Thought.cs" />
+    <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveHediff_Felvine.cs" />
+    <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_OffsetNeed_Felvine.cs" />
+    <Compile Include="JobDriver\JobDriver_SmellFelvine.cs" />
+    <Compile Include="JoyGiver\JoyGiver_SmellFelvine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatPart\StatPart_SkillOffset.cs" />
+    <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
+    <Compile Include="Utility\OnStartupUtility.cs" />
+    <Compile Include="Utility\Utility.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_PromoteGrowth.cs" />
+    <Compile Include="Verb\Verb_ShootWithDurability.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
+    <Compile Include="Verb\Verb_CastAbility_Dig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

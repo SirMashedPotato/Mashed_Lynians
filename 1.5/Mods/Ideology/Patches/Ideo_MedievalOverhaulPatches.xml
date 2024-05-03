@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Mashed_Lynian_FelvineStone"]/costList/ComponentIndustrial</xpath>
+					<value>
+						<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Mashed_Lynian_FelvineStone"]/researchPrerequisites</xpath>
+					<value>
+						<li>DankPyon_Engineering</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

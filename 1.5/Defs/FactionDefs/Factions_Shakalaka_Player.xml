@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Arrivals]========== -->
+	<FactionDef ParentName="Mashed_Lynian_OutlanderFactionBase">
+		<defName>Mashed_Lynian_ShakalakaPlayerColony</defName>
+		<label>New Shakalaka Arrivals</label>
+		<basicMemberKind>Mashed_Lynian_ShakalakaColonist</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Tribal]========== -->
+	<FactionDef ParentName="Mashed_Lynian_TribalFactionBase">
+		<defName>Mashed_Lynian_ShakalakaPlayerTribe</defName>
+		<label>New Shakalaka Tribe</label>
+		<description>A small Shakalaka tribe.</description>
+		<basicMemberKind>Mashed_Lynian_ShakalakaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_ShakalakaPlayerGuild</defName>
+		<label>New Shakalaka Guild</label>
+		<description>A small Shakalaka guild.</description>
+		<basicMemberKind>Mashed_Lynian_ShakalakaTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

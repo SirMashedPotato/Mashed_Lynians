@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>Mashed_Lynian_FelynePlayerColony</li>
+			<li>Mashed_Lynian_FelynePlayerTribe</li>
+			<li>Mashed_Lynian_FelynePlayerGuild</li>
+			<li>Mashed_Lynian_MelynxPlayerColony</li>
+			<li>Mashed_Lynian_MelynxPlayerTribe</li>
+			<li>Mashed_Lynian_MelynxPlayerGuild</li>
+			<li>Mashed_Lynian_GrimalkynePlayerColony</li>
+			<li>Mashed_Lynian_GrimalkynePlayerTribe</li>
+			<li>Mashed_Lynian_GrimalkynePlayerGuild</li>
+			<li>Mashed_Lynian_BoaboaPlayerColony</li>
+			<li>Mashed_Lynian_BoaboaPlayerTribe</li>
+			<li>Mashed_Lynian_BoaboaPlayerGuild</li>
+			<li>Mashed_Lynian_GajalakaPlayerColony</li>
+			<li>Mashed_Lynian_GajalakaPlayerTribe</li>
+			<li>Mashed_Lynian_GajalakaPlayerGuild</li>
+			<li>Mashed_Lynian_ShakalakaPlayerColony</li>
+			<li>Mashed_Lynian_ShakalakaPlayerTribe</li>
+			<li>Mashed_Lynian_ShakalakaPlayerGuild</li>
+			<li>Mashed_Lynian_UrukiPlayerColony</li>
+			<li>Mashed_Lynian_UrukiPlayerTribe</li>
+			<li>Mashed_Lynian_UrukiPlayerGuild</li>
+		</value>
+	</Operation>
+</Patch>
