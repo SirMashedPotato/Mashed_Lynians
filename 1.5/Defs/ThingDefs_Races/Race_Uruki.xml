@@ -163,7 +163,7 @@
 							<extendedGraphics>
 								<Hediff For="MissingBodyPart">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</Hediff>
 								<Hediff For="BionicEye">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</Hediff>
-								<Gene For="Hemogenic">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Right</Gene>
+								<Gene For="Hemogenic" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Right</Gene>
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -206,7 +206,7 @@
 							<extendedGraphics>
 								<Hediff For="MissingBodyPart">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</Hediff>
 								<Hediff For="BionicEye">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</Hediff>
-								<Gene For="Hemogenic">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Left</Gene>
+								<Gene For="Hemogenic" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Left</Gene>
 							</extendedGraphics>
 							<offsets>
 								<south>

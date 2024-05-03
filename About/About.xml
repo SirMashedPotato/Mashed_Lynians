@@ -33,8 +33,6 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Owlchemist.SeedsPleaseLite</li>
+		<li>evyatar108.seedspleaseliteredux</li>
 	</loadAfter>
-	<incompatibleWith>
-		<li>edb.preparecarefully</li>
-	</incompatibleWith>
 </ModMetaData>
