@@ -59,6 +59,22 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Lynian_DanceCleansingAbility]==========-->
+	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase" MayRequire="sirmashedpotato.ashlands">
+		<defName>Mashed_Lynian_DanceBookCleansing</defName>
+		<label>Shakalaka dance book (cleansing)</label>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DanceCleansingAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<color>(133,128,103)</color>
+		</graphicData>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectEurekacorn">
+				<ability>Mashed_Lynian_DanceCleansingAbility</ability>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
 	<ThingDef ParentName="Mashed_Lynian_ShakalakaDanceBookBase">
 		<defName>Mashed_Lynian_DanceBookCooling</defName>
