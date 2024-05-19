@@ -8,4 +8,6 @@
 	<Mashed_Lynians_EnableHairballs>Cat-like Lynians can randomly receive the hairball hediff.</Mashed_Lynians_EnableHairballs>
 	<Mashed_Lynians_EnableSmellingFelvine>Cat-like Lynians can smell felvine plants for recreation.</Mashed_Lynians_EnableSmellingFelvine>
 	<Mashed_Lynians_EnableCatLikeMasks>Treat all Lynian races as cat-like if wearing specific masks.</Mashed_Lynians_EnableCatLikeMasks>
+	<Mashed_Lynians_RemoveFacialAnimationComps>Remove [NL] Facial Animation comps from Lynian races on startup.</Mashed_Lynians_RemoveFacialAnimationComps>
+	<Mashed_Lynians_RemoveFacialAnimationComps_Tooltip>Enabling this ensures Lynian races use Lynian heads when [NL] Facial Animation is enabled. Disable this if you want cursed Lynians with human heads. Requires a restart for changes to apply.</Mashed_Lynians_RemoveFacialAnimationComps_Tooltip>
 </LanguageData>

@@ -12,6 +12,7 @@ namespace Mashed_Lynians
         public static bool EnableHairballs => _instance.Mashed_Lynians_EnableHairballs;
         public static bool EnableSmellingFelvine => _instance.Mashed_Lynians_EnableSmellingFelvine;
         public static bool EnableCatLikeMasks => _instance.Mashed_Lynians_EnableCatLikeMasks;
+        public static bool RemoveFacialAnimationComps => _instance.Mashed_Lynians_RemoveFacialAnimationComps;
 
         /* ==========[VARIABLES]========== */
         public bool Mashed_Lynians_EnableAcornKnight = true;
@@ -19,6 +20,7 @@ namespace Mashed_Lynians
         public bool Mashed_Lynians_EnableHairballs = true;
         public bool Mashed_Lynians_EnableSmellingFelvine = true;
         public bool Mashed_Lynians_EnableCatLikeMasks = true;
+        public bool Mashed_Lynians_RemoveFacialAnimationComps = true;
 
         public Mashed_Lynians_ModSettings()
         {
@@ -33,6 +35,7 @@ namespace Mashed_Lynians
             Scribe_Values.Look(ref Mashed_Lynians_EnableHairballs, "Mashed_Lynians_EnableHairballs", true);
             Scribe_Values.Look(ref Mashed_Lynians_EnableSmellingFelvine, "Mashed_Lynians_EnableSmellingFelvine", true);
             Scribe_Values.Look(ref Mashed_Lynians_EnableCatLikeMasks, "Mashed_Lynians_EnableCatLikeMasks", true);
+            Scribe_Values.Look(ref Mashed_Lynians_RemoveFacialAnimationComps, "Mashed_Lynians_RemoveFacialAnimationComps", true);
         }
     }
 }

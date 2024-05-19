@@ -13,6 +13,7 @@ namespace Mashed_Lynians
         static OnStartupUtility()
         {
             FillRaceLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.race != null).ToList());
+            RemoveFacialAnimationComps();
         }
 
         public static void FillRaceLists(List<ThingDef> raceDefs)
@@ -25,6 +26,25 @@ namespace Mashed_Lynians
                     if (props.isLynian)
                     {
                         LynianRaces.Add(def);
+                    }
+                }
+            }
+        }
+
+        public static void RemoveFacialAnimationComps()
+        {
+            if (!ModsConfig.IsActive("nals.facialanimation") || !Mashed_Lynians_ModSettings.RemoveFacialAnimationComps)
+            {
+                return;
+            }
+            Log.Message("[Mashed's Lynians] detected [NL] Facial Animation. Removing FacialAnimation comps from Lynian races");
+            foreach (ThingDef race in LynianRaces)
+            {
+                for (int i = race.comps.Count - 1; i >= 0; i--)
+                {
+                    if (race.comps[i].compClass.Namespace == "FacialAnimation")
+                    {
+                        race.comps.Remove(race.comps[i]);
                     }
                 }
             }

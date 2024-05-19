@@ -35,6 +35,11 @@ namespace Mashed_Lynians
             listing_Standard.CheckboxLabeled("Mashed_Lynians_EnableCatLikeMasks".Translate(), ref settings.Mashed_Lynians_EnableCatLikeMasks);
             listing_Standard.Gap();
 
+            listing_Standard.GapLine();
+
+            listing_Standard.CheckboxLabeled("Mashed_Lynians_RemoveFacialAnimationComps".Translate(), ref settings.Mashed_Lynians_RemoveFacialAnimationComps, "Mashed_Lynians_RemoveFacialAnimationComps_Tooltip".Translate());
+            listing_Standard.Gap();
+
 
             listing_Standard.End();
             base.DoSettingsWindowContents(inRect);
