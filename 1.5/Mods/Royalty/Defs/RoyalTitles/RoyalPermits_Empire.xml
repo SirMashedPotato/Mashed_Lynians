@@ -78,4 +78,46 @@
 			<favorCost>4</favorCost>
 		</royalAid>
 	</RoyalTitlePermitDef>
+	<!-- ==========[0,3 Felyne]==========-->
+	<!-- ==========[Mashed_Lynian_GathererTeam_Felyne]==========-->
+	<RoyalTitlePermitDef Name="Mashed_Lynian_GathererTeamBase">
+		<defName>Mashed_Lynian_GathererTeam_Felyne</defName>
+		<label>felyne gatherer team</label>
+		<description>Call a group of 4 Felyne gatherers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+		<workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass> <!-- calls a shuttle, need something new -->
+		<minTitle>Mashed_Lynian_Acquaintance</minTitle>
+		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,3)</uiPosition>
+		<royalAid>
+			<favorCost>4</favorCost>
+			<pawnKindDef>Mashed_Lynian_FelyneGatherer</pawnKindDef>
+			<pawnCount>4</pawnCount>
+			<aidDurationDays>4</aidDurationDays>
+			<targetingRange>44.9</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
+	<!-- ==========[Mashed_Lynian_GathererSquad_Felyne]==========-->
+	<RoyalTitlePermitDef Name="Mashed_Lynian_GathererSquadBase">
+		<defName>Mashed_Lynian_GathererSquad_Felyne</defName>
+		<label>felyne gatherer squad</label>
+		<description>Call a group of 8 Felyne gatherers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+		<workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass> <!-- calls a shuttle, need something new -->
+		<minTitle>Mashed_Lynian_Pawtner</minTitle>
+		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
+		<permitPointCost>1</permitPointCost>
+		<prerequisite>Mashed_Lynian_GathererTeam_Felyne</prerequisite>
+		<uiPosition>(1,3)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<pawnKindDef>Mashed_Lynian_FelyneGatherer</pawnKindDef>
+			<pawnCount>8</pawnCount>
+			<aidDurationDays>4</aidDurationDays>
+			<targetingRange>44.9</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<cooldownDays>60</cooldownDays>
+	</RoyalTitlePermitDef>
 </Defs>
