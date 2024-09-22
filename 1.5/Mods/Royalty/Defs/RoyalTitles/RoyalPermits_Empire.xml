@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_FelvineDrop]==========-->
+	<RoyalTitlePermitDef ParentName="DropResourcesBase" Name="Mashed_Lynian_FelvineDrop">
+		<defName>Mashed_Lynian_FelvineDrop</defName>
+		<label>felvine powder drop</label>
+		<description>Call for a drop of 25 felvine powder.</description>
+		<minTitle>Mashed_Lynian_Acquaintance</minTitle>
+		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Mashed_Lynian_FelvinePowder>25</Mashed_Lynian_FelvinePowder>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<!-- ==========[Mashed_Lynian_FelvineDrop_Melynx]==========-->
+	<RoyalTitlePermitDef ParentName="Mashed_Lynian_FelvineDrop">
+		<defName>Mashed_Lynian_FelvineDrop_Melynx</defName>
+		<faction>Mashed_Lynian_NonPlayerMelynxTribe</faction>
+	</RoyalTitlePermitDef>
+	<!-- ==========[Mashed_Lynian_FelvineDrop_Grimalkyne]==========-->
+	<RoyalTitlePermitDef ParentName="Mashed_Lynian_FelvineDrop">
+		<defName>Mashed_Lynian_FelvineDrop_Grimalkyne</defName>
+		<faction>Mashed_Lynian_NonPlayerGrimalkyneTribe</faction>
+	</RoyalTitlePermitDef>
+</Defs>

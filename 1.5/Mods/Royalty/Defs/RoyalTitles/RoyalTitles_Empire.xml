@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_BaseTitle]==========-->
+	<RoyalTitleDef Abstract="True" Name="Mashed_Lynian_BaseTitle">
+		<tags>
+			<li>Mashed_Lynian_LynianTitle</li>
+		</tags>
+		<awardThought>GainedTitle</awardThought>
+		<lostThought>LostTitle</lostThought>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+    <permitPointsAwarded>1</permitPointsAwarded>
+	</RoyalTitleDef>
+	<!-- ==========[Mashed_Lynian_Acquaintance]==========-->
+	<RoyalTitleDef ParentName="Mashed_Lynian_BaseTitle">
+		<defName>Mashed_Lynian_Acquaintance</defName>
+		<label>acquaintance</label>
+		<description>.</description>
+		<seniority>10</seniority>
+		<favorCost>10</favorCost>
+	</RoyalTitleDef>
+	<!-- ==========[Mashed_Lynian_Pawtner]==========-->
+	<RoyalTitleDef ParentName="Mashed_Lynian_BaseTitle">
+		<defName>Mashed_Lynian_Pawtner</defName>
+		<label>pawtner</label>
+		<description>.</description>
+		<seniority>20</seniority>
+		<favorCost>20</favorCost>
+	</RoyalTitleDef>
+	<!-- ==========[Mashed_Lynian_Furriend]==========-->
+	<RoyalTitleDef ParentName="Mashed_Lynian_BaseTitle">
+		<defName>Mashed_Lynian_Furriend</defName>
+		<label>furriend</label>
+		<description>.</description>
+		<seniority>30</seniority>
+		<favorCost>30</favorCost>
+	</RoyalTitleDef>
+</Defs>

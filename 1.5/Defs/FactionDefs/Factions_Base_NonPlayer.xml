@@ -21,6 +21,13 @@
 				</categories>
 			</li>
 		</backstoryFilters>
+		<royalFavorLabel>pawprint stamps</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		<royalTitleTags>
+			<li>Mashed_Lynian_LynianTitle</li>
+		</royalTitleTags>
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations/>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
