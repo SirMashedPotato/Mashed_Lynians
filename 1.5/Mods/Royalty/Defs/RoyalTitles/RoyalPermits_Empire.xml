@@ -27,7 +27,7 @@
 		<defName>Mashed_Lynian_FelvineDrop_Grimalkyne</defName>
 		<faction>Mashed_Lynian_NonPlayerGrimalkyneTribe</faction>
 	</RoyalTitlePermitDef>
-	<!-- ==========[0,1]==========-->
+	<!-- ==========[0,1 Felyne]==========-->
 	<!-- ==========[Mashed_Lynian_MealSimpleDrop]==========-->
 	<RoyalTitlePermitDef ParentName="DropResourcesBase">
 		<defName>Mashed_Lynian_MealSimpleDrop</defName>
@@ -44,7 +44,6 @@
 			<favorCost>4</favorCost>
 		</royalAid>
 	</RoyalTitlePermitDef>
-	<!-- ==========[1,1]==========-->
 	<!-- ==========[Mashed_Lynian_MealFineDrop]==========-->
 	<RoyalTitlePermitDef ParentName="DropResourcesBase">
 		<defName>Mashed_Lynian_MealFineDrop</defName>
@@ -53,6 +52,7 @@
 		<minTitle>Mashed_Lynian_Pawtner</minTitle>
 		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
 		<permitPointCost>1</permitPointCost>
+		<prerequisite>Mashed_Lynian_MealSimpleDrop</prerequisite>
 		<uiPosition>(1,1)</uiPosition>
 		<royalAid>
 			<itemsToDrop>
@@ -61,7 +61,6 @@
 			<favorCost>4</favorCost>
 		</royalAid>
 	</RoyalTitlePermitDef>
-	<!-- ==========[2,1]==========-->
 	<!-- ==========[Mashed_Lynian_MealLavishDrop]==========-->
 	<RoyalTitlePermitDef ParentName="DropResourcesBase">
 		<defName>Mashed_Lynian_MealLavishDrop</defName>
@@ -70,6 +69,7 @@
 		<minTitle>Mashed_Lynian_Furriend</minTitle>
 		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
 		<permitPointCost>1</permitPointCost>
+		<prerequisite>Mashed_Lynian_MealFineDrop</prerequisite>
 		<uiPosition>(2,1)</uiPosition>
 		<royalAid>
 			<itemsToDrop>
