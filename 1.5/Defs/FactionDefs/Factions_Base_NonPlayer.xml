@@ -21,13 +21,16 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<royalFavorLabel>pawprint stamps</royalFavorLabel>
-		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		<!-- royalty stuff begins -->
+		<royalFavorLabel>pawprint stamp</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/Mashed_Lynian_PawprintStamp</royalFavorIconPath>
 		<royalTitleTags>
 			<li>Mashed_Lynian_LynianTitle</li>
 		</royalTitleTags>
 		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
 		<royalTitleInheritanceRelations/>
+		<!-- royalty stuff ends -->
+		<!-- ideology stuff begins -->
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
@@ -56,6 +59,7 @@
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 		</structureMemeWeights>
+		<!-- ideology stuff ends -->
 		<leaderTitle>chief</leaderTitle>
 		<visitorTraderKinds>
 			<li>Visitor_Neolithic_Standard</li>

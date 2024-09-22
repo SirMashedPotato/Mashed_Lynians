@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[0,0]==========-->
 	<!-- ==========[Mashed_Lynian_FelvineDrop]==========-->
 	<RoyalTitlePermitDef ParentName="DropResourcesBase" Name="Mashed_Lynian_FelvineDrop">
 		<defName>Mashed_Lynian_FelvineDrop</defName>
@@ -25,5 +26,56 @@
 	<RoyalTitlePermitDef ParentName="Mashed_Lynian_FelvineDrop">
 		<defName>Mashed_Lynian_FelvineDrop_Grimalkyne</defName>
 		<faction>Mashed_Lynian_NonPlayerGrimalkyneTribe</faction>
+	</RoyalTitlePermitDef>
+	<!-- ==========[0,1]==========-->
+	<!-- ==========[Mashed_Lynian_MealSimpleDrop]==========-->
+	<RoyalTitlePermitDef ParentName="DropResourcesBase">
+		<defName>Mashed_Lynian_MealSimpleDrop</defName>
+		<label>simple meal drop</label>
+		<description>Call for a drop of 20 simple meals.</description>
+		<minTitle>Mashed_Lynian_Acquaintance</minTitle>
+		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<MealSimple>20</MealSimple>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<!-- ==========[1,1]==========-->
+	<!-- ==========[Mashed_Lynian_MealFineDrop]==========-->
+	<RoyalTitlePermitDef ParentName="DropResourcesBase">
+		<defName>Mashed_Lynian_MealFineDrop</defName>
+		<label>fine meal drop</label>
+		<description>Call for a drop of 20 fine meals.</description>
+		<minTitle>Mashed_Lynian_Pawtner</minTitle>
+		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(1,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<MealFine>20</MealFine>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+	<!-- ==========[2,1]==========-->
+	<!-- ==========[Mashed_Lynian_MealLavishDrop]==========-->
+	<RoyalTitlePermitDef ParentName="DropResourcesBase">
+		<defName>Mashed_Lynian_MealLavishDrop</defName>
+		<label>lavish meal drop</label>
+		<description>Call for a drop of 20 lavish meals.</description>
+		<minTitle>Mashed_Lynian_Furriend</minTitle>
+		<faction>Mashed_Lynian_NonPlayerFelyneTribe</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(2,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<MealLavish>20</MealLavish>
+			</itemsToDrop>
+			<favorCost>4</favorCost>
+		</royalAid>
 	</RoyalTitlePermitDef>
 </Defs>
