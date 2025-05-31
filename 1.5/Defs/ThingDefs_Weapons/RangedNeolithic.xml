@@ -91,8 +91,8 @@
 		<defName>Mashed_Lynian_RangedWeapon_Boomerang_Thrown</defName>
 		<label>boomerang</label>
 		<graphicData>
-			<texPath>Things/Projectile/Mashed_Lynian_Boomerang_Thrown</texPath>
-			<graphicClass>Graphic_Flicker</graphicClass>
+			<texPath>Things/Projectile/Mashed_Lynian_Boomerang_Thrown/Mashed_Lynian_Boomerang_Thrown_a</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Blunt</damageDef>
@@ -100,6 +100,7 @@
 			<stoppingPower>1</stoppingPower>
 			<armorPenetrationBase>0.05</armorPenetrationBase>
 			<speed>26</speed>
+			<spinRate>2</spinRate>
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_Purrserkerrang]========== -->
@@ -157,8 +158,8 @@
 		<defName>Mashed_Lynian_RangedWeapon_Purrserkerrang_Thrown</defName>
 		<label>purrserkerrang</label>
 		<graphicData>
-			<texPath>Things/Projectile/Mashed_Lynian_Purrserkerrang_Thrown</texPath>
-			<graphicClass>Graphic_Flicker</graphicClass>
+			<texPath>Things/Projectile/Mashed_Lynian_Purrserkerrang_Thrown/Mashed_Lynian_Purrserkerrang_Thrown_a</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Blunt</damageDef>
@@ -166,6 +167,7 @@
 			<stoppingPower>1.5</stoppingPower>
 			<armorPenetrationBase>0.05</armorPenetrationBase>
 			<speed>26</speed>
+			<spinRate>2</spinRate>
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Lynian_RangedWeapon_BoaboaJavelin]========== -->

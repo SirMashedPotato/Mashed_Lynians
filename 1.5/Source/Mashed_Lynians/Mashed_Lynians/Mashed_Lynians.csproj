@@ -100,6 +100,7 @@
     <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
     <Compile Include="CompUse\CompUseEffect_LynianDyeKit.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectLynianDyeKit.cs" />
     <Compile Include="DefModExtension\ApparelProperties.cs" />
     <Compile Include="DefModExtension\FactionProperties.cs" />
     <Compile Include="DefModExtension\PawnKindProperties.cs" />
@@ -143,7 +144,6 @@
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
     <Compile Include="ThingClass\Projectile_ExplosiveAlt.cs" />
-    <Compile Include="ThingComp\Comp_LynianDyeKit.cs" />
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />

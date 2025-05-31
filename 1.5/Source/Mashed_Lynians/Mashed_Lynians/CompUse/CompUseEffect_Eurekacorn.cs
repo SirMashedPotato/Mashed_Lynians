@@ -5,13 +5,7 @@ namespace Mashed_Lynians
 {
     public class CompUseEffect_Eurekacorn : CompUseEffect
 	{
-		public CompProperties_UseEffectEurekacorn Props
-		{
-			get
-			{
-				return (CompProperties_UseEffectEurekacorn)props;
-			}
-		}
+		public CompProperties_UseEffectEurekacorn Props => (CompProperties_UseEffectEurekacorn)props;
 
 		public override void DoEffect(Pawn usedBy)
 		{

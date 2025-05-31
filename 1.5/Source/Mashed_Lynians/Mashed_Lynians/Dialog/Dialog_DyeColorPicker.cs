@@ -13,7 +13,7 @@ namespace Mashed_Lynians
     {
         public override Vector2 InitialSize => new Vector2(640f, 360f);
 
-        public Dialog_DyeColorPicker(Comp_LynianDyeKit dyeComp, Color color, bool primaryColor)
+        public Dialog_DyeColorPicker(CompUseEffect_LynianDyeKit dyeComp, Color color, bool primaryColor)
         {
             this.dyeComp = dyeComp;
             this.primaryColor = primaryColor;
@@ -155,7 +155,7 @@ namespace Mashed_Lynians
         private bool primaryColor;
         private Color color;
         private Color oldColor;
-        private Comp_LynianDyeKit dyeComp;
+        private CompUseEffect_LynianDyeKit dyeComp;
 
         ///UI shite
         protected static readonly Vector2 ButSize = new Vector2(150f, 38f);

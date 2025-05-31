@@ -30,15 +30,10 @@
 		<tradeability>All</tradeability>
 		<comps>
 			<li Class="CompProperties_Usable">
-				<useJob>UseArtifact</useJob>
+				<useJob>UseItem</useJob>
 				<useLabel>Apply {0}</useLabel>
 			</li>
-			<li>
-				<compClass>Mashed_Lynians.Comp_LynianDyeKit</compClass>
-			</li>
-			<li>
-				<compClass>Mashed_Lynians.CompUseEffect_LynianDyeKit</compClass>
-			</li>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectLynianDyeKit"/>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 		</comps>
 		<recipeMaker>
