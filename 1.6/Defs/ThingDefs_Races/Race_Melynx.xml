@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_CatLike_OldWorld">
+		<defName>Mashed_Lynian_MelynxRace</defName>
+		<label>melynx</label>
+		<description>Melynx are a fairly common subspecies of Felyne. While just as adorable as Felyne, Melynx have an innate curiosity that many of them find difficult to control, sometimes valuable items seem to disappear around Melynx. Because of this many people are somewhat cautious around Melynx, though this doesn't stop Melynx from being employed in farms and kitchens. Like all Lynians, Melynx are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, Melynx are now a somewhat common sight on the more 'civilised' planets. Occasionally the Melynx assisting settlers decide to set off on their own journey, often forming small agrarian tribes, and occasionally bandit groups, in the process.\n\nBeing a cat-like Lynian, Melynx have a unique reaction to the felvine plant. They will often sniff the flowers of one as a form of recreation, and can enter a 'felvine furrenzy' when ingesting powdered felvine.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nMovement speed increased by 0.2 cells.\nMelee dodge chance increased by 10%.\nTrap spring chance decreased by 20%.\nHas access to the 'Pilfer' ability.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<isCatLike>True</isCatLike>
+				<canUseFelvine>True</canUseFelvine>
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+					<li>Mashed_Lynian_PilferAbility</li>
+				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Melynx</hybridInheritedGene>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Lynian_FelvinePlant</ThingDef>
+			<ThingDef>Mashed_Lynian_FelvinePowder</ThingDef>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+			<AbilityDef>Mashed_Lynian_PilferAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 0.2 faster than other lynians -->
+			<MoveSpeed>5.0</MoveSpeed>
+			<!-- 0.1 higher than base -->
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<!-- 0.2 lower than base -->
+			<PawnTrapSpringChance>0.8</PawnTrapSpringChance>
+		</statBases>
+		<alienRace>
+			<generalSettings>
+				<notXenophobistTowards>
+					<li>Mashed_Lynian_FelyneRace</li>
+				</notXenophobistTowards>
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<!-- =====[Main fur colour]===== -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Standard melynx colour -->
+									<li>
+										<weight>6</weight>
+										<only>(86,85,84,255)</only>
+									</li>
+									<!-- Freedom Unite icon -->
+									<li>
+										<weight>2</weight>
+										<only>(56,50,45,255)</only>
+									</li>
+									<!-- Tri icon -->
+									<li>
+										<weight>2</weight>
+										<only>(53,40,40,255)</only>
+									</li>
+									<!-- Rise icon, lighter -->
+									<li>
+										<weight>2</weight>
+										<only>(129,126,119,255)</only>
+									</li>
+									<!-- Rise icon, darker -->
+									<li>
+										<weight>2</weight>
+										<only>(101,95,90,255)</only>
+									</li>
+									<!-- Millsy -->
+									<li>
+										<weight>1</weight>
+										<only>(114,104,98,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(84,75,71,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(67,57,51,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(57,51,47,255)</only>
+									</li>
+								</options>
+							</first>
+							<!-- =====[Accents on face and body + ears and tip of tail]===== -->
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Standard melynx colour -->
+									<li>
+										<weight>6</weight>
+										<only>(255,244,238,255)</only>
+									</li>
+									<!-- Freedom Unite icon -->
+									<li>
+										<weight>2</weight>
+										<only>(189,168,143,255)</only>
+									</li>
+									<!-- Tri icon -->
+									<li>
+										<weight>2</weight>
+										<only>(179,178,162,255)</only>
+									</li>
+									<!-- Rise icon -->
+									<li>
+										<weight>2</weight>
+										<only>(226,226,220,255)</only>
+									</li>
+									<!-- Millsy -->
+									<li>
+										<weight>1</weight>
+										<only>(219,188,160,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(203,168,140,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(186,150,123,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(164,125,99,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Body/Melynx/</body>
+				<headMasks>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/HeadMask/Mashed_FelyneMask</headMasks>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Woven/WovenSwaddle_Child</swaddle>
+			</graphicPaths>
+			<raceRestriction>
+				<traitList>
+					<li>Mashed_Lynian_MelynxSneakyPaws</li>
+				</traitList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Melynx</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

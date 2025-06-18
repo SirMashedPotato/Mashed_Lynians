@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_BeastAbility</defName>
+		<cooldownTicks>180000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[Mashed_Lynian_PurrserkerRageAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_SelfBuffBase">
+		<defName>Mashed_Lynian_PurrserkerRageAbility</defName>
+		<label>purrserker rage</label>
+		<description>Call forth the inner beast, transforming the Lynian into a raging ball of claws and fangs. The Lynian will be so focused on their rage that they will drop any equipped weapons, and be unable to pick them back up for the duration of the ability.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_PurrserkerRage</iconPath>
+		<groupDef>Mashed_Lynian_BeastAbility</groupDef>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<warmupStartSound>Mashed_Lynian_PurrserkerAbilityCall</warmupStartSound>
+		<statBases>
+			<Ability_Duration>50</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_PurrserkerRage</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_AbilityGiveHediffToParts">
+				<partsToAffect>Hand</partsToAffect>
+				<hediffDef>Mashed_Lynian_PurrserkerClaws</hediffDef>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_IncrementRecord">
+				<recordDef>Mashed_Lynian_TimesPurrserkered</recordDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_PurrserkerRage</defName>
+		<label>purrserker rage</label>
+		<description>The inner beast unleashed, greatly empowering melee capabilities, but preventing the Lynian from holding weapons. The ability will end prematurely if the Lynian is downed.</description>
+		<comps>
+			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_UnequipWeapons</compClass>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Mashed_Lynian_PurrserkerRage</stateEffecter>
+				<severityIndices>0~1</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>Mashed_Lynian_PurrserkerRoarAbility</abilityDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>2.5</MeleeHitChance>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
+					<MoveSpeed>2.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_PurrserkerClaws</defName>
+		<label>purrserker claws</label>
+		<description>Terrifyingly sharp claws, made from pure rage. They cleave through armour with ease, though require a considerable amount of concentration to maintain.</description>
+		<comps>
+			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>purrserker claws</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.25</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_PurrserkerRoarAbility]==========-->
+	<AbilityDef>
+		<defName>Mashed_Lynian_PurrserkerRoarAbility</defName>
+		<label>purrserker roar</label>
+		<description>Unleash all this Lynians pent up fury in a horrifying roar, momentarily stunning any nearby hostiles, and ending their rage in the process.</description>
+		<iconPath>UI/Abilities/Mashed_Lynian_PurrserkerRoar</iconPath>
+		<warmupStartSound>Mashed_Lynian_PurrserkerAbilityCall</warmupStartSound>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>True</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_EffectRadius>4.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>4.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_EndPurrserkerRage"/>
+			<li Class="Mashed_Lynians.CompProperties_AbilityDoDamage">
+				<damageDef>Stun</damageDef>
+				<damageAmount>10</damageAmount>
+				<onlyHostile>True</onlyHostile>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

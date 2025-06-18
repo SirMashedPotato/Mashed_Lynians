@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Issue]========== -->
+	<IssueDef>
+		<defName>Mashed_Lynian_MaskWearing</defName>
+		<label>Lynian mask wearing</label>
+		<iconPath>UI/Issues/Mashed_MaskWearingPrecept</iconPath>
+	</IssueDef>
+	<!-- ==========[Base]========== -->
+	<PreceptDef Name="Mashed_Lynian_MaskWearing_Base" Abstract="True">
+		<issue>Mashed_Lynian_MaskWearing</issue>
+		<requiredMemes>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</requiredMemes>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	<!-- ==========[Compulsory]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Base">
+		<defName>Mashed_Lynian_MaskWearing_Compulsory</defName>
+		<label>Compulsory</label>
+		<description>Those not wearing masks are destined to never be taken seriously.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Compulsory</thought>
+				<description>Not wearing a mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Compulsory</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_Thought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Necessary]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Base">
+		<defName>Mashed_Lynian_MaskWearing_Necessary</defName>
+		<label>Necessary</label>
+		<description>Those not wearing masks are often never taken seriously.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Necessary</thought>
+				<description>Not wearing a mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Necessary</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_Thought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Preferred]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Base">
+		<defName>Mashed_Lynian_MaskWearing_Preferred</defName>
+		<label>Preferred</label>
+		<description>Those not wearing masks are sometimes never taken seriously.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_MissingMask_Preferred</thought>
+				<description>Not wearing a mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_MissingMask_Preferred</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_MissingMask_Thought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>missing mask</label>
+				<description>Where is my mask? What if someone sees me without it on!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Appreciated]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Base">
+		<defName>Mashed_Lynian_MaskWearing_Appreciated</defName>
+		<label>Appreciated</label>
+		<description>Those wearing masks are sometimes taken seriously.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Appreciated</thought>
+				<description>Wearing a mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Appreciated</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_Thought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Loved]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Base">
+		<defName>Mashed_Lynian_MaskWearing_Loved</defName>
+		<label>Loved</label>
+		<description>Those wearing masks are often taken seriously.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Loved</thought>
+				<description>Wearing a mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Loved</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_Thought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Exalted]========== -->
+	<PreceptDef ParentName="Mashed_Lynian_MaskWearing_Base">
+		<defName>Mashed_Lynian_MaskWearing_Exalted</defName>
+		<label>Exalted</label>
+		<description>Those wearing masks are always taken seriously.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Mashed_Lynian_WearingMask_Exalted</thought>
+				<description>Wearing a mask</description>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_WearingMask_Exalted</defName>
+		<workerClass>Mashed_Lynians.ThoughtWorker_WearingMask_Thought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>false</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>wearing mask</label>
+				<description>Such a lovely mask, I'm surely prepared for anything!</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

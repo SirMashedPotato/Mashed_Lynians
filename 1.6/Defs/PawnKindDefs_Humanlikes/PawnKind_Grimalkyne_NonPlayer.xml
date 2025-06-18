@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Basic, Recruit]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_RecruitBase">
+		<defName>Mashed_Lynian_GrimalkyneRecruit</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Gatherer]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_GathererBase">
+		<defName>Mashed_Lynian_GrimalkyneGatherer</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Hunter]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_HunterBase">
+		<defName>Mashed_Lynian_GrimalkyneHunter</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Trapper]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_HunterBase">
+		<defName>Mashed_Lynian_GrimalkyneTrapper</defName>
+		<label>trapper</label>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+		<weaponTags Inherit="False">
+			<li>Mashed_Lynian_GrimalkyneStun</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Basic, Trader]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TraderBase">
+		<defName>Mashed_Lynian_GrimalkyneTrader</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Warrior]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_WarriorBase">
+		<defName>Mashed_Lynian_GrimalkyneWarrior</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Purrserker]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_PurrserkerBase">
+		<defName>Mashed_Lynian_GrimalkynePurrserker</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Bombadier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_BombadierBase">
+		<defName>Mashed_Lynian_GrimalkyneBombadier</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Felvidier]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_FelvidierBase">
+		<defName>Mashed_Lynian_GrimalkyneFelvidier</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief melee]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ChiefMeleeBase">
+		<defName>Mashed_Lynian_GrimalkyneChiefMelee</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+	<!-- ==========[Advanced, Chief ranged]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_ChiefRangedBase">
+		<defName>Mashed_Lynian_GrimalkyneChiefRanged</defName>
+		<race>Mashed_Lynian_GrimalkyneRace</race>
+		<defaultFactionType>Mashed_Lynian_NonPlayerGrimalkyneTribe</defaultFactionType>
+		<apparelTags>
+			<li>Mashed_Lynian_GrimalkyneTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

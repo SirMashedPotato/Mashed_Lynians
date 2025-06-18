@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike">
+		<defName>Mashed_Lynian_UrukiRace</defName>
+		<label>uruki</label>
+		<description>A comparatively strange species of Lynian, Uruki do not fall under either cat-like or goblin-like Lynians, and instead exhibit a mixture of traits from both. While generally incredibly peaceful, spending most of their time tending to their flower fields, Uruki are known to become rather aggressive when threatened. Like all Lynians, Uruki are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, due to their innate green-thumb, Uruki are often found working on farms and in medical clinics on more 'civilized' planets. Occasionally the Uruki assisting settlers decide to set off on their own journey, often forming small agrarian tribes in the process.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nPlant work speed increased by 20%.\nMedical tend speed increased by 20%.\nHas access to the 'Promote Growth' ability.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+					<li>Mashed_Lynian_PromoteGrowthAbility</li>
+				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Uruki</hybridInheritedGene>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+			<AbilityDef>Mashed_Lynian_PromoteGrowthAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 0.2 higher than base -->
+			<PlantWorkSpeed>1.2</PlantWorkSpeed>
+			<!-- 0.2 higher than base -->
+			<MedicalTendSpeed>1.2</MedicalTendSpeed>
+		</statBases>
+		<race>
+			<nameGenerator>Mashed_Lynian_NamerPerson_UrukiMale</nameGenerator>
+			<nameGeneratorFemale>Mashed_Lynian_NamerPerson_UrukiFemale</nameGeneratorFemale>
+			<leatherDef>Mashed_Lynian_LynianFineFur</leatherDef>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>Mashed_UrukiHead</li>
+					</headTypes>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Frontier Icon -->
+									<li>
+										<weight>1</weight>
+										<only>(247,213,27,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(232,198,27,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(216,177,37,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(216,177,37,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(234,183,40,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(242,201,29,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<!-- Frontier Icon -->
+									<li>
+										<weight>2</weight>
+										<only>(245,240,219,255)</only>
+									</li>
+									<!-- Concept art -->
+									<li>
+										<weight>1</weight>
+										<only>(252,246,229,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(246,236,219,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(235,230,224,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(244,223,203,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>eye</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(150,158,153,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(114,122,118,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(162,174,169,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(145,156,153,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(133,146,142,255)</only>
+									</li>
+									<!-- Concept art -->
+									<li>
+										<weight>1</weight>
+										<only>(217,141,29,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(199,138,47,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(180,122,22,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons Inherit="False">
+						<!-- =====[Eye right]===== -->
+						<li>
+							<name>right eye</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Right</path>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right eye</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEyes</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Right</Hediff>
+								<Hediff For="BionicEye">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Right</Hediff>
+								<Gene For="Hemogenic" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Right</Gene>
+							</extendedGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Eye left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<name>left eye</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Mashed_UrukiEye_Left</path>
+							<colorChannel>eye</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left eye</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEyes</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
+							</conditions>
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Missing/Mashed_FelyneEyeMissing_Left</Hediff>
+								<Hediff For="BionicEye">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_CatLike/Eye/Bionic/Mashed_FelyneEyeBionic_Left</Hediff>
+								<Gene For="Hemogenic" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Eye/Sanguophage/Mashed_UrukiEyeSanguo_Left</Gene>
+							</extendedGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Ear right]===== -->
+						<li>
+							<name>right ear</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Right</path>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>right ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEars</li>
+										<li>Mashed_Lynian_HideMonkeyEars</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Ear left]===== -->
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<name>left ear</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Ear/Mashed_UrukiEar_Left</path>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPartLabel>left ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideEars</li>
+										<li>Mashed_Lynian_HideMonkeyEars</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Horn]===== -->
+						<li>
+							<name>horn</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/HeadHorn/Mashed_UrukiHorn</path>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideHeadHorn</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- =====[Beard]===== -->
+						<li>
+							<name>beard</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiBeard</path>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideBeard</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+							<bodytypeGraphics>
+								<Male>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiBeard</Male>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiChildBeard</Baby>
+								<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Beard/Mashed_UrukiChildBeard</Child>
+							</bodytypeGraphics>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_MonkeyLike/Head/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Woven/WovenSwaddle_Child</swaddle>
+			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Uruki</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

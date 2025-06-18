@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynians_ResearchBase]==========-->
+	<ResearchProjectDef Name="Mashed_Lynians_ResearchBase" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<generalRules>
+			<rulesStrings>
+				<li>subject_story->how members of a [race] tribe [observations]</li>
+				<li>subject_story->how some [race] [observations]</li>
+				<li>subject_story->how [race] [observations]</li>
+				<li>observations->[observation]</li>
+				<li>observations->[observation], and [observation]</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Row 3]========== -->
+	<!-- ==========[Felvine sowing]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_FelvineSowing</defName>
+		<label>felvine sowing</label>
+		<description>Learn how to sow felvine plants, and process it into a consumable drug. Ingesting felvine has absolutely no effect for most races, however cat-like Lynians receive quite an empowering high from it.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>subject->the many uses of felvine</li>
+				<li>observation(uses=1)->would get high on felvine before, and sometimes even during, battle</li>
+				<li>observation(uses=1)->could sometimes be seen sniffing felvine flowers, seemingly as a form of recreation</li>
+				<li>observation(uses=1)->would sit around a strange stone structure, that when activated would release dense clouds of felvine powder</li>
+				<li>observation(uses=1)->would throw barrels filled with felvine powder to empower their allies during battle</li>
+				<li>observation(uses=1)->seemed to have a strong obsession with felvine, and would trade almost anything for some</li>
+				<li>observation(uses=1)->cultivated small gardens of felvine plants, and would could often be found asleep amongst the flowers</li>
+				<li>subject_gerund->felvine</li>
+			</rulesStrings>
+		</generalRules>
+		<tags>
+			<li>Mashed_Lynian_FelyneStart</li>
+			<li>Mashed_Lynian_MelynxStart</li>
+			<li>Mashed_Lynian_GrimalkyneStart</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Lynian dye kit]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_DyeKit</defName>
+		<label>Lynian dye kit</label>
+		<description>Learn how to craft the Lynian dye kit at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<prerequisites>
+			<li>Mashed_Lynian_FelvineSowing</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>subject->the strange dye kit</li>
+				<li>observation(uses=1)->would colour their fur with specially made dye</li>
+				<li>observation(uses=1)->would mix felvine and tinctoria into a special mixture</li>
+				<li>observation(uses=1)->would sit around their village dying each others fur</li>
+				<li>observation(uses=1)->would dye their fur vibrant colours</li>
+				<li>subject_gerund->dye kit</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Lynian Explosives]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_LynianExplosives</defName>
+		<label>Lynian explosives</label>
+		<description>Learn how to craft simple explosives at the Lynian crafting spot.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>race->Shakalaka</li>
+				<li>race->Gajalaka</li>
+				<li>race->Boaboa</li>
+				<li>race->Uruki</li>
+				<li>subject->the use of explosive weaponry by Lynians</li>
+				<li>observation(uses=1)->would use explosives to quickly mine tunnels</li>
+				<li>observation(uses=1)->would use explosives to scare off large predators</li>
+				<li>observation(uses=1)->would throw explosives at outsiders to keep them away</li>
+				<li>observation(uses=1)->would sit in groups crafting explosive weaponry</li>
+				<li>subject_gerund->Lynian explosives</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Row 4]========== -->
+	<!-- ==========[Felyne equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_FelyneEquipment</defName>
+		<label>felyne equipment</label>
+		<description>Learn how to craft basic Felyne equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_FelyneStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>subject->Felyne crafting methods</li>
+				<li>observation(uses=1)->would create primitive picks using sharpened bone</li>
+				<li>observation(uses=1)->would use acorn shaped packs to carry items they gathered</li>
+				<li>subject_gerund->Felyne equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Melynx equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_MelynxEquipment</defName>
+		<label>melynx equipment</label>
+		<description>Learn how to craft basic Melynx equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_MelynxStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Melynx</li>
+				<li>subject->Melynx crafting methods</li>
+				<li>observation(uses=1)->would use paw shaped clubs to grab items that were out of their reach</li>
+				<li>observation(uses=1)->would wear cloth satchels, allowing them to quickly stash pilfered items</li>
+				<li>observation(uses=1)->would wear bandanas to conceal their identity when attempting to pilfer items</li>
+				<li>subject_gerund->Melynx equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Grimalkyne equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_GrimalkyneEquipment</defName>
+		<label>grimalkyne equipment</label>
+		<description>Learn how to craft basic Grimalkyne equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_GrimalkyneStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Grimalkyne</li>
+				<li>subject->Grimalkyne crafting methods</li>
+				<li>observation(uses=1)->would create primitive saws using sharpened bone</li>
+				<li>observation(uses=1)->would trap flashfly in small wooden cages, and seemingly use them as a primitive stun grenade</li>
+				<li>subject_gerund->Grimalkyne equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Shakalaka equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_ShakalakaEquipment</defName>
+		<label>shakalaka equipment</label>
+		<description>Learn how to craft basic Shakalaka equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_ShakalakaStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Shakalaka</li>
+				<li>subject->Shakalaka crafting methods</li>
+				<li>subject_story->how young [race] would craft simple masks out of whatever they found lying around</li>
+				<li>observation(uses=1)->could sometimes be seen dancing around their village</li>
+				<li>observation(uses=1)->would wear masks that seemed designed to hide their face</li>
+				<li>observation(uses=1)->would sculpt wood into intricately designed masks</li>
+				<li>observation(uses=1)->would wear masks that seemed to be designed to make them seem larger than they actually are</li>
+				<li>observation(uses=1)->would sit in groups while painting their masks</li>
+				<li>observation(uses=1)->would reshape salvaged scrap metal into primitive swords</li>
+				<li>observation(uses=1)->would reshape salvaged scrap metal into primitive throwing knives</li>
+				<li>observation(uses=1)->would coat their swords with a mixture made from a specific kind of poisnous mushroom</li>
+				<li>observation(uses=1)->would create small handheld explosives using a specific kind of mushroom, that seem to realease a sleep gas when thrown</li>
+				<li>observation(uses=1)->would flail aggressively towards opponents, seemingly an attempt to scare them off</li>
+				<li>subject_gerund->Shakalaka equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Gajalaka equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_GajalakaEquipment</defName>
+		<label>gajalaka equipment</label>
+		<description>Learn how to craft basic Gajalaka equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_GajalakaStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Gajalaka</li>
+				<li>subject->Gajalaka crafting methods</li>
+				<li>observation(uses=1)->could sometimes be seen dancing around fires</li>
+				<li>observation(uses=1)->seemed to have an intense love of explosives</li>
+				<li>observation(uses=1)->would wear masks that seemed designed to hide their face</li>
+				<li>observation(uses=1)->would sculpt clay into intricately designed masks</li>
+				<li>observation(uses=1)->would wear masks that seemed to be designed to evoke the visage of some deity or undiscovered creature</li>
+				<li>observation(uses=1)->would sit in groups while painting their masks</li>
+				<li>observation(uses=1)->would craft somewhat primitive swords out of stone</li>
+				<li>observation(uses=1)->would craft somewhat primitive throwing knives out of stone</li>
+				<li>observation(uses=1)->would make use of small clay vessels, seemingly filled with an explosive mixture</li>
+				<li>observation(uses=1)->would make primitive, but surprisingly well made, hand cannons out of clay and steel</li>
+				<li>observation(uses=1)->would form well organised firing lines, before chaotically unleashing the firepower of their hand cannons</li>
+				<li>subject_gerund->Gajalaka equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Boaboa equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_BoaboaEquipment</defName>
+		<label>boaboa equipment</label>
+		<description>Learn how to craft basic Boaboa equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_BoaboaStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Boaboa</li>
+				<li>subject->Boaboa crafting methods</li>
+				<li>subject_story->how sometimes lone [race] could be seen relaxing in hot springs without their mask on</li>
+				<li>observation(uses=1)->would wear masks that seemed designed to hide their face</li>
+				<li>observation(uses=1)->would decorate their pelt masks with pieces of bone</li>
+				<li>observation(uses=1)->would wear masks that seemed to be designed to evoke the visage of the local megafaunal wildlife</li>
+				<li>observation(uses=1)->would sit in groups while painting their masks</li>
+				<li>observation(uses=1)->would wear thick pelt coats to stay warm</li>
+				<li>observation(uses=1)->would craft somewhat primitive throwing spears out of bone</li>
+				<li>observation(uses=1)->would craft somewhat primitive throwing shards out of bone</li>
+				<li>observation(uses=1)->would use intricately designed clubs to imitate the footprints of large megafaunal beasts</li>
+				<li>observation(uses=1)->would make use of small pelt satchels, seemingly filled with an explosive mixture</li>
+				<li>observation(uses=1)->would work as a team to hunt their prey, employing advanced hunting tactics in the process</li>
+				<li>subject_gerund->Boaboa equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Uruki equipment]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_UrukiEquipment</defName>
+		<label>uruki equipment</label>
+		<description>Learn how to craft basic Uruki equipment at the Lynian crafting spot.</description>
+		<baseCost>150</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</tags>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Uruki</li>
+				<li>subject->Uruki crafting methods</li>
+				<li>observation(uses=1)->could often be seen tending to fields of exotic flowers, many of which seemed to be undiscovered species</li>
+				<li>observation(uses=1)->would wear baskets made of woven plant fibre, which they used to carry items around in</li>
+				<li>observation(uses=1)->would craft somewhat primitive slingshots using wood and plant fibre</li>
+				<li>observation(uses=1)->would make use of acorn shaped vessels, seemingly filled with an explosive mixture</li>
+				<li>subject_gerund->Uruki equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Row 5, speciality armour sets]========== -->
+	<!-- ==========[Purrserker]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_PurrserkerEquipment</defName>
+		<label>purrserker equipment</label>
+		<description>Learn how to craft special Purrserker equipment at the Lynian crafting spot.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>subject->the use of bone in making advanced armour and weapons</li>
+				<li>observation(uses=1)->could sometimes be seen crafting intricately designed weapons and armour out of bone</li> 
+				<li>observation(uses=1)->could sometimes be seen wearing helmets fashioned from the skull of some kind of large rodent or lagomorph</li> 
+				<li>observation(uses=1)->could sometimes be seen wielding a large bone club, possibly the femur of some larger creature</li>
+				<li>observation(uses=1)->could sometimes be seen wielding a boomerang, seemingly assembled from multiple sturdy bones</li>
+				<li>subject_gerund->purrserker equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Acorn knight]========== -->
+	<ResearchProjectDef ParentName="Mashed_Lynians_ResearchBase">
+		<defName>Mashed_Lynian_AcornEquipment</defName>
+		<label>acorn equipment</label>
+		<description>Learn how to craft strong Acorn Knight equipment at the Lynian crafting bench.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>Mashed_Lynian_PurrserkerEquipment</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>subject->the advanced smithing methods of certain Lynian tribes</li>
+				<li>subject_story->how a certain [race] village would sometimes be visited to some kind of wandering knight, wearing advanced acorn styled armour</li>
+				<li>observation(uses=1)->seemed to use equipment far beyond their assumed crafting ability</li>
+				<li>observation(uses=1)->seemed to wear armour somewhat reminiscent of knight armour, but made out of wood, and made to resemble an acorn</li>
+				<li>observation(uses=1)->would wield a large wooden hammer, seemingly styled after an acorn</li>
+				<li>observation(uses=1)->would wear a large barrel shaped backpack, to carry around large quantities of goods</li>
+				<li>subject_gerund->acorn equipment</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Sameowrai]========== -->
+	<!--
+	<ResearchProjectDef>
+		<defName>Mashed_Lynian_SameowraiEquipment</defName>
+		<label>sameowrai equipment</label>
+		<description>Learn how to craft powerful Sameowrai equipment at the Lynian crafting bench.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tab>Mashed_ResearchTab_MonsterHunter</tab>
+		<prerequisites>
+			<li>Machining</li>
+			<li>Mashed_Lynian_AcornEquipment</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	-->
+</Defs>

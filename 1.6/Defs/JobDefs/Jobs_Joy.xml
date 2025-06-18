@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>Mashed_Lynian_SmellFelvine</defName>
+		<driverClass>Mashed_Lynians.JobDriver_SmellFelvine</driverClass>
+		<reportString>smelling felvine flowers.</reportString>
+		<joyDuration>1000</joyDuration>
+		<joyKind>Meditative</joyKind>
+	</JobDef>
+</Defs>
