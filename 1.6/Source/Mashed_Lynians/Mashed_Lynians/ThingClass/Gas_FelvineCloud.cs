@@ -7,18 +7,16 @@ namespace Mashed_Lynians
 {
     public class Gas_FelvineCloud : Gas
     {
-        private int tickerInterval = 0;
-        private int tickerMax = 120;
+        private readonly int tickInterval = 120;
 
-        public override void Tick()
+        protected override void TickInterval(int delta)
         {
-            base.Tick();
-
+            base.TickInterval(delta);
             try
             {
-                if (tickerInterval >= tickerMax)
+                if (this.IsHashIntervalTick(tickInterval, delta))
                 {
-                    HashSet<Thing> hashSet = new HashSet<Thing>(this.Position.GetThingList(this.Map));
+                    HashSet<Thing> hashSet = new HashSet<Thing>(Position.GetThingList(Map));
                     if (hashSet != null)
                     {
                         foreach (Thing thing in hashSet)
@@ -36,11 +34,9 @@ namespace Mashed_Lynians
                             }
                         }
                     }
-                    tickerInterval = 0;
                 }
-                tickerInterval++;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
 
             }

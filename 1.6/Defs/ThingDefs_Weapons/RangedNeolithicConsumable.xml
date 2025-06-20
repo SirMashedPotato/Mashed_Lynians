@@ -87,7 +87,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
-		<thingClass>Mashed_Lynians.Projectile_ExplosiveAlt</thingClass>
+		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<damageDef>Bomb</damageDef>
 			<!-- Use default damage from explosion def -->

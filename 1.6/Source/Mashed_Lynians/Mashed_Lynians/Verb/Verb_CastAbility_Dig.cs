@@ -12,7 +12,7 @@ namespace Mashed_Lynians
 
         public bool IsValidTarget(LocalTargetInfo t, Pawn p)
         {
-            if (t.Cell != null && !t.Cell.Fogged(p.Map))
+            if (!t.Cell.Fogged(p.Map))
             {
                 if (!t.Cell.Impassable(p.Map) && t.Cell.InBounds(p.Map))
                 {
@@ -29,7 +29,7 @@ namespace Mashed_Lynians
 
         protected override bool TryCastShot()
         {
-            return base.TryCastShot() && DoDig(this.CasterPawn, this.currentTarget, this.verbProps);
+            return base.TryCastShot() && DoDig(CasterPawn, currentTarget, verbProps);
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Mashed_Lynians
         /// </summary>
         public override void OrderForceTarget(LocalTargetInfo target)
         {
-            JumpUtility.OrderJump(this.CasterPawn, target, this, this.EffectiveRange);
+            JumpUtility.OrderJump(CasterPawn, target, this, EffectiveRange);
         }
 
         public static bool DoDig(Pawn pawn, LocalTargetInfo currentTarget, VerbProperties verbProps)

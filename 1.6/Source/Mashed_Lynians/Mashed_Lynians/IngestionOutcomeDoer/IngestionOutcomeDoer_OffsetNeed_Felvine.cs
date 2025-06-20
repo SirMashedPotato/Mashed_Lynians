@@ -10,41 +10,24 @@ namespace Mashed_Lynians
     /// TODO see if this can be redone through HAR stuff
 	/// TODO int ingestedCount is new, probably need to update this
     /// </summary>
-    public class IngestionOutcomeDoer_OffsetNeed_Felvine : IngestionOutcomeDoer
+    public class IngestionOutcomeDoer_OffsetNeed_Felvine : IngestionOutcomeDoer_OffsetNeed
     {
         protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
         {
-            if (pawn.needs == null)
-            {
-                return;
-            }
             if (!Utility.PawnCanUseFelvine(pawn))
             {
                 return;
             }
-            Need need = pawn.needs.TryGetNeed(this.need);
-            if (need == null)
+            if (pawn.needs != null && pawn.needs.TryGetNeed(this.need, out var need))
             {
-                return;
+                float effect = offset * ingestedCount;
+                AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize(pawn, toleranceChemical, ref effect, applyGeneToleranceFactor: false);
+                if (perIngested)
+                {
+                    effect *= ingested.stackCount;
+                }
+                need.CurLevel += effect;
             }
-            float num = this.offset;
-            AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, this.toleranceChemical, ref num, false);
-            if (this.perIngested)
-            {
-                num *= (float)ingested.stackCount;
-            }
-            need.CurLevel += num;
         }
-
-        public override IEnumerable<StatDrawEntry> SpecialDisplayStats(ThingDef parentDef)
-        {
-            string str = (this.offset >= 0f) ? "+" : string.Empty;
-            yield return new StatDrawEntry(StatCategoryDefOf.Drug, this.need.LabelCap, str + this.offset.ToStringPercent(), this.need.description, this.need.listPriority, null, null, false);
-        }
-
-        public NeedDef need;
-        public float offset;
-        public ChemicalDef toleranceChemical;
-        public bool perIngested;
     }
 }

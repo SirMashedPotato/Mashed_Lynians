@@ -9,17 +9,16 @@ namespace Mashed_Lynians
 {
     public class Gas_SleepBomb : Gas
     {
-        private int tickerInterval = 0;
-        private int tickerMax = 120;
+        private const int tickInterval = 120;
 
-        public override void Tick()
+        protected override void TickInterval(int delta)
         {
-            base.Tick();
+            base.TickInterval(delta);
             try
             {
-                if (tickerInterval >= tickerMax)
+                if (this.IsHashIntervalTick(tickInterval, delta))
                 {
-                    HashSet<Thing> hashSet = new HashSet<Thing>(this.Position.GetThingList(this.Map));
+                    HashSet<Thing> hashSet = new HashSet<Thing>(Position.GetThingList(Map));
                     if (hashSet != null)
                     {
                         foreach (Thing thing in hashSet)
@@ -32,7 +31,7 @@ namespace Mashed_Lynians
                                     return;
                                 }
                                 float num = 0.028758334f;
-                                if (num != 0f && !this.Destroyed)
+                                if (num != 0f && !Destroyed)
                                 {
                                     float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(p.thingIDNumber ^ 74374237));
                                     num *= num2;
@@ -44,17 +43,15 @@ namespace Mashed_Lynians
                                         {
                                             p.drafter.Drafted = false;
                                         }
-                                        p.jobs.StartJob(JobMaker.MakeJob(JobDefOf.LayDown, p.Position), JobCondition.InterruptForced, null, false, true, null, new JobTag?(JobTag.SatisfyingNeeds), false, false);
+                                        p.jobs.StartJob(JobMaker.MakeJob(JobDefOf.LayDown, p.Position), JobCondition.InterruptForced);
                                     }
                                 }
                             }
                         }
                     }
-                    tickerInterval = 0;
                 }
-                tickerInterval++;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
 
             }

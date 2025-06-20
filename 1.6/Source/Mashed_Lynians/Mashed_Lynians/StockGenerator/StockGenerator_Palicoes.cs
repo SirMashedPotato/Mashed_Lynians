@@ -2,6 +2,7 @@
 using System.Linq;
 using Verse;
 using RimWorld;
+using RimWorld.Planet;
 
 namespace Mashed_Lynians
 {
@@ -10,7 +11,7 @@ namespace Mashed_Lynians
 		/// <summary>
 		/// Make sure to never add the same pawnKind as a possible caravan member
 		/// </summary>
-		public override IEnumerable<Thing> GenerateThings(int forTile, Faction faction = null)
+		public override IEnumerable<Thing> GenerateThings(PlanetTile forTile, Faction faction = null)
 		{
 			///Likely the cause if none are appearing in trade caravans
 			///It's a vanilla mechanic, so keeping as is
@@ -63,7 +64,7 @@ namespace Mashed_Lynians
 			return false;
 		}
 
-		private bool respectPopulationIntent;
+        private bool respectPopulationIntent;
         public PawnKindDef pawnKindDef;
 		public List<PawnKindDef> pawnKindDefList;
 	}
