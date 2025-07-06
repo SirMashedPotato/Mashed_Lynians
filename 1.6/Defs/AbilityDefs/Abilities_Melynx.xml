@@ -22,8 +22,7 @@
 		<statBases>
 		</statBases>
 		<comps>
-			<li Class="Mashed_Lynians.CompProperties_Pilfer">
-				<!-- Should specifically be used for felvine, and felvine derivatives -->
+			<li Class="Mashed_Lynians.CompProperties_AbilityPilfer">
 				<guaranteedPilfers>
 					<li>Mashed_Lynian_FelvinePowder</li>
 					<li>Mashed_Lynian_FelvineFlowers</li>
@@ -35,17 +34,9 @@
 			<range>-1</range>
 			<warmupTime>0.5</warmupTime>
 			<violent>false</violent>
-			<verbClass>Mashed_Lynians.Verb_CastAbilityTouch_Pilfer</verbClass>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
 			<targetParams>
-				<canTargetItems>false</canTargetItems>
-				<canTargetSelf>false</canTargetSelf>
-				<canTargetPawns>true</canTargetPawns>
 				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetAnimals>true</canTargetAnimals>
-				<canTargetHumans>true</canTargetHumans>
-				<canTargetMechs>true</canTargetMechs>
-				<mustBeSelectable>true</mustBeSelectable>
-				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>

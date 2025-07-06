@@ -18,7 +18,8 @@
 		<statBases>
 		</statBases>
 		<comps>
-			<li Class="Mashed_Lynians.CompProperties_Dig">
+			<li Class="Mashed_Lynians.CompProperties_AbilityDig">
+				<skillDef>Mining</skillDef>
 				<requiredLevel>5</requiredLevel>
 			</li>
 		</comps>

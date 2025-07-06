@@ -72,18 +72,18 @@
   <ItemGroup>
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_DoDamage.cs" />
-    <Compile Include="AbilityComp\CompAbilityEffect_EndPurrserkerRage.cs" />
+    <Compile Include="AbilityComp\CompProperties_AbilityRemoveHediffs.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_GiveHediffToParts.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityDoDamage.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityRemoveHediffs.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveHediffToParts.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_IncrementRecord.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_EndPurrserkerRage.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityDig.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityIncrementRecord.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityPilfer.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityPromoteGrowth.cs" />
     <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
     <Compile Include="CompUse\CompUseEffect_LynianDyeKit.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
@@ -144,9 +144,7 @@
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
-    <Compile Include="Verb\Verb_CastAbilityTouch_PromoteGrowth.cs" />
     <Compile Include="Verb\Verb_ShootWithDurability.cs" />
-    <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
     <Compile Include="Verb\Verb_CastAbility_Dig.cs" />
   </ItemGroup>
   <ItemGroup>

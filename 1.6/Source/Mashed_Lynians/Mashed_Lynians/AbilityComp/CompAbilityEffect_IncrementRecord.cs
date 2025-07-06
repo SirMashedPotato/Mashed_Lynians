@@ -5,13 +5,7 @@ namespace Mashed_Lynians
 {
     public class CompAbilityEffect_IncrementRecord : CompAbilityEffect
     {
-        public new CompProperties_IncrementRecord Props
-        {
-            get
-            {
-                return (CompProperties_IncrementRecord)this.props;
-            }
-        }
+        public new CompProperties_AbilityIncrementRecord Props => (CompProperties_AbilityIncrementRecord)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

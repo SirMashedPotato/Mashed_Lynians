@@ -11,7 +11,7 @@
 			<Ability_Duration>250</Ability_Duration>
 		</statBases>
 		<comps>
-			<li Class="Mashed_Lynians.CompProperties_IncrementRecord">
+			<li Class="Mashed_Lynians.CompProperties_AbilityIncrementRecord">
 				<recordDef>Mashed_Lynian_TimesFurrenzied</recordDef>
 			</li>
 		</comps>

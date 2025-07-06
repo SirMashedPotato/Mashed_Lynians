@@ -28,7 +28,7 @@
 				<partsToAffect>Hand</partsToAffect>
 				<hediffDef>Mashed_Lynian_PurrserkerClaws</hediffDef>
 			</li>
-			<li Class="Mashed_Lynians.CompProperties_IncrementRecord">
+			<li Class="Mashed_Lynians.CompProperties_AbilityIncrementRecord">
 				<recordDef>Mashed_Lynian_TimesPurrserkered</recordDef>
 			</li>
 		</comps>
@@ -117,7 +117,13 @@
 			</targetParams>
 		</verbProperties>
 		<comps>
-			<li Class="Mashed_Lynians.CompProperties_EndPurrserkerRage"/>
+			<li Class="Mashed_Lynians.CompProperties_AbilityRemoveHediffs">
+				<hediffDefs>
+					<li>Mashed_Lynian_PurrserkerClaws</li>
+					<li>Mashed_Lynian_PurrserkerClaws</li>
+					<li>Mashed_Lynian_PurrserkerRage</li>
+				</hediffDefs>
+			</li>
 			<li Class="Mashed_Lynians.CompProperties_AbilityDoDamage">
 				<damageDef>Stun</damageDef>
 				<damageAmount>10</damageAmount>

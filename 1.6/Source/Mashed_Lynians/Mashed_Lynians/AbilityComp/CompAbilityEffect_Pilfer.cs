@@ -3,18 +3,13 @@ using RimWorld;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using static RimWorld.PsychicRitualRoleDef;
 
 namespace Mashed_Lynians
 {
     public class CompAbilityEffect_Pilfer : CompAbilityEffect
     {
-        public new CompProperties_Pilfer Props
-        {
-            get
-            {
-                return (CompProperties_Pilfer)this.props;
-            }
-        }
+        public new CompProperties_AbilityPilfer Props => (CompProperties_AbilityPilfer)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
@@ -27,23 +22,23 @@ namespace Mashed_Lynians
                     float chance = user.GetStatValue(StatDefOf.Mashed_Lynian_PilferChance);
                     if (Rand.Chance(chance))
                     {
-                        Thing pilferedItem;
+                        Thing thingToPilfer;
                         if (!Props.guaranteedPilfers.NullOrEmpty() && Utility.PawnCanUseFelvine(user))
                         {
                             List<Thing> list = targetPawn.inventory.innerContainer.Where(x => Props.guaranteedPilfers.Contains(x.def)).ToList();
                             if (list.Any())
                             {
-                                pilferedItem = list.RandomElement();
-                                FinalisePilfering(pilferedItem, targetPawn, user);
+                                thingToPilfer = list.RandomElement();
+                                FinalisePilfering(thingToPilfer, targetPawn, user);
                                 user.health.AddHediff(HediffDefOf.Mashed_Lynian_PilferedFelvine);
                                 return;
                             }
                           
                         }
-                        pilferedItem = targetPawn.inventory.innerContainer.RandomElement();
-                        if (pilferedItem != null)
+                        thingToPilfer = targetPawn.inventory.innerContainer.RandomElement();
+                        if (thingToPilfer != null)
                         {
-                            FinalisePilfering(pilferedItem, targetPawn, user);
+                            FinalisePilfering(thingToPilfer, targetPawn, user);
                             return;
                         }
                     }
@@ -81,17 +76,33 @@ namespace Mashed_Lynians
             }
         }
 
-        public static void FinalisePilfering(Thing pilferedItem, Pawn target, Pawn pilferer)
+        private void FinalisePilfering(Thing thingToPilfer, Pawn target, Pawn pilferer)
         {
             int count = 1;
-            if (pilferedItem.stackCount > 1)
+            if (thingToPilfer.stackCount > 1)
             {
-                count = Mathf.Clamp( (int)(pilferedItem.stackCount * 0.25f), 1, pilferedItem.stackCount);
+                count = Mathf.Clamp((int)(thingToPilfer.stackCount * 0.25f), 1, thingToPilfer.stackCount);
             }
-            target.inventory.innerContainer.TryDrop(pilferedItem, ThingPlaceMode.Near, count, out Thing newThing);
+            target.inventory.innerContainer.TryTransferToContainer(thingToPilfer, parent.pawn.inventory.innerContainer, count, out Thing pilferedThing);
+
             pilferer.records.Increment(RecordDefOf.Mashed_Lynian_PilferedNumber);
-            pilferer.records.AddTo(RecordDefOf.Mashed_Lynian_PilferedValue, newThing.MarketValue * newThing.stackCount);
-            Messages.Message("Mashed_Lynian_PilferSuccess".Translate(pilferer.Name, newThing.Label), newThing, MessageTypeDefOf.PositiveEvent);
+            pilferer.records.AddTo(RecordDefOf.Mashed_Lynian_PilferedValue, pilferedThing.MarketValue * pilferedThing.stackCount);
+            Messages.Message("Mashed_Lynian_PilferSuccess".Translate(pilferer.Name, pilferedThing.Label), pilferedThing, MessageTypeDefOf.PositiveEvent);
+        }
+
+        public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
+        {
+            if (target.Pawn == null)
+            {
+                return false;
+            }
+
+            if (target.Pawn.inventory.innerContainer.NullOrEmpty())
+            {
+                return false;
+            }
+
+            return base.Valid(target, throwMessages);
         }
 
         public override string ExtraTooltipPart()

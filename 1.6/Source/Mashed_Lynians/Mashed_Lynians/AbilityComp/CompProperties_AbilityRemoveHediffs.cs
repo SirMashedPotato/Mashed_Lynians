@@ -3,24 +3,19 @@ using RimWorld;
 
 namespace Mashed_Lynians
 {
-    public class CompAbilityEffect_EndPurrserkerRage : CompAbilityEffect
+    public class CompAbilityEffect_RemoveHediffs : CompAbilityEffect
     {
-        public new CompProperties_EndPurrserkerRage Props
-        {
-            get
-            {
-                return (CompProperties_EndPurrserkerRage)this.props;
-            }
-        }
+        public new CompProperties_AbilityRemoveHediffs Props => (CompProperties_AbilityRemoveHediffs)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn p = parent.pawn;
             if (target.Pawn != null && target.Pawn == p)
             {
-                RemoveHediff(p, HediffDefOf.Mashed_Lynian_PurrserkerRage);
-                RemoveHediff(p, HediffDefOf.Mashed_Lynian_PurrserkerClaws);
-                RemoveHediff(p, HediffDefOf.Mashed_Lynian_PurrserkerClaws);
+                foreach (HediffDef hediffDef in Props.hediffDefs)
+                {
+                    RemoveHediff(p, hediffDef);
+                }
             }
         }
 

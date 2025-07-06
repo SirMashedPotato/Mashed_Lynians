@@ -6,13 +6,7 @@ namespace Mashed_Lynians
 {
     public class CompAbilityEffect_PromoteGrowth : CompAbilityEffect
     {
-        public new CompProperties_PromoteGrowth Props
-        {
-            get
-            {
-                return (CompProperties_PromoteGrowth)this.props;
-            }
-        }
+        public new CompProperties_AbilityPromoteGrowth Props => (CompProperties_AbilityPromoteGrowth)this.props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
@@ -59,6 +53,23 @@ namespace Mashed_Lynians
                 return true;
             }
             return base.GizmoDisabled(out reason);
+        }
+
+        public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
+        {
+            if (target.Thing == null)
+            {
+                return false;
+            }
+
+            if (target.Thing is Plant p && p.Growth < 1f)
+            {
+                return base.Valid(target, throwMessages);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public override string ExtraTooltipPart()
