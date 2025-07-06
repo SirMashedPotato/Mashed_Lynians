@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<EffecterDef>
+		<defName>Mashed_Lynian_IngestFelvine</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<moteDef>Mashed_Lynian_IngestFelvineMote</moteDef>
+				<ticksBetweenMotes>30</ticksBetweenMotes>
+				<scale>0.35~0.45</scale>
+				<absoluteAngle>true</absoluteAngle>
+				<angle>30~70</angle>
+				<speed>0.18~0.3</speed>
+			</li>
+		</children>
+	</EffecterDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mashed_Lynian_IngestFelvineMote</defName>
+		<thingClass>MoteThrown</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/Smoke</texPath>
+			<color>236,189,207</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.25</fadeInTime>
+			<solidTime>2.75</solidTime>
+			<fadeOutTime>4.7</fadeOutTime>
+			<growthRate>0.47</growthRate>
+			<acceleration>(0,0,0.0014)</acceleration>
+		</mote>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Mashed_Lynian_BasePawn_GoblinLike">
+		<defName>Mashed_Lynian_BoaboaRace</defName>
+		<label>boaboa</label>
+		<description>A strange breed of goblin-like Lynian, well adapted for the frigid north. Like their cousins, Boaboa are rather reclusive, and are very rarely seen without their masks on. They make for excellent hunters, and are very protective of their hunting grounds. Like all Lynians, Boaboa are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, since then most Boaboa have gone their own way, and established primitive hunter-gatherer tribes. These tribes often have an almost ritualistic obsession with hunting, and can often be found worshipping the great beasts of the north.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nReduced comfortable minimum temperature.\nAnimal gather speed is increased by 10%.\nFlesh butcher speed is increased by 10%.</description>
+		<modExtensions>
+			<li Class="Mashed_Lynians.RaceProperties">
+				<abilitiesToAdd>
+					<li>Mashed_Lynian_DigAbility</li>
+				</abilitiesToAdd>
+				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Boaboa</hybridInheritedGene>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Lynian_DigAbility</AbilityDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<!-- 5 lower than cat-like lynians -->
+			<ComfyTemperatureMax>25</ComfyTemperatureMax>
+			<!-- 10 lower than cat-like lynians -->
+			<ComfyTemperatureMin>2</ComfyTemperatureMin>
+			<!-- 0.1 higher than base -->
+			<AnimalGatherSpeed>1.1</AnimalGatherSpeed>
+			<!-- 0.1 higher than base -->
+			<ButcheryFleshSpeed>1.1</ButcheryFleshSpeed>
+		</statBases>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>Mashed_BoaboaHead</li>
+					</headTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(221,213,201,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(204,202,192,255)</only>
+									</li>
+									<!-- Iceborne icon, lighter -->
+									<li>
+										<weight>2</weight>
+										<only>(200,199,197,255)</only>
+									</li>
+									<!-- Iceborne icon, darker -->
+									<li>
+										<weight>1</weight>
+										<only>(139,137,138,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(43,46,63,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(55,58,77,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(68,73,93,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>teeth</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(142,124,122,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(163,149,138,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(153,134,128,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- =====[Teeth]===== -->
+						<li>
+							<name>fangs</name>
+							<path>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Teeth/Boaboa/Mashed_BoaboaTeeth</path>
+							<colorChannel>teeth</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>false</layerInvert>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Jaw</bodyPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting,Dessicated</RotStage>
+								<Apparel>
+									<hiddenUnderApparelFor>
+										<li>FullHead</li>
+									</hiddenUnderApparelFor>
+									<hiddenUnderApparelTag>
+										<li>Mashed_Lynian_HideTeeth</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
+							<offsets>
+								<south>
+									<layerOffset>-0.273</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.273</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.273</layerOffset>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Head/Boaboa/</head>
+				<body>Things/Pawn/Humanlike/Mashed_Lynians/Lynian_GoblinLike/Body/Boaboa/</body>
+				<swaddle MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Humanlike/Mashed_Lynians/Lynian_Swaddle/Fur/FurSwaddle_Child</swaddle>
+			</graphicPaths>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Boaboa</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

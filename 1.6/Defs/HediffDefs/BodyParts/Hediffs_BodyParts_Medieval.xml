@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_InstallClothPartBase]========== -->
+	<RecipeDef Name="Mashed_Lynian_InstallClothPartBase" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+		<workAmount>500</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<recipeUsers Inherit="False"/>
+	</RecipeDef>
+	<!-- ==========[Mashed_Lynian_TailCloth]========== -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Mashed_Lynian_TailCloth</defName>
+		<label>cloth tail</label>
+		<labelNoun>a cloth tail</labelNoun>
+		<description>An attached cloth tail, coloured to look just like the real thing.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.60</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>-0.1</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+	</HediffDef>
+	<RecipeDef ParentName="Mashed_Lynian_InstallClothPartBase">
+		<defName>Mashed_Lynian_InstallTailCloth</defName>
+		<label>attach cloth Lynian tail</label>
+		<description>Attaching cloth tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Cloth</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Attaching cloth tail.</jobString>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Mashed_Lynian_TailCloth</addsHediff>
+		<uiIconThing>Cloth</uiIconThing>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

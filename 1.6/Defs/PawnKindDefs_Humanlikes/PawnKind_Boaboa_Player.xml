@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Outlander]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_OutlanderPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_BoaboaColonist</defName>
+		<race>Mashed_Lynian_BoaboaRace</race>
+		<defaultFactionType>Mashed_Lynian_BoaboaPlayerColony</defaultFactionType>
+	</PawnKindDef>
+	<!-- ==========[Tribal]========== -->
+	<PawnKindDef ParentName="Mashed_Lynian_TribalPlayerPawnKind_Base">
+		<defName>Mashed_Lynian_BoaboaTribesperson</defName>
+		<race>Mashed_Lynian_BoaboaRace</race>
+		<defaultFactionType>Mashed_Lynian_BoaboaPlayerTribe</defaultFactionType>
+		<apparelRequired>
+			<li>Mashed_Lynian_Apparel_BoaboaMask</li>
+			<li>Mashed_Lynian_Apparel_BoaboaCoat</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>Mashed_Lynian_BoaboaTribal</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,19 @@
+<Defs>
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Mashed_Lynian_FelvinePlant</defName>
+		<label>felvine seeds</label>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Lynian_FelvinePlant</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Lynian_FelvinePlant</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Seeds/Mashed_Felvine_Seeds</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

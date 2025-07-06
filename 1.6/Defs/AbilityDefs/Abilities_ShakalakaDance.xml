@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>Mashed_Lynian_ShakalakaDanceAbility</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[Mashed_Lynian_ShakalakaDanceBase]==========-->
+	<AbilityDef Name="Mashed_Lynian_ShakalakaDanceBase" Abstract="True">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>True</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<groupDef>Mashed_Lynian_ShakalakaDanceAbility</groupDef>
+		<warmupEffecter>Mashed_Lynian_ShakalakaDanceWarmup</warmupEffecter>
+		<statBases>
+			<Ability_EffectRadius>3.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>10</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityRequiresCapacity">
+				<capacity>Moving</capacity>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_IncrementRecord">
+				<recordDef>Mashed_Lynian_ShakalakaDancesDanced</recordDef>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_AbilityEffecterOnSelf">
+				<effecterDef>Mashed_Lynian_ShakalakaDanceEnd</effecterDef>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Mashed_Lynian_ShakalakaDanceEnd</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- ==========[Mashed_Lynian_DanceCleaningAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceCleaningAbility</defName>
+		<label>cleaning dance</label>
+		<description>A dance created by a wise Shakalaka of old. The deliberate movements stir up a vortex of energy, cleaning any nearby filth.\n\nIf the dancer is highly knowledgeable anyone nearby will be inspired by the performance, receiving a boost to cleaning speed for a period of time.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceCleaningBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cleaning</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>True</requireLineOfSight>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityCleanFilth"/>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceAddHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<addedHediffDef>Mashed_Lynian_ShakalakaDanceCleaningBuff</addedHediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceCleaningBuff</defName>
+		<label>Shakalaka cleaning dance</label>
+		<description>This pawn witnessed the deliberate movements of a Shakalaka cleaning dance, and now has increased cleaning speed for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<CleaningSpeed>0.25</CleaningSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceCleansingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase" MayRequire="sirmashedpotato.ashlands">
+		<defName>Mashed_Lynian_DanceCleansingAbility</defName>
+		<label>cleansing dance</label>
+		<description>A dance created by a wise Shakalaka of old. The billowing movements help to fortify the body of anyone that witnesses it, increasing their resistance to ash effects.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of cleansing energy, reducing the severity of ash buildup by up to 25%.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceCleansingBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cleansing</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceCleansingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceRemoveHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>Mashed_Ashlands_AshBuildup</affectedHediffDef>
+				<severityReduction>0.25</severityReduction>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase" MayRequire="sirmashedpotato.ashlands">
+		<defName>Mashed_Lynian_ShakalakaDanceCleansingBuff</defName>
+		<label>Shakalaka cleansing dance</label>
+		<description>This pawn witnessed the billowing movements of a Shakalaka cleansing dance, and is now more resistant to ash effects for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<Mashed_Ashlands_AshResistance>0.25</Mashed_Ashlands_AshResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceCoolingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceCoolingAbility</defName>
+		<label>cooling dance</label>
+		<description>A dance created by a wise Shakalaka of old. The calming movements help to cool the body of anyone that witnesses it, increasing their resistance to the heat.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of cooling energy, reducing the severity of heatstroke by up to 25%.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceCoolingBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Cooling</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceCoolingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceRemoveHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>Heatstroke</affectedHediffDef>
+				<severityReduction>0.25</severityReduction>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceCoolingBuff</defName>
+		<label>Shakalaka cooling dance</label>
+		<description>This pawn witnessed the calming movements of a Shakalaka cooling dance, and is now more resilient to the cold for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceCuringAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceCuringAbility</defName>
+		<label>curing dance</label>
+		<description>A dance created by a wise Shakalaka of old. The smooth movements help to fortify the body of anyone that witnesses it, increasing their resistance to toxic effects.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of curing energy, reducing the severity of toxic buildup by up to 25%.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceCuringBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Curing</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceCuringBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceRemoveHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>ToxicBuildup</affectedHediffDef>
+				<severityReduction>0.25</severityReduction>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceCuringBuff</defName>
+		<label>Shakalaka curing dance</label>
+		<description>This pawn witnessed the smooth movements of a Shakalaka curing dance, and is now more resistant to toxic effects for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicResistance>0.25</ToxicResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceElectrifyingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceElectrifyingAbility</defName>
+		<label>electrifying dance</label>
+		<description>A dance created by a wise Shakalaka of old. The eccentric movements leaves anyone that witnesses it stunned momentarily. This only affects hostile pawns.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of electrifying energy, decreasing their moving capability for a period of time.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceElectrifyingDebuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Electrifying</iconPath>
+		<statBases>
+			<Ability_Duration>150</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<targetParams>
+				<canTargetMechs>true</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityDoDamage">
+				<damageDef>EMP</damageDef>
+				<damageAmount>15</damageAmount>
+				<onlyHostile>True</onlyHostile>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceAddHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<addedHediffDef>Mashed_Lynian_ShakalakaDanceElectrifyingDebuff</addedHediffDef>
+				<onlyHostile>True</onlyHostile>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceElectrifyingDebuff</defName>
+		<label>Shakalaka electrifying dance</label>
+		<description>This pawn witnessed the eccentric movements of a Shakalaka electrifying dance, and now has reduced mobility for a period of time.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+					<capacity>Moving</capacity>
+					<offset>-0.15</offset>
+				  </li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceEvasiveAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceEvasiveAbility</defName>
+		<label>evasive dance</label>
+		<description>A dance created by a wise Shakalaka of old. The rapid movements help to fortify the reflexes of anyone that witnesses it, increasing their evasiveness and movement speed.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will feel more empowered, increasing the strength of the bonus.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceEvasiveBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Evasive</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceEvasiveBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceModifyHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>Mashed_Lynian_ShakalakaDanceEvasiveBuff</affectedHediffDef>
+				<severity>1</severity>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceEvasiveBuff</defName>
+		<label>Shakalaka evasive dance</label>
+		<description>This pawn witnessed the rapid movements of a Shakalaka evasive dance, and is now lighter on their feet for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>1</MeleeDodgeChance>
+					<MoveSpeed>0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MoveSpeed>0.4</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceExtinguishingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceExtinguishingAbility</defName>
+		<label>extinguishing dance</label>
+		<description>A dance created by a wise Shakalaka of old. The fluid movements stir up a vortex of energy, scaring any nearby fire into submission.\n\nIf the dancer is highly knowledgeable anyone nearby will be inspired by the performance, receiving a boost to fire resistance speed for a period of time.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceExtinguishingBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Extinguishing</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetFires>True</canTargetFires>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityExtinguishFire"/>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceAddHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<addedHediffDef>Mashed_Lynian_ShakalakaDanceExtinguishingBuff</addedHediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceExtinguishingBuff</defName>
+		<label>Shakalaka extinguishing dance</label>
+		<description>This pawn witnessed the fluid movements of a Shakalaka extinguishing dance, and now has increased fire resistance for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<Flammability>-0.25</Flammability>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceHealingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceHealingAbility</defName>
+		<label>healing dance</label>
+		<description>A dance created by a wise Shakalaka of old. The rhythmic movements help to heal the wounds of anyone that witnesses it, increasing their injury healing rate.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of healing energy, reducing the severity of blood loss by up to 25%.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceHealingBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Healing</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceHealingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceRemoveHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>BloodLoss</affectedHediffDef>
+				<severityReduction>0.25</severityReduction>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceHealingBuff</defName>
+		<label>Shakalaka healing dance</label>
+		<description>This pawn witnessed the rhythmic movements of a Shakalaka healing dance, and is now has a higher injury healing rate for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>0.15</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceInvigoratingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceInvigoratingAbility</defName>
+		<label>invigorating dance</label>
+		<description>A dance created by a wise Shakalaka of old. The energetic movements help to keep tiredness at bay for anyone that witnesses it, decreasing their rest fall rate.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of invigorating energy, replenishing their sleep need by 25%.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceInvigoratingBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Invigorating</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceInvigoratingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceReplenishNeed</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<needDef>Rest</needDef>
+				<needIncreaseFactor>0.25</needIncreaseFactor>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceInvigoratingBuff</defName>
+		<label>Shakalaka invigorating dance</label>
+		<description>This pawn witnessed the energetic movements of a Shakalaka invigorating dance, and is now more resistant to fatigue for a period of time.</description>
+		<stages>
+			<li>
+				<restFallFactor>-0.15</restFallFactor>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceJoyfulAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceJoyfulAbility</defName>
+		<label>joyful dance</label>
+		<description>A dance created by a wise Shakalaka of old. The spirited movements fill those that witnesses it with a profound feeling of joy, giving them a positive mood boost.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will feel more empowered, increasing the strength of the mood bonus.</description>
+		<descriptionHyperlinks>
+			<ThoughtDef>Mashed_Lynian_ShakalakaDanceJoyfulBuff</ThoughtDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Joyful</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityGiveThought">
+				<thoughtDef>Mashed_Lynian_ShakalakaDanceJoyfulBuff</thoughtDef>
+				<masterHediff>Mashed_Lynian_ShakalakaDanceMaster</masterHediff>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThoughtDef>
+		<defName>Mashed_Lynian_ShakalakaDanceJoyfulBuff</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>2</stackLimit>
+		<stackedEffectMultiplier>1</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>Shakalaka joyful dance</label>
+				<description>What a splendid dance, the way that little Lynian moved was truly skilled.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Lynian_DanceProtectiveAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceProtectiveAbility</defName>
+		<label>protective dance</label>
+		<description>A dance created by a wise Shakalaka of old. The stalwart movements help to fortify the body of anyone that witnesses it, increasing their resistance to physical damage.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will feel more empowered, increasing the strength of the protection bonus.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceProtectiveBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Protective</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceProtectiveBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceModifyHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>Mashed_Lynian_ShakalakaDanceProtectiveBuff</affectedHediffDef>
+				<severity>1</severity>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceProtectiveBuff</defName>
+		<label>Shakalaka protective dance</label>
+		<description>This pawn witnessed the stalwart movements of a Shakalaka protective dance, and is now more resistant to physical damage for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceStunningAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceStunningAbility</defName>
+		<label>stunning dance</label>
+		<description>A dance created by a wise Shakalaka of old. The aggressive movements leaves anyone that witnesses it stunned momentarily. This only affects hostile pawns.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of stunning energy, decreasing their moving capability for a period of time.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceStunningDebuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Stunning</iconPath>
+		<statBases>
+			<Ability_Duration>150</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_AbilityDoDamage">
+				<damageDef>Stun</damageDef>
+				<damageAmount>15</damageAmount>
+				<onlyHostile>True</onlyHostile>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceAddHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<addedHediffDef>Mashed_Lynian_ShakalakaDanceStunningDebuff</addedHediffDef>
+				<onlyHostile>True</onlyHostile>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceStunningDebuff</defName>
+		<label>Shakalaka stunning dance</label>
+		<description>This pawn witnessed the aggressive movements of a Shakalaka stunning dance, and now has reduced mobility for a period of time.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+					<capacity>Moving</capacity>
+					<offset>-0.15</offset>
+				  </li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Lynian_DanceWarmingAbility]==========-->
+	<AbilityDef ParentName="Mashed_Lynian_ShakalakaDanceBase">
+		<defName>Mashed_Lynian_DanceWarmingAbility</defName>
+		<label>warming dance</label>
+		<description>A dance created by a wise Shakalaka of old. The erratic movements help to heat the body of anyone that witnesses it, increasing their resistance to the cold.\n\nIf the dancer is highly knowledgeable in the ways of Shakalaka dances, those that witness this dance will also feel a blast of warming energy, reducing the severity of hypothermia by up to 25%.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Lynian_ShakalakaDanceWarmingBuff</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Abilities/ShakalakaDances/Mashed_ShakalakaDance_Warming</iconPath>
+		<statBases>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Lynian_ShakalakaDanceWarmingBuff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applyToSelf>false</applyToSelf>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_MasterDanceBonus">
+				<compClass>Mashed_Lynians.CompAbilityEffect_MasterDanceRemoveHediff</compClass>
+				<requiredHediffDef>Mashed_Lynian_ShakalakaDanceMaster</requiredHediffDef>
+				<affectedHediffDef>Hypothermia</affectedHediffDef>
+				<severityReduction>0.25</severityReduction>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Lynian_AbilityBuffBase">
+		<defName>Mashed_Lynian_ShakalakaDanceWarmingBuff</defName>
+		<label>Shakalaka warming dance</label>
+		<description>This pawn witnessed the erratic movements of a Shakalaka warming dance, and is now more resilient to the heat for a period of time.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>15</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

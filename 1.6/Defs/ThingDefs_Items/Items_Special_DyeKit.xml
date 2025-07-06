@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]==========-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Lynian_LynianDyeKit</defName>
+		<label>lynian dye kit</label>
+		<description>A special kit that can be used to alter the colouration of a Lynian. This change does not take place on the genetic level, and as such will not carry over to offspring.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_LynianDyeKit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Mashed_Lynian_Special</li>
+		</tradeTags>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Apply {0}</useLabel>
+			</li>
+			<li Class="Mashed_Lynians.CompProperties_UseEffectLynianDyeKit"/>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Lynian_DyeKit</researchPrerequisite>
+			<recipeUsers>
+				<li>Mashed_Lynian_CraftingSpot</li>
+				<li>Mashed_Lynian_CraftingBench</li>
+			</recipeUsers>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+		</recipeMaker>
+		<costList>
+			<Mashed_Lynian_FelvinePowder>1</Mashed_Lynian_FelvinePowder>
+			<Dye>3</Dye>
+		</costList>
+	</ThingDef>
+</Defs>

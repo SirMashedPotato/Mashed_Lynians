@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffGiverSetDef>
+		<defName>Mashed_Lynian_LynianStandard</defName>
+		<hediffGivers>
+			<li Class="Mashed_Lynians.HediffGiver_RandomCatLike">
+				<hediff>Mashed_Lynian_Hairball</hediff>
+				<mtbDays>30</mtbDays>
+				<partsToAffect>
+					<li>Stomach</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+</Defs>

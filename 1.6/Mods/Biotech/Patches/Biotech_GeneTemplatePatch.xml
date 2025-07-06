@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneTemplateDef[defName = "AddictionResistant"]/chemicalBiostatOverrides</xpath>
+		<value>
+			<li>
+				<chemical>Mashed_Lynian_FelvineChemical</chemical>
+				<biostatMet>-1</biostatMet>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneTemplateDef[defName = "AddictionImmune"]/chemicalBiostatOverrides</xpath>
+		<value>
+			<li>
+				<chemical>Mashed_Lynian_FelvineChemical</chemical>
+				<biostatMet>-3</biostatMet>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneTemplateDef[defName = "ChemicalDependency"]/chemicalBiostatOverrides</xpath>
+		<value>
+			<li>
+				<chemical>Mashed_Lynian_FelvineChemical</chemical>
+				<biostatMet>3</biostatMet>
+			</li>
+		</value>
+	</Operation>
+</Patch>

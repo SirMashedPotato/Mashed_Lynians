@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Abilities_Aggressive]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThinkTreeDef[defName="Abilities_Aggressive"]/thinkRoot[@Class="ThinkNode_Priority"]/subNodes/li[@Class="ThinkNode_ConditionalColonist"]/subNodes</xpath>
+		<value>
+			<!-- ==========[Mashed_Lynian_PurrserkerRageAbility]==========-->
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>Mashed_Lynian_PurrserkerRageAbility</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalHashIntervalTick">
+						<interval>25</interval>
+						<subNodes>
+							<li Class="JobGiver_AICastAbilityOnSelf">
+								<ability>Mashed_Lynian_PurrserkerRageAbility</ability>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+			<!-- ==========[Mashed_Lynian_LynianFiringFurrenzyAbility]==========-->
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalHashIntervalTick">
+						<interval>65</interval>
+						<subNodes>
+							<li Class="JobGiver_AICastAbilityOnSelf">
+								<ability>Mashed_Lynian_LynianFiringFurrenzyAbility</ability>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+			<!-- ==========[Mashed_Lynian_LynianFurriousFiringFurrenzyAbility]==========-->
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalHashIntervalTick">
+						<interval>65</interval>
+						<subNodes>
+							<li Class="JobGiver_AICastAbilityOnSelf">
+								<ability>Mashed_Lynian_LynianFurriousFiringFurrenzyAbility</ability>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+			<!-- ==========[Mashed_Lynian_HuntersMarkAbility]==========-->
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>Mashed_Lynian_HuntersMarkAbility</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalHashIntervalTick">
+						<interval>65</interval>
+						<subNodes>
+							<li Class="Mashed_Lynians.JobGiver_AICastOnHostiles">
+								<ability>Mashed_Lynian_HuntersMarkAbility</ability>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+		</value>
+	</Operation>
+	<!-- ==========[Abilities_Escape]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThinkTreeDef[defName="Abilities_Escape"]/thinkRoot[@Class="ThinkNode_Priority"]/subNodes/li[@Class="ThinkNode_ConditionalColonist"]/subNodes</xpath>
+		<value>
+			<!-- ==========[Mashed_Lynian_DigAbility]==========-->
+			<li Class="ThinkNode_ConditionalHasAbility">
+				<ability>Mashed_Lynian_DigAbility</ability>
+				<subNodes>
+					<li Class="ThinkNode_ConditionalTotalDamage">
+						<thresholdPercent>0.25</thresholdPercent>
+						<subNodes>
+							<li Class="ThinkNode_HarmedRecently">
+								<thresholdTicks>120</thresholdTicks>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalUnderCombatPressure">
+										<maxThreatDistance>2</maxThreatDistance>
+										<minCloseTargets>2</minCloseTargets>
+										<subNodes>
+											<li Class="JobGiver_AIJumpEscapeEnemies">
+												<ability>Mashed_Lynian_DigAbility</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+		</value>
+	</Operation>
+</Patch>

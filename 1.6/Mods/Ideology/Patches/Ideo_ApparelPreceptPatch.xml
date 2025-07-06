@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[ApparelDesired_Strong_Subordinate]========== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="ApparelDesired_Strong_Subordinate"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="ApparelDesired_Strong_Subordinate"]</xpath>
+			<value>
+				<conflictingMemes/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="ApparelDesired_Strong_Subordinate"]/conflictingMemes</xpath>
+		<value>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</value>
+	</Operation>
+	<!-- ==========[ApparelDesired_Soft_Subordinate]========== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="ApparelDesired_Soft_Subordinate"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="ApparelDesired_Soft_Subordinate"]</xpath>
+			<value>
+				<conflictingMemes/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="ApparelDesired_Soft_Subordinate"]/conflictingMemes</xpath>
+		<value>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</value>
+	</Operation>
+	<!-- ==========[Nudity_Male_CoveringAnythingButGroinDisapproved]========== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="Nudity_Male_CoveringAnythingButGroinDisapproved"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="Nudity_Male_CoveringAnythingButGroinDisapproved"]</xpath>
+			<value>
+				<conflictingMemes/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Nudity_Male_CoveringAnythingButGroinDisapproved"]/conflictingMemes</xpath>
+		<value>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</value>
+	</Operation>
+	<!-- ==========[Nudity_Female_CoveringAnythingButGroinDisapproved]========== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="Nudity_Female_CoveringAnythingButGroinDisapproved"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="Nudity_Female_CoveringAnythingButGroinDisapproved"]</xpath>
+			<value>
+				<conflictingMemes/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Nudity_Female_CoveringAnythingButGroinDisapproved"]/conflictingMemes</xpath>
+		<value>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</value>
+	</Operation>
+	<!-- ==========[Nudity_Male_Mandatory]========== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="Nudity_Male_Mandatory"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="Nudity_Male_Mandatory"]</xpath>
+			<value>
+				<conflictingMemes/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Nudity_Male_Mandatory"]/conflictingMemes</xpath>
+		<value>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</value>
+	</Operation>
+	<!-- ==========[Nudity_Female_Mandatory]========== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PreceptDef[defName="Nudity_Female_Mandatory"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName="Nudity_Female_Mandatory"]</xpath>
+			<value>
+				<conflictingMemes/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Nudity_Female_Mandatory"]/conflictingMemes</xpath>
+		<value>
+			<li>Mashed_Lynian_MaskWearingMeme</li>
+		</value>
+	</Operation>
+</Patch>

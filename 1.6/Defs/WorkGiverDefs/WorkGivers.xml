@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- =====[Crafting spot]===== -->
+	<WorkGiverDef>
+		<defName>Mashed_Lynian_DoBillsUseCraftingSpot</defName>
+		<label>make things at Lynian crafting spot</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Mashed_Lynian_CraftingSpot</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	<!-- =====[Crafting table]===== -->
+	<WorkGiverDef>
+		<defName>Mashed_Lynian_DoBillsUseCraftingBench</defName>
+		<label>make things at Lynian crafting bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>90</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Mashed_Lynian_CraftingBench</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>

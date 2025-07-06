@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>Mashed_Lynian_NamerPerson_CatLike_SpecialMeme</defName>
+		<include>
+			<li>Mashed_Lynian_NamerPerson_Utility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name(p=999)->[CatLikeSpecialMeme] [CatLikeSpecialMeme]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
