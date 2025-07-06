@@ -366,12 +366,6 @@
 				<tradeTag>Mashed_Lynian_EurekacornShakalaka</tradeTag>
 				<countRange>1~2</countRange>
 			</li>
-			<!-- Dance books -->
-			<li Class="StockGenerator_Tag">
-				<tradeTag>Mashed_Lynian_ShakalakaDanceBook</tradeTag>
-				<thingDefCountRange>1~2</thingDefCountRange>
-				<countRange>1</countRange>
-			</li>
 			<!-- Recruits -->
 			<li Class="Mashed_Lynians.StockGenerator_Palicoes">
 				<respectPopulationIntent>True</respectPopulationIntent>

@@ -5,8 +5,6 @@ using System.Reflection;
 using RimWorld;
 using System;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 
 namespace Mashed_Lynians
 {
@@ -49,7 +47,7 @@ namespace Mashed_Lynians
                         pawn.abilities.GainAbility(ad);
                     }
                 }
-                if (!props.oneOfRandomAbility.NullOrEmpty() && (Rand.Chance(props.oneOfRandomChance) || pawn.kindDef == PawnKindDefOf.Mashed_Lynian_ShakalakaWanderer))
+                if (!props.oneOfRandomAbility.NullOrEmpty() && Rand.Chance(props.oneOfRandomChance))
                 {
                     pawn.abilities.GainAbility(props.oneOfRandomAbility.RandomElement());
                 }
