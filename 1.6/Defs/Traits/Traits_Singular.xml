@@ -8,7 +8,7 @@
 				<label>sneaky paws</label>
 				<description>{PAWN_nameDef}'s paws always end up places they shouldn't, yet {PAWN_nameDef} never seems to get caught red-pawed.</description>
 				<statOffsets>
-					<Mashed_Lynian_PilferChance>+0.10</Mashed_Lynian_PilferChance>
+					<Mashed_Lynian_PilferChance>0.1</Mashed_Lynian_PilferChance>
 				</statOffsets>
 			</li>
 		</degreeDatas>

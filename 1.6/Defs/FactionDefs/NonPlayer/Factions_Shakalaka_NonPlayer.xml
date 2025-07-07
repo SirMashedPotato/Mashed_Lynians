@@ -4,16 +4,6 @@
 		<defName>Mashed_Lynian_NonPlayerShakalakaTribe</defName>
 		<label>Shakalaka tribe</label>
 		<description>A small Shakalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Shakalaka strike without fear and subsequently make both viscous foes, and powerful allies.\n\nBeing a Shakalaka tribe, this particular tribe is incredibly reclusive, and often openly hostile to anyone that enters their territory; it may be difficult to turn them into an ally.</description>
-		<modExtensions>
-			<li Class="ESCP_RaceTools.SettlementPreference" MayRequire="SirMashedPotato.ESCP.RaceTools">
-				<biomeKeyWords>
-					<li>temperate</li>
-					<li>Temperate</li>
-					<li>tropical</li>
-					<li>Tropical</li>
-				</biomeKeyWords>
-			</li>
-		</modExtensions>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_ShakalakaSettlement_NonPlayer</factionIconPath>
 		<colorSpectrum>
 			<li>(0.5, 0.4, 0.3)</li>

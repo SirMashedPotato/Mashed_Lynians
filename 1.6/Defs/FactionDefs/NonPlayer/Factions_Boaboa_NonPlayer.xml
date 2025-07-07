@@ -4,17 +4,6 @@
 		<defName>Mashed_Lynian_NonPlayerBoaboaTribe</defName>
 		<label>Boaboa tribe</label>
 		<description>A small Boaboa tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Boaboa are highly skilled hunters, and subsequently make both viscous foes, and powerful allies.\n\nBeing a Boaboa tribe, this particular tribe is distrustful of outsiders, and often openly hostile to anyone that encroaches their hunting grounds; it may be difficult to turn them into an ally.</description>
-		<modExtensions>
-			<li Class="ESCP_RaceTools.SettlementPreference" MayRequire="SirMashedPotato.ESCP.RaceTools">
-				<biomeKeyWords>
-					<li>boreal</li>
-					<li>Boreal</li>
-					<li>tundra</li>
-					<li>Tundra</li>
-					<li>VulcanicIceSheet</li>
-				</biomeKeyWords>
-			</li>
-		</modExtensions>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_BoaboaSettlement_NonPlayer</factionIconPath>
 		<colorSpectrum>
 			<li>(0.6, 0.3, 0.2)</li>

@@ -4,14 +4,6 @@
 		<defName>Mashed_Lynian_NonPlayerGajalakaTribe</defName>
 		<label>Gajalaka tribe</label>
 		<description>A small Gajalaka tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Gajalaka are ferocious warriors and subsequently make both viscous foes, and powerful allies.\n\nBeing a Gajalaka tribe, this particular tribe is distrustful of outsiders, and often openly hostile to anyone that encroaches into their territory; it may be difficult to turn them into an ally.</description>
-		<modExtensions>
-			<li Class="ESCP_RaceTools.SettlementPreference" MayRequire="SirMashedPotato.ESCP.RaceTools">
-				<requiredHillLevels>
-					<li>LargeHills</li>
-					<li>Mountainous</li>
-				</requiredHillLevels>
-			</li>
-		</modExtensions>
 		<factionIconPath>World/WorldObjects/Expanding/Mashed_GajalakaSettlement_NonPlayer</factionIconPath>
 		<colorSpectrum>
 			<li>(0.9, 0.2, 0.2)</li>
