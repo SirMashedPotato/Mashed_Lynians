@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using Verse;
 
 namespace Mashed_Lynians
 {
@@ -10,8 +9,7 @@ namespace Mashed_Lynians
             compClass = typeof(CompUseEffect_Eurekacorn);
         }
 
-        public AbilityDef ability;
-        public HediffDef hediff;
+        public int skillPointCount = 1;
         public bool fillHunger = false;
     }
 }

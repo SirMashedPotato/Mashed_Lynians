@@ -115,6 +115,7 @@
 			<fixedParams>
 				<filter>
 					<thingDefs>
+						<li>Mashed_Lynian_Eurekacorn</li>
 						<li>WoodLog</li>
 						<li>MedicineHerbal</li>
 						<li>Pemmican</li>

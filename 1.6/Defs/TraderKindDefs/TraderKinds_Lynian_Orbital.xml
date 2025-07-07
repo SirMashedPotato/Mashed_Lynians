@@ -50,8 +50,8 @@
 				<countRange>1~5</countRange>
 			</li>
 			<!-- Special -->
-			<li Class="StockGenerator_MarketValue">
-				<tradeTag>Mashed_Lynian_Eurekacorn</tradeTag>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Lynian_Eurekacorn</thingDef>
 				<countRange>1~3</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
