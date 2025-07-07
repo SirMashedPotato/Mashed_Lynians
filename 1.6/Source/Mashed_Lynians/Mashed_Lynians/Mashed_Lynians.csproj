@@ -104,6 +104,7 @@
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Dialog\Dialog_DyeColorPicker.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Harmony\Patches_ApparelColour.cs" />
     <Compile Include="Harmony\Patches_Recruits.cs" />
     <Compile Include="Harmony\Patch_MassUtility.cs" />
     <Compile Include="Harmony\Patch_PawnAddictionHediffsGenerator.cs" />

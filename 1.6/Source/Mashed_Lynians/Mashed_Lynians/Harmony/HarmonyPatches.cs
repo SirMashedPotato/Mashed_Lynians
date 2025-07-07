@@ -34,52 +34,6 @@ namespace Mashed_Lynians
         }
     }
 
-    //TODO still necessary?
-    /// <summary>
-    /// Recolours specific apparel using colorGenerator when crafted.
-    /// </summary>
-    /*[HarmonyPatch(typeof(GenRecipe))] 
-    [HarmonyPatch("PostProcessProduct")]
-    public static class GenRecipe_PostProcessProduct_Patch
-    {
-        [HarmonyPostfix]
-        public static void LyniansPatch(Thing __result)
-        {
-            ApparelProperties props = ApparelProperties.Get(__result.def);
-            if (props != null && props.overrideColour)
-            {
-                if (__result.def.colorGenerator != null)
-                {
-                    CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
-                }
-            }
-        }
-    }*/
-
-    //TODO still necessary?
-    /// <summary>
-    /// Recolours specific apparel using colorGenerator.
-    /// Covers most cases, apart from crafting
-    /// </summary>
-    /*[HarmonyPatch(typeof(ThingMaker))]
-    [HarmonyPatch("MakeThing")]
-    public static class ThingMaker_MakeThing_Patch
-    {
-        [HarmonyPostfix]
-        public static void LyniansPatch(Thing __result)
-        {
-            ApparelProperties props = ApparelProperties.Get(__result.def);
-            if (props != null && props.overrideColour)
-            {
-                if (__result.def.colorGenerator != null)
-                {
-                    CompColorableUtility.SetColor(__result, __result.def.colorGenerator.NewRandomizedColor(), true);
-                }
-            }
-        }
-    }*/
-
-
     //TODO this needs to get redone
     /// <summary>
     /// Doubles, or halves, the specific stats for pawns affected by specific hediffs
@@ -155,7 +109,7 @@ namespace Mashed_Lynians
     /// <summary>
     /// Overrides the gizmo for the ultimate masks shield
     /// </summary>
-    [HarmonyPatch(typeof(Gizmo_EnergyShieldStatus))]
+    /*[HarmonyPatch(typeof(Gizmo_EnergyShieldStatus))]
     [HarmonyPatch("GizmoOnGUI")]
     public static class Gizmo_EnergyShieldStatuse_GizmoOnGUI_Patch
     {
@@ -192,5 +146,5 @@ namespace Mashed_Lynians
             }
             return true;
         }
-    }
+    }*/
 }
