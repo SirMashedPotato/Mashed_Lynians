@@ -152,7 +152,7 @@ namespace Mashed_Lynians
         private float g;
         private float b;
 
-        private bool primaryColor;
+        private readonly bool primaryColor;
         private Color color;
         private Color oldColor;
         private CompUseEffect_LynianDyeKit dyeComp;

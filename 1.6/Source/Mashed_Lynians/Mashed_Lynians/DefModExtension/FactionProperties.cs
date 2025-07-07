@@ -6,9 +6,6 @@ namespace Mashed_Lynians
     {
         public PawnKindDef manInBlackReplacer;
 
-        public static FactionProperties Get(Def def)
-        {
-            return def.GetModExtension<FactionProperties>();
-        }
+        public static FactionProperties Get(Def def) => def.GetModExtension<FactionProperties>();
     }
 }

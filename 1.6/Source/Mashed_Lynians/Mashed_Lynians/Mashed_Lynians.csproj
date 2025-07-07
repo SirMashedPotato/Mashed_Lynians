@@ -93,7 +93,6 @@
     <Compile Include="DefModExtension\PawnKindProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
-    <Compile Include="DefOf\FactionDefOf.cs" />
     <Compile Include="DefOf\GeneDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\HistoryEventDefOf.cs" />
@@ -105,8 +104,8 @@
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Dialog\Dialog_DyeColorPicker.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
-    <Compile Include="Harmony\Harmony_Biotech.cs" />
-    <Compile Include="Harmony\Harmony_Ideology.cs" />
+    <Compile Include="Harmony\Patch_PregnancyUtility.cs" />
+    <Compile Include="Harmony\Patch_CompGiveHediffSeverity.cs" />
     <Compile Include="Harmony\Harmony_Romance.cs" />
     <Compile Include="HediffComp\HediffComp_FurriousFurrenzyTooltip_Halved.cs" />
     <Compile Include="HediffComp\HediffComp_HuntersMark.cs" />

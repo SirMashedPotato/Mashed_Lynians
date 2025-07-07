@@ -9,13 +9,9 @@ namespace Mashed_Lynians
         public List<float> qualityCarryWeightMults;
 
         public bool treatAsCatLike = false;
-
         public bool overrideColour = false;
 
-        public static ApparelProperties Get(Def def)
-        {
-            return def.GetModExtension<ApparelProperties>();
-        }
+        public static ApparelProperties Get(Def def) => def.GetModExtension<ApparelProperties>();
 
         public override IEnumerable<string> ConfigErrors()
         {
