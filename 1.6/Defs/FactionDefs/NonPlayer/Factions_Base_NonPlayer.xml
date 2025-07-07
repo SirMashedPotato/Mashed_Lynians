@@ -6,7 +6,7 @@
 		<pawnsPlural>tribepaws</pawnsPlural>
 		<categoryTag>Tribal</categoryTag>
 		<listOrderPriority>20</listOrderPriority>
-		<settlementGenerationWeight>0.03</settlementGenerationWeight>
+		<settlementGenerationWeight>0.000001</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
