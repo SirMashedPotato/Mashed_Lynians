@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerHostileFactionBase">
+		<defName>Mashed_Lynian_NonPlayerBoaboaTribe</defName>
+		<label>Boaboa tribe</label>
+		<description>A small Boaboa tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, Boaboa are highly skilled hunters, and subsequently make both viscous foes, and powerful allies.\n\nBeing a Boaboa tribe, this particular tribe is distrustful of outsiders, and often openly hostile to anyone that encroaches their hunting grounds; it may be difficult to turn them into an ally.</description>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_BoaboaSettlement_NonPlayer</factionIconPath>
+		<colorSpectrum>
+			<li>(0.6, 0.3, 0.2)</li>
+			<li>(0.5, 0.3, 0.3)</li>
+		</colorSpectrum>
+		<factionNameMaker>Mashed_Lynian_NamerFactionBoaboa</factionNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_BoaboaTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_BoaboaTrader</li>
+		</baseTraderKinds>
+		<raidLootMaker>Mashed_Lynian_BoaboaRaidLootMaker</raidLootMaker>
+		<disallowedMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme</li>
+			<li MayRequire="AP.huntingmeme">AP_HuntingMeme</li>
+		</requiredMemes>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Wolf</li>
+				<li>Leather_Panthera</li>
+				<li>Leather_Bluefur</li>
+				<li>Leather_Bear</li>
+				<li>Leather_Fox</li>
+				<li>Leather_Heavy</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>5</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaWarrior>10</Mashed_Lynian_BoaboaWarrior>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
+					<Mashed_Lynian_BoaboaChiefRanged>3</Mashed_Lynian_BoaboaChiefRanged>
+					<Mashed_Lynian_BoaboaChiefMelee>1.5</Mashed_Lynian_BoaboaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>10</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
+					<Mashed_Lynian_BoaboaChiefRanged>5</Mashed_Lynian_BoaboaChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>10</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaWarrior>10</Mashed_Lynian_BoaboaWarrior>
+					<Mashed_Lynian_BoaboaChiefMelee>5</Mashed_Lynian_BoaboaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>5</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaWarrior>5</Mashed_Lynian_BoaboaWarrior>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>10</Mashed_Lynian_BoaboaBombadier>
+					<Mashed_Lynian_BoaboaChiefRanged>3</Mashed_Lynian_BoaboaChiefRanged>
+					<Mashed_Lynian_BoaboaChiefMelee>1.5</Mashed_Lynian_BoaboaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mashed_Lynian_BoaboaWarrior>20</Mashed_Lynian_BoaboaWarrior>
+					<Mashed_Lynian_BoaboaGatherer>10</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
+					<Mashed_Lynian_BoaboaChiefRanged>3</Mashed_Lynian_BoaboaChiefRanged>
+					<Mashed_Lynian_BoaboaChiefMelee>1.5</Mashed_Lynian_BoaboaChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Mashed_Lynian_BoaboaTrader>1</Mashed_Lynian_BoaboaTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>8</Alpaca>
+				</carriers>
+				<guards>
+					<Mashed_Lynian_BoaboaWarrior>7</Mashed_Lynian_BoaboaWarrior>
+					<Mashed_Lynian_BoaboaGatherer>5</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mashed_Lynian_BoaboaWarrior>7</Mashed_Lynian_BoaboaWarrior>
+					<Mashed_Lynian_BoaboaGatherer>5</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
+					<Mashed_Lynian_BoaboaChiefRanged>10</Mashed_Lynian_BoaboaChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>10</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaHunter>10</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaBombadier>5</Mashed_Lynian_BoaboaBombadier>
+					<Mashed_Lynian_BoaboaChiefRanged>10</Mashed_Lynian_BoaboaChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>2</Mashed_Lynian_BoaboaGatherer>
+					<Mashed_Lynian_BoaboaBombadier>1</Mashed_Lynian_BoaboaBombadier>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaHunter>2</Mashed_Lynian_BoaboaHunter>
+					<Mashed_Lynian_BoaboaWarrior>1</Mashed_Lynian_BoaboaWarrior>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>1</Mashed_Lynian_BoaboaGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_BoaboaGatherer>1</Mashed_Lynian_BoaboaGatherer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[Boaboa Loot Maker]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Lynian_BoaboaRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Silver</li>
+						<li>Jade</li>
+						<li>MedicineHerbal</li>
+						<li>Pemmican</li>
+						<li>Leather_Wolf</li>
+						<li>Leather_Panthera</li>
+						<li>Leather_Bluefur</li>
+						<li>Leather_Bear</li>
+						<li>Leather_Fox</li>
+						<li>Leather_Heavy</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

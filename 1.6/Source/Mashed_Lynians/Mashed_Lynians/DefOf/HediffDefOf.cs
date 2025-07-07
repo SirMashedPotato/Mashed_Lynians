@@ -6,11 +6,7 @@ namespace Mashed_Lynians
 	[DefOf]
 	public static class HediffDefOf
 	{
-
-		static HediffDefOf()
-		{
-			DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
-		}
+		static HediffDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
 
 		public static HediffDef Mashed_Lynian_PilferedFelvine;
 		public static HediffDef Mashed_Lynian_FelvineHighFrenzy;
@@ -22,7 +18,6 @@ namespace Mashed_Lynians
 		public static HediffDef Mashed_Lynian_LynianFiringFurrenzy;
 		public static HediffDef Mashed_Lynian_LynianMiningFurrenzy;
 		public static HediffDef Mashed_Lynian_PurrserkerRage;
-		public static HediffDef Mashed_Lynian_PurrserkerClaws;
 		[MayRequireBiotech]
 		public static HediffDef Mashed_Lynian_LynianFurriousFiringFurrenzy;
 		public static HediffDef Mashed_Lynian_HuntersMarkDebuff;

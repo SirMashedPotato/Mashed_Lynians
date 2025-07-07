@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Arrivals]========== -->
+	<FactionDef ParentName="Mashed_Lynian_OutlanderFactionBase">
+		<defName>Mashed_Lynian_UrukiPlayerColony</defName>
+		<label>New Uruki Arrivals</label>
+		<basicMemberKind>Mashed_Lynian_UrukiColonist</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_UrukiSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Tribal]========== -->
+	<FactionDef ParentName="Mashed_Lynian_TribalFactionBase">
+		<defName>Mashed_Lynian_UrukiPlayerTribe</defName>
+		<label>New Uruki Tribe</label>
+		<description>A small Uruki tribe.</description>
+		<basicMemberKind>Mashed_Lynian_UrukiTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_UrukiSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+	<!-- ==========[Medieval]========== -->
+	<FactionDef ParentName="Mashed_Lynian_MedievalFactionBase">
+		<defName>Mashed_Lynian_UrukiPlayerGuild</defName>
+		<label>New Uruki Guild</label>
+		<description>A small Uruki guild.</description>
+		<basicMemberKind>Mashed_Lynian_UrukiTribesperson</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_UrukiSettlement_Player</factionIconPath>
+		<startingResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Mashed_Lynian_UrukiStart</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+</Defs>

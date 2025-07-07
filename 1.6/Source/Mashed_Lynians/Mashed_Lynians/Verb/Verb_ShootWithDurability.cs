@@ -8,12 +8,12 @@ namespace Mashed_Lynians
         {
             if (base.TryCastShot())
             {
-                if (base.EquipmentSource != null)
+                if (EquipmentSource != null)
                 {
-                    base.EquipmentSource.HitPoints -= 15;
-                    if (base.EquipmentSource.HitPoints <= 0)
+                    EquipmentSource.HitPoints -= 15;
+                    if (EquipmentSource.HitPoints <= 0)
                     {
-                        this.SelfConsume();
+                        SelfConsume();
                     }
                 }
             }
@@ -22,9 +22,9 @@ namespace Mashed_Lynians
 
         private void SelfConsume()
         {
-            if (base.EquipmentSource != null && !base.EquipmentSource.Destroyed)
+            if (EquipmentSource != null && !EquipmentSource.Destroyed)
             {
-                base.EquipmentSource.Destroy(DestroyMode.Vanish);
+                EquipmentSource.Destroy(DestroyMode.Vanish);
             }
         }
     }

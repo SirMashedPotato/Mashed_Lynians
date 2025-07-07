@@ -8,10 +8,10 @@
 			<li Class="Mashed_Lynians.RaceProperties">
 				<isCatLike>True</isCatLike>
 				<canUseFelvine>True</canUseFelvine>
-				<abilitiesToAdd>
+				<startingAbilities>
 					<li>Mashed_Lynian_DigAbility</li>
 					<li>Mashed_Lynian_PilferAbility</li>
-				</abilitiesToAdd>
+				</startingAbilities>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Melynx</hybridInheritedGene>
 			</li>
 		</modExtensions>

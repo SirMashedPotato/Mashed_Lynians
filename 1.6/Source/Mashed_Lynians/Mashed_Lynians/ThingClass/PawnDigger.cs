@@ -8,9 +8,6 @@ namespace Mashed_Lynians
 {
     public class PawnDigger : PawnFlyer
     {
-		/// <summary>
-		/// TODO possibly rework this for changes in 1.5
-		/// </summary>
 		public override Vector3 DrawPos
 		{
 			get

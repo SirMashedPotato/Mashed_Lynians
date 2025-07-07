@@ -43,9 +43,4 @@
 		<label>eurekacorns</label>
 		<parent>Items</parent>
 	</ThingCategoryDef>
-	<ThingCategoryDef>
-		<defName>Mashed_Lynian_ShakalakaDanceBooks</defName>
-		<label>Shakalaka dance books</label>
-		<parent>Items</parent>
-	</ThingCategoryDef>
 </Defs>

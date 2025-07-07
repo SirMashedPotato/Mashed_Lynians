@@ -5,13 +5,7 @@ namespace Mashed_Lynians
 {
     public class CompAbilityEffect_GiveHediffToParts : CompAbilityEffect_WithDuration
     {
-        public new CompProperties_AbilityGiveHediffToParts Props
-        {
-            get
-            {
-                return (CompProperties_AbilityGiveHediffToParts)this.props;
-            }
-        }
+        public new CompProperties_AbilityGiveHediffToParts Props =>  (CompProperties_AbilityGiveHediffToParts)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

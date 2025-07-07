@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Verse;
-using Verse.AI;
 using RimWorld;
 
 namespace Mashed_Lynians
@@ -64,6 +62,6 @@ namespace Mashed_Lynians
 				true
 			}
 		};
-		private static List<Pawn> potentialTargets = new List<Pawn>();
+		private static readonly List<Pawn> potentialTargets = new List<Pawn>();
 	}
 }

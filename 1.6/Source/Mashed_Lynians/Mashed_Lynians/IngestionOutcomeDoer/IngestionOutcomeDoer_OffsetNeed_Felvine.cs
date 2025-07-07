@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace Mashed_Lynians
@@ -7,7 +6,6 @@ namespace Mashed_Lynians
     /// <summary>
     /// Basically an exact copy because IngestionOutcomeDoer_OffsetNeed.DoIngestionOutcomeSpecial is protected
     /// I guess I could've done this through Harmony patching, but eh
-    /// TODO see if this can be redone through HAR stuff
 	/// TODO int ingestedCount is new, probably need to update this
     /// </summary>
     public class IngestionOutcomeDoer_OffsetNeed_Felvine : IngestionOutcomeDoer_OffsetNeed

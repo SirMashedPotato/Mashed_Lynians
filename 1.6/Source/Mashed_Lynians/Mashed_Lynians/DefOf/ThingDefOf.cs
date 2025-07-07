@@ -6,11 +6,7 @@ namespace Mashed_Lynians
 	[DefOf]
 	public static class ThingDefOf
 	{
-
-		static ThingDefOf()
-		{
-			DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));
-		}
+		static ThingDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));
 
 		public static ThingDef Mashed_Lynian_LynianFur;
 		public static ThingDef Mashed_Lynian_LynianThickFur;

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="Mashed_Lynian_NonPlayerTribalFactionBase">
+		<defName>Mashed_Lynian_NonPlayerUrukiTribe</defName>
+		<label>Uruki tribe</label>
+		<description>A small Uruki tribe, possibly the legacy of a small group of Lynians that went off in search of some place to call home.\n\nWhile not very technologically advanced, and generally peaceful by nature, Uruki are willing to defend their homes with unrivalled ferocity.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<factionIconPath>World/WorldObjects/Expanding/Mashed_UrukiSettlement_Player</factionIconPath>
+		<colorSpectrum>
+			<li>(1.0, 0.9, 0.3)</li>
+			<li>(0.9, 1.0, 0.3)</li>
+		</colorSpectrum>
+		<factionNameMaker>Mashed_Lynian_NamerFactionUruki</factionNameMaker>
+		<settlementNameMaker>Mashed_Lynian_NamerSettlementCatLike</settlementNameMaker>
+		<caravanTraderKinds>
+			<li>Mashed_Lynian_UrukiTrader</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Mashed_Lynian_UrukiTrader</li>
+		</baseTraderKinds>
+		<raidLootMaker>Mashed_Lynian_UrukiRaidLootMaker</raidLootMaker>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Mashed_Lynian_MaskWearingMeme</li>
+		</disallowedMemes>
+		<canStageAttacks>false</canStageAttacks>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>10</Mashed_Lynian_UrukiGatherer>
+					<Mashed_Lynian_UrukiBombadier>10</Mashed_Lynian_UrukiBombadier>
+					<Mashed_Lynian_UrukiChiefRanged>3</Mashed_Lynian_UrukiChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>10</Mashed_Lynian_UrukiGatherer>
+					<Mashed_Lynian_UrukiBombadier>7</Mashed_Lynian_UrukiBombadier>
+					<Mashed_Lynian_UrukiChiefRanged>5</Mashed_Lynian_UrukiChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>10</Mashed_Lynian_UrukiGatherer>
+					<Mashed_Lynian_UrukiBombadier>10</Mashed_Lynian_UrukiBombadier>
+					<Mashed_Lynian_UrukiChiefRanged>3</Mashed_Lynian_UrukiChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Mashed_Lynian_UrukiTrader>1</Mashed_Lynian_UrukiTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>8</Alpaca>
+				</carriers>
+				<guards>
+					<Mashed_Lynian_UrukiGatherer>10</Mashed_Lynian_UrukiGatherer>
+					<Mashed_Lynian_UrukiBombadier>5</Mashed_Lynian_UrukiBombadier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>10</Mashed_Lynian_UrukiGatherer>
+					<Mashed_Lynian_UrukiBombadier>5</Mashed_Lynian_UrukiBombadier>
+					<Mashed_Lynian_UrukiChiefRanged>10</Mashed_Lynian_UrukiChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>2</Mashed_Lynian_UrukiGatherer>
+					<Mashed_Lynian_UrukiBombadier>1</Mashed_Lynian_UrukiBombadier>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>1</Mashed_Lynian_UrukiGatherer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Mashed_Lynian_UrukiGatherer>1</Mashed_Lynian_UrukiGatherer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[Uruki Loot Maker]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Lynian_UrukiRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>MedicineHerbal</li>
+						<li>Pemmican</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

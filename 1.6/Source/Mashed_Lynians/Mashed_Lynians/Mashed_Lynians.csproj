@@ -70,33 +70,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbilityComp\CompAbilityEffect_AbilityExtinguishFire.cs" />
-    <Compile Include="AbilityComp\CompAbilityEffect_CleanFilth.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Dig.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_DoDamage.cs" />
-    <Compile Include="AbilityComp\CompAbilityEffect_EffecterOnSelf.cs" />
-    <Compile Include="AbilityComp\CompAbilityEffect_EndPurrserkerRage.cs" />
+    <Compile Include="AbilityComp\CompProperties_AbilityRemoveHediffs.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_GiveHediffToParts.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_IncrementRecord.cs" />
-    <Compile Include="AbilityComp\CompAbiltyEffect_GiveThought.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_AbilityCleanFilth.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_AbilityDoDamage.cs" />
-    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceAddHediff.cs" />
-    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceModifyHediff.cs" />
-    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceRemoveHediff.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_Pilfer.cs" />
     <Compile Include="AbilityComp\CompAbilityEffect_PromoteGrowth.cs" />
-    <Compile Include="AbilityComp\Master Dance\CompAbilityEffect_MasterDanceReplenishNeed.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_AbilityEffecterOnSelf.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_AbilityExtinguishFire.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityDoDamage.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityRemoveHediffs.cs" />
     <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveHediffToParts.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_AbilityGiveThought.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_Dig.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_IncrementRecord.cs" />
-    <Compile Include="AbilityComp\Master Dance\Properties\CompProperties_MasterDanceBonus.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_Pilfer.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_PromoteGrowth.cs" />
-    <Compile Include="AbilityComp\Properties\CompProperties_EndPurrserkerRage.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityDig.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityIncrementRecord.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityPilfer.cs" />
+    <Compile Include="AbilityComp\Properties\CompProperties_AbilityPromoteGrowth.cs" />
     <Compile Include="CompUse\CompUseEffect_Eurekacorn.cs" />
     <Compile Include="CompUse\CompUseEffect_LynianDyeKit.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectEurekacorn.cs" />
@@ -106,7 +93,6 @@
     <Compile Include="DefModExtension\PawnKindProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\ChemicalDefOf.cs" />
-    <Compile Include="DefOf\FactionDefOf.cs" />
     <Compile Include="DefOf\GeneDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\HistoryEventDefOf.cs" />
@@ -118,21 +104,24 @@
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Dialog\Dialog_DyeColorPicker.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
-    <Compile Include="Harmony\Harmony_Biotech.cs" />
-    <Compile Include="Harmony\Harmony_Ideology.cs" />
-    <Compile Include="Harmony\Harmony_Romance.cs" />
+    <Compile Include="Harmony\Patches_ApparelColour.cs" />
+    <Compile Include="Harmony\Patches_Recruits.cs" />
+    <Compile Include="Harmony\Patch_MassUtility.cs" />
+    <Compile Include="Harmony\Patch_PawnAddictionHediffsGenerator.cs" />
+    <Compile Include="Harmony\Patch_PawnGenerator.cs" />
+    <Compile Include="Harmony\Patch_PregnancyUtility.cs" />
+    <Compile Include="Harmony\Patch_CompGiveHediffSeverity.cs" />
+    <Compile Include="Harmony\Patches_Romance.cs" />
     <Compile Include="HediffComp\HediffComp_FurriousFurrenzyTooltip_Halved.cs" />
     <Compile Include="HediffComp\HediffComp_HuntersMark.cs" />
     <Compile Include="HediffComp\HediffComp_UnequipWeapons.cs" />
     <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\HediffComp_DisappearsOnDowned.cs" />
     <Compile Include="HediffComp\HediffComp_WorkingFurrenzyTooltip_Halved.cs" />
-    <Compile Include="HediffComp\Properties\HediffCompProperties_DisappearsOnDowned.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_FurriousFurrenzyTooltip.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_WorkingFurrenzyTooltip.cs" />
     <Compile Include="HediffGiver\HediffGiver_RandomCatLike.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
-    <Compile Include="IncidentWorker\IncidentWorker_LynianColonistJoin.cs" />
     <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
     <Compile Include="Settings\Mashed_Lynians_Mod.cs" />
     <Compile Include="Settings\Mashed_Lynians_ModSettings.cs" />
@@ -140,7 +129,6 @@
     <Compile Include="Sites\SitePartWorker_ShakalakaWanderer.cs" />
     <Compile Include="Sites\SiteUtility.cs" />
     <Compile Include="StockGenerator\StockGenerator_Palicoes.cs" />
-    <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
@@ -157,9 +145,7 @@
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
-    <Compile Include="Verb\Verb_CastAbilityTouch_PromoteGrowth.cs" />
     <Compile Include="Verb\Verb_ShootWithDurability.cs" />
-    <Compile Include="Verb\Verb_CastAbilityTouch_Pilfer.cs" />
     <Compile Include="Verb\Verb_CastAbility_Dig.cs" />
   </ItemGroup>
   <ItemGroup>

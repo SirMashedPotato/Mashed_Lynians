@@ -8,21 +8,9 @@ namespace Mashed_Lynians
     [StaticConstructorOnStartup]
     public class Comp_UltimateMaskShield : CompShield
 	{
-		public new CompProperties_UltimateMaskShield Props
-		{
-			get
-			{
-				return (CompProperties_UltimateMaskShield)props;
-			}
-		}
+		public new CompProperties_UltimateMaskShield Props => (CompProperties_UltimateMaskShield)props;
 
-		private float EnergyMax
-		{
-			get
-			{
-				return parent.GetStatValue(RimWorld.StatDefOf.EnergyShieldEnergyMax, true, -1);
-			}
-		}
+		private float EnergyMax =>  parent.GetStatValue(RimWorld.StatDefOf.EnergyShieldEnergyMax, true, -1);
 
 		public override void CompDrawWornExtras()
 		{

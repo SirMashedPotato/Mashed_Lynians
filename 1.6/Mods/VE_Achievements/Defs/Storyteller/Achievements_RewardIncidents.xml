@@ -59,11 +59,4 @@
 		<letterLabel>Uruki joins: {PAWN_nameDef}</letterLabel>
 		<pawnKind>Mashed_Lynian_UrukiTribesperson</pawnKind>
 	</IncidentDef>
-	<!-- =====[Random colonist]===== -->
-	<IncidentDef ParentName="Mashed_AchievementLynians_LynianJoinsIncident">
-		<defName>Mashed_AchievementLynians_RandomColonistIncident</defName>
-		<label>Lynian colonist joins</label>
-		<letterLabel>Lynian joins: {PAWN_nameDef}</letterLabel>
-		<workerClass>Mashed_Lynians.IncidentWorker_LynianColonistJoin</workerClass>
-	</IncidentDef>
 </Defs>

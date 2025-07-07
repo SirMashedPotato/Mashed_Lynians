@@ -9,15 +9,11 @@ namespace Mashed_Lynians
         public bool isLynian = true;
         public bool isCatLike = false;
         public bool canUseFelvine = false;
-        public List<HediffDef> hediffsToAdd;
-        public List<AbilityDef> abilitiesToAdd;
+        public List<AbilityDef> startingAbilities;
         public List<AbilityDef> oneOfRandomAbility;
         public float oneOfRandomChance = 1f;
         public GeneDef hybridInheritedGene;
 
-        public static RaceProperties Get(Def def)
-        {
-            return def.GetModExtension<RaceProperties>();
-        }
+        public static RaceProperties Get(Def def) => def.GetModExtension<RaceProperties>();
     }
 }

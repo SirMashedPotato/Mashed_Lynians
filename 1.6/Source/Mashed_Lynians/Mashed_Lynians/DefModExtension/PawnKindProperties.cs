@@ -6,9 +6,6 @@ namespace Mashed_Lynians
     {
         public bool purchasableFromTrader = false;
 
-        public static PawnKindProperties Get(Def def)
-        {
-            return def.GetModExtension<PawnKindProperties>();
-        }
+        public static PawnKindProperties Get(Def def) => def.GetModExtension<PawnKindProperties>();
     }
 }

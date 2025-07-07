@@ -6,22 +6,11 @@
 		<description>One of the breeds of goblin-like Lynian, while usually quite savage, Shakalaka will occasionally assimilate into society. Like their cousins, Shakalaka are rather reclusive, and are very rarely seen without their masks on. They are most at home in temperate and tropical locations, often scavenging in ruins for broken weapons to melt down. They also show a strange fondness for dancing, and will often perform dances to aid their allies. Like all Lynians, Shakalaka are rather quick on their feet, but also sightly slower at many jobs than Humans. \n\nOriginally created to serve as assistants to settlers and explorers, since then most Shakalaka have gone their own way, and established savage hunter-gatherer tribes. Though young wandering Shakalaka will occasionally befriend travellers, which they often end up 'lovingly' calling their 'minions'.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nInjury healing factor is increased by 10%.\nSmelting speed is increased by 10%.\nImmunity gain speed is increased by 20%.\nHas a chance to start with a random Shakalaka dance ability.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
-				<abilitiesToAdd>
+				<startingAbilities>
 					<li>Mashed_Lynian_DigAbility</li>
-				</abilitiesToAdd>
+				</startingAbilities>
 				<oneOfRandomAbility>
-					<li>Mashed_Lynian_DanceCleaningAbility</li>
-					<li>Mashed_Lynian_DanceCoolingAbility</li>
-					<li>Mashed_Lynian_DanceCuringAbility</li>
-					<li>Mashed_Lynian_DanceExtinguishingAbility</li>
-					<li>Mashed_Lynian_DanceElectrifyingAbility</li>
-					<li>Mashed_Lynian_DanceEvasiveAbility</li>
-					<li>Mashed_Lynian_DanceHealingAbility</li>
-					<li>Mashed_Lynian_DanceInvigoratingAbility</li>
-					<li>Mashed_Lynian_DanceJoyfulAbility</li>
-					<li>Mashed_Lynian_DanceProtectiveAbility</li>
-					<li>Mashed_Lynian_DanceStunningAbility</li>
-					<li>Mashed_Lynian_DanceWarmingAbility</li>
+
 				</oneOfRandomAbility>
 				<oneOfRandomChance>0.25</oneOfRandomChance>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Shakalaka</hybridInheritedGene>

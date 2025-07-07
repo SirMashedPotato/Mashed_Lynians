@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace Mashed_Lynians
 {
@@ -6,7 +7,7 @@ namespace Mashed_Lynians
     {
 		public override void OnIntervalPassed(Pawn pawn, Hediff cause)
 		{
-			if (Rand.MTBEventOccurs(mtbDays, 60000f, 60f) && Mashed_Lynians_ModSettings.EnableHairballs && CanApply(pawn) && TryApply(pawn, null))
+			if (Rand.MTBEventOccurs(mtbDays, GenDate.TicksPerDay, 60f) && Mashed_Lynians_ModSettings.EnableHairballs && CanApply(pawn) && TryApply(pawn, null))
 			{
 				SendLetter(pawn, cause);
 			}

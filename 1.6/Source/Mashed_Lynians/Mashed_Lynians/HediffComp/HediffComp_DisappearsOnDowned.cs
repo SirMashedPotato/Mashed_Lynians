@@ -7,9 +7,10 @@ namespace Mashed_Lynians
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);
-            if (base.Pawn.Spawned && !base.Pawn.Dead && base.Pawn.Downed)
+
+            if (Pawn.Spawned && !Pawn.Dead && Pawn.Downed)
             {
-                base.Pawn.health.RemoveHediff(this.parent);
+                Pawn.health.RemoveHediff(parent);
             }
         }
     }
