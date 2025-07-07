@@ -12,8 +12,6 @@
 	<Mashed_Lynians_ConflictingTrait>Conflicts with: {0}</Mashed_Lynians_ConflictingTrait>
 	<Mashed_Lynians_UpgradeLabel>Upgrade ({0}/{1})</Mashed_Lynians_UpgradeLabel>
 	<!-- ==========[tabs]==========-->
-	<Mashed_Lynians_EurekacornTab_Abilities>Abilities</Mashed_Lynians_EurekacornTab_Abilities>
-	<Mashed_Lynians_EurekacornTab_Skills>Skills</Mashed_Lynians_EurekacornTab_Skills>
 	<Mashed_Lynians_EurekacornTab_Knowledge>Knowledge</Mashed_Lynians_EurekacornTab_Knowledge>
 	<!-- ==========[messages]==========-->
 	<Mashed_Lynians_Eurekacorn_LimitMet>{0_labelShort} must spend skill points before more can be gained.</Mashed_Lynians_Eurekacorn_LimitMet>

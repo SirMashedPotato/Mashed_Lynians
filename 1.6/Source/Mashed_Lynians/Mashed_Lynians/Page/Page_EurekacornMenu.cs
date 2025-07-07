@@ -41,7 +41,7 @@ namespace Mashed_Lynians
 
         private void ReadySettingsTabs()
         {
-            tabs.Add(new TabRecord("Mashed_Lynians_EurekacornTab_Abilities".Translate(), delegate
+            tabs.Add(new TabRecord("Abilities".Translate(), delegate
             {
                 curTab = SelectedTab.Ability;
             }, () => curTab == SelectedTab.Ability));
