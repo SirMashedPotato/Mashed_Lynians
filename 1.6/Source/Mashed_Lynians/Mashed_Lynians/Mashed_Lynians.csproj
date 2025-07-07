@@ -123,6 +123,7 @@
     <Compile Include="HediffGiver\HediffGiver_RandomCatLike.cs" />
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
+    <Compile Include="Page\Page_EurekacornMenu.cs" />
     <Compile Include="Settings\Mashed_Lynians_Mod.cs" />
     <Compile Include="Settings\Mashed_Lynians_ModSettings.cs" />
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
@@ -131,7 +132,9 @@
     <Compile Include="StockGenerator\StockGenerator_Palicoes.cs" />
     <Compile Include="ThingClass\Gas_SleepBomb.cs" />
     <Compile Include="ThingClass\PawnDigger.cs" />
+    <Compile Include="ThingComp\Comp_EurekacornTracker.cs" />
     <Compile Include="ThingComp\Comp_UltimateMaskShield.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_EurekacornTracker.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_UltimateMaskShield.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_LynianLeatherApparel.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_MissingMask_Thought.cs" />
@@ -150,6 +153,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Page\Tabs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

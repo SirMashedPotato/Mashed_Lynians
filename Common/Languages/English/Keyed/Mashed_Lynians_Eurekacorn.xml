@@ -4,29 +4,18 @@
 	<Mashed_Lynians_EurekacornMenu_Label>eurekacorn menu</Mashed_Lynians_EurekacornMenu_Label>
 	<Mashed_Lynians_EurekacornMenu_Desc>Spend skill points to ulnock upgrades for {0_labelShort}.</Mashed_Lynians_EurekacornMenu_Desc>
 	<!-- ==========[Upgrade beast form page]==========-->
-	<Mashed_Lynians_UpgradeBeastFormDesc>Various upgrades can be purchased here by spending Consumed Hearts. Gain Consumed Hearts with the Consume Heart ability while in Beast Form.\n\n&lt;color=#E5E54C&gt;Beast Form Abilities&lt;/color&gt;\nSpend consumed hearts to unlock special abilities for use while in beast form. Many abilities cost lycanthropic stress to use.\n\n&lt;color=#E5E54C&gt;Beast Form Claws&lt;/color&gt;\nSpend consumed hearts to unlock alternative lycanthrope claws for use while in beast form. Only one beast form claw can be equipped at a time. The currently equipped claws are marked with (E)\n\n&lt;color=#E5E54C&gt;Totems&lt;/color&gt;\nSpend consumed hearts to upgrade lycanthrope totems. All totem stat bonuses are only active while in Beast Form, unless marked with an (H).\n\n&lt;color=#E5E54C&gt;Traits&lt;/color&gt;\nSpend consumed hearts to unlock additional traits. Traits are retained if the pawn is cured of lycanthropy.
-	</Mashed_Lynians_UpgradeBeastFormDesc>
-	<Mashed_Lynians_CurrentBonuses>Current bonuses:</Mashed_Lynians_CurrentBonuses>
-	<Mashed_Lynians_UnlockedClaws>\n\nUnlocked claws:</Mashed_Lynians_UnlockedClaws>
-	<Mashed_Lynians_EquippedClaw>(E)</Mashed_Lynians_EquippedClaw>
-	<Mashed_Lynians_UnlockedAbilities>\n\nUnlocked abilities:</Mashed_Lynians_UnlockedAbilities>
-	<Mashed_Lynians_TotemActiveWhileHuman>(H)</Mashed_Lynians_TotemActiveWhileHuman>
+	<Mashed_Lynians_EurekacornMenu_Info>Various upgrades can be purchased here by spending Skill Points. Skill Points can be gained by consuming Eurekacorns, which can be obtained from Lynian factions, and Lynian trade requests.\n\n&lt;color=#E5E54C&gt;Abilities&lt;/color&gt;\nSpend skill points to unlock additional abilities.\n\n&lt;color=#E5E54C&gt;Skills&lt;/color&gt;\nSpend skill points to improve skills.\n\n&lt;color=#E5E54C&gt;Traits&lt;/color&gt;\nSpend skill points to gain additional traits.\n\n&lt;color=#E5E54C&gt;Knowledge&lt;/color&gt;\nView this Lynians knowledge. Knowledge can be increased by reading Lynian research notes. Knowledge is required to unlock certain abilities.
+	</Mashed_Lynians_EurekacornMenu_Info>
+	<Mashed_Lynians_SKillPoints>Skill points</Mashed_Lynians_SKillPoints>
 	<Mashed_Lynians_UnlockLabel>Unlock ({0}/{1})</Mashed_Lynians_UnlockLabel>
 	<Mashed_Lynians_Unlocked>Unlocked</Mashed_Lynians_Unlocked>
-	<Mashed_Lynians_Equip>Equip</Mashed_Lynians_Equip>
 	<Mashed_Lynians_ConflictingTrait>Conflicts with: {0}</Mashed_Lynians_ConflictingTrait>
 	<Mashed_Lynians_UpgradeLabel>Upgrade ({0}/{1})</Mashed_Lynians_UpgradeLabel>
-	<Mashed_Lynians_UpgradeTab_Abilities>Beast Form Abilities</Mashed_Lynians_UpgradeTab_Abilities>
-	<Mashed_Lynians_UpgradeTab_Claws>Beast Form Claws</Mashed_Lynians_UpgradeTab_Claws>
-	<Mashed_Lynians_UpgradeTab_Totems>Totems</Mashed_Lynians_UpgradeTab_Totems>
+	<!-- ==========[tabs]==========-->
+	<Mashed_Lynians_EurekacornTab_Abilities>Abilities</Mashed_Lynians_EurekacornTab_Abilities>
+	<Mashed_Lynians_EurekacornTab_Skills>Skills</Mashed_Lynians_EurekacornTab_Skills>
+	<Mashed_Lynians_EurekacornTab_Knowledge>Knowledge</Mashed_Lynians_EurekacornTab_Knowledge>
 	<!-- ==========[messages]==========-->
-	<Mashed_Lynians_NotEurekacorn>{0_labelShort} is not a lycanthrope</Mashed_Lynians_NotEurekacorn>
-	<Mashed_Lynians_IsEurekacorn>{0_labelShort} is a lycanthrope</Mashed_Lynians_IsEurekacorn>
-	<Mashed_Lynians_InBeastForm>{0_labelShort} is in their beast form</Mashed_Lynians_InBeastForm>
-	<Mashed_Lynians_NotInBeastForm>{0_labelShort} is not in their beast form</Mashed_Lynians_NotInBeastForm>
-	<Mashed_Lynians_SaniesLupinusTransitioned>{0_labelShort}'s Sanies Lupinus has transitioned into dormant lycanthropy</Mashed_Lynians_SaniesLupinusTransitioned>
-	<Mashed_Lynians_EurekacornCured>{0_labelShort} has been cured of their lycanthropy</Mashed_Lynians_EurekacornCured>
-	<Mashed_Lynians_StressReduced>{0_labelShort}'s slaughter has temporarily sated {0_possessive} inner beast</Mashed_Lynians_StressReduced>
-	<Mashed_Lynians_FeralWerewolfFactionMissing>The feral werewolf faction is missing.</Mashed_Lynians_FeralWerewolfFactionMissing>
-	<Mashed_Lynians_FeralWerewolfFactionCantRaid>The feral werewolf faction can't raid here.</Mashed_Lynians_FeralWerewolfFactionCantRaid>
+	<Mashed_Lynians_Eurekacorn_LimitMet>{0_labelShort} must spend skill points before more can be gained.</Mashed_Lynians_Eurekacorn_LimitMet>
+	<Mashed_Lynians_Eurekacorn_GainedPoints>{0_labelShort} has gained {1} skill point/s</Mashed_Lynians_Eurekacorn_GainedPoints>
 </LanguageData>

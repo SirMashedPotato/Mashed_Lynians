@@ -35,6 +35,9 @@
 			<Mashed_Ashlands_AshResistance MayRequire="SirMashedPotato.Ashlands">0.25</Mashed_Ashlands_AshResistance>
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">1</Fertility>
 		</statBases>
+		<comps>
+			<li Class="Mashed_Lynians.CompProperties_EurekacornTracker"/>
+		</comps>
 		<race>
 			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>

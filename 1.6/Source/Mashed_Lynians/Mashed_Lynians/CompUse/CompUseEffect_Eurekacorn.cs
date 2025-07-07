@@ -10,7 +10,10 @@ namespace Mashed_Lynians
 		public override void DoEffect(Pawn usedBy)
 		{
 			base.DoEffect(usedBy);
-            //TODO
+
+            Comp_EurekacornTracker comp_Eurekacorn = usedBy.GetComp<Comp_EurekacornTracker>();
+            comp_Eurekacorn.GainSkillPoints(Props.skillPointCount);
+
             if (Props.fillHunger)
             {
 				Need hunger = usedBy.needs.TryGetNeed(NeedDefOf.Food);
@@ -27,6 +30,20 @@ namespace Mashed_Lynians
 			{
                 return "Mashed_Lynian_PawnNotLynian".Translate(p.Name);
 			}
+
+            Comp_EurekacornTracker comp_Eurekacorn = p.GetComp<Comp_EurekacornTracker>();
+            if (comp_Eurekacorn == null)
+            {
+                Log.Error(p.Label + " is missing Comp_EurekacornTracker");
+                return false;
+            }
+
+            if (!comp_Eurekacorn.CanGainSkillPoints(Props.skillPointCount))
+            {
+                return "Mashed_Lynians_Eurekacorn_LimitMet".Translate(p);
+
+            }
+
             return true;
         }
 
