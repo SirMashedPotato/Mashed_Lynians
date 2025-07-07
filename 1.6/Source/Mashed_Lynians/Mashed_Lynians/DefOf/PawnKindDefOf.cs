@@ -8,7 +8,9 @@ namespace Mashed_Lynians
 	{
 		static PawnKindDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(PawnKindDefOf));
 
-		public static PawnKindDef Mashed_Lynian_ShakalakaWanderer;
+		public static PawnKindDef StrangerInBlack;
+
+        public static PawnKindDef Mashed_Lynian_ShakalakaWanderer;
 
 		public static PawnKindDef Mashed_Lynian_BoaboaColonist;
 		public static PawnKindDef Mashed_Lynian_FelyneColonist;

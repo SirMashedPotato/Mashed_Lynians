@@ -5,13 +5,7 @@ namespace Mashed_Lynians
 {
 	public class HediffComp_FurriousFurrenzyTooltip_Halved : HediffComp
 	{
-		public HediffCompProperties_FurriousFurrenzyTooltip Props
-		{
-			get
-			{
-				return (HediffCompProperties_FurriousFurrenzyTooltip)this.props;
-			}
-		}
+		public HediffCompProperties_FurriousFurrenzyTooltip Props => (HediffCompProperties_FurriousFurrenzyTooltip)props;
 
 		public override string CompTipStringExtra
         {

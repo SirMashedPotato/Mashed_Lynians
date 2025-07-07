@@ -22,12 +22,6 @@ namespace Mashed_Lynians
 	{
 		public static ThoughtState CurrentThoughtState(Pawn p)
 		{
-			/*
-			if (!ESCP_Sload_ModSettings.LeatherThoughtSload)
-			{
-				return ThoughtState.Inactive;
-			}
-			*/
 			string text = null;
 			int num = 0;
 			List<Apparel> wornApparel = p.apparel.WornApparel;

@@ -49,6 +49,6 @@ namespace Mashed_Lynians
 			return result;
 
 		}
-        private static List<Thing> candidates = new List<Thing>();
+        private static readonly List<Thing> candidates = new List<Thing>();
     }
 }

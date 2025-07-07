@@ -22,7 +22,9 @@
 			<li/>
 		</stages>
 		<comps>
-			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_DisappearsOnDowned</compClass>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[Mashed_Lynian_LynianCleaningFurrenzy]==========-->

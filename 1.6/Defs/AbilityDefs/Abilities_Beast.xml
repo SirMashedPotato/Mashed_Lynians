@@ -38,7 +38,9 @@
 		<label>purrserker rage</label>
 		<description>The inner beast unleashed, greatly empowering melee capabilities, but preventing the Lynian from holding weapons. The ability will end prematurely if the Lynian is downed.</description>
 		<comps>
-			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_DisappearsOnDowned</compClass>
+			</li>
 			<li>
 				<compClass>Mashed_Lynians.HediffComp_UnequipWeapons</compClass>
 			</li>
@@ -65,7 +67,9 @@
 		<label>purrserker claws</label>
 		<description>Terrifyingly sharp claws, made from pure rage. They cleave through armour with ease, though require a considerable amount of concentration to maintain.</description>
 		<comps>
-			<li Class="Mashed_Lynians.HediffCompProperties_DisappearsOnDowned"/>
+			<li>
+				<compClass>Mashed_Lynians.HediffComp_DisappearsOnDowned</compClass>
+			</li>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>

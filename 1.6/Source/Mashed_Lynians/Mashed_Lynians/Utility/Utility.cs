@@ -14,9 +14,9 @@ namespace Mashed_Lynians
             }
             if (ModsConfig.BiotechActive && pawn.genes != null)
             {
-                if (pawn.genes.HasGene(GeneDefOf.AddictionImmune_Mashed_Lynian_FelvineChemical) 
-                    || pawn.genes.HasGene(GeneDefOf.AddictionResistant_Mashed_Lynian_FelvineChemical)
-                    || pawn.genes.HasGene(GeneDefOf.AddictionImmune_Mashed_Lynian_FelvineChemical))
+                if (pawn.genes.HasActiveGene(GeneDefOf.AddictionImmune_Mashed_Lynian_FelvineChemical) 
+                    || pawn.genes.HasActiveGene(GeneDefOf.AddictionResistant_Mashed_Lynian_FelvineChemical)
+                    || pawn.genes.HasActiveGene(GeneDefOf.AddictionImmune_Mashed_Lynian_FelvineChemical))
                 {
                     return true;
                 }
@@ -75,12 +75,5 @@ namespace Mashed_Lynians
             }
             return false;
         }
-
-        public static readonly List<PawnKindDef> lynianColonistKindList = new List<PawnKindDef>
-        {
-            PawnKindDefOf.Mashed_Lynian_BoaboaColonist, PawnKindDefOf.Mashed_Lynian_FelyneColonist, PawnKindDefOf.Mashed_Lynian_GajalakaColonist,
-            PawnKindDefOf.Mashed_Lynian_GrimalkyneColonist, PawnKindDefOf.Mashed_Lynian_MelynxColonist, PawnKindDefOf.Mashed_Lynian_ShakalakaColonist,
-            PawnKindDefOf.Mashed_Lynian_UrukiColonist
-        };
     }
 }

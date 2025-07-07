@@ -6,10 +6,10 @@
 		<description>A comparatively strange species of Lynian, Uruki do not fall under either cat-like or goblin-like Lynians, and instead exhibit a mixture of traits from both. While generally incredibly peaceful, spending most of their time tending to their flower fields, Uruki are known to become rather aggressive when threatened. Like all Lynians, Uruki are rather quick on their feet, but also sightly slower at many jobs than Humans.\n\nOriginally created to serve as assistants to settlers and explorers, due to their innate green-thumb, Uruki are often found working on farms and in medical clinics on more 'civilized' planets. Occasionally the Uruki assisting settlers decide to set off on their own journey, often forming small agrarian tribes in the process.\n\n&lt;color=#E5E54C&gt;Bonuses:&lt;/color&gt;\nPlant work speed increased by 20%.\nMedical tend speed increased by 20%.\nHas access to the 'Promote Growth' ability.</description>
 		<modExtensions>
 			<li Class="Mashed_Lynians.RaceProperties">
-				<abilitiesToAdd>
+				<startingAbilities>
 					<li>Mashed_Lynian_DigAbility</li>
 					<li>Mashed_Lynian_PromoteGrowthAbility</li>
-				</abilitiesToAdd>
+				</startingAbilities>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Uruki</hybridInheritedGene>
 			</li>
 		</modExtensions>
