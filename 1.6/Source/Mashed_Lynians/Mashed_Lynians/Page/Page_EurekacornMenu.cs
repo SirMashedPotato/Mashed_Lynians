@@ -11,8 +11,12 @@ namespace Mashed_Lynians
         public const int altColumnCount = 3;
         public const float rectLimitY = 45f;
         public const float RectPadding = 12f;
-
         public static float rowHeight = Text.LineHeight * 6f;
+
+        private readonly List<LynianAbilityDef> AbilityList;
+        private readonly List<LynianTraitDef> TraitList;
+        private readonly List<SkillDef> SkillList;
+        private readonly List<LynianKnowledgeDef> KnowledgeList;
 
         private static Vector2 scrollPosition = Vector2.zero;
         private static SelectedTab curTab = SelectedTab.Ability;
@@ -36,6 +40,12 @@ namespace Mashed_Lynians
         {
             pawn = p;
             compEurekacornTracker = comp;
+
+            AbilityList = DefDatabase<LynianAbilityDef>.AllDefsListForReading;
+            SkillList = DefDatabase<SkillDef>.AllDefsListForReading;
+            TraitList = DefDatabase<LynianTraitDef>.AllDefsListForReading;
+            KnowledgeList = DefDatabase<LynianKnowledgeDef>.AllDefsListForReading;
+
             ReadySettingsTabs();
         }
 
@@ -84,19 +94,19 @@ namespace Mashed_Lynians
             switch (curTab)
             {
                 case SelectedTab.Ability:
-                    DoUpgradeGrid(mainRect, 2);
+                    DoUpgradeGrid(mainRect, AbilityList.Count);
                     break;
 
                 case SelectedTab.Skill:
-                    DoUpgradeGrid(mainRect, 2);
+                    DoUpgradeGrid(mainRect, SkillList.Count);
                     break;
 
                 case SelectedTab.Trait:
-                    DoUpgradeGrid(mainRect, 2);
+                    DoUpgradeGrid(mainRect, TraitList.Count);
                     break;
 
                 case SelectedTab.Knowledge:
-                    DoUpgradeGrid(mainRect, 2);
+                    DoUpgradeGrid(mainRect, KnowledgeList.Count);
                     break;
             }
 

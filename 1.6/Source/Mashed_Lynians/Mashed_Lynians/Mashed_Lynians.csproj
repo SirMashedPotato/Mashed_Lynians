@@ -102,6 +102,10 @@
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
+    <Compile Include="Def\AbstractLynianDef.cs" />
+    <Compile Include="Def\LynianAbilityDef.cs" />
+    <Compile Include="Def\LynianKnowledgeDef.cs" />
+    <Compile Include="Def\LynianTraitDef.cs" />
     <Compile Include="Dialog\Dialog_DyeColorPicker.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\Patches_ApparelColour.cs" />

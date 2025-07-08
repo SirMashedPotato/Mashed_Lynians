@@ -3,7 +3,7 @@
 	<!-- ==========[Eurekacorn menu gizmo]==========-->
 	<Mashed_Lynians_EurekacornMenu_Label>eurekacorn menu</Mashed_Lynians_EurekacornMenu_Label>
 	<Mashed_Lynians_EurekacornMenu_Desc>Spend skill points to ulnock upgrades for {0_labelShort}.</Mashed_Lynians_EurekacornMenu_Desc>
-	<!-- ==========[Upgrade beast form page]==========-->
+	<!-- ==========[Eurekacorn page]==========-->
 	<Mashed_Lynians_EurekacornMenu_Info>Various upgrades can be purchased here by spending Skill Points. Skill Points can be gained by consuming Eurekacorns, which can be obtained from Lynian factions, and Lynian trade requests.\n\n&lt;color=#E5E54C&gt;Abilities&lt;/color&gt;\nSpend skill points to unlock additional abilities.\n\n&lt;color=#E5E54C&gt;Skills&lt;/color&gt;\nSpend skill points to improve skills.\n\n&lt;color=#E5E54C&gt;Traits&lt;/color&gt;\nSpend skill points to gain additional traits.\n\n&lt;color=#E5E54C&gt;Knowledge&lt;/color&gt;\nView this Lynians knowledge. Knowledge can be increased by reading Lynian research notes. Knowledge is required to unlock certain abilities.
 	</Mashed_Lynians_EurekacornMenu_Info>
 	<Mashed_Lynians_SKillPoints>Skill points</Mashed_Lynians_SKillPoints>
@@ -14,6 +14,9 @@
 	<!-- ==========[tabs]==========-->
 	<Mashed_Lynians_EurekacornTab_Knowledge>Knowledge</Mashed_Lynians_EurekacornTab_Knowledge>
 	<!-- ==========[messages]==========-->
+	<Mashed_Lynians_Eurekacorn_RequiresKnowledge>{0_labelShort} is missing required knowledge</Mashed_Lynians_Eurekacorn_RequiresKnowledge>
+	<Mashed_Lynians_Eurekacorn_ConflictingTrait>Conflicts with: {0}</Mashed_Lynians_Eurekacorn_ConflictingTrait>
+	<Mashed_Lynians_Eurekacorn_GainedTrait>{0_labelShort} has gained the {1} trait</Mashed_Lynians_Eurekacorn_GainedTrait>
 	<Mashed_Lynians_Eurekacorn_LimitMet>{0_labelShort} must spend skill points before more can be gained.</Mashed_Lynians_Eurekacorn_LimitMet>
 	<Mashed_Lynians_Eurekacorn_GainedPoints>{0_labelShort} has gained {1} skill point/s</Mashed_Lynians_Eurekacorn_GainedPoints>
 </LanguageData>
