@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Dig]========== -->
+	<Mashed_Lynians.LynianAbilityDef>
+		<defName>Mashed_Lynian_Dig</defName>
+		<label>dig</label>
+		<description>Dig to a nearby tile, does not require line-of-sight, but the tile must be visible. The terrain at both the starting, and ending, position must be diggable.</description>
+		<abilityDef>Mashed_Lynian_DigAbility</abilityDef>
+		<skillPointCost>1</skillPointCost>
+	</Mashed_Lynians.LynianAbilityDef>
+</Defs>

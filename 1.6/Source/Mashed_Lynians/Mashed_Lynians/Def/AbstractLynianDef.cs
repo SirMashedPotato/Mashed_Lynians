@@ -36,7 +36,7 @@ namespace Mashed_Lynians
         {
             if (requiredKnowledgeDef != null)
             {
-                if (requiredKnowledgeDef.Completed(compEurekacornTracker))
+                if (!requiredKnowledgeDef.Completed(compEurekacornTracker))
                 {
                     return "Mashed_Lynians_Eurekacorn_RequiresKnowledge".Translate(pawn);
                 }

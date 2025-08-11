@@ -10,7 +10,6 @@ namespace Mashed_Lynians
         public const int columnCount = 2;
         public const int altColumnCount = 3;
         public const float rectLimitY = 45f;
-        public const float RectPadding = 12f;
         public static float rowHeight = Text.LineHeight * 6f;
 
         private readonly List<LynianAbilityDef> AbilityList;
@@ -89,7 +88,7 @@ namespace Mashed_Lynians
             DoBottomButtons(mainRect, showNext: false);
             mainRect.height -= rectLimitY;
             Widgets.DrawMenuSection(mainRect);
-            mainRect = mainRect.ContractedBy(RectPadding);
+            mainRect = mainRect.ContractedBy(Assets.RectPadding);
 
             switch (curTab)
             {
@@ -118,7 +117,7 @@ namespace Mashed_Lynians
             int skillPointCount = compEurekacornTracker.SkillPointCount;
             int maxLevel = compEurekacornTracker.MaxSkillPoints;
             float fillPercent = (float)skillPointCount / maxLevel;
-            Widgets.FillableBar(inRect, fillPercent, OnStartupUtility.SkillPointsFillTex, Texture2D.grayTexture, true);
+            Widgets.FillableBar(inRect, fillPercent, Assets.SkillPointsFillTex, Texture2D.grayTexture, true);
             var anchor = Text.Anchor;
             Text.Anchor = TextAnchor.MiddleCenter;
             Widgets.Label(inRect, "Mashed_Lynians_SKillPoints".Translate() + " (" + skillPointCount + " / " + maxLevel + ")");
@@ -130,16 +129,21 @@ namespace Mashed_Lynians
             Rect scrollRect = inRect;
             Rect innerRect = scrollRect;
             innerRect.width -= 30f;
-            int finalColumnCount = curTab == SelectedTab.Trait ? altColumnCount : columnCount;
+            int finalColumnCount = curTab == SelectedTab.Trait || curTab == SelectedTab.Knowledge ? altColumnCount : columnCount;
 
-            float cellWidth = (innerRect.width / finalColumnCount) - (RectPadding / 3f);
+            if (!Text.TinyFontSupported && finalColumnCount > 1)
+            {
+                finalColumnCount -= 1;
+            }
+
+            float cellWidth = (innerRect.width / finalColumnCount) - (Assets.RectPadding / 3f);
             float cellHeight = rowHeight;
             float rowCount = ((float)listCount / finalColumnCount);
             if (rowCount % 1 != 0)
             {
                 rowCount += 0.5f;
             }
-            innerRect.height = Mathf.Round(rowCount) * (cellHeight + RectPadding);
+            innerRect.height = Mathf.Round(rowCount) * (cellHeight + Assets.RectPadding);
 
             Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect);
             int row = 0;
@@ -151,14 +155,14 @@ namespace Mashed_Lynians
                 DoUpgradeCelll(upgradeRect, i);
                 if (++column >= finalColumnCount)
                 {
-                    upgradeRect.y += ((RectPadding / 2f) + cellHeight);
+                    upgradeRect.y += ((Assets.RectPadding / 2f) + cellHeight);
                     upgradeRect.x = innerRect.x;
                     column = 0;
                     row++;
                 }
                 else
                 {
-                    upgradeRect.x += ((RectPadding / 2f) + cellWidth);
+                    upgradeRect.x += ((Assets.RectPadding / 2f) + cellWidth);
                 }
             }
         }
@@ -168,28 +172,28 @@ namespace Mashed_Lynians
             Rect rightRect = inRect;
             Rect leftRect = inRect;
             rightRect.width = rightRect.height;
-            leftRect.width -= rightRect.width + (RectPadding / 2f);
-            rightRect.x += leftRect.width + (RectPadding / 2f);
-            /*
+            leftRect.width -= rightRect.width + (Assets.RectPadding / 2f);
+            rightRect.x += leftRect.width + (Assets.RectPadding / 2f);
+
             switch (curTab)
             {
                 case SelectedTab.Ability:
-                    Tab_UpgradeAbility.DoCell(leftRect, rightRect, AbilityList[index], compLycanthrope);
+                    Tab_UpgradeAbility.DoCell(leftRect, rightRect, AbilityList[index], compEurekacornTracker);
                     break;
 
                 case SelectedTab.Skill:
-                    Tab_UpgradeClaw.DoCell(inRect, ClawList[index], compLycanthrope);
+                    //Tab_UpgradeSkill.DoCell(inRect, SkillList[index], compEurekacornTracker);
                     break;
 
                 case SelectedTab.Trait:
-                    Tab_UpgradeTotem.DoCell(leftRect, rightRect, TotemList[index], compLycanthrope, ref upgradeAmountList);
+                    //Tab_UpgradeTotem.DoCell(leftRect, rightRect, TraitList[index], compEurekacornTracker);
                     break;
 
                 case SelectedTab.Knowledge:
-                    Tab_UpgradeTrait.DoCell(inRect, TraitList[index], compLycanthrope);
+                    //Tab_UpgradeKnowledge.DoCell(inRect, KnowledgeList[index], compEurekacornTracker);
                     break;
+
             }
-            */
         }
     }
 }

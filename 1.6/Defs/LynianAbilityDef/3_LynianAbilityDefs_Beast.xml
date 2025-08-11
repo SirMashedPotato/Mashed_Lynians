@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_PurrserkerRage]========== -->
+	<Mashed_Lynians.LynianAbilityDef>
+		<defName>Mashed_Lynian_PurrserkerRage</defName>
+		<label>purrserker rage</label>
+		<description>Call forth the inner beast, transforming the Lynian into a raging ball of claws and fangs.</description>
+		<abilityDef>Mashed_Lynian_PurrserkerRageAbility</abilityDef>
+		<requiredKnowledgeDef>Mashed_Lynian_Purrserker</requiredKnowledgeDef>
+		<skillPointCost>3</skillPointCost>
+	</Mashed_Lynians.LynianAbilityDef>
+</Defs>

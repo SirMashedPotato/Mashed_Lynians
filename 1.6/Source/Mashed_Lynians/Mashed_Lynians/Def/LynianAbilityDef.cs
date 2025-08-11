@@ -4,7 +4,7 @@ using Verse;
 
 namespace Mashed_Lynians
 {
-    internal class LynianAbilityDef : LynianDef
+    public class LynianAbilityDef : LynianDef
     {
         [NoTranslate]
         public string backgroundTexPath = "UI/Widgets/DesButBG";

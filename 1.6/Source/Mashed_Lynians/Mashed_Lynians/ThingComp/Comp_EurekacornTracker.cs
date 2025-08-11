@@ -10,7 +10,7 @@ namespace Mashed_Lynians
         private const int maxSkillPoints = 30;
         private int skillPointCount = 0;
         //dictionary of knowledge, int is progress
-        public Dictionary<LynianKnowledgeDef, int> knowledgeTracker = new Dictionary<LynianKnowledgeDef, int>();
+        public Dictionary<LynianKnowledgeDef, float> knowledgeTracker = new Dictionary<LynianKnowledgeDef, float>();
 
         public int SkillPointCount => skillPointCount;
         public int MaxSkillPoints => maxSkillPoints;
@@ -55,6 +55,7 @@ namespace Mashed_Lynians
         public override void PostExposeData()
         {
             Scribe_Values.Look(ref skillPointCount, "skillPointCount", 0);
+            Scribe_Collections.Look(ref knowledgeTracker, "knowledgeTracker", LookMode.Def);
             base.PostExposeData();
         }
     }

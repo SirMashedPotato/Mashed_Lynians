@@ -19,4 +19,5 @@
 	<Mashed_Lynians_Eurekacorn_GainedTrait>{0_labelShort} has gained the {1} trait</Mashed_Lynians_Eurekacorn_GainedTrait>
 	<Mashed_Lynians_Eurekacorn_LimitMet>{0_labelShort} must spend skill points before more can be gained.</Mashed_Lynians_Eurekacorn_LimitMet>
 	<Mashed_Lynians_Eurekacorn_GainedPoints>{0_labelShort} has gained {1} skill point/s</Mashed_Lynians_Eurekacorn_GainedPoints>
+	<Mashed_Lynians_Eurekacorn_GainedKnowledge>{0_labelShort} has completed their knowledge of {1}</Mashed_Lynians_Eurekacorn_GainedKnowledge>
 </LanguageData>

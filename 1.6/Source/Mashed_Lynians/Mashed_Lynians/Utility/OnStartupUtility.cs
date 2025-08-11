@@ -8,7 +8,6 @@ namespace Mashed_Lynians
     [StaticConstructorOnStartup]
     public static class OnStartupUtility
     {
-        public static readonly Texture2D SkillPointsFillTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.6f, 0.7f, 0.8f));
         public static HashSet<ThingDef> LynianRaces = new HashSet<ThingDef>();
 
         static OnStartupUtility()

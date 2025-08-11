@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Purrserker]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef>
+		<defName>Mashed_Lynian_Purrserker</defName>
+		<label>purrserker</label>
+		<description>Unlocks purrserker abilities.</description>
+		<bookDef>Mashed_Lynian_PurrserkerNotes</bookDef>
+	</Mashed_Lynians.LynianKnowledgeDef>
+</Defs>

@@ -128,6 +128,9 @@
     <Compile Include="Ideo\RoleRequirement_RaceLynian.cs" />
     <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
     <Compile Include="Page\Page_EurekacornMenu.cs" />
+    <Compile Include="Page\Tabs\Tab_UpgradeAbility.cs" />
+    <Compile Include="ReadingOutcome\Properties\BookOutcomeProperties_GainLynianKnowledge.cs" />
+    <Compile Include="ReadingOutcome\ReadingOutcomeDoerGainLynianKnowledge.cs" />
     <Compile Include="Settings\Mashed_Lynians_Mod.cs" />
     <Compile Include="Settings\Mashed_Lynians_ModSettings.cs" />
     <Compile Include="Sites\GenStep_ShakalakaWanderer.cs" />
@@ -150,6 +153,7 @@
     <Compile Include="StatPart\StatPart_SkillOffset.cs" />
     <Compile Include="ThingClass\Gas_FelvineCloud.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Precept_LynianLeatherApparel.cs" />
+    <Compile Include="Utility\Assets.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Verb\Verb_ShootWithDurability.cs" />
@@ -158,8 +162,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Page\Tabs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
