@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.Grammar;
@@ -13,6 +15,27 @@ namespace Mashed_Lynians
         public string backgroundTexPath = "UI/Icons/DesButBG";
         public float knowledgeCost = 500;
         public RulePack generalRules;
+
+
+        public override void ResolveReferences()
+        {
+            base.ResolveReferences();
+
+            List<LynianAbilityDef> abilityDefs = DefDatabase<LynianAbilityDef>.AllDefsListForReading.Where(x => x?.requiredKnowledgeDef == this).ToList();
+
+            if (!abilityDefs.NullOrEmpty())
+            {
+                if (descriptionHyperlinks.NullOrEmpty())
+                {
+                    descriptionHyperlinks = new List<DefHyperlink>();
+                }
+
+                foreach (LynianAbilityDef abilityDef in abilityDefs)
+                {
+                    descriptionHyperlinks.Add(abilityDef.abilityDef);
+                }
+            }
+        }
 
         public bool Completed(Pawn pawn)
         {
