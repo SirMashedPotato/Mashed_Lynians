@@ -37,6 +37,11 @@
 						</tabs>
 						<exclude/>
 					</li>
+					<li Class="Mashed_Lynians.BookOutcomeProperties_GainLynianKnowledge">
+						<knowledgeDefs>
+							<Mashed_Lynian_Purrserker>1</Mashed_Lynian_Purrserker>
+						</knowledgeDefs>
+					</li>
 				</doers>
 			</li>
 		</comps>

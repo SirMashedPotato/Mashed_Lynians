@@ -13,6 +13,7 @@
 				<!-- subject intro -->
 				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\n</li>
 				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\nThere are also several [notes_synonym] on how [subject_secondary_story]\n\n</li>
+				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story].\n\nThere are also several [notes_synonym] on how [subject_secondary_story]\n\nAnd finally a few [notes_synonym] regarding [subject_tertiary_story]\n\n</li>
 				<li>subject_intro->in this journal, the [author] [shows_synonym_verb]s [ANYPAWN_possessive] [theory_synonym_adj] about [subject_primary_story]</li>
 				<!--schematic description-->
 				<!-- negative quality description first half -->

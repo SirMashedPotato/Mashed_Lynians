@@ -1,16 +1,18 @@
 ﻿using RimWorld;
-using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.Grammar;
 
 namespace Mashed_Lynians
 {
     public class LynianKnowledgeDef : Def
     {
         [NoTranslate]
-        public string backgroundTexPath = "UI/Widgets/DesButBG";
-        public ThingDef bookDef;
+        public string iconTexPath = "UI/Widgets/Mashed_Lynian_KnowledgeDefault";
+        [NoTranslate]
+        public string backgroundTexPath = "UI/Icons/DesButBG";
         public float knowledgeCost = 500;
+        public RulePack generalRules;
 
         public bool Completed(Pawn pawn)
         {
@@ -57,19 +59,6 @@ namespace Mashed_Lynians
                 {
                     Messages.Message("Mashed_Lynians_Eurekacorn_GainedKnowledge".Translate(compEurekacornTracker.parent as Pawn, LabelCap), compEurekacornTracker.parent, MessageTypeDefOf.PositiveEvent);
                 }
-            }
-        }
-
-        public override IEnumerable<string> ConfigErrors()
-        {
-            foreach (string item in base.ConfigErrors())
-            {
-                yield return item;
-            }
-
-            if (bookDef == null)
-            {
-                yield return "bookDef is null";
             }
         }
     }

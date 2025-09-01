@@ -48,8 +48,9 @@ namespace Mashed_Lynians
 
             if (abilityDef.requiredKnowledgeDef != null)
             {
-                Dialog_InfoCard.Hyperlink hyperlink = new Dialog_InfoCard.Hyperlink(abilityDef.requiredKnowledgeDef.bookDef);
-                Widgets.HyperlinkWithIcon(lowerInfoRect, hyperlink, abilityDef.requiredKnowledgeDef.LabelCap);
+                RectDivider knowledgeRect = new RectDivider(lowerInfoRect, lowerInfoRect.GetHashCode());
+                GUI.DrawTexture(knowledgeRect.NewCol(knowledgeRect.Rect.height), ContentFinder<Texture2D>.Get(abilityDef.requiredKnowledgeDef.iconTexPath));
+                Widgets.Label(knowledgeRect.NewCol(abilityDef.requiredKnowledgeDef.LabelCap.GetWidthCached()), abilityDef.requiredKnowledgeDef.LabelCap);
             }
 
             if (!abilityDef.AlreadyUnlocked(pawn))

@@ -1,10 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Lynians_KnowledgeBase]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef Name="Mashed_Lynians_KnowledgeBase" Abstract="True">
+		<generalRules>
+			<rulesStrings>
+				<li>subject_story->how members of a [race] tribe [observations]</li>
+				<li>subject_story->how some [race] [observations]</li>
+				<li>subject_story->how [race] [observations]</li>
+				<li>observations->[observation]</li>
+				<li>observations->[observation], and [observation]</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
 	<!-- ==========[Mashed_Lynian_Purrserker]========== -->
-	<Mashed_Lynians.LynianKnowledgeDef>
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Purrserker</defName>
 		<label>purrserker</label>
 		<description>Unlocks purrserker abilities.</description>
-		<bookDef>Mashed_Lynian_PurrserkerNotes</bookDef>
+		<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgePurrserker</iconTexPath>
+		<generalRules>
+			<rulesStrings>
+				<li>race->Felyne</li>
+				<li>race->Melynx</li>
+				<li>race->Grimalkyne</li>
+				<li>subject->purrserkers</li>
+				<li>observation(uses=1)->were observed entering a purrserker rage</li> 
+				<li>observation(uses=1)->could be seen sharpening abnormally large claws</li> 
+				<li>observation(uses=1)->were heard letting out a terrifying howl</li> 
+				<li>observation(uses=1)->attacked intruders in a furrious flurry of claws</li> 
+				<li>subject_gerund->purrserkers</li>
+			</rulesStrings>
+		</generalRules>
 	</Mashed_Lynians.LynianKnowledgeDef>
 </Defs>
