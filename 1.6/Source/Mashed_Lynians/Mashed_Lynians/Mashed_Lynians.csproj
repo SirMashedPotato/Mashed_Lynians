@@ -129,6 +129,7 @@
     <Compile Include="JobGiver\JobGiver_AICastOnHostiles.cs" />
     <Compile Include="Page\Page_EurekacornMenu.cs" />
     <Compile Include="Page\Tabs\Tab_UpgradeAbility.cs" />
+    <Compile Include="Page\Tabs\Tab_UpgradeKnowledge.cs" />
     <Compile Include="ReadingOutcome\Properties\BookOutcomeProperties_GainLynianKnowledge.cs" />
     <Compile Include="ReadingOutcome\ReadingOutcomeDoerGainLynianKnowledge.cs" />
     <Compile Include="Settings\Mashed_Lynians_Mod.cs" />

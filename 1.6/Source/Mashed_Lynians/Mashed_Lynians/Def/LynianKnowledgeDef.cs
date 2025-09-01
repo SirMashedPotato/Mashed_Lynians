@@ -9,6 +9,8 @@ namespace Mashed_Lynians
 {
     public class LynianKnowledgeDef : Def
     {
+        [MustTranslate]
+        public string labelShort = "???";
         [NoTranslate]
         public string iconTexPath = "UI/Widgets/Mashed_Lynian_KnowledgeDefault";
         [NoTranslate]

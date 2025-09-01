@@ -190,7 +190,7 @@ namespace Mashed_Lynians
                     break;
 
                 case SelectedTab.Knowledge:
-                    //Tab_UpgradeKnowledge.DoCell(inRect, KnowledgeList[index], compEurekacornTracker);
+                    Tab_UpgradeKnowledge.DoCell(inRect, KnowledgeList[index], compEurekacornTracker);
                     break;
 
             }

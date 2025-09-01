@@ -4,6 +4,7 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Purrserker</defName>
 		<label>purrserker knowledge</label>
+		<labelShort>Purrserker</labelShort>
 		<description>Knowledge governing the use of Purrserker abilities.</description>
 		<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgePurrserker</iconTexPath>
 		<generalRules>

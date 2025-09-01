@@ -12,7 +12,7 @@ namespace Mashed_Lynians
             DoRightRect(rightRect, abilityDef);
         }
 
-        public static void DoLeftRect(Rect inRect, LynianAbilityDef abilityDef, Comp_EurekacornTracker compEurekacornTracker, Pawn pawn)
+        private static void DoLeftRect(Rect inRect, LynianAbilityDef abilityDef, Comp_EurekacornTracker compEurekacornTracker, Pawn pawn)
         {
             AcceptanceReport acceptanceReport = abilityDef.PawnRequirementsMet(compEurekacornTracker, pawn);
 
@@ -50,7 +50,7 @@ namespace Mashed_Lynians
             {
                 RectDivider knowledgeRect = new RectDivider(lowerInfoRect, lowerInfoRect.GetHashCode());
                 GUI.DrawTexture(knowledgeRect.NewCol(knowledgeRect.Rect.height), ContentFinder<Texture2D>.Get(abilityDef.requiredKnowledgeDef.iconTexPath));
-                Widgets.Label(knowledgeRect.NewCol(abilityDef.requiredKnowledgeDef.LabelCap.GetWidthCached()), abilityDef.requiredKnowledgeDef.LabelCap);
+                Widgets.Label(knowledgeRect.NewCol(abilityDef.requiredKnowledgeDef.labelShort.GetWidthCached()), abilityDef.requiredKnowledgeDef.labelShort);
             }
 
             if (!abilityDef.AlreadyUnlocked(pawn))
@@ -81,7 +81,7 @@ namespace Mashed_Lynians
             }
         }
 
-        public static void DoRightRect(Rect inRect, LynianAbilityDef abilityDef)
+        private static void DoRightRect(Rect inRect, LynianAbilityDef abilityDef)
         {
             Widgets.DrawBoxSolidWithOutline(inRect, Widgets.WindowBGFillColor, Color.grey, 1);
             Rect mainRect = inRect.ContractedBy(Assets.RectPadding);

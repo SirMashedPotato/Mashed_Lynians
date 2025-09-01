@@ -4,8 +4,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Boaboa</defName>
 		<label>boaboa knowledge</label>
+		<labelShort>Boaboa</labelShort>
 		<description>Knowledge governing the use of Boaboa abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_BoaboaAlt</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_BoaboaAlt</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Boaboa</li>
@@ -20,8 +21,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Felyne</defName>
 		<label>felyne knowledge</label>
+		<labelShort>Felyne</labelShort>
 		<description>Knowledge governing the use of Felyne abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_Felyne</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_Felyne</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Felyne</li>
@@ -36,8 +38,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Gajalaka</defName>
 		<label>gajalaka knowledge</label>
+		<labelShort>Gajalaka</labelShort>
 		<description>Knowledge governing the use of Gajalaka abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_GajalakaAlt</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_GajalakaAlt</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Gajalaka</li>
@@ -52,8 +55,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Grimalkyne</defName>
 		<label>grimalkyne knowledge</label>
+		<labelShort>Grimalkyne</labelShort>
 		<description>Knowledge governing the use of Grimalkyne abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_Grimalkyne</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_Grimalkyne</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Grimalkyne</li>
@@ -69,8 +73,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Melynx</defName>
 		<label>melynx knowledge</label>
+		<labelShort>Melynx</labelShort>
 		<description>Knowledge governing the use of Melynx abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_Melynx</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_Melynx</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Melynx</li>
@@ -86,8 +91,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Shakalaka</defName>
 		<label>shakalaka knowledge</label>
+		<labelShort>Shakalaka</labelShort>
 		<description>Knowledge governing the use of Shakalaka abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_ShakalakaAlt</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_ShakalakaAlt</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Shakalaka</li>
@@ -100,8 +106,9 @@
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Uruki</defName>
 		<label>uruki knowledge</label>
+		<labelShort>Uruki</labelShort>
 		<description>Knowledge governing the use of Uruki abilities.</description>
-		<iconTexPath>UI/IconsMashed_Lynian_Icon_Uruki</iconTexPath>
+		<iconTexPath>UI/Icons/Mashed_Lynian_Icon_Uruki</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Uruki</li>
