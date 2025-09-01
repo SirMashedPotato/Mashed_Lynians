@@ -14,10 +14,12 @@
 				<li>regular_title->[regular_gen]</li>
 				<li>regular_gen->[journalDescription] Notes on [subject_primary]</li>
 				<li>regular_gen->[journalDescription] Notes on [subject_secondary]</li>
+				<li>regular_gen->[journalDescription] Compendium of [subject_tertiary]</li>
 				<!-- Authored Books -->
 				<li>authored_title->[author_gen]</li>
 				<li>author_gen->[ANYPAWN_nameIndef]'s Notes on [subject_primary]</li>
 				<li>author_gen->[ANYPAWN_nameIndef]'s Notes on [subject_secondary]</li>
+				<li>author_gen->[ANYPAWN_nameIndef]'s Compendium of [subject_tertiary]</li>
 				<!-- Notes description -->
 				<li>journalDescription->scholars</li>
 				<li>journalDescription->researchers</li>

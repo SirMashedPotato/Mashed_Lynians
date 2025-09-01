@@ -39,6 +39,13 @@
 					</li>
 					<li Class="Mashed_Lynians.BookOutcomeProperties_GainLynianKnowledge">
 						<knowledgeDefs>
+							<Mashed_Lynian_Felyne>3</Mashed_Lynian_Felyne>
+							<Mashed_Lynian_Melynx>3</Mashed_Lynian_Melynx>
+							<Mashed_Lynian_Grimalkyne>3</Mashed_Lynian_Grimalkyne>
+							<Mashed_Lynian_Shakalaka>3</Mashed_Lynian_Shakalaka>
+							<Mashed_Lynian_Gajalaka>3</Mashed_Lynian_Gajalaka>
+							<Mashed_Lynian_Boaboa>3</Mashed_Lynian_Boaboa>
+							<Mashed_Lynian_Uruki>3</Mashed_Lynian_Uruki>
 							<Mashed_Lynian_Purrserker>1</Mashed_Lynian_Purrserker>
 						</knowledgeDefs>
 					</li>

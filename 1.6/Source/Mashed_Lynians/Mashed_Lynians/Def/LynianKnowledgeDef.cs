@@ -16,7 +16,6 @@ namespace Mashed_Lynians
         public float knowledgeCost = 500;
         public RulePack generalRules;
 
-
         public override void ResolveReferences()
         {
             base.ResolveReferences();

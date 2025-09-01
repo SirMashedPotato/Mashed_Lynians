@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynians_KnowledgeBase]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef Name="Mashed_Lynians_KnowledgeBase" Abstract="True">
+		<generalRules>
+			<rulesStrings>
+				<li>subject_story->how members of a [race_knowledge] tribe [observation_knowledges]</li>
+				<li>subject_story->how some [race_knowledge] [observation_knowledges]</li>
+				<li>subject_story->how [race_knowledge] [observation_knowledges]</li>
+				<li>observation_knowledges->[observation_knowledge]</li>
+				<li>observation_knowledges->[observation_knowledge], and [observation_knowledge]</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+</Defs>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_Felyne]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Felyne</defName>
+		<label>felyne knowledge</label>
+		<description>Knowledge governing the use of Felyne abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeFelyne</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Felyne</li>
+				<li>subject->Felyne knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously cleaning their surroundings</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously cooking several meals</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously hauling many items</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Melynx]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Melynx</defName>
+		<label>melynx knowledge</label>
+		<description>Knowledge governing the use of Melynx abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeMelynx</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Melynx</li>
+				<li>subject->Melynx knowledge</li>
+				<li>observation_knowledge(uses=1)->were seen sneakly pilfering items from a travelling merchant</li>
+				<li>observation_knowledge(uses=1)->would throw special boomerangs to knock items off a merchants pack animal</li>
+				<li>observation_knowledge(uses=1)->would disappear in a puff of smoke</li>
+				<li>observation_knowledge(uses=1)->would stealthily crawl across the ground to avoid attracting too much attention</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Grimalkyne]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Grimalkyne</defName>
+		<label>grimalkyne knowledge</label>
+		<description>Knowledge governing the use of Grimalkyne abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeGrimalkyne</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Grimalkyne</li>
+				<li>subject->Grimalkyne knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously tending to their tamed animals</li>
+				<li>observation_knowledge(uses=1)->would pull a flashfly cage seemingly out of thin air, and throw it at threats</li>
+				<li>observation_knowledge(uses=1)->were seen building shock traps using a specific species of beetle</li>
+				<li>observation_knowledge(uses=1)->were able to forage for food, even if there didn't seem to be anything there</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Shakalaka]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Shakalaka</defName>
+		<label>shakalaka knowledge</label>
+		<description>Knowledge governing the use of Shakalaka abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeShakalaka</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Shakalaka</li>
+				<li>subject->Shakalaka knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously swinging their steel swords at their enemies</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Gajalaka]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Gajalaka</defName>
+		<label>gajalaka knowledge</label>
+		<description>Knowledge governing the use of Gajalaka abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeGajalaka</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Gajalaka</li>
+				<li>subject->Gajalaka knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously firing their hand cannons at their enemies</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously mining away at rock</li>
+				<li>observation_knowledge(uses=1)->would pull a meowlotov seemingly out of thin air, and throw it to at threats</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Boaboa]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Boaboa</defName>
+		<label>boaboa knowledge</label>
+		<description>Knowledge governing the use of Boaboa abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeBoaboa</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Boaboa</li>
+				<li>subject->Boaboa knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously butchering their catches</li>
+				<li>observation_knowledge(uses=1)->were seen pointing out the weakspots of their prey while hunting</li>
+				<li>observation_knowledge(uses=1)->would let out a bone chilling roar to scare of potential threats</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Uruki]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Uruki</defName>
+		<label>uruki knowledge</label>
+		<description>Knowledge governing the use of Uruki abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeUruki</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Uruki</li>
+				<li>subject->Uruki knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously tending to their gardens</li>
+				<li>observation_knowledge(uses=1)->were seen carefully tending to plants, seemingly helping the plants grow faster in the process</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
+</Defs>
