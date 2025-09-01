@@ -12,6 +12,7 @@ namespace Mashed_Lynians
         public List<AbilityDef> startingAbilities;
         public List<AbilityDef> oneOfRandomAbility;
         public float oneOfRandomChance = 1f;
+        public List<LynianKnowledgeDef> startingKnowledge;
         public GeneDef hybridInheritedGene;
 
         public static RaceProperties Get(Def def) => def.GetModExtension<RaceProperties>();

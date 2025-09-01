@@ -34,6 +34,18 @@ namespace Mashed_Lynians
             {
                 pawn.abilities.GainAbility(props.oneOfRandomAbility.RandomElement());
             }
+
+            if (!props.startingKnowledge.NullOrEmpty())
+            {
+                Comp_EurekacornTracker compEurekacorn = pawn.TryGetComp<Comp_EurekacornTracker>();
+                if (compEurekacorn != null)
+                {
+                    foreach(LynianKnowledgeDef knowledgeDef in props.startingKnowledge)
+                    {
+                        knowledgeDef.Complete(compEurekacorn, false);
+                    }
+                }
+            }
         }
     }
 

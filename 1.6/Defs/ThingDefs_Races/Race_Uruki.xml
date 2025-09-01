@@ -10,6 +10,9 @@
 					<li>Mashed_Lynian_DigAbility</li>
 					<li>Mashed_Lynian_PromoteGrowthAbility</li>
 				</startingAbilities>
+				<startingKnowledge>
+					<li>Mashed_Lynian_Uruki</li>
+				</startingKnowledge>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Uruki</hybridInheritedGene>
 			</li>
 		</modExtensions>

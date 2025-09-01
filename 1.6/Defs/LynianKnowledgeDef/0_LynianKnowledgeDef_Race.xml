@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Lynian_Boaboa]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Boaboa</defName>
+		<label>boaboa knowledge</label>
+		<description>Knowledge governing the use of Boaboa abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeBoaboa</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Boaboa</li>
+				<li>subject->Boaboa knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously butchering their catches</li>
+				<li>observation_knowledge(uses=1)->were seen pointing out the weakspots of their prey while hunting</li>
+				<li>observation_knowledge(uses=1)->would let out a bone chilling roar to scare of potential threats</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
 	<!-- ==========[Mashed_Lynian_Felyne]========== -->
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Felyne</defName>
@@ -16,20 +32,19 @@
 			</rulesStrings>
 		</generalRules>
 	</Mashed_Lynians.LynianKnowledgeDef>
-	<!-- ==========[Mashed_Lynian_Melynx]========== -->
+	<!-- ==========[Mashed_Lynian_Gajalaka]========== -->
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
-		<defName>Mashed_Lynian_Melynx</defName>
-		<label>melynx knowledge</label>
-		<description>Knowledge governing the use of Melynx abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeMelynx</iconTexPath>-->
+		<defName>Mashed_Lynian_Gajalaka</defName>
+		<label>gajalaka knowledge</label>
+		<description>Knowledge governing the use of Gajalaka abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeGajalaka</iconTexPath>-->
 		<generalRules>
 			<rulesStrings>
-				<li>race_knowledge->Melynx</li>
-				<li>subject->Melynx knowledge</li>
-				<li>observation_knowledge(uses=1)->were seen sneakly pilfering items from a travelling merchant</li>
-				<li>observation_knowledge(uses=1)->would throw special boomerangs to knock items off a merchants pack animal</li>
-				<li>observation_knowledge(uses=1)->would disappear in a puff of smoke</li>
-				<li>observation_knowledge(uses=1)->would stealthily crawl across the ground to avoid attracting too much attention</li>
+				<li>race_knowledge->Gajalaka</li>
+				<li>subject->Gajalaka knowledge</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously firing their hand cannons at their enemies</li>
+				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously mining away at rock</li>
+				<li>observation_knowledge(uses=1)->would pull a meowlotov seemingly out of thin air, and throw it to at threats</li>
 			</rulesStrings>
 		</generalRules>
 	</Mashed_Lynians.LynianKnowledgeDef>
@@ -50,6 +65,23 @@
 			</rulesStrings>
 		</generalRules>
 	</Mashed_Lynians.LynianKnowledgeDef>
+	<!-- ==========[Mashed_Lynian_Melynx]========== -->
+	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
+		<defName>Mashed_Lynian_Melynx</defName>
+		<label>melynx knowledge</label>
+		<description>Knowledge governing the use of Melynx abilities.</description>
+		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeMelynx</iconTexPath>-->
+		<generalRules>
+			<rulesStrings>
+				<li>race_knowledge->Melynx</li>
+				<li>subject->Melynx knowledge</li>
+				<li>observation_knowledge(uses=1)->were seen sneakly pilfering items from a travelling merchant</li>
+				<li>observation_knowledge(uses=1)->would throw special boomerangs to knock items off a merchants pack animal</li>
+				<li>observation_knowledge(uses=1)->would disappear in a puff of smoke</li>
+				<li>observation_knowledge(uses=1)->would stealthily crawl across the ground to avoid attracting too much attention</li>
+			</rulesStrings>
+		</generalRules>
+	</Mashed_Lynians.LynianKnowledgeDef>
 	<!-- ==========[Mashed_Lynian_Shakalaka]========== -->
 	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
 		<defName>Mashed_Lynian_Shakalaka</defName>
@@ -61,38 +93,6 @@
 				<li>race_knowledge->Shakalaka</li>
 				<li>subject->Shakalaka knowledge</li>
 				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously swinging their steel swords at their enemies</li>
-			</rulesStrings>
-		</generalRules>
-	</Mashed_Lynians.LynianKnowledgeDef>
-	<!-- ==========[Mashed_Lynian_Gajalaka]========== -->
-	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
-		<defName>Mashed_Lynian_Gajalaka</defName>
-		<label>gajalaka knowledge</label>
-		<description>Knowledge governing the use of Gajalaka abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeGajalaka</iconTexPath>-->
-		<generalRules>
-			<rulesStrings>
-				<li>race_knowledge->Gajalaka</li>
-				<li>subject->Gajalaka knowledge</li>
-				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously firing their hand cannons at their enemies</li>
-				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously mining away at rock</li>
-				<li>observation_knowledge(uses=1)->would pull a meowlotov seemingly out of thin air, and throw it to at threats</li>
-			</rulesStrings>
-		</generalRules>
-	</Mashed_Lynians.LynianKnowledgeDef>
-	<!-- ==========[Mashed_Lynian_Boaboa]========== -->
-	<Mashed_Lynians.LynianKnowledgeDef ParentName="Mashed_Lynians_KnowledgeBase">
-		<defName>Mashed_Lynian_Boaboa</defName>
-		<label>boaboa knowledge</label>
-		<description>Knowledge governing the use of Boaboa abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeBoaboa</iconTexPath>-->
-		<generalRules>
-			<rulesStrings>
-				<li>race_knowledge->Boaboa</li>
-				<li>subject->Boaboa knowledge</li>
-				<li>observation_knowledge(uses=1)->would enter a brief period of concentration, before furriously butchering their catches</li>
-				<li>observation_knowledge(uses=1)->were seen pointing out the weakspots of their prey while hunting</li>
-				<li>observation_knowledge(uses=1)->would let out a bone chilling roar to scare of potential threats</li>
 			</rulesStrings>
 		</generalRules>
 	</Mashed_Lynians.LynianKnowledgeDef>

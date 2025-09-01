@@ -9,6 +9,9 @@
 				<startingAbilities>
 					<li>Mashed_Lynian_DigAbility</li>
 				</startingAbilities>
+				<startingKnowledge>
+					<li>Mashed_Lynian_Gajalaka</li>
+				</startingKnowledge>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Gajalaka</hybridInheritedGene>
 			</li>
 		</modExtensions>

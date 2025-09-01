@@ -11,6 +11,9 @@
 				<startingAbilities>
 					<li>Mashed_Lynian_DigAbility</li>
 				</startingAbilities>
+				<startingKnowledge>
+					<li>Mashed_Lynian_Felyne</li>
+				</startingKnowledge>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Felyne</hybridInheritedGene>
 			</li>
 		</modExtensions>

@@ -66,6 +66,11 @@ namespace Mashed_Lynians
             return compEurekacornTracker.knowledgeTracker.TryGetValue(this, 0) / knowledgeCost;
         }
 
+        public void Complete(Comp_EurekacornTracker compEurekacornTracker, bool message = true)
+        {
+            GainKnowledge(compEurekacornTracker, knowledgeCost, message);
+        }
+
         public void GainKnowledge(Comp_EurekacornTracker compEurekacornTracker, float knowledgeGain, bool message = true)
         {
 

@@ -12,6 +12,9 @@
 					<li>Mashed_Lynian_DigAbility</li>
 					<li>Mashed_Lynian_PilferAbility</li>
 				</startingAbilities>
+				<startingKnowledge>
+					<li>Mashed_Lynian_Melynx</li>
+				</startingKnowledge>
 				<hybridInheritedGene MayRequire="Ludeon.RimWorld.Biotech">Mashed_Lynian_GeneInheritedBonus_Melynx</hybridInheritedGene>
 			</li>
 		</modExtensions>
