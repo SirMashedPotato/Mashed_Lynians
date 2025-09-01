@@ -5,7 +5,7 @@
 		<defName>Mashed_Lynian_Boaboa</defName>
 		<label>boaboa knowledge</label>
 		<description>Knowledge governing the use of Boaboa abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeBoaboa</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_BoaboaAlt</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Boaboa</li>
@@ -21,7 +21,7 @@
 		<defName>Mashed_Lynian_Felyne</defName>
 		<label>felyne knowledge</label>
 		<description>Knowledge governing the use of Felyne abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeFelyne</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_Felyne</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Felyne</li>
@@ -37,7 +37,7 @@
 		<defName>Mashed_Lynian_Gajalaka</defName>
 		<label>gajalaka knowledge</label>
 		<description>Knowledge governing the use of Gajalaka abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeGajalaka</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_GajalakaAlt</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Gajalaka</li>
@@ -53,7 +53,7 @@
 		<defName>Mashed_Lynian_Grimalkyne</defName>
 		<label>grimalkyne knowledge</label>
 		<description>Knowledge governing the use of Grimalkyne abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeGrimalkyne</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_Grimalkyne</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Grimalkyne</li>
@@ -70,7 +70,7 @@
 		<defName>Mashed_Lynian_Melynx</defName>
 		<label>melynx knowledge</label>
 		<description>Knowledge governing the use of Melynx abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeMelynx</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_Melynx</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Melynx</li>
@@ -87,7 +87,7 @@
 		<defName>Mashed_Lynian_Shakalaka</defName>
 		<label>shakalaka knowledge</label>
 		<description>Knowledge governing the use of Shakalaka abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeShakalaka</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_ShakalakaAlt</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Shakalaka</li>
@@ -101,7 +101,7 @@
 		<defName>Mashed_Lynian_Uruki</defName>
 		<label>uruki knowledge</label>
 		<description>Knowledge governing the use of Uruki abilities.</description>
-		<!--<iconTexPath>UI/Icons/Mashed_Lynian_KnowledgeUruki</iconTexPath>-->
+		<iconTexPath>UI/IconsMashed_Lynian_Icon_Uruki</iconTexPath>
 		<generalRules>
 			<rulesStrings>
 				<li>race_knowledge->Uruki</li>

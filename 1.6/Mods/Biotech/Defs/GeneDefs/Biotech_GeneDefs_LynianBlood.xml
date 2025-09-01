@@ -24,7 +24,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Boaboa</defName>
 		<label>Boaboa inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Boaboa Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Boaboa</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Boaboa</iconPath>
 		<statOffsets>
 			<ComfyTemperatureMax>-2</ComfyTemperatureMax>
 			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
@@ -38,7 +38,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Felyne</defName>
 		<label>Felyne inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Felyne Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Felyne</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Felyne</iconPath>
 		<statOffsets>
 			<MentalBreakThreshold>-0.025</MentalBreakThreshold>
 			<NegotiationAbility>0.05</NegotiationAbility>
@@ -51,7 +51,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Gajalaka</defName>
 		<label>Gajalaka inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Gajalaka Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Gajalaka</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Gajalaka</iconPath>
 		<statOffsets>
 			<ComfyTemperatureMax>3</ComfyTemperatureMax>
 			<PainShockThreshold>0.05</PainShockThreshold>
@@ -64,7 +64,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Grimalkyne</defName>
 		<label>Grimalkyne inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Grimalkyne Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Grimalkyne</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Grimalkyne</iconPath>
 		<statOffsets>
 			<RestRateMultiplier>0.05</RestRateMultiplier>
 			<ForagedNutritionPerDay>0.1</ForagedNutritionPerDay>
@@ -77,7 +77,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Melynx</defName>
 		<label>Melynx inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Melynx Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Melynx</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Melynx</iconPath>
 		<statOffsets>
 			<MoveSpeed>0.1</MoveSpeed>
 			<MeleeDodgeChance>0.05</MeleeDodgeChance>
@@ -90,7 +90,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Shakalaka</defName>
 		<label>Shakalaka inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Shakalaka Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Shakalaka</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Shakalaka</iconPath>
 		<statOffsets>
 			<InjuryHealingFactor>0.05</InjuryHealingFactor>
 			<SmeltingSpeed>0.05</SmeltingSpeed>
@@ -103,7 +103,7 @@
 		<defName>Mashed_Lynian_GeneInheritedBonus_Uruki</defName>
 		<label>Uruki inherited bonus</label>
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Uruki Lynian race, though at a comparatively weaker level.</description>
-		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_GeneInheritedBonus_Uruki</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Lynian_InheritedBonus/Mashed_Lynian_Icon_Uruki</iconPath>
 		<statOffsets>
 			<PlantWorkSpeed>0.1</PlantWorkSpeed>
 			<MedicalTendSpeed>0.1</MedicalTendSpeed>
