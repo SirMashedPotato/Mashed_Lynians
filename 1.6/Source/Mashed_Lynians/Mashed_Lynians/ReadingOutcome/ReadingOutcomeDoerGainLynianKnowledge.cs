@@ -45,8 +45,11 @@ namespace Mashed_Lynians
 
         public override void OnReadingTick(Pawn reader, float factor)
         {
-            Comp_EurekacornTracker compEurekacornTracker = reader.TryGetComp<Comp_EurekacornTracker>();
-            knowledgeDef.GainKnowledge(compEurekacornTracker, GetBaseValue() * factor);
+            if (DoesProvidesOutcome(reader))
+            {
+                Comp_EurekacornTracker compEurekacornTracker = reader.TryGetComp<Comp_EurekacornTracker>();
+                knowledgeDef.GainKnowledge(compEurekacornTracker, GetBaseValue() * factor);
+            }
         }
 
         public override IEnumerable<Dialog_InfoCard.Hyperlink> GetHyperlinks()

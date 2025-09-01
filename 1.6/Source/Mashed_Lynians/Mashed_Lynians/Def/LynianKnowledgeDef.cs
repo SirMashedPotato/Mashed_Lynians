@@ -77,7 +77,7 @@ namespace Mashed_Lynians
             if (finalCount > 0)
             {
                 compEurekacornTracker.knowledgeTracker[this] += finalCount;
-                if (message)
+                if (Completed(compEurekacornTracker) && message)
                 {
                     Messages.Message("Mashed_Lynians_Eurekacorn_GainedKnowledge".Translate(compEurekacornTracker.parent as Pawn, LabelCap), compEurekacornTracker.parent, MessageTypeDefOf.PositiveEvent);
                 }
