@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Lynian_PromoteGrowth]========== -->
+	<Mashed_Lynians.LynianAbilityDef>
+		<defName>Mashed_Lynian_PromoteGrowth</defName>
+		<label>promote growth</label>
+		<description>Use the casters botanical knowledge to instantly increase the growth of a plant. Growth is increased by 1% for each level in plants up to level 20.</description>
+		<abilityDef>Mashed_Lynian_PromoteGrowthAbility</abilityDef>
+		<requiredKnowledgeDef>Mashed_Lynian_Uruki</requiredKnowledgeDef>
+		<skillPointCost>3</skillPointCost>
+	</Mashed_Lynians.LynianAbilityDef>
+</Defs>

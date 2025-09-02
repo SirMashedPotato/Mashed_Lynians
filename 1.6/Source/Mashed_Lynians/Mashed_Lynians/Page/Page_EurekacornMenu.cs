@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -40,9 +41,9 @@ namespace Mashed_Lynians
             pawn = p;
             compEurekacornTracker = comp;
 
-            AbilityList = DefDatabase<LynianAbilityDef>.AllDefsListForReading;
-            SkillList = DefDatabase<SkillDef>.AllDefsListForReading;
-            TraitList = DefDatabase<LynianTraitDef>.AllDefsListForReading;
+            AbilityList = DefDatabase<LynianAbilityDef>.AllDefsListForReading.OrderBy(x => x.label).ToList();
+            SkillList = DefDatabase<SkillDef>.AllDefsListForReading.OrderBy(x => x.label).ToList();
+            TraitList = DefDatabase<LynianTraitDef>.AllDefsListForReading.OrderBy(x => x.traitDef.DataAtDegree(x.traitDegree).GetLabelCapFor(pawn)).ToList();
             KnowledgeList = DefDatabase<LynianKnowledgeDef>.AllDefsListForReading;
 
             ReadySettingsTabs();
